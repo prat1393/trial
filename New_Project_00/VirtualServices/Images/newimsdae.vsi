@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="1" name="newimsdae" created="2018-03-13.23:07:20.301" lastModified="2018-03-13.23:09:32.162" version="8.4.0" buildNumber="8.4.0.227">
+<st>
+<t id="4" nd="true">
+<sp>
+<t id="5">
+<rq id="6" op="jdbc.start" tl="EXACT">
+<ag>
+<p n="arg0_INT" t="arg:EQUALS;false;;;;">10</p>
+</ag>
+</rq>
+<rs>
+<rp id="7" t="7590">
+<bd chs="UTF-8">&lt;lisa.vse.java.response&gt;&#13;&#10;&lt;lisa.vse.java.response.args&gt;&#13;&#10;&lt;lisa.vse.java.response.arg&gt;&#13;&#10;&lt;string&gt;&amp;lt;int&amp;gt;10&amp;lt;/int&amp;gt;&lt;/string&gt;&#13;&#10;&lt;/lisa.vse.java.response.arg&gt;&#13;&#10;&lt;/lisa.vse.java.response.args&gt;&#13;&#10;&lt;/lisa.vse.java.response&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="8" op="jdbc.start" tl="SIGNATURE">
+<ag>
+<p n="arg0_INT" t="arg:EQUALS;false;;;;">10</p>
+</ag>
+</rq>
+<rs>
+<rp id="9" t="7590">
+<bd chs="UTF-8">&lt;lisa.vse.java.response&gt;&#13;&#10;&lt;lisa.vse.java.response.args&gt;&#13;&#10;&lt;lisa.vse.java.response.arg&gt;&#13;&#10;&lt;string&gt;&amp;lt;int&amp;gt;10&amp;lt;/int&amp;gt;&lt;/string&gt;&#13;&#10;&lt;/lisa.vse.java.response.arg&gt;&#13;&#10;&lt;/lisa.vse.java.response.args&gt;&#13;&#10;&lt;/lisa.vse.java.response&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="3" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">text/xml</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#10;  &lt;S:Body&gt;&#10;    &lt;S:Fault xmlns:ns3=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&#10;      &lt;faultcode&gt;S:Server&lt;/faultcode&gt;&#10;      &lt;faultstring&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/faultstring&gt;&#10;      &lt;detail&gt;&#10;        &lt;ns2:exception xmlns:ns2=&quot;http://jax-ws.dev.java.net/&quot; class=&quot;java.lang.Exception&quot;&gt;&#10;          &lt;message&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/message&gt;&#10;          &lt;ns2:stackTrace&gt;&#10;          &lt;/ns2:stackTrace&gt;&#10;        &lt;/ns2:exception&gt;&#10;      &lt;/detail&gt;&#10;    &lt;/S:Fault&gt;&#10;  &lt;/S:Body&gt;&#10;&lt;/S:Envelope&gt;&#10;&#10;</bd>
+</rp>
+</ucrr>
+<usrr>
+<rp id="2" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">text/xml</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#10;  &lt;S:Body&gt;&#10;    &lt;S:Fault xmlns:ns3=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&#10;      &lt;faultcode&gt;S:Server&lt;/faultcode&gt;&#10;      &lt;faultstring&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/faultstring&gt;&#10;      &lt;detail&gt;&#10;        &lt;ns2:exception xmlns:ns2=&quot;http://jax-ws.dev.java.net/&quot; class=&quot;java.lang.Exception&quot;&gt;&#10;          &lt;message&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/message&gt;&#10;          &lt;ns2:stackTrace&gt;&#10;          &lt;/ns2:stackTrace&gt;&#10;        &lt;/ns2:exception&gt;&#10;      &lt;/detail&gt;&#10;    &lt;/S:Fault&gt;&#10;  &lt;/S:Body&gt;&#10;&lt;/S:Envelope&gt;&#10;&#10;</bd>
+</rp>
+</usrr>
+</serviceImage>

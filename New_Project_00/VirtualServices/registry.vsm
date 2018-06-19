@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+
+<VSModel name="registry" version="5">
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="04/20/2018" host="HVDIVD18MIS1939" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="04/20/2018" host="HVDIVD18MIS1939" />
+</meta>
+
+<id>BFE51E5F44A011E8A4CD7C9E20524153</id>
+<Documentation>Put documentation of the VS Model here.</Documentation>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9LTEmbGlzYXY9OC40LjAgKDguNC4wLjIyNykmbm9kZXM9ODgzMTQ4Mzg0</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+    <Node name="Output Log Message" log=""
+          type="com.itko.lisa.test.TestNodeLogger" 
+          version="1" 
+          uid="D9999FF644A011E8A4CD7C9E20524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="true" 
+          next="end" > 
+
+<log>{lisa.registry}</log>
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="BFE5457544A011E8A4CD7C9E20524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="BFE5457344A011E8A4CD7C9E20524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="abort" > 
+
+    </Node>
+
+
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="BFE5457144A011E8A4CD7C9E20524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="" > 
+
+    </Node>
+
+
+</VSModel>

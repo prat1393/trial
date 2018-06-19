@@ -1,0 +1,18 @@
+<Asset Version="2"><AssetInfo type="javax.jms.ConnectionFactory" hashcode="-1476552610"><Url>config://asset.jndijms-ECFF157229F011E8A95A64C920524153</Url>
+<Name>f1cf</Name>
+<Description></Description>
+</AssetInfo>
+<JndiQueueConnectionFactory>
+<Context>
+<AssetInfo type="javax.naming.Context" hashcode="1311886029"><Url>config://jndi-EB789C8129F011E8A95A64C920524153</Url>
+</AssetInfo>
+<Ref>
+</Ref>
+</Context>
+<Name>
+<PayloadInfo type="java.lang.String"></PayloadInfo>
+<String>
+</String>
+</Name>
+</JndiQueueConnectionFactory>
+</Asset>

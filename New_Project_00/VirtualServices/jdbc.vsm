@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+
+<VSModel name="jdbc" version="5">
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="07/29/2017" host="HVDIVD18MIS1496" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="03/08/2018" host="HVDIVD18MIS1939" />
+</meta>
+
+<id>A70984FC73D011E78AE5005056A730A7</id>
+<Documentation>Put documentation of the VS Model here.</Documentation>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj04LjQuMCAoOC40LjAuMjI3KSZub2Rlcz03NzAxNjgyNzk=</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+<deletedProps>
+</deletedProps>
+
+    <Node name="JDBC  SELECT member" log=""
+          type="com.itko.lisa.jdbc.JDBCNode" 
+          version="1" 
+          uid="B9D1696573D011E78AE5005056A730A7" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="end" > 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.test.FilterSaveResponse">
+        <valueToFilterKey>lisa.JDBC  SELECT member.rsp</valueToFilterKey>
+      <prop>abc</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterSavePropToFile">
+        <valueToFilterKey>lisa.JDBC  SELECT member.rsp</valueToFilterKey>
+      <file>H:/koeellyysbgnbb_payment.xls</file>
+      <append>true</append>
+      </Filter>
+
+<driver>oracle.jdbc.driver.OracleDriver</driver>
+<dataSourceConnect>false</dataSourceConnect>
+<jndiFactory></jndiFactory>
+<jndiServerURL></jndiServerURL>
+<jndiDataSourceName></jndiDataSourceName>
+<connect>jdbc:oracle:thin:@zlt09211.vci.att.com:1524:t1c4d284</connect>
+<user>rr998s</user>
+<password_enc>6e7cf837287f3ea53d4539761c62a4e9</password_enc>
+<onSQLError>abort</onSQLError>
+<resultSet>true</resultSet>
+<maxRows>-1</maxRows>
+<keepOpen>false</keepOpen>
+<usePool>true</usePool>
+<sql>SELECT *&#13;&#10;FROM member where member_name like &apos;qay_slid_321%&apos;</sql>
+<IsStoredProc>false</IsStoredProc>
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="A709AC1273D011E78AE5005056A730A7" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="A709850073D011E78AE5005056A730A7" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="abort" > 
+
+    </Node>
+
+
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="A70984FE73D011E78AE5005056A730A7" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="" > 
+
+    </Node>
+
+
+</VSModel>

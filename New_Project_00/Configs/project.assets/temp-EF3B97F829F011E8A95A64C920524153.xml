@@ -1,0 +1,13 @@
+<Asset Version="2"><AssetInfo type="javax.jms.Destination" hashcode="1104097530"><Url>config://temp-EF3B97F829F011E8A95A64C920524153</Url>
+<Name>f1</Name>
+<Description></Description>
+</AssetInfo>
+<TemporaryQueue>
+<Session>
+<AssetInfo type="javax.jms.Session" hashcode="1373507271"><Url>config://asset.sess-EE88267729F011E8A95A64C920524153</Url>
+</AssetInfo>
+<Ref>
+</Ref>
+</Session>
+</TemporaryQueue>
+</Asset>

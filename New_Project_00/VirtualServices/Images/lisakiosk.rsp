@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+
+<!-- TestCase Results Document created by LISA Test Editor -->
+<!-- On: Sun Apr 08 14:37:15 IST 2018 -->
+
+
+<Results name="lisakiosk">
+
+
+    <Result node="Virtual Service Execution Router">
+      <content type="xstream" charset="UTF-8"><![CDATA[<com.itko.lisa.vse.ExecutionMode>TRACK</com.itko.lisa.vse.ExecutionMode>]]></content>
+    </Result>
+
+
+</Results>

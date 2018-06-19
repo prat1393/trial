@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+
+<VSModel name="exg" version="5">
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="02/07/2018" host="HVDIVD18MIS1939" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="02/07/2018" host="HVDIVD18MIS1939" />
+</meta>
+
+<id>3053E0FD0C1511E89788EE3620524153</id>
+<Documentation>Put documentation of the VS Model here.</Documentation>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9LTEmbGlzYXY9OC40LjAgKDguNC4wLjIyNykmbm9kZXM9LTIwNzM2MDkxMzA=</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+    <Node name="abc" log=""
+          type="com.itko.lisa.ws.rest.RESTNode" 
+          version="3" 
+          uid="41EF2C670C1511E89788EE3620524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="end" > 
+
+<url>https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&amp;key=AIzaSyDxEa3asV7eOunKyE-iLVYgtngVE9zVcnc</url>
+<content-type></content-type>
+<data-type>text</data-type>
+<httpMethod>GET</httpMethod>
+<onError>abort</onError>
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="3053E1030C1511E89788EE3620524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="3053E1010C1511E89788EE3620524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="abort" > 
+
+    </Node>
+
+
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="3053E0FF0C1511E89788EE3620524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="" > 
+
+    </Node>
+
+
+</VSModel>

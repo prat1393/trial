@@ -1,0 +1,24 @@
+<Asset Version="2"><AssetInfo type="com.ibm.mq.MQQueue" hashcode="195384807"><Url>config://queue-9725D11E26EE11E88671E2F420524153</Url>
+<Name>proxyreq</Name>
+<Description>its proxy req queue</Description>
+</AssetInfo>
+<MQQueue>
+<Connection>
+<AssetInfo type="com.ibm.mq.MQQueueManager" hashcode="-1400066459"><Url>config://qm-8394823226EE11E88671E2F420524153</Url>
+</AssetInfo>
+<Ref>
+</Ref>
+</Connection>
+<Queue>proxyreq</Queue>
+<OverrideQueueManager>
+<PayloadInfo type="java.lang.String"></PayloadInfo>
+<String>
+</String>
+</OverrideQueueManager>
+<Options>
+<PayloadInfo type="java.lang.Integer"></PayloadInfo>
+<Integer>
+8192</Integer>
+</Options>
+</MQQueue>
+</Asset>

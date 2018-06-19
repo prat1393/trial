@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+
+<VSModel name="fullproj" version="5">
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="12/01/2017" host="HVDIVD18MIS1939" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="12/01/2017" host="HVDIVD18MIS1939" />
+</meta>
+
+<id>8E765AD1D6C211E79D613E7C20524153</id>
+<Documentation>Put documentation of the VS Model here.</Documentation>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9LTEmbGlzYXY9OC40LjAgKDguNC4wLjIyNykmbm9kZXM9LTgxMDU1NjUwNQ==</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+    <Node name="Virtual HTTPS Listener 8001" log=""
+          type="com.itko.lisa.vse.stateful.protocol.http.HttpListenStep" 
+          version="1" 
+          uid="93F90739D6C211E79D613E7C20524153" 
+          think="0" 
+          useFilters="true" 
+          quiet="false" 
+          next="Execute script (JSR-223)" > 
+
+<outputAsObject>false</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+<listenPort>8001</listenPort>
+<bindAddress></bindAddress>
+<basePath>/</basePath>
+<bindOnly>false</bindOnly>
+<useSSL>false</useSSL>
+<sslClientAuthType>none</sslClientAuthType>
+    </Node>
+
+
+    <Node name="Execute script (JSR-223)" log=""
+          type="com.itko.lisa.test.UserScriptNode" 
+          version="1" 
+          uid="EFA7F264D6C211E79D613E7C20524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="end" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assertion name: Any Exception Then Fail checks for: true is of type: Assert on Invocation Exception.</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<onerror>abort</onerror>
+<language>Groovy</language>
+<copyProps>TestExecProps</copyProps>
+<script>read request</script>
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="8E765AD7D6C211E79D613E7C20524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="8E765AD5D6C211E79D613E7C20524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="abort" > 
+
+    </Node>
+
+
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="8E765AD3D6C211E79D613E7C20524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="" > 
+
+    </Node>
+
+
+</VSModel>

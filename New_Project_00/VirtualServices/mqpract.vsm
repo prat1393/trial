@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+
+<VSModel name="mqpract" version="5">
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="03/17/2018" host="HVDIVD18MIS1939" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="03/17/2018" host="HVDIVD18MIS1939" />
+</meta>
+
+<id>2F18A9DB29F211E8A95A64C920524153</id>
+<Documentation>Put documentation of the VS Model here.</Documentation>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9LTEmbGlzYXY9OC40LjAgKDguNC4wLjIyNykmbm9kZXM9LTE5ODI0NzcwNzM=</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+    <Node name="JMS Send Receive" log=""
+          type="com.itko.lisa.messaging.jms.JmsSendReceiveStep" 
+          version="1" 
+          uid="489971B029F211E8A95A64C920524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="end" > 
+
+<onExNode>abort</onExNode>
+<JmsSendReceiveOperation>
+<OperationInfo>
+<Name>msg</Name>
+</OperationInfo>
+<SendOperation>
+<OperationInfo>
+<Name>msg</Name>
+</OperationInfo>
+<Destination>
+<AssetInfo type="javax.jms.Destination" hashcode="729255994"><Url>config://dest-2DD2B22A29F111E8A95A64C920524153</Url>
+</AssetInfo>
+<Ref>
+</Ref>
+</Destination>
+<ReplyTo>
+<Automatic>true</Automatic>
+</ReplyTo>
+<Producer>
+<Automatic>true</Automatic>
+</Producer>
+<RuntimeScope>NONE</RuntimeScope>
+<Message>
+<PayloadInfo type="javax.jms.Message"></PayloadInfo>
+<JMSTextMessage>
+<Destination>
+<Automatic>true</Automatic>
+</Destination>
+<ReplyTo>
+<Automatic>true</Automatic>
+</ReplyTo>
+<Session>
+<Automatic>true</Automatic>
+</Session>
+<Payload>
+<PayloadInfo type="java.lang.String"></PayloadInfo>
+<String>
+<Content>fasfasf</Content>
+</String>
+</Payload>
+</JMSTextMessage>
+</Message>
+</SendOperation>
+<ReceiveOperation>
+<OperationInfo>
+<Name>msg</Name>
+</OperationInfo>
+<Destination>
+<AssetInfo type="javax.jms.Destination" hashcode="729255994"><Url>config://dest-2DD2B22A29F111E8A95A64C920524153</Url>
+</AssetInfo>
+<Ref>
+</Ref>
+</Destination>
+<Consumer>
+<Automatic>true</Automatic>
+</Consumer>
+<Timeout>30</Timeout>
+<PrepareOnly>false</PrepareOnly>
+<RuntimeScope>NONE</RuntimeScope>
+</ReceiveOperation>
+<ClientCorrelationScheme>
+<Disabled>true</Disabled>
+<OperationInfo type="javax.jms.Message"></OperationInfo>
+<JmsClientMidCid>
+<OperationInfo>
+<Name>msg</Name>
+</OperationInfo>
+</JmsClientMidCid>
+</ClientCorrelationScheme>
+</JmsSendReceiveOperation>
+<onTimeoutNode>abort</onTimeoutNode>
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="2F18A9E129F211E8A95A64C920524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="2F18A9DF29F211E8A95A64C920524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="abort" > 
+
+    </Node>
+
+
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="2F18A9DD29F211E8A95A64C920524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="" > 
+
+    </Node>
+
+
+</VSModel>

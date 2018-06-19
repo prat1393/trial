@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+
+<VSModel name="fasd" version="5">
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="07/27/2017" host="HVDIVD18MIS1496" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="02/07/2018" host="HVDIVD18MIS1939" />
+</meta>
+
+<id>5764229E723611E7B236887220524153</id>
+<Documentation>Put documentation of the VS Model here.</Documentation>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj04LjQuMCAoOC40LjAuMjI3KSZub2Rlcz0tMjA3MzYwOTEzMA==</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+<deletedProps>
+</deletedProps>
+
+      <Companion type="com.itko.lisa.test.WebProxyCompanion" >
+<host>one.proxy.att.com</host>
+<port>8080</port>
+<sslHost>one.proxy.att.com</sslHost>
+<sslPort>8080</sslPort>
+<credential_enc>f5504e2d23a7888253a27e8ef52607d8</credential_enc>
+<preemptiveAuthenticationType></preemptiveAuthenticationType>
+<excludeSimpleHostNames>true</excludeSimpleHostNames>
+      </Companion>
+
+    <Node name="abc" log=""
+          type="com.itko.lisa.ws.rest.RESTNode" 
+          version="3" 
+          uid="65E16514723611E7B236887220524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="end" > 
+
+<url>https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&amp;key=AIzaSyDxEa3asV7eOunKyE-iLVYgtngVE9zVcnc</url>
+<content-type></content-type>
+<data-type>text</data-type>
+<httpMethod>GET</httpMethod>
+<onError>abort</onError>
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="57650D04723611E7B236887220524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="57650D02723611E7B236887220524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="abort" > 
+
+    </Node>
+
+
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="576470C0723611E7B236887220524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="" > 
+
+    </Node>
+
+
+</VSModel>

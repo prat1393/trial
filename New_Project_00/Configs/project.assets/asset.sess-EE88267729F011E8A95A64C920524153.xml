@@ -1,0 +1,15 @@
+<Asset Version="2"><AssetInfo type="javax.jms.Session" hashcode="1373507271"><Url>config://asset.sess-EE88267729F011E8A95A64C920524153</Url>
+<Name>f1session</Name>
+<Description></Description>
+</AssetInfo>
+<QueueSessionFromConnection>
+<Connection>
+<AssetInfo type="javax.jms.Connection" hashcode="101043637"><Url>config://asset.conn-EDA651F329F011E8A95A64C920524153</Url>
+</AssetInfo>
+<Ref>
+</Ref>
+</Connection>
+<AcknowledgeMode>1</AcknowledgeMode>
+<Transacted>false</Transacted>
+</QueueSessionFromConnection>
+</Asset>

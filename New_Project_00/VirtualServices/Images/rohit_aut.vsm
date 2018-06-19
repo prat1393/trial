@@ -1,0 +1,242 @@
+<?xml version="1.0" ?>
+
+<VSModel name="rohit_aut" version="5">
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="06/13/2018" host="HVDIVD18MIS1939" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="06/13/2018" host="HVDIVD18MIS1939" />
+</meta>
+
+<id>F1088E016F2611E8ABA5AC2A20524153</id>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj04LjQuMCAoOC40LjAuMjI3KSZub2Rlcz0tMjEwNTk5NjYyNQ==</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+<deletedProps>
+</deletedProps>
+
+<associatedResources>
+<file type="traffic">{{LISA_RELATIVE_PROJ_ROOT}}/VirtualServices/Images/rohit_aut.xml</file>
+<file type="session">{{LISA_RELATIVE_PROJ_ROOT}}/VirtualServices/VRScenarios/rohit_aut.vr2</file>
+</associatedResources>
+    <Node name="Virtual Java Listener" log=""
+          type="com.itko.lisa.vse.stateful.protocol.java.listen.JavaListenStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Virtual Service Router" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If being efficient" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Most Efficient, branching to VS Image Response Selection</log>
+<then>VS Image Response Selection</then>
+        <executionMode>EFFICIENT</executionMode>
+</CheckResult>
+
+<outputAsObject>true</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+<TargetAgents>VFrameAgent</TargetAgents>
+<TargetClasses>com.att.automation.aop.ControllerAspect$$EnhancerBySpringCGLIB$$c096da33</TargetClasses>
+<TargetClasses>com.att.automation.utility.AutomationUtilityHelper</TargetClasses>
+<TargetClasses>com.att.dbvalidation.properties.DataValidationEnum</TargetClasses>
+<TargetClasses>com.att.swagger.SwaggerConfig$$EnhancerBySpringCGLIB$$fd439ca4$$FastClassBySpringCGLIB$$1b0ae1c5</TargetClasses>
+<TargetClasses>com.att.swagger.SwaggerConfig$$FastClassBySpringCGLIB$$df0f4a2e</TargetClasses>
+<TargetClasses>com.att.dbvalidation.services.WirelessService</TargetClasses>
+<TargetClasses>com.att.dbvalidation.properties.DBConnectionProperties</TargetClasses>
+<TargetClasses>com.att.login.services.UserAccessServiceImpl$$EnhancerBySpringCGLIB$$7a5f7c9a$$FastClassBySpringCGLIB$$1e025bb3</TargetClasses>
+<TargetClasses>com.att.dbvalidation.services.UnifiedService</TargetClasses>
+<TargetClasses>com.att.login.services.UserAccessServiceImpl</TargetClasses>
+<TargetClasses>com.att.automation.controller.admin.AdminController</TargetClasses>
+<TargetClasses>com.att.dbvalidation.dao.ValidationDAOUtility</TargetClasses>
+<TargetClasses>com.att.automation.E2eAutomationWebApplication$$EnhancerBySpringCGLIB$$18d02484</TargetClasses>
+<TargetClasses>com.att.dbvalidation.services.DataValidationCommonServices</TargetClasses>
+<TargetClasses>com.att.login.services.UserAccessService</TargetClasses>
+<TargetClasses>com.att.automation.aop.ControllerAspect</TargetClasses>
+<TargetClasses>com.att.dbvalidation.services.QueryProcessing</TargetClasses>
+<TargetClasses>com.att.user.dao.model.User_$$_jvsta8a_0</TargetClasses>
+<TargetClasses>com.att.automation.controller.dbvalidation.DBValidationController</TargetClasses>
+<TargetClasses>com.att.dbvalidation.services.UverseService</TargetClasses>
+<TargetClasses>com.att.login.services.UserAccessServiceImpl$$EnhancerBySpringCGLIB$$7a5f7c9a</TargetClasses>
+<TargetClasses>com.att.user.dao.UserRepository</TargetClasses>
+<TargetClasses>com.att.login.services.UserAccessServiceImpl$$FastClassBySpringCGLIB$$21799c55</TargetClasses>
+<TargetClasses>com.att.automation.controller.login.E2eAutomationLoginController</TargetClasses>
+<TargetClasses>com.att.login.model.CSPAuthData</TargetClasses>
+<TargetClasses>com.att.dbvalidation.model.DBValidationmodel</TargetClasses>
+<TargetClasses>com.att.admin.services.AdminService2</TargetClasses>
+<TargetClasses>com.att.swagger.SwaggerConfig</TargetClasses>
+<TargetClasses>com.att.swagger.SwaggerConfig$$EnhancerBySpringCGLIB$$fd439ca4</TargetClasses>
+<TargetClasses>com.att.automation.interceptor.E2EAutomationWebInterceptor</TargetClasses>
+<TargetClasses>com.att.automation.E2eAutomationWebApplication</TargetClasses>
+<TargetClasses>com.att.user.dao.model.User</TargetClasses>
+<TargetClasses>com.att.automation.configuration.E2EAutomationStartupRunner</TargetClasses>
+<TargetClasses>com.att.automation.configuration.E2EAutomationWebConfig</TargetClasses>
+<TargetClasses>com.att.automation.configuration.E2EAutomationWebConfig$$EnhancerBySpringCGLIB$$90ae6352</TargetClasses>
+<TargetClasses>com.att.admin.services.AdminService</TargetClasses>
+<TargetClasses>com.att.dbvalidation.services.AdminService_backup</TargetClasses>
+<TargetClasses>com.att.dbvalidation.services.AdminService_latestBackup</TargetClasses>
+    </Node>
+
+
+    <Node name="Virtual Service Router" log=""
+          type="com.itko.lisa.vse.stateful.VSRouterStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="VS Image Response Selection" > 
+
+<onerror>abort</onerror>
+<script>// This script must return either an enum entry from ExecutionMode or&#10;// a string that is the name of an enum entry.  The DYNAMIC entry may&#10;// not be returned.  It will be executed for DYNAMIC execution mode&#10;// only.&#10;import com.itko.lisa.vse.ExecutionMode;&#10;&#10;return ExecutionMode.EFFICIENT;&#10;&#10;&#10;/* other values: &#10;&#9;ExecutionMode.TRACK;&#10;&#9;ExecutionMode.STAND_IN;&#10;&#9;ExecutionMode.LIVE;&#10;&#9;ExecutionMode.FAILOVER;&#10;&#9;ExecutionMode.VALIDATION;&#10;&#9;ExecutionMode.LEARNING;&#10;*/&#10;</script>
+<supportedModes>
+<mode>LEARNING</mode>
+<mode>LIVE</mode>
+<mode>VALIDATION</mode>
+<mode>DYNAMIC</mode>
+<mode>TRACK</mode>
+<mode>EFFICIENT</mode>
+</supportedModes>
+<liveInvocationStep>Virtual Java Live Invocation</liveInvocationStep>
+    </Node>
+
+
+    <Node name="VS Image Response Selection" log=""
+          type="com.itko.lisa.vse.stateful.ConversationalStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Virtual Java Responder" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If validating" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Image Validation, branching to Virtual Java Live Invocation</log>
+<then>Virtual Java Live Invocation</then>
+        <executionMode>VALIDATION</executionMode>
+</CheckResult>
+
+<CheckResult assertTrue="true" name="If learning" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Learning, branching to Virtual Java Live Invocation</log>
+<then>Virtual Java Live Invocation</then>
+        <executionMode>LEARNING</executionMode>
+</CheckResult>
+
+<CheckResult assertTrue="true" name="If tracking" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Transaction Tracking, branching to Virtual Service Tracking</log>
+<then>Virtual Service Tracking</then>
+        <executionMode>TRACK</executionMode>
+</CheckResult>
+
+<vsiSource>{{LISA_RELATIVE_PROJ_ROOT}}/VirtualServices/Images/rohit_aut.vsi</vsiSource>
+<requestPropertyName>lisa.vse.request</requestPropertyName>
+<outputAsObject>true</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="Virtual Java Responder" log=""
+          type="com.itko.lisa.vse.stateful.protocol.java.respond.JavaRespondStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="false" 
+          next="Virtual Java Listener" > 
+
+<responseList>lisa.vse.response</responseList>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="Virtual Service Tracking" log=""
+          type="com.itko.lisa.vse.stateful.VSTrackingStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Virtual Java Responder" > 
+
+<imageResponseProperty>lisa.vse.image.response</imageResponseProperty>
+<liveResponseProperty>lisa.vse.live.response</liveResponseProperty>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="Virtual Java Live Invocation" log=""
+          type="com.itko.lisa.vse.stateful.protocol.java.liveinvocation.JavaLiveInvocationStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Virtual Java Responder" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If validating" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Image Validation, branching to Virtual Service Tracking</log>
+<then>Virtual Service Tracking</then>
+        <executionMode>VALIDATION</executionMode>
+</CheckResult>
+
+<CheckResult assertTrue="true" name="If learning" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Learning, branching to Virtual Service Tracking</log>
+<then>Virtual Service Tracking</then>
+        <executionMode>LEARNING</executionMode>
+</CheckResult>
+
+<outputAsObject>true</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+<requestPropertyName>lisa.vse.request</requestPropertyName>
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="F1088E036F2611E8ABA5AC2A20524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="F1088E056F2611E8ABA5AC2A20524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="abort" log="The test was aborted"
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="F1088E076F2611E8ABA5AC2A20524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+</VSModel>

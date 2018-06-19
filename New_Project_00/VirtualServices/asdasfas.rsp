@@ -1,0 +1,116 @@
+<?xml version="1.0" ?>
+
+
+<!-- TestCase Results Document created by LISA Test Editor -->
+<!-- On: Thu Dec 07 21:06:35 IST 2017 -->
+
+
+<Results name="asdasfas">
+
+
+    <Result node="Raw SOAP Request">
+      <content type="xstream" charset="UTF-8"><![CDATA[<com.itko.lisa.gui.XMLResultsCache>
+  <Sxml>&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;SOAP-ENV:Header&gt; 
+&lt;MessageHeader xmlns=&quot;http://csi.cingular.com/CSI/Namespaces/OrderAndSubscriptionManagementMobility/InfrastructureCommon/Types/Public/MessageHeader.xsd&quot;&gt;
+&lt;TrackingMessageHeader&gt;
+&lt;infrastructureVersion&gt;86&lt;/infrastructureVersion&gt;
+&lt;applicationName&gt;OrderAndSubscriptionManagementMobility&lt;/applicationName&gt;
+&lt;version&gt;206&lt;/version&gt;
+&lt;messageId&gt;OLAM_SL_570002000_149389500317000064_qkv19slm3_2&lt;/messageId&gt;
+&lt;timeToLive&gt;78000&lt;/timeToLive&gt;
+&lt;conversationId&gt;mywireless~CNG-CSI~592b334d-8375-4daf-b0f2-afc0f0375d76&lt;/conversationId&gt;
+&lt;dateTimeStamp&gt;2017-05-19T13:14:10.413Z&lt;/dateTimeStamp&gt;
+&lt;uniqueTransactionId&gt;ServiceGateway458046@q100csg31c1_f4db0753-6422-42fe-857d-4e23bd258a07&lt;/uniqueTransactionId&gt;
+&lt;/TrackingMessageHeader&gt;
+&lt;SecurityMessageHeader&gt;
+&lt;userName&gt;mywireless&lt;/userName&gt;
+&lt;userPassword&gt;mywireless1&lt;/userPassword&gt;
+&lt;/SecurityMessageHeader&gt;
+&lt;SequenceMessageHeader&gt;
+&lt;sequenceNumber&gt;1&lt;/sequenceNumber&gt;
+&lt;totalInSequence&gt;1&lt;/totalInSequence&gt;
+&lt;/SequenceMessageHeader&gt;
+&lt;/MessageHeader&gt;
+&lt;/SOAP-ENV:Header&gt; &lt;SOAP-ENV:Body&gt; &lt;InquireUnifiedCustomerLoginProfileResponse xmlns=&quot;http://csi.cingular.com/CSI/Namespaces/Container/Public/InquireUnifiedCustomerLoginProfileResponse.xsd&quot; xmlns:cdm=&quot;http://csi.att.com/CSI/Namespaces/OrderAndSubscriptionManagementMobility/Types/Public/CommonDataModel.xsd&quot; xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;
+&lt;CustomerLoginProfile&gt;
+&lt;UserIdentityContact&gt;
+&lt;User&gt;
+&lt;memberNumber&gt;554324530&lt;/memberNumber&gt;
+&lt;UserName&gt;
+&lt;cdm:firstName&gt;test&lt;/cdm:firstName&gt;
+&lt;cdm:lastName&gt;test&lt;/cdm:lastName&gt;
+&lt;/UserName&gt;
+&lt;userNickname&gt;SLID&lt;/userNickname&gt;
+&lt;parentChildCode&gt;S&lt;/parentChildCode&gt;
+&lt;parentMemberIdentifier&gt;qay_slid_134158@slid.dum&lt;/parentMemberIdentifier&gt;
+&lt;slidMemberNumber&gt;554324530&lt;/slidMemberNumber&gt;
+&lt;userAccountTypeCode&gt;R&lt;/userAccountTypeCode&gt;
+&lt;birthDate&gt;_4TZ-2p-Ll&lt;/birthDate&gt;
+&lt;userGenderCode&gt;F&lt;/userGenderCode&gt;
+&lt;memberNumberCreationDate&gt;2017-10-18Z&lt;/memberNumberCreationDate&gt;
+&lt;last4SSN&gt;4545&lt;/last4SSN&gt;
+&lt;/User&gt;
+&lt;UserContact&gt;
+&lt;emailAddress&gt;dl-myattdssqanotify@att.com&lt;/emailAddress&gt;
+&lt;emailStatus&gt;V&lt;/emailStatus&gt;
+&lt;emailAddressEstablishedDate&gt;2017-10-18Z&lt;/emailAddressEstablishedDate&gt;
+&lt;emailValidIndicator&gt;Y&lt;/emailValidIndicator&gt;
+&lt;associationIdentifier&gt;C554324530&lt;/associationIdentifier&gt;
+&lt;contactAssociationTUID&gt;554324530&lt;/contactAssociationTUID&gt;
+&lt;contactType&gt;MEMBEREMAIL&lt;/contactType&gt;
+&lt;contactTUID&gt;554324530&lt;/contactTUID&gt;
+&lt;/UserContact&gt;
+&lt;UserIdentity&gt;
+&lt;memberNumber&gt;554324530&lt;/memberNumber&gt;
+&lt;memberIdentifier&gt;qay_slid_134158@slid.dum&lt;/memberIdentifier&gt;
+&lt;memberName&gt;qay_slid_134158&lt;/memberName&gt;
+&lt;identityTypeName&gt;MEMBERID&lt;/identityTypeName&gt;
+&lt;identityPassCode&gt;i**U9JFeOjL7UA_&lt;/identityPassCode&gt;
+&lt;identityProofingZipCode&gt;66062&lt;/identityProofingZipCode&gt;
+&lt;securityQuestion1Code&gt;30&lt;/securityQuestion1Code&gt;
+&lt;securityQuestion2Code&gt;2&lt;/securityQuestion2Code&gt;
+&lt;myATTBrowserLanguage&gt;en&lt;/myATTBrowserLanguage&gt;
+&lt;questionAndAnswerLastUpdatedDateTime&gt;2017-10-18T20:34:47Z&lt;/questionAndAnswerLastUpdatedDateTime&gt;
+&lt;/UserIdentity&gt;
+&lt;/UserIdentityContact&gt;
+&lt;Accounts&gt;
+&lt;memberNumber&gt;554324530&lt;/memberNumber&gt;
+&lt;accountLabel&gt;TITAN&lt;/accountLabel&gt;
+&lt;accountAssociationIdentifier&gt;336011885&lt;/accountAssociationIdentifier&gt;
+&lt;accountServiceCode&gt;33&lt;/accountServiceCode&gt;
+&lt;accountSystemOfRecordCode&gt;6&lt;/accountSystemOfRecordCode&gt;
+&lt;memberLevelStatusCode&gt;0&lt;/memberLevelStatusCode&gt;
+&lt;AccountOwner&gt;
+&lt;cdm:firstName&gt;test&lt;/cdm:firstName&gt;
+&lt;cdm:lastName&gt;test&lt;/cdm:lastName&gt;
+&lt;ownerMemberNumber&gt;554324530&lt;/ownerMemberNumber&gt;
+&lt;/AccountOwner&gt;
+&lt;cpniImpactCode&gt;true&lt;/cpniImpactCode&gt;
+&lt;defaultCPNIIndicator&gt;false&lt;/defaultCPNIIndicator&gt;
+&lt;accountNickname&gt;Account(1)&lt;/accountNickname&gt;
+&lt;accountAssociationCreateTime&gt;2017-10-27Z&lt;/accountAssociationCreateTime&gt;
+&lt;RoleAssociation&gt;
+&lt;cdm:roleID&gt;2&lt;/cdm:roleID&gt;
+&lt;cdm:statusCode&gt;0&lt;/cdm:statusCode&gt;
+&lt;cdm:associationCreateDate&gt;2017-10-27Z&lt;/cdm:associationCreateDate&gt;
+&lt;/RoleAssociation&gt;
+&lt;/Accounts&gt;
+&lt;/CustomerLoginProfile&gt;
+&lt;Response&gt;
+&lt;cdm:code&gt;0&lt;/cdm:code&gt;
+&lt;cdm:description&gt;Success&lt;/cdm:description&gt;
+&lt;/Response&gt;
+&lt;/InquireUnifiedCustomerLoginProfileResponse&gt;&lt;/SOAP-ENV:Body&gt; &lt;/SOAP-ENV:Envelope&gt;</Sxml>
+  <headers>HTTP/1.1 200 OK&#xd;
+Date: Thu, 07 Dec 2017 15:25:59 GMT&#xd;
+Server: Jetty(8.1.17.v20150415)&#xd;
+Content-Type: text/xml;charset=UTF-8&#xd;
+Vary: Accept-Encoding&#xd;
+Connection: close&#xd;
+Transfer-Encoding: chunked&#xd;
+</headers>
+</com.itko.lisa.gui.XMLResultsCache>]]></content>
+    </Result>
+
+
+</Results>

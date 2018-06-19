@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+
+
+<!-- TestCase Results Document created by LISA Test Editor -->
+<!-- On: Thu Jul 27 19:50:09 IST 2017 -->
+
+
+<Results name="sdasd">
+
+
+    <Result node="Raw SOAP Request">
+      <content type="xstream" charset="UTF-8"><![CDATA[<com.itko.lisa.gui.XMLResultsCache>
+  <Sxml>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;
+  &lt;S:Body&gt;
+    &lt;S:Fault xmlns:ns3=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
+      &lt;faultcode&gt;S:Server&lt;/faultcode&gt;
+      &lt;faultstring&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/faultstring&gt;
+      &lt;detail&gt;
+        &lt;ns2:exception xmlns:ns2=&quot;http://jax-ws.dev.java.net/&quot; class=&quot;java.lang.Exception&quot;&gt;
+          &lt;message&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/message&gt;
+          &lt;ns2:stackTrace&gt;
+          &lt;/ns2:stackTrace&gt;
+        &lt;/ns2:exception&gt;
+      &lt;/detail&gt;
+    &lt;/S:Fault&gt;
+  &lt;/S:Body&gt;
+&lt;/S:Envelope&gt;
+
+</Sxml>
+  <headers>HTTP/1.1 200 OK&#xd;
+Server: LISA/Virtual-Environment-Server&#xd;
+Date: Thu, 27 Jul 2017 19:49:00 IST&#xd;
+X-Powered-By: LISA/8.4.0 (8.4.0.227)&#xd;
+Content-Type: text/xml&#xd;
+Content-Length: 750&#xd;
+</headers>
+</com.itko.lisa.gui.XMLResultsCache>]]></content>
+    </Result>
+
+
+</Results>

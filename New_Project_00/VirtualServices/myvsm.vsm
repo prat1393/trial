@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+
+<VSModel name="myvsm" version="5">
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="08/01/2017" host="HVDIVD18MIS1496" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="08/01/2017" host="HVDIVD18MIS1496" />
+</meta>
+
+<id>D63FC52C76DE11E784B6005056A730A7</id>
+<Documentation>Put documentation of the VS Model here.</Documentation>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9LTEmbGlzYXY9OC40LjAgKDguNC4wLjIyNykmbm9kZXM9LTEyMjgwOTMxMzA=</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+    <Node name="Virtual HTTPS Listener 2002" log=""
+          type="com.itko.lisa.vse.stateful.protocol.http.HttpListenStep" 
+          version="1" 
+          uid="DD037D1176DE11E784B6005056A730A7" 
+          think="0" 
+          useFilters="true" 
+          quiet="false" 
+          next="Virtual HTTPS Listener 2002" > 
+
+<outputAsObject>false</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+<listenPort>2002</listenPort>
+<bindAddress></bindAddress>
+<basePath>/</basePath>
+<bindOnly>false</bindOnly>
+<useSSL>false</useSSL>
+<sslClientAuthType>none</sslClientAuthType>
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="D63FC53276DE11E784B6005056A730A7" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="D63FC53076DE11E784B6005056A730A7" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="abort" > 
+
+    </Node>
+
+
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="D63FC52E76DE11E784B6005056A730A7" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="" > 
+
+    </Node>
+
+
+</VSModel>

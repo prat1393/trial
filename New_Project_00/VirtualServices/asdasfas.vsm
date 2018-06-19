@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+
+<VSModel name="asdasfas" version="5">
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="12/07/2017" host="HVDIVD18MIS1939" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="12/07/2017" host="HVDIVD18MIS1939" />
+</meta>
+
+<id>7AF872DFDB6211E7A0084CDA20524153</id>
+<Documentation>Put documentation of the VS Model here.</Documentation>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9LTEmbGlzYXY9OC40LjAgKDguNC4wLjIyNykmbm9kZXM9MjI4MzkwODg2</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+    <Node name="Raw SOAP Request" log=""
+          type="com.itko.lisa.ws.RawSOAPNode" 
+          version="1" 
+          uid="7F8BDE44DB6211E7A0084CDA20524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="end" > 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.xml.FilterXMLXPath">
+        <valueToFilterKey>lisa.Raw SOAP Request.rsp</valueToFilterKey>
+<prop>fasfas</prop>
+<xpathq>/SOAP-ENV:Envelope/SOAP-ENV:Body/:InquireUnifiedCustomerLoginProfileResponse/:CustomerLoginProfile/:UserIdentityContact/:User/:parentMemberIdentifier</xpathq>
+<nsMap0>=http://csi.cingular.com/CSI/Namespaces/Container/Public/InquireUnifiedCustomerLoginProfileResponse.xsd</nsMap0>
+<nsMap1>SOAP-ENV=http://schemas.xmlsoap.org/soap/envelope/</nsMap1>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterParseOutByExpression">
+        <valueToFilterKey>lisa.Raw SOAP Request.rsp</valueToFilterKey>
+<param0></param0>
+<param1>&lt;memberName&gt;</param1>
+<param2>{{asfadg}}</param2>
+<param3>&lt;/memberName&gt;</param3>
+<param4></param4>
+      </Filter>
+
+      <Filter type="com.itko.lisa.dynexec.FilterConvertObjToLastResponse">
+        <valueToFilterKey>fasfas</valueToFilterKey>
+      <toXML>false</toXML>
+      <toPFXML>false</toPFXML>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterSaveResponse">
+        <valueToFilterKey>lisa.Raw SOAP Request.rsp</valueToFilterKey>
+      <prop>dfasf</prop>
+      </Filter>
+
+<url>{{ENDPOINT6}}</url>
+<action></action>
+<soapRequest itko_enc="base64">PFNPQVAtRU5WOkVudmVsb3BlIHhtbG5zOlNPQVAtRU5WPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VudmVsb3BlLyI+DQogICA8U09BUC1FTlY6SGVhZGVyPg0KICAgICAgPG1lczpNZXNzYWdlSGVhZGVyIHhtbG5zOm1lcz0iaHR0cDovL2NzaS5jaW5ndWxhci5jb20vQ1NJL05hbWVzcGFjZXMvT3JkZXJBbmRTdWJzY3JpcHRpb25NYW5hZ2VtZW50TW9iaWxpdHkvSW5mcmFzdHJ1Y3R1cmVDb21tb24vVHlwZXMvUHVibGljL01lc3NhZ2VIZWFkZXIueHNkIj4NCiAgICAgICAgIDxtZXM6VHJhY2tpbmdNZXNzYWdlSGVhZGVyPg0KICAgICAgICAgICAgPG1lczppbmZyYXN0cnVjdHVyZVZlcnNpb24+ODY8L21lczppbmZyYXN0cnVjdHVyZVZlcnNpb24+DQogICAgICAgICAgICA8bWVzOmFwcGxpY2F0aW9uTmFtZT5PcmRlckFuZFN1YnNjcmlwdGlvbk1hbmFnZW1lbnRNb2JpbGl0eTwvbWVzOmFwcGxpY2F0aW9uTmFtZT4NCiAgICAgICAgICAgIDxtZXM6dmVyc2lvbj4yMDY8L21lczp2ZXJzaW9uPg0KICAgICAgICAgICAgPG1lczptZXNzYWdlSWQ+T0xBTV9TTF81NzAwMDIwMDBfMTQ5Mzg5NTAwMzE3MDAwMDY0X3FrdjE5c2xtM18yPC9tZXM6bWVzc2FnZUlkPg0KICAgICAgICAgICAgPG1lczp0aW1lVG9MaXZlPjc4MDAwPC9tZXM6dGltZVRvTGl2ZT4NCiAgICAgICAgICAgIDxtZXM6ZGF0ZVRpbWVTdGFtcD4yMDE3LTA1LTE5VDEzOjE0OjEwLjQxM1o8L21lczpkYXRlVGltZVN0YW1wPg0KICAgICAgICAgICAgPG1lczp1bmlxdWVUcmFuc2FjdGlvbklkPk9MQU1fU0xfNTcwMDAyMDAwXzE0OTM4OTUwMDMxNzAwMDA2NF9xa3YxOXNsbTNfMjwvbWVzOnVuaXF1ZVRyYW5zYWN0aW9uSWQ+DQogICAgICAgICA8L21lczpUcmFja2luZ01lc3NhZ2VIZWFkZXI+DQogICAgICAgICA8bWVzOlNlY3VyaXR5TWVzc2FnZUhlYWRlcj4NCiAgICAgICAgICAgIDxtZXM6dXNlck5hbWU+bXl3aXJlbGVzczwvbWVzOnVzZXJOYW1lPg0KICAgICAgICAgICAgPG1lczp1c2VyUGFzc3dvcmQ+bXl3aXJlbGVzczE8L21lczp1c2VyUGFzc3dvcmQ+DQogICAgICAgICA8L21lczpTZWN1cml0eU1lc3NhZ2VIZWFkZXI+DQogICAgICAgICA8bWVzOlNlcXVlbmNlTWVzc2FnZUhlYWRlcj4NCiAgICAgICAgICAgIDxtZXM6c2VxdWVuY2VOdW1iZXI+MTwvbWVzOnNlcXVlbmNlTnVtYmVyPg0KICAgICAgICAgICAgPG1lczp0b3RhbEluU2VxdWVuY2U+MTwvbWVzOnRvdGFsSW5TZXF1ZW5jZT4NCiAgICAgICAgIDwvbWVzOlNlcXVlbmNlTWVzc2FnZUhlYWRlcj4NCiAgICAgIDwvbWVzOk1lc3NhZ2VIZWFkZXI+DQogICA8L1NPQVAtRU5WOkhlYWRlcj4NCiAgICAgPFNPQVAtRU5WOkJvZHk+DQogICAgICA8aW5xOklucXVpcmVVbmlmaWVkQ3VzdG9tZXJMb2dpblByb2ZpbGVSZXF1ZXN0IHhtbG5zOmlucT0iaHR0cDovL2NzaS5jaW5ndWxhci5jb20vQ1NJL05hbWVzcGFjZXMvQ29udGFpbmVyL1B1YmxpYy9JbnF1aXJlVW5pZmllZEN1c3RvbWVyTG9naW5Qcm9maWxlUmVxdWVzdC54c2QiPg0KICAgICAgICAgPGlucTpBY2NvdW50QW5kU2VydmljZUlkZW50aWZpZXI+DQogICAgICAgICAgICA8aW5xOnV2ZXJzZUJpbGxpbmdBY2NvdW50TnVtYmVyPjMzNjAxMTg4NTwvaW5xOnV2ZXJzZUJpbGxpbmdBY2NvdW50TnVtYmVyPg0KICAgICAgICAgPC9pbnE6QWNjb3VudEFuZFNlcnZpY2VJZGVudGlmaWVyPg0KICAgICAgICAgPGlucTpBY2NvdW50QW5kU2VydmljZU1vZGU+DQogICAgICAgICAgICA8aW5xOlVzZXJBY2NvdW50U2VydmljZURldGFpbD4NCiAgICAgICAgICAgICAgIDxpbnE6bW9kZT5VU0VSX0lERU5USVRZX0NPTlRBQ1RfQUNDT1VOVF9TRVJWSUNFX1NVTU1BUllfUk9MRV9ERVRBSUw8L2lucTptb2RlPg0KICAgICAgICAgICAgICAgPGlucTpBY2NvdW50U2VydmljZUNvZGU+DQogICAgICAgICAgICAgICAgICA8aW5xOnV2ZXJzZUFjY291bnQ+VVZFUlNFX0NPUkVfQklMTEVfQUREUjwvaW5xOnV2ZXJzZUFjY291bnQ+DQogICAgICAgICAgICAgICAgICA8aW5xOnV2ZXJzZUFjY291bnQ+VVZFUlNFX0NPUkVfQ09NUE9ORU5UUzwvaW5xOnV2ZXJzZUFjY291bnQ+DQogICAgICAgICAgICAgICAgICA8aW5xOnV2ZXJzZUFjY291bnQ+VVZFUlNFX0NPUkVfSVBUVl9HRU5SRV9QQUNLUzwvaW5xOnV2ZXJzZUFjY291bnQ+DQogICAgICAgICAgICAgICAgICA8aW5xOnV2ZXJzZUFjY291bnQ+VVZFUlNFX0NPUkVfSVBUVl9TVEI8L2lucTp1dmVyc2VBY2NvdW50Pg0KICAgICAgICAgICAgICAgICAgPGlucTp1dmVyc2VBY2NvdW50PlVWRVJTRV9DT1JFX05PVElGUzwvaW5xOnV2ZXJzZUFjY291bnQ+DQogICAgICAgICAgICAgICAgICA8aW5xOnV2ZXJzZUFjY291bnQ+VVZFUlNFX0NPUkVfUFJPRklMRTwvaW5xOnV2ZXJzZUFjY291bnQ+DQogICAgICAgICAgICAgICAgICA8aW5xOnV2ZXJzZUFjY291bnQ+VVZFUlNFX0NPUkVfVVZFUlNFX1NFUlZJQ0VfQUREUl9NSVNDPC9pbnE6dXZlcnNlQWNjb3VudD4NCiAgICAgICAgICAgICAgICAgIDxpbnE6dXZlcnNlQWNjb3VudD5VVkVSU0VfQ09SRV9WT0lQX1ROPC9pbnE6dXZlcnNlQWNjb3VudD4NCiAgICAgICAgICAgICAgIDwvaW5xOkFjY291bnRTZXJ2aWNlQ29kZT4NCiAgICAgICAgICAgIDwvaW5xOlVzZXJBY2NvdW50U2VydmljZURldGFpbD4NCiAgICAgICAgIDwvaW5xOkFjY291bnRBbmRTZXJ2aWNlTW9kZT4NCiAgICAgIDwvaW5xOklucXVpcmVVbmlmaWVkQ3VzdG9tZXJMb2dpblByb2ZpbGVSZXF1ZXN0Pg0KICAgPC9TT0FQLUVOVjpCb2R5Pg0KDQoNCjwvU09BUC1FTlY6RW52ZWxvcGU+</soapRequest>
+<contentType>text/xml; charset=UTF-8</contentType>
+<onError>abort</onError>
+<discardResponse>false</discardResponse>
+<customHTTPHeaderInfo>
+</customHTTPHeaderInfo>
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="7AF872E5DB6211E7A0084CDA20524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="7AF872E3DB6211E7A0084CDA20524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="abort" > 
+
+    </Node>
+
+
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="7AF872E1DB6211E7A0084CDA20524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="" > 
+
+    </Node>
+
+
+</VSModel>

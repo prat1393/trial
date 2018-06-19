@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+
+<VSModel name="json2" version="5">
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="03/23/2018" host="HVDIVD18MIS1939" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="03/23/2018" host="HVDIVD18MIS1939" />
+</meta>
+
+<id>3107DC2C2EBF11E8BF1A1E4720524153</id>
+<Documentation>Put documentation of the VS Model here.</Documentation>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9LTEmbGlzYXY9OC40LjAgKDguNC4wLjIyNykmbm9kZXM9LTE2NTYzNDc2MDQ=</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+    <Node name="Execute script (JSR-223)" log=""
+          type="com.itko.lisa.test.UserScriptNode" 
+          version="1" 
+          uid="60CF9C8A2EBF11E8BF1A1E4720524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="end" > 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.test.FilterSavePropToFile">
+        <valueToFilterKey>caount2</valueToFilterKey>
+      <file>H:/dme2/jsonoutput2.txt</file>
+      <append>false</append>
+      </Filter>
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assertion name: Any Exception Then Fail checks for: true is of type: Assert on Invocation Exception.</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<onerror>abort</onerror>
+<language>BeanShell</language>
+<copyProps>TestExecProps</copyProps>
+<script>import java.io.BufferedReader;&#13;&#10;import java.io.FileReader;&#13;&#10;&#13;&#10;String b1=&quot;&quot;;&#13;&#10;&#13;&#10;FileReader file = new FileReader(&quot;H://dme2/jsonoutput.txt&quot;);&#13;&#10;BufferedReader br = new BufferedReader(file);&#13;&#10;String l1=br.readLine();&#13;&#10;while(l1!=null)&#13;&#10;{&#13;&#10;b1=b1+l1;&#13;&#10;l1=br.readLine();&#13;&#10;}&#13;&#10;&#13;&#10;testExec.setStateValue(&quot;count&quot;,b1);&#13;&#10;file.close();&#13;&#10;br.close();&#13;&#10;String ag=b1.replaceAll(&quot;\&quot;&quot;,&quot;&amp;quot;&quot;);&#13;&#10;testExec.setStateValue(&quot;caount2&quot;,ag);</script>
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="310878722EBF11E8BF1A1E4720524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="310878702EBF11E8BF1A1E4720524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="abort" > 
+
+    </Node>
+
+
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="3108786E2EBF11E8BF1A1E4720524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="" > 
+
+    </Node>
+
+
+</VSModel>

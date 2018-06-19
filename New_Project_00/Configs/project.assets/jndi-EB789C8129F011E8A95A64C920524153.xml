@@ -1,0 +1,23 @@
+<Asset Version="2"><AssetInfo type="javax.naming.Context" hashcode="1311886029"><Url>config://jndi-EB789C8129F011E8A95A64C920524153</Url>
+<Name>activecf</Name>
+<Description></Description>
+</AssetInfo>
+<InitialContext>
+<Factory>
+<PayloadInfo type="java.lang.String"></PayloadInfo>
+<String>
+</String>
+</Factory>
+<UrlPackageprefixes>
+<PayloadInfo type="java.lang.String"></PayloadInfo>
+<String>
+</String>
+</UrlPackageprefixes>
+<Url>localhost</Url>
+<Username>
+<PayloadInfo type="java.lang.String"></PayloadInfo>
+<String>
+</String>
+</Username>
+</InitialContext>
+</Asset>
