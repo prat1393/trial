@@ -1,0 +1,40 @@
+// this is an example data set which is able to save state across
+// executions within the same test. This is a common use case for 
+// custom data sets that read proprietary file formats, for example.
+
+// all it really does is count from 1 to 10 
+
+// you could save the current file position or cursor data 
+// or the last primary key value used..
+
+
+import com.itko.lisa.vse.SharedModelMap
+import java.util.HashMap
+
+// we can save the 'state' of the dataset across calls using SharedModelMap
+// or PersistentModelMap. Both of them save and retrieve String values
+// only so we need to do some data conversion...
+
+// is there alread a value from a previous call to the dataset?
+String currentValue = SharedModelMap.get("myNamespace", "myValue")
+testExec.setStatevalue("apa",currentValue);
+if (currentValue == null) currentValue = "0";
+
+// increment
+String newValue = String.valueOf(currentValue.toInteger() + 1)
+
+
+// save
+SharedModelMap.put("myNamespace", "myValue", newValue)
+
+// return
+
+if (newValue.toInteger() >= 10) {
+    _logger.info("Dataset has reached the end. clearing saved state and returning null")
+    SharedModelMap.remove("myNamespace", "myValue")
+    return null // null means 'end of data set reached'
+}
+
+map = new HashMap()
+map.put("myValue", newValue);
+return map;

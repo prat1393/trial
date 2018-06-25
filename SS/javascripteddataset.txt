@@ -1,0 +1,45 @@
+// javascript data set
+
+// this is an example data set which is able to save state across
+// executions within the same test. This is a common use case for 
+// custom data sets that read proprietary file formats, for example.
+
+// all it really does is count from 1 to 10 
+
+// you could save the current file position or cursor data 
+// or the last primary key value used..
+
+
+// we can save the 'state' of the dataset across calls using SharedModelMap
+// or PersistentModelMap. Both of them save and retrieve String values
+// only so we need to do some data conversion...
+
+// is there alread a value from a previous call to the dataset?
+
+var currentValue = com.itko.lisa.vse.SharedModelMap.get("myNamespace", "myValue")
+if (currentValue === null) currentValue = "0"
+
+// increment
+var newValue = (Number(currentValue) + 1).toString()
+
+
+// save
+com.itko.lisa.vse.SharedModelMap.put("myNamespace", "myValue", newValue)
+
+// return
+
+var map = null
+if (Number(newValue) >= 10) {
+    _logger.info("Dataset has reached the end. clearing saved state and returning null")
+    com.itko.lisa.vse.SharedModelMap.remove("myNamespace", "myValue")    
+} else {
+    map = new java.util.HashMap()
+    map.put("myValue", newValue)
+    map.put("someOtherValue", "cheese")
+}
+
+// javascript doesn't have explicit return so implicitly 
+// return the last evaluated expression, in this case 
+// our data map which contains two values....
+
+map
