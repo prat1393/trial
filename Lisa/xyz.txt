@@ -1,0 +1,25 @@
+%beanshell%
+/*
+// You can use %beanshell%, %groovy% or %javascript% or some other installed JSR-223 scripting language
+// This example is for beanshell
+import com.itko.lisa.vse.stateful.protocol.ws.WSSOAPProtocolHandler;
+import com.itko.util.ParameterList;
+
+WSSOAPProtocolHandler wd=new WSSOAPProtocolHandler();
+
+wd.updateRequest(lisa_vse_request);
+
+String operation = lisa_vse_request.getOperation().toString();
+testExec.setStateValue("op",operation);
+
+if(operation.equals("depositMoney"))
+{
+ParameterList args = lisa_vse_request.getArguments();
+testExec.setStateValue("dep",args.get("amount").toDouble());
+}
+
+if(operation.equals("withdrawMoney")or operation.equals("transferMoney") )
+{
+ParameterList args = lisa_vse_request.getArguments();
+testExec.setStateValue("with",args.get("amount").toDouble());
+}

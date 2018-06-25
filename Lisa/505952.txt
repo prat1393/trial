@@ -1,0 +1,159 @@
+2018-05-22 08:12:59,641 DEBUG com.att.myworld.sl.server.impl.csi.processor.CsiInquireUnifiedServiceAccountBaseProcessor pool-27-thread-20  - OLAM_LGN_870561225_152695347663000002_cef04Managed1_6::LYyIZdYBL9xi22397j2690PmjD6v1vddQi8CL3MhOM8TEz3Oy3cF!1687517727::qkv56amm1#@_qay_slid_3652@slid.dum::<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+<SOAP-ENV:Header>
+<mes:MessageHeader xmlns:mes="http://csi.cingular.com/CSI/Namespaces/UnifiedServices/InfrastructureCommon/Types/Public/MessageHeader.xsd"><mes:TrackingMessageHeader><mes:infrastructureVersion>86</mes:infrastructureVersion><mes:applicationName>UnifiedServices</mes:applicationName><mes:version>224</mes:version><mes:messageId>OLAM_LGN_870561225_152695347663000002_cef04Managed1_6</mes:messageId><mes:timeToLive>58000</mes:timeToLive><mes:dateTimeStamp>2018-05-22T15:12:59.640Z</mes:dateTimeStamp><mes:uniqueTransactionId>OLAM_LGN_870561225_152695347663000002_cef04Managed1_6</mes:uniqueTransactionId></mes:TrackingMessageHeader><mes:SecurityMessageHeader><mes:userName>mywireless</mes:userName><mes:userPassword>mywireless1</mes:userPassword></mes:SecurityMessageHeader><mes:SequenceMessageHeader><mes:sequenceNumber>1</mes:sequenceNumber><mes:totalInSequence>1</mes:totalInSequence></mes:SequenceMessageHeader></mes:MessageHeader>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+<inq:InquireUnifiedServiceAccountRequest xmlns:inq="http://csi.cingular.com/CSI/Namespaces/Container/Public/InquireUnifiedServiceAccountRequest.xsd"><inq:OriginatorDetails><com:systemIdentifier xmlns:com="http://csi.att.com/CSI/Namespaces/UnifiedServices/Types/Public/CommonDataModel.xsd">GENERIC</com:systemIdentifier><com:originatorSystemName xmlns:com="http://csi.att.com/CSI/Namespaces/UnifiedServices/Types/Public/CommonDataModel.xsd">OLAM</com:originatorSystemName></inq:OriginatorDetails><inq:organizationId>100072603</inq:organizationId></inq:InquireUnifiedServiceAccountRequest>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+2018-05-22 08:12:59,641 DEBUG com.att.myworld.sl.server.impl.csi.processor.CsiBaseProcessor pool-27-thread-4  - OLAM_LGN_870561225_152695347663000002_cef04Managed1_5::LYyIZdYBL9xi22397j2690PmjD6v1vddQi8CL3MhOM8TEz3Oy3cF!1687517727::qkv56amm1#@_qay_slid_3652@slid.dum::<?xml version="1.0" encoding="utf-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+<SOAP-ENV:Header>
+<mes:MessageHeader xmlns:mes="http://csi.cingular.com/CSI/Namespaces/OrderAndSubscriptionManagementMobility/InfrastructureCommon/Types/Public/MessageHeader.xsd"><mes:TrackingMessageHeader><mes:infrastructureVersion>86</mes:infrastructureVersion><mes:applicationName>OrderAndSubscriptionManagementMobility</mes:applicationName><mes:version>232</mes:version><mes:messageId>OLAM_LGN_870561225_152695347663000002_cef04Managed1_5</mes:messageId><mes:timeToLive>178000</mes:timeToLive><mes:dateTimeStamp>2018-05-22T15:12:59.640Z</mes:dateTimeStamp><mes:uniqueTransactionId>OLAM_LGN_870561225_152695347663000002_cef04Managed1_5</mes:uniqueTransactionId></mes:TrackingMessageHeader><mes:SecurityMessageHeader><mes:userName>mywireless</mes:userName><mes:userPassword>mywireless1</mes:userPassword></mes:SecurityMessageHeader><mes:SequenceMessageHeader><mes:sequenceNumber>1</mes:sequenceNumber><mes:totalInSequence>1</mes:totalInSequence></mes:SequenceMessageHeader></mes:MessageHeader>
+</SOAP-ENV:Header>
+<SOAP-ENV:Body>
+<inq:InquireUnifiedCustomerLoginProfileRequest xmlns:inq="http://csi.cingular.com/CSI/Namespaces/Container/Public/InquireUnifiedCustomerLoginProfileRequest.xsd"><inq:AccountAndServiceIdentifier><inq:memberIdentifier>qay_slid_3652@slid.dum</inq:memberIdentifier></inq:AccountAndServiceIdentifier><inq:AccountAndServiceMode><inq:UserAccountServiceDetail><inq:mode>ACCOUNT_SERVICE_DETAIL</inq:mode><inq:AccountServiceCode><inq:uverseAccount>UVERSE_CORE_BILLE_ADDR</inq:uverseAccount><inq:uverseAccount>UVERSE_CORE_COMPONENTS</inq:uverseAccount><inq:uverseAccount>UVERSE_CORE_IPTV_GENRE_PACKS</inq:uverseAccount><inq:uverseAccount>UVERSE_CORE_IPTV_STB</inq:uverseAccount><inq:uverseAccount>UVERSE_CORE_NOTIFS</inq:uverseAccount><inq:uverseAccount>UVERSE_CORE_PROFILE</inq:uverseAccount><inq:uverseAccount>UVERSE_CORE_UVERSE_SERVICE_ADDR_MISC</inq:uverseAccount><inq:uverseAccount>UVERSE_CORE_VOIP_TN</inq:uverseAccount><inq:titanAccount>TITAN_CORE_BILLE_ADDR</inq:titanAccount><inq:titanAccount>TITAN_CORE_COMPONENTS</inq:titanAccount><inq:titanAccount>TITAN_CORE_IPTV_GENRE_PACKS</inq:titanAccount><inq:titanAccount>TITAN_CORE_IPTV_STB</inq:titanAccount><inq:titanAccount>TITAN_CORE_NOTIFS</inq:titanAccount><inq:titanAccount>TITAN_CORE_PROFILE</inq:titanAccount><inq:titanAccount>TITAN_CORE_TITAN_SERVICE_ADDR_MISC</inq:titanAccount><inq:titanAccount>TITAN_CORE_VOIP_TN</inq:titanAccount><inq:serviceCode>DSL_SERVICE</inq:serviceCode><inq:serviceCode>ATTADDRESSBOOK_SERVICE</inq:serviceCode><inq:serviceCode>DIALUP_SERVICE</inq:serviceCode><inq:serviceCode>HIGHSPEEDINTERNETACCESS_SERVICE</inq:serviceCode><inq:serviceCode>HOMEENTERTAINMENT_SERVICE</inq:serviceCode><inq:serviceCode>INTERNETPROTOCOLTELEVISION_SERVICE</inq:serviceCode><inq:serviceCode>INTERNETSECURITYSUITE_SERVICE</inq:serviceCode><inq:serviceCode>ISDN2_SERVICE</inq:serviceCode><inq:serviceCode>ISDN_SERVICE</inq:serviceCode><inq:serviceCode>PORTAL_SERVICE</inq:serviceCode><inq:serviceCode>SHAREDWEBHOSTING_SERVICE</inq:serviceCode><inq:serviceCode>VOICEOVERINTERNETPROTOCOL_SERVICE</inq:serviceCode><inq:serviceCode>WIFI_SERVICE</inq:serviceCode><inq:serviceCode>YELLOWPAGE_SERVICE</inq:serviceCode><inq:serviceCode>MAINCTN_SERVICE</inq:serviceCode><inq:serviceCode>LOCKER</inq:serviceCode><inq:genericServiceCode>DIRECTVNOW</inq:genericServiceCode><inq:genericServiceCode>ACNS</inq:genericServiceCode><inq:genericServiceCode>WATCHTV</inq:genericServiceCode><inq:genericServiceCode>TESTDYN1</inq:genericServiceCode><inq:genericServiceCode>TESTDYN2</inq:genericServiceCode><inq:genericServiceCode>TESTDYN3</inq:genericServiceCode><inq:genericServiceCode>TESTDYN4</inq:genericServiceCode></inq:AccountServiceCode></inq:UserAccountServiceDetail></inq:AccountAndServiceMode><inq:fraudDetailsIndicator>true</inq:fraudDetailsIndicator></inq:InquireUnifiedCustomerLoginProfileRequest>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+2018-05-22 08:12:59,735 DEBUG com.att.myworld.sl.server.impl.csi.processor.CsiBaseProcessor pool-27-thread-4  - OLAM_LGN_870561225_152695347663000002_cef04Managed1_5::LYyIZdYBL9xi22397j2690PmjD6v1vddQi8CL3MhOM8TEz3Oy3cF!1687517727::qkv56amm1#@_qay_slid_3652@slid.dum::CSI Conversation Id: mywireless~CNG-CSI~8cde1878-d67d-46a7-988d-411a0d074a6d
+2018-05-22 08:12:59,738 DEBUG com.att.myworld.sl.server.impl.csi.processor.CsiBaseProcessor pool-27-thread-4  - OLAM_LGN_870561225_152695347663000002_cef04Managed1_5::LYyIZdYBL9xi22397j2690PmjD6v1vddQi8CL3MhOM8TEz3Oy3cF!1687517727::qkv56amm1#@_qay_slid_3652@slid.dum::CSI Response: <?xml version="1.0" encoding="UTF-8"?><InquireUnifiedCustomerLoginProfileResponse xmlns="http://csi.cingular.com/CSI/Namespaces/Container/Public/InquireUnifiedCustomerLoginProfileResponse.xsd" xmlns:cdm="http://csi.att.com/CSI/Namespaces/OrderAndSubscriptionManagementMobility/Types/Public/CommonDataModel.xsd">
+            <CustomerLoginProfile>
+                <UserIdentityContact>
+                    <User>
+                        <memberNumber>100072608</memberNumber>
+                        <UserName>
+                            <cdm:firstName>jeannette</cdm:firstName>
+                            <cdm:lastName>bartelt</cdm:lastName>
+                        </UserName>
+                        <parentChildCode>S</parentChildCode>
+                        <parentMemberIdentifier>qay_slid_3652@slid.dum</parentMemberIdentifier>
+                        <slidMemberNumber>100072608</slidMemberNumber>
+                        <userAccountTypeCode>R</userAccountTypeCode>
+                        <memberNumberCreationDate>2017-09-27Z</memberNumberCreationDate>
+                        <autogeneratedIDIndicator>true</autogeneratedIDIndicator>
+                        <accessIDStatusIndicator>true</accessIDStatusIndicator>
+                    </User>
+                    <UserContact>
+                        <emailAddress>myatt.testing@att.com</emailAddress>
+                        <emailStatus>V</emailStatus>
+                        <emailAddressEstablishedDate>2017-09-27Z</emailAddressEstablishedDate>
+                        <emailValidIndicator>Y</emailValidIndicator>
+                        <associationIdentifier>C100072608</associationIdentifier>
+                        <contactAssociationTUID>100072608</contactAssociationTUID>
+                        <contactType>MEMBEREMAIL</contactType>
+                        <contactTUID>100072608</contactTUID>
+                    </UserContact>
+                    <UserIdentity>
+                        <memberNumber>100072608</memberNumber>
+                        <memberIdentifier>qay_slid_3652@slid.dum</memberIdentifier>
+                        <memberName>jeannettebartelt3</memberName>
+                        <identityTypeName>MEMBERID</identityTypeName>
+                    </UserIdentity>
+                </UserIdentityContact>
+                <Accounts>
+                    <memberNumber>100072608</memberNumber>
+                    <accountLabel>TITAN</accountLabel>
+                    <accountAssociationIdentifier>100072603</accountAssociationIdentifier>
+                    <accountServiceCode>33</accountServiceCode>
+                    <accountSystemOfRecordCode>6</accountSystemOfRecordCode>
+                    <memberLevelStatusCode>0</memberLevelStatusCode>
+                    <AccountOwner>
+                        <cdm:firstName>jeannette</cdm:firstName>
+                        <cdm:lastName>bartelt</cdm:lastName>
+                        <ownerMemberNumber>100072608</ownerMemberNumber>
+                    </AccountOwner>
+                    <cpniImpactCode>true</cpniImpactCode>
+                    <defaultCPNIEstablishedDate>2018-04-22</defaultCPNIEstablishedDate>
+                    <defaultCPNIIndicator>true</defaultCPNIIndicator>
+                    <accountNickname>Account(1)</accountNickname>
+                    <accountAssociationCreateTime>2017-09-27Z</accountAssociationCreateTime>
+                    <RoleAssociation>
+                        <cdm:roleID>2</cdm:roleID>
+                        <cdm:statusCode>0</cdm:statusCode>
+                        <cdm:associationCreateDate>2017-09-27Z</cdm:associationCreateDate>
+                    </RoleAssociation>
+                    <Account>
+                        <TitanAccount>
+                            <accountNumber>100072603</accountNumber>
+                            <accountIdentifier>100072603</accountIdentifier>
+                            <AccountType>
+                                <cdm:accountType>R</cdm:accountType>
+                                <cdm:accountSubType>R</cdm:accountSubType>
+                            </AccountType>
+                            <accountStatus>A</accountStatus>
+                            <legalEntityName>JTT00</legalEntityName>
+                            <ServiceAddress>
+                                <cdm:Attention>Jeannette Bartelt</cdm:Attention>
+                                <cdm:AddressLine1>Jeannette Bartelt</cdm:AddressLine1>
+                                <cdm:AddressLine2>6224 GRANT WEST ALLIS WI 49394</cdm:AddressLine2>
+                                <cdm:city>WEST ALLIS</cdm:city>
+                                <cdm:state>WI</cdm:state>
+                                <cdm:Zip>
+                                    <cdm:zipCode>49394</cdm:zipCode>
+                                </cdm:Zip>
+                            </ServiceAddress>
+                            <billingFullName>JEANNETTE Bartelt</billingFullName>
+                            <billingCycle>1</billingCycle>
+                            <standardizedCreditClassCode>L</standardizedCreditClassCode>
+                            <BillingRegion>
+                                <divisionId>V</divisionId>
+                                <revenueAccountOffice>AP0</revenueAccountOffice>
+                                <regionId>V</regionId>
+                            </BillingRegion>
+                            <BillingAddress>
+                                <cdm:AddressLine1>6224 W GRANT ST</cdm:AddressLine1>
+                                <cdm:city>WEST ALLIS</cdm:city>
+                                <cdm:state>WI</cdm:state>
+                                <cdm:Zip>
+                                    <cdm:zipCode>49394</cdm:zipCode>
+                                    <cdm:zipCodeExtension>1444</cdm:zipCodeExtension>
+                                </cdm:Zip>
+                            </BillingAddress>
+                            <BillFormatDetails>
+                                <billOptionDate>2018-04-21</billOptionDate>
+                                <currentBillOption>F</currentBillOption>
+                                <nextBillOption>N</nextBillOption>
+                            </BillFormatDetails>
+                            <billPreferenceFormatCode>U</billPreferenceFormatCode>
+                            <CombinedBill>
+                                <ban/>
+                                <indicator>false</indicator>
+                            </CombinedBill>
+                            <vdnasbServiceIndicator>false</vdnasbServiceIndicator>
+                            <affiliateTypeCode>X</affiliateTypeCode>
+                            <PayBillReminderNotificationDetails>
+                                <cdm:type>PAYBILL</cdm:type>
+                                <cdm:method>EMAIL</cdm:method>
+                            </PayBillReminderNotificationDetails>
+                           
+                            <Components>
+                                <VideoBasicPackage>
+                                    <packageName>FamilyDigBulk</packageName>
+                                    <enableHighDefinitionIndicator>false</enableHighDefinitionIndicator>
+                                    <selectedDVRTier>DVROn</selectedDVRTier>
+                                    <componentCode>ATTDTV</componentCode>
+                                </VideoBasicPackage>
+                            </Components>                              
+                            <Components>
+                                <directTVCombinedBillIndicator>true</directTVCombinedBillIndicator>
+                            </Components>
+                            <dtvConversionCode>New_DTV</dtvConversionCode>
+                            <valueSegmentationTier>Tier 3 - Gold</valueSegmentationTier>
+                            <highProfitabilityIndicator>FALSE</highProfitabilityIndicator>
+                            <thirdPartyPartnerCode>CEN</thirdPartyPartnerCode>
+<!--Available values : VZN,CTL--> 
+                            <thirdPartyPartnerName>Century Link</thirdPartyPartnerName>
+<!--Available values : VZN-Verizon ,CTL-Century Link--> 
+                            <jointBillType>C</jointBillType>
+                        </TitanAccount>
+                    </Account>
+                </Accounts>
+            </CustomerLoginProfile>
+            <Response>
+                <cdm:code>0</cdm:code>
+                <cdm:description>Success</cdm:description>
+            </Response>
+        </InquireUnifiedCustomerLoginProfileResponse>

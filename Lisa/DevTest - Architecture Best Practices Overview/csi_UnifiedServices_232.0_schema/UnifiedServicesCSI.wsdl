@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =========================================================================
+
+                         AT&T Proprietary (Internal Use Only)                                           
+
+  Not for use or disclosure outside the AT&T companies except under written agreement
+
+  (c) 2007 AT&T Intellectual Property. All rights reserved. AT&T and
+
+        the AT&T logo are trademarks of AT&T Intellectual Property.
+
+======================================================================= -->
+<wsdl:definitions xmlns:mhd='http://csi.cingular.com/CSI/Namespaces/UnifiedServices/InfrastructureCommon/Types/Public/MessageHeader.xsd' xmlns:n1='http://csi.cingular.com/CSI/Namespaces/Container/Public/InquireUnifiedServiceProductDetailsResponse.xsd' xmlns:n0='http://csi.cingular.com/CSI/Namespaces/Container/Public/InquireUnifiedServiceProductDetailsRequest.xsd' targetNamespace='http://csi.cingular.com/CSI/Namespaces/UnifiedServices/232.0/wsdl/UnifiedServicesCSI.wsdl' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:sfd='http://csi.cingular.com/CSI/Namespaces/UnifiedServices/InfrastructureCommon/Types/Public/SoapFaultDetails.xsd' xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/' xmlns:tns='http://csi.cingular.com/CSI/Namespaces/UnifiedServices/232.0/wsdl/UnifiedServicesCSI.wsdl' xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'>
+  <wsdl:types>
+    <xs:schema targetNamespace='http://csi.cingular.com/CSI/Namespaces/UnifiedServices/InfrastructureCommon/Types/Public/MessageHeader.xsd' elementFormDefault='qualified'>
+      <xs:include schemaLocation='MessageHeader-CDM.xsd' />
+    </xs:schema>
+    <xs:schema targetNamespace='http://csi.cingular.com/CSI/Namespaces/UnifiedServices/InfrastructureCommon/Types/Public/SoapFaultDetails.xsd' elementFormDefault='qualified'>
+      <xs:include schemaLocation='SoapFaultDetails-CDM.xsd' />
+    </xs:schema>
+    <xs:schema targetNamespace='http://csi.cingular.com/CSI/Namespaces/Container/Public/InquireUnifiedServiceProductDetailsRequest.xsd' elementFormDefault='qualified'>
+      <xs:include schemaLocation='InquireUnifiedServiceProductDetailsRequest.xsd' />
+    </xs:schema>
+    <xs:schema targetNamespace='http://csi.cingular.com/CSI/Namespaces/Container/Public/InquireUnifiedServiceProductDetailsResponse.xsd' elementFormDefault='qualified'>
+      <xs:include schemaLocation='InquireUnifiedServiceProductDetailsResponse.xsd' />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name='CSIApplicationException'>
+    <wsdl:part name='fault' element='sfd:CSIApplicationException' />
+  </wsdl:message>
+  <wsdl:message name='InquireUnifiedServiceProductDetailsRequest'>
+    <wsdl:part name='MessageHeader' element='mhd:MessageHeader' />
+    <wsdl:part name='InquireUnifiedServiceProductDetailsRequest' element='n0:InquireUnifiedServiceProductDetailsRequest' />
+  </wsdl:message>
+  <wsdl:message name='InquireUnifiedServiceProductDetailsResponse'>
+    <wsdl:part name='MessageHeader' element='mhd:MessageHeader' />
+    <wsdl:part name='InquireUnifiedServiceProductDetailsResponse' element='n1:InquireUnifiedServiceProductDetailsResponse' />
+  </wsdl:message>
+  <wsdl:portType name='InquireUnifiedServiceProductDetailsPortType'>
+    <wsdl:operation name='InquireUnifiedServiceProductDetails'>
+      <wsdl:input message='tns:InquireUnifiedServiceProductDetailsRequest' />
+      <wsdl:output message='tns:InquireUnifiedServiceProductDetailsResponse' />
+      <wsdl:fault name='fault' message='tns:CSIApplicationException' />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name='InquireUnifiedServiceProductDetailsSoapHttpBinding' type='tns:InquireUnifiedServiceProductDetailsPortType'>
+    <soap:binding style='document' transport='http://schemas.xmlsoap.org/soap/http' />
+    <wsdl:operation name='InquireUnifiedServiceProductDetails'>
+      <soap:operation soapAction='' style='document' />
+      <wsdl:input>
+        <soap:header message='tns:InquireUnifiedServiceProductDetailsRequest' part='MessageHeader' use='literal' />
+        <soap:body parts='InquireUnifiedServiceProductDetailsRequest' use='literal' />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:header message='tns:InquireUnifiedServiceProductDetailsResponse' part='MessageHeader' use='literal' />
+        <soap:body parts='InquireUnifiedServiceProductDetailsResponse' use='literal' />
+      </wsdl:output>
+      <wsdl:fault name='fault'>
+        <soap:fault name='fault' use='literal' />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name='UnifiedServicesService'>
+    <wsdl:port name='InquireUnifiedServiceProductDetailsSoapHttpPort' binding='tns:InquireUnifiedServiceProductDetailsSoapHttpBinding'>
+      <soap:address location='https://qa9-csiwwwi-tn.edc.cingular.net:19443/Services/com/cingular/csi/oms/InquireUnifiedServiceProductDetails.jws' />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

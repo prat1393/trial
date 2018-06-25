@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =========================================================================
+
+                         AT&T Proprietary (Internal Use Only)                                           
+
+  Not for use or disclosure outside the AT&T companies except under written agreement
+
+  (c) 2007 AT&T Intellectual Property. All rights reserved. AT&T and
+
+        the AT&T logo are trademarks of AT&T Intellectual Property.
+
+======================================================================= -->
+<xs:schema elementFormDefault="qualified" targetNamespace="http://csi.cingular.com/CSI/Namespaces/OrderAndSubscriptionManagementMobility/InfrastructureCommon/Types/Public/SoapFaultDetails.xsd" version="200.0.00" xmlns="http://csi.cingular.com/CSI/Namespaces/OrderAndSubscriptionManagementMobility/InfrastructureCommon/Types/Public/SoapFaultDetails.xsd" xmlns:cer="http://csi.cingular.com/CSI/Namespaces/OrderAndSubscriptionManagementMobility/InfrastructureCommon/Types/Public/ErrorResponse.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://csi.cingular.com/CSI/Namespaces/OrderAndSubscriptionManagementMobility/InfrastructureCommon/Types/Public/ErrorResponse.xsd" schemaLocation="ErrorResponse-CDM.xsd"/>
+  <xs:element name="CSIApplicationException" type="cer:CSIApplicationException"/>
+</xs:schema>

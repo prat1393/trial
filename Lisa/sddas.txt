@@ -1,0 +1,19 @@
+%beanshell%
+
+import com.itko.util.ParameterList;
+import com.itko.lisa.vse.stateful.protocol.ws.WSSOAPProtocolHandler;
+
+String theBody = lisa_vse_request.toString();
+
+String b1=theBody.replaceAll("&lt;","<");
+String b2=b1.replaceAll("&gt;",">");
+testExec.setStateValue("req",b2);
+testExec.setStateObject("lisa_vse_request",b2);
+
+
+WSSOAPProtocolHandler wd=new WSSOAPProtocolHandler();
+
+wd.updateRequest(lisa_vse_request);
+
+String b=lisa_vse_request.toString();
+testExec.setStateValue("req1",b);

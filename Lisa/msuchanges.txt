@@ -1,0 +1,21 @@
+  <Components>
+                        <VideoBasicPackage>
+                           <packageName>FamilyDigBulk</packageName>
+                           <enableHighDefinitionIndicator>false</enableHighDefinitionIndicator>
+                           <selectedDVRTier>DVROn</selectedDVRTier>
+                           <componentCode>ATTDTV</componentCode>
+                        </VideoBasicPackage>
+                     </Components>
+
+               <productTypes>DTVM</productTypes>
+                <productTypes>ATTDV</productTypes>
+                <productTypes>DTCP</productTypes>
+                <productTypes>DTSTB</productTypes>
+                <productTypes>DTACC</productTypes>
+                <productTypes>DTDH</productTypes>
+                <productTypes>DTWB</productTypes>
+                <productTypes>DVPP</productTypes>
+                <productTypes>DTINST</productTypes>
+                <productTypes>DTT</productTypes>
+                <productTypes>DTGP</productTypes>
+                <productTypes>DTVCCI</productTypes>
