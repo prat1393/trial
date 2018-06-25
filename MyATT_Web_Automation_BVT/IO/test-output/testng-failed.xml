@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="BVTuverseSAflow-1-Firefox(failed)" parallel="tests">
+    <parameter name="tcName" value="BVTuverseSAflow"/>
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="iter" value="1"/>
+    <parameter name="Environment" value="BuildValidations_Data"/>
+    <classes>
+      <class name="com.TestCase.Application.BVT.BVTuverseSAflow">
+        <methods>
+          <include name="endSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.TestCase.Application.BVT.BVTuverseSAflow -->
+    </classes>
+  </test> <!-- BVTuverseSAflow-1-Firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
