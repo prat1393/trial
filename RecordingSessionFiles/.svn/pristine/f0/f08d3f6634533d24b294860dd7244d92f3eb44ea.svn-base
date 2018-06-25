@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><RecordingSession asObject="true" leaf="LOOSE" nonLeaf="WIDE">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.http.HttpProtocolHandler">
+<Transport allAreStateless="true" asObject="true">
+<exportFile>C:\sltest\branches\b1403\1403_p1_Grid_On\1403_myATT_Recording_GridOn\1403_myATT_Recording_GridOn\VServices\WEBSERVICES\CSI-IFSQ\rawTraffic\CSI-IFSQ_01_011714_150331.xml</exportFile>
+<RequestSide>
+<Protocol type="com.itko.lisa.vse.stateful.protocol.ws.WSSOAPProtocolHandler">
+</Protocol>
+</RequestSide>
+</Transport>
+<listenPort>8002</listenPort>
+<targetHost>q25-csiwwwi.hydc.sbc.com</targetHost>
+<targetPort>25443</targetPort>
+<allowDups>true</allowDups>
+<useGateway>true</useGateway>
+<ssl toClient="false" toServer="true"/><keystoreFile/>
+<keystorePWEnc>f5504e2d23a7888253a27e8ef52607d8</keystorePWEnc>
+<basePath>/</basePath>
+</Protocol>
+</RecordingSession>

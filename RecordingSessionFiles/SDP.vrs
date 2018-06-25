@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><RecordingSession asObject="true" leaf="LOOSE" nonLeaf="WIDE">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.http.HttpProtocolHandler">
+<Transport allAreStateless="true" asObject="true">
+<exportFile>C:\sltest\branches\b1408\1408_p1_Grid_On\1408_OLAM_Recording_GridOn\1408_OLAM_Recording_GridOn\VServices\WEBSERVICES\SDP\rawTraffic\SDP_02_061914_144314.xml</exportFile>
+<RequestSide>
+<Protocol type="com.itko.lisa.vse.stateful.protocol.ws.WSSOAPProtocolHandler">
+</Protocol>
+</RequestSide>
+</Transport>
+<listenPort>8005</listenPort>
+<targetHost>sdp-cpc-test3.it.att.com</targetHost>
+<targetPort>80</targetPort>
+<allowDups>true</allowDups>
+<useGateway>true</useGateway>
+<basePath>/</basePath>
+</Protocol>
+</RecordingSession>

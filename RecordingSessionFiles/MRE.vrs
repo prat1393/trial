@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><RecordingSession asObject="true" leaf="LOOSE" nonLeaf="WIDE">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.http.HttpProtocolHandler">
+<Transport allAreStateless="true" asObject="true">
+<exportFile>C:\sltest\branches\b1408\1408_p1_Grid_On\1408_OLAM_Recording_GridOn\1408_OLAM_Recording_GridOn\VServices\WEBSERVICES\MRE\rawTraffic\MRE_02_061914_144314.xml</exportFile>
+<RequestSide>
+<Protocol type="com.itko.lisa.vse.stateful.protocol.ws.WSSOAPProtocolHandler">
+</Protocol>
+</RequestSide>
+</Transport>
+<listenPort>8024</listenPort>
+<targetHost>q1lvo1m1.edc.cingular.net</targetHost>
+<targetPort>60622</targetPort>
+<allowDups>true</allowDups>
+<useGateway>true</useGateway>
+<ssl toClient="false" toServer="false"/><keystoreFile/>
+<keystorePWEnc>f5504e2d23a7888253a27e8ef52607d8</keystorePWEnc>
+<basePath>/MREServices/WirelessDashboard</basePath>
+</Protocol>
+</RecordingSession>

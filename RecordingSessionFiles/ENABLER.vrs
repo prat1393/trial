@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<RecordingSession nonLeaf="WIDE" leaf="LOOSE" asObject="true">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.java.JavaProtocolHandler">
+<Transport allAreStateless="true" asObject="true">
+</Transport>
+<TargetAgents>cef25Agent</TargetAgents>
+<TargetClasses>amdocs.csm3g.sessions.implementation.CM9PerformanceIndicatorServicesBean_4qfjec_EOImpl_922_WLStub</TargetClasses>
+<TargetClasses>amdocs.csm3g.sessions.implementation.CM9EventServicesBean_u1v97g_EOImpl_922_WLStub</TargetClasses>
+<TargetClasses>amdocs.csm3g.sessions.implementation.CM9EventServicesBean_u1v97g_HomeImpl_922_WLStub</TargetClasses>
+<TargetClasses>amdocs.csm3g.sessions.implementation.CM9PerformanceIndicatorServicesBean_4qfjec_HomeImpl_922_WLStub</TargetClasses>
+<TargetClasses>amdocs.rpr.sessions.implementation.EventServicesBean_9m11ld_HomeImpl_922_WLStub</TargetClasses>
+<TargetClasses>amdocs.rpr.sessions.implementation.PerformanceIndicatorServicesBean_tdudyh_EOImpl_922_WLStub</TargetClasses>
+<TargetClasses>amdocs.rpr.sessions.implementation.EventServicesBean_9m11ld_EOImpl_922_WLStub</TargetClasses>
+<TargetClasses>amdocs.rpr.sessions.implementation.PerformanceIndicatorServicesBean_tdudyh_HomeImpl_922_WLStub</TargetClasses>
+</Protocol>
+</RecordingSession>

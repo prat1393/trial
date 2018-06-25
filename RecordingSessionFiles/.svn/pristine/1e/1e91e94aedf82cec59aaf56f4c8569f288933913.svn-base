@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+
+<RecordingSession nonLeaf="WIDE" leaf="LOOSE" asObject="true">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.java.JavaProtocolHandler">
+<Transport allAreStateless="true" asObject="true">
+</Transport>
+<TargetAgents>cef25Agent</TargetAgents>
+<TargetClasses>com.att.myworld.sl.account.server.service.AccountServiceBean_1p6xzk_AccountServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.billing.server.service.BillingServiceBean_oki2i4_BillingServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.catalog.server.service.CommonCatalogServiceBean_kngp4e_CommonCatalogServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.concurrent.server.service.ConcurrentServiceBean_h6txhc_ConcurrentServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.equipment.server.service.EquipmentServiceBean_ayedjm_EquipmentServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.misc.server.service.FiberMiscServiceBean_q7pw86_FiberMiscServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.equipment.server.service.FulfillmentServiceBean_5bggpa_FulfillmentServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.metrics.server.service.MetricsService_of2wdw_MetricsServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.misc.server.service.MiscServiceBean_7y1xcw_MiscServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.misc.server.service.MobileMiscServiceBean_gz6734_MobileMiscServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.messaging.server.service.NotificationServiceBean_4mqyww_NotificationServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.order.server.service.OrderServiceBean_fk2c4u_Impl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.payment.server.service.PaymentServiceBean_dwdgvy_PaymentServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.subscriber.server.service.SubscriberServiceBean_ap1zq8_SubscriberServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.system.server.service.SystemServiceBean_e8lp6o_SystemServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.taxation.server.service.TaxationServiceBean_v0clk0_TaxationServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.account.server.service.TransferServiceBean_8hz8e8_Impl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.usage.server.service.UsageServiceBean_2zmoaw_UsageServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.user.server.service.UserServiceBean_hrnu4g_UserServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.voicemail.server.service.VoiceMailServiceBean_bnn4g8_VoiceMailServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.account.server.service.WirelessToGoServiceBean_1v4xvk_WirelessToGoServiceImpl</TargetClasses>
+</Protocol>
+</RecordingSession>

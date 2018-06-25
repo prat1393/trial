@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+
+<RecordingSession nonLeaf="WIDE" leaf="LOOSE" asObject="true">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.java.JavaProtocolHandler">
+<Transport allAreStateless="true" asObject="true">
+<exportFile>C:\sltest\trunk\SLStubbing_SPI_1210\VServices\JNDI\rawTraffic\JNDI_CAM.xml</exportFile>
+</Transport>
+<TargetAgents>dklocalAgent</TargetAgents>
+<TargetClasses>com.cingular.cef.common.utilities.ServiceLocator</TargetClasses>
+<TargetClasses>com.att.myworld.sl.shared.util.ServiceLocator</TargetClasses>
+</Protocol>
+</RecordingSession>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<RecordingSession nonLeaf="WIDE" leaf="LOOSE" asObject="true">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.http.HttpProtocolHandler">
+<Transport allAreStateless="true" asObject="true">
+<exportFile>C:/sltest/trunk/MyATTStubbing_1206/VServices/ETM/_ETM.xml</exportFile>
+<RequestSide>
+<Protocol type="com.itko.lisa.vse.stateful.protocol.ws.WSSOAPProtocolHandler">
+</Protocol>
+</RequestSide>
+</Transport>
+<listenPort>8010</listenPort>
+<targetHost>etmdev.dev.cingular.net</targetHost>
+<targetPort>8080</targetPort>
+<allowDups>true</allowDups>
+<useGateway>true</useGateway>
+<basePath>/</basePath>
+</Protocol>
+</RecordingSession>

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+
+<RecordingSession nonLeaf="WIDE" leaf="LOOSE" asObject="true">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.java.JavaProtocolHandler">
+<Transport allAreStateless="true" asObject="true">
+</Transport>
+<TargetAgents>cef25Agent</TargetAgents>
+<TargetClasses>com.att.myworld.sl.server.base.connection.ldap.LdapConnectionPool</TargetClasses>
+<TargetClasses>com.cingular.cef.automation.ed.businesslayer.connection.EdConnectionPool</TargetClasses>
+<TargetClasses>netscape.ldap.LDAPConnection</TargetClasses>
+</Protocol>
+</RecordingSession>

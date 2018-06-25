@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><RecordingSession asObject="true" leaf="LOOSE" nonLeaf="WIDE">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.java.JavaProtocolHandler">
+<Transport allAreStateless="true" asObject="true">
+<exportFile>/opt/app/t1eam4c5/stubbing/branches/b1611/1611_p1_Grid_On/1611_myATT_Recording_GridOn/1611_myATT_Recording_GridOn/VServices/JAVA/RawTraffic/EJB_01_101916_0548PMCST.xml</exportFile>
+<RequestSide>
+<Protocol type="com.itko.lisa.vse.stateful.common.datahandler.RequestDataManagerProtocolHandler">
+<actions>
+<action>move argument "arg0_STRING" to request_body matching "\QStatelessMediator_av4k1c_EOImpl_1030_WLStub.process\E"</action>
+</actions>
+</Protocol>
+<Protocol type="com.itko.lisa.vse.stateful.common.datahandler.XMLPayloadParserDataProtocolHandler">
+<source set="request_body"/><actions>
+<action name="CamMessage_request_action" set="argument">
+<query>/CamMessage/request/@action</query>
+<map>
+<entry name=""/>
+</map>
+</action>
+<action name="int_CAMInterface_int_request_xsi_type" set="argument">
+<query>/int:CAMInterface/int:request/@xsi:type</query>
+<map>
+<entry name="xsi">http://www.w3.org/2001/XMLSchema-instance</entry>
+<entry name="int">http://cingular.com/cam/interfaces</entry>
+</map>
+</action>
+</actions>
+</Protocol>
+<Protocol type="com.itko.lisa.ext.vse.CAAMDataProtocolHandler">
+</Protocol>
+</RequestSide>
+</Transport>
+<TargetAgents>cef41Agent1611</TargetAgents>
+<TargetClasses>com.att.soap.client.SoapClient</TargetClasses>
+<TargetClasses>com.att.myworld.sl.server.util.DME2Helper</TargetClasses>
+<TargetClasses>acsi.grid.wirelessdashboard.WirelessDashboardProvider</TargetClasses>
+<TargetClasses>acsi.grid.wirelessdashboard.WirelessDashboardProviderFactory</TargetClasses>
+<TargetClasses>acsi.grid.wirelessdashboard.coh.impl.WirelessDashboardProviderImpl</TargetClasses>
+<TargetClasses>acsi.grid.wirelessdashboard.coh.impl.WirelessDashboardProviderSingletonImpl</TargetClasses>
+<TargetClasses>com.cingular.cef.cs.sms.ejb.SmsService</TargetClasses>
+<TargetClasses>compass.Compass</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductAgreementBean_sd4w3n_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanFinancialActivitiesBean_ukdb17_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanFinancialActivitiesConvBeanTracer_1bwdkt_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanFinancialActivitiesConvBeanTracer_1bwdkt_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductRolloverMinConvBean_ud3l9j_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductRolloverMinConvBean_ud3l9j_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanActivitiesConvBean_ua4dn7_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanActivitiesConvBean_ua4dn7_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductActivitiesConvBean_yaed4d_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductActivitiesConvBean_yaed4d_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.IvrBean_ko2n9p_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.IvrBean_ko2n9p_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.RefQueryBean_3xgipj_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.UpdateBanConvBean_oxlwkt_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.MoveProductFromBanToBanBeanTracer_1zrz8z_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.MoveProductFromBanToBanBeanTracer_1zrz8z_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.SubscriberUsageConvBean_gwkhbn_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductAgreementConvBean_psemcr_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.AppQueryBean_tktr17_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductServicesBean_aw5ost_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductServicesBean_aw5ost_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductEquipmentBean_25vy4r_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductEquipmentBean_25vy4r_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.TitanServicesBean_iz1fpv_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanServicesBean_3sdvt9_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanServicesBean_3sdvt9_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ChangeProductConvBean_25s5p_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ChangeProductConvBean_25s5p_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BulkMoveProductBean_l5s2ul_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BulkMoveProductBean_l5s2ul_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.GroupLevelServicesBean_46g1w3_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.GroupLevelServicesBean_46g1w3_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.AppQueryBean_tktr17_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanFinancialActivitiesBean_ukdb17_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanLevelAgreementConvBean_jhgc1f_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanServicesBean_3sdvt9_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.GroupLevelServicesBean_46g1w3_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductAgreementBean_sd4w3n_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductAgreementConvBean_psemcr_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductServicesBean_aw5ost_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.RefQueryBean_3xgipj_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.SubscriberUsageConvBean_gwkhbn_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.TitanServicesBean_iz1fpv_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.UpdateBanConvBean_oxlwkt_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>com.sbc.eia.bis.facades.um.ejb.UM</TargetClasses>
+<TargetClasses>com.cingular.quickpay.externalClient.retrieve.EJB.QPInfoBean_1bxmwq_EOImpl_1035_WLStub</TargetClasses>
+<TargetClasses>com.sbc.eia.bis.facades.lim.ejb._Lim_Stub</TargetClasses>
+<TargetClasses>com.att.myworld.sl.server.impl.capm.processor.CapmGetAffiliatePymtBalanceProcessor</TargetClasses>
+<TargetClasses>com.sbc.billing.bdm.ejb.BDM_IIOP_WLStub</TargetClasses>
+<TargetClasses>com.sbc.billing.caam.ejb.CAAM_IIOP_WLStub</TargetClasses>
+<TargetClasses>com.sbc.eia.bis.facades.acm.ejb.ACM</TargetClasses>
+<TargetClasses>com.cingular.cam.ejb.statelessmediator.StatelessMediator_av4k1c_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>netscape.ldap.LDAPConnection</TargetClasses>
+<TargetClasses>com.sbc.bis.pam.facade._PAM_Stub</TargetClasses>
+<TargetClasses>com.sbc.bis.sm.facade._SmFacade_Stub</TargetClasses>
+<TargetClasses>com.cingular.AES.AESinterface.EJB.AESLookupBean_fow2o_EOImpl_1035_WLStub</TargetClasses>
+<TargetClasses>com.cingular.quickpay.externalClient.ATTintegration.EJB.ATTInfoBean_1siee8_EOImpl_1035_WLStub</TargetClasses>
+<TargetClasses>com.cingular.quickpay.externalClient.ccauth.EJB.CCAuthorizerBean_tydqm_EOImpl_1035_WLStub</TargetClasses>
+<TargetClasses>com.cingular.quickpay.externalClient.payment.EJB.QPPaymentBean_n0lppc_EOImpl_1035_WLStub</TargetClasses>
+<TargetClasses>amdocs.csm3g.sessions.implementation.CM9PerformanceIndicatorServicesBean_4qfjec_EOImpl_1035_WLStub</TargetClasses>
+<TargetClasses>amdocs.csm3g.sessions.implementation.CM9EventServicesBean_u1v97g_EOImpl_1035_WLStub</TargetClasses>
+<TargetClasses>amdocs.csm3g.sessions.implementation.CM9PerformanceIndicatorServicesBean_4qfjec_EOImpl_1036_WLStub</TargetClasses>
+<TargetClasses>amdocs.csm3g.sessions.implementation.CM9PerformanceIndicatorServicesBean_4qfjec_HomeImpl_1036_WLStub</TargetClasses>
+<TargetClasses>com.sbc.bis.sm.facade._SmFacadeHome_Stub</TargetClasses>
+<TargetClasses>net.cingular.edd.ejb.EDDProcessorEJB_wtlczk_EOImpl_1036_WLStub</TargetClasses>
+<TargetClasses>com.att.myworld.sl.server.impl.sl.olam.dao.OlamGetRatePlanDetailDao</TargetClasses>
+<TargetClasses>com.att.myworld.sl.server.impl.sl.olam.dao.OlamMarketStatusDao</TargetClasses>
+<TargetClasses>com.att.myworld.sl.server.impl.sl.alerts.dao.DismissedAlertDAO</TargetClasses>
+<TargetClasses>com.att.myworld.sl.server.impl.sl.ducs.dao.DucsAlertsDao</TargetClasses>
+<TargetClasses>net.cingular.edp.http.EdpDocumentImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.server.util.HttpHelper</TargetClasses>
+<TargetClasses>com.att.myworld.sl.misc.server.service.MobileMiscServiceBean_gz6734_MobileMiscServiceImpl</TargetClasses>
+<TargetClasses>com.att.myworld.sl.server.impl.cpc.dao.CpcInvokationDao</TargetClasses>
+<TargetClasses>com.att.myworld.sl.server.impl.cpc.dao.MobileMiscServiceBean_gz6734_MobileMiscServiceImpl</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.interfaces.ProductEquipment</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.interfaces.ProductServices</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.interfaces.BanServices</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.interfaces.AppQuery</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.interfaces.BanLevelAgreementConv</TargetClasses>
+<TargetClasses>com.sbc.bis.sm.facade.SmFacade</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.interfaces.ProductAgreement</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.interfaces.GroupLevelServices</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.interfaces.MoveProductFromBanToBan</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.interfaces.RefQuery</TargetClasses>
+<TargetClasses>com.att.myworld.sl.server.impl.sl.tobr.dao.ToBRRequestDao</TargetClasses>
+<TargetClasses>amdocs.csm3g.sessions.implementation.CM9PerformanceIndicatorServicesBean_4qfjec_EOImpl_1036_WLStub</TargetClasses>
+<TargetClasses>amdocs.csm3g.sessions.implementation.CM9PerformanceIndicatorServicesBean_4qfjec_HomeImpl_1036_WLStub</TargetClasses>                
+<TargetClasses>amdocs.csm3g.sessions.implementation.CM9EventServicesBean_u1v97g_EOImpl_1036_WLStub</TargetClasses>
+<TargetClasses>com.att.myworld.sl.server.impl.xcsi.processor.XCsiBaseProcessor</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductAgreementConvBean_psemcr_HomeImpl_1211_WLStub</TargetClasses>
+</Protocol>
+</RecordingSession>

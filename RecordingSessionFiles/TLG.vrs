@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+
+<RecordingSession nonLeaf="WIDE" leaf="LOOSE" asObject="true">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.java.JavaProtocolHandler">
+<Transport allAreStateless="true" asObject="true">
+</Transport>
+<TargetAgents>cef25Agent</TargetAgents>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductAgreementBean_sd4w3n_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductAgreementBean_sd4w3n_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanFinancialActivitiesBean_ukdb17_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanFinancialActivitiesBean_ukdb17_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanFinancialActivitiesConvBeanTracer_1bwdkt_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanFinancialActivitiesConvBeanTracer_1bwdkt_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductRolloverMinConvBean_ud3l9j_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductRolloverMinConvBean_ud3l9j_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanActivitiesConvBean_ua4dn7_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanActivitiesConvBean_ua4dn7_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductActivitiesConvBean_yaed4d_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductActivitiesConvBean_yaed4d_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.IvrBean_ko2n9p_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.IvrBean_ko2n9p_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.RefQueryBean_3xgipj_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.RefQueryBean_3xgipj_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.UpdateBanConvBean_oxlwkt_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.UpdateBanConvBean_oxlwkt_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.MoveProductFromBanToBanBeanTracer_1zrz8z_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.MoveProductFromBanToBanBeanTracer_1zrz8z_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.SubscriberUsageConvBean_gwkhbn_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.SubscriberUsageConvBean_gwkhbn_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductAgreementConvBean_psemcr_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductAgreementConvBean_psemcr_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.AppQueryBean_tktr17_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.AppQueryBean_tktr17_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductServicesBean_aw5ost_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductServicesBean_aw5ost_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductEquipmentBean_25vy4r_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductEquipmentBean_25vy4r_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.TitanServicesBean_iz1fpv_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.TitanServicesBean_iz1fpv_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanServicesBean_3sdvt9_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanServicesBean_3sdvt9_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ChangeProductConvBean_25s5p_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ChangeProductConvBean_25s5p_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BulkMoveProductBean_l5s2ul_EOImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BulkMoveProductBean_l5s2ul_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.GroupLevelServicesBean_46g1w3_HomeImpl_1030_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.GroupLevelServicesBean_46g1w3_EOImpl_1030_WLStub</TargetClasses>
+</Protocol>
+</RecordingSession>

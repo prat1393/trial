@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+
+<RecordingSession nonLeaf="WIDE" leaf="LOOSE" asObject="true">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.java.JavaProtocolHandler">
+<Transport allAreStateless="true" asObject="true">
+</Transport>
+<TargetAgents>cef15Agent</TargetAgents>
+<TargetClasses>acsi.grid.wirelessdashboard.WirelessDashboardProvider</TargetClasses>
+<TargetClasses>acsi.grid.wirelessdashboard.WirelessDashboardProviderFactory</TargetClasses>
+<TargetClasses>acsi.grid.wirelessdashboard.coh.impl.WirelessDashboardProviderImpl</TargetClasses>
+</Protocol>
+</RecordingSession>

@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+
+<RecordingSession nonLeaf="WIDE" leaf="LOOSE" asObject="true">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.http.HttpProtocolHandler">
+<Transport allAreStateless="false" asObject="true" desensitize="false" duptxns="false">
+<exportFile></exportFile>
+<RequestSide>
+<Protocol type="com.itko.lisa.vse.stateful.protocol.rest.RestDataProtocol">
+<requestSideUnparsed>true</requestSideUnparsed>
+<rules>
+<rule>
+<operation>POST /Services/com/cingular/csi/ccr/InquireUnifiedCustomerLoginProfile.jws/</operation>
+</rule>
+</rules>
+</Protocol>
+</RequestSide>
+</Transport>
+<listenPort>7002</listenPort>
+<targetHost>csi-tst-q28.it.att.com</targetHost>
+<targetPort>28443</targetPort>
+<useGateway>true</useGateway>
+<hostHeaderPassThrough>false</hostHeaderPassThrough>
+<ssl toClient="false" sslClientAuthType="none" toServer="true"/><sslClientKeystoreFile>H:/Documents/cef_keystore</sslClientKeystoreFile>
+<sslClientKeystorePWEnc>d2ff9c378928b9f3e4c8daf0487c9eaa</sslClientKeystorePWEnc>
+<basePath>/Services/com/cingular/csi/ccr/InquireUnifiedCustomerLoginProfile.jws</basePath>
+</Protocol>
+</RecordingSession>

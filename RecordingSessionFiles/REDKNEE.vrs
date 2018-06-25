@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><RecordingSession asObject="true" leaf="LOOSE" nonLeaf="WIDE">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.http.HttpProtocolHandler">
+<Transport allAreStateless="true" asObject="true">
+<exportFile>C:\sltest\branches\b1403\1403_p1_Grid_On\1403_myATT_Recording_GridOn\1403_myATT_Recording_GridOn\VServices\WEBSERVICES\REDKNEE\rawTraffic\REDKNEE_01_011714_143224.xml</exportFile>
+<RequestSide>
+<Protocol type="com.itko.lisa.vse.stateful.protocol.ws.WSSOAPProtocolHandler">
+</Protocol>
+</RequestSide>
+</Transport>
+<listenPort>8012</listenPort>
+<targetHost>155.165.34.223</targetHost>
+<targetPort>10905</targetPort>
+<allowDups>true</allowDups>
+<useGateway>true</useGateway>
+<basePath>/</basePath>
+</Protocol>
+</RecordingSession>

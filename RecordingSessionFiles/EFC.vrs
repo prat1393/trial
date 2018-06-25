@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><RecordingSession asObject="true" leaf="LOOSE" nonLeaf="WIDE">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.http.HttpProtocolHandler">
+<Transport allAreStateless="true" asObject="true">
+<exportFile>C:\sltest\branches\b1408\1408_p1_Grid_On\1408_OLAM_Recording_GridOn\1408_OLAM_Recording_GridOn\VServices\WEBSERVICES\EFC\rawTraffic\EFC_02_061914_144314.xml</exportFile>
+<RequestSide>
+<Protocol type="com.itko.lisa.vse.stateful.protocol.ws.WSSOAPProtocolHandler">
+</Protocol>
+<Protocol type="com.itko.lisa.vse.stateful.common.datahandler.RequestDataManagerProtocolHandler">
+<actions>
+<action>copy attribute "request" to argument "request" matching "\Qexecute\E"</action>
+</actions>
+</Protocol>
+</RequestSide>
+</Transport>
+<listenPort>8019</listenPort>
+<targetHost>ub.efc.bls.com</targetHost>
+<targetPort>1811</targetPort>
+<allowDups>true</allowDups>
+<useGateway>true</useGateway>
+<basePath>/</basePath>
+</Protocol>
+</RecordingSession>

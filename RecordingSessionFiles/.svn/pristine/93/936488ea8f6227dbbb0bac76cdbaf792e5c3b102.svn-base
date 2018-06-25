@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+
+<RecordingSession nonLeaf="WIDE" leaf="LOOSE" asObject="true">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.java.JavaProtocolHandler">
+<Transport allAreStateless="true" asObject="true">
+</Transport>
+<TargetAgents>cef25Agent</TargetAgents>
+<TargetClasses>com.cingular.cef.cs.sms.ejb.SmsService</TargetClasses>
+</Protocol>
+</RecordingSession>
