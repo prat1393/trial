@@ -1,0 +1,6 @@
+com\att\login\services\UserAccessService.class
+com\att\user\dao\model\User.class
+com\att\user\dao\UserRepository.class
+com\att\login\services\CSPAuthenticator.class
+com\att\login\model\CSPAuthData.class
+com\att\login\services\UserAccessServiceImpl.class

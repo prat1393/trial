@@ -1,0 +1,472 @@
+Script to Merge DSS Merged  and ATT Merged
+********** Starting Combine process ************
+Source folder = C:/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/
+Destination folder = C:/stubbing/trunk/IST_Deploy/MYATT_DSS_COMBINE_2014_FINAL/MYATT_DSS_COMBINE_2014_FINAL/VServices/MERGED/
+Combining JAVA/Images/BDM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining JAVA/Images/CAAM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining JAVA/Images/CAPM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining JAVA/Images/ENABLER_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining JAVA/Images/GRID_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining JAVA/Images/LDAP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining JAVA/Images/LIM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining JAVA/Images/PAMBIS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining JAVA/Images/QP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining JAVA/Images/SMBIS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining JAVA/Images/SMS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining JAVA/Images/DLC_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining JAVA/Images/EDP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining JAVA/Images/TLG_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining JAVA/Images/Billing_DB.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/AMNQ_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/BCAM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/BDS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/BDS-CAAM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/BIM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/BOOST_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/CSI_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/CSI-IFSQ_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/EFC_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/ICBT_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/K2VMS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/MPS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/MPS-IGP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/MRE_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/REDKNEE_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/ROAR_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/SDP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/SPD_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/TGUARD_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/VRI_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/XI_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/YODA_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/TGUARD-GEN_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done
+Combining WEBSERVICES/Images/TGUARD-VAL_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: Cp1252
+LISA_HOME set to C:\Lisa8.4\DevTest\
+DevTest temporary directory is H:\lisatmp_8.4.0
+Configuring logging from 'C:\Lisa8.4\DevTest\logging.properties'
+DevTest Solutions, Copyright (c) 2002-2016 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done

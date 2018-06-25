@@ -1,0 +1,9 @@
+********** Error Occured in Parsing ***********
+vse.log
+qay_slid_testing29
+2016-04-29 05:07:26,086Z (00:07) [CSIRestAndDLC_Merged [VS_CSIRestAndDLC_Merged_Run]/1] INFO  VSE_VS_CSIRestAndDLC_Merged    - Inbound Request {"id":0,"operation":"HttpHelper.getHttpPostResponse","arguments":{"arg0_STRING":"https://tstagesms.stage.att.net/commonLogin/nxsATS/TokenGen","arg1_MAP_ENTRY_0_STRING_0":"StarTest","arg1_MAP_ENTRY_0_STRING_1":"On","arg1_MAP_ENTRY_1_STRING_0":"userid","arg1_MAP_ENTRY_1_STRING_1":"qay_slid_testing29","arg1_MAP_ENTRY_2_STRING_0":"rememberID","arg1_MAP_ENTRY_2_STRING_1":"on","arg1_MAP_ENTRY_3_STRING_0":"password","arg1_MAP_ENTRY_3_STRING_1":"test1ng","arg1_MAP_ENTRY_4_STRING_0":"TG_OP","arg1_MAP_ENTRY_4_STRING_1":"TokenGen","arg1_MAP_ENTRY_5_STRING_0":"appID","arg1_MAP_ENTRY_5_STRING_1":"I9KgqdgGblRlO2HNj4n/JyX/r2k="}}
+********** Exiting Merge abruptly*************
+java.lang.ArrayIndexOutOfBoundsException: 3
+	at com.itko.lisa.ext.util.CaptureDetailsFromVseMatches.process(CaptureDetailsFromVseMatches.java:136)
+	at com.itko.lisa.ext.util.CaptureDetailsFromVseMatches.findAndProcessFiles(CaptureDetailsFromVseMatches.java:77)
+	at com.itko.lisa.ext.util.CaptureDetailsFromVseMatches.main(CaptureDetailsFromVseMatches.java:55)

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="e2e-automation-common-0.0.1">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="e2e-automation-dbvalidation-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/e2e-automation-dbvalidation/e2e-automation-dbvalidation">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="e2e-automation-login-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/e2e-automation-login/e2e-automation-login">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="e2e-automation-admin-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/e2e-automation-admin/e2e-automation-admin">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/e2e-automation-common/target/classes"/>
+        <property name="context-root" value="e2e-automation-common"/>
+    </wb-module>
+</project-modules>

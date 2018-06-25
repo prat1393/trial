@@ -1,0 +1,102 @@
+Buildfile: build.xml
+
+create-excel:
+
+csv2xlsx:
+     [java] ---------------Start --------------
+     [java] input-param=--operation
+     [java] input-param=CSV2XLSX
+     [java] input-param=--csv-file
+     [java] input-param=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/data/LisaMatchesReport_1603_Grid_On.csv
+     [java] input-param=--xlsx-file
+     [java] input-param=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/data/LisaMatchesReport_1603_Grid_On.xlsx
+     [java] ---------------End --------------
+     [java] inputCsvFile=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/data/LisaMatchesReport_1603_Grid_On.csv
+     [java] outputExcelFile=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/data/LisaMatchesReport_1603_Grid_On.xlsx
+     [java] java.lang.NumberFormatException: For input string: "CSI_081616"
+     [java] 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+     [java] 	at java.lang.Integer.parseInt(Integer.java:492)
+     [java] 	at java.lang.Integer.parseInt(Integer.java:527)
+     [java] 	at com.itko.lisa.ext.util.LisaServiceImageCleaner.convertCsvToXlsx(LisaServiceImageCleaner.java:1709)
+     [java] 	at com.itko.lisa.ext.util.LisaMergeUtils.process(LisaMergeUtils.java:126)
+     [java] 	at com.itko.lisa.ext.util.LisaMergeUtils.main(LisaMergeUtils.java:64)
+     [java] java.lang.NumberFormatException: For input string: "CSI_081616"
+
+create-merge-folder:
+     [copy] Copying 39 files to /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices
+     [copy] Copied 97 empty directories to 49 empty directories under /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices
+
+merge-process-extract:
+     [java] ---------------Start --------------
+     [java] input-param=--operation
+     [java] input-param=EXTRACT
+     [java] input-param=--properties-file
+     [java] input-param=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/IST_DEPLOY_1603_ATT/lisa-merge-util-config.properties
+     [java] input-param=--xlsx-file
+     [java] input-param=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/TXMapping/TX_MAPPING_1603_Grid_On.xls
+     [java] ---------------End --------------
+     [java] operationName=EXTRACT
+     [java] propertiesFile=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/IST_DEPLOY_1603_ATT/lisa-merge-util-config.properties
+     [java] org.apache.poi.POIXMLException: org.apache.poi.openxml4j.exceptions.InvalidFormatException: Package should contain a content type part [M1.13]
+     [java] 	at org.apache.poi.util.PackageHelper.open(PackageHelper.java:41)
+     [java] 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:186)
+     [java] 	at com.itko.lisa.ext.util.LisaServiceImageCleaner.readExcelSheetForServiceImageNames(LisaServiceImageCleaner.java:739)
+     [java] 	at com.itko.lisa.ext.util.LisaServiceImageCleaner.startMatchesExtractionProcess(LisaServiceImageCleaner.java:1451)
+     [java] 	at com.itko.lisa.ext.util.LisaMergeUtils.process(LisaMergeUtils.java:120)
+     [java] 	at com.itko.lisa.ext.util.LisaMergeUtils.main(LisaMergeUtils.java:64)
+     [java] Caused by: org.apache.poi.openxml4j.exceptions.InvalidFormatException: Package should contain a content type part [M1.13]
+     [java] 	at org.apache.poi.openxml4j.opc.ZipPackage.getPartsImpl(ZipPackage.java:147)
+     [java] 	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:592)
+     [java] 	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:222)
+     [java] 	at org.apache.poi.util.PackageHelper.open(PackageHelper.java:39)
+     [java] 	... 5 more
+
+merge-process-combine:
+     [java] ---------------Start --------------
+     [java] input-param=--operation
+     [java] input-param=MERGE
+     [java] input-param=--properties-file
+     [java] input-param=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/IST_DEPLOY_1603_ATT/lisa-merge-util-config.properties
+     [java] ---------------End --------------
+     [java] operationName=MERGE
+     [java] propertiesFile=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/IST_DEPLOY_1603_ATT/lisa-merge-util-config.properties
+     [java] org.apache.poi.POIXMLException: org.apache.poi.openxml4j.exceptions.InvalidFormatException: Package should contain a content type part [M1.13]
+     [java] 	at org.apache.poi.util.PackageHelper.open(PackageHelper.java:41)
+     [java] 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:186)
+     [java] 	at com.itko.lisa.ext.util.LisaServiceImageCleaner.readExcelSheetForServiceImageNames(LisaServiceImageCleaner.java:739)
+     [java] 	at com.itko.lisa.ext.util.LisaServiceImageCleaner.startServiceImageMergeProcess(LisaServiceImageCleaner.java:1572)
+     [java] 	at com.itko.lisa.ext.util.LisaMergeUtils.process(LisaMergeUtils.java:123)
+     [java] 	at com.itko.lisa.ext.util.LisaMergeUtils.main(LisaMergeUtils.java:64)
+     [java] Caused by: org.apache.poi.openxml4j.exceptions.InvalidFormatException: Package should contain a content type part [M1.13]
+     [java] 	at org.apache.poi.openxml4j.opc.ZipPackage.getPartsImpl(ZipPackage.java:147)
+     [java] 	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:592)
+     [java] 	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:222)
+     [java] 	at org.apache.poi.util.PackageHelper.open(PackageHelper.java:39)
+     [java] 	... 5 more
+
+create-tx-mapping:
+     [java] ---------------Start --------------
+     [java] input-param=--operation
+     [java] input-param=CreateTxMapping
+     [java] input-param=--vsi-path
+     [java] input-param=/opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/
+     [java] input-param=--xlsx-file
+     [java] input-param=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/TXMapping/TX_MAPPING_1603_Grid_On.xls
+     [java] input-param=--ser-files
+     [java] input-param=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/TXMapping/TX_MAPPING_1603_Grid_On_Backends_Mapping.data
+     [java] ---------------End --------------
+     [java] txMappingXlsFile=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/TXMapping/TX_MAPPING_1603_Grid_On.xls
+     [java] vsiBasePath=/opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/
+     [java] serFiles=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/TXMapping/TX_MAPPING_1603_Grid_On_Backends_Mapping.data
+     [java]  JAVA Merged VSI Path:/opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED//JAVA//Images//
+     [java]  Webservice Merged VSI Path:/opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED//WEBSERVICES//Images//
+     [java] Total number of runnable tasks created: 0
+     [java] %%%%%%%%% backendTxMap write DONE{}
+     [java] TotalTxs:0 XLS Rows 0
+     [java] Processing Done, total time taken 0 minute 0 second
+
+merge-process-all:
+   [delete] Deleting: /opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/data/LisaMatchesReport_1603_Grid_On.xlsx
+
+BUILD SUCCESSFUL
+Total time: 7 seconds

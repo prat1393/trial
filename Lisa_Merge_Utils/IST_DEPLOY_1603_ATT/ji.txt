@@ -1,0 +1,219 @@
+Buildfile: build.xml
+
+create-excel:
+
+csv2xlsx:
+     [java] ---------------Start --------------
+     [java] input-param=--operation
+     [java] input-param=CSV2XLSX
+     [java] input-param=--csv-file
+     [java] input-param=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/data/LisaMatchesReport_1603_Grid_On.csv
+     [java] input-param=--xlsx-file
+     [java] input-param=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/data/LisaMatchesReport_1603_Grid_On.xlsx
+     [java] ---------------End --------------
+     [java] inputCsvFile=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/data/LisaMatchesReport_1603_Grid_On.csv
+     [java] outputExcelFile=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/data/LisaMatchesReport_1603_Grid_On.xlsx
+
+create-merge-folder:
+     [copy] Copying 66 files to /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices
+     [copy] Copied 24 empty directories to 9 empty directories under /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices
+
+merge-process-extract:
+     [java] ---------------Start --------------
+     [java] input-param=--operation
+     [java] input-param=EXTRACT
+     [java] input-param=--properties-file
+     [java] input-param=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/IST_DEPLOY_1603_ATT/lisa-merge-util-config.properties
+     [java] input-param=--xlsx-file
+     [java] input-param=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/TXMapping/TX_MAPPING_1603_Grid_On.xls
+     [java] ---------------End --------------
+     [java] operationName=EXTRACT
+     [java] propertiesFile=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/IST_DEPLOY_1603_ATT/lisa-merge-util-config.properties
+     [java] ERROR: Service image name mentioned in matches excel file doesnot follow naming convention:ITKO_LOGIN
+     [java] ERROR: Service image name mentioned in matches excel file doesnot follow naming convention:ServiceLocator
+     [java] java.lang.ArrayIndexOutOfBoundsException: 1
+     [java] 	at com.itko.lisa.ext.util.LisaServiceImageCleaner.readExcelSheetForServiceImageNames(LisaServiceImageCleaner.java:770)
+     [java] 	at com.itko.lisa.ext.util.LisaServiceImageCleaner.startMatchesExtractionProcess(LisaServiceImageCleaner.java:1451)
+     [java] 	at com.itko.lisa.ext.util.LisaMergeUtils.process(LisaMergeUtils.java:120)
+     [java] 	at com.itko.lisa.ext.util.LisaMergeUtils.main(LisaMergeUtils.java:64)
+
+merge-process-combine:
+     [java] ---------------Start --------------
+     [java] input-param=--operation
+     [java] input-param=MERGE
+     [java] input-param=--properties-file
+     [java] input-param=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/IST_DEPLOY_1603_ATT/lisa-merge-util-config.properties
+     [java] ---------------End --------------
+     [java] operationName=MERGE
+     [java] propertiesFile=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/IST_DEPLOY_1603_ATT/lisa-merge-util-config.properties
+     [java] ERROR: Service image name mentioned in matches excel file doesnot follow naming convention:ITKO_LOGIN
+     [java] ERROR: Service image name mentioned in matches excel file doesnot follow naming convention:ServiceLocator
+     [java] java.lang.ArrayIndexOutOfBoundsException: 1
+     [java] 	at com.itko.lisa.ext.util.LisaServiceImageCleaner.readExcelSheetForServiceImageNames(LisaServiceImageCleaner.java:770)
+     [java] 	at com.itko.lisa.ext.util.LisaServiceImageCleaner.startServiceImageMergeProcess(LisaServiceImageCleaner.java:1572)
+     [java] 	at com.itko.lisa.ext.util.LisaMergeUtils.process(LisaMergeUtils.java:123)
+     [java] 	at com.itko.lisa.ext.util.LisaMergeUtils.main(LisaMergeUtils.java:64)
+
+create-tx-mapping:
+     [java] ---------------Start --------------
+     [java] input-param=--operation
+     [java] input-param=CreateTxMapping
+     [java] input-param=--vsi-path
+     [java] input-param=/opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/
+     [java] input-param=--xlsx-file
+     [java] input-param=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/TXMapping/TX_MAPPING_1603_Grid_On.xls
+     [java] input-param=--ser-files
+     [java] input-param=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/TXMapping/TX_MAPPING_1603_Grid_On_Backends_Mapping.data
+     [java] ---------------End --------------
+     [java] txMappingXlsFile=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/TXMapping/TX_MAPPING_1603_Grid_On.xls
+     [java] vsiBasePath=/opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/
+     [java] serFiles=/opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/TXMapping/TX_MAPPING_1603_Grid_On_Backends_Mapping.data
+     [java]  JAVA Merged VSI Path:/opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED//JAVA//Images//
+     [java]  Webservice Merged VSI Path:/opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED//WEBSERVICES//Images//
+     [java] Total number of runnable tasks created: 44
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/CSI_Merged.vsi started
+     [java] Locale: en_US
+     [java] Setting System.out and System.err to: UTF-8
+     [java] LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+     [java] DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+     [java] Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/CSI_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/CSI_Merged.vsi:0 minunte 3 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/SMBIS_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/SMBIS_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/SMBIS_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/OlamBill_Total_new_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/OlamBill_Total_new_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/OlamBill_Total_new_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/LIM_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/LIM_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/LIM_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/LDAP_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/LDAP_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/LDAP_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/QP_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/QP_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/QP_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/EDP_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/EDP_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/EDP_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/DLC_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/DLC_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/DLC_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/GRID_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/GRID_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/GRID_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/CAAM_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/CAAM_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/CAAM_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/Olam_DSS_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/Olam_DSS_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/Olam_DSS_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/BillDB_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/BillDB_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/BillDB_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/PAMBIS_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/PAMBIS_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/PAMBIS_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/CSIRestAndDLC_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/CSIRestAndDLC_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/CSIRestAndDLC_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/CAPM_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/CAPM_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/CAPM_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/CPC_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/CPC_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/CPC_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/DAO_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/DAO_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/DAO_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/ENABLER_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/ENABLER_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/ENABLER_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/SMS_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/SMS_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/SMS_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/BDM_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/BDM_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/BDM_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/TLG_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/TLG_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/JAVA/Images/TLG_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/TGUARD_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/TGUARD_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/TGUARD_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/ICBT_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/ICBT_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/ICBT_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/MPS_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/MPS_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/MPS_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BDS_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BDS_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BDS_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/SPD_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/SPD_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/SPD_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/MPS-IGP_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/MPS-IGP_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/MPS-IGP_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/YODA_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/YODA_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/YODA_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BCAM_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BCAM_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BCAM_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/CSI-IFSQ_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/CSI-IFSQ_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/CSI-IFSQ_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/XI_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/XI_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/XI_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/SDP_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/SDP_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/SDP_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/REDKNEE_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/REDKNEE_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/REDKNEE_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/K2VMS_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/K2VMS_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/K2VMS_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/TGUARD-VAL_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/TGUARD-VAL_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/TGUARD-VAL_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/VRI_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/VRI_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/VRI_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/TGUARD-GEN_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/TGUARD-GEN_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/TGUARD-GEN_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/MRE_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/MRE_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/MRE_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/ROAR_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/ROAR_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/ROAR_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BIM_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BIM_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BIM_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/EFC_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/EFC_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/EFC_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/AMNQ_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/AMNQ_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/AMNQ_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BDS-CAAM_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BDS-CAAM_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BDS-CAAM_Merged.vsi:0 minunte 0 second
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BOOST_Merged.vsi started
+     [java] Execution of /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BOOST_Merged.vsi completed
+     [java] Total time taken for /opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/WEBSERVICES/Images/BOOST_Merged.vsi:0 minunte 0 second
+     [java] %%%%%%%%% backendTxMap write DONE{BDS={}, LIM={}, SPD={}, YODA={}, BCAM={}, GRID={5=com.itko.lisa.matches.TxMappingPojo@610ba2d1, 8=com.itko.lisa.matches.TxMappingPojo@18156d1f}, XI={}, SDP={}, PAMBIS={5=com.itko.lisa.matches.TxMappingPojo@6a36ebaa, 8=com.itko.lisa.matches.TxMappingPojo@30605329}, CAAM={}, VRI={}, TGUARD-GEN={}, BillDB={}, CSIRestAndDLC={}, OlamBill={}, DAO={}, AMNQ={}, BDS-CAAM={}, BOOST={}, CSI={5=com.itko.lisa.matches.TxMappingPojo@274e30c7, 17=com.itko.lisa.matches.TxMappingPojo@3be4c6fc, 23=com.itko.lisa.matches.TxMappingPojo@63334d7f, 11=com.itko.lisa.matches.TxMappingPojo@7ac53a21, 29=com.itko.lisa.matches.TxMappingPojo@713d3b95}, BDM={}, TLG={134=com.itko.lisa.matches.TxMappingPojo@5ca54778, 59=com.itko.lisa.matches.TxMappingPojo@115237c, 77=com.itko.lisa.matches.TxMappingPojo@3ddfff7a, 113=com.itko.lisa.matches.TxMappingPojo@78f5cb74, 110=com.itko.lisa.matches.TxMappingPojo@5e7bf966, 56=com.itko.lisa.matches.TxMappingPojo@784fe18c, 35=com.itko.lisa.matches.TxMappingPojo@38195819, 17=com.itko.lisa.matches.TxMappingPojo@41b0a9e0, 158=com.itko.lisa.matches.TxMappingPojo@4c4fa0b8, 14=com.itko.lisa.matches.TxMappingPojo@6217c112, 119=com.itko.lisa.matches.TxMappingPojo@70de9d12, 152=com.itko.lisa.matches.TxMappingPojo@7ecec7c6, 41=com.itko.lisa.matches.TxMappingPojo@1a12b4d3, 107=com.itko.lisa.matches.TxMappingPojo@23406fd7, 65=com.itko.lisa.matches.TxMappingPojo@145671b5, 83=com.itko.lisa.matches.TxMappingPojo@7b0ef717, 104=com.itko.lisa.matches.TxMappingPojo@4b967d0e, 62=com.itko.lisa.matches.TxMappingPojo@3af0968b, 80=com.itko.lisa.matches.TxMappingPojo@3451c38b, 86=com.itko.lisa.matches.TxMappingPojo@551bd2a0, 101=com.itko.lisa.matches.TxMappingPojo@317b71d9, 146=com.itko.lisa.matches.TxMappingPojo@394f62cc, 128=com.itko.lisa.matches.TxMappingPojo@d7b56aa, 68=com.itko.lisa.matches.TxMappingPojo@33182c98, 95=com.itko.lisa.matches.TxMappingPojo@379c4cf8, 122=com.itko.lisa.matches.TxMappingPojo@5a47cf7, 47=com.itko.lisa.matches.TxMappingPojo@6df23fa8, 92=com.itko.lisa.matches.TxMappingPojo@2579ac74, 23=com.itko.lisa.matches.TxMappingPojo@26d6221b, 26=com.itko.lisa.matches.TxMappingPojo@79788ef8, 32=com.itko.lisa.matches.TxMappingPojo@2457c24c, 5=com.itko.lisa.matches.TxMappingPojo@5c1a81c, 8=com.itko.lisa.matches.TxMappingPojo@6a5dd990, 140=com.itko.lisa.matches.TxMappingPojo@7540d24b, 74=com.itko.lisa.matches.TxMappingPojo@9269e0c, 50=com.itko.lisa.matches.TxMappingPojo@f0aa166}, TGUARD={}, ICBT={}, SMBIS={}, MPS={}, LDAP={20=com.itko.lisa.matches.TxMappingPojo@6d455b4a, 32=com.itko.lisa.matches.TxMappingPojo@41955bcd, 5=com.itko.lisa.matches.TxMappingPojo@e067956, 23=com.itko.lisa.matches.TxMappingPojo@3b783201, 26=com.itko.lisa.matches.TxMappingPojo@25876500, 14=com.itko.lisa.matches.TxMappingPojo@4008896, 11=com.itko.lisa.matches.TxMappingPojo@311ec5ee, 29=com.itko.lisa.matches.TxMappingPojo@4aecaaa2}, Olam={}, MPS-IGP={}, QP={}, CSI-IFSQ={}, REDKNEE={}, K2VMS={}, EDP={}, TGUARD-VAL={}, DLC={}, MRE={20=com.itko.lisa.matches.TxMappingPojo@a1ab167, 5=com.itko.lisa.matches.TxMappingPojo@e8cafcc, 8=com.itko.lisa.matches.TxMappingPojo@1d949d4b, 14=com.itko.lisa.matches.TxMappingPojo@1448d887}, ROAR={}, BIM={}, EFC={}, CAPM={}, CPC={}, ENABLER={20=com.itko.lisa.matches.TxMappingPojo@7cdca1b0, 5=com.itko.lisa.matches.TxMappingPojo@138524a1, 17=com.itko.lisa.matches.TxMappingPojo@1d41e366, 8=com.itko.lisa.matches.TxMappingPojo@79ea7e86, 26=com.itko.lisa.matches.TxMappingPojo@28c6c7bd, 11=com.itko.lisa.matches.TxMappingPojo@4bea85d, 29=com.itko.lisa.matches.TxMappingPojo@2f8ab088}, SMS={}}
+     [java] TotalTxs:64 XLS Rows 64
+     [java] Processing Done, total time taken 0 minute 4 second
+
+merge-process-all:
+   [delete] Deleting: /opt/app/t1eam4c2/stubbing/trunk/Lisa_Merge_Utils/data/LisaMatchesReport_1603_Grid_On.xlsx
+
+BUILD SUCCESSFUL
+Total time: 30 seconds

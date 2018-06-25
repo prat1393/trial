@@ -1,0 +1,858 @@
+Script to Merge DSS Merged  and ATT Merged
+********** Starting Combine process ************
+Source_folder=/opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/
+Destination_folder=/opt/app/t1eam4c2/stubbing/trunk/IST_Deploy/MYATT_DSS_COMBINE_2014_FINAL/MYATT_DSS_COMBINE_2014_FINAL/VServices/MERGED/
+Combining JAVA/Images/BDM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/BDM_Merged.vsi
+Combining JAVA/Images/CSIRestAndDLC_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/CSIRestAndDLC_Merged.vsi
+Combining JAVA/Images/CAAM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/CAAM_Merged.vsi
+Combining JAVA/Images/CPC_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/CPC_Merged.vsi
+Combining JAVA/Images/EDP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/EDP_Merged.vsi
+Combining JAVA/Images/DAO_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/DAO_Merged.vsi
+Combining JAVA/Images/ENABLER_Merged.vs
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/ENABLER_Merged.vs
+Combining JAVA/Images/GRID_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/GRID_Merged.vsi
+Combining JAVA/Images/LDAP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/LDAP_Merged.vsi
+Combining JAVA/Images/LIM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/LIM_Merged.vsi
+Combining JAVA/Images/OlamBill_Total_new_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/OlamBill_Total_new_Merged.vsi
+Combining JAVA/Images/PAMBIS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/PAMBIS_Merged.vsi
+Combining JAVA/Images/Olam_DSS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/Olam_DSS_Merged.vsi
+Combining JAVA/Images/QP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/QP_Merged.vsi
+Combining JAVA/Images/SMBIS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/SMBIS_Merged.vsi
+Combining JAVA/Images/SMS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/SMS_Merged.vsi
+Combining JAVA/Images/DLC_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/DLC_Merged.vsi
+Combining JAVA/Images/EDP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/EDP_Merged.vsi
+Combining JAVA/Images/TLG_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/TLG_Merged.vsi
+Combining JAVA/Images/Billing_DB.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/Billing_DB.vsi
+Combining JAVA/Images/BillDB_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/BillDB_Merged.vsi
+Combining WEBSERVICES/Images/AMNQ_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/AMNQ_Merged.vsi
+Combining WEBSERVICES/Images/BCAM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/BCAM_Merged.vsi
+Combining WEBSERVICES/Images/BDS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+Done Combining:WEBSERVICES/Images/BDS_Merged.vsi
+Combining WEBSERVICES/Images/BDS-CAAM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/BDS-CAAM_Merged.vsi
+Combining WEBSERVICES/Images/BIM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/BIM_Merged.vsi
+Combining WEBSERVICES/Images/BOOST_Merged.vsi
+Done Combining:WEBSERVICES/Images/BOOST_Merged.vsi
+Combining WEBSERVICES/Images/CSI_Merged.vsi
+Script to Merge DSS Merged  and ATT Merged
+********** Starting Combine process ************
+Source_folder=/opt/app/t1eam4c2/stubbing/branches/b1603/1603_p1_Grid_On/1603_myATT_Validation_GridOn_merge/1603_myATT_Validation_GridOn_merge/VServices/MERGED/
+Destination_folder=/opt/app/t1eam4c2/stubbing/trunk/IST_Deploy/MYATT_DSS_COMBINE_2014_FINAL/MYATT_DSS_COMBINE_2014_FINAL/VServices/MERGED/
+Combining JAVA/Images/BDM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/BDM_Merged.vsi
+Combining JAVA/Images/CSIRestAndDLC_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/CSIRestAndDLC_Merged.vsi
+Combining JAVA/Images/CAAM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/CAAM_Merged.vsi
+Combining JAVA/Images/CPC_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/CPC_Merged.vsi
+Combining JAVA/Images/EDP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/EDP_Merged.vsi
+Combining JAVA/Images/DAO_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/DAO_Merged.vsi
+Combining JAVA/Images/ENABLER_Merged.vs
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/ENABLER_Merged.vs
+Combining JAVA/Images/GRID_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/GRID_Merged.vsi
+Combining JAVA/Images/LDAP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/LDAP_Merged.vsi
+Combining JAVA/Images/LIM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/LIM_Merged.vsi
+Combining JAVA/Images/OlamBill_Total_new_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/OlamBill_Total_new_Merged.vsi
+Combining JAVA/Images/PAMBIS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/PAMBIS_Merged.vsi
+Combining JAVA/Images/Olam_DSS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/Olam_DSS_Merged.vsi
+Combining JAVA/Images/QP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/QP_Merged.vsi
+Combining JAVA/Images/SMBIS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/SMBIS_Merged.vsi
+Combining JAVA/Images/SMS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/SMS_Merged.vsi
+Combining JAVA/Images/DLC_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/DLC_Merged.vsi
+Combining JAVA/Images/EDP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/EDP_Merged.vsi
+Combining JAVA/Images/TLG_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/TLG_Merged.vsi
+Combining JAVA/Images/Billing_DB.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/Billing_DB.vsi
+Combining JAVA/Images/BillDB_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:JAVA/Images/BillDB_Merged.vsi
+Combining WEBSERVICES/Images/AMNQ_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/AMNQ_Merged.vsi
+Combining WEBSERVICES/Images/BCAM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/BCAM_Merged.vsi
+Combining WEBSERVICES/Images/BDS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/BDS_Merged.vsi
+Combining WEBSERVICES/Images/BDS-CAAM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/BDS-CAAM_Merged.vsi
+Combining WEBSERVICES/Images/BIM_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/BIM_Merged.vsi
+Combining WEBSERVICES/Images/BOOST_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/BOOST_Merged.vsi
+Combining WEBSERVICES/Images/CSI_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/CSI_Merged.vsi
+Combining WEBSERVICES/Images/CSI-IFSQ_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/CSI-IFSQ_Merged.vsi
+Combining WEBSERVICES/Images/EFC_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/EFC_Merged.vsi
+Combining WEBSERVICES/Images/ICBT_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/ICBT_Merged.vsi
+Combining WEBSERVICES/Images/K2VMS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/K2VMS_Merged.vsi
+Combining WEBSERVICES/Images/MPS_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/MPS_Merged.vsi
+Combining WEBSERVICES/Images/MPS-IGP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/MPS-IGP_Merged.vsi
+Combining WEBSERVICES/Images/MRE_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/MRE_Merged.vsi
+Combining WEBSERVICES/Images/REDKNEE_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/REDKNEE_Merged.vsi
+Combining WEBSERVICES/Images/ROAR_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/ROAR_Merged.vsi
+Combining WEBSERVICES/Images/SDP_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/SDP_Merged.vsi
+Combining WEBSERVICES/Images/SPD_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/SPD_Merged.vsi
+Combining WEBSERVICES/Images/TGUARD_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/TGUARD_Merged.vsi
+Combining WEBSERVICES/Images/VRI_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/VRI_Merged.vsi
+Combining WEBSERVICES/Images/XI_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/XI_Merged.vsi
+Combining WEBSERVICES/Images/YODA_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/YODA_Merged.vsi
+Combining WEBSERVICES/Images/TGUARD-GEN_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/TGUARD-GEN_Merged.vsi
+Combining WEBSERVICES/Images/TGUARD-VAL_Merged.vsi
+Locale: en_US
+Setting System.out and System.err to: UTF-8
+LISA_HOME set to /opt/app/t1eam4c2/CA/DevTest/
+DevTest temporary directory is /opt/app/t1eam4c2/lisatmp_8.4.0
+Configuring logging from '/opt/app/t1eam4c2/CA/DevTest/logging.properties'
+DevTest Solutions, Copyright (c) 2002-2017 CA, All rights reserved.
+DevTest Service Image Manager
+DevTest Solutions Version :: 8.4.0 (8.4.0.227)
+Installed patches: none
+
+Done Combining:WEBSERVICES/Images/TGUARD-VAL_Merged.vsi

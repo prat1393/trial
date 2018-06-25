@@ -1,0 +1,174 @@
+<project name="ant-common" basedir=".">
+
+    <!-- ================================================================= -->
+    <!-- Define properties                                                 -->
+    <!-- ================================================================= -->
+    <dirname property="ant-common.basedir" file="${ant.file.ant-common}"/>
+    <property name="project.base.dir" location="${ant-common.basedir}/.."/>
+    
+    <property name="itkoext.build.dir" value="${project.base.dir}/itkoext-build"/>
+
+    <!-- This is where LISA_HOME is read from -->
+    <property file="${itkoext.build.dir}/build.properties"/>
+
+    <!-- Set after the build.properties so that the users value takes precedence -->
+    <property name="LISA_VERSION" value="6.0"/>
+
+    <!-- change these in dependent build scripts to compile with other java version -->
+    <property name="javac.source.version" value="1.6"/>
+    <property name="javac.target.version" value="1.6"/>
+
+    <!-- Read the system environment variables and stores them in properties, -->
+    <!-- prefixed with "env". -->
+    <property environment="env"/>
+    <property name="thirdparty.dir" value="thirdparty"/>
+    <property name="lib.dir" value="lib"/>
+    <property name="lib.compile.dir" value="${lib.dir}/compile"/>
+    <property name="src.dir" value="src"/>
+    <property name="java.source.dir" value="${src.dir}/java"/>
+    <property name="test.source.dir" value="${src.dir}/test"/>
+    <property name="conf.dir" value="${src.dir}/conf"/>
+    <property name="build.dir" value="build"/>
+    <property name="javac.dest" value="${build.dir}/classes"/>
+    <property name="javac.test.dest" value="${build.dir}/test"/>
+    <property name="jar.filename" value="${ant.project.name}.jar"/>
+    <property name="test.jar.filename" value="${ant.project.name}-tests.jar"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="dist.lib.dir" value="${dist.dir}/lib"/>
+    <property name="docs.dir" value="docs"/>
+    <property name="javadoc.dest" value="${dist.dir}/${docs.dir}/api"/>
+    <property name="test.results.dir" value="test-results"/>
+    <property name="test.log.file" value="${ant.project.name}-unit-test.log"/>
+
+    <basename property="module.dir" file="${basedir}" />
+
+    <property name="itkoext.build.dir" value="${project.base.dir}/itkoext-build"/>
+
+    <!-- ===================== -->
+    <!-- LISA jar dirs         -->
+    <!-- ===================== -->
+    <property name="lisa.bin.dir" value="${LISA_HOME}/bin"/>
+    <property name="lisa.patches.dir" value="${lisa.bin.dir}/patches"/>
+    <property name="lisa.lib.dir" value="${LISA_HOME}/lib"/>
+    <property name="lisa.hotdeploy.dir" value="${LISA_HOME}/hotDeploy"/>
+
+    <!-- ================================================================= -->
+    <!-- Set Classpath(s)                                                  -->
+    <!-- ================================================================= -->
+    <path id="compile.dist.classpath">
+        <fileset dir="${lib.dir}" includes="*.jar"/>
+    </path>
+    <path id="compile.only.classpath">
+        <fileset dir="${dist.lib.dir}" includes="*.jar"/>
+        <fileset dir="${lib.compile.dir}" includes="*.jar"/>
+        <fileset dir="${lisa.patches.dir}" includes="*.jar"/>
+        <fileset dir="${lisa.bin.dir}" includes="*.jar"/>
+        <fileset dir="${lisa.lib.dir}" includes="**/*.jar"/>
+        <fileset dir="${lisa.lib.dir}" includes="**/*.lib"/>
+        <path refid="compile.only.classpath.ext"/>
+    </path>
+    <!--Optional extension point to add compile time dependencies-->
+    <path id="compile.only.classpath.ext"/>
+
+    <path id="compile.combined.classpath">
+        <path refid="compile.dist.classpath"/>
+        <path refid="compile.only.classpath"/>
+    </path>
+
+    <!-- ================================================================= -->
+    <!-- Initialize the project                                            -->
+    <!-- ================================================================= -->
+    <extension-point name="pre-init-hook"/>
+    <target name="init" depends="pre-init-hook">
+	    <mkdir dir="${lib.compile.dir}"/>
+		<mkdir dir="${test.source.dir}"/>
+        <mkdir dir="${dist.lib.dir}"/>
+        <mkdir dir="${lisa.patches.dir}"/>
+        <copy todir="${dist.lib.dir}" flatten="true">
+            <fileset dir="${itkoext.build.dir}" includes="**/*.jar"/>
+        </copy>
+    </target>
+
+    <!-- ================================================================= -->
+    <!-- Compile the project code                                          -->
+    <!-- ================================================================= -->
+    <extension-point name="pre-compile-hook" depends="init"/>
+    <target name="compile" depends="pre-compile-hook">
+        <echo>Compiling project ${ant.project.name} with javac.source.version = ${javac.source.version} and javac.target.version = ${javac.target.version}</echo>
+        <mkdir dir="${javac.dest}"/>
+        <javac srcdir="${java.source.dir}" destdir="${javac.dest}" deprecation="on" source="${javac.source.version}"
+               target="${javac.target.version}" debug="on" encoding="UTF-8" includeantruntime="false">
+            <classpath refid="compile.combined.classpath"/>
+        </javac>
+        <copy todir="${javac.dest}" flatten="false">
+            <fileset dir="${java.source.dir}" includes="**/*"/>
+        </copy>
+    </target>
+
+    <!-- ================================================================= -->
+    <!-- Compile the test code                                             -->
+    <!-- ================================================================= -->
+    <extension-point name="pre-compile-tests-hook" depends="compile"/>
+    <target name="compile-tests" depends="pre-compile-tests-hook">
+        <mkdir dir="${javac.test.dest}"/>
+        <javac srcdir="${test.source.dir}" destdir="${javac.test.dest}" deprecation="on" source="${javac.source.version}"
+               target="${javac.target.version}" debug="on" encoding="UTF-8" includeantruntime="false">
+            <classpath>
+                <pathelement location="${javac.dest}"/>
+                <path refid="compile.combined.classpath"/>
+            </classpath>
+        </javac>
+        <copy todir="${javac.test.dest}" flatten="false">
+            <fileset dir="${test.source.dir}" includes="**/*"/>
+        </copy>
+    </target>
+
+    <!-- ================================================================= -->
+    <!-- JAR the project code                                              -->
+    <!-- ================================================================= -->
+    <extension-point name="pre-jar-hook" depends="compile-tests"/>
+    <target name="jar" depends="pre-jar-hook">
+        <mkdir dir="${dist.dir}/lib"/>
+        <jar destfile="${dist.dir}/${jar.filename}">
+            <fileset dir="${javac.dest}"/>
+        </jar>
+        <jar destfile="${dist.dir}/${test.jar.filename}">
+            <fileset dir="${javac.test.dest}"/>
+        </jar>
+    </target>
+
+    <!-- ================================================================ -->
+    <!-- Assemble a full distribution in the ${dist.dir} directory        -->
+    <!-- ================================================================ -->
+    <extension-point name="pre-dist-hook" depends="jar"/>
+    <target name="dist" depends="pre-dist-hook">
+        <copy todir="${dist.lib.dir}" flatten="true" failonerror="false">
+            <path refid="compile.dist.classpath"/>
+        </copy>
+    </target>
+
+    <!-- ================================================================ -->
+    <!-- Deploy the project and its dep libs to LISA_HOME/hotDeploy       -->
+    <!-- ================================================================ -->
+    <extension-point name="pre-deploy-hook" depends="dist"/>
+    <target name="deploy" depends="pre-deploy-hook">
+        <copy todir="${lisa.hotdeploy.dir}" flatten="true">
+            <fileset dir="${dist.dir}">
+            	<include name="**/*.jar"/>
+            	<exclude name="**/*-tests-*.jar"/>
+             </fileset>
+        </copy>
+    </target>
+
+    <!-- ================================================================= -->
+    <!-- Delete compiled code and archive files                            -->
+    <!-- ================================================================= -->
+    <extension-point name="pre-clean-hook"/>
+    <target name="clean" depends="pre-clean-hook">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+        <delete dir="${test.results.dir}"/>
+        <delete file="${test.log.file}"/>
+    </target>
+
+</project>
