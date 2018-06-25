@@ -1,0 +1,17 @@
+com.itko.lisa.coordinator
+com.itko.lisa.editor
+com.itko.lisa.perfmgr
+com.itko.lisa.stats
+com.itko.lisa.test
+com.itko.lisa.testing
+com.itko.lisaint
+com.itko.lisaint.agent
+com.itko.lisaint.ejb
+com.itko.lisaint.java
+com.itko.lisaint.javaee
+com.itko.lisaint.servlet
+com.itko.lisaint.servlet.filter
+com.itko.lisaint.utils
+com.itko.lisaint.webservice
+com.itko.lisaint.wshandler
+com.itko.util
