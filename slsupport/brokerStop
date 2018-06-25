@@ -1,0 +1,13 @@
+#!/bin/sh
+isBrokerUp='NO';
+for _bePID in `ps -ef | egrep -wi 'lisa.agent.migrate.properties=false' | grep -v grep | awk '{print $2}'`
+do
+    echo "Broker PID -->"${_bePID};
+    kill -9 ${_bePID};
+    echo "Broker stopped successfully...";
+    isBrokerUp='YES';
+done
+if [ "$isBrokerUp" == "NO" ]
+then
+   echo "Broker Service is not up and running...";
+fi

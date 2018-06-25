@@ -1,0 +1,126 @@
+#!/bin/sh
+. slsupport.properties
+
+projFilePath=`echo -n $project_path$file_path | tr -d "\r"`
+todayFolder=$(date +%m%d%y);
+
+echo ${projFilePath};
+## below script to check Recorder status if any recorder is up then skip the below steps else execute the below steps.
+isRecorderFound='NO'
+    backendType="";
+    listerPort="";
+    recordStartStopPort="";
+    lstargetHost="";
+    lstargetPort="";
+	
+	for _beDetails in `cat beList`;
+	do
+		var=$(echo $_beDetails | awk -F"#" '{print $1,$2,$3,$4,$5,$6,$7}')
+		set -- $var
+		_beName=$1;
+		backendType=$2;
+		listerPort=$3;
+		recordStartStopPort=$4;
+		lstargetHost=$5;
+		lstargetPort=$6;
+		for _bePID in `ps -ef | egrep -wi ${_beName}'_.*\.vsm' | grep -v grep | awk '{print $2}'`
+		do
+			_beCPID=$(pgrep -P ${_bePID});
+			 echo "${_beName} >>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+			 echo "${_beName} Main PID = "${_bePID};
+			 echo "${_beName} Child PID = "${_beCPID};
+			 echo "Backend Type = "${backendType};
+			 echo "Lister Port = "${listerPort};
+			 echo "Stop Signal Port = "${recordStartStopPort};
+			 echo "Target Host = "${lstargetHost};
+			 echo "Target Port = "${lstargetPort};
+			 echo "RawTraffic File = ";
+			 echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ${_beName}";
+			 echo "";
+			if [ ! -z "$_bePID" ]
+            then
+                isRecorderFound='YES'
+            fi
+		done
+    done
+if [ "$isRecorderFound" == "YES" ]
+then
+   echo "Above listed recorders are going to stop...";
+   echo "Process Started .....Please wait....";
+
+   ## below script to stop all recorders by calling stopAllRecorders.sh
+   scriptPath=`echo -n $project_path$script_path | tr -d "\r"`
+   sh $scriptPath"/stopAllRecorders.sh"
+   sleep 10
+   echo "All Recorders are stopped...";
+   echo "";
+  
+   ## below script to kill all recorders main and child PIDs
+   for _beDetails in `cat beList`;
+   do
+	var1=$(echo $_beDetails | awk -F"#" '{print $8,$9}')
+	set -- $var1
+	_beName=$8;
+    for _bePID in `ps -ef | egrep -wi ${_beName}'_.*\.vsm' | grep -v grep | awk '{print $2}'`
+        do
+            _beCPID=$(pgrep -P ${_bePID});
+            kill -9 ${_bePID};
+            kill -9 ${_beCPID};
+        done
+    done
+    sleep 10;
+    echo "All Recorders Process ID's are killed..."
+    echo "";
+
+    ## below script to add/move Java RawTraffic file to date wise Folder
+    javaFilePath=`echo -n $project_path$file_path$java_path | tr -d "\r"`
+    for fileName in `find $javaFilePath -name "*.xml"`
+    do
+       if [[ -d $fileName ]]
+       then
+          echo $fileName
+        else
+          EXACTFILENAME=${fileName##*/}
+          part3=`echo $EXACTFILENAME | cut -d \_ -f 3`
+          if [ "$part3" != "$todayFolder" ]
+          then
+            echo $EXACTFILENAME;
+            dayWiseJavaFolder=`echo -n $projFilePath"/"$part3"/JAVA/RawTraffic"| tr -d "\r"`;
+            if [[ ! -e $dayWiseJavaFolder ]]
+            then
+                mkdir -p $dayWiseJavaFolder
+            fi
+            mv $fileName $dayWiseJavaFolder
+          fi
+       fi
+     done
+
+    echo "All previous days Java/EJB RawTraffic files are moved to corresponding date folders... ";
+    ## below script to add/move WEBSERVICES RawTraffic file to date wise Folder
+    wsFilePath=`echo -n $project_path$file_path$ws_path | tr -d "\r"`
+    for fileName in `find $wsFilePath -name "*.xml"`
+    do
+       if [[ -d $fileName ]]
+       then
+          echo $fileName
+       else
+          EXACTFILENAME=${fileName##*/}
+          part1=`echo $EXACTFILENAME | cut -d \_ -f 1`
+          part3=`echo $EXACTFILENAME | cut -d \_ -f 3`
+          if [ "$part3" != "$todayFolder" ]; then
+            echo $EXACTFILENAME;
+            dayWiseWSFolder=`echo -n $projFilePath"/"$part3"/WEBSERVICES/"$part1"/RawTraffic"| tr -d "\r"`;
+            if [[ ! -e $dayWiseWSFolder ]]
+            then
+               mkdir -p $dayWiseWSFolder
+            fi
+               mv $fileName $dayWiseWSFolder
+         fi
+      fi
+    done
+
+    echo "All previous days WEBSERVICES RawTraffic files are moved to corresponding date folders... ";
+    echo "Stop process completed successfully...";
+else
+   echo "NO Recorders are up and running to STOP... ";
+fi

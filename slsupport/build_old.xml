@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="StubValidation">
+<property environment="env"/>
+<property name="ECLIPSE_HOME" value="../../EclipseIndigo"/>
+<property name="debuglevel" value="source,lines,vars"/>
+<property name="target" value="1.6"/>
+<property name="source" value="1.6"/>
+<property name="lisaHome" value="/opt/app/t1eam4c2/Lisa7.5"/>
+
+<path id="StubValidation.classpath">
+<pathelement location="./StubValidation.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-acl.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-acl-api.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-agent.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-annotations.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-cloud.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-core.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-editor.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-esb.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-httpweb.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-invoke.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-j2ee.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-jdbc-sim-jar.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-jdbridge.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-jmx.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-lisa-glass-core.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-mobile.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-modules.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-pfcorebridge.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-reporting.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-swift.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-virtualize.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-vse-byop.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-web20.jar"/>
+<pathelement location="${lisaHome}/lib/_misc-ws-xml.jar"/>
+<pathelement location="${lisaHome}/lib/attProtocol.jar"/>
+<pathelement location="${lisaHome}/lib/axis-saaj.jar"/>
+<pathelement location="${lisaHome}/lib/bcprov-jdk15on-147.jar"/>
+<pathelement location="${lisaHome}/lib/bsh-2.0b4.jar"/>
+<pathelement location="${lisaHome}/lib/c3p0-0.9.2.1.jar"/>
+<pathelement location="${lisaHome}/lib/cctDHProtocol.jar"/>
+<pathelement location="${lisaHome}/lib/com.google.guava_1.6.0.jar"/>
+<pathelement location="${lisaHome}/lib/com.ibm.dhbcore.jar"/>
+<pathelement location="${lisaHome}/lib/com.ibm.mq.commonservices.jar"/>
+<pathelement location="${lisaHome}/lib/com.ibm.mq.defaultconfig.jar"/>
+<pathelement location="${lisaHome}/lib/com.ibm.mq.jar"/>
+<pathelement location="${lisaHome}/lib/com.ibm.mq.jmqi.jar"/>
+<pathelement location="${lisaHome}/lib/com.ibm.mq.pcf.jar"/>
+<pathelement location="${lisaHome}/lib/com.ibm.mqjms.jar"/>
+<pathelement location="${lisaHome}/lib/connector.jar"/>
+<pathelement location="${lisaHome}/lib/itko-cb2xml.jar"/>
+<pathelement location="${lisaHome}/lib/javax.ejb-api.jar"/>
+<pathelement location="${lisaHome}/lib/javax.servlet-3.0.jar"/>
+<pathelement location="${lisaHome}/lib/jdbridge.jar"/>
+<pathelement location="${lisaHome}/lib/jms.jar"/>
+<pathelement location="${lisaHome}/lib/jode-1.1.2.jar"/>
+<pathelement location="${lisaHome}/lib/lisaint2.0.jar"/>
+<pathelement location="${lisaHome}/lib/lisajdbcsim.jar"/>
+<pathelement location="${lisaHome}/lib/lisa-jmx.jar"/>
+<pathelement location="${lisaHome}/lib/mail-1.4.4.jar"/>
+<pathelement location="${lisaHome}/lib/mchange-commons-java-0.2.3.4.jar"/>
+<pathelement location="${lisaHome}/lib/mockrunner-jdbc.jar"/>
+<pathelement location="${lisaHome}/lib/sablecc.jar"/>
+<pathelement location="${lisaHome}/lib/slf4j_api_1.7.2.jar"/>
+<pathelement location="${lisaHome}/lib/slf4j-simple-1.7.2.jar"/>
+<pathelement location="${lisaHome}/lib/StubValidationDPH.jar"/>
+<pathelement location="${lisaHome}/lib/swing-layout-1.0.3.jar"/>
+<pathelement location="${lisaHome}/lib/web20bridge.jar"/>
+<pathelement location="${lisaHome}/lib/wife.jar"/>
+<pathelement location="${lisaHome}/lib/xom-1.2.10.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-acl.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-acl-api.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-agent.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-annotations.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-cloud.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-core.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-editor.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-esb.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-glass-core.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-httpweb.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-invoke.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-j2ee.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-mobile.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-modules.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-pfcorebridge.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-reporting.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-swift.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-virtualize.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-vse-byop.jar"/>
+<pathelement location="${lisaHome}/bin/lisa-ws-xml.jar"/>
+<pathelement location="${lisaHome}/lib/vse-batch-manager-6.0.jar"/>
+<pathelement location="${lisaHome}/lib/ini4j-0.2.6.jar"/>
+<pathelement location="${lisaHome}/lib/jsch-0.1.47.jar"/>
+<pathelement location="${lisaHome}/lib/ojdbc6.jar"/>
+</path>
+<target name="init">
+<mkdir dir="bin"/>
+<copy includeemptydirs="false" todir="bin">
+<fileset dir="src">
+<exclude name="**/*.java"/>
+</fileset>
+</copy>
+</target>
+<target name="clean">
+<delete dir="bin"/>
+</target>
+<target depends="clean" name="cleanall"/>
+<target depends="build-subprojects,build-project" name="build"/>
+<target name="build-subprojects"/>
+<target depends="init" name="build-project">
+<echo message="${ant.project.name}: ${ant.file}"/>
+<javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+<src path="src"/>
+<classpath refid="StubValidation.classpath"/>
+</javac>
+</target>
+<target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+<target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+<copy todir="${ant.library.dir}">
+<fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+</copy>
+<unzip dest="${ant.library.dir}">
+<patternset includes="jdtCompilerAdapter.jar"/>
+<fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+</unzip>
+</target>
+<target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+<property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+<antcall target="build"/>
+</target>
+<target name="PostProcessEJB">
+     <java classname="com.att.det.sv.stubvalidation.postprocess.PostProcessEJB_New" failonerror="true" fork="yes">
+          <classpath refid="StubValidation.classpath"/>
+     </java>
+</target>
+<target name="PostProcessWEBServices">
+     <java classname="com.att.det.sv.stubvalidation.postprocess.PostProcessWEBServices_New" failonerror="true" fork="yes">
+          <classpath refid="StubValidation.classpath"/>
+     </java>
+</target>
+<target name="OlamLogParserDriver">
+     <java classname="com.att.det.sv.stubvalidation.fe.OlamLogParserDriver" failonerror="true" fork="yes">
+          <classpath refid="StubValidation.classpath"/>
+     </java>
+</target>
+<target name="OlamLogParser">
+     <java classname="com.att.det.sv.stubvalidation.fe.OlamLogParser" failonerror="true" fork="yes">
+           <classpath refid="StubValidation.classpath"/>
+     </java>
+</target>
+<target name="ANTConfiguration">
+     <java classname="com.att.det.sv.stubvalidation.ant.ANTConfiguration" failonerror="true" fork="yes">
+          <classpath refid="StubValidation.classpath"/>
+     </java>
+</target>
+<target name="ANTDeployNStart">
+     <java classname="com.att.det.sv.stubvalidation.ant.ANT_DeployNStart" failonerror="true" fork="yes">
+          <classpath refid="StubValidation.classpath"/>
+     </java>
+</target>
+<target name="ANTStopNUnDeploy">
+     <java classname="com.att.det.sv.stubvalidation.ant.ANT_StopNUndeploy" failonerror="true" fork="yes">
+          <classpath refid="StubValidation.classpath"/>
+     </java>
+</target>
+<target name="CommonExtraction">
+     <java classname="com.att.det.sv.stubvalidation.vsiext.CommonExtractTXIDVsiToVsi" failonerror="true" fork="yes">
+          <classpath refid="StubValidation.classpath"/>
+     </java>
+</target>
+<target name="CommonRemoval">
+     <java classname="com.att.det.sv.stubvalidation.vsiext.CommonRemovalTXIDVsiToVsi" failonerror="true" fork="yes">
+           <classpath refid="StubValidation.classpath"/>
+     </java>
+</target>
+<target name="IncrementalMergeProcess">
+     <java classname="com.att.det.sv.stubvalidation.Merge.IncrementalMergeProcess" failonerror="true" fork="yes">
+          <classpath refid="StubValidation.classpath"/>
+     </java>
+</target>
+<target name="TestVersion">
+<echo>Java/JVM version: ${ant.java.version}</echo>
+<echo>Java/JVM detail version: ${java.version}</echo>
+     <java classname="com.att.det.sv.stubvalidation.postprocess.TestVersion" failonerror="true" fork="yes">
+      <classpath refid="StubValidation.classpath"/>
+     </java>
+</target>
+</project>

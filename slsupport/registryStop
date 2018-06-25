@@ -1,0 +1,13 @@
+#!/bin/sh
+isRegistryUp='NO';
+for _bePID in `ps -ef | egrep -wi 'DLISA_LOG=registry.log' | grep -v grep | awk '{print $2}'`
+do
+    echo "Registry PID -->"${_bePID};
+    kill -9 ${_bePID};
+    isRegistryUp='YES';
+    echo "Registry stopped successfully...";
+done
+if [ "$isRegistryUp" == "NO" ]
+then
+   echo "Registry Service is not up and running...";
+fi

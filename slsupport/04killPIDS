@@ -1,0 +1,35 @@
+#!/bin/sh
+_beName=$1
+_beCPID=''
+if [ -z "${_beName}" ] 
+then
+	echo "Enter Backend Name or 'ALL'"
+else
+	if [ "${_beName}" == "ALL" ] 
+	then
+		#for _beName in `cat beList`;
+		#do
+	           #echo ${_beName};
+                   #for _bePID in `ps -ef | egrep -wi ${_beName}'_.*\.vsm' | grep -v grep | awk '{print $2}'`
+                      #do
+                       #echo "${_beName}";
+                       #_beCPID=$(pgrep -P ${_bePID});
+                       #echo "${_beName}-Child-->"${_beCPID};                 
+                       #kill -9 ${_bePID};
+                       #kill -9 ${_beCPID};
+                      #done
+		#done
+                echo "Kill all process commented in this Script...";
+	else
+		for _bePID in `ps -ef | egrep -wi ${_beName}'_.*\.vsm' | grep -v grep | awk '{print $2}'`
+		do
+		 echo "${_beName}";
+                  _beCPID=$(pgrep -P ${_bePID});
+                 #echo "${_beName}-Child-->"${_beCPID};
+                 kill -9 ${_bePID};
+                 kill -9 ${_beCPID}; 
+		done
+                echo "${_beName} Process Killed successfully....";
+	fi
+#echo "All Process Killed successfully....";
+fi

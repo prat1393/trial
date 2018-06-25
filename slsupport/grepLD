@@ -1,0 +1,5 @@
+#!/bin/sh
+  for _loginData in `cat logindata`;
+     do
+        echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ${_loginData}";
+     done

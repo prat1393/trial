@@ -1,0 +1,5 @@
+#!/bin/sh
+JAVA_HOME=/opt/app/t1eam4c11/CA/DevTest/jre/
+export JAVA_HOME
+unset DISPLAY
+ant VframeFileProcess

@@ -1,0 +1,9 @@
+#!/bin/sh
+JAVA_HOME=/opt/app/t1eam4c11/CA/DevTest/jre/bin
+export JAVA_HOME
+unset DISPLAY
+cd /opt/app/t1eam4c11/stubbing/branches/b1708/1708_p1_Grid_On/1708_myATT_Recording_GridOn/slsupport
+LISA_OPTIONS="-javaagent:/opt/app/t1eam4c11/CA/DevTest/agent/LisaAgent2.jar=url=tcp://130.9.203.221:2009,name=VFrameAgent"
+#${JAVA_HOME}/java -d64 ${LISA_OPTIONS} StartAgent.jar com.att.det.sv.stubvalidation.agent.StartAgent
+
+${JAVA_HOME}/java -d64 ${LISA_OPTIONS} -jar StartAgent.jar

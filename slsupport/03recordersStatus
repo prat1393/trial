@@ -1,0 +1,95 @@
+#!/bin/sh
+. slsupport.properties
+_beName=$1
+_beCPID=''
+#IFS=#
+if [ -z "${_beName}" ]
+then
+        echo "Enter Backend Name or 'ALL'"
+else
+	projFilePath=`echo -n $project_path$file_path | tr -d "\r"`
+        wsFilePath=`echo -n $project_path$file_path$ws_path | tr -d "\r"`
+        javaFilePath=`echo -n $project_path$file_path$java_path | tr -d "\r"`
+
+        backendType="";
+        listerPort="";
+	recordStartStopPort="";
+	lstargetHost="";
+	lstargetPort="";
+        if [ "${_beName}" == "ALL" ]
+        then
+           for _beDetails in `cat beList`;
+             do
+                var=$(echo $_beDetails | awk -F"#" '{print $1,$2,$3,$4,$5,$6,$7}')
+                set -- $var
+                _beName=$1;
+                backendType=$2;
+                listerPort=$3;
+                recordStartStopPort=$4;
+                lstargetHost=$5;
+                lstargetPort=$6;
+                for _bePID in `ps -ef | egrep -wi ${_beName}'_.*\.vsm' | grep -v grep | awk '{print $2}'`
+                do
+                        _beCPID=$(pgrep -P ${_bePID});
+                         echo "${_beName} >>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+                         echo "${_beName} Main PID = "${_bePID};
+                         echo "${_beName} Child PID = "${_beCPID};
+			 echo "Backend Type = "${backendType};
+			 echo "Lister Port = "${listerPort};
+			 echo "Stop Signal Port = "${recordStartStopPort};
+			 echo "Target Host = "${lstargetHost};
+			 echo "Target Port = "${lstargetPort};
+                         echo "RawTraffic File(s) : (as Size, Date Time Stamp, Names)";
+                         if [ "$backendType" == "Java" ]
+                         then
+                              ls -ltr $javaFilePath | awk '/:/ {print $5,$6,$7,$8,$9}'
+                         fi
+                         if [ "$backendType" == "WEBService" ]
+                         then
+                              ls -ltr $wsFilePath"/"${_beName}"/RawTraffic" | awk '/:/ {print $5,$6,$7,$8,$9}'
+                         fi                         
+                         echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ${_beName}";
+                         echo "";
+                done
+             done
+        else
+		for _beDetails in `cat beList`;
+                do
+                  var=$(echo $_beDetails | awk -F"#" '{print $1,$2,$3,$4,$5,$6,$7}')   
+                  set -- $var
+                  backendName=$1;
+                  #if [ "${_beName}" = "${backendName}" ] 
+                  if [ "${_beName}" = $1 ]
+                  then
+			backendType=$2;
+			listerPort=$3;
+			recordStartStopPort=$4;
+			lstargetHost=$5;
+			lstargetPort=$6;
+                  fi
+                done
+
+		for _bePID in `ps -ef | egrep -wi ${_beName}'_.*\.vsm' | grep -v grep | awk '{print $2}'`
+                do
+                         _beCPID=$(pgrep -P ${_bePID});
+                         echo "${_beName} >>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+                         echo "${_beName} Main PID = "${_bePID};
+                         echo "${_beName} Child PID = "${_beCPID};
+			 echo "Backend Type = "${backendType};
+			 echo "Lister Port = "${listerPort};
+			 echo "Stop Signal Port = "${recordStartStopPort};
+			 echo "Target Host = "${lstargetHost};
+			 echo "Target Port = "${lstargetPort};
+                         echo "RawTraffic File(s) : (as Size, Date Time Stamp, Names)";
+                         if [ "$backendType" == "Java" ]
+                         then
+                              ls -ltr $javaFilePath | awk '/:/ {print $5,$6,$7,$8,$9}'
+                         fi
+                         if [ "$backendType" == "WEBService" ]
+                         then
+                              ls -ltr $wsFilePath"/"${_beName}"/RawTraffic" | awk '/:/ {print $5,$6,$7,$8,$9}'
+                         fi
+                         echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ${_beName}";
+                done
+        fi
+fi
