@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+
+<!-- TestCase Results Document created by LISA Test Editor -->
+<!-- On: Wed Jan 06 23:36:56 CST 2010 -->
+
+
+<Results name="userAddDelete">
+
+
+    <Result node="add">
+      <content type="xstream"><![CDATA[]]></content>
+    </Result>
+
+
+    <Result node="delete">
+      <content type="xstream"><![CDATA[]]></content>
+    </Result>
+
+
+</Results>

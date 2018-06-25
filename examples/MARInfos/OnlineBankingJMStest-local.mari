@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<MarInfo>
+<name>OnlineBankingJMStest-local</name>
+<type>TEST_MONITOR</type>
+<optimized>true</optimized>
+<deployInfo>
+    <PrimaryAsset>Tests/async-consumer-jms.tst</PrimaryAsset>
+    <Configuration>Configs/project.config</Configuration>
+    <StagingDocument>StagingDocs/Run1User1Cycle.stg</StagingDocument>
+    <CoordinatorServerName>Coordinator@Default</CoordinatorServerName>
+    <ServiceName>VerifyJMSBackbone</ServiceName>
+    <Priority>3</Priority>
+    <CRONInfo>1|1291236240000|1388522640000|60| | | </CRONInfo>
+</deployInfo>
+</MarInfo>

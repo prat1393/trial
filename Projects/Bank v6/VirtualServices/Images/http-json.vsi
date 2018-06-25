@@ -1,0 +1,374 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="7" name="http-json" created="2014-09-17.10:50:14.818" lastModified="2014-09-17.10:50:42.722" version="5.0" buildNumber="0.0.0.0">
+<st>
+<t id="10" nd="true">
+<sp>
+<t id="11">
+<rq id="12" op="POST /enrollment-rest/vManage/v1/account/93332cf1-a37e-494c-8947-b9a5922c5418/acceptedTermsAndConditions/service/Enrollment/version/1" tl="EXACT">
+<ag>
+<p n="dateAccepted" t="arg:EQUALS;false;;;;">2012-06-14T11:30:40-0700</p>
+<p n="languageCode" t="arg:EQUALS;false;;;;">en</p>
+<p n="termsKey" t="arg:EQUALS;false;;;;">f0a6f2aa-8e68-45ae-a875-84444ef1130d</p>
+<p n="termsType" t="arg:EQUALS;false;;;;">electronicDisclosure</p>
+<p n="termsVersion" t="arg:EQUALS;false;;;;">1</p>
+</ag>
+<at>
+<p n="recorded_raw_request_bytes">eyJkYXRlQWNjZXB0ZWQiOiIyMDEyLTA2LTE0VDExOjMwOjQwLTA3MDAiLCJsYW5ndWFnZUNvZGUiOiJlbiIsInRlcm1zS2V5IjoiZjBhNmYyYWEtOGU2OC00NWFlLWE4NzUtODQ0NDRlZjExMzBkIiwidGVybXNUeXBlIjoiZWxlY3Ryb25pY0Rpc2Nsb3N1cmUiLCJ0ZXJtc1ZlcnNpb24iOjF9</p>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;dateAccepted&quot;:&quot;2012-06-14T11:30:40-0700&quot;,&quot;languageCode&quot;:&quot;en&quot;,&quot;termsKey&quot;:&quot;f0a6f2aa-8e68-45ae-a875-84444ef1130d&quot;,&quot;termsType&quot;:&quot;electronicDisclosure&quot;,&quot;termsVersion&quot;:1}</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/enrollment-rest/vManage/v1/account/93332cf1-a37e-494c-8947-b9a5922c5418/acceptedTermsAndConditions/service/Enrollment/version/1</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="X-Api-Key">89ba4c3d-3373-40ad-8a46-aec33f944fae</p>
+<p n="Content-Type">application/json</p>
+<p n="User-Agent">LISA</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;dateAccepted type=&quot;string&quot;&gt;2012-06-14T11:30:40-0700&lt;/dateAccepted&gt;&lt;languageCode type=&quot;string&quot;&gt;en&lt;/languageCode&gt;&lt;termsKey type=&quot;string&quot;&gt;f0a6f2aa-8e68-45ae-a875-84444ef1130d&lt;/termsKey&gt;&lt;termsType type=&quot;string&quot;&gt;electronicDisclosure&lt;/termsType&gt;&lt;termsVersion type=&quot;number&quot;&gt;1&lt;/termsVersion&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="13" t="1">
+<m>
+<p n="HTTP-Response-Code">200</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;dateAccepted type=&quot;number&quot;&gt;1.33969858E12&lt;/dateAccepted&gt;&lt;languageCode type=&quot;string&quot;&gt;en&lt;/languageCode&gt;&lt;termsKey type=&quot;string&quot;&gt;f0a6f2aa-8e68-45ae-a875-84444ef113e9&lt;/termsKey&gt;&lt;termsType type=&quot;string&quot;&gt;terms&lt;/termsType&gt;&lt;termsVersion type=&quot;number&quot;&gt;1&lt;/termsVersion&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="1">
+<rq id="14" op="POST /enrollment-rest/vManage/v1/account/93332cf1-a37e-494c-8947-b9a5922c5418/acceptedTermsAndConditions/service/Enrollment/version/1" tl="EXACT">
+<ag>
+<p n="dateAccepted" t="arg:EQUALS;false;;;;">2012-06-14T11:30:40-0700</p>
+<p n="languageCode" t="arg:EQUALS;false;;;;">en</p>
+<p n="termsKey" t="arg:EQUALS;false;;;;">f0a6f2aa-8e68-45ae-a875-84444ef1130f</p>
+<p n="termsType" t="arg:EQUALS;false;;;;">privacy</p>
+<p n="termsVersion" t="arg:EQUALS;false;;;;">1</p>
+</ag>
+<at>
+<p n="recorded_raw_request_bytes">eyJkYXRlQWNjZXB0ZWQiOiIyMDEyLTA2LTE0VDExOjMwOjQwLTA3MDAiLCJsYW5ndWFnZUNvZGUiOiJlbiIsInRlcm1zS2V5IjoiZjBhNmYyYWEtOGU2OC00NWFlLWE4NzUtODQ0NDRlZjExMzBmIiwidGVybXNUeXBlIjoicHJpdmFjeSIsInRlcm1zVmVyc2lvbiI6MX0=</p>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;dateAccepted&quot;:&quot;2012-06-14T11:30:40-0700&quot;,&quot;languageCode&quot;:&quot;en&quot;,&quot;termsKey&quot;:&quot;f0a6f2aa-8e68-45ae-a875-84444ef1130f&quot;,&quot;termsType&quot;:&quot;privacy&quot;,&quot;termsVersion&quot;:1}</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/enrollment-rest/vManage/v1/account/93332cf1-a37e-494c-8947-b9a5922c5418/acceptedTermsAndConditions/service/Enrollment/version/1</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="X-Api-Key">89ba4c3d-3373-40ad-8a46-aec33f944fae</p>
+<p n="Content-Type">application/json</p>
+<p n="User-Agent">LISA</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;dateAccepted type=&quot;string&quot;&gt;2012-06-14T11:30:40-0700&lt;/dateAccepted&gt;&lt;languageCode type=&quot;string&quot;&gt;en&lt;/languageCode&gt;&lt;termsKey type=&quot;string&quot;&gt;f0a6f2aa-8e68-45ae-a875-84444ef1130f&lt;/termsKey&gt;&lt;termsType type=&quot;string&quot;&gt;privacy&lt;/termsType&gt;&lt;termsVersion type=&quot;number&quot;&gt;1&lt;/termsVersion&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="15" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;dateAccepted type=&quot;number&quot;&gt;1.33969858E12&lt;/dateAccepted&gt;&lt;languageCode type=&quot;string&quot;&gt;en&lt;/languageCode&gt;&lt;termsKey type=&quot;string&quot;&gt;f0a6f2aa-8e68-45ae-a875-84444ef113e9&lt;/termsKey&gt;&lt;termsType type=&quot;string&quot;&gt;terms&lt;/termsType&gt;&lt;termsVersion type=&quot;number&quot;&gt;1&lt;/termsVersion&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="2">
+<rq id="16" op="POST /enrollment-rest/vManage/v1/account/93332cf1-a37e-494c-8947-b9a5922c5418/acceptedTermsAndConditions/service/Enrollment/version/1" tl="EXACT">
+<ag>
+<p n="dateAccepted" t="arg:EQUALS;false;;;;">2012-06-14T11:30:39-0700</p>
+<p n="languageCode" t="arg:EQUALS;false;;;;">en</p>
+<p n="termsKey" t="arg:EQUALS;true;;;;">f0a6f2aa-8e68-45ae-a875-84444ef113e9</p>
+<p n="termsType" t="arg:EQUALS;true;;;;">terms</p>
+<p n="termsVersion" t="arg:EQUALS;false;;;;">1</p>
+</ag>
+<at>
+<p n="recorded_raw_request_bytes">eyJkYXRlQWNjZXB0ZWQiOiIyMDEyLTA2LTE0VDExOjMwOjM5LTA3MDAiLCJsYW5ndWFnZUNvZGUiOiJlbiIsInRlcm1zS2V5IjoiZjBhNmYyYWEtOGU2OC00NWFlLWE4NzUtODQ0NDRlZjExM2U5IiwidGVybXNUeXBlIjoidGVybXMiLCJ0ZXJtc1ZlcnNpb24iOjF9</p>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;dateAccepted&quot;:&quot;2012-06-14T11:30:39-0700&quot;,&quot;languageCode&quot;:&quot;en&quot;,&quot;termsKey&quot;:&quot;f0a6f2aa-8e68-45ae-a875-84444ef113e9&quot;,&quot;termsType&quot;:&quot;terms&quot;,&quot;termsVersion&quot;:1}</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/enrollment-rest/vManage/v1/account/93332cf1-a37e-494c-8947-b9a5922c5418/acceptedTermsAndConditions/service/Enrollment/version/1</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="X-Api-Key">89ba4c3d-3373-40ad-8a46-aec33f944fae</p>
+<p n="Content-Type">application/json</p>
+<p n="User-Agent">LISA</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;dateAccepted type=&quot;string&quot;&gt;2012-06-14T11:30:39-0700&lt;/dateAccepted&gt;&lt;languageCode type=&quot;string&quot;&gt;en&lt;/languageCode&gt;&lt;termsKey type=&quot;string&quot;&gt;f0a6f2aa-8e68-45ae-a875-84444ef113e9&lt;/termsKey&gt;&lt;termsType type=&quot;string&quot;&gt;terms&lt;/termsType&gt;&lt;termsVersion type=&quot;number&quot;&gt;1&lt;/termsVersion&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="17" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;dateAccepted type=&quot;number&quot;&gt;1.33969858E12&lt;/dateAccepted&gt;&lt;languageCode type=&quot;string&quot;&gt;en&lt;/languageCode&gt;&lt;termsKey type=&quot;string&quot;&gt;{{=request_termsKey;/*f0a6f2aa-8e68-45ae-a875-84444ef113e9*/}}&lt;/termsKey&gt;&lt;termsType type=&quot;string&quot;&gt;{{=request_termsType;/*terms*/}}&lt;/termsType&gt;&lt;termsVersion type=&quot;number&quot;&gt;1&lt;/termsVersion&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="18" op="POST /enrollment-rest/vManage/v1/account/93332cf1-a37e-494c-8947-b9a5922c5418/acceptedTermsAndConditions/service/Enrollment/version/1" tl="SIGNATURE">
+<ag>
+<p n="dateAccepted" t="arg:EQUALS;false;;;;">2012-06-14T11:30:40-0700</p>
+<p n="languageCode" t="arg:EQUALS;false;;;;">en</p>
+<p n="termsKey" t="arg:EQUALS;false;;;;">f0a6f2aa-8e68-45ae-a875-84444ef1130d</p>
+<p n="termsType" t="arg:EQUALS;false;;;;">electronicDisclosure</p>
+<p n="termsVersion" t="arg:EQUALS;false;;;;">1</p>
+</ag>
+<at>
+<p n="recorded_raw_request_bytes">eyJkYXRlQWNjZXB0ZWQiOiIyMDEyLTA2LTE0VDExOjMwOjQwLTA3MDAiLCJsYW5ndWFnZUNvZGUiOiJlbiIsInRlcm1zS2V5IjoiZjBhNmYyYWEtOGU2OC00NWFlLWE4NzUtODQ0NDRlZjExMzBkIiwidGVybXNUeXBlIjoiZWxlY3Ryb25pY0Rpc2Nsb3N1cmUiLCJ0ZXJtc1ZlcnNpb24iOjF9</p>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;dateAccepted&quot;:&quot;2012-06-14T11:30:40-0700&quot;,&quot;languageCode&quot;:&quot;en&quot;,&quot;termsKey&quot;:&quot;f0a6f2aa-8e68-45ae-a875-84444ef1130d&quot;,&quot;termsType&quot;:&quot;electronicDisclosure&quot;,&quot;termsVersion&quot;:1}</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/enrollment-rest/vManage/v1/account/93332cf1-a37e-494c-8947-b9a5922c5418/acceptedTermsAndConditions/service/Enrollment/version/1</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="X-Api-Key">89ba4c3d-3373-40ad-8a46-aec33f944fae</p>
+<p n="Content-Type">application/json</p>
+<p n="User-Agent">LISA</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;dateAccepted type=&quot;string&quot;&gt;2012-06-14T11:30:40-0700&lt;/dateAccepted&gt;&lt;languageCode type=&quot;string&quot;&gt;en&lt;/languageCode&gt;&lt;termsKey type=&quot;string&quot;&gt;f0a6f2aa-8e68-45ae-a875-84444ef1130d&lt;/termsKey&gt;&lt;termsType type=&quot;string&quot;&gt;electronicDisclosure&lt;/termsType&gt;&lt;termsVersion type=&quot;number&quot;&gt;1&lt;/termsVersion&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="19" t="1">
+<m>
+<p n="HTTP-Response-Code">200</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;dateAccepted type=&quot;number&quot;&gt;1.33969858E12&lt;/dateAccepted&gt;&lt;languageCode type=&quot;string&quot;&gt;en&lt;/languageCode&gt;&lt;termsKey type=&quot;string&quot;&gt;f0a6f2aa-8e68-45ae-a875-84444ef113e9&lt;/termsKey&gt;&lt;termsType type=&quot;string&quot;&gt;terms&lt;/termsType&gt;&lt;termsVersion type=&quot;number&quot;&gt;1&lt;/termsVersion&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="20" nd="true">
+<sp>
+<t id="3">
+<rq id="21" op="POST /enrollment-rest/vManage/v1/account.json" tl="EXACT">
+<ag>
+<p n="challengeQuestions_element_answer_1" t="arg:EQUALS;false;;;;">toys</p>
+<p n="challengeQuestions_element_questionId_1" t="arg:EQUALS;false;;;;">01</p>
+<p n="challengeQuestions_element_answer_2" t="arg:EQUALS;false;;;;">1111</p>
+<p n="challengeQuestions_element_questionId_2" t="arg:EQUALS;false;;;;">02</p>
+<p n="rdsContext_SubContext" t="arg:EQUALS;false;;;;">CONSUMER_V_ME</p>
+<p n="sessionId" t="arg:EQUALS;false;;;;">k4phwSQwkpXOKnLoN3v3VwE1D_r_vUnTt2duZZDp7nPRVQ8HymT_glOFctt8Ax0RUDC_6f9m6nXfGHVciPrVw2a4TjNsIw</p>
+<p n="vuser_countryCode" t="arg:EQUALS;false;;;;">US</p>
+<p n="vuser_emailAddress" t="arg:EQUALS;false;;;;">dgoldie1338610482@example.com</p>
+<p n="vuser_firstName" t="arg:EQUALS;false;;;;">consumer</p>
+<p n="vuser_lastName" t="arg:EQUALS;false;;;;">user</p>
+<p n="vuser_password" t="arg:EQUALS;false;;;;">Test1234!</p>
+</ag>
+<at>
+<p n="recorded_raw_request_bytes">eyJ2dXNlciI6eyJjb3VudHJ5Q29kZSI6IlVTIiwiZW1haWxBZGRyZXNzIjoiZGdvbGRpZTEzMzg2MTA0ODJAZXhhbXBsZS5jb20iLCJmaXJzdE5hbWUiOiJjb25zdW1lciIsImxhc3ROYW1lIjoidXNlciIsInBhc3N3b3JkIjoiVGVzdDEyMzQhIn0sInNlc3Npb25JZCI6Ims0cGh3U1F3a3BYT0tuTG9OM3YzVndFMURfcl92VW5UdDJkdVpaRHA3blBSVlE4SHltVF9nbE9GY3R0OEF4MFJVRENfNmY5bTZuWGZHSFZjaVByVncyYTRUak5zSXciLCJjaGFsbGVuZ2VRdWVzdGlvbnMiOlt7InF1ZXN0aW9uSWQiOiIwMSIsImFuc3dlciI6InRveXMifSx7InF1ZXN0aW9uSWQiOiIwMiIsImFuc3dlciI6IjExMTEifV0sInJkc0NvbnRleHQiOnsiU3ViQ29udGV4dCI6IkNPTlNVTUVSX1ZfTUUifX0=</p>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;vuser&quot;:{&quot;countryCode&quot;:&quot;US&quot;,&quot;emailAddress&quot;:&quot;dgoldie1338610482@example.com&quot;,&quot;firstName&quot;:&quot;consumer&quot;,&quot;lastName&quot;:&quot;user&quot;,&quot;password&quot;:&quot;Test1234!&quot;},&quot;sessionId&quot;:&quot;k4phwSQwkpXOKnLoN3v3VwE1D_r_vUnTt2duZZDp7nPRVQ8HymT_glOFctt8Ax0RUDC_6f9m6nXfGHVciPrVw2a4TjNsIw&quot;,&quot;challengeQuestions&quot;:[{&quot;questionId&quot;:&quot;01&quot;,&quot;answer&quot;:&quot;toys&quot;},{&quot;questionId&quot;:&quot;02&quot;,&quot;answer&quot;:&quot;1111&quot;}],&quot;rdsContext&quot;:{&quot;SubContext&quot;:&quot;CONSUMER_V_ME&quot;}}</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/enrollment-rest/vManage/v1/account.json</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="X-Api-Key">89ba4c3d-3373-40ad-8a46-aec33f944fae</p>
+<p n="Content-Type">application/json</p>
+<p n="User-Agent">LISA</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;challengeQuestions class=&quot;array&quot;&gt;&lt;element class=&quot;object&quot;&gt;&lt;answer type=&quot;string&quot;&gt;toys&lt;/answer&gt;&lt;questionId type=&quot;string&quot;&gt;01&lt;/questionId&gt;&lt;/element&gt;&lt;element class=&quot;object&quot;&gt;&lt;answer type=&quot;string&quot;&gt;1111&lt;/answer&gt;&lt;questionId type=&quot;string&quot;&gt;02&lt;/questionId&gt;&lt;/element&gt;&lt;/challengeQuestions&gt;&lt;rdsContext class=&quot;object&quot;&gt;&lt;SubContext type=&quot;string&quot;&gt;CONSUMER_V_ME&lt;/SubContext&gt;&lt;/rdsContext&gt;&lt;sessionId type=&quot;string&quot;&gt;k4phwSQwkpXOKnLoN3v3VwE1D_r_vUnTt2duZZDp7nPRVQ8HymT_glOFctt8Ax0RUDC_6f9m6nXfGHVciPrVw2a4TjNsIw&lt;/sessionId&gt;&lt;vuser class=&quot;object&quot;&gt;&lt;countryCode type=&quot;string&quot;&gt;US&lt;/countryCode&gt;&lt;emailAddress type=&quot;string&quot;&gt;dgoldie1338610482@example.com&lt;/emailAddress&gt;&lt;firstName type=&quot;string&quot;&gt;consumer&lt;/firstName&gt;&lt;lastName type=&quot;string&quot;&gt;user&lt;/lastName&gt;&lt;password type=&quot;string&quot;&gt;Test1234!&lt;/password&gt;&lt;/vuser&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="22" t="1">
+<m>
+<p n="HTTP-Response-Code">200</p>
+</m>
+<bd bin="true"></bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="23" op="POST /enrollment-rest/vManage/v1/account.json" tl="SIGNATURE">
+<ag>
+<p n="challengeQuestions_element_answer_1" t="arg:EQUALS;false;;;;">toys</p>
+<p n="challengeQuestions_element_questionId_1" t="arg:EQUALS;false;;;;">01</p>
+<p n="challengeQuestions_element_answer_2" t="arg:EQUALS;false;;;;">1111</p>
+<p n="challengeQuestions_element_questionId_2" t="arg:EQUALS;false;;;;">02</p>
+<p n="rdsContext_SubContext" t="arg:EQUALS;false;;;;">CONSUMER_V_ME</p>
+<p n="sessionId" t="arg:EQUALS;false;;;;">k4phwSQwkpXOKnLoN3v3VwE1D_r_vUnTt2duZZDp7nPRVQ8HymT_glOFctt8Ax0RUDC_6f9m6nXfGHVciPrVw2a4TjNsIw</p>
+<p n="vuser_countryCode" t="arg:EQUALS;false;;;;">US</p>
+<p n="vuser_emailAddress" t="arg:EQUALS;false;;;;">dgoldie1338610482@example.com</p>
+<p n="vuser_firstName" t="arg:EQUALS;false;;;;">consumer</p>
+<p n="vuser_lastName" t="arg:EQUALS;false;;;;">user</p>
+<p n="vuser_password" t="arg:EQUALS;false;;;;">Test1234!</p>
+</ag>
+<at>
+<p n="recorded_raw_request_bytes">eyJ2dXNlciI6eyJjb3VudHJ5Q29kZSI6IlVTIiwiZW1haWxBZGRyZXNzIjoiZGdvbGRpZTEzMzg2MTA0ODJAZXhhbXBsZS5jb20iLCJmaXJzdE5hbWUiOiJjb25zdW1lciIsImxhc3ROYW1lIjoidXNlciIsInBhc3N3b3JkIjoiVGVzdDEyMzQhIn0sInNlc3Npb25JZCI6Ims0cGh3U1F3a3BYT0tuTG9OM3YzVndFMURfcl92VW5UdDJkdVpaRHA3blBSVlE4SHltVF9nbE9GY3R0OEF4MFJVRENfNmY5bTZuWGZHSFZjaVByVncyYTRUak5zSXciLCJjaGFsbGVuZ2VRdWVzdGlvbnMiOlt7InF1ZXN0aW9uSWQiOiIwMSIsImFuc3dlciI6InRveXMifSx7InF1ZXN0aW9uSWQiOiIwMiIsImFuc3dlciI6IjExMTEifV0sInJkc0NvbnRleHQiOnsiU3ViQ29udGV4dCI6IkNPTlNVTUVSX1ZfTUUifX0=</p>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;vuser&quot;:{&quot;countryCode&quot;:&quot;US&quot;,&quot;emailAddress&quot;:&quot;dgoldie1338610482@example.com&quot;,&quot;firstName&quot;:&quot;consumer&quot;,&quot;lastName&quot;:&quot;user&quot;,&quot;password&quot;:&quot;Test1234!&quot;},&quot;sessionId&quot;:&quot;k4phwSQwkpXOKnLoN3v3VwE1D_r_vUnTt2duZZDp7nPRVQ8HymT_glOFctt8Ax0RUDC_6f9m6nXfGHVciPrVw2a4TjNsIw&quot;,&quot;challengeQuestions&quot;:[{&quot;questionId&quot;:&quot;01&quot;,&quot;answer&quot;:&quot;toys&quot;},{&quot;questionId&quot;:&quot;02&quot;,&quot;answer&quot;:&quot;1111&quot;}],&quot;rdsContext&quot;:{&quot;SubContext&quot;:&quot;CONSUMER_V_ME&quot;}}</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/enrollment-rest/vManage/v1/account.json</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="X-Api-Key">89ba4c3d-3373-40ad-8a46-aec33f944fae</p>
+<p n="Content-Type">application/json</p>
+<p n="User-Agent">LISA</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;challengeQuestions class=&quot;array&quot;&gt;&lt;element class=&quot;object&quot;&gt;&lt;answer type=&quot;string&quot;&gt;toys&lt;/answer&gt;&lt;questionId type=&quot;string&quot;&gt;01&lt;/questionId&gt;&lt;/element&gt;&lt;element class=&quot;object&quot;&gt;&lt;answer type=&quot;string&quot;&gt;1111&lt;/answer&gt;&lt;questionId type=&quot;string&quot;&gt;02&lt;/questionId&gt;&lt;/element&gt;&lt;/challengeQuestions&gt;&lt;rdsContext class=&quot;object&quot;&gt;&lt;SubContext type=&quot;string&quot;&gt;CONSUMER_V_ME&lt;/SubContext&gt;&lt;/rdsContext&gt;&lt;sessionId type=&quot;string&quot;&gt;k4phwSQwkpXOKnLoN3v3VwE1D_r_vUnTt2duZZDp7nPRVQ8HymT_glOFctt8Ax0RUDC_6f9m6nXfGHVciPrVw2a4TjNsIw&lt;/sessionId&gt;&lt;vuser class=&quot;object&quot;&gt;&lt;countryCode type=&quot;string&quot;&gt;US&lt;/countryCode&gt;&lt;emailAddress type=&quot;string&quot;&gt;dgoldie1338610482@example.com&lt;/emailAddress&gt;&lt;firstName type=&quot;string&quot;&gt;consumer&lt;/firstName&gt;&lt;lastName type=&quot;string&quot;&gt;user&lt;/lastName&gt;&lt;password type=&quot;string&quot;&gt;Test1234!&lt;/password&gt;&lt;/vuser&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="24" t="1">
+<m>
+<p n="HTTP-Response-Code">200</p>
+</m>
+<bd bin="true"></bd>
+</rp>
+</rs>
+</t>
+<t id="25" nd="true">
+<sp>
+<t id="4">
+<rq id="26" op="GET /enrollment-rest/vManage/v1/termsAndConditions/service/Enrollment/version/1/country/us/language/en/type/electronicDisclosure" tl="EXACT">
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/enrollment-rest/vManage/v1/termsAndConditions/service/Enrollment/version/1/country/us/language/en/type/electronicDisclosure</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="X-Api-Key">89ba4c3d-3373-40ad-8a46-aec33f944fae</p>
+<p n="Content-Type">application/json</p>
+<p n="User-Agent">LISA</p>
+</m>
+</rq>
+<rs>
+<rp id="27" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;TCEntry class=&quot;array&quot;&gt;&lt;element class=&quot;object&quot;&gt;&lt;content type=&quot;string&quot;&gt;Electronic Disclosure&lt;/content&gt;&lt;description type=&quot;string&quot;&gt;Electronic Disclosure&lt;/description&gt;&lt;termsKey type=&quot;string&quot;&gt;f0a6f2aa-8e68-45ae-a875-84444ef1130d&lt;/termsKey&gt;&lt;termsType type=&quot;string&quot;&gt;electronicDisclosure&lt;/termsType&gt;&lt;termsVersion type=&quot;number&quot;&gt;1&lt;/termsVersion&gt;&lt;/element&gt;&lt;/TCEntry&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="28" op="GET /enrollment-rest/vManage/v1/termsAndConditions/service/Enrollment/version/1/country/us/language/en/type/electronicDisclosure" tl="SIGNATURE">
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/enrollment-rest/vManage/v1/termsAndConditions/service/Enrollment/version/1/country/us/language/en/type/electronicDisclosure</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="X-Api-Key">89ba4c3d-3373-40ad-8a46-aec33f944fae</p>
+<p n="Content-Type">application/json</p>
+<p n="User-Agent">LISA</p>
+</m>
+</rq>
+<rs>
+<rp id="29" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;TCEntry class=&quot;array&quot;&gt;&lt;element class=&quot;object&quot;&gt;&lt;content type=&quot;string&quot;&gt;Electronic Disclosure&lt;/content&gt;&lt;description type=&quot;string&quot;&gt;Electronic Disclosure&lt;/description&gt;&lt;termsKey type=&quot;string&quot;&gt;f0a6f2aa-8e68-45ae-a875-84444ef1130d&lt;/termsKey&gt;&lt;termsType type=&quot;string&quot;&gt;electronicDisclosure&lt;/termsType&gt;&lt;termsVersion type=&quot;number&quot;&gt;1&lt;/termsVersion&gt;&lt;/element&gt;&lt;/TCEntry&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="30" nd="true">
+<sp>
+<t id="5">
+<rq id="31" op="GET /enrollment-rest/vManage/v1/termsAndConditions/service/Enrollment/version/1/country/us/language/en/type/privacy" tl="EXACT">
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/enrollment-rest/vManage/v1/termsAndConditions/service/Enrollment/version/1/country/us/language/en/type/privacy</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="X-Api-Key">89ba4c3d-3373-40ad-8a46-aec33f944fae</p>
+<p n="Content-Type">application/json</p>
+<p n="User-Agent">LISA</p>
+</m>
+</rq>
+<rs>
+<rp id="32" t="1">
+<m>
+<p n="HTTP-Response-Code">200</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;TCEntry class=&quot;array&quot;&gt;&lt;element class=&quot;object&quot;&gt;&lt;content type=&quot;string&quot;&gt;Privacy&lt;/content&gt;&lt;description type=&quot;string&quot;&gt;Privacy&lt;/description&gt;&lt;termsKey type=&quot;string&quot;&gt;f0a6f2aa-8e68-45ae-a875-84444ef1130f&lt;/termsKey&gt;&lt;termsType type=&quot;string&quot;&gt;privacy&lt;/termsType&gt;&lt;termsVersion type=&quot;number&quot;&gt;1&lt;/termsVersion&gt;&lt;/element&gt;&lt;/TCEntry&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="33" op="GET /enrollment-rest/vManage/v1/termsAndConditions/service/Enrollment/version/1/country/us/language/en/type/privacy" tl="SIGNATURE">
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/enrollment-rest/vManage/v1/termsAndConditions/service/Enrollment/version/1/country/us/language/en/type/privacy</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="X-Api-Key">89ba4c3d-3373-40ad-8a46-aec33f944fae</p>
+<p n="Content-Type">application/json</p>
+<p n="User-Agent">LISA</p>
+</m>
+</rq>
+<rs>
+<rp id="34" t="1">
+<m>
+<p n="HTTP-Response-Code">200</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;TCEntry class=&quot;array&quot;&gt;&lt;element class=&quot;object&quot;&gt;&lt;content type=&quot;string&quot;&gt;Privacy&lt;/content&gt;&lt;description type=&quot;string&quot;&gt;Privacy&lt;/description&gt;&lt;termsKey type=&quot;string&quot;&gt;f0a6f2aa-8e68-45ae-a875-84444ef1130f&lt;/termsKey&gt;&lt;termsType type=&quot;string&quot;&gt;privacy&lt;/termsType&gt;&lt;termsVersion type=&quot;number&quot;&gt;1&lt;/termsVersion&gt;&lt;/element&gt;&lt;/TCEntry&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="35" nd="true">
+<sp>
+<t id="6">
+<rq id="36" op="GET /enrollment-rest/vManage/v1/termsAndConditions/service/Enrollment/version/1/country/us/language/en/type/terms" tl="EXACT">
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/enrollment-rest/vManage/v1/termsAndConditions/service/Enrollment/version/1/country/us/language/en/type/terms</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">application/json</p>
+<p n="X-Api-Key">89ba4c3d-3373-40ad-8a46-aec33f944fae</p>
+<p n="Content-Type">application/json</p>
+<p n="User-Agent">LISA</p>
+</m>
+</rq>
+<rs>
+<rp id="37" t="1">
+<m>
+<p n="HTTP-Response-Code">200</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;TCEntry class=&quot;array&quot;&gt;&lt;element class=&quot;object&quot;&gt;&lt;content type=&quot;string&quot;&gt;Terms and Conditions&lt;/content&gt;&lt;description type=&quot;string&quot;&gt;Terms and Conditions&lt;/description&gt;&lt;termsKey type=&quot;string&quot;&gt;f0a6f2aa-8e68-45ae-a875-84444ef113e9&lt;/termsKey&gt;&lt;termsType type=&quot;string&quot;&gt;terms&lt;/termsType&gt;&lt;termsVersion type=&quot;number&quot;&gt;1&lt;/termsVersion&gt;&lt;/element&gt;&lt;/TCEntry&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="38" op="GET /enrollment-rest/vManage/v1/termsAndConditions/service/Enrollment/version/1/country/us/language/en/type/terms" tl="SIGNATURE">
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/enrollment-rest/vManage/v1/termsAndConditions/service/Enrollment/version/1/country/us/language/en/type/terms</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">application/json</p>
+<p n="X-Api-Key">89ba4c3d-3373-40ad-8a46-aec33f944fae</p>
+<p n="Content-Type">application/json</p>
+<p n="User-Agent">LISA</p>
+</m>
+</rq>
+<rs>
+<rp id="39" t="1">
+<m>
+<p n="HTTP-Response-Code">200</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;TCEntry class=&quot;array&quot;&gt;&lt;element class=&quot;object&quot;&gt;&lt;content type=&quot;string&quot;&gt;Terms and Conditions&lt;/content&gt;&lt;description type=&quot;string&quot;&gt;Terms and Conditions&lt;/description&gt;&lt;termsKey type=&quot;string&quot;&gt;f0a6f2aa-8e68-45ae-a875-84444ef113e9&lt;/termsKey&gt;&lt;termsType type=&quot;string&quot;&gt;terms&lt;/termsType&gt;&lt;termsVersion type=&quot;number&quot;&gt;1&lt;/termsVersion&gt;&lt;/element&gt;&lt;/TCEntry&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="9" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd>&lt;html&gt;&#10;    &lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&#10;    &lt;body&gt;&#10;        &lt;h1&gt;Not Found&lt;/h1&gt;&#10;        &lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;&#10;        &lt;hr/&gt;&#10;        &lt;p&gt;&lt;i&gt;The LISA VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;/p&gt;&#10;        &lt;br/&gt;&lt;font size=&quot;-2&quot;&gt;Produced by a LISA virtualized web server.&lt;/font&gt;&#10;    &lt;/body&gt;&#10;&lt;/html&gt;&#10;</bd>
+</rp>
+</ucrr>
+<usrr>
+<rp id="8" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd>&lt;html&gt;&#10;    &lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&#10;    &lt;body&gt;&#10;        &lt;h1&gt;Not Found&lt;/h1&gt;&#10;        &lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;&#10;        &lt;hr/&gt;&#10;        &lt;p&gt;&lt;i&gt;The LISA VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;/p&gt;&#10;        &lt;br/&gt;&lt;font size=&quot;-2&quot;&gt;Produced by a LISA virtualized web server.&lt;/font&gt;&#10;    &lt;/body&gt;&#10;&lt;/html&gt;&#10;</bd>
+</rp>
+</usrr>
+</serviceImage>

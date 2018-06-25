@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<MarInfo>
+<name>OnlineBankingExternalCreditCheck-local</name>
+<type>TEST_MONITOR</type>
+<optimized>true</optimized>
+<deployInfo>
+    <PrimaryAsset>TestsThatFail/webservices-fail.tst</PrimaryAsset>
+    <Configuration>Configs/project.config</Configuration>
+    <StagingDocument>StagingDocs/Run1User1Cycle.stg</StagingDocument>
+    <CoordinatorServerName>Coordinator@Default</CoordinatorServerName>
+    <ServiceName>External Credit Check Service</ServiceName>
+    <Priority>3</Priority>
+    <CRONInfo>1|1291236060000|1388522460000|15| | | </CRONInfo>
+</deployInfo>
+</MarInfo>

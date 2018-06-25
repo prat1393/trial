@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <soapenv:Body>
+    <addUser xmlns="http://ejb3.examples.itko.com/">
+      
+      <login xmlns="">newuser</login>
+      <!--password is optional-->
+      <cleartextPassword> xmlns="">newpassword</cleartextPassword>
+    </addUser>
+  </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<mappings>
+	<!--
+	mappings
+	===========================================================================
+	A <mapping/> element has a required 'role' attribute.  The value of a
+	'role' attribute is the name of a DevTest role that will contain child
+	<groupDN/> elements.  The body of a <groupDN/> element will be the
+	distinguished name of a LDAP/Active Directory group.  Each <mapping/>
+	element may contain 0 or more <groupDN/> child elements.
+	
+	Example LDAP Group Mappings:
+	
+	<mapping role="DevTest Administrator">
+		<groupDN>cn=administrators,ou=groups,dc=example,dc=com</groupDN>
+	</mapping>
+	<mapping role="Test Power">
+		<groupDN>cn=developers,ou=groups,dc=example,dc=com</groupDN>
+		<groupDN>cn=administrators,ou=groups,dc=example,dc=com</groupDN>
+	</mapping>
+	<mapping role="SV Power">
+		<groupDN>cn=developers,ou=groups,dc=example,dc=com</groupDN>
+		<groupDN>cn=administrators,ou=groups,dc=example,dc=com</groupDN>
+	</mapping>
+	<mapping role="Test Observer">
+		<groupDN>cn=users,ou=groups,dc=example,dc=com</groupDN>
+	</mapping>
+	
+	In the above mappings, all members of the
+	"cn=administrators,ou=groups,dc=example,dc=com" group will be assigned
+	the DevTest Administrator, Test Power and SV Power roles along with
+	the associated permissions.  The members of the
+	"cn=developers,ou=groups,dc=example,dc=com" group will have the Test Power
+	and SV Power roles assigned. Finally the "cn=users,ou=groups,dc=example,dc=com"
+	members are assigned the Test Observer role.  
+	-->
+	
+	<mapping role="Super User">
+	</mapping>
+	<mapping role="DevTest Administrator">
+	</mapping>
+	<mapping role="Test Administrator">
+	</mapping>
+	<mapping role="System Administration">
+	</mapping>
+	<mapping role="PF Power">
+	</mapping>
+	<mapping role="SV Power">
+	</mapping>
+	<mapping role="Test Power">
+	</mapping>
+	<mapping role="Runtime">
+	</mapping>
+	<mapping role="Test Runner">
+	</mapping>
+	<mapping role="Test Observer">
+	</mapping>
+	<mapping role="Load Tester">
+	</mapping>
+	<mapping role="User">
+	</mapping>
+	<mapping role="Guest">
+	</mapping>
+</mappings>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rules>
+ 
+   <agent guid="2011200800" name="CarEsb">
+      <feature name="EJB" weight="8"/>
+      <feature name="HTTP Client" weight="8"/>
+      <feature name="HTTP Server" weight="8"/>
+      <feature name="JDBC" weight="8"/>
+      <feature name="JMS" weight="8"/>
+      <feature name="MQ" weight="8"/>
+   </agent>
+   <agent guid="2011204509" name="CarInv">
+      <feature name="GUI" weight="8"/>
+      <feature name="HTTP Client" weight="8"/>
+      <feature name="JDBC" weight="8"/>
+      <feature name="JMS" weight="8"/>
+      <feature name="MQ" weight="8"/>
+   <feature name="HTTP Server" weight="8"/>
+   </agent>
+   <agent guid="-2077079868" name="CarLoan">
+      <feature name="EJB" weight="8"/>
+      <feature name="HTTP Client" weight="8"/>
+      <feature name="HTTP Server" weight="8"/>
+      <feature name="JDBC" weight="8"/>
+      <feature name="JMS" weight="8"/>
+      <feature name="MQ" weight="8"/>
+      <feature name="POJO" weight="8"/>
+   </agent>
+   <agent guid="2011217664" name="CarWeb">
+      <feature name="EJB" weight="8"/>
+      <feature name="HTTP Client" weight="8"/>
+      <feature name="HTTP Server" weight="8"/>
+      <feature name="JDBC" weight="8"/>
+      <feature name="MQ" weight="8"/>
+   </agent>
+   <agent guid="1088413135" name="JBoss_LISABank">
+      <feature name="EJB" weight="8"/>
+      <feature name="HTTP Server" weight="8"/>
+      <feature name="JCA" weight="8"/>
+      <feature name="JDBC" weight="8"/>
+      <feature name="JMS" weight="8"/>
+      <feature name="Logging" weight="8"/>
+      <feature name="MQ" weight="8"/>
+      <feature name="Framework" weight="8"/>
+   </agent>
+   <agent guid="-2032180703" name="DEFAULT"/>
+    <!--************ Console ************-->
+    <console>
+        <property comment="if MQ goes down, wait this many millis before attempting to reconnect." key="MQMIRROR_CONNECT_INTERVAL" value="5005"/>
+        <property comment="A regular expression to match queue names we are interested in. By default we will inspect all queues. Be careful to quote any dot characters in the queue names!  If this property is left undefined we will include all queue names" key="MQMIRROR_INCLUDE_QUEUES" value=""/>
+    </console>
+</rules>

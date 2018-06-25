@@ -1,0 +1,6329 @@
+<?xml version="1.0" ?>
+
+<TestCase name="ejb3WSTest" version="5">
+
+<meta><create version="0.0" buildNumber="0.0.0.0" author="cam" date="09/20/2009" host="obijohn.itko.local"  /><lastEdited version="0.0" buildNumber="0.0.0.0" author="bmm" date="09/30/2010" host="bmacbookpro-air"  /></meta>
+
+<id>c18140f2</id>
+<Documentation>This model thoroughly tests the LisaBank web services.  It is almost identical in functionality to the ejb3EJB test and useful for the same reasons (see that test case documentation).</Documentation>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj0wLjAgKDAuMC4wLjApJm5vZGVzPTg0NDU0MjczNQ==</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+<deletedProps>
+</deletedProps>
+
+    <Node name="ejb3User WSDL Validation" log=""
+          type="com.itko.lisa.ws.WSDLNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="ejb3Account WSDL Validation" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="false" name="Ensure WSDL has not changed" type="com.itko.lisa.xml.xmldiff.assertion.GraphicalXMLDiffAssertion">
+<log>WSDL changed!!</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+<controlXML>&lt;definitions name=&apos;EJB3UserControlBeanService&apos; targetNamespace=&apos;http://ejb3.examples.itko.com/&apos; xmlns=&apos;http://schemas.xmlsoap.org/wsdl/&apos; xmlns:soap=&apos;http://schemas.xmlsoap.org/wsdl/soap/&apos; xmlns:tns=&apos;http://ejb3.examples.itko.com/&apos; xmlns:xsd=&apos;http://www.w3.org/2001/XMLSchema&apos;&gt;&#10; &lt;types&gt;&#10;  &lt;xs:schema targetNamespace=&apos;http://ejb3.examples.itko.com/&apos; version=&apos;1.0&apos; xmlns:tns=&apos;http://ejb3.examples.itko.com/&apos; xmlns:xs=&apos;http://www.w3.org/2001/XMLSchema&apos;&gt;&#10;   &lt;xs:element name=&apos;addAddress&apos; type=&apos;tns:addAddress&apos;/&gt;&#10;   &lt;xs:element name=&apos;addAddressResponse&apos; type=&apos;tns:addAddressResponse&apos;/&gt;&#10;   &lt;xs:element name=&apos;addUser&apos; type=&apos;tns:addUser&apos;/&gt;&#10;   &lt;xs:element name=&apos;addUserObject&apos; type=&apos;tns:addUserObject&apos;/&gt;&#10;   &lt;xs:element name=&apos;addUserObjectResponse&apos; type=&apos;tns:addUserObjectResponse&apos;/&gt;&#10;   &lt;xs:element name=&apos;addUserResponse&apos; type=&apos;tns:addUserResponse&apos;/&gt;&#10;   &lt;xs:element name=&apos;deleteAddress&apos; type=&apos;tns:deleteAddress&apos;/&gt;&#10;   &lt;xs:element name=&apos;deleteAddressResponse&apos; type=&apos;tns:deleteAddressResponse&apos;/&gt;&#10;   &lt;xs:element name=&apos;deleteTestAccounts&apos; type=&apos;tns:deleteTestAccounts&apos;/&gt;&#10;   &lt;xs:element name=&apos;deleteTestAccountsResponse&apos; type=&apos;tns:deleteTestAccountsResponse&apos;/&gt;&#10;   &lt;xs:element name=&apos;deleteUser&apos; type=&apos;tns:deleteUser&apos;/&gt;&#10;   &lt;xs:element name=&apos;deleteUserResponse&apos; type=&apos;tns:deleteUserResponse&apos;/&gt;&#10;   &lt;xs:element name=&apos;getAddress&apos; type=&apos;tns:getAddress&apos;/&gt;&#10;   &lt;xs:element name=&apos;getAddressResponse&apos; type=&apos;tns:getAddressResponse&apos;/&gt;&#10;   &lt;xs:element name=&apos;getUser&apos; type=&apos;tns:getUser&apos;/&gt;&#10;   &lt;xs:element name=&apos;getUserResponse&apos; type=&apos;tns:getUserResponse&apos;/&gt;&#10;   &lt;xs:element name=&apos;listAddresses&apos; type=&apos;tns:listAddresses&apos;/&gt;&#10;   &lt;xs:element name=&apos;listAddressesResponse&apos; type=&apos;tns:listAddressesResponse&apos;/&gt;&#10;   &lt;xs:element name=&apos;listUsers&apos; type=&apos;tns:listUsers&apos;/&gt;&#10;   &lt;xs:element name=&apos;listUsersResponse&apos; type=&apos;tns:listUsersResponse&apos;/&gt;&#10;   &lt;xs:element name=&apos;ping&apos; type=&apos;tns:ping&apos;/&gt;&#10;   &lt;xs:element name=&apos;pingResponse&apos; type=&apos;tns:pingResponse&apos;/&gt;&#10;   &lt;xs:element name=&apos;resetPassword&apos; type=&apos;tns:resetPassword&apos;/&gt;&#10;   &lt;xs:element name=&apos;resetPasswordResponse&apos; type=&apos;tns:resetPasswordResponse&apos;/&gt;&#10;   &lt;xs:element name=&apos;updateUser&apos; type=&apos;tns:updateUser&apos;/&gt;&#10;   &lt;xs:element name=&apos;updateUserResponse&apos; type=&apos;tns:updateUserResponse&apos;/&gt;&#10;   &lt;xs:element name=&apos;validate&apos; type=&apos;tns:validate&apos;/&gt;&#10;   &lt;xs:element name=&apos;validateResponse&apos; type=&apos;tns:validateResponse&apos;/&gt;&#10;   &lt;xs:complexType name=&apos;getAddress&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;addressId&apos; type=&apos;xs:string&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;getAddressResponse&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;return&apos; type=&apos;tns:address&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;address&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;city&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;id&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;line1&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;line2&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;state&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element name=&apos;zip&apos; type=&apos;xs:int&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;validate&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;username&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;password&apos; type=&apos;xs:string&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;validateResponse&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element name=&apos;return&apos; type=&apos;xs:boolean&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;addUser&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;username&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;password&apos; type=&apos;xs:string&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;addUserResponse&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;return&apos; type=&apos;tns:user&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;user&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element maxOccurs=&apos;unbounded&apos; minOccurs=&apos;0&apos; name=&apos;accounts&apos; nillable=&apos;true&apos; type=&apos;tns:account&apos;/&gt;&#10;     &lt;xs:element maxOccurs=&apos;unbounded&apos; minOccurs=&apos;0&apos; name=&apos;addresses&apos; nillable=&apos;true&apos; type=&apos;tns:address&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;email&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;fname&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;lname&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;login&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;newFlag&apos; type=&apos;xs:boolean&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;phone&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;pwd&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;roleKey&apos; type=&apos;tns:role&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;ssn&apos; type=&apos;xs:string&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;account&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;balance&apos; type=&apos;xs:decimal&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;id&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;name&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;type&apos; type=&apos;tns:accountType&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;getUser&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;username&apos; type=&apos;xs:string&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;getUserResponse&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;return&apos; type=&apos;tns:user&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;ping&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;arg0&apos; type=&apos;xs:string&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;pingResponse&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;return&apos; type=&apos;xs:string&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;addUserObject&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;userObject&apos; type=&apos;tns:user&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;addUserObjectResponse&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;return&apos; type=&apos;tns:user&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;updateUser&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;userObject&apos; type=&apos;tns:user&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;updateUserResponse&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;return&apos; type=&apos;tns:user&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;deleteUser&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;username&apos; type=&apos;xs:string&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;deleteUserResponse&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element name=&apos;return&apos; type=&apos;xs:boolean&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;resetPassword&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;username&apos; type=&apos;xs:string&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;resetPasswordResponse&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;return&apos; type=&apos;tns:user&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;listUsers&apos;&gt;&#10;    &lt;xs:sequence/&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;listUsersResponse&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element maxOccurs=&apos;unbounded&apos; minOccurs=&apos;0&apos; name=&apos;return&apos; type=&apos;tns:user&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;listAddresses&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;username&apos; type=&apos;xs:string&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;listAddressesResponse&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element maxOccurs=&apos;unbounded&apos; minOccurs=&apos;0&apos; name=&apos;return&apos; type=&apos;tns:address&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;addAddress&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;username&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;addressObject&apos; type=&apos;tns:address&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;addAddressResponse&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;return&apos; type=&apos;xs:string&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;deleteAddress&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;username&apos; type=&apos;xs:string&apos;/&gt;&#10;     &lt;xs:element minOccurs=&apos;0&apos; name=&apos;addressId&apos; type=&apos;xs:string&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;deleteAddressResponse&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element name=&apos;return&apos; type=&apos;xs:boolean&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;deleteTestAccounts&apos;&gt;&#10;    &lt;xs:sequence/&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:complexType name=&apos;deleteTestAccountsResponse&apos;&gt;&#10;    &lt;xs:sequence&gt;&#10;     &lt;xs:element name=&apos;return&apos; type=&apos;xs:boolean&apos;/&gt;&#10;    &lt;/xs:sequence&gt;&#10;   &lt;/xs:complexType&gt;&#10;   &lt;xs:simpleType name=&apos;accountType&apos;&gt;&#10;    &lt;xs:restriction base=&apos;xs:string&apos;&gt;&#10;     &lt;xs:enumeration value=&apos;CHECKING&apos;/&gt;&#10;     &lt;xs:enumeration value=&apos;SAVINGS&apos;/&gt;&#10;     &lt;xs:enumeration value=&apos;CREDIT&apos;/&gt;&#10;     &lt;xs:enumeration value=&apos;AUTO_LOAN&apos;/&gt;&#10;     &lt;xs:enumeration value=&apos;STUDENT_LOAN&apos;/&gt;&#10;     &lt;xs:enumeration value=&apos;MORTGAGE&apos;/&gt;&#10;    &lt;/xs:restriction&gt;&#10;   &lt;/xs:simpleType&gt;&#10;   &lt;xs:simpleType name=&apos;role&apos;&gt;&#10;    &lt;xs:restriction base=&apos;xs:string&apos;&gt;&#10;     &lt;xs:enumeration value=&apos;GUEST&apos;/&gt;&#10;     &lt;xs:enumeration value=&apos;REGULAR&apos;/&gt;&#10;     &lt;xs:enumeration value=&apos;ADMIN&apos;/&gt;&#10;    &lt;/xs:restriction&gt;&#10;   &lt;/xs:simpleType&gt;&#10;  &lt;/xs:schema&gt;&#10; &lt;/types&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_deleteUser&apos;&gt;&#10;  &lt;part element=&apos;tns:deleteUser&apos; name=&apos;deleteUser&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_getUserResponse&apos;&gt;&#10;  &lt;part element=&apos;tns:getUserResponse&apos; name=&apos;getUserResponse&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_getAddressResponse&apos;&gt;&#10;  &lt;part element=&apos;tns:getAddressResponse&apos; name=&apos;getAddressResponse&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_validateResponse&apos;&gt;&#10;  &lt;part element=&apos;tns:validateResponse&apos; name=&apos;validateResponse&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_getAddress&apos;&gt;&#10;  &lt;part element=&apos;tns:getAddress&apos; name=&apos;getAddress&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_deleteAddressResponse&apos;&gt;&#10;  &lt;part element=&apos;tns:deleteAddressResponse&apos; name=&apos;deleteAddressResponse&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_pingResponse&apos;&gt;&#10;  &lt;part element=&apos;tns:pingResponse&apos; name=&apos;pingResponse&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_addAddress&apos;&gt;&#10;  &lt;part element=&apos;tns:addAddress&apos; name=&apos;addAddress&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_addUserResponse&apos;&gt;&#10;  &lt;part element=&apos;tns:addUserResponse&apos; name=&apos;addUserResponse&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_addUserObjectResponse&apos;&gt;&#10;  &lt;part element=&apos;tns:addUserObjectResponse&apos; name=&apos;addUserObjectResponse&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_deleteTestAccounts&apos;&gt;&#10;  &lt;part element=&apos;tns:deleteTestAccounts&apos; name=&apos;deleteTestAccounts&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_addAddressResponse&apos;&gt;&#10;  &lt;part element=&apos;tns:addAddressResponse&apos; name=&apos;addAddressResponse&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_addUserObject&apos;&gt;&#10;  &lt;part element=&apos;tns:addUserObject&apos; name=&apos;addUserObject&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_deleteAddress&apos;&gt;&#10;  &lt;part element=&apos;tns:deleteAddress&apos; name=&apos;deleteAddress&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_listUsersResponse&apos;&gt;&#10;  &lt;part element=&apos;tns:listUsersResponse&apos; name=&apos;listUsersResponse&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_addUser&apos;&gt;&#10;  &lt;part element=&apos;tns:addUser&apos; name=&apos;addUser&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_updateUserResponse&apos;&gt;&#10;  &lt;part element=&apos;tns:updateUserResponse&apos; name=&apos;updateUserResponse&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_getUser&apos;&gt;&#10;  &lt;part element=&apos;tns:getUser&apos; name=&apos;getUser&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_ping&apos;&gt;&#10;  &lt;part element=&apos;tns:ping&apos; name=&apos;ping&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_listAddressesResponse&apos;&gt;&#10;  &lt;part element=&apos;tns:listAddressesResponse&apos; name=&apos;listAddressesResponse&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_listUsers&apos;&gt;&#10;  &lt;part element=&apos;tns:listUsers&apos; name=&apos;listUsers&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_resetPasswordResponse&apos;&gt;&#10;  &lt;part element=&apos;tns:resetPasswordResponse&apos; name=&apos;resetPasswordResponse&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_deleteUserResponse&apos;&gt;&#10;  &lt;part element=&apos;tns:deleteUserResponse&apos; name=&apos;deleteUserResponse&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_listAddresses&apos;&gt;&#10;  &lt;part element=&apos;tns:listAddresses&apos; name=&apos;listAddresses&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_validate&apos;&gt;&#10;  &lt;part element=&apos;tns:validate&apos; name=&apos;validate&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_resetPassword&apos;&gt;&#10;  &lt;part element=&apos;tns:resetPassword&apos; name=&apos;resetPassword&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_updateUser&apos;&gt;&#10;  &lt;part element=&apos;tns:updateUser&apos; name=&apos;updateUser&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;message name=&apos;EJB3UserControlBean_deleteTestAccountsResponse&apos;&gt;&#10;  &lt;part element=&apos;tns:deleteTestAccountsResponse&apos; name=&apos;deleteTestAccountsResponse&apos;&gt;&lt;/part&gt;&#10; &lt;/message&gt;&#10; &lt;portType name=&apos;EJB3UserControlBean&apos;&gt;&#10;  &lt;operation name=&apos;addAddress&apos; parameterOrder=&apos;addAddress&apos;&gt;&#10;   &lt;input message=&apos;tns:EJB3UserControlBean_addAddress&apos;&gt;&lt;/input&gt;&#10;   &lt;output message=&apos;tns:EJB3UserControlBean_addAddressResponse&apos;&gt;&lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;addUser&apos; parameterOrder=&apos;addUser&apos;&gt;&#10;   &lt;input message=&apos;tns:EJB3UserControlBean_addUser&apos;&gt;&lt;/input&gt;&#10;   &lt;output message=&apos;tns:EJB3UserControlBean_addUserResponse&apos;&gt;&lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;addUserObject&apos; parameterOrder=&apos;addUserObject&apos;&gt;&#10;   &lt;input message=&apos;tns:EJB3UserControlBean_addUserObject&apos;&gt;&lt;/input&gt;&#10;   &lt;output message=&apos;tns:EJB3UserControlBean_addUserObjectResponse&apos;&gt;&lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;deleteAddress&apos; parameterOrder=&apos;deleteAddress&apos;&gt;&#10;   &lt;input message=&apos;tns:EJB3UserControlBean_deleteAddress&apos;&gt;&lt;/input&gt;&#10;   &lt;output message=&apos;tns:EJB3UserControlBean_deleteAddressResponse&apos;&gt;&lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;deleteTestAccounts&apos; parameterOrder=&apos;deleteTestAccounts&apos;&gt;&#10;   &lt;input message=&apos;tns:EJB3UserControlBean_deleteTestAccounts&apos;&gt;&lt;/input&gt;&#10;   &lt;output message=&apos;tns:EJB3UserControlBean_deleteTestAccountsResponse&apos;&gt;&lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;deleteUser&apos; parameterOrder=&apos;deleteUser&apos;&gt;&#10;   &lt;input message=&apos;tns:EJB3UserControlBean_deleteUser&apos;&gt;&lt;/input&gt;&#10;   &lt;output message=&apos;tns:EJB3UserControlBean_deleteUserResponse&apos;&gt;&lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;getAddress&apos; parameterOrder=&apos;getAddress&apos;&gt;&#10;   &lt;input message=&apos;tns:EJB3UserControlBean_getAddress&apos;&gt;&lt;/input&gt;&#10;   &lt;output message=&apos;tns:EJB3UserControlBean_getAddressResponse&apos;&gt;&lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;getUser&apos; parameterOrder=&apos;getUser&apos;&gt;&#10;   &lt;input message=&apos;tns:EJB3UserControlBean_getUser&apos;&gt;&lt;/input&gt;&#10;   &lt;output message=&apos;tns:EJB3UserControlBean_getUserResponse&apos;&gt;&lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;listAddresses&apos; parameterOrder=&apos;listAddresses&apos;&gt;&#10;   &lt;input message=&apos;tns:EJB3UserControlBean_listAddresses&apos;&gt;&lt;/input&gt;&#10;   &lt;output message=&apos;tns:EJB3UserControlBean_listAddressesResponse&apos;&gt;&lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;listUsers&apos; parameterOrder=&apos;listUsers&apos;&gt;&#10;   &lt;input message=&apos;tns:EJB3UserControlBean_listUsers&apos;&gt;&lt;/input&gt;&#10;   &lt;output message=&apos;tns:EJB3UserControlBean_listUsersResponse&apos;&gt;&lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;ping&apos; parameterOrder=&apos;ping&apos;&gt;&#10;   &lt;input message=&apos;tns:EJB3UserControlBean_ping&apos;&gt;&lt;/input&gt;&#10;   &lt;output message=&apos;tns:EJB3UserControlBean_pingResponse&apos;&gt;&lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;resetPassword&apos; parameterOrder=&apos;resetPassword&apos;&gt;&#10;   &lt;input message=&apos;tns:EJB3UserControlBean_resetPassword&apos;&gt;&lt;/input&gt;&#10;   &lt;output message=&apos;tns:EJB3UserControlBean_resetPasswordResponse&apos;&gt;&lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;updateUser&apos; parameterOrder=&apos;updateUser&apos;&gt;&#10;   &lt;input message=&apos;tns:EJB3UserControlBean_updateUser&apos;&gt;&lt;/input&gt;&#10;   &lt;output message=&apos;tns:EJB3UserControlBean_updateUserResponse&apos;&gt;&lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;validate&apos; parameterOrder=&apos;validate&apos;&gt;&#10;   &lt;input message=&apos;tns:EJB3UserControlBean_validate&apos;&gt;&lt;/input&gt;&#10;   &lt;output message=&apos;tns:EJB3UserControlBean_validateResponse&apos;&gt;&lt;/output&gt;&#10;  &lt;/operation&gt;&#10; &lt;/portType&gt;&#10; &lt;binding name=&apos;EJB3UserControlBeanBinding&apos; type=&apos;tns:EJB3UserControlBean&apos;&gt;&#10;  &lt;soap:binding style=&apos;document&apos; transport=&apos;http://schemas.xmlsoap.org/soap/http&apos;/&gt;&#10;  &lt;operation name=&apos;addAddress&apos;&gt;&#10;   &lt;soap:operation soapAction=&apos;&apos;/&gt;&#10;   &lt;input&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/input&gt;&#10;   &lt;output&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;addUser&apos;&gt;&#10;   &lt;soap:operation soapAction=&apos;&apos;/&gt;&#10;   &lt;input&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/input&gt;&#10;   &lt;output&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;addUserObject&apos;&gt;&#10;   &lt;soap:operation soapAction=&apos;&apos;/&gt;&#10;   &lt;input&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/input&gt;&#10;   &lt;output&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;deleteAddress&apos;&gt;&#10;   &lt;soap:operation soapAction=&apos;&apos;/&gt;&#10;   &lt;input&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/input&gt;&#10;   &lt;output&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;deleteTestAccounts&apos;&gt;&#10;   &lt;soap:operation soapAction=&apos;&apos;/&gt;&#10;   &lt;input&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/input&gt;&#10;   &lt;output&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;deleteUser&apos;&gt;&#10;   &lt;soap:operation soapAction=&apos;&apos;/&gt;&#10;   &lt;input&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/input&gt;&#10;   &lt;output&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;getAddress&apos;&gt;&#10;   &lt;soap:operation soapAction=&apos;&apos;/&gt;&#10;   &lt;input&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/input&gt;&#10;   &lt;output&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;getUser&apos;&gt;&#10;   &lt;soap:operation soapAction=&apos;&apos;/&gt;&#10;   &lt;input&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/input&gt;&#10;   &lt;output&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;listAddresses&apos;&gt;&#10;   &lt;soap:operation soapAction=&apos;&apos;/&gt;&#10;   &lt;input&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/input&gt;&#10;   &lt;output&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;listUsers&apos;&gt;&#10;   &lt;soap:operation soapAction=&apos;&apos;/&gt;&#10;   &lt;input&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/input&gt;&#10;   &lt;output&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;ping&apos;&gt;&#10;   &lt;soap:operation soapAction=&apos;&apos;/&gt;&#10;   &lt;input&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/input&gt;&#10;   &lt;output&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;resetPassword&apos;&gt;&#10;   &lt;soap:operation soapAction=&apos;&apos;/&gt;&#10;   &lt;input&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/input&gt;&#10;   &lt;output&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;updateUser&apos;&gt;&#10;   &lt;soap:operation soapAction=&apos;&apos;/&gt;&#10;   &lt;input&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/input&gt;&#10;   &lt;output&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/output&gt;&#10;  &lt;/operation&gt;&#10;  &lt;operation name=&apos;validate&apos;&gt;&#10;   &lt;soap:operation soapAction=&apos;&apos;/&gt;&#10;   &lt;input&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/input&gt;&#10;   &lt;output&gt;&#10;    &lt;soap:body use=&apos;literal&apos;/&gt;&#10;   &lt;/output&gt;&#10;  &lt;/operation&gt;&#10; &lt;/binding&gt;&#10; &lt;service name=&apos;EJB3UserControlBeanService&apos;&gt;&#10;  &lt;port binding=&apos;tns:EJB3UserControlBeanBinding&apos; name=&apos;EJB3UserControlBeanPort&apos;&gt;&#10;   &lt;soap:address location=&apos;http://dmcnair-macbook.local:8080/itkoExamples/EJB3UserControlBean&apos;/&gt;&#10;  &lt;/port&gt;&#10; &lt;/service&gt;&#10;&lt;/definitions&gt;</controlXML>
+<testXML>{{lisa.ejb3User WSDL Validation.rsp}}</testXML>
+<assertType>SAME</assertType>
+<xmlDiffOptions>
+  <ignoreNamespaces>false</ignoreNamespaces>
+  <ignoreNamespacePrefixes>true</ignoreNamespacePrefixes>
+  <caseSensitive>true</caseSensitive>
+  <trimWhitespace>true</trimWhitespace>
+  <normalizeWhitespace>false</normalizeWhitespace>
+  <collapseWhitespace>false</collapseWhitespace>
+  <ignoreWhitespace>false</ignoreWhitespace>
+  <ignoreAttributes>false</ignoreAttributes>
+  <ignoreElementText>false</ignoreElementText>
+  <ignoreAttributeValues>false</ignoreAttributeValues>
+  <ignoreElementOrdering>true</ignoreElementOrdering>
+  <ignoreAttributeOrdering>true</ignoreAttributeOrdering>
+  <ignoredXPaths>
+    <string>/:definitions/:service[1]/:port[1]/soap:address[1]/@location</string>
+  </ignoredXPaths>
+</xmlDiffOptions>
+</CheckResult>
+
+<CheckResult assertTrue="false" name="Assert31" type="com.itko.lisa.xml.AssertXMLValidator">
+<log>Assert [Assert31] fired false of type XML Validation</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+<XMLValidation>
+<Validator>
+<dtd>false</dtd>
+<schema>true</schema>
+<warns>false</warns>
+<dschema>http://schemas.xmlsoap.org/wsdl/</dschema>
+<wsdl></wsdl>
+<schemas>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>http://www.w3.org/2001/XMLSchema.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>http://schemas.xmlsoap.org/wsdl/</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>http://schemas.xmlsoap.org/wsdl/soap/</value>
+    </Parameter>
+</schemas>
+</Validator>
+<prop></prop>
+<fragment>false</fragment>
+<noneAllowed>false</noneAllowed>
+</XMLValidation>
+</CheckResult>
+
+<wsdlURL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean?wsdl</wsdlURL>
+<onExNode>abort</onExNode>
+    </Node>
+
+
+    <Node name="ejb3Account WSDL Validation" log=""
+          type="com.itko.lisa.ws.WSDLNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="tokenService WSDL Validation" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="false" name="Assert48" type="com.itko.lisa.xml.AssertXMLDiff">
+<log>Assert [Assert48] fired false of type XML Diff Assertion</log>
+<then>continue</then>
+<valueToAssertKey></valueToAssertKey>
+<control>PGRlZmluaXRpb25zIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5TZXJ2aWNlJyB0YXJnZXROYW1lc3BhY2U9J2h0dHA6Ly9lamIzLmV4YW1wbGVzLml0a28uY29tLycgeG1sbnM9J2h0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzZGwvJyB4bWxuczpzb2FwPSdodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93c2RsL3NvYXAvJyB4bWxuczp0bnM9J2h0dHA6Ly9lamIzLmV4YW1wbGVzLml0a28uY29tLycgeG1sbnM6eHNkPSdodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSc+CiA8dHlwZXM+CiAgPHhzOnNjaGVtYSB0YXJnZXROYW1lc3BhY2U9J2h0dHA6Ly9lamIzLmV4YW1wbGVzLml0a28uY29tLycgdmVyc2lvbj0nMS4wJyB4bWxuczp0bnM9J2h0dHA6Ly9lamIzLmV4YW1wbGVzLml0a28uY29tLycgeG1sbnM6eHM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hJz4KICAgPHhzOmVsZW1lbnQgbmFtZT0nYWRkQWNjb3VudCcgdHlwZT0ndG5zOmFkZEFjY291bnQnLz4KICAgPHhzOmVsZW1lbnQgbmFtZT0nYWRkQWNjb3VudFJlc3BvbnNlJyB0eXBlPSd0bnM6YWRkQWNjb3VudFJlc3BvbnNlJy8+CiAgIDx4czplbGVtZW50IG5hbWU9J2RlbGV0ZUFjY291bnQnIHR5cGU9J3RuczpkZWxldGVBY2NvdW50Jy8+CiAgIDx4czplbGVtZW50IG5hbWU9J2RlbGV0ZUFjY291bnRSZXNwb25zZScgdHlwZT0ndG5zOmRlbGV0ZUFjY291bnRSZXNwb25zZScvPgogICA8eHM6ZWxlbWVudCBuYW1lPSdkZXBvc2l0TW9uZXknIHR5cGU9J3RuczpkZXBvc2l0TW9uZXknLz4KICAgPHhzOmVsZW1lbnQgbmFtZT0nZGVwb3NpdE1vbmV5UmVzcG9uc2UnIHR5cGU9J3RuczpkZXBvc2l0TW9uZXlSZXNwb25zZScvPgogICA8eHM6ZWxlbWVudCBuYW1lPSdnZXRBY2NvdW50JyB0eXBlPSd0bnM6Z2V0QWNjb3VudCcvPgogICA8eHM6ZWxlbWVudCBuYW1lPSdnZXRBY2NvdW50UmVzcG9uc2UnIHR5cGU9J3RuczpnZXRBY2NvdW50UmVzcG9uc2UnLz4KICAgPHhzOmVsZW1lbnQgbmFtZT0nZ2V0VHJhbnNhY3Rpb24nIHR5cGU9J3RuczpnZXRUcmFuc2FjdGlvbicvPgogICA8eHM6ZWxlbWVudCBuYW1lPSdnZXRUcmFuc2FjdGlvblJlc3BvbnNlJyB0eXBlPSd0bnM6Z2V0VHJhbnNhY3Rpb25SZXNwb25zZScvPgogICA8eHM6ZWxlbWVudCBuYW1lPSdnZXRUcmFuc2FjdGlvbnMnIHR5cGU9J3RuczpnZXRUcmFuc2FjdGlvbnMnLz4KICAgPHhzOmVsZW1lbnQgbmFtZT0nZ2V0VHJhbnNhY3Rpb25zUmVzcG9uc2UnIHR5cGU9J3RuczpnZXRUcmFuc2FjdGlvbnNSZXNwb25zZScvPgogICA8eHM6ZWxlbWVudCBuYW1lPSdsaXN0QWNjb3VudHMnIHR5cGU9J3RuczpsaXN0QWNjb3VudHMnLz4KICAgPHhzOmVsZW1lbnQgbmFtZT0nbGlzdEFjY291bnRzUmVzcG9uc2UnIHR5cGU9J3RuczpsaXN0QWNjb3VudHNSZXNwb25zZScvPgogICA8eHM6ZWxlbWVudCBuYW1lPSd0cmFuc2Zlck1vbmV5JyB0eXBlPSd0bnM6dHJhbnNmZXJNb25leScvPgogICA8eHM6ZWxlbWVudCBuYW1lPSd0cmFuc2Zlck1vbmV5UmVzcG9uc2UnIHR5cGU9J3Ruczp0cmFuc2Zlck1vbmV5UmVzcG9uc2UnLz4KICAgPHhzOmVsZW1lbnQgbmFtZT0nd2l0aGRyYXdNb25leScgdHlwZT0ndG5zOndpdGhkcmF3TW9uZXknLz4KICAgPHhzOmVsZW1lbnQgbmFtZT0nd2l0aGRyYXdNb25leVJlc3BvbnNlJyB0eXBlPSd0bnM6d2l0aGRyYXdNb25leVJlc3BvbnNlJy8+CiAgIDx4czpjb21wbGV4VHlwZSBuYW1lPSdnZXRUcmFuc2FjdGlvbic+CiAgICA8eHM6c2VxdWVuY2U+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSdhY2NvdW50SWQnIHR5cGU9J3hzOnN0cmluZycvPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0nMCcgbmFtZT0ndHJhbnNJZCcgdHlwZT0neHM6c3RyaW5nJy8+CiAgICA8L3hzOnNlcXVlbmNlPgogICA8L3hzOmNvbXBsZXhUeXBlPgogICA8eHM6Y29tcGxleFR5cGUgbmFtZT0nZ2V0VHJhbnNhY3Rpb25SZXNwb25zZSc+CiAgICA8eHM6c2VxdWVuY2U+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSdyZXR1cm4nIHR5cGU9J3Ruczp0cmFuc2FjdGlvbicvPgogICAgPC94czpzZXF1ZW5jZT4KICAgPC94czpjb21wbGV4VHlwZT4KICAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9J3RyYW5zYWN0aW9uJz4KICAgIDx4czpzZXF1ZW5jZT4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9JzAnIG5hbWU9J2FjY291bnQnIHR5cGU9J3RuczphY2NvdW50Jy8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSdhbW91bnQnIHR5cGU9J3hzOmRlY2ltYWwnLz4KICAgICA8eHM6ZWxlbWVudCBuYW1lPSdjaGVja051bWJlcicgdHlwZT0neHM6aW50Jy8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSdkYXRlJyB0eXBlPSd4czpkYXRlVGltZScvPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0nMCcgbmFtZT0nZGVzY3JpcHRpb24nIHR5cGU9J3hzOnN0cmluZycvPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0nMCcgbmFtZT0naWQnIHR5cGU9J3hzOnN0cmluZycvPgogICAgPC94czpzZXF1ZW5jZT4KICAgPC94czpjb21wbGV4VHlwZT4KICAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9J2FjY291bnQnPgogICAgPHhzOnNlcXVlbmNlPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0nMCcgbmFtZT0nYmFsYW5jZScgdHlwZT0neHM6ZGVjaW1hbCcvPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0nMCcgbmFtZT0naWQnIHR5cGU9J3hzOnN0cmluZycvPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0nMCcgbmFtZT0nbmFtZScgdHlwZT0neHM6c3RyaW5nJy8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSd0eXBlJyB0eXBlPSd0bnM6YWNjb3VudFR5cGUnLz4KICAgIDwveHM6c2VxdWVuY2U+CiAgIDwveHM6Y29tcGxleFR5cGU+CiAgIDx4czpjb21wbGV4VHlwZSBuYW1lPSdkZXBvc2l0TW9uZXknPgogICAgPHhzOnNlcXVlbmNlPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0nMCcgbmFtZT0nYWNjb3VudElkJyB0eXBlPSd4czpzdHJpbmcnLz4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9JzAnIG5hbWU9J2Ftb3VudCcgdHlwZT0neHM6ZGVjaW1hbCcvPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0nMCcgbmFtZT0nZGVzYycgdHlwZT0neHM6c3RyaW5nJy8+CiAgICA8L3hzOnNlcXVlbmNlPgogICA8L3hzOmNvbXBsZXhUeXBlPgogICA8eHM6Y29tcGxleFR5cGUgbmFtZT0nZGVwb3NpdE1vbmV5UmVzcG9uc2UnPgogICAgPHhzOnNlcXVlbmNlPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0nMCcgbmFtZT0ncmV0dXJuJyB0eXBlPSd4czpzdHJpbmcnLz4KICAgIDwveHM6c2VxdWVuY2U+CiAgIDwveHM6Y29tcGxleFR5cGU+CiAgIDx4czpjb21wbGV4VHlwZSBuYW1lPSd3aXRoZHJhd01vbmV5Jz4KICAgIDx4czpzZXF1ZW5jZT4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9JzAnIG5hbWU9J2FjY291bnRJZCcgdHlwZT0neHM6c3RyaW5nJy8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSdhbW91bnQnIHR5cGU9J3hzOmRlY2ltYWwnLz4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9JzAnIG5hbWU9J2Rlc2MnIHR5cGU9J3hzOnN0cmluZycvPgogICAgPC94czpzZXF1ZW5jZT4KICAgPC94czpjb21wbGV4VHlwZT4KICAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9J3dpdGhkcmF3TW9uZXlSZXNwb25zZSc+CiAgICA8eHM6c2VxdWVuY2U+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSdyZXR1cm4nIHR5cGU9J3hzOnN0cmluZycvPgogICAgPC94czpzZXF1ZW5jZT4KICAgPC94czpjb21wbGV4VHlwZT4KICAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9J3RyYW5zZmVyTW9uZXknPgogICAgPHhzOnNlcXVlbmNlPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0nMCcgbmFtZT0nZnJvbUFjY291bnRJZCcgdHlwZT0neHM6c3RyaW5nJy8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSd0b0FjY291bnRJZCcgdHlwZT0neHM6c3RyaW5nJy8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSdhbW91bnQnIHR5cGU9J3hzOmRlY2ltYWwnLz4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9JzAnIG5hbWU9J2Rlc2MnIHR5cGU9J3hzOnN0cmluZycvPgogICAgPC94czpzZXF1ZW5jZT4KICAgPC94czpjb21wbGV4VHlwZT4KICAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9J3RyYW5zZmVyTW9uZXlSZXNwb25zZSc+CiAgICA8eHM6c2VxdWVuY2U+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSdyZXR1cm4nIHR5cGU9J3hzOnN0cmluZycvPgogICAgPC94czpzZXF1ZW5jZT4KICAgPC94czpjb21wbGV4VHlwZT4KICAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9J2xpc3RBY2NvdW50cyc+CiAgICA8eHM6c2VxdWVuY2U+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSd1c2VybmFtZScgdHlwZT0neHM6c3RyaW5nJy8+CiAgICA8L3hzOnNlcXVlbmNlPgogICA8L3hzOmNvbXBsZXhUeXBlPgogICA8eHM6Y29tcGxleFR5cGUgbmFtZT0nbGlzdEFjY291bnRzUmVzcG9uc2UnPgogICAgPHhzOnNlcXVlbmNlPgogICAgIDx4czplbGVtZW50IG1heE9jY3Vycz0ndW5ib3VuZGVkJyBtaW5PY2N1cnM9JzAnIG5hbWU9J3JldHVybicgdHlwZT0ndG5zOmFjY291bnQnLz4KICAgIDwveHM6c2VxdWVuY2U+CiAgIDwveHM6Y29tcGxleFR5cGU+CiAgIDx4czpjb21wbGV4VHlwZSBuYW1lPSdhZGRBY2NvdW50Jz4KICAgIDx4czpzZXF1ZW5jZT4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9JzAnIG5hbWU9J3VzZXJuYW1lJyB0eXBlPSd4czpzdHJpbmcnLz4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9JzAnIG5hbWU9J2FjY291bnRPYmonIHR5cGU9J3RuczphY2NvdW50Jy8+CiAgICA8L3hzOnNlcXVlbmNlPgogICA8L3hzOmNvbXBsZXhUeXBlPgogICA8eHM6Y29tcGxleFR5cGUgbmFtZT0nYWRkQWNjb3VudFJlc3BvbnNlJz4KICAgIDx4czpzZXF1ZW5jZT4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9JzAnIG5hbWU9J3JldHVybicgdHlwZT0neHM6c3RyaW5nJy8+CiAgICA8L3hzOnNlcXVlbmNlPgogICA8L3hzOmNvbXBsZXhUeXBlPgogICA8eHM6Y29tcGxleFR5cGUgbmFtZT0nZ2V0QWNjb3VudCc+CiAgICA8eHM6c2VxdWVuY2U+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSdhY2NvdW50SWQnIHR5cGU9J3hzOnN0cmluZycvPgogICAgPC94czpzZXF1ZW5jZT4KICAgPC94czpjb21wbGV4VHlwZT4KICAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9J2dldEFjY291bnRSZXNwb25zZSc+CiAgICA8eHM6c2VxdWVuY2U+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSdyZXR1cm4nIHR5cGU9J3RuczphY2NvdW50Jy8+CiAgICA8L3hzOnNlcXVlbmNlPgogICA8L3hzOmNvbXBsZXhUeXBlPgogICA8eHM6Y29tcGxleFR5cGUgbmFtZT0nZGVsZXRlQWNjb3VudCc+CiAgICA8eHM6c2VxdWVuY2U+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSd1c2VybmFtZScgdHlwZT0neHM6c3RyaW5nJy8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSdhY2NvdW50SWQnIHR5cGU9J3hzOnN0cmluZycvPgogICAgPC94czpzZXF1ZW5jZT4KICAgPC94czpjb21wbGV4VHlwZT4KICAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9J2RlbGV0ZUFjY291bnRSZXNwb25zZSc+CiAgICA8eHM6c2VxdWVuY2U+CiAgICAgPHhzOmVsZW1lbnQgbmFtZT0ncmV0dXJuJyB0eXBlPSd4czpib29sZWFuJy8+CiAgICA8L3hzOnNlcXVlbmNlPgogICA8L3hzOmNvbXBsZXhUeXBlPgogICA8eHM6Y29tcGxleFR5cGUgbmFtZT0nZ2V0VHJhbnNhY3Rpb25zJz4KICAgIDx4czpzZXF1ZW5jZT4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9JzAnIG5hbWU9J2FjY291bnRJZCcgdHlwZT0neHM6c3RyaW5nJy8+CiAgICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPScwJyBuYW1lPSdmcm9tJyB0eXBlPSd4czpkYXRlVGltZScvPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0nMCcgbmFtZT0ndG8nIHR5cGU9J3hzOmRhdGVUaW1lJy8+CiAgICA8L3hzOnNlcXVlbmNlPgogICA8L3hzOmNvbXBsZXhUeXBlPgogICA8eHM6Y29tcGxleFR5cGUgbmFtZT0nZ2V0VHJhbnNhY3Rpb25zUmVzcG9uc2UnPgogICAgPHhzOnNlcXVlbmNlPgogICAgIDx4czplbGVtZW50IG1heE9jY3Vycz0ndW5ib3VuZGVkJyBtaW5PY2N1cnM9JzAnIG5hbWU9J3JldHVybicgdHlwZT0ndG5zOnRyYW5zYWN0aW9uJy8+CiAgICA8L3hzOnNlcXVlbmNlPgogICA8L3hzOmNvbXBsZXhUeXBlPgogICA8eHM6c2ltcGxlVHlwZSBuYW1lPSdhY2NvdW50VHlwZSc+CiAgICA8eHM6cmVzdHJpY3Rpb24gYmFzZT0neHM6c3RyaW5nJz4KICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9J01PUlRHQUdFJy8+CiAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSdTVFVERU5UX0xPQU4nLz4KICAgICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9J0FVVE9fTE9BTicvPgogICAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0nQ1JFRElUJy8+CiAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSdTQVZJTkdTJy8+CiAgICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSdDSEVDS0lORycvPgogICAgPC94czpyZXN0cmljdGlvbj4KICAgPC94czpzaW1wbGVUeXBlPgogIDwveHM6c2NoZW1hPgogPC90eXBlcz4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fZ2V0QWNjb3VudCc+CiAgPHBhcnQgZWxlbWVudD0ndG5zOmdldEFjY291bnQnIG5hbWU9J2dldEFjY291bnQnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fYWRkQWNjb3VudCc+CiAgPHBhcnQgZWxlbWVudD0ndG5zOmFkZEFjY291bnQnIG5hbWU9J2FkZEFjY291bnQnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fdHJhbnNmZXJNb25leSc+CiAgPHBhcnQgZWxlbWVudD0ndG5zOnRyYW5zZmVyTW9uZXknIG5hbWU9J3RyYW5zZmVyTW9uZXknPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fZ2V0QWNjb3VudFJlc3BvbnNlJz4KICA8cGFydCBlbGVtZW50PSd0bnM6Z2V0QWNjb3VudFJlc3BvbnNlJyBuYW1lPSdnZXRBY2NvdW50UmVzcG9uc2UnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fbGlzdEFjY291bnRzJz4KICA8cGFydCBlbGVtZW50PSd0bnM6bGlzdEFjY291bnRzJyBuYW1lPSdsaXN0QWNjb3VudHMnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fdHJhbnNmZXJNb25leVJlc3BvbnNlJz4KICA8cGFydCBlbGVtZW50PSd0bnM6dHJhbnNmZXJNb25leVJlc3BvbnNlJyBuYW1lPSd0cmFuc2Zlck1vbmV5UmVzcG9uc2UnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fbGlzdEFjY291bnRzUmVzcG9uc2UnPgogIDxwYXJ0IGVsZW1lbnQ9J3RuczpsaXN0QWNjb3VudHNSZXNwb25zZScgbmFtZT0nbGlzdEFjY291bnRzUmVzcG9uc2UnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fZGVwb3NpdE1vbmV5UmVzcG9uc2UnPgogIDxwYXJ0IGVsZW1lbnQ9J3RuczpkZXBvc2l0TW9uZXlSZXNwb25zZScgbmFtZT0nZGVwb3NpdE1vbmV5UmVzcG9uc2UnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fZGVsZXRlQWNjb3VudFJlc3BvbnNlJz4KICA8cGFydCBlbGVtZW50PSd0bnM6ZGVsZXRlQWNjb3VudFJlc3BvbnNlJyBuYW1lPSdkZWxldGVBY2NvdW50UmVzcG9uc2UnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fZ2V0VHJhbnNhY3Rpb25zUmVzcG9uc2UnPgogIDxwYXJ0IGVsZW1lbnQ9J3RuczpnZXRUcmFuc2FjdGlvbnNSZXNwb25zZScgbmFtZT0nZ2V0VHJhbnNhY3Rpb25zUmVzcG9uc2UnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fd2l0aGRyYXdNb25leSc+CiAgPHBhcnQgZWxlbWVudD0ndG5zOndpdGhkcmF3TW9uZXknIG5hbWU9J3dpdGhkcmF3TW9uZXknPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fYWRkQWNjb3VudFJlc3BvbnNlJz4KICA8cGFydCBlbGVtZW50PSd0bnM6YWRkQWNjb3VudFJlc3BvbnNlJyBuYW1lPSdhZGRBY2NvdW50UmVzcG9uc2UnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fZGVsZXRlQWNjb3VudCc+CiAgPHBhcnQgZWxlbWVudD0ndG5zOmRlbGV0ZUFjY291bnQnIG5hbWU9J2RlbGV0ZUFjY291bnQnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fZ2V0VHJhbnNhY3Rpb24nPgogIDxwYXJ0IGVsZW1lbnQ9J3RuczpnZXRUcmFuc2FjdGlvbicgbmFtZT0nZ2V0VHJhbnNhY3Rpb24nPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fZ2V0VHJhbnNhY3Rpb25zJz4KICA8cGFydCBlbGVtZW50PSd0bnM6Z2V0VHJhbnNhY3Rpb25zJyBuYW1lPSdnZXRUcmFuc2FjdGlvbnMnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fZ2V0VHJhbnNhY3Rpb25SZXNwb25zZSc+CiAgPHBhcnQgZWxlbWVudD0ndG5zOmdldFRyYW5zYWN0aW9uUmVzcG9uc2UnIG5hbWU9J2dldFRyYW5zYWN0aW9uUmVzcG9uc2UnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fd2l0aGRyYXdNb25leVJlc3BvbnNlJz4KICA8cGFydCBlbGVtZW50PSd0bnM6d2l0aGRyYXdNb25leVJlc3BvbnNlJyBuYW1lPSd3aXRoZHJhd01vbmV5UmVzcG9uc2UnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J0VKQjNBY2NvdW50Q29udHJvbEJlYW5fZGVwb3NpdE1vbmV5Jz4KICA8cGFydCBlbGVtZW50PSd0bnM6ZGVwb3NpdE1vbmV5JyBuYW1lPSdkZXBvc2l0TW9uZXknPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxwb3J0VHlwZSBuYW1lPSdFSkIzQWNjb3VudENvbnRyb2xCZWFuJz4KICA8b3BlcmF0aW9uIG5hbWU9J2FkZEFjY291bnQnIHBhcmFtZXRlck9yZGVyPSdhZGRBY2NvdW50Jz4KICAgPGlucHV0IG1lc3NhZ2U9J3RuczpFSkIzQWNjb3VudENvbnRyb2xCZWFuX2FkZEFjY291bnQnPjwvaW5wdXQ+CiAgIDxvdXRwdXQgbWVzc2FnZT0ndG5zOkVKQjNBY2NvdW50Q29udHJvbEJlYW5fYWRkQWNjb3VudFJlc3BvbnNlJz48L291dHB1dD4KICA8L29wZXJhdGlvbj4KICA8b3BlcmF0aW9uIG5hbWU9J2RlbGV0ZUFjY291bnQnIHBhcmFtZXRlck9yZGVyPSdkZWxldGVBY2NvdW50Jz4KICAgPGlucHV0IG1lc3NhZ2U9J3RuczpFSkIzQWNjb3VudENvbnRyb2xCZWFuX2RlbGV0ZUFjY291bnQnPjwvaW5wdXQ+CiAgIDxvdXRwdXQgbWVzc2FnZT0ndG5zOkVKQjNBY2NvdW50Q29udHJvbEJlYW5fZGVsZXRlQWNjb3VudFJlc3BvbnNlJz48L291dHB1dD4KICA8L29wZXJhdGlvbj4KICA8b3BlcmF0aW9uIG5hbWU9J2RlcG9zaXRNb25leScgcGFyYW1ldGVyT3JkZXI9J2RlcG9zaXRNb25leSc+CiAgIDxpbnB1dCBtZXNzYWdlPSd0bnM6RUpCM0FjY291bnRDb250cm9sQmVhbl9kZXBvc2l0TW9uZXknPjwvaW5wdXQ+CiAgIDxvdXRwdXQgbWVzc2FnZT0ndG5zOkVKQjNBY2NvdW50Q29udHJvbEJlYW5fZGVwb3NpdE1vbmV5UmVzcG9uc2UnPjwvb3V0cHV0PgogIDwvb3BlcmF0aW9uPgogIDxvcGVyYXRpb24gbmFtZT0nZ2V0QWNjb3VudCcgcGFyYW1ldGVyT3JkZXI9J2dldEFjY291bnQnPgogICA8aW5wdXQgbWVzc2FnZT0ndG5zOkVKQjNBY2NvdW50Q29udHJvbEJlYW5fZ2V0QWNjb3VudCc+PC9pbnB1dD4KICAgPG91dHB1dCBtZXNzYWdlPSd0bnM6RUpCM0FjY291bnRDb250cm9sQmVhbl9nZXRBY2NvdW50UmVzcG9uc2UnPjwvb3V0cHV0PgogIDwvb3BlcmF0aW9uPgogIDxvcGVyYXRpb24gbmFtZT0nZ2V0VHJhbnNhY3Rpb24nIHBhcmFtZXRlck9yZGVyPSdnZXRUcmFuc2FjdGlvbic+CiAgIDxpbnB1dCBtZXNzYWdlPSd0bnM6RUpCM0FjY291bnRDb250cm9sQmVhbl9nZXRUcmFuc2FjdGlvbic+PC9pbnB1dD4KICAgPG91dHB1dCBtZXNzYWdlPSd0bnM6RUpCM0FjY291bnRDb250cm9sQmVhbl9nZXRUcmFuc2FjdGlvblJlc3BvbnNlJz48L291dHB1dD4KICA8L29wZXJhdGlvbj4KICA8b3BlcmF0aW9uIG5hbWU9J2dldFRyYW5zYWN0aW9ucycgcGFyYW1ldGVyT3JkZXI9J2dldFRyYW5zYWN0aW9ucyc+CiAgIDxpbnB1dCBtZXNzYWdlPSd0bnM6RUpCM0FjY291bnRDb250cm9sQmVhbl9nZXRUcmFuc2FjdGlvbnMnPjwvaW5wdXQ+CiAgIDxvdXRwdXQgbWVzc2FnZT0ndG5zOkVKQjNBY2NvdW50Q29udHJvbEJlYW5fZ2V0VHJhbnNhY3Rpb25zUmVzcG9uc2UnPjwvb3V0cHV0PgogIDwvb3BlcmF0aW9uPgogIDxvcGVyYXRpb24gbmFtZT0nbGlzdEFjY291bnRzJyBwYXJhbWV0ZXJPcmRlcj0nbGlzdEFjY291bnRzJz4KICAgPGlucHV0IG1lc3NhZ2U9J3RuczpFSkIzQWNjb3VudENvbnRyb2xCZWFuX2xpc3RBY2NvdW50cyc+PC9pbnB1dD4KICAgPG91dHB1dCBtZXNzYWdlPSd0bnM6RUpCM0FjY291bnRDb250cm9sQmVhbl9saXN0QWNjb3VudHNSZXNwb25zZSc+PC9vdXRwdXQ+CiAgPC9vcGVyYXRpb24+CiAgPG9wZXJhdGlvbiBuYW1lPSd0cmFuc2Zlck1vbmV5JyBwYXJhbWV0ZXJPcmRlcj0ndHJhbnNmZXJNb25leSc+CiAgIDxpbnB1dCBtZXNzYWdlPSd0bnM6RUpCM0FjY291bnRDb250cm9sQmVhbl90cmFuc2Zlck1vbmV5Jz48L2lucHV0PgogICA8b3V0cHV0IG1lc3NhZ2U9J3RuczpFSkIzQWNjb3VudENvbnRyb2xCZWFuX3RyYW5zZmVyTW9uZXlSZXNwb25zZSc+PC9vdXRwdXQ+CiAgPC9vcGVyYXRpb24+CiAgPG9wZXJhdGlvbiBuYW1lPSd3aXRoZHJhd01vbmV5JyBwYXJhbWV0ZXJPcmRlcj0nd2l0aGRyYXdNb25leSc+CiAgIDxpbnB1dCBtZXNzYWdlPSd0bnM6RUpCM0FjY291bnRDb250cm9sQmVhbl93aXRoZHJhd01vbmV5Jz48L2lucHV0PgogICA8b3V0cHV0IG1lc3NhZ2U9J3RuczpFSkIzQWNjb3VudENvbnRyb2xCZWFuX3dpdGhkcmF3TW9uZXlSZXNwb25zZSc+PC9vdXRwdXQ+CiAgPC9vcGVyYXRpb24+CiA8L3BvcnRUeXBlPgogPGJpbmRpbmcgbmFtZT0nRUpCM0FjY291bnRDb250cm9sQmVhbkJpbmRpbmcnIHR5cGU9J3RuczpFSkIzQWNjb3VudENvbnRyb2xCZWFuJz4KICA8c29hcDpiaW5kaW5nIHN0eWxlPSdkb2N1bWVudCcgdHJhbnNwb3J0PSdodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2h0dHAnLz4KICA8b3BlcmF0aW9uIG5hbWU9J2FkZEFjY291bnQnPgogICA8c29hcDpvcGVyYXRpb24gc29hcEFjdGlvbj0nJy8+CiAgIDxpbnB1dD4KICAgIDxzb2FwOmJvZHkgdXNlPSdsaXRlcmFsJy8+CiAgIDwvaW5wdXQ+CiAgIDxvdXRwdXQ+CiAgICA8c29hcDpib2R5IHVzZT0nbGl0ZXJhbCcvPgogICA8L291dHB1dD4KICA8L29wZXJhdGlvbj4KICA8b3BlcmF0aW9uIG5hbWU9J2RlbGV0ZUFjY291bnQnPgogICA8c29hcDpvcGVyYXRpb24gc29hcEFjdGlvbj0nJy8+CiAgIDxpbnB1dD4KICAgIDxzb2FwOmJvZHkgdXNlPSdsaXRlcmFsJy8+CiAgIDwvaW5wdXQ+CiAgIDxvdXRwdXQ+CiAgICA8c29hcDpib2R5IHVzZT0nbGl0ZXJhbCcvPgogICA8L291dHB1dD4KICA8L29wZXJhdGlvbj4KICA8b3BlcmF0aW9uIG5hbWU9J2RlcG9zaXRNb25leSc+CiAgIDxzb2FwOm9wZXJhdGlvbiBzb2FwQWN0aW9uPScnLz4KICAgPGlucHV0PgogICAgPHNvYXA6Ym9keSB1c2U9J2xpdGVyYWwnLz4KICAgPC9pbnB1dD4KICAgPG91dHB1dD4KICAgIDxzb2FwOmJvZHkgdXNlPSdsaXRlcmFsJy8+CiAgIDwvb3V0cHV0PgogIDwvb3BlcmF0aW9uPgogIDxvcGVyYXRpb24gbmFtZT0nZ2V0QWNjb3VudCc+CiAgIDxzb2FwOm9wZXJhdGlvbiBzb2FwQWN0aW9uPScnLz4KICAgPGlucHV0PgogICAgPHNvYXA6Ym9keSB1c2U9J2xpdGVyYWwnLz4KICAgPC9pbnB1dD4KICAgPG91dHB1dD4KICAgIDxzb2FwOmJvZHkgdXNlPSdsaXRlcmFsJy8+CiAgIDwvb3V0cHV0PgogIDwvb3BlcmF0aW9uPgogIDxvcGVyYXRpb24gbmFtZT0nZ2V0VHJhbnNhY3Rpb24nPgogICA8c29hcDpvcGVyYXRpb24gc29hcEFjdGlvbj0nJy8+CiAgIDxpbnB1dD4KICAgIDxzb2FwOmJvZHkgdXNlPSdsaXRlcmFsJy8+CiAgIDwvaW5wdXQ+CiAgIDxvdXRwdXQ+CiAgICA8c29hcDpib2R5IHVzZT0nbGl0ZXJhbCcvPgogICA8L291dHB1dD4KICA8L29wZXJhdGlvbj4KICA8b3BlcmF0aW9uIG5hbWU9J2dldFRyYW5zYWN0aW9ucyc+CiAgIDxzb2FwOm9wZXJhdGlvbiBzb2FwQWN0aW9uPScnLz4KICAgPGlucHV0PgogICAgPHNvYXA6Ym9keSB1c2U9J2xpdGVyYWwnLz4KICAgPC9pbnB1dD4KICAgPG91dHB1dD4KICAgIDxzb2FwOmJvZHkgdXNlPSdsaXRlcmFsJy8+CiAgIDwvb3V0cHV0PgogIDwvb3BlcmF0aW9uPgogIDxvcGVyYXRpb24gbmFtZT0nbGlzdEFjY291bnRzJz4KICAgPHNvYXA6b3BlcmF0aW9uIHNvYXBBY3Rpb249JycvPgogICA8aW5wdXQ+CiAgICA8c29hcDpib2R5IHVzZT0nbGl0ZXJhbCcvPgogICA8L2lucHV0PgogICA8b3V0cHV0PgogICAgPHNvYXA6Ym9keSB1c2U9J2xpdGVyYWwnLz4KICAgPC9vdXRwdXQ+CiAgPC9vcGVyYXRpb24+CiAgPG9wZXJhdGlvbiBuYW1lPSd0cmFuc2Zlck1vbmV5Jz4KICAgPHNvYXA6b3BlcmF0aW9uIHNvYXBBY3Rpb249JycvPgogICA8aW5wdXQ+CiAgICA8c29hcDpib2R5IHVzZT0nbGl0ZXJhbCcvPgogICA8L2lucHV0PgogICA8b3V0cHV0PgogICAgPHNvYXA6Ym9keSB1c2U9J2xpdGVyYWwnLz4KICAgPC9vdXRwdXQ+CiAgPC9vcGVyYXRpb24+CiAgPG9wZXJhdGlvbiBuYW1lPSd3aXRoZHJhd01vbmV5Jz4KICAgPHNvYXA6b3BlcmF0aW9uIHNvYXBBY3Rpb249JycvPgogICA8aW5wdXQ+CiAgICA8c29hcDpib2R5IHVzZT0nbGl0ZXJhbCcvPgogICA8L2lucHV0PgogICA8b3V0cHV0PgogICAgPHNvYXA6Ym9keSB1c2U9J2xpdGVyYWwnLz4KICAgPC9vdXRwdXQ+CiAgPC9vcGVyYXRpb24+CiA8L2JpbmRpbmc+CiA8c2VydmljZSBuYW1lPSdFSkIzQWNjb3VudENvbnRyb2xCZWFuU2VydmljZSc+CiAgPHBvcnQgYmluZGluZz0ndG5zOkVKQjNBY2NvdW50Q29udHJvbEJlYW5CaW5kaW5nJyBuYW1lPSdFSkIzQWNjb3VudENvbnRyb2xCZWFuUG9ydCc+CiAgIDxzb2FwOmFkZHJlc3MgbG9jYXRpb249J2h0dHA6Ly9SYWplZXYtaVRLTy5sb2NhbDo4MDgwL2l0a29FeGFtcGxlcy9FSkIzQWNjb3VudENvbnRyb2xCZWFuJy8+CiAgPC9wb3J0PgogPC9zZXJ2aWNlPgo8L2RlZmluaXRpb25zPg==</control>
+<assertType>Similar</assertType>
+<testContent></testContent>
+<hideIgnoredDiffs>true</hideIgnoredDiffs>
+<ignoreList>location</ignoreList>
+<ignoreElmAttrOrder>true</ignoreElmAttrOrder>
+<useRegEx>false</useRegEx>
+<ignoreElementsByXPath>false</ignoreElementsByXPath>
+</CheckResult>
+
+<CheckResult assertTrue="false" name="Assert49" type="com.itko.lisa.xml.AssertXMLValidator">
+<log>Assert [Assert49] fired false of type XML Validation</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+<XMLValidation>
+<Validator>
+<dtd>false</dtd>
+<schema>true</schema>
+<warns>false</warns>
+<dschema>http://schemas.xmlsoap.org/wsdl/</dschema>
+<wsdl></wsdl>
+<schemas>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>http://www.w3.org/2001/XMLSchema.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>http://schemas.xmlsoap.org/wsdl/</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>http://schemas.xmlsoap.org/wsdl/soap/</value>
+    </Parameter>
+</schemas>
+</Validator>
+<prop></prop>
+<fragment>false</fragment>
+<noneAllowed>false</noneAllowed>
+</XMLValidation>
+</CheckResult>
+
+<wsdlURL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean?wsdl</wsdlURL>
+<onExNode>abort</onExNode>
+    </Node>
+
+
+    <Node name="tokenService WSDL Validation" log=""
+          type="com.itko.lisa.ws.WSDLNode" 
+          version="1" 
+          think="1-10" 
+          useFilters="true" 
+          quiet="false" 
+          next="loadUserObject" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="false" name="Assert56" type="com.itko.lisa.xml.AssertXMLDiff">
+<log>Assert [Assert56] fired false of type XML Diff Assertion</log>
+<then>continue</then>
+<valueToAssertKey></valueToAssertKey>
+<control>PGRlZmluaXRpb25zIG5hbWU9J1Rva2VuQmVhblNlcnZpY2UnIHRhcmdldE5hbWVzcGFjZT0naHR0cDovL2VqYjMuZXhhbXBsZXMuaXRrby5jb20vJyB4bWxucz0naHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3NkbC8nIHhtbG5zOnNvYXA9J2h0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzZGwvc29hcC8nIHhtbG5zOnRucz0naHR0cDovL2VqYjMuZXhhbXBsZXMuaXRrby5jb20vJyB4bWxuczp4c2Q9J2h0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hJz4KIDx0eXBlcz4KICA8eHM6c2NoZW1hIHRhcmdldE5hbWVzcGFjZT0naHR0cDovL2VqYjMuZXhhbXBsZXMuaXRrby5jb20vJyB2ZXJzaW9uPScxLjAnIHhtbG5zOnRucz0naHR0cDovL2VqYjMuZXhhbXBsZXMuaXRrby5jb20vJyB4bWxuczp4cz0naHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEnPgogICA8eHM6ZWxlbWVudCBuYW1lPSdkZWxldGVUb2tlbicgdHlwZT0ndG5zOmRlbGV0ZVRva2VuJy8+CiAgIDx4czplbGVtZW50IG5hbWU9J2RlbGV0ZVRva2VuUmVzcG9uc2UnIHR5cGU9J3RuczpkZWxldGVUb2tlblJlc3BvbnNlJy8+CiAgIDx4czplbGVtZW50IG5hbWU9J2dldE5ld1Rva2VuJyB0eXBlPSd0bnM6Z2V0TmV3VG9rZW4nLz4KICAgPHhzOmVsZW1lbnQgbmFtZT0nZ2V0TmV3VG9rZW5SZXNwb25zZScgdHlwZT0ndG5zOmdldE5ld1Rva2VuUmVzcG9uc2UnLz4KICAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9J2dldE5ld1Rva2VuJz4KICAgIDx4czpzZXF1ZW5jZT4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9JzAnIG5hbWU9J3VzZXJuYW1lJyB0eXBlPSd4czpzdHJpbmcnLz4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9JzAnIG5hbWU9J3Bhc3N3b3JkJyB0eXBlPSd4czpzdHJpbmcnLz4KICAgIDwveHM6c2VxdWVuY2U+CiAgIDwveHM6Y29tcGxleFR5cGU+CiAgIDx4czpjb21wbGV4VHlwZSBuYW1lPSdnZXROZXdUb2tlblJlc3BvbnNlJz4KICAgIDx4czpzZXF1ZW5jZT4KICAgICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9JzAnIG5hbWU9J3JldHVybicgdHlwZT0neHM6c3RyaW5nJy8+CiAgICA8L3hzOnNlcXVlbmNlPgogICA8L3hzOmNvbXBsZXhUeXBlPgogICA8eHM6Y29tcGxleFR5cGUgbmFtZT0nZGVsZXRlVG9rZW4nPgogICAgPHhzOnNlcXVlbmNlPgogICAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0nMCcgbmFtZT0ndG9rZW4nIHR5cGU9J3hzOnN0cmluZycvPgogICAgPC94czpzZXF1ZW5jZT4KICAgPC94czpjb21wbGV4VHlwZT4KICAgPHhzOmNvbXBsZXhUeXBlIG5hbWU9J2RlbGV0ZVRva2VuUmVzcG9uc2UnPgogICAgPHhzOnNlcXVlbmNlPgogICAgIDx4czplbGVtZW50IG5hbWU9J3JldHVybicgdHlwZT0neHM6Ym9vbGVhbicvPgogICAgPC94czpzZXF1ZW5jZT4KICAgPC94czpjb21wbGV4VHlwZT4KICA8L3hzOnNjaGVtYT4KIDwvdHlwZXM+CiA8bWVzc2FnZSBuYW1lPSdUb2tlbkJlYW5fZ2V0TmV3VG9rZW5SZXNwb25zZSc+CiAgPHBhcnQgZWxlbWVudD0ndG5zOmdldE5ld1Rva2VuUmVzcG9uc2UnIG5hbWU9J2dldE5ld1Rva2VuUmVzcG9uc2UnPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxtZXNzYWdlIG5hbWU9J1Rva2VuQmVhbl9kZWxldGVUb2tlbic+CiAgPHBhcnQgZWxlbWVudD0ndG5zOmRlbGV0ZVRva2VuJyBuYW1lPSdkZWxldGVUb2tlbic+PC9wYXJ0PgogPC9tZXNzYWdlPgogPG1lc3NhZ2UgbmFtZT0nVG9rZW5CZWFuX2RlbGV0ZVRva2VuUmVzcG9uc2UnPgogIDxwYXJ0IGVsZW1lbnQ9J3RuczpkZWxldGVUb2tlblJlc3BvbnNlJyBuYW1lPSdkZWxldGVUb2tlblJlc3BvbnNlJz48L3BhcnQ+CiA8L21lc3NhZ2U+CiA8bWVzc2FnZSBuYW1lPSdUb2tlbkJlYW5fZ2V0TmV3VG9rZW4nPgogIDxwYXJ0IGVsZW1lbnQ9J3RuczpnZXROZXdUb2tlbicgbmFtZT0nZ2V0TmV3VG9rZW4nPjwvcGFydD4KIDwvbWVzc2FnZT4KIDxwb3J0VHlwZSBuYW1lPSdUb2tlbkJlYW4nPgogIDxvcGVyYXRpb24gbmFtZT0nZGVsZXRlVG9rZW4nIHBhcmFtZXRlck9yZGVyPSdkZWxldGVUb2tlbic+CiAgIDxpbnB1dCBtZXNzYWdlPSd0bnM6VG9rZW5CZWFuX2RlbGV0ZVRva2VuJz48L2lucHV0PgogICA8b3V0cHV0IG1lc3NhZ2U9J3RuczpUb2tlbkJlYW5fZGVsZXRlVG9rZW5SZXNwb25zZSc+PC9vdXRwdXQ+CiAgPC9vcGVyYXRpb24+CiAgPG9wZXJhdGlvbiBuYW1lPSdnZXROZXdUb2tlbicgcGFyYW1ldGVyT3JkZXI9J2dldE5ld1Rva2VuJz4KICAgPGlucHV0IG1lc3NhZ2U9J3RuczpUb2tlbkJlYW5fZ2V0TmV3VG9rZW4nPjwvaW5wdXQ+CiAgIDxvdXRwdXQgbWVzc2FnZT0ndG5zOlRva2VuQmVhbl9nZXROZXdUb2tlblJlc3BvbnNlJz48L291dHB1dD4KICA8L29wZXJhdGlvbj4KIDwvcG9ydFR5cGU+CiA8YmluZGluZyBuYW1lPSdUb2tlbkJlYW5CaW5kaW5nJyB0eXBlPSd0bnM6VG9rZW5CZWFuJz4KICA8c29hcDpiaW5kaW5nIHN0eWxlPSdkb2N1bWVudCcgdHJhbnNwb3J0PSdodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2h0dHAnLz4KICA8b3BlcmF0aW9uIG5hbWU9J2RlbGV0ZVRva2VuJz4KICAgPHNvYXA6b3BlcmF0aW9uIHNvYXBBY3Rpb249JycvPgogICA8aW5wdXQ+CiAgICA8c29hcDpib2R5IHVzZT0nbGl0ZXJhbCcvPgogICA8L2lucHV0PgogICA8b3V0cHV0PgogICAgPHNvYXA6Ym9keSB1c2U9J2xpdGVyYWwnLz4KICAgPC9vdXRwdXQ+CiAgPC9vcGVyYXRpb24+CiAgPG9wZXJhdGlvbiBuYW1lPSdnZXROZXdUb2tlbic+CiAgIDxzb2FwOm9wZXJhdGlvbiBzb2FwQWN0aW9uPScnLz4KICAgPGlucHV0PgogICAgPHNvYXA6Ym9keSB1c2U9J2xpdGVyYWwnLz4KICAgPC9pbnB1dD4KICAgPG91dHB1dD4KICAgIDxzb2FwOmJvZHkgdXNlPSdsaXRlcmFsJy8+CiAgIDwvb3V0cHV0PgogIDwvb3BlcmF0aW9uPgogPC9iaW5kaW5nPgogPHNlcnZpY2UgbmFtZT0nVG9rZW5CZWFuU2VydmljZSc+CiAgPHBvcnQgYmluZGluZz0ndG5zOlRva2VuQmVhbkJpbmRpbmcnIG5hbWU9J1Rva2VuQmVhblBvcnQnPgogICA8c29hcDphZGRyZXNzIGxvY2F0aW9uPSdodHRwOi8vUmFqZWV2LWlUS08ubG9jYWw6ODA4MC9pdGtvRXhhbXBsZXMvVG9rZW5CZWFuJy8+CiAgPC9wb3J0PgogPC9zZXJ2aWNlPgo8L2RlZmluaXRpb25zPg==</control>
+<assertType>Similar</assertType>
+<testContent></testContent>
+<hideIgnoredDiffs>true</hideIgnoredDiffs>
+<ignoreList>location</ignoreList>
+<ignoreElmAttrOrder>true</ignoreElmAttrOrder>
+<useRegEx>false</useRegEx>
+<ignoreElementsByXPath>false</ignoreElementsByXPath>
+</CheckResult>
+
+<CheckResult assertTrue="false" name="Assert57" type="com.itko.lisa.xml.AssertXMLValidator">
+<log>Assert [Assert57] fired false of type XML Validation</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+<XMLValidation>
+<Validator>
+<dtd>false</dtd>
+<schema>true</schema>
+<warns>false</warns>
+<dschema>http://schemas.xmlsoap.org/wsdl/</dschema>
+<wsdl></wsdl>
+<schemas>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>http://www.w3.org/2001/XMLSchema.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>http://schemas.xmlsoap.org/wsdl/</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>http://schemas.xmlsoap.org/wsdl/soap/</value>
+    </Parameter>
+</schemas>
+</Validator>
+<prop></prop>
+<fragment>false</fragment>
+<noneAllowed>false</noneAllowed>
+</XMLValidation>
+</CheckResult>
+
+<wsdlURL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/TokenBean?wsdl</wsdlURL>
+<onExNode>abort</onExNode>
+    </Node>
+
+
+    <Node name="loadUserObject" log=""
+          type="com.itko.lisa.dynexec.DynExecNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="addUserObject" > 
+
+
+      <!-- Data Sets -->
+<readrec>User</readrec>
+<readrec>unique-id</readrec>
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+      <className></className>
+<propKey>User</propKey>
+<onExNode>abort</onExNode>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>585</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>setLogin</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>605</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>unique-id</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>604</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+    </Node>
+
+
+    <Node name="addUserObject" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="addAddress" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3</Package>
+<ClientJar>ejb3.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>16</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3UserControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>19</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>20</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>addUserObject</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3.tns.User</retClassName>
+<actParamClassName>com.itko.lisa.wsgen.ejb3.tns.User</actParamClassName>
+<paramClassName>com.itko.lisa.wsgen.ejb3.tns.User</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>123</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>true</useprop>
+<propKey>lisa.loadUserObject.rsp</propKey>
+<Setters>
+<Call>
+<methodName>setAccounts</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>[Lcom.itko.lisa.wsgen.ejb3.tns.Account;</actParamClassName>
+<paramClassName>[Lcom.itko.lisa.wsgen.ejb3.tns.Account;</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ArrayObj</type>
+<serialNum>125</serialNum>
+<array>true</array>
+<className>[Lcom.itko.lisa.wsgen.ejb3.tns.Account;</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Array>
+<ArrayType>com.itko.lisa.wsgen.ejb3.tns.Account</ArrayType>
+<Iterator>
+</Iterator>
+</Array>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>124</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setAddresses</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>[Lcom.itko.lisa.wsgen.ejb3.tns.Address;</actParamClassName>
+<paramClassName>[Lcom.itko.lisa.wsgen.ejb3.tns.Address;</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ArrayObj</type>
+<serialNum>127</serialNum>
+<array>true</array>
+<className>[Lcom.itko.lisa.wsgen.ejb3.tns.Address;</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Array>
+<ArrayType>com.itko.lisa.wsgen.ejb3.tns.Address</ArrayType>
+<Iterator>
+</Iterator>
+</Array>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>126</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setEmail</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>129</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>128</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setFname</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>131</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>130</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setLname</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>133</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>132</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setLogin</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>135</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>134</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setPhone</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>137</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>136</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setPwd</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>139</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>138</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setRoleKey</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>com.itko.lisa.wsgen.ejb3.tns.Role</actParamClassName>
+<paramClassName>com.itko.lisa.wsgen.ejb3.tns.Role</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>141</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.Role</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>140</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</Setters>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>21</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+    <Parameter>
+    <key>http://ejb3.examples.itko.com/</key>
+    <value>com.itko.lisa.wsgen.ejb3.tns</value>
+    </Parameter>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>com.itko.lisa.wsgen.ejb3.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>com.itko.lisa.wsgen.ejb3.soap</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>com.itko.lisa.wsgen.ejb3</value>
+    </Parameter>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="addAddress" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="getAddress" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3</Package>
+<ClientJar>ejb3.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>0</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3UserControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>3</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>4</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>addAddress</methodName>
+<retClassName>java.lang.String</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<actParamClassName>com.itko.lisa.wsgen.ejb3.tns.Address</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<paramClassName>com.itko.lisa.wsgen.ejb3.tns.Address</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>6</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>=User.getLogin()</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>162</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.Address</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+<Call>
+<methodName>setCity</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>164</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>city2</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>163</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setId</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>166</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>165</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setLine1</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>168</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>AddrLine1</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>167</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setLine2</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>170</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>Drive</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>169</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setState</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>172</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>CA</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>171</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setZip</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>int</actParamClassName>
+<paramClassName>java.lang.Integer</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>174</serialNum>
+<array>false</array>
+<className>java.lang.Integer</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>95035</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>173</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</Setters>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>5</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>45ea0591:11548d61851:-7ff9</simpleVal>
+</DynObject>
+</result>
+<retPropKey>addressId</retPropKey>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="getAddress" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="deleteAddress" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3</Package>
+<ClientJar>ejb3.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>52</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3UserControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>55</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>56</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getAddress</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3.tns.Address</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>258</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>addressId</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>57</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.Address</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="deleteAddress" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="getUser" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3</Package>
+<ClientJar>ejb3.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>37</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3UserControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>40</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>41</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>deleteAddress</methodName>
+<retClassName>java.lang.Boolean</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<paramClassName>java.lang.String</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>43</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>{{=User.getLogin()}}</simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>238</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>addressId</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>42</serialNum>
+<array>false</array>
+<className>java.lang.Boolean</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>true</simpleVal>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="getUser" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="modifyUserObject" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3</Package>
+<ClientJar>ejb3.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>59</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3UserControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>62</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>63</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getUser</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3.tns.User</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>65</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>{{=User.getLogin()}}</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>64</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</result>
+<retPropKey>userObject</retPropKey>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="modifyUserObject" log=""
+          type="com.itko.lisa.dynexec.NodeConvertPropToLastResponse" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="true" 
+          next="updateUser" > 
+
+<Property>userObject</Property>
+    </Node>
+
+
+    <Node name="updateUser" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="listAddresses" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3</Package>
+<ClientJar>ejb3.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>100</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3UserControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>103</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>104</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>updateUser</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3.tns.User</retClassName>
+<actParamClassName>com.itko.lisa.wsgen.ejb3.tns.User</actParamClassName>
+<paramClassName>com.itko.lisa.wsgen.ejb3.tns.User</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>106</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>true</useprop>
+<propKey>lisa.modifyUserObject.rsp</propKey>
+<Setters>
+<Call>
+<methodName>setAccounts</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>[Lcom.itko.lisa.wsgen.ejb3.tns.Account;</actParamClassName>
+<paramClassName>[Lcom.itko.lisa.wsgen.ejb3.tns.Account;</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ArrayObj</type>
+<serialNum>336</serialNum>
+<array>true</array>
+<className>[Lcom.itko.lisa.wsgen.ejb3.tns.Account;</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Array>
+<ArrayType>com.itko.lisa.wsgen.ejb3.tns.Account</ArrayType>
+<Iterator>
+</Iterator>
+</Array>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>335</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setAddresses</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>[Lcom.itko.lisa.wsgen.ejb3.tns.Address;</actParamClassName>
+<paramClassName>[Lcom.itko.lisa.wsgen.ejb3.tns.Address;</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ArrayObj</type>
+<serialNum>338</serialNum>
+<array>true</array>
+<className>[Lcom.itko.lisa.wsgen.ejb3.tns.Address;</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Array>
+<ArrayType>com.itko.lisa.wsgen.ejb3.tns.Address</ArrayType>
+<Iterator>
+</Iterator>
+</Array>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>337</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setEmail</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>340</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>339</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setFname</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>342</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>341</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setLname</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>344</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>343</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setLogin</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>346</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>345</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setPhone</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>348</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>347</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setPwd</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>350</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>349</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setRoleKey</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>com.itko.lisa.wsgen.ejb3.tns.Role</actParamClassName>
+<paramClassName>com.itko.lisa.wsgen.ejb3.tns.Role</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>352</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.Role</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>351</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</Setters>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>105</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+    <Parameter>
+    <key>http://ejb3.examples.itko.com/</key>
+    <value>com.itko.lisa.wsgen.ejb3.tns</value>
+    </Parameter>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>com.itko.lisa.wsgen.ejb3.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>com.itko.lisa.wsgen.ejb3.soap</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>com.itko.lisa.wsgen.ejb3</value>
+    </Parameter>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="listAddresses" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="listUsers" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3</Package>
+<ClientJar>ejb3.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>73</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3UserControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>76</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>77</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>listAddresses</methodName>
+<retClassName>[Lcom.itko.lisa.wsgen.ejb3.tns.Address;</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>79</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>{{=User.getLogin()}}</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ArrayObj</type>
+<serialNum>78</serialNum>
+<array>true</array>
+<className>[Lcom.itko.lisa.wsgen.ejb3.tns.Address;</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Array>
+<ArrayType>com.itko.lisa.wsgen.ejb3.tns.Address</ArrayType>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>395</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.Address</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<Iterator>
+</Iterator>
+</Array>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="listUsers" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="validate" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3</Package>
+<ClientJar>ejb3.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>80</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3UserControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>83</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>84</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>listUsers</methodName>
+<retClassName>[Lcom.itko.lisa.wsgen.ejb3.tns.User;</retClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ArrayObj</type>
+<serialNum>85</serialNum>
+<array>true</array>
+<className>[Lcom.itko.lisa.wsgen.ejb3.tns.User;</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Array>
+<ArrayType>com.itko.lisa.wsgen.ejb3.tns.User</ArrayType>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>318</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>319</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>320</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>321</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>322</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>415</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>416</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>417</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>418</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>419</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>420</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>421</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>422</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>423</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>424</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>425</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.User</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<Iterator>
+</Iterator>
+</Array>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="validate" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="getNewToken" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3</Package>
+<ClientJar>ejb3.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>107</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3UserControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>110</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>111</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>validate</methodName>
+<retClassName>java.lang.Boolean</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<paramClassName>java.lang.String</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>113</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>{{=User.getLogin()}}</simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>114</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>{{=User.getPwd()}}</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>112</serialNum>
+<array>false</array>
+<className>java.lang.Boolean</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>true</simpleVal>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="getNewToken" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1-10" 
+          useFilters="true" 
+          quiet="false" 
+          next="addAccount1" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.tokenService.tns.TokenBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/TokenBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.tokenService</Package>
+<ClientJar>tokenService.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/TokenBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>214</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.tokenService.tns.TokenBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getTokenBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.tokenService.tns.TokenBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>217</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>218</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.tokenService.tns.TokenBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getNewToken</methodName>
+<retClassName>java.lang.String</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<paramClassName>java.lang.String</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>220</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>{{=User.getLogin()}}</simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>221</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>{{=User.getPwd()}}</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>219</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<retPropKey>token</retPropKey>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+    <Parameter>
+    <key>http://ejb3.examples.itko.com/</key>
+    <value>com.itko.lisa.wsgen.tokenService.tns</value>
+    </Parameter>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>com.itko.lisa.wsgen.tokenService.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>com.itko.lisa.wsgen.tokenService.soap</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>com.itko.lisa.wsgen.tokenService</value>
+    </Parameter>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="addAccount1" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="addAccount2" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3Account</Package>
+<ClientJar>ejb3Account.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>795</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3AccountControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>798</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>799</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>addAccount</methodName>
+<retClassName>java.lang.String</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<actParamClassName>com.itko.lisa.wsgen.ejb3Account.tns.Account</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<paramClassName>com.itko.lisa.wsgen.ejb3Account.tns.Account</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>306</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>=User.getLogin()</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>308</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.Account</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+<Call>
+<methodName>setBalance</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.math.BigDecimal</actParamClassName>
+<paramClassName>java.math.BigDecimal</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>310</serialNum>
+<array>false</array>
+<className>java.math.BigDecimal</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>150</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>309</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setId</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>312</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>311</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setName</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>314</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>Checking</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>313</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setType</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>com.itko.lisa.wsgen.ejb3Account.tns.AccountType</actParamClassName>
+<paramClassName>com.itko.lisa.wsgen.ejb3Account.tns.AccountType</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>317</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.AccountType</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<StaticCtor>
+<targetClassName>com.itko.lisa.wsgen.ejb3Account.tns.AccountType</targetClassName>
+<fieldName>CHECKING</fieldName>
+<actualFieldClassName>com.itko.lisa.wsgen.ejb3Account.tns.AccountType</actualFieldClassName>
+<isCallMade>false</isCallMade>
+</StaticCtor>
+<Setters>
+</Setters>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>315</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</Setters>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>305</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal></simpleVal>
+</DynObject>
+</result>
+<retPropKey>accountId1</retPropKey>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+    <Parameter>
+    <key>token</key>
+    <value>{{token}}</value>
+    </Parameter>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+    <Parameter>
+    <key>http://ejb3.examples.itko.com/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.tns</value>
+    </Parameter>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.soap</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account</value>
+    </Parameter>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="addAccount2" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="getAccount1" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3Account</Package>
+<ClientJar>ejb3Account.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>795</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3AccountControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>798</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>799</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>addAccount</methodName>
+<retClassName>java.lang.String</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<actParamClassName>com.itko.lisa.wsgen.ejb3Account.tns.Account</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<paramClassName>com.itko.lisa.wsgen.ejb3Account.tns.Account</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>333</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>=User.getLogin()</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>335</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.Account</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+<Call>
+<methodName>setBalance</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.math.BigDecimal</actParamClassName>
+<paramClassName>java.math.BigDecimal</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>337</serialNum>
+<array>false</array>
+<className>java.math.BigDecimal</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>1600</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>336</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setId</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>339</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>338</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setName</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>341</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>Savings</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>340</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+<Call>
+<methodName>setType</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>com.itko.lisa.wsgen.ejb3Account.tns.AccountType</actParamClassName>
+<paramClassName>com.itko.lisa.wsgen.ejb3Account.tns.AccountType</paramClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>344</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.AccountType</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<StaticCtor>
+<targetClassName>com.itko.lisa.wsgen.ejb3Account.tns.AccountType</targetClassName>
+<fieldName>SAVINGS</fieldName>
+<actualFieldClassName>com.itko.lisa.wsgen.ejb3Account.tns.AccountType</actualFieldClassName>
+<isCallMade>false</isCallMade>
+</StaticCtor>
+<Setters>
+</Setters>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>342</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</Setters>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>332</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal></simpleVal>
+</DynObject>
+</result>
+<retPropKey>accountId2</retPropKey>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+    <Parameter>
+    <key>token</key>
+    <value>{{token}}</value>
+    </Parameter>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+    <Parameter>
+    <key>http://ejb3.examples.itko.com/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.tns</value>
+    </Parameter>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.soap</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account</value>
+    </Parameter>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="getAccount1" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="depositMoney" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3Account</Package>
+<ClientJar>ejb3Account.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>820</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3AccountControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>823</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>824</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getAccount</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3Account.tns.Account</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>1011</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>accountId1</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>825</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.Account</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+    <Parameter>
+    <key>token</key>
+    <value>{{token}}</value>
+    </Parameter>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+    <Parameter>
+    <key>http://ejb3.examples.itko.com/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.tns</value>
+    </Parameter>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.soap</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account</value>
+    </Parameter>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="depositMoney" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="withdrawMoney" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3Account</Package>
+<ClientJar>ejb3Account.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>811</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3AccountControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>814</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>815</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>depositMoney</methodName>
+<retClassName>java.lang.String</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<actParamClassName>java.math.BigDecimal</actParamClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<paramClassName>java.math.BigDecimal</paramClassName>
+<paramClassName>java.lang.String</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>484</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>accountId1</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>485</serialNum>
+<array>false</array>
+<className>java.math.BigDecimal</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>60</simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>486</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>personal loan</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>483</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>45ea0591:11548d61851:-7fcb</simpleVal>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+    <Parameter>
+    <key>token</key>
+    <value>{{token}}</value>
+    </Parameter>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+    <Parameter>
+    <key>http://ejb3.examples.itko.com/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.tns</value>
+    </Parameter>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.soap</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account</value>
+    </Parameter>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="withdrawMoney" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="transferMoney" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3Account</Package>
+<ClientJar>ejb3Account.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>853</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3AccountControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>856</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>857</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>withdrawMoney</methodName>
+<retClassName>java.lang.String</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<actParamClassName>java.math.BigDecimal</actParamClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<paramClassName>java.math.BigDecimal</paramClassName>
+<paramClassName>java.lang.String</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>504</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>accountId1</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>505</serialNum>
+<array>false</array>
+<className>java.math.BigDecimal</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>20</simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>506</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>pocket money</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>503</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>45ea0591:11548d61851:-7fc8</simpleVal>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+    <Parameter>
+    <key>token</key>
+    <value>{{token}}</value>
+    </Parameter>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+    <Parameter>
+    <key>http://ejb3.examples.itko.com/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.tns</value>
+    </Parameter>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.soap</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account</value>
+    </Parameter>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="transferMoney" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="getTransactions" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3Account</Package>
+<ClientJar>ejb3Account.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>843</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3AccountControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>846</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>847</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>transferMoney</methodName>
+<retClassName>java.lang.String</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<actParamClassName>java.math.BigDecimal</actParamClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<paramClassName>java.lang.String</paramClassName>
+<paramClassName>java.math.BigDecimal</paramClassName>
+<paramClassName>java.lang.String</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>522</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>accountId1</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>523</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>accountId2</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>524</serialNum>
+<array>false</array>
+<className>java.math.BigDecimal</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>10</simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>525</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>Moving to Checking</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>521</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>45ea0591:11548d61851:-7fb7</simpleVal>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+    <Parameter>
+    <key>token</key>
+    <value>{{token}}</value>
+    </Parameter>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+    <Parameter>
+    <key>http://ejb3.examples.itko.com/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.tns</value>
+    </Parameter>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.soap</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account</value>
+    </Parameter>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="getTransactions" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="listAccounts" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3Account</Package>
+<ClientJar>ejb3Account.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>827</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3AccountControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>830</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>831</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getTransactions</methodName>
+<retClassName>[Lcom.itko.lisa.wsgen.ejb3Account.tns.Transaction;</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<actParamClassName>java.util.Calendar</actParamClassName>
+<actParamClassName>java.util.Calendar</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<paramClassName>java.util.Calendar</paramClassName>
+<paramClassName>java.util.Calendar</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>1034</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>accountId1</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>834</serialNum>
+<array>false</array>
+<className>java.util.Calendar</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>835</serialNum>
+<array>false</array>
+<className>java.util.Calendar</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>true</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ArrayObj</type>
+<serialNum>832</serialNum>
+<array>true</array>
+<className>[Lcom.itko.lisa.wsgen.ejb3Account.tns.Transaction;</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Array>
+<ArrayType>com.itko.lisa.wsgen.ejb3Account.tns.Transaction</ArrayType>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>1043</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.Transaction</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>1044</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.Transaction</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>1045</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.Transaction</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<Iterator>
+</Iterator>
+</Array>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+    <Parameter>
+    <key>token</key>
+    <value>{{token}}</value>
+    </Parameter>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+    <Parameter>
+    <key>http://ejb3.examples.itko.com/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.tns</value>
+    </Parameter>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.soap</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account</value>
+    </Parameter>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="listAccounts" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="deleteAccount" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3Account</Package>
+<ClientJar>ejb3Account.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>836</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3AccountControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>839</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>840</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>listAccounts</methodName>
+<retClassName>[Lcom.itko.lisa.wsgen.ejb3Account.tns.Account;</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>1068</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>{{=User.getLogin()}}</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ArrayObj</type>
+<serialNum>841</serialNum>
+<array>true</array>
+<className>[Lcom.itko.lisa.wsgen.ejb3Account.tns.Account;</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Array>
+<ArrayType>com.itko.lisa.wsgen.ejb3Account.tns.Account</ArrayType>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>1069</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.Account</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>1070</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.Account</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<ArrayElement>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>1071</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.Account</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+</DynObject>
+</ArrayElement>
+<Iterator>
+</Iterator>
+</Array>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+    <Parameter>
+    <key>token</key>
+    <value>{{token}}</value>
+    </Parameter>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+    <Parameter>
+    <key>http://ejb3.examples.itko.com/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.tns</value>
+    </Parameter>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.soap</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account</value>
+    </Parameter>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="deleteAccount" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="deleteUser" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3Account</Package>
+<ClientJar>ejb3Account.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3AccountControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>803</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3AccountControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>806</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>807</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3Account.tns.EJB3AccountControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>deleteAccount</methodName>
+<retClassName>java.lang.Boolean</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<paramClassName>java.lang.String</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>809</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>{{=User.getLogin()}}</simpleVal>
+</DynObject>
+</param>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>1083</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>accountId1</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>808</serialNum>
+<array>false</array>
+<className>java.lang.Boolean</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>true</simpleVal>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+    <Parameter>
+    <key>token</key>
+    <value>{{token}}</value>
+    </Parameter>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+    <Parameter>
+    <key>http://ejb3.examples.itko.com/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.tns</value>
+    </Parameter>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account.soap</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>com.itko.lisa.wsgen.ejb3Account</value>
+    </Parameter>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="deleteUser" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1000-10000" 
+          useFilters="true" 
+          quiet="false" 
+          next="deleteToken" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.ejb3</Package>
+<ClientJar>ejb3.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/EJB3UserControlBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>45</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getEJB3UserControlBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>48</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>49</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.ejb3.tns.EJB3UserControlBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>deleteUser</methodName>
+<retClassName>java.lang.Void</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>249</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>{{=User.getLogin()}}</simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.VoidObj</type>
+<serialNum>50</serialNum>
+<array>false</array>
+<className>java.lang.Void</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>true</null>
+<void>true</void>
+<simple>false</simple>
+<useprop>false</useprop>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="deleteToken" log=""
+          type="com.itko.lisa.dynexec.axis.WebServiceNode" 
+          version="1" 
+          think="1-10" 
+          useFilters="true" 
+          quiet="false" 
+          next="end" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assert [Any Exception Then Fail] fired true of type Assert on Invocation Exception</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<className>com.itko.lisa.wsgen.tokenService.tns.TokenBeanServiceLocator</className>
+<onExNode>abort</onExNode>
+<WSDL>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/TokenBean?wsdl</WSDL>
+<Package>com.itko.lisa.wsgen.tokenService</Package>
+<ClientJar>tokenService.jar</ClientJar>
+<SOAPBindAddr>http://{{WSSERVER}}:{{WSPORT}}/itkoExamples/TokenBean</SOAPBindAddr>
+<objStream>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>207</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.tokenService.tns.TokenBeanServiceLocator</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>getTokenBeanPort</methodName>
+<retClassName>com.itko.lisa.wsgen.tokenService.tns.TokenBean</retClassName>
+<actParamClassName>java.net.URL</actParamClassName>
+<paramClassName>java.net.URL</paramClassName>
+<exClassName>javax.xml.rpc.ServiceException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>210</serialNum>
+<array>false</array>
+<className>java.net.URL</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>itkolisa.WebServiceNode.hiddenBindAddrKey</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.ComplexObj</type>
+<serialNum>211</serialNum>
+<array>false</array>
+<className>com.itko.lisa.wsgen.tokenService.tns.TokenBeanBindingStub</className>
+<complex>true</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>false</simple>
+<useprop>false</useprop>
+<Setters>
+</Setters>
+<Call>
+<methodName>deleteToken</methodName>
+<retClassName>java.lang.Boolean</retClassName>
+<actParamClassName>java.lang.String</actParamClassName>
+<paramClassName>java.lang.String</paramClassName>
+<exClassName>java.rmi.RemoteException</exClassName>
+<param>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>490</serialNum>
+<array>false</array>
+<className>java.lang.String</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>true</useprop>
+<propKey>token</propKey>
+<simpleVal></simpleVal>
+</DynObject>
+</param>
+<result>
+<DynObject>
+<type>com.itko.lisa.dynexec.SimpleObj</type>
+<serialNum>212</serialNum>
+<array>false</array>
+<className>java.lang.Boolean</className>
+<complex>false</complex>
+<interface>false</interface>
+<null>false</null>
+<void>false</void>
+<simple>true</simple>
+<useprop>false</useprop>
+<simpleVal>false</simpleVal>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</result>
+<isCallMade>false</isCallMade>
+</Call>
+</DynObject>
+</objStream>
+<wsGlobalInfo>
+<soapVersionUri>1.1</soapVersionUri>
+<httpVersionUri>1.1</httpVersionUri>
+<webMethodUri>POST</webMethodUri>
+<mtom>false</mtom>
+<dontSendRequest>false</dontSendRequest>
+<dontDeserialze>false</dontDeserialze>
+<allowNonNillable>false</allowNonNillable>
+<callTimeout>30000</callTimeout>
+<wsi-check-wsdl>false</wsi-check-wsdl>
+<wsi-check-msg>false</wsi-check-msg>
+<wsi-display-type>notPassed</wsi-display-type>
+<wsi-on-fail>continue</wsi-on-fail>
+<ssl-keystore-file></ssl-keystore-file>
+<ssl-keystore-password-enc>f5504e2d23a7888253a27e8ef52607d8</ssl-keystore-password-enc>
+</wsGlobalInfo>
+<wss4jInfo>
+<version>5</version>
+<wssecurity>
+<isSend>true</isSend>
+<must>false</must>
+</wssecurity>
+<wsi-bsp>false</wsi-bsp>
+</wss4jInfo>
+<GenericHeader>
+<ns>
+</ns>
+<xml></xml>
+</GenericHeader>
+<wsaInfo>
+<useAddressing>false</useAddressing>
+<must>false</must>
+<to></to>
+<toOverride>false</toOverride>
+<toDefault>true</toDefault>
+<from></from>
+<fromOverride>false</fromOverride>
+<fromDefault>true</fromDefault>
+<action></action>
+<actionOverride>false</actionOverride>
+<actionDefault>true</actionDefault>
+<msgid></msgid>
+<msgidOverride>false</msgidOverride>
+<msgidDefault>true</msgidDefault>
+<replyTo></replyTo>
+<replyToOverride>false</replyToOverride>
+<faultTo></faultTo>
+<faulttToOverride>false</faulttToOverride>
+<addressingVersion>http://www.w3.org/2005/08/addressing</addressingVersion>
+</wsaInfo>
+<customHTTPHeaderInfo>
+</customHTTPHeaderInfo>
+<wsNameSpaceMapping>
+    <Parameter>
+    <key>http://ejb3.examples.itko.com/</key>
+    <value>com.itko.lisa.wsgen.tokenService.tns</value>
+    </Parameter>
+    <Parameter>
+    <key>http://www.w3.org/2001/XMLSchema</key>
+    <value>com.itko.lisa.wsgen.tokenService.xsd</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/soap/</key>
+    <value>com.itko.lisa.wsgen.tokenService.soap</value>
+    </Parameter>
+    <Parameter>
+    <key>http://schemas.xmlsoap.org/wsdl/</key>
+    <value>com.itko.lisa.wsgen.tokenService</value>
+    </Parameter>
+</wsNameSpaceMapping>
+<useDefaultNamespace>true</useDefaultNamespace>
+<forceNoWrap>false</forceNoWrap>
+<uddi-lookup>false</uddi-lookup>
+<uddi-result>
+<uddi-selection>
+<inquiry-url></inquiry-url>
+<binding-template-key></binding-template-key>
+<access-point></access-point>
+<tmodel-key></tmodel-key>
+</uddi-selection>
+</uddi-result>
+    </Node>
+
+
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="end" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          think="0-0" 
+          useFilters="true" 
+          quiet="true" 
+          next="" > 
+
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          think="0-0" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <DataSet type="com.itko.lisa.dynexec.dtodatasets.XLSDTODataSet" name="User" atend="end" local="true" random="false" maxItemsToFetch="100" >
+<sample>rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAAAeA==</sample>
+    <location>{{LISA_PROJ_ROOT}}/Data/users-ws.xls</location>
+    <dto>com.itko.lisa.wsgen.ejb3.tns.User</dto>
+    <useNewEmptyCellSemantics>false</useNewEmptyCellSemantics>
+    </DataSet>
+
+    <DataSet type="com.itko.lisa.test.DataSetIDGenerator" name="unique-id" atend="" local="true" random="false" maxItemsToFetch="0" >
+<sample>rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAABdAAJdW5pcXVlLWlkdAANdXNlci01NTY2MDgxMXg=</sample>
+    <type>Number</type>
+    <prefix>user-</prefix>
+    </DataSet>
+
+</TestCase>

@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+
+<!-- license generated Mon Mar 26 11:08:51 CDT 2018 -->
+<LISALicense>
+
+    <id>d0926562</id>
+    <company>SW Telephone</company>
+    <contact>by7602@us.att.com</contact>
+    <product>LISA</product>
+    <issuedate>03/26/18 11:08:51 -0500</issuedate>
+    <validuntil>03/27/21 00:00:00 -0500</validuntil>
+    <type>Server</type>
+    <versions>8,9,10</versions>
+    <acts>1</acts>
+    <maxresources>10</maxresources>
+    <maxvirtualservices>0</maxvirtualservices>
+    <maxVirtualTransCount>100</maxVirtualTransCount>
+    <maxPathfinderAgentCount>0</maxPathfinderAgentCount>
+    <maxPathfinderTransCount>0</maxPathfinderTransCount>
+    <eval>false</eval>
+    <webTesting>false</webTesting>
+    <wsTesting>false</wsTesting>
+    <j2eeTesting>false</j2eeTesting>
+    <swingTesting>false</swingTesting>
+    <simulator>false</simulator>
+    <coordinator>false</coordinator>
+    <registry>false</registry>
+    <cbt>false</cbt>
+    <esbTesting>false</esbTesting>
+    <LEK>false</LEK>
+    <virtualService>false</virtualService>
+    <pathFinder>false</pathFinder>
+    <cvs>false</cvs>
+    <vseLoad>false</vseLoad>
+    <pathFinderPro>false</pathFinderPro>
+    <pathFinderDevConsole>false</pathFinderDevConsole>
+    <pfManageCases>false</pfManageCases>
+    <pfCreateBaselineAssets>false</pfCreateBaselineAssets>
+    <pfCreateVSEAssets>false</pfCreateVSEAssets>
+    <pfCreateDataAssets>false</pfCreateDataAssets>
+    <DCM>false</DCM>
+    <enterpriseDashboard>true</enterpriseDashboard>
+    <serial>Cl7kcc1LmankRmyw6O5UsQl9mYJbmHmXilsZfpushUcsclLLmc014QM7ddo7fsaEPavBbAsb1+FRvTbKAYe7UjphtWn4WD0w3OPQiPdNC6ikyQMKkCK6G8k3btceXnqklDJpUYV22pC8OcW2HrhaIsudQIS6HIGJKZPzy+26FPg=</serial>
+
+</LISALicense>

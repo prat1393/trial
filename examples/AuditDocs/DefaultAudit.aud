@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+
+<TestAudit>
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="03/09/2018" host="HVDIVD18MIS1939" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="03/09/2018" host="HVDIVD18MIS1939" />
+</meta>
+
+<Name>Default Audit Doc</Name>
+<IsInProject>true</IsInProject>
+<MustSeeEvent>
+<event>11</event>
+<fail>The test case never started. This is usually a problem staging the test (not in the system under test).</fail>
+</MustSeeEvent>
+<MustNotSeeEvent>
+<event>13</event>
+<fail>Test case failed (raised the &quot;Cycle failed&quot; event).</fail>
+</MustNotSeeEvent>
+<MustNotSeeEvent>
+<event>50</event>
+<fail>The test case failed (executed the abort node).</fail>
+</MustNotSeeEvent>
+<MustNotSeeEvent>
+<event>34</event>
+<fail>A error occured that prevented the test from continuing.  This is usually a problem with the test case connection to the system under test.</fail>
+</MustNotSeeEvent>
+<MustNotSeeEvent>
+<shortDesc>fail</shortDesc>
+<event>15</event>
+<fail>The test case failed (executed the fail node).</fail>
+</MustNotSeeEvent>
+<MustNotSeeEvent>
+<shortDesc>fail</shortDesc>
+<event>50</event>
+<fail>The test case failed (executed the fail node).</fail>
+</MustNotSeeEvent>
+<MustNotSeeEvent>
+<shortDesc>abort</shortDesc>
+<event>15</event>
+<fail>The test case failed (executed the abort node).</fail>
+</MustNotSeeEvent>
+<MustNotSeeEvent>
+<shortDesc>abort</shortDesc>
+<event>50</event>
+<fail>The test case failed (executed the abort node).</fail>
+</MustNotSeeEvent>
+</TestAudit>

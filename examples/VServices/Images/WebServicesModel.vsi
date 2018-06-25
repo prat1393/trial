@@ -1,0 +1,262 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="3" name="WebServicesModel" created="2014-10-10.13:41:38.815" lastModified="2014-10-10.13:42:40.226" version="8.0" buildNumber="8.0.0.876">
+<st>
+<t id="4" nd="true">
+<sp>
+<t id="7">
+<rq id="8" op="addUser" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;true;;;;">webapp-1809697075554</p>
+<p n="password" t="arg:EQUALS;false;;;;">example-pwd</p>
+</ag>
+<at>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHNvYXBlbnY6RW52ZWxvcGUgeG1sbnM6c29hcGVudj0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9lbnZlbG9wZS8iIHhtbG5zOnhzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSI+CiAgPHNvYXBlbnY6Qm9keT4KICAgIDxhZGRVc2VyIHhtbG5zPSJodHRwOi8vZWpiMy5leGFtcGxlcy5pdGtvLmNvbS8iPgogICAgICA8IS0tdXNlcm5hbWUgaXMgb3B0aW9uYWwtLT4KICAgICAgPHVzZXJuYW1lIHhtbG5zPSIiPndlYmFwcC0xODA5Njk3MDc1NTU0PC91c2VybmFtZT4KICAgICAgPCEtLXBhc3N3b3JkIGlzIG9wdGlvbmFsLS0+CiAgICAgIDxwYXNzd29yZCB4bWxucz0iIj5leGFtcGxlLXB3ZDwvcGFzc3dvcmQ+CiAgICA8L2FkZFVzZXI+CiAgPC9zb2FwZW52OkJvZHk+Cjwvc29hcGVudjpFbnZlbG9wZT4K</p>
+<p n="xmlns">http://ejb3.examples.itko.com/</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#10;  &lt;soapenv:Body&gt;&#10;    &lt;addUser xmlns=&quot;http://ejb3.examples.itko.com/&quot;&gt;&#10;      &lt;!--username is optional--&gt;&#10;      &lt;username xmlns=&quot;&quot;&gt;webapp-1809697075554&lt;/username&gt;&#10;      &lt;!--password is optional--&gt;&#10;      &lt;password xmlns=&quot;&quot;&gt;example-pwd&lt;/password&gt;&#10;    &lt;/addUser&gt;&#10;  &lt;/soapenv:Body&gt;&#10;&lt;/soapenv:Envelope&gt;&#10;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/itkoExamples/EJB3UserControlBean</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept-Encoding">gzip,deflate</p>
+<p n="Content-Type">text/xml;charset=UTF-8</p>
+<p n="SOAPAction">&quot;&quot;</p>
+<p n="Content-Length">456</p>
+<p n="Host">localhost:8080</p>
+<p n="User-Agent">Apache-HttpClient/4.1.1 (java 1.5)</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#10;  &lt;soapenv:Body&gt;&#10;    &lt;addUser xmlns=&quot;http://ejb3.examples.itko.com/&quot;&gt;&#10;      &lt;!--username is optional--&gt;&#10;      &lt;username xmlns=&quot;&quot;&gt;webapp-1809697075554&lt;/username&gt;&#10;      &lt;!--password is optional--&gt;&#10;      &lt;password xmlns=&quot;&quot;&gt;example-pwd&lt;/password&gt;&#10;    &lt;/addUser&gt;&#10;  &lt;/soapenv:Body&gt;&#10;&lt;/soapenv:Envelope&gt;&#10;</bd>
+</rq>
+<rs>
+<rp id="9" t="15">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">Apache-Coyote/1.1</p>
+<p n="X-Powered-By">Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181439)/JBossWeb-2.0</p>
+<p n="Content-Type">text/xml;charset=UTF-8</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd>&lt;env:Envelope xmlns:env=&apos;http://schemas.xmlsoap.org/soap/envelope/&apos;&gt;&lt;env:Header&gt;&lt;/env:Header&gt;&lt;env:Body&gt;&lt;ns2:addUserResponse xmlns:ns2=&quot;http://ejb3.examples.itko.com/&quot;&gt;&lt;return&gt;&lt;email&gt;&lt;/email&gt;&lt;fname&gt;&lt;/fname&gt;&lt;lname&gt;&lt;/lname&gt;&lt;login&gt;{{=request_username;/*webapp-1809697075554*/}}&lt;/login&gt;&lt;newFlag&gt;true&lt;/newFlag&gt;&lt;phone&gt;&lt;/phone&gt;&lt;pwd&gt;AL2slstNsa1Saz09CwL0/ThKVnU=&lt;/pwd&gt;&lt;roleKey&gt;REGULAR&lt;/roleKey&gt;&lt;ssn&gt;&lt;/ssn&gt;&lt;/return&gt;&lt;/ns2:addUserResponse&gt;&lt;/env:Body&gt;&lt;/env:Envelope&gt;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="5" op="addUser" tl="SIGNATURE">
+<ag>
+<p n="username" t="arg:EQUALS;true;;;;">webapp-1809697075554</p>
+<p n="password" t="arg:EQUALS;false;;;;">example-pwd</p>
+</ag>
+<at>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHNvYXBlbnY6RW52ZWxvcGUgeG1sbnM6c29hcGVudj0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9lbnZlbG9wZS8iIHhtbG5zOnhzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSI+CiAgPHNvYXBlbnY6Qm9keT4KICAgIDxhZGRVc2VyIHhtbG5zPSJodHRwOi8vZWpiMy5leGFtcGxlcy5pdGtvLmNvbS8iPgogICAgICA8IS0tdXNlcm5hbWUgaXMgb3B0aW9uYWwtLT4KICAgICAgPHVzZXJuYW1lIHhtbG5zPSIiPndlYmFwcC0xODA5Njk3MDc1NTU0PC91c2VybmFtZT4KICAgICAgPCEtLXBhc3N3b3JkIGlzIG9wdGlvbmFsLS0+CiAgICAgIDxwYXNzd29yZCB4bWxucz0iIj5leGFtcGxlLXB3ZDwvcGFzc3dvcmQ+CiAgICA8L2FkZFVzZXI+CiAgPC9zb2FwZW52OkJvZHk+Cjwvc29hcGVudjpFbnZlbG9wZT4K</p>
+<p n="xmlns">http://ejb3.examples.itko.com/</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#10;  &lt;soapenv:Body&gt;&#10;    &lt;addUser xmlns=&quot;http://ejb3.examples.itko.com/&quot;&gt;&#10;      &lt;!--username is optional--&gt;&#10;      &lt;username xmlns=&quot;&quot;&gt;webapp-1809697075554&lt;/username&gt;&#10;      &lt;!--password is optional--&gt;&#10;      &lt;password xmlns=&quot;&quot;&gt;example-pwd&lt;/password&gt;&#10;    &lt;/addUser&gt;&#10;  &lt;/soapenv:Body&gt;&#10;&lt;/soapenv:Envelope&gt;&#10;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/itkoExamples/EJB3UserControlBean</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept-Encoding">gzip,deflate</p>
+<p n="Content-Type">text/xml;charset=UTF-8</p>
+<p n="SOAPAction">&quot;&quot;</p>
+<p n="Content-Length">456</p>
+<p n="Host">localhost:8080</p>
+<p n="User-Agent">Apache-HttpClient/4.1.1 (java 1.5)</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#10;  &lt;soapenv:Body&gt;&#10;    &lt;addUser xmlns=&quot;http://ejb3.examples.itko.com/&quot;&gt;&#10;      &lt;!--username is optional--&gt;&#10;      &lt;username xmlns=&quot;&quot;&gt;webapp-1809697075554&lt;/username&gt;&#10;      &lt;!--password is optional--&gt;&#10;      &lt;password xmlns=&quot;&quot;&gt;example-pwd&lt;/password&gt;&#10;    &lt;/addUser&gt;&#10;  &lt;/soapenv:Body&gt;&#10;&lt;/soapenv:Envelope&gt;&#10;</bd>
+</rq>
+<rs>
+<rp id="6" t="15">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">Apache-Coyote/1.1</p>
+<p n="X-Powered-By">Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181439)/JBossWeb-2.0</p>
+<p n="Content-Type">text/xml;charset=UTF-8</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd>&lt;env:Envelope xmlns:env=&apos;http://schemas.xmlsoap.org/soap/envelope/&apos;&gt;&lt;env:Header&gt;&lt;/env:Header&gt;&lt;env:Body&gt;&lt;ns2:addUserResponse xmlns:ns2=&quot;http://ejb3.examples.itko.com/&quot;&gt;&lt;return&gt;&lt;email&gt;&lt;/email&gt;&lt;fname&gt;&lt;/fname&gt;&lt;lname&gt;&lt;/lname&gt;&lt;login&gt;{{=request_username;/*webapp-1809697075554*/}}&lt;/login&gt;&lt;newFlag&gt;true&lt;/newFlag&gt;&lt;phone&gt;&lt;/phone&gt;&lt;pwd&gt;AL2slstNsa1Saz09CwL0/ThKVnU=&lt;/pwd&gt;&lt;roleKey&gt;REGULAR&lt;/roleKey&gt;&lt;ssn&gt;&lt;/ssn&gt;&lt;/return&gt;&lt;/ns2:addUserResponse&gt;&lt;/env:Body&gt;&lt;/env:Envelope&gt;</bd>
+</rp>
+</rs>
+</t>
+<t id="10" nd="true">
+<sp>
+<t id="1">
+<rq id="13" op="getUser" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;true;;;;">webapp-1809697075554</p>
+</ag>
+<at>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHNvYXBlbnY6RW52ZWxvcGUgeG1sbnM6c29hcGVudj0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9lbnZlbG9wZS8iIHhtbG5zOnhzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSI+CiAgPHNvYXBlbnY6Qm9keT4KICAgIDxnZXRVc2VyIHhtbG5zPSJodHRwOi8vZWpiMy5leGFtcGxlcy5pdGtvLmNvbS8iPgogICAgICA8IS0tdXNlcm5hbWUgaXMgb3B0aW9uYWwtLT4KICAgICAgPHVzZXJuYW1lIHhtbG5zPSIiPndlYmFwcC0xODA5Njk3MDc1NTU0PC91c2VybmFtZT4KICAgIDwvZ2V0VXNlcj4KICA8L3NvYXBlbnY6Qm9keT4KPC9zb2FwZW52OkVudmVsb3BlPgo=</p>
+<p n="xmlns">http://ejb3.examples.itko.com/</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#10;  &lt;soapenv:Body&gt;&#10;    &lt;getUser xmlns=&quot;http://ejb3.examples.itko.com/&quot;&gt;&#10;      &lt;!--username is optional--&gt;&#10;      &lt;username xmlns=&quot;&quot;&gt;webapp-1809697075554&lt;/username&gt;&#10;    &lt;/getUser&gt;&#10;  &lt;/soapenv:Body&gt;&#10;&lt;/soapenv:Envelope&gt;&#10;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/itkoExamples/EJB3UserControlBean</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept-Encoding">gzip,deflate</p>
+<p n="Content-Type">text/xml;charset=UTF-8</p>
+<p n="SOAPAction">&quot;&quot;</p>
+<p n="Content-Length">374</p>
+<p n="Host">localhost:8080</p>
+<p n="User-Agent">Apache-HttpClient/4.1.1 (java 1.5)</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#10;  &lt;soapenv:Body&gt;&#10;    &lt;getUser xmlns=&quot;http://ejb3.examples.itko.com/&quot;&gt;&#10;      &lt;!--username is optional--&gt;&#10;      &lt;username xmlns=&quot;&quot;&gt;webapp-1809697075554&lt;/username&gt;&#10;    &lt;/getUser&gt;&#10;  &lt;/soapenv:Body&gt;&#10;&lt;/soapenv:Envelope&gt;&#10;</bd>
+</rq>
+<rs>
+<rp id="14" t="11">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">Apache-Coyote/1.1</p>
+<p n="X-Powered-By">Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181439)/JBossWeb-2.0</p>
+<p n="Content-Type">text/xml;charset=UTF-8</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd>&lt;env:Envelope xmlns:env=&apos;http://schemas.xmlsoap.org/soap/envelope/&apos;&gt;&lt;env:Header&gt;&lt;/env:Header&gt;&lt;env:Body&gt;&lt;ns2:getUserResponse xmlns:ns2=&quot;http://ejb3.examples.itko.com/&quot;&gt;&lt;return&gt;&lt;email&gt;&lt;/email&gt;&lt;fname&gt;&lt;/fname&gt;&lt;lname&gt;&lt;/lname&gt;&lt;login&gt;{{=request_username;/*webapp-1809697075554*/}}&lt;/login&gt;&lt;newFlag&gt;true&lt;/newFlag&gt;&lt;phone&gt;&lt;/phone&gt;&lt;pwd&gt;AL2slstNsa1Saz09CwL0/ThKVnU=&lt;/pwd&gt;&lt;roleKey&gt;REGULAR&lt;/roleKey&gt;&lt;ssn&gt;&lt;/ssn&gt;&lt;/return&gt;&lt;/ns2:getUserResponse&gt;&lt;/env:Body&gt;&lt;/env:Envelope&gt;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="11" op="getUser" tl="SIGNATURE">
+<ag>
+<p n="username" t="arg:EQUALS;true;;;;">webapp-1809697075554</p>
+</ag>
+<at>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHNvYXBlbnY6RW52ZWxvcGUgeG1sbnM6c29hcGVudj0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9lbnZlbG9wZS8iIHhtbG5zOnhzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSI+CiAgPHNvYXBlbnY6Qm9keT4KICAgIDxnZXRVc2VyIHhtbG5zPSJodHRwOi8vZWpiMy5leGFtcGxlcy5pdGtvLmNvbS8iPgogICAgICA8IS0tdXNlcm5hbWUgaXMgb3B0aW9uYWwtLT4KICAgICAgPHVzZXJuYW1lIHhtbG5zPSIiPndlYmFwcC0xODA5Njk3MDc1NTU0PC91c2VybmFtZT4KICAgIDwvZ2V0VXNlcj4KICA8L3NvYXBlbnY6Qm9keT4KPC9zb2FwZW52OkVudmVsb3BlPgo=</p>
+<p n="xmlns">http://ejb3.examples.itko.com/</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#10;  &lt;soapenv:Body&gt;&#10;    &lt;getUser xmlns=&quot;http://ejb3.examples.itko.com/&quot;&gt;&#10;      &lt;!--username is optional--&gt;&#10;      &lt;username xmlns=&quot;&quot;&gt;webapp-1809697075554&lt;/username&gt;&#10;    &lt;/getUser&gt;&#10;  &lt;/soapenv:Body&gt;&#10;&lt;/soapenv:Envelope&gt;&#10;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/itkoExamples/EJB3UserControlBean</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept-Encoding">gzip,deflate</p>
+<p n="Content-Type">text/xml;charset=UTF-8</p>
+<p n="SOAPAction">&quot;&quot;</p>
+<p n="Content-Length">374</p>
+<p n="Host">localhost:8080</p>
+<p n="User-Agent">Apache-HttpClient/4.1.1 (java 1.5)</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#10;  &lt;soapenv:Body&gt;&#10;    &lt;getUser xmlns=&quot;http://ejb3.examples.itko.com/&quot;&gt;&#10;      &lt;!--username is optional--&gt;&#10;      &lt;username xmlns=&quot;&quot;&gt;webapp-1809697075554&lt;/username&gt;&#10;    &lt;/getUser&gt;&#10;  &lt;/soapenv:Body&gt;&#10;&lt;/soapenv:Envelope&gt;&#10;</bd>
+</rq>
+<rs>
+<rp id="12" t="11">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">Apache-Coyote/1.1</p>
+<p n="X-Powered-By">Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181439)/JBossWeb-2.0</p>
+<p n="Content-Type">text/xml;charset=UTF-8</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd>&lt;env:Envelope xmlns:env=&apos;http://schemas.xmlsoap.org/soap/envelope/&apos;&gt;&lt;env:Header&gt;&lt;/env:Header&gt;&lt;env:Body&gt;&lt;ns2:getUserResponse xmlns:ns2=&quot;http://ejb3.examples.itko.com/&quot;&gt;&lt;return&gt;&lt;email&gt;&lt;/email&gt;&lt;fname&gt;&lt;/fname&gt;&lt;lname&gt;&lt;/lname&gt;&lt;login&gt;{{=request_username;/*webapp-1809697075554*/}}&lt;/login&gt;&lt;newFlag&gt;true&lt;/newFlag&gt;&lt;phone&gt;&lt;/phone&gt;&lt;pwd&gt;AL2slstNsa1Saz09CwL0/ThKVnU=&lt;/pwd&gt;&lt;roleKey&gt;REGULAR&lt;/roleKey&gt;&lt;ssn&gt;&lt;/ssn&gt;&lt;/return&gt;&lt;/ns2:getUserResponse&gt;&lt;/env:Body&gt;&lt;/env:Envelope&gt;</bd>
+</rp>
+</rs>
+</t>
+<t id="15" nd="true">
+<sp>
+<t id="2">
+<rq id="18" op="deleteUser" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">webapp-1809697075554</p>
+</ag>
+<at>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHNvYXBlbnY6RW52ZWxvcGUgeG1sbnM6c29hcGVudj0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9lbnZlbG9wZS8iIHhtbG5zOnhzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSI+CiAgPHNvYXBlbnY6Qm9keT4KICAgIDxkZWxldGVVc2VyIHhtbG5zPSJodHRwOi8vZWpiMy5leGFtcGxlcy5pdGtvLmNvbS8iPgogICAgICA8IS0tdXNlcm5hbWUgaXMgb3B0aW9uYWwtLT4KICAgICAgPHVzZXJuYW1lIHhtbG5zPSIiPndlYmFwcC0xODA5Njk3MDc1NTU0PC91c2VybmFtZT4KICAgIDwvZGVsZXRlVXNlcj4KICA8L3NvYXBlbnY6Qm9keT4KPC9zb2FwZW52OkVudmVsb3BlPg==</p>
+<p n="xmlns">http://ejb3.examples.itko.com/</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#10;  &lt;soapenv:Body&gt;&#10;    &lt;deleteUser xmlns=&quot;http://ejb3.examples.itko.com/&quot;&gt;&#10;      &lt;!--username is optional--&gt;&#10;      &lt;username xmlns=&quot;&quot;&gt;webapp-1809697075554&lt;/username&gt;&#10;    &lt;/deleteUser&gt;&#10;  &lt;/soapenv:Body&gt;&#10;&lt;/soapenv:Envelope&gt;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/itkoExamples/EJB3UserControlBean</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept-Encoding">gzip,deflate</p>
+<p n="Content-Type">text/xml;charset=UTF-8</p>
+<p n="SOAPAction">&quot;&quot;</p>
+<p n="Content-Length">379</p>
+<p n="Host">localhost:8080</p>
+<p n="User-Agent">Apache-HttpClient/4.1.1 (java 1.5)</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#10;  &lt;soapenv:Body&gt;&#10;    &lt;deleteUser xmlns=&quot;http://ejb3.examples.itko.com/&quot;&gt;&#10;      &lt;!--username is optional--&gt;&#10;      &lt;username xmlns=&quot;&quot;&gt;webapp-1809697075554&lt;/username&gt;&#10;    &lt;/deleteUser&gt;&#10;  &lt;/soapenv:Body&gt;&#10;&lt;/soapenv:Envelope&gt;</bd>
+</rq>
+<rs>
+<rp id="19" t="16">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">Apache-Coyote/1.1</p>
+<p n="X-Powered-By">Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181439)/JBossWeb-2.0</p>
+<p n="Content-Type">text/xml;charset=UTF-8</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd>&lt;env:Envelope xmlns:env=&apos;http://schemas.xmlsoap.org/soap/envelope/&apos;&gt;&lt;env:Header&gt;&lt;/env:Header&gt;&lt;env:Body&gt;&lt;ns2:deleteUserResponse xmlns:ns2=&quot;http://ejb3.examples.itko.com/&quot;&gt;&lt;return&gt;true&lt;/return&gt;&lt;/ns2:deleteUserResponse&gt;&lt;/env:Body&gt;&lt;/env:Envelope&gt;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="16" op="deleteUser" tl="SIGNATURE">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">webapp-1809697075554</p>
+</ag>
+<at>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHNvYXBlbnY6RW52ZWxvcGUgeG1sbnM6c29hcGVudj0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9lbnZlbG9wZS8iIHhtbG5zOnhzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSI+CiAgPHNvYXBlbnY6Qm9keT4KICAgIDxkZWxldGVVc2VyIHhtbG5zPSJodHRwOi8vZWpiMy5leGFtcGxlcy5pdGtvLmNvbS8iPgogICAgICA8IS0tdXNlcm5hbWUgaXMgb3B0aW9uYWwtLT4KICAgICAgPHVzZXJuYW1lIHhtbG5zPSIiPndlYmFwcC0xODA5Njk3MDc1NTU0PC91c2VybmFtZT4KICAgIDwvZGVsZXRlVXNlcj4KICA8L3NvYXBlbnY6Qm9keT4KPC9zb2FwZW52OkVudmVsb3BlPg==</p>
+<p n="xmlns">http://ejb3.examples.itko.com/</p>
+<p n="recorded_raw_request">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#10;  &lt;soapenv:Body&gt;&#10;    &lt;deleteUser xmlns=&quot;http://ejb3.examples.itko.com/&quot;&gt;&#10;      &lt;!--username is optional--&gt;&#10;      &lt;username xmlns=&quot;&quot;&gt;webapp-1809697075554&lt;/username&gt;&#10;    &lt;/deleteUser&gt;&#10;  &lt;/soapenv:Body&gt;&#10;&lt;/soapenv:Envelope&gt;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/itkoExamples/EJB3UserControlBean</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept-Encoding">gzip,deflate</p>
+<p n="Content-Type">text/xml;charset=UTF-8</p>
+<p n="SOAPAction">&quot;&quot;</p>
+<p n="Content-Length">379</p>
+<p n="Host">localhost:8080</p>
+<p n="User-Agent">Apache-HttpClient/4.1.1 (java 1.5)</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#10;  &lt;soapenv:Body&gt;&#10;    &lt;deleteUser xmlns=&quot;http://ejb3.examples.itko.com/&quot;&gt;&#10;      &lt;!--username is optional--&gt;&#10;      &lt;username xmlns=&quot;&quot;&gt;webapp-1809697075554&lt;/username&gt;&#10;    &lt;/deleteUser&gt;&#10;  &lt;/soapenv:Body&gt;&#10;&lt;/soapenv:Envelope&gt;</bd>
+</rq>
+<rs>
+<rp id="17" t="16">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">Apache-Coyote/1.1</p>
+<p n="X-Powered-By">Servlet 2.4; JBoss-4.2.3.GA (build: SVNTag=JBoss_4_2_3_GA date=200807181439)/JBossWeb-2.0</p>
+<p n="Content-Type">text/xml;charset=UTF-8</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd>&lt;env:Envelope xmlns:env=&apos;http://schemas.xmlsoap.org/soap/envelope/&apos;&gt;&lt;env:Header&gt;&lt;/env:Header&gt;&lt;env:Body&gt;&lt;ns2:deleteUserResponse xmlns:ns2=&quot;http://ejb3.examples.itko.com/&quot;&gt;&lt;return&gt;true&lt;/return&gt;&lt;/ns2:deleteUserResponse&gt;&lt;/env:Body&gt;&lt;/env:Envelope&gt;</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="20" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/xml</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#10;  &lt;S:Body&gt;&#10;    &lt;S:Fault xmlns:ns3=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&#10;      &lt;faultcode&gt;S:Server&lt;/faultcode&gt;&#10;      &lt;faultstring&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/faultstring&gt;&#10;      &lt;detail&gt;&#10;        &lt;ns2:exception xmlns:ns2=&quot;http://jax-ws.dev.java.net/&quot; class=&quot;java.lang.Exception&quot;&gt;&#10;          &lt;message&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/message&gt;&#10;          &lt;ns2:stackTrace&gt;&#10;          &lt;/ns2:stackTrace&gt;&#10;        &lt;/ns2:exception&gt;&#10;      &lt;/detail&gt;&#10;    &lt;/S:Fault&gt;&#10;  &lt;/S:Body&gt;&#10;&lt;/S:Envelope&gt;&#10;&#10;</bd>
+</rp>
+</ucrr>
+<usrr>
+<rp id="21" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/xml</p>
+</m>
+<bd>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#10;  &lt;S:Body&gt;&#10;    &lt;S:Fault xmlns:ns3=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&#10;      &lt;faultcode&gt;S:Server&lt;/faultcode&gt;&#10;      &lt;faultstring&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/faultstring&gt;&#10;      &lt;detail&gt;&#10;        &lt;ns2:exception xmlns:ns2=&quot;http://jax-ws.dev.java.net/&quot; class=&quot;java.lang.Exception&quot;&gt;&#10;          &lt;message&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/message&gt;&#10;          &lt;ns2:stackTrace&gt;&#10;          &lt;/ns2:stackTrace&gt;&#10;        &lt;/ns2:exception&gt;&#10;      &lt;/detail&gt;&#10;    &lt;/S:Fault&gt;&#10;  &lt;/S:Body&gt;&#10;&lt;/S:Envelope&gt;&#10;&#10;</bd>
+</rp>
+</usrr>
+</serviceImage>

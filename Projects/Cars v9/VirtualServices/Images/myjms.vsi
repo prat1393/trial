@@ -1,0 +1,1451 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="12" name="myjms" created="2018-05-25.18:47:11.900" lastModified="2018-05-25.18:58:07.150" version="8.4.0" buildNumber="8.4.0.227">
+<st>
+<t id="15" nd="true">
+<sp>
+<t id="16">
+<rq id="17" op="Request 2" tl="EXACT">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">5465 Legacy Dr</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">1</p>
+<p n="bank" t="arg:EQUALS;true;;;;">CHASE</p>
+<p n="city" t="arg:EQUALS;false;;;;">Plano</p>
+<p n="country" t="arg:EQUALS;false;;;;">US</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">CA Technologies</p>
+<p n="fico" t="arg:EQUALS;false;;;;">415</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">114759.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">32799.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">5</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;loanTerm&quot;:5,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:32799.0,&quot;income&quot;:114759.0,&quot;fico&quot;:415,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;CHASE&quot;,&quot;country&quot;:&quot;US&quot;,&quot;applicationId&quot;:1,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.CHASE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:2:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254751999</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">25683880-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">true</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 2</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.CHASE</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;5465 Legacy Dr&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;1&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;CHASE&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Plano&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;US&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;CA Technologies&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;415&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;114759.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;32799.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;5&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="18" t="4328">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-5:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254756389</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;1&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*CHASE*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;8110.561&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.04945615&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;681.826&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;5&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="3">
+<rq id="19" op="Request 2" tl="EXACT">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">Guru chaya</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">2</p>
+<p n="bank" t="arg:EQUALS;true;;;;">CHASE</p>
+<p n="city" t="arg:EQUALS;false;;;;">Amravati</p>
+<p n="country" t="arg:EQUALS;false;;;;">DZ</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">TechMahindra</p>
+<p n="fico" t="arg:EQUALS;false;;;;">820</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">117517.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">21600.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">5</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;Guru chaya&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;TechMahindra&quot;,&quot;loanTerm&quot;:5,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Amravati&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:21600.0,&quot;income&quot;:117517.0,&quot;fico&quot;:820,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;CHASE&quot;,&quot;country&quot;:&quot;DZ&quot;,&quot;applicationId&quot;:2,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.CHASE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:6:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254829056</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">5337f930-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">false</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 2</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.CHASE</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;Guru chaya&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;2&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;CHASE&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Amravati&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;DZ&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;TechMahindra&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;820&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;117517.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;21600.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;5&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="20" t="82">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-17:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254829189</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;2&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*CHASE*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;6734.219&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.062353883&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;472.237&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;5&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="6">
+<rq id="21" op="Request 2" tl="EXACT">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">5465 Legacy Dr</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">3</p>
+<p n="bank" t="arg:EQUALS;true;;;;">CHASE</p>
+<p n="city" t="arg:EQUALS;false;;;;">Plano</p>
+<p n="country" t="arg:EQUALS;false;;;;">US</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">CA Technologies</p>
+<p n="fico" t="arg:EQUALS;false;;;;">720</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">67197.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">41175.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">5</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;loanTerm&quot;:5,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:41175.0,&quot;income&quot;:67197.0,&quot;fico&quot;:720,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;CHASE&quot;,&quot;country&quot;:&quot;US&quot;,&quot;applicationId&quot;:3,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.CHASE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:10:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254850148</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">5fca3460-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">true</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 2</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.CHASE</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;5465 Legacy Dr&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;3&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;CHASE&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Plano&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;US&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;CA Technologies&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;720&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;67197.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;41175.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;5&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="22" t="67">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-31:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254850265</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;3&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*CHASE*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;20742.666&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.10075369&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;1031.961&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;5&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="10">
+<rq id="23" op="Request 2" tl="EXACT">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">Guruchaya appartment</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">4</p>
+<p n="bank" t="arg:EQUALS;true;;;;">CHASE</p>
+<p n="city" t="arg:EQUALS;false;;;;">Amravati</p>
+<p n="country" t="arg:EQUALS;false;;;;">US</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">Tech mahindra</p>
+<p n="fico" t="arg:EQUALS;false;;;;">849</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">65022.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">29316.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">3</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;Guruchaya appartment&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;Tech mahindra&quot;,&quot;loanTerm&quot;:3,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Amravati&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:29316.0,&quot;income&quot;:65022.0,&quot;fico&quot;:849,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;CHASE&quot;,&quot;country&quot;:&quot;US&quot;,&quot;applicationId&quot;:4,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.CHASE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:14:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254869457</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">6b5d9d30-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">false</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 2</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.CHASE</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;Guruchaya appartment&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;4&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;CHASE&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Amravati&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;US&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;Tech mahindra&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;849&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;65022.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;29316.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;3&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="24" t="195">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-47:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254869692</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;4&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*CHASE*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;4617.276&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.05250007&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;942.591&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;3&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="25" op="Request 2" tl="SIGNATURE">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">5465 Legacy Dr</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">1</p>
+<p n="bank" t="arg:EQUALS;true;;;;">CHASE</p>
+<p n="city" t="arg:EQUALS;false;;;;">Plano</p>
+<p n="country" t="arg:EQUALS;false;;;;">US</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">CA Technologies</p>
+<p n="fico" t="arg:EQUALS;false;;;;">415</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">114759.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">32799.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">5</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;loanTerm&quot;:5,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:32799.0,&quot;income&quot;:114759.0,&quot;fico&quot;:415,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;CHASE&quot;,&quot;country&quot;:&quot;US&quot;,&quot;applicationId&quot;:1,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.CHASE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:2:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254751999</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">25683880-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">true</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 2</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.CHASE</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;5465 Legacy Dr&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;1&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;CHASE&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Plano&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;US&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;CA Technologies&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;415&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;114759.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;32799.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;5&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="26" t="4328">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-5:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254756389</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;1&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*CHASE*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;8110.561&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.04945615&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;681.826&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;5&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="27" nd="true">
+<sp>
+<t id="1">
+<rq id="28" op="Request 3" tl="EXACT">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">5465 Legacy Dr</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">1</p>
+<p n="bank" t="arg:EQUALS;true;;;;">CITI</p>
+<p n="city" t="arg:EQUALS;false;;;;">Plano</p>
+<p n="country" t="arg:EQUALS;false;;;;">US</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">CA Technologies</p>
+<p n="fico" t="arg:EQUALS;false;;;;">415</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">114759.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">32799.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">5</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;loanTerm&quot;:5,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:32799.0,&quot;income&quot;:114759.0,&quot;fico&quot;:415,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;CITI&quot;,&quot;country&quot;:&quot;US&quot;,&quot;applicationId&quot;:1,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.CITI</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:3:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254752014</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">283d7890-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">false</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 3</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.CITI</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;5465 Legacy Dr&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;1&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;CITI&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Plano&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;US&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;CA Technologies&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;415&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;114759.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;32799.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;5&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="29" t="5237">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-9:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254757291</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;1&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*CITI*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;14021.836&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.085501604&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;780.3472&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;5&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="4">
+<rq id="30" op="Request 3" tl="EXACT">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">Guru chaya</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">2</p>
+<p n="bank" t="arg:EQUALS;true;;;;">CITI</p>
+<p n="city" t="arg:EQUALS;false;;;;">Amravati</p>
+<p n="country" t="arg:EQUALS;false;;;;">DZ</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">TechMahindra</p>
+<p n="fico" t="arg:EQUALS;false;;;;">820</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">117517.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">21600.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">5</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;Guru chaya&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;TechMahindra&quot;,&quot;loanTerm&quot;:5,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Amravati&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:21600.0,&quot;income&quot;:117517.0,&quot;fico&quot;:820,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;CITI&quot;,&quot;country&quot;:&quot;DZ&quot;,&quot;applicationId&quot;:2,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.CITI</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:7:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254829060</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">53506330-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">false</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 3</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.CITI</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;Guru chaya&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;2&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;CITI&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Amravati&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;DZ&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;TechMahindra&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;820&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;117517.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;21600.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;5&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="31" t="219">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-21:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254829322</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;2&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*CITI*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;8029.7637&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.074349664&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;493.8294&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;5&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="8">
+<rq id="32" op="Request 3" tl="EXACT">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">5465 Legacy Dr</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">3</p>
+<p n="bank" t="arg:EQUALS;true;;;;">CITI</p>
+<p n="city" t="arg:EQUALS;false;;;;">Plano</p>
+<p n="country" t="arg:EQUALS;false;;;;">US</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">CA Technologies</p>
+<p n="fico" t="arg:EQUALS;false;;;;">720</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">67197.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">41175.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">5</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;loanTerm&quot;:5,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:41175.0,&quot;income&quot;:67197.0,&quot;fico&quot;:720,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;CITI&quot;,&quot;country&quot;:&quot;US&quot;,&quot;applicationId&quot;:3,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.CITI</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:11:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254850155</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">5fed4cc0-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">false</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 3</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.CITI</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;5465 Legacy Dr&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;3&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;CITI&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Plano&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;US&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;CA Technologies&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;720&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;67197.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;41175.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;5&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="33" t="285">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-39:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254850491</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;3&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*CITI*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;9305.237&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.04519848&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;841.3373&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;5&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="9">
+<rq id="34" op="Request 3" tl="EXACT">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">Guruchaya appartment</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">4</p>
+<p n="bank" t="arg:EQUALS;true;;;;">CITI</p>
+<p n="city" t="arg:EQUALS;false;;;;">Amravati</p>
+<p n="country" t="arg:EQUALS;false;;;;">US</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">Tech mahindra</p>
+<p n="fico" t="arg:EQUALS;false;;;;">849</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">65022.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">29316.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">3</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;Guruchaya appartment&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;Tech mahindra&quot;,&quot;loanTerm&quot;:3,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Amravati&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:29316.0,&quot;income&quot;:65022.0,&quot;fico&quot;:849,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;CITI&quot;,&quot;country&quot;:&quot;US&quot;,&quot;applicationId&quot;:4,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.CITI</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:15:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254869462</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">6b4b26a0-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">false</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 3</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.CITI</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;Guruchaya appartment&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;4&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;CITI&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Amravati&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;US&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;Tech mahindra&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;849&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;65022.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;29316.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;3&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="35" t="68">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-43:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254869570</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;4&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*CITI*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;2488.5605&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.028295819&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;883.46&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;3&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="36" op="Request 3" tl="SIGNATURE">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">5465 Legacy Dr</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">1</p>
+<p n="bank" t="arg:EQUALS;true;;;;">CITI</p>
+<p n="city" t="arg:EQUALS;false;;;;">Plano</p>
+<p n="country" t="arg:EQUALS;false;;;;">US</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">CA Technologies</p>
+<p n="fico" t="arg:EQUALS;false;;;;">415</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">114759.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">32799.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">5</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;loanTerm&quot;:5,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:32799.0,&quot;income&quot;:114759.0,&quot;fico&quot;:415,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;CITI&quot;,&quot;country&quot;:&quot;US&quot;,&quot;applicationId&quot;:1,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.CITI</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:3:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254752014</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">283d7890-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">false</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 3</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.CITI</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;5465 Legacy Dr&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;1&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;CITI&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Plano&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;US&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;CA Technologies&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;415&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;114759.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;32799.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;5&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="37" t="5237">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-9:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254757291</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;1&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*CITI*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;14021.836&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.085501604&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;780.3472&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;5&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="38" nd="true">
+<sp>
+<t id="2">
+<rq id="39" op="Request 1" tl="EXACT">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">5465 Legacy Dr</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">1</p>
+<p n="bank" t="arg:EQUALS;true;;;;">BOFA</p>
+<p n="city" t="arg:EQUALS;false;;;;">Plano</p>
+<p n="country" t="arg:EQUALS;false;;;;">US</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">CA Technologies</p>
+<p n="fico" t="arg:EQUALS;false;;;;">415</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">114759.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">32799.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">5</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;loanTerm&quot;:5,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:32799.0,&quot;income&quot;:114759.0,&quot;fico&quot;:415,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;BOFA&quot;,&quot;country&quot;:&quot;US&quot;,&quot;applicationId&quot;:1,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.BOFA</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:4:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254752022</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">29c10b50-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">false</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 1</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.BOFA</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;5465 Legacy Dr&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;1&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;BOFA&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Plano&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;US&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;CA Technologies&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;415&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;114759.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;32799.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;5&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="40" t="7765">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-13:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254759822</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;1&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*BOFA*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;19901.832&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.12135633&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;878.3472&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;5&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="5">
+<rq id="41" op="Request 1" tl="EXACT">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">Guru chaya</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">2</p>
+<p n="bank" t="arg:EQUALS;true;;;;">BOFA</p>
+<p n="city" t="arg:EQUALS;false;;;;">Amravati</p>
+<p n="country" t="arg:EQUALS;false;;;;">DZ</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">TechMahindra</p>
+<p n="fico" t="arg:EQUALS;false;;;;">820</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">117517.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">21600.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">5</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;Guru chaya&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;TechMahindra&quot;,&quot;loanTerm&quot;:5,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Amravati&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:21600.0,&quot;income&quot;:117517.0,&quot;fico&quot;:820,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;BOFA&quot;,&quot;country&quot;:&quot;DZ&quot;,&quot;applicationId&quot;:2,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.BOFA</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:8:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254829064</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">535ce650-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">false</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 1</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.BOFA</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;Guru chaya&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;2&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;BOFA&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Amravati&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;DZ&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;TechMahindra&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;820&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;117517.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;21600.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;5&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="42" t="332">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-25:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254829431</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;2&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*BOFA*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;7916.6357&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.07330218&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;491.94394&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;5&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="7">
+<rq id="43" op="Request 1" tl="EXACT">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">5465 Legacy Dr</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">3</p>
+<p n="bank" t="arg:EQUALS;true;;;;">BOFA</p>
+<p n="city" t="arg:EQUALS;false;;;;">Plano</p>
+<p n="country" t="arg:EQUALS;false;;;;">US</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">CA Technologies</p>
+<p n="fico" t="arg:EQUALS;false;;;;">720</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">67197.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">41175.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">5</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;loanTerm&quot;:5,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:41175.0,&quot;income&quot;:67197.0,&quot;fico&quot;:720,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;BOFA&quot;,&quot;country&quot;:&quot;US&quot;,&quot;applicationId&quot;:3,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.BOFA</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:12:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254850159</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">5fdcaaf0-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">false</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 1</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.BOFA</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;5465 Legacy Dr&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;3&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;BOFA&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Plano&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;US&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;CA Technologies&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;720&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;67197.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;41175.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;5&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="44" t="168">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-35:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254850374</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;3&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*BOFA*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;21331.215&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.10361245&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;1041.7703&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;5&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+<t id="11">
+<rq id="45" op="Request 1" tl="EXACT">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">Guruchaya appartment</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">4</p>
+<p n="bank" t="arg:EQUALS;true;;;;">BOFA</p>
+<p n="city" t="arg:EQUALS;false;;;;">Amravati</p>
+<p n="country" t="arg:EQUALS;false;;;;">US</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">Tech mahindra</p>
+<p n="fico" t="arg:EQUALS;false;;;;">849</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">65022.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">29316.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">3</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;Guruchaya appartment&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;Tech mahindra&quot;,&quot;loanTerm&quot;:3,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Amravati&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:29316.0,&quot;income&quot;:65022.0,&quot;fico&quot;:849,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;BOFA&quot;,&quot;country&quot;:&quot;US&quot;,&quot;applicationId&quot;:4,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.BOFA</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:16:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254869465</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">6b70fe20-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">false</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 1</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.BOFA</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;Guruchaya appartment&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;4&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;BOFA&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Amravati&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;US&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;Tech mahindra&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;849&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;65022.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;29316.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;3&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="46" t="330">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-51:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254869834</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;4&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*BOFA*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;9392.004&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.106790416&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;1075.2223&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;3&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="47" op="Request 1" tl="SIGNATURE">
+<ag>
+<p n="address1" t="arg:EQUALS;false;;;;">5465 Legacy Dr</p>
+<p n="applicationId" t="arg:EQUALS;false;;;;">1</p>
+<p n="bank" t="arg:EQUALS;true;;;;">BOFA</p>
+<p n="city" t="arg:EQUALS;false;;;;">Plano</p>
+<p n="country" t="arg:EQUALS;false;;;;">US</p>
+<p n="dob" t="arg:ANY;false;;MM/dd/yyyy;;">01/01/1970</p>
+<p n="durationOfJob" t="arg:EQUALS;false;;;;">5 Years</p>
+<p n="employer" t="arg:EQUALS;false;;;;">CA Technologies</p>
+<p n="fico" t="arg:EQUALS;false;;;;">415</p>
+<p n="firstName" t="arg:EQUALS;false;;;;">Pratik</p>
+<p n="income" t="arg:EQUALS;false;;;;">114759.0</p>
+<p n="lastName" t="arg:EQUALS;false;;;;">Sarode</p>
+<p n="loanAmount" t="arg:EQUALS;false;;;;">32799.0</p>
+<p n="loanTerm" t="arg:EQUALS;false;;;;">5</p>
+<p n="phoneNumber" t="arg:EQUALS;false;;;;">123-456-7891</p>
+<p n="ssn" t="arg:EQUALS;true;;;;">111-22-3333</p>
+<p n="state" t="arg:EQUALS;false;;;;">TX</p>
+<p n="zip" t="arg:EQUALS;false;;;;">75024</p>
+</ag>
+<at>
+<p n="class">object</p>
+<p n="recorded_raw_request">{&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;firstName&quot;:&quot;Pratik&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;loanTerm&quot;:5,&quot;zip&quot;:&quot;75024&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;loanAmount&quot;:32799.0,&quot;income&quot;:114759.0,&quot;fico&quot;:415,&quot;lastName&quot;:&quot;Sarode&quot;,&quot;bank&quot;:&quot;BOFA&quot;,&quot;country&quot;:&quot;US&quot;,&quot;applicationId&quot;:1,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;}</p>
+</at>
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.BOFA</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53384-1527254711971-1:4:1:4:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254752022</p>
+<p n="msg.expiration">0</p>
+<p n="msg.props.lisaFrameID">29c10b50-601f-11e8-b3a3-04c020524153</p>
+<p n="msg.proptypes.lisaFrameRoot">Boolean</p>
+<p n="msg.props.lisaFrameRoot">false</p>
+<p n="msg.props.lisaFrameRemoteIP">135.66.27.108</p>
+<p n="channel.name">Request 1</p>
+<p n="liveRequest.temp">false</p>
+<p n="liveRequest.destinationType">Queue - ASYNC</p>
+<p n="liveRequest.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveRequest.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveRequest.user"></p>
+<p n="liveRequest.password"></p>
+<p n="liveRequest.destination">dynamicQueues/CARS.PARTNER.BOFA</p>
+<p n="liveRequest.jmsDomain">COMMON</p>
+<p n="liveRequest.connectionFactoryName">TopicConnectionFactory</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;address1 type=&quot;string&quot;&gt;5465 Legacy Dr&lt;/address1&gt;&lt;applicationId type=&quot;number&quot;&gt;1&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;BOFA&lt;/bank&gt;&lt;city type=&quot;string&quot;&gt;Plano&lt;/city&gt;&lt;country type=&quot;string&quot;&gt;US&lt;/country&gt;&lt;dob type=&quot;string&quot;&gt;01/01/1970&lt;/dob&gt;&lt;durationOfJob type=&quot;string&quot;&gt;5 Years&lt;/durationOfJob&gt;&lt;employer type=&quot;string&quot;&gt;CA Technologies&lt;/employer&gt;&lt;fico type=&quot;number&quot;&gt;415&lt;/fico&gt;&lt;firstName type=&quot;string&quot;&gt;Pratik&lt;/firstName&gt;&lt;income type=&quot;number&quot;&gt;114759.0&lt;/income&gt;&lt;lastName type=&quot;string&quot;&gt;Sarode&lt;/lastName&gt;&lt;loanAmount type=&quot;number&quot;&gt;32799.0&lt;/loanAmount&gt;&lt;loanTerm type=&quot;number&quot;&gt;5&lt;/loanTerm&gt;&lt;phoneNumber type=&quot;string&quot;&gt;123-456-7891&lt;/phoneNumber&gt;&lt;ssn type=&quot;string&quot;&gt;111-22-3333&lt;/ssn&gt;&lt;state type=&quot;string&quot;&gt;TX&lt;/state&gt;&lt;zip type=&quot;string&quot;&gt;75024&lt;/zip&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rq>
+<rs>
+<rp id="48" t="7765">
+<m>
+<p n="temp">false</p>
+<p n="destinationType">Queue - ASYNC</p>
+<p n="jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="jndiServerURL">tcp://localhost:41616</p>
+<p n="user"></p>
+<p n="password"></p>
+<p n="destination">dynamicQueues/PROXY.CARS.PARTNER.RESPONSE</p>
+<p n="jmsDomain">COMMON</p>
+<p n="connectionFactoryName">TopicConnectionFactory</p>
+<p n="msg.type">javax.jms.TextMessage</p>
+<p n="msg.delivermode">2</p>
+<p n="msg.priority">4</p>
+<p n="msg.messageid">ID:HVDIVD18MIS1939-53237-1527254598149-13:1:1:1:1</p>
+<p n="msg.redelivered">false</p>
+<p n="msg.timestamp">1527254759822</p>
+<p n="msg.expiration">0</p>
+<p n="channel.name">Response 1</p>
+<p n="liveResponse.temp">false</p>
+<p n="liveResponse.destinationType">Queue - ASYNC</p>
+<p n="liveResponse.jndiFactory">org.apache.activemq.jndi.ActiveMQInitialContextFactory</p>
+<p n="liveResponse.jndiServerURL">tcp://localhost:41616</p>
+<p n="liveResponse.user"></p>
+<p n="liveResponse.password"></p>
+<p n="liveResponse.destination">dynamicQueues/CARS.PARTNER.RESPONSE</p>
+<p n="liveResponse.jmsDomain">COMMON</p>
+<p n="liveResponse.connectionFactoryName">TopicConnectionFactory</p>
+<p n="WAS_JSON">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;root class=&quot;object&quot;&gt;&lt;applicationId type=&quot;number&quot;&gt;1&lt;/applicationId&gt;&lt;bank type=&quot;string&quot;&gt;{{=request_bank;/*BOFA*/}}&lt;/bank&gt;&lt;interest type=&quot;number&quot;&gt;19901.832&lt;/interest&gt;&lt;interestRate type=&quot;number&quot;&gt;0.12135633&lt;/interestRate&gt;&lt;payment type=&quot;number&quot;&gt;878.3472&lt;/payment&gt;&lt;ssn type=&quot;string&quot;&gt;{{=request_ssn;/*111-22-3333*/}}&lt;/ssn&gt;&lt;term type=&quot;number&quot;&gt;5&lt;/term&gt;&lt;/root&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="14" t="0">
+<m>
+<p n="channel.name">Response 1</p>
+</m>
+</rp>
+</ucrr>
+<usrr>
+<rp id="13" t="0">
+<m>
+<p n="channel.name">Response 1</p>
+</m>
+</rp>
+</usrr>
+</serviceImage>

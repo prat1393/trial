@@ -1,0 +1,922 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="215" name="cars-rest" created="2016-01-08.08:37:11.998" lastModified="2016-01-08.08:37:12.223" version="9.1.0" buildNumber="9.1.0.261">
+<st>
+<t id="122" nd="true">
+<sp>
+<t id="218">
+<rq id="219" op="GET /inventory/cars/" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">cars</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/cars</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="220" t="68">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMGFlN2NjYzEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:1,&quot;carTrim&quot;:&quot;Premium Plus&quot;,&quot;color&quot;:&quot;Silver&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:2,&quot;address&quot;:&quot;3800 Motor City Dr&quot;,&quot;city&quot;:&quot;Denver&quot;,&quot;name&quot;:&quot;Mountain Motors Inc&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-222-8766&quot;,&quot;website&quot;:&quot;www.mmdenver.com&quot;,&quot;zip&quot;:&quot;80202&quot;},&quot;engine&quot;:&quot;2.7 V6&quot;,&quot;image1&quot;:&quot;inventory1.jpg&quot;,&quot;image2&quot;:&quot;cars/interior1.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:138560,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:10,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2011,&quot;modelid&quot;:10,&quot;options&quot;:&quot;Leather, Navigation, Rear Air&quot;,&quot;owners&quot;:6,&quot;price&quot;:3995.0,&quot;stockNumber&quot;:&quot;NAD8989&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;2T1KR32E37C639014&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:2,&quot;carTrim&quot;:&quot;Technology&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:2,&quot;address&quot;:&quot;3800 Motor City Dr&quot;,&quot;city&quot;:&quot;Denver&quot;,&quot;name&quot;:&quot;Mountain Motors Inc&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-222-8766&quot;,&quot;website&quot;:&quot;www.mmdenver.com&quot;,&quot;zip&quot;:&quot;80202&quot;},&quot;engine&quot;:&quot;3.2 V6&quot;,&quot;image1&quot;:&quot;inventory2.jpg&quot;,&quot;image2&quot;:&quot;cars/interior2.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:30650,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:2,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-AWD&quot;,&quot;subName&quot;:&quot;AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2013,&quot;modelid&quot;:2,&quot;options&quot;:&quot;Leather, Navigation, Ski/BikeRack&quot;,&quot;owners&quot;:2,&quot;price&quot;:30995.0,&quot;stockNumber&quot;:&quot;RA2356/1&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;1ZVBP8AM1D5256900&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:3,&quot;carTrim&quot;:&quot;Premium&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:4,&quot;address&quot;:&quot;1673 Blake Rd&quot;,&quot;city&quot;:&quot;Aurora&quot;,&quot;name&quot;:&quot;Aurora Acura&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-955-0134&quot;,&quot;website&quot;:&quot;www.aurora_acura.com&quot;,&quot;zip&quot;:&quot;80203&quot;},&quot;engine&quot;:&quot;3.5 V6&quot;,&quot;image1&quot;:&quot;inventory3.jpg&quot;,&quot;image2&quot;:&quot;cars/interior3.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:54650,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:2,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-AWD&quot;,&quot;subName&quot;:&quot;AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2012,&quot;modelid&quot;:2,&quot;options&quot;:&quot;Leather, Navigation, Backup Camera&quot;,&quot;owners&quot;:2,&quot;price&quot;:30995.0,&quot;stockNumber&quot;:&quot;BN12560&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;3N1CB51D35l458771&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:4,&quot;carTrim&quot;:&quot;Sport&quot;,&quot;color&quot;:&quot;Silver&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:4,&quot;address&quot;:&quot;1673 Blake Rd&quot;,&quot;city&quot;:&quot;Aurora&quot;,&quot;name&quot;:&quot;Aurora Acura&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-955-0134&quot;,&quot;website&quot;:&quot;www.aurora_acura.com&quot;,&quot;zip&quot;:&quot;80203&quot;},&quot;engine&quot;:&quot;3.5 V6&quot;,&quot;image1&quot;:&quot;inventory4.jpg&quot;,&quot;image2&quot;:&quot;cars/interior4.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:78400,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:2,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-AWD&quot;,&quot;subName&quot;:&quot;AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2010,&quot;modelid&quot;:2,&quot;options&quot;:&quot;Ski Rack, Tow kit&quot;,&quot;owners&quot;:4,&quot;price&quot;:21405.0,&quot;stockNumber&quot;:&quot;BN13456&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;2T1KR32E37C639012&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:5,&quot;carTrim&quot;:&quot;Sport&quot;,&quot;color&quot;:&quot;Red&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:4,&quot;address&quot;:&quot;1673 Blake Rd&quot;,&quot;city&quot;:&quot;Aurora&quot;,&quot;name&quot;:&quot;Aurora Acura&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-955-0134&quot;,&quot;website&quot;:&quot;www.aurora_acura.com&quot;,&quot;zip&quot;:&quot;80203&quot;},&quot;engine&quot;:&quot;1.8T&quot;,&quot;image1&quot;:&quot;inventory5.jpg&quot;,&quot;image2&quot;:&quot;cars/interior5.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:98145,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:11,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;S4-S&quot;,&quot;subName&quot;:&quot;Sport&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2008,&quot;modelid&quot;:11,&quot;options&quot;:&quot;Leather, Dual Air, 6 Speed&quot;,&quot;owners&quot;:4,&quot;price&quot;:7800.0,&quot;stockNumber&quot;:&quot;BN13467&quot;,&quot;transmission&quot;:&quot;Manual&quot;,&quot;vin&quot;:&quot;3N1CB51D35l458773&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:6,&quot;carTrim&quot;:&quot;xDrivePlus&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:5,&quot;address&quot;:&quot;126 Rte 76&quot;,&quot;city&quot;:&quot;Fort Collins&quot;,&quot;name&quot;:&quot;Hilton Honda&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-123-6789&quot;,&quot;website&quot;:&quot;www.hiltonhonda.com&quot;,&quot;zip&quot;:&quot;80503&quot;},&quot;engine&quot;:&quot;3.5L&quot;,&quot;image1&quot;:&quot;inventory6.jpg&quot;,&quot;image2&quot;:&quot;cars/interior6.jpg&quot;,&quot;makeid&quot;:3,&quot;milage&quot;:75350,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:27,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;7-Series-P&quot;,&quot;subName&quot;:&quot;Premium&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2010,&quot;modelid&quot;:27,&quot;options&quot;:&quot;Leather, Navigation, Rear Air&quot;,&quot;owners&quot;:1,&quot;price&quot;:34500.0,&quot;stockNumber&quot;:&quot;N2367J6&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;3N1CB51D35l458774&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:7,&quot;carTrim&quot;:&quot;Base&quot;,&quot;color&quot;:&quot;Blue&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:6,&quot;address&quot;:&quot;570 Lane St&quot;,&quot;city&quot;:&quot;Englewood&quot;,&quot;name&quot;:&quot;Terrys VW&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303- 560-3412&quot;,&quot;website&quot;:&quot;www.terry_vag.com&quot;,&quot;zip&quot;:&quot;80205&quot;},&quot;engine&quot;:&quot;2.0T&quot;,&quot;image1&quot;:&quot;inventory7.jpg&quot;,&quot;image2&quot;:&quot;cars/interior7.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:104300,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:10,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2008,&quot;modelid&quot;:10,&quot;options&quot;:&quot;Premium Audio Upgrade&quot;,&quot;owners&quot;:1,&quot;price&quot;:10750.0,&quot;stockNumber&quot;:&quot;ASN29001&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;2T1KR32E37C639015&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:8,&quot;carTrim&quot;:&quot;Premium&quot;,&quot;color&quot;:&quot;Silver&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:6,&quot;address&quot;:&quot;570 Lane St&quot;,&quot;city&quot;:&quot;Englewood&quot;,&quot;name&quot;:&quot;Terrys VW&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303- 560-3412&quot;,&quot;website&quot;:&quot;www.terry_vag.com&quot;,&quot;zip&quot;:&quot;80205&quot;},&quot;engine&quot;:&quot;2.0T&quot;,&quot;image1&quot;:&quot;inventory8.jpg&quot;,&quot;image2&quot;:&quot;cars/interior8.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:62000,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:10,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2012,&quot;modelid&quot;:10,&quot;options&quot;:&quot;Leather, Navigation, Bluetooth&quot;,&quot;owners&quot;:3,&quot;price&quot;:20400.0,&quot;stockNumber&quot;:&quot;ASN34501&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;1ZVBP8AM1D5256906&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:9,&quot;carTrim&quot;:&quot;Base&quot;,&quot;color&quot;:&quot;Silver&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:6,&quot;address&quot;:&quot;570 Lane St&quot;,&quot;city&quot;:&quot;Englewood&quot;,&quot;name&quot;:&quot;Terrys VW&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303- 560-3412&quot;,&quot;website&quot;:&quot;www.terry_vag.com&quot;,&quot;zip&quot;:&quot;80205&quot;},&quot;engine&quot;:&quot;3.0L&quot;,&quot;image1&quot;:&quot;inventory9.jpg&quot;,&quot;image2&quot;:&quot;cars/interior9.jpg&quot;,&quot;makeid&quot;:3,&quot;milage&quot;:58900,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:27,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;7-Series-P&quot;,&quot;subName&quot;:&quot;Premium&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2009,&quot;modelid&quot;:27,&quot;options&quot;:&quot;Leather, Navigation, Rear Air&quot;,&quot;owners&quot;:2,&quot;price&quot;:32295.0,&quot;stockNumber&quot;:&quot;ASN90845&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;1ZVBP8AM1D5256907&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:10,&quot;carTrim&quot;:&quot;Technology Plus&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:5,&quot;address&quot;:&quot;126 Rte 76&quot;,&quot;city&quot;:&quot;Fort Collins&quot;,&quot;name&quot;:&quot;Hilton Honda&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-123-6789&quot;,&quot;website&quot;:&quot;www.hiltonhonda.com&quot;,&quot;zip&quot;:&quot;80503&quot;},&quot;engine&quot;:&quot;3.5 V6&quot;,&quot;image1&quot;:&quot;inventory10.jpg&quot;,&quot;image2&quot;:&quot;cars/interior10.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:54650,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:1,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2012,&quot;modelid&quot;:1,&quot;options&quot;:&quot;Leather, Navigation, Backup Camera&quot;,&quot;owners&quot;:2,&quot;price&quot;:30995.0,&quot;stockNumber&quot;:&quot;245980A&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;3N1CB51D35l458778&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:11,&quot;carTrim&quot;:&quot;Technology Plus&quot;,&quot;color&quot;:&quot;Green&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:5,&quot;address&quot;:&quot;126 Rte 76&quot;,&quot;city&quot;:&quot;Fort Collins&quot;,&quot;name&quot;:&quot;Hilton Honda&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-123-6789&quot;,&quot;website&quot;:&quot;www.hiltonhonda.com&quot;,&quot;zip&quot;:&quot;80503&quot;},&quot;engine&quot;:&quot;3.5 V8&quot;,&quot;image1&quot;:&quot;inventory11.jpg&quot;,&quot;image2&quot;:&quot;cars/interior11.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:74850,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:1,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2011,&quot;modelid&quot;:1,&quot;options&quot;:&quot;Leather, Navigation&quot;,&quot;owners&quot;:1,&quot;price&quot;:20995.0,&quot;stockNumber&quot;:&quot;245180A&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;3N1CB41D32l458778&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:12,&quot;carTrim&quot;:&quot;Luxury&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:5,&quot;address&quot;:&quot;126 Rte 76&quot;,&quot;city&quot;:&quot;Fort Collins&quot;,&quot;name&quot;:&quot;Hilton Honda&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-123-6789&quot;,&quot;website&quot;:&quot;www.hiltonhonda.com&quot;,&quot;zip&quot;:&quot;80503&quot;},&quot;engine&quot;:&quot;3.0 V6&quot;,&quot;image1&quot;:&quot;inventory22.jpg&quot;,&quot;image2&quot;:&quot;cars/interior21.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:24650,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:12,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-C&quot;,&quot;subName&quot;:&quot;Convertible&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Convertible&quot;}},&quot;modelYear&quot;:2012,&quot;modelid&quot;:12,&quot;options&quot;:&quot;Leather&quot;,&quot;owners&quot;:2,&quot;price&quot;:11995.0,&quot;stockNumber&quot;:&quot;246987A&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;3H1CB51D35l453773&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:13,&quot;carTrim&quot;:&quot;Base&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:6,&quot;address&quot;:&quot;570 Lane St&quot;,&quot;city&quot;:&quot;Englewood&quot;,&quot;name&quot;:&quot;Terrys VW&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303- 560-3412&quot;,&quot;website&quot;:&quot;www.terry_vag.com&quot;,&quot;zip&quot;:&quot;80205&quot;},&quot;engine&quot;:&quot;3.0L&quot;,&quot;image1&quot;:&quot;inventory23.jpg&quot;,&quot;image2&quot;:&quot;cars/interior23.jpg&quot;,&quot;makeid&quot;:3,&quot;milage&quot;:58900,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:23,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;3-Series-S&quot;,&quot;subName&quot;:&quot;Sedan&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2011,&quot;modelid&quot;:23,&quot;options&quot;:&quot;Leather, Navigation&quot;,&quot;owners&quot;:2,&quot;price&quot;:12295.0,&quot;stockNumber&quot;:&quot;ASN90856&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;1XCBP8AM1D5256909&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:14,&quot;carTrim&quot;:&quot;Base&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:6,&quot;address&quot;:&quot;570 Lane St&quot;,&quot;city&quot;:&quot;Englewood&quot;,&quot;name&quot;:&quot;Terrys VW&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303- 560-3412&quot;,&quot;website&quot;:&quot;www.terry_vag.com&quot;,&quot;zip&quot;:&quot;80205&quot;},&quot;engine&quot;:&quot;3.5L&quot;,&quot;image1&quot;:&quot;inventory24.jpg&quot;,&quot;image2&quot;:&quot;cars/interior24.jpg&quot;,&quot;makeid&quot;:3,&quot;milage&quot;:68900,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:26,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;5-Series-S&quot;,&quot;subName&quot;:&quot;Sedan&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2009,&quot;modelid&quot;:26,&quot;options&quot;:&quot;Leather, Navigation&quot;,&quot;owners&quot;:1,&quot;price&quot;:35295.0,&quot;stockNumber&quot;:&quot;ASN70851&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;7XCBP8AM1D5256910&quot;}]</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="221" op="GET /inventory/cars/" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">cars</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/cars</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="222" t="68">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMGFlN2NjYzEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:1,&quot;carTrim&quot;:&quot;Premium Plus&quot;,&quot;color&quot;:&quot;Silver&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:2,&quot;address&quot;:&quot;3800 Motor City Dr&quot;,&quot;city&quot;:&quot;Denver&quot;,&quot;name&quot;:&quot;Mountain Motors Inc&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-222-8766&quot;,&quot;website&quot;:&quot;www.mmdenver.com&quot;,&quot;zip&quot;:&quot;80202&quot;},&quot;engine&quot;:&quot;2.7 V6&quot;,&quot;image1&quot;:&quot;inventory1.jpg&quot;,&quot;image2&quot;:&quot;cars/interior1.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:138560,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:10,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2011,&quot;modelid&quot;:10,&quot;options&quot;:&quot;Leather, Navigation, Rear Air&quot;,&quot;owners&quot;:6,&quot;price&quot;:3995.0,&quot;stockNumber&quot;:&quot;NAD8989&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;2T1KR32E37C639014&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:2,&quot;carTrim&quot;:&quot;Technology&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:2,&quot;address&quot;:&quot;3800 Motor City Dr&quot;,&quot;city&quot;:&quot;Denver&quot;,&quot;name&quot;:&quot;Mountain Motors Inc&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-222-8766&quot;,&quot;website&quot;:&quot;www.mmdenver.com&quot;,&quot;zip&quot;:&quot;80202&quot;},&quot;engine&quot;:&quot;3.2 V6&quot;,&quot;image1&quot;:&quot;inventory2.jpg&quot;,&quot;image2&quot;:&quot;cars/interior2.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:30650,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:2,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-AWD&quot;,&quot;subName&quot;:&quot;AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2013,&quot;modelid&quot;:2,&quot;options&quot;:&quot;Leather, Navigation, Ski/BikeRack&quot;,&quot;owners&quot;:2,&quot;price&quot;:30995.0,&quot;stockNumber&quot;:&quot;RA2356/1&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;1ZVBP8AM1D5256900&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:3,&quot;carTrim&quot;:&quot;Premium&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:4,&quot;address&quot;:&quot;1673 Blake Rd&quot;,&quot;city&quot;:&quot;Aurora&quot;,&quot;name&quot;:&quot;Aurora Acura&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-955-0134&quot;,&quot;website&quot;:&quot;www.aurora_acura.com&quot;,&quot;zip&quot;:&quot;80203&quot;},&quot;engine&quot;:&quot;3.5 V6&quot;,&quot;image1&quot;:&quot;inventory3.jpg&quot;,&quot;image2&quot;:&quot;cars/interior3.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:54650,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:2,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-AWD&quot;,&quot;subName&quot;:&quot;AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2012,&quot;modelid&quot;:2,&quot;options&quot;:&quot;Leather, Navigation, Backup Camera&quot;,&quot;owners&quot;:2,&quot;price&quot;:30995.0,&quot;stockNumber&quot;:&quot;BN12560&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;3N1CB51D35l458771&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:4,&quot;carTrim&quot;:&quot;Sport&quot;,&quot;color&quot;:&quot;Silver&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:4,&quot;address&quot;:&quot;1673 Blake Rd&quot;,&quot;city&quot;:&quot;Aurora&quot;,&quot;name&quot;:&quot;Aurora Acura&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-955-0134&quot;,&quot;website&quot;:&quot;www.aurora_acura.com&quot;,&quot;zip&quot;:&quot;80203&quot;},&quot;engine&quot;:&quot;3.5 V6&quot;,&quot;image1&quot;:&quot;inventory4.jpg&quot;,&quot;image2&quot;:&quot;cars/interior4.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:78400,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:2,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-AWD&quot;,&quot;subName&quot;:&quot;AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2010,&quot;modelid&quot;:2,&quot;options&quot;:&quot;Ski Rack, Tow kit&quot;,&quot;owners&quot;:4,&quot;price&quot;:21405.0,&quot;stockNumber&quot;:&quot;BN13456&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;2T1KR32E37C639012&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:5,&quot;carTrim&quot;:&quot;Sport&quot;,&quot;color&quot;:&quot;Red&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:4,&quot;address&quot;:&quot;1673 Blake Rd&quot;,&quot;city&quot;:&quot;Aurora&quot;,&quot;name&quot;:&quot;Aurora Acura&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-955-0134&quot;,&quot;website&quot;:&quot;www.aurora_acura.com&quot;,&quot;zip&quot;:&quot;80203&quot;},&quot;engine&quot;:&quot;1.8T&quot;,&quot;image1&quot;:&quot;inventory5.jpg&quot;,&quot;image2&quot;:&quot;cars/interior5.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:98145,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:11,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;S4-S&quot;,&quot;subName&quot;:&quot;Sport&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2008,&quot;modelid&quot;:11,&quot;options&quot;:&quot;Leather, Dual Air, 6 Speed&quot;,&quot;owners&quot;:4,&quot;price&quot;:7800.0,&quot;stockNumber&quot;:&quot;BN13467&quot;,&quot;transmission&quot;:&quot;Manual&quot;,&quot;vin&quot;:&quot;3N1CB51D35l458773&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:6,&quot;carTrim&quot;:&quot;xDrivePlus&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:5,&quot;address&quot;:&quot;126 Rte 76&quot;,&quot;city&quot;:&quot;Fort Collins&quot;,&quot;name&quot;:&quot;Hilton Honda&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-123-6789&quot;,&quot;website&quot;:&quot;www.hiltonhonda.com&quot;,&quot;zip&quot;:&quot;80503&quot;},&quot;engine&quot;:&quot;3.5L&quot;,&quot;image1&quot;:&quot;inventory6.jpg&quot;,&quot;image2&quot;:&quot;cars/interior6.jpg&quot;,&quot;makeid&quot;:3,&quot;milage&quot;:75350,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:27,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;7-Series-P&quot;,&quot;subName&quot;:&quot;Premium&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2010,&quot;modelid&quot;:27,&quot;options&quot;:&quot;Leather, Navigation, Rear Air&quot;,&quot;owners&quot;:1,&quot;price&quot;:34500.0,&quot;stockNumber&quot;:&quot;N2367J6&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;3N1CB51D35l458774&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:7,&quot;carTrim&quot;:&quot;Base&quot;,&quot;color&quot;:&quot;Blue&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:6,&quot;address&quot;:&quot;570 Lane St&quot;,&quot;city&quot;:&quot;Englewood&quot;,&quot;name&quot;:&quot;Terrys VW&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303- 560-3412&quot;,&quot;website&quot;:&quot;www.terry_vag.com&quot;,&quot;zip&quot;:&quot;80205&quot;},&quot;engine&quot;:&quot;2.0T&quot;,&quot;image1&quot;:&quot;inventory7.jpg&quot;,&quot;image2&quot;:&quot;cars/interior7.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:104300,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:10,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2008,&quot;modelid&quot;:10,&quot;options&quot;:&quot;Premium Audio Upgrade&quot;,&quot;owners&quot;:1,&quot;price&quot;:10750.0,&quot;stockNumber&quot;:&quot;ASN29001&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;2T1KR32E37C639015&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:8,&quot;carTrim&quot;:&quot;Premium&quot;,&quot;color&quot;:&quot;Silver&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:6,&quot;address&quot;:&quot;570 Lane St&quot;,&quot;city&quot;:&quot;Englewood&quot;,&quot;name&quot;:&quot;Terrys VW&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303- 560-3412&quot;,&quot;website&quot;:&quot;www.terry_vag.com&quot;,&quot;zip&quot;:&quot;80205&quot;},&quot;engine&quot;:&quot;2.0T&quot;,&quot;image1&quot;:&quot;inventory8.jpg&quot;,&quot;image2&quot;:&quot;cars/interior8.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:62000,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:10,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2012,&quot;modelid&quot;:10,&quot;options&quot;:&quot;Leather, Navigation, Bluetooth&quot;,&quot;owners&quot;:3,&quot;price&quot;:20400.0,&quot;stockNumber&quot;:&quot;ASN34501&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;1ZVBP8AM1D5256906&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:9,&quot;carTrim&quot;:&quot;Base&quot;,&quot;color&quot;:&quot;Silver&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:6,&quot;address&quot;:&quot;570 Lane St&quot;,&quot;city&quot;:&quot;Englewood&quot;,&quot;name&quot;:&quot;Terrys VW&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303- 560-3412&quot;,&quot;website&quot;:&quot;www.terry_vag.com&quot;,&quot;zip&quot;:&quot;80205&quot;},&quot;engine&quot;:&quot;3.0L&quot;,&quot;image1&quot;:&quot;inventory9.jpg&quot;,&quot;image2&quot;:&quot;cars/interior9.jpg&quot;,&quot;makeid&quot;:3,&quot;milage&quot;:58900,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:27,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;7-Series-P&quot;,&quot;subName&quot;:&quot;Premium&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2009,&quot;modelid&quot;:27,&quot;options&quot;:&quot;Leather, Navigation, Rear Air&quot;,&quot;owners&quot;:2,&quot;price&quot;:32295.0,&quot;stockNumber&quot;:&quot;ASN90845&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;1ZVBP8AM1D5256907&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:10,&quot;carTrim&quot;:&quot;Technology Plus&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:5,&quot;address&quot;:&quot;126 Rte 76&quot;,&quot;city&quot;:&quot;Fort Collins&quot;,&quot;name&quot;:&quot;Hilton Honda&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-123-6789&quot;,&quot;website&quot;:&quot;www.hiltonhonda.com&quot;,&quot;zip&quot;:&quot;80503&quot;},&quot;engine&quot;:&quot;3.5 V6&quot;,&quot;image1&quot;:&quot;inventory10.jpg&quot;,&quot;image2&quot;:&quot;cars/interior10.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:54650,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:1,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2012,&quot;modelid&quot;:1,&quot;options&quot;:&quot;Leather, Navigation, Backup Camera&quot;,&quot;owners&quot;:2,&quot;price&quot;:30995.0,&quot;stockNumber&quot;:&quot;245980A&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;3N1CB51D35l458778&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:11,&quot;carTrim&quot;:&quot;Technology Plus&quot;,&quot;color&quot;:&quot;Green&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:5,&quot;address&quot;:&quot;126 Rte 76&quot;,&quot;city&quot;:&quot;Fort Collins&quot;,&quot;name&quot;:&quot;Hilton Honda&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-123-6789&quot;,&quot;website&quot;:&quot;www.hiltonhonda.com&quot;,&quot;zip&quot;:&quot;80503&quot;},&quot;engine&quot;:&quot;3.5 V8&quot;,&quot;image1&quot;:&quot;inventory11.jpg&quot;,&quot;image2&quot;:&quot;cars/interior11.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:74850,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:1,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2011,&quot;modelid&quot;:1,&quot;options&quot;:&quot;Leather, Navigation&quot;,&quot;owners&quot;:1,&quot;price&quot;:20995.0,&quot;stockNumber&quot;:&quot;245180A&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;3N1CB41D32l458778&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:12,&quot;carTrim&quot;:&quot;Luxury&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:5,&quot;address&quot;:&quot;126 Rte 76&quot;,&quot;city&quot;:&quot;Fort Collins&quot;,&quot;name&quot;:&quot;Hilton Honda&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-123-6789&quot;,&quot;website&quot;:&quot;www.hiltonhonda.com&quot;,&quot;zip&quot;:&quot;80503&quot;},&quot;engine&quot;:&quot;3.0 V6&quot;,&quot;image1&quot;:&quot;inventory22.jpg&quot;,&quot;image2&quot;:&quot;cars/interior21.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:24650,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:12,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-C&quot;,&quot;subName&quot;:&quot;Convertible&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Convertible&quot;}},&quot;modelYear&quot;:2012,&quot;modelid&quot;:12,&quot;options&quot;:&quot;Leather&quot;,&quot;owners&quot;:2,&quot;price&quot;:11995.0,&quot;stockNumber&quot;:&quot;246987A&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;3H1CB51D35l453773&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:13,&quot;carTrim&quot;:&quot;Base&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:6,&quot;address&quot;:&quot;570 Lane St&quot;,&quot;city&quot;:&quot;Englewood&quot;,&quot;name&quot;:&quot;Terrys VW&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303- 560-3412&quot;,&quot;website&quot;:&quot;www.terry_vag.com&quot;,&quot;zip&quot;:&quot;80205&quot;},&quot;engine&quot;:&quot;3.0L&quot;,&quot;image1&quot;:&quot;inventory23.jpg&quot;,&quot;image2&quot;:&quot;cars/interior23.jpg&quot;,&quot;makeid&quot;:3,&quot;milage&quot;:58900,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:23,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;3-Series-S&quot;,&quot;subName&quot;:&quot;Sedan&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2011,&quot;modelid&quot;:23,&quot;options&quot;:&quot;Leather, Navigation&quot;,&quot;owners&quot;:2,&quot;price&quot;:12295.0,&quot;stockNumber&quot;:&quot;ASN90856&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;1XCBP8AM1D5256909&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:14,&quot;carTrim&quot;:&quot;Base&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:6,&quot;address&quot;:&quot;570 Lane St&quot;,&quot;city&quot;:&quot;Englewood&quot;,&quot;name&quot;:&quot;Terrys VW&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303- 560-3412&quot;,&quot;website&quot;:&quot;www.terry_vag.com&quot;,&quot;zip&quot;:&quot;80205&quot;},&quot;engine&quot;:&quot;3.5L&quot;,&quot;image1&quot;:&quot;inventory24.jpg&quot;,&quot;image2&quot;:&quot;cars/interior24.jpg&quot;,&quot;makeid&quot;:3,&quot;milage&quot;:68900,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:26,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;5-Series-S&quot;,&quot;subName&quot;:&quot;Sedan&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2009,&quot;modelid&quot;:26,&quot;options&quot;:&quot;Leather, Navigation&quot;,&quot;owners&quot;:1,&quot;price&quot;:35295.0,&quot;stockNumber&quot;:&quot;ASN70851&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;7XCBP8AM1D5256910&quot;}]</bd>
+</rp>
+</rs>
+</t>
+<t id="123" nd="true">
+<sp>
+<t id="223">
+<rq id="224" op="GET /inventory/carMake/index.json/" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carMake</p>
+<p n="HTTP-Segment-Attr-2">index.json</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carMake/index.json</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="225" t="21">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMGFlODQxZjEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:4,&quot;name&quot;:&quot;Buick&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:5,&quot;name&quot;:&quot;Infiniti&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:6,&quot;name&quot;:&quot;Land Rover&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Lexus&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:8,&quot;name&quot;:&quot;Lincoln&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:9,&quot;name&quot;:&quot;Volvo&quot;}]</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="226" op="GET /inventory/carMake/index.json/" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carMake</p>
+<p n="HTTP-Segment-Attr-2">index.json</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carMake/index.json</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="227" t="21">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMGFlODQxZjEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:4,&quot;name&quot;:&quot;Buick&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:5,&quot;name&quot;:&quot;Infiniti&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:6,&quot;name&quot;:&quot;Land Rover&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Lexus&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:8,&quot;name&quot;:&quot;Lincoln&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:9,&quot;name&quot;:&quot;Volvo&quot;}]</bd>
+</rp>
+</rs>
+</t>
+<t id="125" nd="true">
+<sp>
+<t id="228">
+<rq id="229" op="GET /inventory/carDealer/index/" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carDealer</p>
+<p n="HTTP-Segment-Attr-2">index</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carDealer/index</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="230" t="34">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMGNmYWY1NTEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:1,&quot;address&quot;:&quot;1070 Corzon St&quot;,&quot;city&quot;:&quot;Longmont&quot;,&quot;name&quot;:&quot;XYZ Motors Inc&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-555-1234&quot;,&quot;website&quot;:&quot;www.xyzmotorsco.com&quot;,&quot;zip&quot;:&quot;80501&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:2,&quot;address&quot;:&quot;3800 Motor City Dr&quot;,&quot;city&quot;:&quot;Denver&quot;,&quot;name&quot;:&quot;Mountain Motors Inc&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-222-8766&quot;,&quot;website&quot;:&quot;www.mmdenver.com&quot;,&quot;zip&quot;:&quot;80202&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:3,&quot;address&quot;:&quot;235 Spine Rd&quot;,&quot;city&quot;:&quot;Boulder&quot;,&quot;name&quot;:&quot;Blanes GMC&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-456-9090&quot;,&quot;website&quot;:&quot;www.blanemotors.com&quot;,&quot;zip&quot;:&quot;80202&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:4,&quot;address&quot;:&quot;1673 Blake Rd&quot;,&quot;city&quot;:&quot;Aurora&quot;,&quot;name&quot;:&quot;Aurora Acura&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-955-0134&quot;,&quot;website&quot;:&quot;www.aurora_acura.com&quot;,&quot;zip&quot;:&quot;80203&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:5,&quot;address&quot;:&quot;126 Rte 76&quot;,&quot;city&quot;:&quot;Fort Collins&quot;,&quot;name&quot;:&quot;Hilton Honda&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-123-6789&quot;,&quot;website&quot;:&quot;www.hiltonhonda.com&quot;,&quot;zip&quot;:&quot;80503&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:6,&quot;address&quot;:&quot;570 Lane St&quot;,&quot;city&quot;:&quot;Englewood&quot;,&quot;name&quot;:&quot;Terrys VW&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303- 560-3412&quot;,&quot;website&quot;:&quot;www.terry_vag.com&quot;,&quot;zip&quot;:&quot;80205&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:7,&quot;address&quot;:&quot;3556 Motor City Dr&quot;,&quot;city&quot;:&quot;Denver&quot;,&quot;name&quot;:&quot;Blanes Toyota&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-100-2310&quot;,&quot;website&quot;:&quot;www.blanemotors.com&quot;,&quot;zip&quot;:&quot;80201&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:8,&quot;address&quot;:&quot;4100 Motor City Dr&quot;,&quot;city&quot;:&quot;Denver&quot;,&quot;name&quot;:&quot;Denver Subaru&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-670-1402&quot;,&quot;website&quot;:&quot;www.milehighsubaru.com&quot;,&quot;zip&quot;:&quot;80201&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:9,&quot;address&quot;:&quot;100 Lisle Ave&quot;,&quot;city&quot;:&quot;Aurora&quot;,&quot;name&quot;:&quot;Capital Ford&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-555-1200&quot;,&quot;website&quot;:&quot;www.capitalford.com&quot;,&quot;zip&quot;:&quot;80503&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:10,&quot;address&quot;:&quot;1050 University Dr&quot;,&quot;city&quot;:&quot;Boulder&quot;,&quot;name&quot;:&quot;Boulder Chrysler Group&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-204-8720&quot;,&quot;website&quot;:&quot;www.jeep_boulder.com&quot;,&quot;zip&quot;:&quot;80503&quot;}]</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="231" op="GET /inventory/carDealer/index/" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carDealer</p>
+<p n="HTTP-Segment-Attr-2">index</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carDealer/index</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="232" t="34">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMGNmYWY1NTEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:1,&quot;address&quot;:&quot;1070 Corzon St&quot;,&quot;city&quot;:&quot;Longmont&quot;,&quot;name&quot;:&quot;XYZ Motors Inc&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-555-1234&quot;,&quot;website&quot;:&quot;www.xyzmotorsco.com&quot;,&quot;zip&quot;:&quot;80501&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:2,&quot;address&quot;:&quot;3800 Motor City Dr&quot;,&quot;city&quot;:&quot;Denver&quot;,&quot;name&quot;:&quot;Mountain Motors Inc&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-222-8766&quot;,&quot;website&quot;:&quot;www.mmdenver.com&quot;,&quot;zip&quot;:&quot;80202&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:3,&quot;address&quot;:&quot;235 Spine Rd&quot;,&quot;city&quot;:&quot;Boulder&quot;,&quot;name&quot;:&quot;Blanes GMC&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-456-9090&quot;,&quot;website&quot;:&quot;www.blanemotors.com&quot;,&quot;zip&quot;:&quot;80202&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:4,&quot;address&quot;:&quot;1673 Blake Rd&quot;,&quot;city&quot;:&quot;Aurora&quot;,&quot;name&quot;:&quot;Aurora Acura&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-955-0134&quot;,&quot;website&quot;:&quot;www.aurora_acura.com&quot;,&quot;zip&quot;:&quot;80203&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:5,&quot;address&quot;:&quot;126 Rte 76&quot;,&quot;city&quot;:&quot;Fort Collins&quot;,&quot;name&quot;:&quot;Hilton Honda&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-123-6789&quot;,&quot;website&quot;:&quot;www.hiltonhonda.com&quot;,&quot;zip&quot;:&quot;80503&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:6,&quot;address&quot;:&quot;570 Lane St&quot;,&quot;city&quot;:&quot;Englewood&quot;,&quot;name&quot;:&quot;Terrys VW&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303- 560-3412&quot;,&quot;website&quot;:&quot;www.terry_vag.com&quot;,&quot;zip&quot;:&quot;80205&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:7,&quot;address&quot;:&quot;3556 Motor City Dr&quot;,&quot;city&quot;:&quot;Denver&quot;,&quot;name&quot;:&quot;Blanes Toyota&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-100-2310&quot;,&quot;website&quot;:&quot;www.blanemotors.com&quot;,&quot;zip&quot;:&quot;80201&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:8,&quot;address&quot;:&quot;4100 Motor City Dr&quot;,&quot;city&quot;:&quot;Denver&quot;,&quot;name&quot;:&quot;Denver Subaru&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-670-1402&quot;,&quot;website&quot;:&quot;www.milehighsubaru.com&quot;,&quot;zip&quot;:&quot;80201&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:9,&quot;address&quot;:&quot;100 Lisle Ave&quot;,&quot;city&quot;:&quot;Aurora&quot;,&quot;name&quot;:&quot;Capital Ford&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-555-1200&quot;,&quot;website&quot;:&quot;www.capitalford.com&quot;,&quot;zip&quot;:&quot;80503&quot;},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:10,&quot;address&quot;:&quot;1050 University Dr&quot;,&quot;city&quot;:&quot;Boulder&quot;,&quot;name&quot;:&quot;Boulder Chrysler Group&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-204-8720&quot;,&quot;website&quot;:&quot;www.jeep_boulder.com&quot;,&quot;zip&quot;:&quot;80503&quot;}]</bd>
+</rp>
+</rs>
+</t>
+<t id="126" nd="true">
+<sp>
+<t id="233">
+<rq id="234" op="GET /inventory/carInventory/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">2T1KR32E37C639014</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">2T1KR32E37C639014</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carInventory/2T1KR32E37C639014</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="235" t="59">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMGNmZTc3YzEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:1,&quot;carTrim&quot;:&quot;Premium Plus&quot;,&quot;color&quot;:&quot;Silver&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:2,&quot;address&quot;:&quot;3800 Motor City Dr&quot;,&quot;city&quot;:&quot;Denver&quot;,&quot;name&quot;:&quot;Mountain Motors Inc&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-222-8766&quot;,&quot;website&quot;:&quot;www.mmdenver.com&quot;,&quot;zip&quot;:&quot;80202&quot;},&quot;engine&quot;:&quot;2.7 V6&quot;,&quot;image1&quot;:&quot;inventory1.jpg&quot;,&quot;image2&quot;:&quot;cars/interior1.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:138560,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:10,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2011,&quot;modelid&quot;:10,&quot;options&quot;:&quot;Leather, Navigation, Rear Air&quot;,&quot;owners&quot;:6,&quot;price&quot;:3995.0,&quot;stockNumber&quot;:&quot;NAD8989&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;{{=request_URLPARAM0;/*2T1KR32E37C639014*/}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="133">
+<rq id="236" op="GET /inventory/carInventory/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">1ZVBP8AM1D5256900</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">1ZVBP8AM1D5256900</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carInventory/1ZVBP8AM1D5256900</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="237" t="44">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMTBkYmQ5MDAtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:2,&quot;carTrim&quot;:&quot;Technology&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:2,&quot;address&quot;:&quot;3800 Motor City Dr&quot;,&quot;city&quot;:&quot;Denver&quot;,&quot;name&quot;:&quot;Mountain Motors Inc&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-222-8766&quot;,&quot;website&quot;:&quot;www.mmdenver.com&quot;,&quot;zip&quot;:&quot;80202&quot;},&quot;engine&quot;:&quot;3.2 V6&quot;,&quot;image1&quot;:&quot;inventory2.jpg&quot;,&quot;image2&quot;:&quot;cars/interior2.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:30650,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:2,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-AWD&quot;,&quot;subName&quot;:&quot;AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2013,&quot;modelid&quot;:2,&quot;options&quot;:&quot;Leather, Navigation, Ski/BikeRack&quot;,&quot;owners&quot;:2,&quot;price&quot;:30995.0,&quot;stockNumber&quot;:&quot;RA2356/1&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;{{=request_URLPARAM0;/*1ZVBP8AM1D5256900*/}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="141">
+<rq id="238" op="GET /inventory/carInventory/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">3N1CB51D35l458771</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">3N1CB51D35l458771</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carInventory/3N1CB51D35l458771</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="239" t="41">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMTNjNDdhMDEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:3,&quot;carTrim&quot;:&quot;Premium&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:4,&quot;address&quot;:&quot;1673 Blake Rd&quot;,&quot;city&quot;:&quot;Aurora&quot;,&quot;name&quot;:&quot;Aurora Acura&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-955-0134&quot;,&quot;website&quot;:&quot;www.aurora_acura.com&quot;,&quot;zip&quot;:&quot;80203&quot;},&quot;engine&quot;:&quot;3.5 V6&quot;,&quot;image1&quot;:&quot;inventory3.jpg&quot;,&quot;image2&quot;:&quot;cars/interior3.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:54650,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:2,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-AWD&quot;,&quot;subName&quot;:&quot;AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2012,&quot;modelid&quot;:2,&quot;options&quot;:&quot;Leather, Navigation, Backup Camera&quot;,&quot;owners&quot;:2,&quot;price&quot;:30995.0,&quot;stockNumber&quot;:&quot;BN12560&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;{{=request_URLPARAM0;/*3N1CB51D35l458771*/}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="150">
+<rq id="240" op="GET /inventory/carInventory/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">2T1KR32E37C639012</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">2T1KR32E37C639012</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carInventory/2T1KR32E37C639012</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="241" t="33">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMTZmY2MxYTEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:4,&quot;carTrim&quot;:&quot;Sport&quot;,&quot;color&quot;:&quot;Silver&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:4,&quot;address&quot;:&quot;1673 Blake Rd&quot;,&quot;city&quot;:&quot;Aurora&quot;,&quot;name&quot;:&quot;Aurora Acura&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-955-0134&quot;,&quot;website&quot;:&quot;www.aurora_acura.com&quot;,&quot;zip&quot;:&quot;80203&quot;},&quot;engine&quot;:&quot;3.5 V6&quot;,&quot;image1&quot;:&quot;inventory4.jpg&quot;,&quot;image2&quot;:&quot;cars/interior4.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:78400,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:2,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-AWD&quot;,&quot;subName&quot;:&quot;AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2010,&quot;modelid&quot;:2,&quot;options&quot;:&quot;Ski Rack, Tow kit&quot;,&quot;owners&quot;:4,&quot;price&quot;:21405.0,&quot;stockNumber&quot;:&quot;BN13456&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;{{=request_URLPARAM0;/*2T1KR32E37C639012*/}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="157">
+<rq id="242" op="GET /inventory/carInventory/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">3N1CB51D35l458773</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">3N1CB51D35l458773</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carInventory/3N1CB51D35l458773</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="243" t="36">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMTliNWVlMzEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:5,&quot;carTrim&quot;:&quot;Sport&quot;,&quot;color&quot;:&quot;Red&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:4,&quot;address&quot;:&quot;1673 Blake Rd&quot;,&quot;city&quot;:&quot;Aurora&quot;,&quot;name&quot;:&quot;Aurora Acura&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-955-0134&quot;,&quot;website&quot;:&quot;www.aurora_acura.com&quot;,&quot;zip&quot;:&quot;80203&quot;},&quot;engine&quot;:&quot;1.8T&quot;,&quot;image1&quot;:&quot;inventory5.jpg&quot;,&quot;image2&quot;:&quot;cars/interior5.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:98145,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:11,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;S4-S&quot;,&quot;subName&quot;:&quot;Sport&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2008,&quot;modelid&quot;:11,&quot;options&quot;:&quot;Leather, Dual Air, 6 Speed&quot;,&quot;owners&quot;:4,&quot;price&quot;:7800.0,&quot;stockNumber&quot;:&quot;BN13467&quot;,&quot;transmission&quot;:&quot;Manual&quot;,&quot;vin&quot;:&quot;{{=request_URLPARAM0;/*3N1CB51D35l458773*/}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="165">
+<rq id="244" op="GET /inventory/carInventory/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">2T1KR32E37C639015</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">2T1KR32E37C639015</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carInventory/2T1KR32E37C639015</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="245" t="31">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMWRjZWY4ZTEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:7,&quot;carTrim&quot;:&quot;Base&quot;,&quot;color&quot;:&quot;Blue&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:6,&quot;address&quot;:&quot;570 Lane St&quot;,&quot;city&quot;:&quot;Englewood&quot;,&quot;name&quot;:&quot;Terrys VW&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303- 560-3412&quot;,&quot;website&quot;:&quot;www.terry_vag.com&quot;,&quot;zip&quot;:&quot;80205&quot;},&quot;engine&quot;:&quot;2.0T&quot;,&quot;image1&quot;:&quot;inventory7.jpg&quot;,&quot;image2&quot;:&quot;cars/interior7.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:104300,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:10,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2008,&quot;modelid&quot;:10,&quot;options&quot;:&quot;Premium Audio Upgrade&quot;,&quot;owners&quot;:1,&quot;price&quot;:10750.0,&quot;stockNumber&quot;:&quot;ASN29001&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;{{=request_URLPARAM0;/*2T1KR32E37C639015*/}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="173">
+<rq id="246" op="GET /inventory/carInventory/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">1ZVBP8AM1D5256906</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">1ZVBP8AM1D5256906</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carInventory/1ZVBP8AM1D5256906</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="247" t="36">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMjFjODQ2OTEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:8,&quot;carTrim&quot;:&quot;Premium&quot;,&quot;color&quot;:&quot;Silver&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:6,&quot;address&quot;:&quot;570 Lane St&quot;,&quot;city&quot;:&quot;Englewood&quot;,&quot;name&quot;:&quot;Terrys VW&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303- 560-3412&quot;,&quot;website&quot;:&quot;www.terry_vag.com&quot;,&quot;zip&quot;:&quot;80205&quot;},&quot;engine&quot;:&quot;2.0T&quot;,&quot;image1&quot;:&quot;inventory8.jpg&quot;,&quot;image2&quot;:&quot;cars/interior8.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:62000,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:10,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2012,&quot;modelid&quot;:10,&quot;options&quot;:&quot;Leather, Navigation, Bluetooth&quot;,&quot;owners&quot;:3,&quot;price&quot;:20400.0,&quot;stockNumber&quot;:&quot;ASN34501&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;{{=request_URLPARAM0;/*1ZVBP8AM1D5256906*/}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="181">
+<rq id="248" op="GET /inventory/carInventory/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">3N1CB51D35l458778</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">3N1CB51D35l458778</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carInventory/3N1CB51D35l458778</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="249" t="33">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMmFkNjE1ZjAtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:10,&quot;carTrim&quot;:&quot;Technology Plus&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:5,&quot;address&quot;:&quot;126 Rte 76&quot;,&quot;city&quot;:&quot;Fort Collins&quot;,&quot;name&quot;:&quot;Hilton Honda&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-123-6789&quot;,&quot;website&quot;:&quot;www.hiltonhonda.com&quot;,&quot;zip&quot;:&quot;80503&quot;},&quot;engine&quot;:&quot;3.5 V6&quot;,&quot;image1&quot;:&quot;inventory10.jpg&quot;,&quot;image2&quot;:&quot;cars/interior10.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:54650,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:1,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2012,&quot;modelid&quot;:1,&quot;options&quot;:&quot;Leather, Navigation, Backup Camera&quot;,&quot;owners&quot;:2,&quot;price&quot;:30995.0,&quot;stockNumber&quot;:&quot;245980A&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;{{=request_URLPARAM0;/*3N1CB51D35l458778*/}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="189">
+<rq id="250" op="GET /inventory/carInventory/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">3N1CB41D32l458778</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">3N1CB41D32l458778</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carInventory/3N1CB41D32l458778</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="251" t="30">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMmRhMzNmYjEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:11,&quot;carTrim&quot;:&quot;Technology Plus&quot;,&quot;color&quot;:&quot;Green&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:5,&quot;address&quot;:&quot;126 Rte 76&quot;,&quot;city&quot;:&quot;Fort Collins&quot;,&quot;name&quot;:&quot;Hilton Honda&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-123-6789&quot;,&quot;website&quot;:&quot;www.hiltonhonda.com&quot;,&quot;zip&quot;:&quot;80503&quot;},&quot;engine&quot;:&quot;3.5 V8&quot;,&quot;image1&quot;:&quot;inventory11.jpg&quot;,&quot;image2&quot;:&quot;cars/interior11.jpg&quot;,&quot;makeid&quot;:1,&quot;milage&quot;:74850,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:1,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2011,&quot;modelid&quot;:1,&quot;options&quot;:&quot;Leather, Navigation&quot;,&quot;owners&quot;:1,&quot;price&quot;:20995.0,&quot;stockNumber&quot;:&quot;245180A&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;{{=request_URLPARAM0;/*3N1CB41D32l458778*/}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="198">
+<rq id="252" op="GET /inventory/carInventory/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">3H1CB51D35l453773</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">3H1CB51D35l453773</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carInventory/3H1CB51D35l453773</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="253" t="26">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMzA5MzgxZDEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:12,&quot;carTrim&quot;:&quot;Luxury&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:5,&quot;address&quot;:&quot;126 Rte 76&quot;,&quot;city&quot;:&quot;Fort Collins&quot;,&quot;name&quot;:&quot;Hilton Honda&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-123-6789&quot;,&quot;website&quot;:&quot;www.hiltonhonda.com&quot;,&quot;zip&quot;:&quot;80503&quot;},&quot;engine&quot;:&quot;3.0 V6&quot;,&quot;image1&quot;:&quot;inventory22.jpg&quot;,&quot;image2&quot;:&quot;cars/interior21.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:24650,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:12,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-C&quot;,&quot;subName&quot;:&quot;Convertible&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Convertible&quot;}},&quot;modelYear&quot;:2012,&quot;modelid&quot;:12,&quot;options&quot;:&quot;Leather&quot;,&quot;owners&quot;:2,&quot;price&quot;:11995.0,&quot;stockNumber&quot;:&quot;246987A&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;{{=request_URLPARAM0;/*3H1CB51D35l453773*/}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="207">
+<rq id="254" op="GET /inventory/carInventory/{URLPARAM0}/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">3N1CB51D35l458774</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">3N1CB51D35l458774</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carInventory/3N1CB51D35l458774</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="255" t="23">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMzQ5ZWQwZTEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:6,&quot;carTrim&quot;:&quot;xDrivePlus&quot;,&quot;color&quot;:&quot;Black&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:5,&quot;address&quot;:&quot;126 Rte 76&quot;,&quot;city&quot;:&quot;Fort Collins&quot;,&quot;name&quot;:&quot;Hilton Honda&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-123-6789&quot;,&quot;website&quot;:&quot;www.hiltonhonda.com&quot;,&quot;zip&quot;:&quot;80503&quot;},&quot;engine&quot;:&quot;3.5L&quot;,&quot;image1&quot;:&quot;inventory6.jpg&quot;,&quot;image2&quot;:&quot;cars/interior6.jpg&quot;,&quot;makeid&quot;:3,&quot;milage&quot;:75350,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:27,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;7-Series-P&quot;,&quot;subName&quot;:&quot;Premium&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2010,&quot;modelid&quot;:27,&quot;options&quot;:&quot;Leather, Navigation, Rear Air&quot;,&quot;owners&quot;:1,&quot;price&quot;:34500.0,&quot;stockNumber&quot;:&quot;N2367J6&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;{{=request_URLPARAM0;/*3N1CB51D35l458774*/}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="256" op="GET /inventory/carInventory/{URLPARAM0}/" tl="SIGNATURE">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;true;;;;">2T1KR32E37C639014</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">2T1KR32E37C639014</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carInventory/2T1KR32E37C639014</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="257" t="59">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMGNmZTc3YzEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;class&quot;:&quot;com.ca.lisa.demo.CarInventory&quot;,&quot;id&quot;:1,&quot;carTrim&quot;:&quot;Premium Plus&quot;,&quot;color&quot;:&quot;Silver&quot;,&quot;dealer&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarDealer&quot;,&quot;id&quot;:2,&quot;address&quot;:&quot;3800 Motor City Dr&quot;,&quot;city&quot;:&quot;Denver&quot;,&quot;name&quot;:&quot;Mountain Motors Inc&quot;,&quot;state&quot;:&quot;CO&quot;,&quot;telephone&quot;:&quot;303-222-8766&quot;,&quot;website&quot;:&quot;www.mmdenver.com&quot;,&quot;zip&quot;:&quot;80202&quot;},&quot;engine&quot;:&quot;2.7 V6&quot;,&quot;image1&quot;:&quot;inventory1.jpg&quot;,&quot;image2&quot;:&quot;cars/interior1.jpg&quot;,&quot;makeid&quot;:2,&quot;milage&quot;:138560,&quot;model&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:10,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},&quot;modelYear&quot;:2011,&quot;modelid&quot;:10,&quot;options&quot;:&quot;Leather, Navigation, Rear Air&quot;,&quot;owners&quot;:6,&quot;price&quot;:3995.0,&quot;stockNumber&quot;:&quot;NAD8989&quot;,&quot;transmission&quot;:&quot;Auto&quot;,&quot;vin&quot;:&quot;{{=request_URLPARAM0;/*2T1KR32E37C639014*/}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="127" nd="true">
+<sp>
+<t id="258">
+<rq id="259" op="GET /inventory/carMake/{URLPARAM0}/models.json/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;false;;;;">1</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carMake</p>
+<p n="HTTP-Segment-Attr-2">1</p>
+<p n="HTTP-Segment-Attr-3">models.json</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carMake/1/models.json</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="260" t="56">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMGQwODE0YjEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:1,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:2,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-AWD&quot;,&quot;subName&quot;:&quot;AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:3,&quot;fuelType&quot;:&quot;Hybrid&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-H&quot;,&quot;subName&quot;:&quot;Hybrid&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:4,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;TL-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:5,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;TL-AWD&quot;,&quot;subName&quot;:&quot;SH-AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:6,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;TL-S&quot;,&quot;subName&quot;:&quot;Sport&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:7,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2000,&quot;name&quot;:&quot;MDX-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:9,&quot;name&quot;:&quot;SUV&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:8,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;MDX-AWD&quot;,&quot;subName&quot;:&quot;SH-AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:9,&quot;name&quot;:&quot;SUV&quot;}}]</bd>
+</rp>
+</rs>
+</t>
+<t id="128">
+<rq id="261" op="GET /inventory/carMake/{URLPARAM0}/models.json/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;false;;;;">2</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carMake</p>
+<p n="HTTP-Segment-Attr-2">2</p>
+<p n="HTTP-Segment-Attr-3">models.json</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carMake/2/models.json</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="262" t="40">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMGQxM2Q0ODEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:9,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;A3-3D&quot;,&quot;subName&quot;:&quot;3-dr&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:4,&quot;name&quot;:&quot;Hatchback&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:10,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:11,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;S4-S&quot;,&quot;subName&quot;:&quot;Sport&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:12,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-C&quot;,&quot;subName&quot;:&quot;Convertible&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Convertible&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:13,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:2001,&quot;name&quot;:&quot;TT-Co&quot;,&quot;subName&quot;:&quot;Convertible&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Convertible&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:14,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A6-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:15,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;S6-S&quot;,&quot;subName&quot;:&quot;Sport&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:16,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1998,&quot;name&quot;:&quot;A8-P&quot;,&quot;subName&quot;:&quot;Premium&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:17,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A4-W&quot;,&quot;subName&quot;:&quot;Wagon&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:8,&quot;name&quot;:&quot;Station Wagon&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:18,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A6-W&quot;,&quot;subName&quot;:&quot;Wagon&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:8,&quot;name&quot;:&quot;Station Wagon&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:19,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;A6-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:8,&quot;name&quot;:&quot;Station Wagon&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:20,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:2007,&quot;name&quot;:&quot;Q7-T&quot;,&quot;subName&quot;:&quot;TDi&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:5,&quot;name&quot;:&quot;Minivan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:21,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Audi&quot;},&quot;modelYear&quot;:2000,&quot;name&quot;:&quot;TT-cp&quot;,&quot;subName&quot;:&quot;Coup&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Coupe&quot;}}]</bd>
+</rp>
+</rs>
+</t>
+<t id="204">
+<rq id="263" op="GET /inventory/carMake/{URLPARAM0}/models.json/" tl="EXACT">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;false;;;;">3</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carMake</p>
+<p n="HTTP-Segment-Attr-2">3</p>
+<p n="HTTP-Segment-Attr-3">models.json</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carMake/3/models.json</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="264" t="20">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMzNlZTkzYjEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:22,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1991,&quot;name&quot;:&quot;M5-S&quot;,&quot;subName&quot;:&quot;Sedan&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:23,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;3-Series-S&quot;,&quot;subName&quot;:&quot;Sedan&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:24,&quot;fuelType&quot;:&quot;Diesel&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:2014,&quot;name&quot;:&quot;3-Series-T&quot;,&quot;subName&quot;:&quot;TDi&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:25,&quot;fuelType&quot;:&quot;Hybrid&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;5-Series-H&quot;,&quot;subName&quot;:&quot;Hybrid&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:26,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;5-Series-S&quot;,&quot;subName&quot;:&quot;Sedan&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:27,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;7-Series-P&quot;,&quot;subName&quot;:&quot;Premium&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:28,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1997,&quot;name&quot;:&quot;M3-S&quot;,&quot;subName&quot;:&quot;Sedan&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:29,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;3-Series-Cp&quot;,&quot;subName&quot;:&quot;Coupe&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Coupe&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:30,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;M3-cp&quot;,&quot;subName&quot;:&quot;Coupe&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Coupe&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:31,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:1990,&quot;name&quot;:&quot;3-Series-To&quot;,&quot;subName&quot;:&quot;Touring&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:8,&quot;name&quot;:&quot;Station Wagon&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:32,&quot;fuelType&quot;:&quot;Diesel&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:2009,&quot;name&quot;:&quot;3-Series-T&quot;,&quot;subName&quot;:&quot;TDi&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:8,&quot;name&quot;:&quot;Station Wagon&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:33,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:2004,&quot;name&quot;:&quot;X3-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:8,&quot;name&quot;:&quot;Station Wagon&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:34,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;BMW&quot;},&quot;modelYear&quot;:2000,&quot;name&quot;:&quot;X5-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:8,&quot;name&quot;:&quot;Station Wagon&quot;}}]</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="265" op="GET /inventory/carMake/{URLPARAM0}/models.json/" tl="SIGNATURE">
+<ag>
+<p n="URLPARAM0" t="arg:EQUALS;false;;;;">1</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">inventory</p>
+<p n="HTTP-Segment-Attr-1">carMake</p>
+<p n="HTTP-Segment-Attr-2">1</p>
+<p n="HTTP-Segment-Attr-3">models.json</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/inventory/carMake/1/models.json</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="266" t="56">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Type">application/json;charset=UTF-8</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMGQwODE0YjEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:1,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:2,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-AWD&quot;,&quot;subName&quot;:&quot;AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:3,&quot;fuelType&quot;:&quot;Hybrid&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;RLX-H&quot;,&quot;subName&quot;:&quot;Hybrid&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:4,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;TL-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:5,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;TL-AWD&quot;,&quot;subName&quot;:&quot;SH-AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:6,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:1996,&quot;name&quot;:&quot;TL-S&quot;,&quot;subName&quot;:&quot;Sport&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:7,&quot;name&quot;:&quot;Sedan&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:7,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2000,&quot;name&quot;:&quot;MDX-B&quot;,&quot;subName&quot;:&quot;Base&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:9,&quot;name&quot;:&quot;SUV&quot;}},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarModel&quot;,&quot;id&quot;:8,&quot;fuelType&quot;:&quot;Gas&quot;,&quot;make&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarMake&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;Acura&quot;},&quot;modelYear&quot;:2013,&quot;name&quot;:&quot;MDX-AWD&quot;,&quot;subName&quot;:&quot;SH-AWD&quot;,&quot;type&quot;:{&quot;class&quot;:&quot;com.ca.lisa.demo.CarType&quot;,&quot;id&quot;:9,&quot;name&quot;:&quot;SUV&quot;}}]</bd>
+</rp>
+</rs>
+</t>
+<t id="213" nd="true">
+<sp>
+<t id="267">
+<rq id="268" op="POST /loan/" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">loan</p>
+<p n="recorded_raw_request_bytes">eyJ1c2VybmFtZSI6Imxpc2Euc2ltcHNvbiIsImZpcnN0TmFtZSI6Ikxpc2EiLCJsYXN0TmFtZSI6IlNpbXBzb24iLCJhZGRyZXNzMSI6IjU0NjUgTGVnYWN5IERyIiwiY2l0eSI6IlBsYW5vIiwic3RhdGUiOiJUWCIsInppcCI6Ijc1MDI0IiwiY291bnRyeSI6IlVTIiwiZG9iIjoiMDEvMDEvMTk3MCIsInNzbiI6IjExMS0yMi0zMzMzIiwiZW1wbG95ZXIiOiJDQSBUZWNobm9sb2dpZXMiLCJwaG9uZU51bWJlciI6IjEyMy00NTYtNzg5MSIsImR1cmF0aW9uT2ZKb2IiOiI1IFllYXJzIiwiaW5jb21lIjoiOTU4MDgiLCJsb2FuVGVybSI6MywibG9hbkFtb3VudCI6NDQyMjQuMCwidmFsaWRhdGVBZGRyZXNzIjpmYWxzZX0=</p>
+<p n="recorded_raw_request">{&quot;username&quot;:&quot;lisa.simpson&quot;,&quot;firstName&quot;:&quot;Lisa&quot;,&quot;lastName&quot;:&quot;Simpson&quot;,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;zip&quot;:&quot;75024&quot;,&quot;country&quot;:&quot;US&quot;,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;,&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;income&quot;:&quot;95808&quot;,&quot;loanTerm&quot;:3,&quot;loanAmount&quot;:44224.0,&quot;validateAddress&quot;:false}</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/loan</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">application/json; charset=UTF-8</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+<p n="Content-Length">350</p>
+</m>
+<bd chs="UTF-8">{&quot;username&quot;:&quot;lisa.simpson&quot;,&quot;firstName&quot;:&quot;Lisa&quot;,&quot;lastName&quot;:&quot;Simpson&quot;,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;zip&quot;:&quot;75024&quot;,&quot;country&quot;:&quot;US&quot;,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;,&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;income&quot;:&quot;95808&quot;,&quot;loanTerm&quot;:3,&quot;loanAmount&quot;:44224.0,&quot;validateAddress&quot;:false}</bd>
+</rq>
+<rs>
+<rp id="269" t="332">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMzhhZjUwMTEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="X-MULE_CORRELATION_ID">ID:admin-52339-1452263622080-3:1:1:1:1</p>
+<p n="X-MULE_CORRELATION_GROUP_SIZE">-1</p>
+<p n="X-MULE_CORRELATION_SEQUENCE">-1</p>
+<p n="Content-Type">text/plain</p>
+<p n="Content-Length">21</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;status&quot;:&quot;accepted&quot;}</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="270" op="POST /loan/" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">loan</p>
+<p n="recorded_raw_request_bytes">eyJ1c2VybmFtZSI6Imxpc2Euc2ltcHNvbiIsImZpcnN0TmFtZSI6Ikxpc2EiLCJsYXN0TmFtZSI6IlNpbXBzb24iLCJhZGRyZXNzMSI6IjU0NjUgTGVnYWN5IERyIiwiY2l0eSI6IlBsYW5vIiwic3RhdGUiOiJUWCIsInppcCI6Ijc1MDI0IiwiY291bnRyeSI6IlVTIiwiZG9iIjoiMDEvMDEvMTk3MCIsInNzbiI6IjExMS0yMi0zMzMzIiwiZW1wbG95ZXIiOiJDQSBUZWNobm9sb2dpZXMiLCJwaG9uZU51bWJlciI6IjEyMy00NTYtNzg5MSIsImR1cmF0aW9uT2ZKb2IiOiI1IFllYXJzIiwiaW5jb21lIjoiOTU4MDgiLCJsb2FuVGVybSI6MywibG9hbkFtb3VudCI6NDQyMjQuMCwidmFsaWRhdGVBZGRyZXNzIjpmYWxzZX0=</p>
+<p n="recorded_raw_request">{&quot;username&quot;:&quot;lisa.simpson&quot;,&quot;firstName&quot;:&quot;Lisa&quot;,&quot;lastName&quot;:&quot;Simpson&quot;,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;zip&quot;:&quot;75024&quot;,&quot;country&quot;:&quot;US&quot;,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;,&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;income&quot;:&quot;95808&quot;,&quot;loanTerm&quot;:3,&quot;loanAmount&quot;:44224.0,&quot;validateAddress&quot;:false}</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/loan</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">application/json; charset=UTF-8</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+<p n="Content-Length">350</p>
+</m>
+<bd chs="UTF-8">{&quot;username&quot;:&quot;lisa.simpson&quot;,&quot;firstName&quot;:&quot;Lisa&quot;,&quot;lastName&quot;:&quot;Simpson&quot;,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;zip&quot;:&quot;75024&quot;,&quot;country&quot;:&quot;US&quot;,&quot;dob&quot;:&quot;01/01/1970&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;phoneNumber&quot;:&quot;123-456-7891&quot;,&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;income&quot;:&quot;95808&quot;,&quot;loanTerm&quot;:3,&quot;loanAmount&quot;:44224.0,&quot;validateAddress&quot;:false}</bd>
+</rq>
+<rs>
+<rp id="271" t="332">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkMzhhZjUwMTEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="X-MULE_CORRELATION_ID">ID:admin-52339-1452263622080-3:1:1:1:1</p>
+<p n="X-MULE_CORRELATION_GROUP_SIZE">-1</p>
+<p n="X-MULE_CORRELATION_SEQUENCE">-1</p>
+<p n="Content-Type">text/plain</p>
+<p n="Content-Length">21</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;status&quot;:&quot;accepted&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="214" nd="true">
+<sp>
+<t id="272">
+<rq id="273" op="GET /loan/lisa.simpson/" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">loan</p>
+<p n="HTTP-Segment-Attr-1">lisa.simpson</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/loan/lisa.simpson</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="274" t="176">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkM2EwMGQ2NTEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="X-MULE_CORRELATION_ID">ID:admin-52339-1452263622080-3:1:1:2:1</p>
+<p n="X-MULE_CORRELATION_GROUP_SIZE">-1</p>
+<p n="X-MULE_CORRELATION_SEQUENCE">-1</p>
+<p n="Content-Type">text/plain</p>
+<p n="Content-Length">1146</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;class&quot;:&quot;com.ca.lisa.demo.CarLoan&quot;,&quot;id&quot;:1,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;country&quot;:&quot;US&quot;,&quot;createdDate&quot;:&quot;2016-01-08T14:36:36Z&quot;,&quot;dob&quot;:&quot;{{=doDateDeltaFromCurrent(&amp;quot;MM/dd/yyyy&amp;quot;,&amp;quot;-16808D&amp;quot;);/*01/01/1970*/}}&quot;,&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;firstName&quot;:&quot;Lisa&quot;,&quot;income&quot;:95808.0,&quot;lastName&quot;:&quot;Simpson&quot;,&quot;loanAmount&quot;:44224.0,&quot;loanTerm&quot;:3,&quot;loanTermInMonths&quot;:36,&quot;offers&quot;:[{&quot;class&quot;:&quot;com.ca.lisa.demo.CarLoanOffer&quot;,&quot;id&quot;:1,&quot;bank&quot;:&quot;CITI&quot;,&quot;carLoan&quot;:{&quot;_ref&quot;:&quot;../..&quot;,&quot;class&quot;:&quot;com.ca.lisa.demo.CarLoan&quot;},&quot;interest&quot;:6600.91615695192,&quot;interestRate&quot;:0.04975364927755608,&quot;payment&quot;:1411.8032265819977,&quot;term&quot;:3},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarLoanOffer&quot;,&quot;id&quot;:2,&quot;bank&quot;:&quot;CHASE&quot;,&quot;carLoan&quot;:{&quot;_ref&quot;:&quot;../..&quot;,&quot;class&quot;:&quot;com.ca.lisa.demo.CarLoan&quot;},&quot;interest&quot;:12218.09179192325,&quot;interestRate&quot;:0.09209246707612194,&quot;payment&quot;:1567.8358831089793,&quot;term&quot;:3},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarLoanOffer&quot;,&quot;id&quot;:3,&quot;bank&quot;:&quot;BOFA&quot;,&quot;carLoan&quot;:{&quot;_ref&quot;:&quot;../..&quot;,&quot;class&quot;:&quot;com.ca.lisa.demo.CarLoan&quot;},&quot;interest&quot;:14465.852687460825,&quot;interestRate&quot;:0.10903470730418495,&quot;payment&quot;:1630.2736857628006,&quot;term&quot;:3}],&quot;phoneNumber&quot;:&quot;123-456-7891&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;username&quot;:&quot;lisa.simpson&quot;,&quot;validateAddress&quot;:false,&quot;zip&quot;:&quot;75024&quot;}]</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="275" op="GET /loan/lisa.simpson/" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">loan</p>
+<p n="HTTP-Segment-Attr-1">lisa.simpson</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/loan/lisa.simpson</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="User-Agent">Java/1.8.0_60</p>
+<p n="Host">localhost:7000</p>
+<p n="Accept">text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+</m>
+</rq>
+<rs>
+<rp id="276" t="176">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">Mule Core/3.7.0</p>
+<p n="X-MULE_SESSION">rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAFWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACnByb3BlcnRpZXN0AA9MamF2YS91dGlsL01hcDtMAA9zZWN1cml0eUNvbnRleHR0ACdMb3JnL211bGUvYXBpL3NlY3VyaXR5L1NlY3VyaXR5Q29udGV4dDt4cAFwdAAkM2EwMGQ2NTEtYjYxNS0xMWU1LTliZjgtNDA2YzhmMDU1OTc4c3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW1xAH4AA0wABW11dGV4dAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgAkb3JnLm11bGUudXRpbC5DYXNlSW5zZW5zaXRpdmVIYXNoTWFwndHZ72dFzgADAAB4cHcMP0AAAAAAABAAAAAAeHEAfgAJeHB4</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="X-MULE_CORRELATION_ID">ID:admin-52339-1452263622080-3:1:1:2:1</p>
+<p n="X-MULE_CORRELATION_GROUP_SIZE">-1</p>
+<p n="X-MULE_CORRELATION_SEQUENCE">-1</p>
+<p n="Content-Type">text/plain</p>
+<p n="Content-Length">1146</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;class&quot;:&quot;com.ca.lisa.demo.CarLoan&quot;,&quot;id&quot;:1,&quot;address1&quot;:&quot;5465 Legacy Dr&quot;,&quot;city&quot;:&quot;Plano&quot;,&quot;country&quot;:&quot;US&quot;,&quot;createdDate&quot;:&quot;2016-01-08T14:36:36Z&quot;,&quot;dob&quot;:&quot;{{=doDateDeltaFromCurrent(&amp;quot;MM/dd/yyyy&amp;quot;,&amp;quot;-16808D&amp;quot;);/*01/01/1970*/}}&quot;,&quot;durationOfJob&quot;:&quot;5 Years&quot;,&quot;employer&quot;:&quot;CA Technologies&quot;,&quot;firstName&quot;:&quot;Lisa&quot;,&quot;income&quot;:95808.0,&quot;lastName&quot;:&quot;Simpson&quot;,&quot;loanAmount&quot;:44224.0,&quot;loanTerm&quot;:3,&quot;loanTermInMonths&quot;:36,&quot;offers&quot;:[{&quot;class&quot;:&quot;com.ca.lisa.demo.CarLoanOffer&quot;,&quot;id&quot;:1,&quot;bank&quot;:&quot;CITI&quot;,&quot;carLoan&quot;:{&quot;_ref&quot;:&quot;../..&quot;,&quot;class&quot;:&quot;com.ca.lisa.demo.CarLoan&quot;},&quot;interest&quot;:6600.91615695192,&quot;interestRate&quot;:0.04975364927755608,&quot;payment&quot;:1411.8032265819977,&quot;term&quot;:3},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarLoanOffer&quot;,&quot;id&quot;:2,&quot;bank&quot;:&quot;CHASE&quot;,&quot;carLoan&quot;:{&quot;_ref&quot;:&quot;../..&quot;,&quot;class&quot;:&quot;com.ca.lisa.demo.CarLoan&quot;},&quot;interest&quot;:12218.09179192325,&quot;interestRate&quot;:0.09209246707612194,&quot;payment&quot;:1567.8358831089793,&quot;term&quot;:3},{&quot;class&quot;:&quot;com.ca.lisa.demo.CarLoanOffer&quot;,&quot;id&quot;:3,&quot;bank&quot;:&quot;BOFA&quot;,&quot;carLoan&quot;:{&quot;_ref&quot;:&quot;../..&quot;,&quot;class&quot;:&quot;com.ca.lisa.demo.CarLoan&quot;},&quot;interest&quot;:14465.852687460825,&quot;interestRate&quot;:0.10903470730418495,&quot;payment&quot;:1630.2736857628006,&quot;term&quot;:3}],&quot;phoneNumber&quot;:&quot;123-456-7891&quot;,&quot;ssn&quot;:&quot;111-22-3333&quot;,&quot;state&quot;:&quot;TX&quot;,&quot;username&quot;:&quot;lisa.simpson&quot;,&quot;validateAddress&quot;:false,&quot;zip&quot;:&quot;75024&quot;}]</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="217" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd chs="UTF-8">&lt;html&gt;&#10;    &lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&#10;    &lt;body&gt;&#10;        &lt;h1&gt;Not Found&lt;/h1&gt;&#10;        &lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;&#10;        &lt;hr/&gt;&#10;        &lt;p&gt;&lt;i&gt;The DevTest VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;/p&gt;&#10;        &lt;br/&gt;&lt;font size=&quot;-2&quot;&gt;Produced by a DevTest virtualized web server.&lt;/font&gt;&#10;    &lt;/body&gt;&#10;&lt;/html&gt;&#10;</bd>
+</rp>
+</ucrr>
+<usrr>
+<rp id="216" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd chs="UTF-8">&lt;html&gt;&#10;    &lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&#10;    &lt;body&gt;&#10;        &lt;h1&gt;Not Found&lt;/h1&gt;&#10;        &lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;&#10;        &lt;hr/&gt;&#10;        &lt;p&gt;&lt;i&gt;The DevTest VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;/p&gt;&#10;        &lt;br/&gt;&lt;font size=&quot;-2&quot;&gt;Produced by a DevTest virtualized web server.&lt;/font&gt;&#10;    &lt;/body&gt;&#10;&lt;/html&gt;&#10;</bd>
+</rp>
+</usrr>
+</serviceImage>

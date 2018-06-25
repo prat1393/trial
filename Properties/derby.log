@@ -1,0 +1,14 @@
+Fri Jun 22 15:42:34 IST 2018 : Apache Derby Network Server - 10.8.3.0 - (1405108) started and ready to accept connections on port 1530
+----------------------------------------------------------------
+Fri Jun 22 15:42:45 IST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.3.0 - (1405108): instance a816c00e-0164-26fb-3371-ffffd4e85919 
+on database directory C:\lisa 8.4\DevTest\database\dradis.db  with class loader sun.misc.Launcher$AppClassLoader@17072b90 
+Loaded from file:/C:/lisa%208.4/DevTest/lib/shared/derby-10.8.3.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_72-b14
+user.dir=C:\lisa 8.4\DevTest
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=C:\lisa 8.4\DevTest
+Database Class Loader started - derby.database.classpath=''

@@ -1,0 +1,316 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="6" name="WADL" created="2018-06-25.16:25:41.460" lastModified="2018-06-25.16:26:08.445" version="8.4.0" buildNumber="8.4.0.227">
+<st>
+<t id="9" nd="true">
+<sp>
+<t id="10">
+<rq id="11" op="GET /api/ezp/v2/content/objects/{contentId}/" tl="EXACT">
+<ag>
+<p n="contentId" t="arg:EQUALS;false;;;;">{contentId;57}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/vnd.ez.api.Content+json</p>
+</m>
+</rq>
+<rs>
+<rp id="12" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="13" op="GET /api/ezp/v2/content/objects/{contentId}/" tl="SIGNATURE">
+<ag>
+<p n="contentId" t="arg:EQUALS;false;;;;">{contentId;57}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/vnd.ez.api.Content+json</p>
+</m>
+</rq>
+<rs>
+<rp id="14" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</rs>
+</t>
+<t id="15" nd="true">
+<sp>
+<t id="1">
+<rq id="16" op="GET /api/ezp/v2/content/objects/{contentId}/locations/" tl="EXACT">
+<ag>
+<p n="contentId" t="arg:EQUALS;false;;;;">{contentId;57}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/vnd.ez.api.Content+json</p>
+</m>
+</rq>
+<rs>
+<rp id="17" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="18" op="GET /api/ezp/v2/content/objects/{contentId}/locations/" tl="SIGNATURE">
+<ag>
+<p n="contentId" t="arg:EQUALS;false;;;;">{contentId;57}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/vnd.ez.api.Content+json</p>
+</m>
+</rq>
+<rs>
+<rp id="19" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</rs>
+</t>
+<t id="20" nd="true">
+<sp>
+<t id="2">
+<rq id="21" op="GET /api/ezp/v2/content/locations/{locationId}/" tl="EXACT">
+<ag>
+<p n="locationId" t="arg:EQUALS;false;;;;">{locationId;2}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/vnd.ez.api.Content+json</p>
+</m>
+</rq>
+<rs>
+<rp id="22" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="23" op="GET /api/ezp/v2/content/locations/{locationId}/" tl="SIGNATURE">
+<ag>
+<p n="locationId" t="arg:EQUALS;false;;;;">{locationId;2}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/vnd.ez.api.Content+json</p>
+</m>
+</rq>
+<rs>
+<rp id="24" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</rs>
+</t>
+<t id="25" nd="true">
+<sp>
+<t id="3">
+<rq id="26" op="GET /api/ezp/v2/content/locations/{locationId}/children/" tl="EXACT">
+<ag>
+<p n="locationId" t="arg:EQUALS;false;;;;">{locationId;2}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/vnd.ez.api.Content+json</p>
+</m>
+</rq>
+<rs>
+<rp id="27" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="28" op="GET /api/ezp/v2/content/locations/{locationId}/children/" tl="SIGNATURE">
+<ag>
+<p n="locationId" t="arg:EQUALS;false;;;;">{locationId;2}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/vnd.ez.api.Content+json</p>
+</m>
+</rq>
+<rs>
+<rp id="29" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</rs>
+</t>
+<t id="30" nd="true">
+<sp>
+<t id="4">
+<rq id="31" op="POST /api/ezp/v2/content/objects/" tl="EXACT">
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/vnd.ez.api.Content+json</p>
+<p n="Content-Type">application/vnd.ez.api.ContentCreate+json</p>
+</m>
+</rq>
+<rs>
+<rp id="32" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="33" op="POST /api/ezp/v2/content/objects/" tl="SIGNATURE">
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/vnd.ez.api.Content+json</p>
+<p n="Content-Type">application/vnd.ez.api.ContentCreate+json</p>
+</m>
+</rq>
+<rs>
+<rp id="34" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</rs>
+</t>
+<t id="35" nd="true">
+<sp>
+<t id="5">
+<rq id="36" op="POST /api/ezp/v2/content/objects/{contentId}/versions/{versionNo}/" tl="EXACT">
+<ag>
+<p n="contentId" t="arg:EQUALS;false;;;;">{contentId}</p>
+<p n="versionNo" t="arg:EQUALS;false;;;;">{versionNo}</p>
+</ag>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="X-HTTP-Method-Override">PUBLISH</p>
+</m>
+</rq>
+<rs>
+<rp id="37" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="38" op="POST /api/ezp/v2/content/objects/{contentId}/versions/{versionNo}/" tl="SIGNATURE">
+<ag>
+<p n="contentId" t="arg:EQUALS;false;;;;">{contentId}</p>
+<p n="versionNo" t="arg:EQUALS;false;;;;">{versionNo}</p>
+</ag>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="X-HTTP-Method-Override">PUBLISH</p>
+</m>
+</rq>
+<rs>
+<rp id="39" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="8" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</ucrr>
+<usrr>
+<rp id="7" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd chs="UTF-8">&lt;html&gt;&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Not Found&lt;/h1&gt;The requested URL was not found on this server.&lt;p&gt;&lt;hr&gt;&lt;p&gt;&lt;i&gt;The DevTest VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;br&gt;&lt;font size=&quot;-2&quot;&gt;Produced by a DevTest virtualized web server.&lt;/font&gt;&lt;/body&gt;&lt;/html&gt;</bd>
+</rp>
+</usrr>
+</serviceImage>

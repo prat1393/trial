@@ -1,0 +1,256 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="2" name="imsConnectService" created="2014-10-23.11:13:42.862" lastModified="2014-10-23.11:14:07.387" version="8.0.0" buildNumber="8.0.0.1054">
+<cnvs>
+<cnv id="5" n="Conversation 1" t="INSTANCE">
+<t id="6" nd="true" n="WIDE">
+<ch>
+<t id="7" nd="true" n="LOOSE">
+<sp>
+<t id="1">
+<rq id="8" op="CLIENT_ACK_REQUEST" tl="EXACT">
+<ag>
+<p n="ClientId" t="arg:EQUALS;false;;;;">CLIENT01</p>
+<p n="TransactionCode" t="arg:EQUALS;false;;;;">IVTNO   </p>
+<p n="DestinationId" t="arg:EQUALS;false;;;;">DTSC    </p>
+</ag>
+<at>
+<p n="FullMessageLength">168</p>
+<p n="IRMHdr_LL">160</p>
+<p n="IRMHdr_ZZ">3</p>
+<p n="IRMHdr_Flag0">0</p>
+<p n="IRMHdr_UserExitId">*SAMPLE*</p>
+<p n="IRMHdr_NakReasonCode_enc">AAA=</p>
+<p n="IRMHdr_Reserved1_enc">AAA=</p>
+<p n="IRMHdr_MessageType">0</p>
+<p n="IRMHdr_WaitTime">1</p>
+<p n="IRMHdr_SocketConnectionType">16</p>
+<p n="IRMHdr_EncodingSchema">0</p>
+<p n="IRMHdr_ClientId">CLIENT01</p>
+<p n="UserHdr_TransactionCode">IVTNO   </p>
+<p n="UserHdr_DestinationId">DTSC    </p>
+<p n="UserHdr_MFSModName_enc">ICAgICAgICA=</p>
+<p n="UserHdr_Flag1">0</p>
+<p n="UserHdr_Flag2">64</p>
+<p n="UserHdr_Flag3">-127</p>
+<p n="UserHdr_Flag4">65</p>
+<p n="UserHdr_LogicalTerminal">        </p>
+<p n="UserHdr_RacfUserId">RACFUID </p>
+<p n="UserHdr_RacfGroupName">RACFGRUP</p>
+<p n="UserHdr_RacfPassword">RACFPSWD</p>
+<p n="UserHdr_RacfApplicationName">RACFAPNM</p>
+<p n="UserHdr_RerouteNameOrAltCid">        </p>
+<p n="UserHdr_TagAdapt">        </p>
+<p n="UserHdr_TagMap">        </p>
+<p n="UserHdr_CorrelationToken_enc">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</p>
+<p n="NumberOfPayloadSegments">0</p>
+</at>
+<m>
+<p n="lisa.vse.session.key">127.0.0.1:58180</p>
+<p n="MessageStructureName">RequestUserHeaderSample</p>
+</m>
+<bd bin="true">AAAAqACgAwAqU0FNUExFKgAAAAAAARAAQ0xJRU5UMDEAQIFBSVZUTk8gICBEVFNDICAgICAgICAgICAgUkFDRlVJRCBSQUNGR1JVUFJBQ0ZQU1dEUkFDRkFQTk0gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA</bd>
+</rq>
+<rs>
+<rp id="9" t="67">
+<m>
+<p n="ResponseIncludesLLLL">false</p>
+<p n="PayloadSegment_0_LL">20</p>
+<p n="PayloadSegment_0_ZZ_enc">AAA=</p>
+<p n="NumberOfPayloadSegments">1</p>
+</m>
+<bd bin="true">ABQAACpSRVFTVFMqAAAAKAAAAAE=</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="10" op="CLIENT_ACK_REQUEST" tl="SIGNATURE">
+<ag>
+<p n="ClientId" t="arg:EQUALS;false;;;;">CLIENT01</p>
+<p n="TransactionCode" t="arg:EQUALS;false;;;;">IVTNO   </p>
+<p n="DestinationId" t="arg:EQUALS;false;;;;">DTSC    </p>
+</ag>
+<at>
+<p n="FullMessageLength">168</p>
+<p n="IRMHdr_LL">160</p>
+<p n="IRMHdr_ZZ">3</p>
+<p n="IRMHdr_Flag0">0</p>
+<p n="IRMHdr_UserExitId">*SAMPLE*</p>
+<p n="IRMHdr_NakReasonCode_enc">AAA=</p>
+<p n="IRMHdr_Reserved1_enc">AAA=</p>
+<p n="IRMHdr_MessageType">0</p>
+<p n="IRMHdr_WaitTime">1</p>
+<p n="IRMHdr_SocketConnectionType">16</p>
+<p n="IRMHdr_EncodingSchema">0</p>
+<p n="IRMHdr_ClientId">CLIENT01</p>
+<p n="UserHdr_TransactionCode">IVTNO   </p>
+<p n="UserHdr_DestinationId">DTSC    </p>
+<p n="UserHdr_MFSModName_enc">ICAgICAgICA=</p>
+<p n="UserHdr_Flag1">0</p>
+<p n="UserHdr_Flag2">64</p>
+<p n="UserHdr_Flag3">-127</p>
+<p n="UserHdr_Flag4">65</p>
+<p n="UserHdr_LogicalTerminal">        </p>
+<p n="UserHdr_RacfUserId">RACFUID </p>
+<p n="UserHdr_RacfGroupName">RACFGRUP</p>
+<p n="UserHdr_RacfPassword">RACFPSWD</p>
+<p n="UserHdr_RacfApplicationName">RACFAPNM</p>
+<p n="UserHdr_RerouteNameOrAltCid">        </p>
+<p n="UserHdr_TagAdapt">        </p>
+<p n="UserHdr_TagMap">        </p>
+<p n="UserHdr_CorrelationToken_enc">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</p>
+<p n="NumberOfPayloadSegments">0</p>
+</at>
+<m>
+<p n="lisa.vse.session.key">127.0.0.1:58180</p>
+<p n="MessageStructureName">RequestUserHeaderSample</p>
+</m>
+<bd bin="true">AAAAqACgAwAqU0FNUExFKgAAAAAAARAAQ0xJRU5UMDEAQIFBSVZUTk8gICBEVFNDICAgICAgICAgICAgUkFDRlVJRCBSQUNGR1JVUFJBQ0ZQU1dEUkFDRkFQTk0gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA</bd>
+</rq>
+<rs>
+<rp id="11" t="67">
+<m>
+<p n="ResponseIncludesLLLL">false</p>
+<p n="PayloadSegment_0_LL">20</p>
+<p n="PayloadSegment_0_ZZ_enc">AAA=</p>
+<p n="NumberOfPayloadSegments">1</p>
+</m>
+<bd bin="true">ABQAACpSRVFTVFMqAAAAKAAAAAE=</bd>
+</rp>
+</rs>
+</t>
+</ch>
+<sp>
+<t id="12">
+<rq id="13" op="IVTNO   " tl="EXACT">
+<ag>
+<p n="ClientId" t="arg:EQUALS;false;;;;">CLIENT01</p>
+<p n="TransactionCode" t="arg:EQUALS;false;;;;">IVTNO   </p>
+<p n="DestinationId" t="arg:EQUALS;false;;;;">DTSC    </p>
+</ag>
+<at>
+<p n="FullMessageLength">227</p>
+<p n="IRMHdr_LL">160</p>
+<p n="IRMHdr_ZZ">3</p>
+<p n="IRMHdr_Flag0">0</p>
+<p n="IRMHdr_UserExitId">*SAMPLE*</p>
+<p n="IRMHdr_NakReasonCode_enc">AAA=</p>
+<p n="IRMHdr_Reserved1_enc">AAA=</p>
+<p n="IRMHdr_MessageType">0</p>
+<p n="IRMHdr_WaitTime">103</p>
+<p n="IRMHdr_SocketConnectionType">16</p>
+<p n="IRMHdr_EncodingSchema">0</p>
+<p n="IRMHdr_ClientId">CLIENT01</p>
+<p n="UserHdr_TransactionCode">IVTNO   </p>
+<p n="UserHdr_DestinationId">DTSC    </p>
+<p n="UserHdr_MFSModName_enc">ICAgICAgICA=</p>
+<p n="UserHdr_Flag1">0</p>
+<p n="UserHdr_Flag2">64</p>
+<p n="UserHdr_Flag3">-127</p>
+<p n="UserHdr_Flag4">32</p>
+<p n="UserHdr_LogicalTerminal">        </p>
+<p n="UserHdr_RacfUserId">RACFUID </p>
+<p n="UserHdr_RacfGroupName">RACFGRUP</p>
+<p n="UserHdr_RacfPassword">RACFPSWD</p>
+<p n="UserHdr_RacfApplicationName">RACFAPNM</p>
+<p n="UserHdr_RerouteNameOrAltCid">        </p>
+<p n="UserHdr_TagAdapt">        </p>
+<p n="UserHdr_TagMap">        </p>
+<p n="UserHdr_CorrelationToken_enc">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</p>
+<p n="PayloadSegment_0_LL">59</p>
+<p n="PayloadSegment_0_ZZ_enc">AAA=</p>
+<p n="PayloadSegment_0_Data_enc">SVZUTk8gICAgIERJU1BMQVkgUE9XRVIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA==</p>
+</at>
+<m>
+<p n="lisa.vse.session.key">127.0.0.1:58180</p>
+<p n="MessageStructureName">RequestUserHeaderSample</p>
+</m>
+<bd bin="true">SVZUTk8gICAgIERJU1BMQVkgUE9XRVIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA==</bd>
+</rq>
+<rs>
+<rp id="14" t="58">
+<m>
+<p n="ResponseIncludesLLLL">false</p>
+<p n="PayloadSegment_0_LL">93</p>
+<p n="PayloadSegment_0_ZZ_enc">AwA=</p>
+<p n="PayloadSegment_1_LL">12</p>
+<p n="PayloadSegment_1_ZZ_enc">oAA=</p>
+<p n="PayloadSegment_1_Data_enc">KkNTTU9LWSo=</p>
+<p n="NumberOfPayloadSegments">2</p>
+</m>
+<bd bin="true">AF0DAEVOVFJZIFdBUyBESVNQTEFZRUQgICAgICAgICAgICAgICAgICAgICBESVNQTEFZIFBPV0VSICAgICBEQVZJRCAgICAgMTAxICAgICAgIDc1MDcwICAwMDI2</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="15" op="IVTNO   " tl="SIGNATURE">
+<ag>
+<p n="ClientId" t="arg:EQUALS;false;;;;">CLIENT01</p>
+<p n="TransactionCode" t="arg:EQUALS;false;;;;">IVTNO   </p>
+<p n="DestinationId" t="arg:EQUALS;false;;;;">DTSC    </p>
+</ag>
+<at>
+<p n="FullMessageLength">227</p>
+<p n="IRMHdr_LL">160</p>
+<p n="IRMHdr_ZZ">3</p>
+<p n="IRMHdr_Flag0">0</p>
+<p n="IRMHdr_UserExitId">*SAMPLE*</p>
+<p n="IRMHdr_NakReasonCode_enc">AAA=</p>
+<p n="IRMHdr_Reserved1_enc">AAA=</p>
+<p n="IRMHdr_MessageType">0</p>
+<p n="IRMHdr_WaitTime">103</p>
+<p n="IRMHdr_SocketConnectionType">16</p>
+<p n="IRMHdr_EncodingSchema">0</p>
+<p n="IRMHdr_ClientId">CLIENT01</p>
+<p n="UserHdr_TransactionCode">IVTNO   </p>
+<p n="UserHdr_DestinationId">DTSC    </p>
+<p n="UserHdr_MFSModName_enc">ICAgICAgICA=</p>
+<p n="UserHdr_Flag1">0</p>
+<p n="UserHdr_Flag2">64</p>
+<p n="UserHdr_Flag3">-127</p>
+<p n="UserHdr_Flag4">32</p>
+<p n="UserHdr_LogicalTerminal">        </p>
+<p n="UserHdr_RacfUserId">RACFUID </p>
+<p n="UserHdr_RacfGroupName">RACFGRUP</p>
+<p n="UserHdr_RacfPassword">RACFPSWD</p>
+<p n="UserHdr_RacfApplicationName">RACFAPNM</p>
+<p n="UserHdr_RerouteNameOrAltCid">        </p>
+<p n="UserHdr_TagAdapt">        </p>
+<p n="UserHdr_TagMap">        </p>
+<p n="UserHdr_CorrelationToken_enc">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</p>
+<p n="PayloadSegment_0_LL">59</p>
+<p n="PayloadSegment_0_ZZ_enc">AAA=</p>
+<p n="PayloadSegment_0_Data_enc">SVZUTk8gICAgIERJU1BMQVkgUE9XRVIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA==</p>
+</at>
+<m>
+<p n="lisa.vse.session.key">127.0.0.1:58180</p>
+<p n="MessageStructureName">RequestUserHeaderSample</p>
+</m>
+<bd bin="true">SVZUTk8gICAgIERJU1BMQVkgUE9XRVIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA==</bd>
+</rq>
+<rs>
+<rp id="16" t="58">
+<m>
+<p n="ResponseIncludesLLLL">false</p>
+<p n="PayloadSegment_0_LL">93</p>
+<p n="PayloadSegment_0_ZZ_enc">AwA=</p>
+<p n="PayloadSegment_1_LL">12</p>
+<p n="PayloadSegment_1_ZZ_enc">oAA=</p>
+<p n="PayloadSegment_1_Data_enc">KkNTTU9LWSo=</p>
+<p n="NumberOfPayloadSegments">2</p>
+</m>
+<bd bin="true">AF0DAEVOVFJZIFdBUyBESVNQTEFZRUQgICAgICAgICAgICAgICAgICAgICBESVNQTEFZIFBPV0VSICAgICBEQVZJRCAgICAgMTAxICAgICAgIDc1MDcwICAwMDI2</bd>
+</rp>
+</rs>
+</t>
+</cnv>
+</cnvs>
+<ucrr>
+<rp id="4" t="0">
+</rp>
+</ucrr>
+<usrr>
+<rp id="3" t="0">
+</rp>
+</usrr>
+</serviceImage>

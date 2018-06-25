@@ -1,0 +1,14 @@
+<Asset Version="2"><AssetInfo type="javax.jms.Destination" hashcode="-1068996491"><Url>config://dest-40C24FEB04B711E48234D49A205683D0</Url>
+<Name>CARS.PARTNER.RESPONSE</Name>
+<Description></Description>
+</AssetInfo>
+<JndiQueue>
+<Context>
+<AssetInfo type="javax.naming.Context" hashcode="1508073472"><Url>config://jndi-5AC5C44AFB1211E3BA223C15C2B8B182</Url>
+</AssetInfo>
+<Ref>
+</Ref>
+</Context>
+<Name>dynamicQueues/CARS.PARTNER.RESPONSE</Name>
+</JndiQueue>
+</Asset>

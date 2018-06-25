@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+
+<Run name="MonitorRunBase" think="100" pathfinder="false" >
+
+<meta><create version="0.0" buildNumber="0.0.0.0" author="rvickers" date="01/07/2010" host="Dogma.local"  /><lastEdited version="0.0" buildNumber="0.0.0.0" author="rvickers" date="01/07/2010" host="Dogma.local"  /></meta>
+
+<id>62653737656135612D623239632D3432</id>
+<Documentation></Documentation>
+<IsInProject>true</IsInProject>
+<paceTime>0</paceTime>
+<paceTrans>0</paceTrans>
+<LoadPattern>
+<type>com.itko.lisa.coordinator.runpatterns.RunNTimesPattern</type>
+<cycles>1</cycles>
+<runfor>0</runfor>
+<ssinstances>1</ssinstances>
+</LoadPattern>
+<Distribution>
+<type>com.itko.lisa.coordinator.runpatterns.PercentDistribution</type>
+<Simulator>
+<name>auto</name>
+<percent>100</percent>
+</Simulator>
+</Distribution>
+<Metrics >
+<SampleRate>1</SampleRate>
+<IntervalRate>10</IntervalRate>
+<Metric type="com.itko.lisa.stats.TestEventCollector">
+<scale>0.0</scale>
+<valueType>1</valueType>
+<eventid>13</eventid>
+<keyexpr>*</keyexpr>
+<counter>true</counter>
+</Metric>
+<Metric type="com.itko.lisa.stats.TestEventCollector">
+<scale>0.0</scale>
+<valueType>1</valueType>
+<eventid>20</eventid>
+<keyexpr>*</keyexpr>
+<counter>true</counter>
+</Metric>
+<Metric type="com.itko.lisa.stats.TestEventCollector">
+<scale>0.0</scale>
+<valueType>1</valueType>
+<eventid>15</eventid>
+<keyexpr>*</keyexpr>
+<counter>true</counter>
+</Metric>
+<Metric type="com.itko.lisa.stats.TestEventCollector">
+<scale>0.0</scale>
+<valueType>1</valueType>
+<eventid>50</eventid>
+<keyexpr>*</keyexpr>
+<counter>true</counter>
+</Metric>
+<Metric type="com.itko.lisa.stats.TRIMetricCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<metric>0</metric>
+</Metric>
+<Metric type="com.itko.lisa.stats.TRIMetricCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<metric>1</metric>
+</Metric>
+<Metric type="com.itko.lisa.stats.TRIMetricCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<metric>5</metric>
+</Metric>
+</Metrics>
+</Run>

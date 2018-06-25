@@ -1,0 +1,33 @@
+    <addUserObject xmlns="http://ejb3.examples.itko.com/">
+      <userObject xmlns="">
+        <accounts>
+          <balance>131.95</balance>
+          <name>Basic Checking</name>
+          <type>CHECKING</type>
+        </accounts>
+        <accounts>
+          <balance>134.16</balance>
+          <name>Orange Savings</name>
+          <type>SAVINGS</type>
+        </accounts>
+        <addresses>
+          <city>San francisco</city>
+          <line1>Presidio</line1>
+          <state>California</state>
+          <zip>20135</zip>
+        </addresses>
+        <addresses>
+          <city>Tucson</city>
+          <line1>Bajoran wormhole</line1>
+          <state>Arizona</state>
+          <zip>20666</zip>
+        </addresses>
+        <email>Christine.Chapel@StarTrek.com</email>
+        <fname>Christine</fname>
+        <lname>Chapel</lname>
+        <login>{{ds_login}}</login>
+        <phone>234-4360</phone>
+        <pwd>chapel123</pwd>
+        <roleKey>REGULAR</roleKey>
+      </userObject>
+    </addUserObject>

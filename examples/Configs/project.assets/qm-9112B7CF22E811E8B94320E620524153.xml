@@ -1,0 +1,13 @@
+<Asset Version="2"><AssetInfo type="com.ibm.mq.MQQueueManager" hashcode="-1400066459"><Url>config://qm-9112B7CF22E811E8B94320E620524153</Url>
+<Name>manager1</Name>
+<Description></Description>
+</AssetInfo>
+<QueueManager>
+<QueueManager>QM1</QueueManager>
+<MqEnvironment>
+<Entry key="Host">localhost</Entry>
+<Entry key="Port">1414</Entry>
+<Entry key="Channel">C1</Entry>
+</MqEnvironment>
+</QueueManager>
+</Asset>

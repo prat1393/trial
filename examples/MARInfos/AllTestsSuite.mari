@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+
+<MarInfo>
+<name>AllTestsSuite</name>
+<type>SUITE</type>
+<optimized>true</optimized>
+<deployInfo>
+    <PrimaryAsset>Suites/AllTestsSuite.ste</PrimaryAsset>
+    <Configuration>Configs/project.config</Configuration>
+</deployInfo>
+</MarInfo>

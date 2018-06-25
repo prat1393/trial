@@ -1,0 +1,32 @@
+<!-- The following is a list of content types used to describe resources in LISA. -->
+<!-- Please modify as needed. -->
+<?xml version="1.0" encoding="UTF8"?>
+<contentTypes>
+    <contentType fileExtension="bmp" mimeType="image/bmp" friendlyName="Image (BMP)"/>
+    <contentType fileExtension="class" mimeType="application/octet-stream" friendlyName="Java Class"/>
+    <contentType fileExtension="css" mimeType="text/css" friendlyName="Cascading Stylesheet"/>
+    <contentType fileExtension="csv" mimeType="text/comma-separated-values" friendlyName="Comma Separated Values"/>
+    <contentType fileExtension="gif" mimeType="image/gif" friendlyName="Image (GIF)"/>
+    <contentType fileExtension="htm" mimeType="text/html" friendlyName="HTML"/>
+    <contentType fileExtension="html" mimeType="text/html" friendlyName="HTML"/>
+    <contentType fileExtension="jar" mimeType="application/java-archive" friendlyName="Java Archive"/>
+    <contentType fileExtension="jpe" mimeType="image/jpeg" friendlyName="Image (JPEG)"/>
+    <contentType fileExtension="jpeg" mimeType="image/jpeg" friendlyName="Image (JPEG)"/>
+    <contentType fileExtension="jpg" mimeType="image/jpeg" friendlyName="Image (JPEG)"/>
+    <contentType fileExtension="pdf" mimeType="application/pdf" friendlyName="PDF"/>    
+    <contentType fileExtension="rtf" mimeType="application/rtf" friendlyName="Rich Text"/>
+    <contentType fileExtension="tif" mimeType="image/tiff" friendlyName="Image (TIFF)"/>
+    <contentType fileExtension="tiff" mimeType="image/tiff" friendlyName="Image (TIFF)"/>
+    <contentType fileExtension="tsv" mimeType="text/tab-separated-values" friendlyName="Tab Separated Values"/>
+    <contentType fileExtension="txt" mimeType="text/plain" friendlyName="Text"/>
+    <contentType fileExtension="xla" mimeType="application/vnd.ms-excel" friendlyName="Microsoft Excel"/>
+    <contentType fileExtension="xlc" mimeType="application/vnd.ms-excel" friendlyName="Microsoft Excel"/>
+    <contentType fileExtension="xlm" mimeType="application/vnd.ms-excel" friendlyName="Microsoft Excel"/>
+    <contentType fileExtension="xls" mimeType="application/vnd.ms-excel" friendlyName="Microsoft Excel"/>
+    <contentType fileExtension="xlt" mimeType="application/vnd.ms-excel" friendlyName="Microsoft Excel"/>
+    <contentType fileExtension="xlw" mimeType="application/vnd.ms-excel" friendlyName="Microsoft Excel"/>
+    <contentType fileExtension="xml" mimeType="text/xml" friendlyName="XML"/>
+    <contentType fileExtension="xsl" mimeType="text/xml" friendlyName="XML Stylesheet"/>
+    <contentType fileExtension="xslt" mimeType="text/xml" friendlyName="XML Transform"/>
+    <contentType fileExtension="zip" mimeType="application/zip" friendlyName="Compressed Archive"/>
+</contentTypes>

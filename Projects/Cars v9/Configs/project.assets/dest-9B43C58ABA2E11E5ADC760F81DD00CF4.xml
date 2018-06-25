@@ -1,0 +1,14 @@
+<Asset Version="2"><AssetInfo type="javax.jms.Destination" hashcode="1381191028"><Url>config://dest-9B43C58ABA2E11E5ADC760F81DD00CF4</Url>
+<Name>PROXY.CARS.PARTNER.CHASE</Name>
+<Description></Description>
+</AssetInfo>
+<JndiQueue>
+<Context>
+<AssetInfo type="javax.naming.Context" hashcode="1508073472"><Url>config://jndi-5AC5C44AFB1211E3BA223C15C2B8B182</Url>
+</AssetInfo>
+<Ref>
+</Ref>
+</Context>
+<Name>dynamicQueues/PROXY.CARS.PARTNER.CHASE</Name>
+</JndiQueue>
+</Asset>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<MarInfo>
+<name>Validate</name>
+<type>TEST_MONITOR</type>
+<optimized>true</optimized>
+<deployInfo>
+    <PrimaryAsset>Monitors/creditCheckValidate.tst</PrimaryAsset>
+    <Configuration>Configs/project.config</Configuration>
+    <StagingDocument>Monitors/monitorRunBase.stg</StagingDocument>
+    <ServiceName>Credit</ServiceName>
+    <NotifyEMail>fake.email@fake.company.com</NotifyEMail>
+    <Priority>3</Priority>
+    <CRONInfo>1|1289577660000|1322668860000|2| | | </CRONInfo>
+</deployInfo>
+<notes>This is one line of notes.&#10;And here is another.</notes>
+</MarInfo>

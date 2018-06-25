@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<MarInfo>
+<name>DatabaseModel</name>
+<type>VIRTUAL_SERVICE</type>
+<optimized>true</optimized>
+<deployInfo>
+    <PrimaryAsset>VServices/DatabaseModel.vsm</PrimaryAsset>
+    <Configuration>Configs/project.config</Configuration>
+    <ConcurrentCapacity>1</ConcurrentCapacity>
+    <ThinkTimePercent>100</ThinkTimePercent>
+    <AutoRestart>true</AutoRestart>
+</deployInfo>
+</MarInfo>

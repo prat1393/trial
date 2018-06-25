@@ -1,0 +1,2017 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="59" name="Swagger" created="2018-06-21.22:17:14.481" lastModified="2018-06-21.22:35:23.401" version="8.4.0" buildNumber="8.4.0.227">
+<n>Title: Swagger Petstore&#10;Description: This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.&#10;Version: 1.0.0</n>
+<st>
+<t id="62" nd="true">
+<sp>
+<t id="63">
+<rq id="64" op="PUT /v2/pet/" tl="EXACT">
+<m>
+<p n="HTTP-Method">PUT</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">46</p>
+</m>
+<bd chs="UTF-8">Pet object that needs to be added to the store</bd>
+</rq>
+<rs>
+<rp id="65" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Invalid ID supplied</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="66" op="PUT /v2/pet/" tl="SIGNATURE">
+<m>
+<p n="HTTP-Method">PUT</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">46</p>
+</m>
+<bd chs="UTF-8">Pet object that needs to be added to the store</bd>
+</rq>
+<rs>
+<rp id="67" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Invalid ID supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="68" nd="true">
+<sp>
+<t id="2">
+<rq id="69" op="POST /v2/pet/" tl="EXACT">
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">46</p>
+</m>
+<bd chs="UTF-8">Pet object that needs to be added to the store</bd>
+</rq>
+<rs>
+<rp id="70" t="0">
+<m>
+<p n="HTTP-Response-Code">405</p>
+<p n="HTTP-Response-Code-Text">Method Not Allowed</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">13</p>
+</m>
+<bd chs="UTF-8">Invalid input</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="71" op="POST /v2/pet/" tl="SIGNATURE">
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">46</p>
+</m>
+<bd chs="UTF-8">Pet object that needs to be added to the store</bd>
+</rq>
+<rs>
+<rp id="72" t="0">
+<m>
+<p n="HTTP-Response-Code">405</p>
+<p n="HTTP-Response-Code-Text">Method Not Allowed</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">13</p>
+</m>
+<bd chs="UTF-8">Invalid input</bd>
+</rp>
+</rs>
+</t>
+<t id="73" nd="true">
+<sp>
+<t id="4">
+<rq id="74" op="GET /v2/pet/findByStatus/" tl="EXACT">
+<ag>
+<p n="status" t="arg:EQUALS;false;;;;">{status}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="75" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+<t id="5">
+<rq id="76" op="GET /v2/pet/findByStatus/" tl="EXACT">
+<ag>
+<p n="status" t="arg:EQUALS;false;;;;">{status_1}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="77" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+<t id="6">
+<rq id="78" op="GET /v2/pet/findByStatus/" tl="EXACT">
+<ag>
+<p n="status" t="arg:EQUALS;false;;;;">{status_2}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="79" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">Invalid status value</bd>
+</rp>
+</rs>
+</t>
+<t id="7">
+<rq id="80" op="GET /v2/pet/findByStatus/" tl="EXACT">
+<ag>
+<p n="status" t="arg:EQUALS;false;;;;">{status_3}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="81" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">Invalid status value</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="82" op="GET /v2/pet/findByStatus/" tl="SIGNATURE">
+<ag>
+<p n="status" t="arg:EQUALS;false;;;;">{status}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="83" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+<t id="84" nd="true">
+<sp>
+<t id="8">
+<rq id="85" op="GET /v2/pet/findByTags/" tl="EXACT">
+<ag>
+<p n="tags" t="arg:EQUALS;false;;;;">{tags}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="86" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+<t id="9">
+<rq id="87" op="GET /v2/pet/findByTags/" tl="EXACT">
+<ag>
+<p n="tags" t="arg:EQUALS;false;;;;">{tags_1}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="88" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+<t id="10">
+<rq id="89" op="GET /v2/pet/findByTags/" tl="EXACT">
+<ag>
+<p n="tags" t="arg:EQUALS;false;;;;">{tags_2}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="90" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">17</p>
+</m>
+<bd chs="UTF-8">Invalid tag value</bd>
+</rp>
+</rs>
+</t>
+<t id="11">
+<rq id="91" op="GET /v2/pet/findByTags/" tl="EXACT">
+<ag>
+<p n="tags" t="arg:EQUALS;false;;;;">{tags_3}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="92" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">17</p>
+</m>
+<bd chs="UTF-8">Invalid tag value</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="93" op="GET /v2/pet/findByTags/" tl="SIGNATURE">
+<ag>
+<p n="tags" t="arg:EQUALS;false;;;;">{tags}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="94" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+<t id="95" nd="true">
+<sp>
+<t id="12">
+<rq id="96" op="GET /v2/pet/{petId}/" tl="EXACT">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="97" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">16</p>
+</m>
+<bd chs="UTF-8">Schema Ref = Pet</bd>
+</rp>
+</rs>
+</t>
+<t id="13">
+<rq id="98" op="GET /v2/pet/{petId}/" tl="EXACT">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId_1}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="99" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">16</p>
+</m>
+<bd chs="UTF-8">Schema Ref = Pet</bd>
+</rp>
+</rs>
+</t>
+<t id="14">
+<rq id="100" op="GET /v2/pet/{petId}/" tl="EXACT">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId_2}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="101" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Invalid ID supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="15">
+<rq id="102" op="GET /v2/pet/{petId}/" tl="EXACT">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId_3}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="103" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Invalid ID supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="16">
+<rq id="104" op="GET /v2/pet/{petId}/" tl="EXACT">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId_4}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="105" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">13</p>
+</m>
+<bd chs="UTF-8">Pet not found</bd>
+</rp>
+</rs>
+</t>
+<t id="17">
+<rq id="106" op="GET /v2/pet/{petId}/" tl="EXACT">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId_5}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="107" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">13</p>
+</m>
+<bd chs="UTF-8">Pet not found</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="108" op="GET /v2/pet/{petId}/" tl="SIGNATURE">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="109" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">16</p>
+</m>
+<bd chs="UTF-8">Schema Ref = Pet</bd>
+</rp>
+</rs>
+</t>
+<t id="110" nd="true">
+<sp>
+<t id="18">
+<rq id="111" op="POST /v2/pet/{petId}/" tl="EXACT">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId}</p>
+</ag>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">application/x-www-form-urlencoded</p>
+<p n="Content-Length">10</p>
+</m>
+<bd chs="UTF-8">UNDEFINED&#10;</bd>
+</rq>
+<rs>
+<rp id="112" t="0">
+<m>
+<p n="HTTP-Response-Code">405</p>
+<p n="HTTP-Response-Code-Text">Method Not Allowed</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">13</p>
+</m>
+<bd chs="UTF-8">Invalid input</bd>
+</rp>
+</rs>
+</t>
+<t id="19">
+<rq id="113" op="POST /v2/pet/{petId}/" tl="EXACT">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId_1}</p>
+</ag>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">application/x-www-form-urlencoded</p>
+<p n="Content-Length">10</p>
+</m>
+<bd chs="UTF-8">UNDEFINED&#10;</bd>
+</rq>
+<rs>
+<rp id="114" t="0">
+<m>
+<p n="HTTP-Response-Code">405</p>
+<p n="HTTP-Response-Code-Text">Method Not Allowed</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">13</p>
+</m>
+<bd chs="UTF-8">Invalid input</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="115" op="POST /v2/pet/{petId}/" tl="SIGNATURE">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId}</p>
+</ag>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">application/x-www-form-urlencoded</p>
+<p n="Content-Length">10</p>
+</m>
+<bd chs="UTF-8">UNDEFINED&#10;</bd>
+</rq>
+<rs>
+<rp id="116" t="0">
+<m>
+<p n="HTTP-Response-Code">405</p>
+<p n="HTTP-Response-Code-Text">Method Not Allowed</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">13</p>
+</m>
+<bd chs="UTF-8">Invalid input</bd>
+</rp>
+</rs>
+</t>
+<t id="117" nd="true">
+<sp>
+<t id="20">
+<rq id="118" op="DELETE /v2/pet/{petId}/" tl="EXACT">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="api_key">{api_key}</p>
+</m>
+</rq>
+<rs>
+<rp id="119" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Invalid ID supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="21">
+<rq id="120" op="DELETE /v2/pet/{petId}/" tl="EXACT">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId_1}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="api_key">{api_key_1}</p>
+</m>
+</rq>
+<rs>
+<rp id="121" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Invalid ID supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="22">
+<rq id="122" op="DELETE /v2/pet/{petId}/" tl="EXACT">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId_2}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="api_key">{api_key_2}</p>
+</m>
+</rq>
+<rs>
+<rp id="123" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">13</p>
+</m>
+<bd chs="UTF-8">Pet not found</bd>
+</rp>
+</rs>
+</t>
+<t id="23">
+<rq id="124" op="DELETE /v2/pet/{petId}/" tl="EXACT">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId_3}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="api_key">{api_key_3}</p>
+</m>
+</rq>
+<rs>
+<rp id="125" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">13</p>
+</m>
+<bd chs="UTF-8">Pet not found</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="126" op="DELETE /v2/pet/{petId}/" tl="SIGNATURE">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="api_key">{api_key}</p>
+</m>
+</rq>
+<rs>
+<rp id="127" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Invalid ID supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="128" nd="true">
+<sp>
+<t id="24">
+<rq id="129" op="POST /v2/pet/{petId}/uploadImage/" tl="EXACT">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId}</p>
+</ag>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">multipart/form-data</p>
+<p n="Content-Length">10</p>
+</m>
+<bd chs="UTF-8">UNDEFINED&#10;</bd>
+</rq>
+<rs>
+<rp id="130" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">24</p>
+</m>
+<bd chs="UTF-8">Schema Ref = ApiResponse</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="131" op="POST /v2/pet/{petId}/uploadImage/" tl="SIGNATURE">
+<ag>
+<p n="petId" t="arg:EQUALS;false;;;;">{petId}</p>
+</ag>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Type">multipart/form-data</p>
+<p n="Content-Length">10</p>
+</m>
+<bd chs="UTF-8">UNDEFINED&#10;</bd>
+</rq>
+<rs>
+<rp id="132" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">24</p>
+</m>
+<bd chs="UTF-8">Schema Ref = ApiResponse</bd>
+</rp>
+</rs>
+</t>
+<t id="133" nd="true">
+<sp>
+<t id="25">
+<rq id="134" op="GET /v2/store/inventory/" tl="EXACT">
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="135" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="136" op="GET /v2/store/inventory/" tl="SIGNATURE">
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="137" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+<t id="138" nd="true">
+<sp>
+<t id="26">
+<rq id="139" op="POST /v2/store/order/" tl="EXACT">
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Length">35</p>
+</m>
+<bd chs="UTF-8">order placed for purchasing the pet</bd>
+</rq>
+<rs>
+<rp id="140" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">18</p>
+</m>
+<bd chs="UTF-8">Schema Ref = Order</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="141" op="POST /v2/store/order/" tl="SIGNATURE">
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Length">35</p>
+</m>
+<bd chs="UTF-8">order placed for purchasing the pet</bd>
+</rq>
+<rs>
+<rp id="142" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">18</p>
+</m>
+<bd chs="UTF-8">Schema Ref = Order</bd>
+</rp>
+</rs>
+</t>
+<t id="143" nd="true">
+<sp>
+<t id="27">
+<rq id="144" op="GET /v2/store/order/{orderId}/" tl="EXACT">
+<ag>
+<p n="orderId" t="arg:EQUALS;false;;;;">{orderId}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="145" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">18</p>
+</m>
+<bd chs="UTF-8">Schema Ref = Order</bd>
+</rp>
+</rs>
+</t>
+<t id="28">
+<rq id="146" op="GET /v2/store/order/{orderId}/" tl="EXACT">
+<ag>
+<p n="orderId" t="arg:EQUALS;false;;;;">{orderId_1}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="147" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">18</p>
+</m>
+<bd chs="UTF-8">Schema Ref = Order</bd>
+</rp>
+</rs>
+</t>
+<t id="29">
+<rq id="148" op="GET /v2/store/order/{orderId}/" tl="EXACT">
+<ag>
+<p n="orderId" t="arg:EQUALS;false;;;;">{orderId_2}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="149" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Invalid ID supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="30">
+<rq id="150" op="GET /v2/store/order/{orderId}/" tl="EXACT">
+<ag>
+<p n="orderId" t="arg:EQUALS;false;;;;">{orderId_3}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="151" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Invalid ID supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="31">
+<rq id="152" op="GET /v2/store/order/{orderId}/" tl="EXACT">
+<ag>
+<p n="orderId" t="arg:EQUALS;false;;;;">{orderId_4}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="153" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">15</p>
+</m>
+<bd chs="UTF-8">Order not found</bd>
+</rp>
+</rs>
+</t>
+<t id="32">
+<rq id="154" op="GET /v2/store/order/{orderId}/" tl="EXACT">
+<ag>
+<p n="orderId" t="arg:EQUALS;false;;;;">{orderId_5}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="155" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">15</p>
+</m>
+<bd chs="UTF-8">Order not found</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="156" op="GET /v2/store/order/{orderId}/" tl="SIGNATURE">
+<ag>
+<p n="orderId" t="arg:EQUALS;false;;;;">{orderId}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="157" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">18</p>
+</m>
+<bd chs="UTF-8">Schema Ref = Order</bd>
+</rp>
+</rs>
+</t>
+<t id="158" nd="true">
+<sp>
+<t id="33">
+<rq id="159" op="DELETE /v2/store/order/{orderId}/" tl="EXACT">
+<ag>
+<p n="orderId" t="arg:EQUALS;false;;;;">{orderId}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="160" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Invalid ID supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="34">
+<rq id="161" op="DELETE /v2/store/order/{orderId}/" tl="EXACT">
+<ag>
+<p n="orderId" t="arg:EQUALS;false;;;;">{orderId_1}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="162" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Invalid ID supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="35">
+<rq id="163" op="DELETE /v2/store/order/{orderId}/" tl="EXACT">
+<ag>
+<p n="orderId" t="arg:EQUALS;false;;;;">{orderId_2}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="164" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">15</p>
+</m>
+<bd chs="UTF-8">Order not found</bd>
+</rp>
+</rs>
+</t>
+<t id="36">
+<rq id="165" op="DELETE /v2/store/order/{orderId}/" tl="EXACT">
+<ag>
+<p n="orderId" t="arg:EQUALS;false;;;;">{orderId_3}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="166" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">15</p>
+</m>
+<bd chs="UTF-8">Order not found</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="167" op="DELETE /v2/store/order/{orderId}/" tl="SIGNATURE">
+<ag>
+<p n="orderId" t="arg:EQUALS;false;;;;">{orderId}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="168" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Invalid ID supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="169" nd="true">
+<sp>
+<t id="37">
+<rq id="170" op="POST /v2/user/" tl="EXACT">
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Created user object</bd>
+</rq>
+<rs>
+<rp id="171" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="172" op="POST /v2/user/" tl="SIGNATURE">
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Created user object</bd>
+</rq>
+<rs>
+<rp id="173" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+<t id="174" nd="true">
+<sp>
+<t id="38">
+<rq id="175" op="POST /v2/user/createWithArray/" tl="EXACT">
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">List of user object</bd>
+</rq>
+<rs>
+<rp id="176" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="177" op="POST /v2/user/createWithArray/" tl="SIGNATURE">
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">List of user object</bd>
+</rq>
+<rs>
+<rp id="178" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+<t id="179" nd="true">
+<sp>
+<t id="39">
+<rq id="180" op="POST /v2/user/createWithList/" tl="EXACT">
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">List of user object</bd>
+</rq>
+<rs>
+<rp id="181" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="182" op="POST /v2/user/createWithList/" tl="SIGNATURE">
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">List of user object</bd>
+</rq>
+<rs>
+<rp id="183" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+<t id="184" nd="true">
+<sp>
+<t id="40">
+<rq id="185" op="GET /v2/user/login/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username}</p>
+<p n="password" t="arg:EQUALS;false;;;;">{password}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="186" t="0">
+<m>
+<p n="X-Rate-Limit">{X-Rate-Limit}</p>
+<p n="X-Expires-After">{X-Expires-After}</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+<t id="41">
+<rq id="187" op="GET /v2/user/login/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username_1}</p>
+<p n="password" t="arg:EQUALS;false;;;;">{password_1}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="188" t="0">
+<m>
+<p n="X-Rate-Limit">{X-Rate-Limit_1}</p>
+<p n="X-Expires-After">{X-Expires-After_1}</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+<t id="42">
+<rq id="189" op="GET /v2/user/login/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username_2}</p>
+<p n="password" t="arg:EQUALS;false;;;;">{password_2}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="190" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">34</p>
+</m>
+<bd chs="UTF-8">Invalid username/password supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="43">
+<rq id="191" op="GET /v2/user/login/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username_3}</p>
+<p n="password" t="arg:EQUALS;false;;;;">{password_3}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="192" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">34</p>
+</m>
+<bd chs="UTF-8">Invalid username/password supplied</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="193" op="GET /v2/user/login/" tl="SIGNATURE">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username}</p>
+<p n="password" t="arg:EQUALS;false;;;;">{password}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="194" t="0">
+<m>
+<p n="X-Rate-Limit">{X-Rate-Limit}</p>
+<p n="X-Expires-After">{X-Expires-After}</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+<t id="195" nd="true">
+<sp>
+<t id="44">
+<rq id="196" op="GET /v2/user/logout/" tl="EXACT">
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="197" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="198" op="GET /v2/user/logout/" tl="SIGNATURE">
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="199" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">20</p>
+</m>
+<bd chs="UTF-8">successful operation</bd>
+</rp>
+</rs>
+</t>
+<t id="200" nd="true">
+<sp>
+<t id="45">
+<rq id="201" op="GET /v2/user/{username}/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="202" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">17</p>
+</m>
+<bd chs="UTF-8">Schema Ref = User</bd>
+</rp>
+</rs>
+</t>
+<t id="46">
+<rq id="203" op="GET /v2/user/{username}/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username_1}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="204" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">17</p>
+</m>
+<bd chs="UTF-8">Schema Ref = User</bd>
+</rp>
+</rs>
+</t>
+<t id="47">
+<rq id="205" op="GET /v2/user/{username}/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username_2}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="206" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">25</p>
+</m>
+<bd chs="UTF-8">Invalid username supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="48">
+<rq id="207" op="GET /v2/user/{username}/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username_3}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="208" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">25</p>
+</m>
+<bd chs="UTF-8">Invalid username supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="49">
+<rq id="209" op="GET /v2/user/{username}/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username_4}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="210" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">14</p>
+</m>
+<bd chs="UTF-8">User not found</bd>
+</rp>
+</rs>
+</t>
+<t id="50">
+<rq id="211" op="GET /v2/user/{username}/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username_5}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="212" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">14</p>
+</m>
+<bd chs="UTF-8">User not found</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="213" op="GET /v2/user/{username}/" tl="SIGNATURE">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username}</p>
+</ag>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="214" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">17</p>
+</m>
+<bd chs="UTF-8">Schema Ref = User</bd>
+</rp>
+</rs>
+</t>
+<t id="215" nd="true">
+<sp>
+<t id="51">
+<rq id="216" op="PUT /v2/user/{username}/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username}</p>
+</ag>
+<m>
+<p n="HTTP-Method">PUT</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Updated user object</bd>
+</rq>
+<rs>
+<rp id="217" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">21</p>
+</m>
+<bd chs="UTF-8">Invalid user supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="52">
+<rq id="218" op="PUT /v2/user/{username}/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username_1}</p>
+</ag>
+<m>
+<p n="HTTP-Method">PUT</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Updated user object</bd>
+</rq>
+<rs>
+<rp id="219" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">21</p>
+</m>
+<bd chs="UTF-8">Invalid user supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="53">
+<rq id="220" op="PUT /v2/user/{username}/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username_2}</p>
+</ag>
+<m>
+<p n="HTTP-Method">PUT</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Updated user object</bd>
+</rq>
+<rs>
+<rp id="221" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">14</p>
+</m>
+<bd chs="UTF-8">User not found</bd>
+</rp>
+</rs>
+</t>
+<t id="54">
+<rq id="222" op="PUT /v2/user/{username}/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username_3}</p>
+</ag>
+<m>
+<p n="HTTP-Method">PUT</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Updated user object</bd>
+</rq>
+<rs>
+<rp id="223" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">14</p>
+</m>
+<bd chs="UTF-8">User not found</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="224" op="PUT /v2/user/{username}/" tl="SIGNATURE">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username}</p>
+</ag>
+<m>
+<p n="HTTP-Method">PUT</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Content-Length">19</p>
+</m>
+<bd chs="UTF-8">Updated user object</bd>
+</rq>
+<rs>
+<rp id="225" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">21</p>
+</m>
+<bd chs="UTF-8">Invalid user supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="226" nd="true">
+<sp>
+<t id="55">
+<rq id="227" op="DELETE /v2/user/{username}/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="228" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">25</p>
+</m>
+<bd chs="UTF-8">Invalid username supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="56">
+<rq id="229" op="DELETE /v2/user/{username}/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username_1}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="230" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">25</p>
+</m>
+<bd chs="UTF-8">Invalid username supplied</bd>
+</rp>
+</rs>
+</t>
+<t id="57">
+<rq id="231" op="DELETE /v2/user/{username}/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username_2}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="232" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">14</p>
+</m>
+<bd chs="UTF-8">User not found</bd>
+</rp>
+</rs>
+</t>
+<t id="58">
+<rq id="233" op="DELETE /v2/user/{username}/" tl="EXACT">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username_3}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="234" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/json</p>
+<p n="Content-Length">14</p>
+</m>
+<bd chs="UTF-8">User not found</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="235" op="DELETE /v2/user/{username}/" tl="SIGNATURE">
+<ag>
+<p n="username" t="arg:EQUALS;false;;;;">{username}</p>
+</ag>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+</m>
+</rq>
+<rs>
+<rp id="236" t="0">
+<m>
+<p n="HTTP-Response-Code">400</p>
+<p n="HTTP-Response-Code-Text">Bad Request</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">application/xml</p>
+<p n="Content-Length">25</p>
+</m>
+<bd chs="UTF-8">Invalid username supplied</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="61" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</ucrr>
+<usrr>
+<rp id="60" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd chs="UTF-8">&lt;html&gt;&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Not Found&lt;/h1&gt;The requested URL was not found on this server.&lt;p&gt;&lt;hr&gt;&lt;p&gt;&lt;i&gt;The DevTest VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;br&gt;&lt;font size=&quot;-2&quot;&gt;Produced by a DevTest virtualized web server.&lt;/font&gt;&lt;/body&gt;&lt;/html&gt;</bd>
+</rp>
+</usrr>
+</serviceImage>

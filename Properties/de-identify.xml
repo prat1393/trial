@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deidentify>
+    <volatiles>
+        <!--  volatile filters
+
+        These are the filters that ensure sensitive information never makes it to disk during
+        the VSE recording phase.
+
+        You almost certainly do not want to use real customer data as your test data. There are
+        also plenty of regulatory requirements which make it illegal to store certain data on
+        disk in unencrypted form, even temporarily.
+
+        This file configures data de-identifiers (formerly known as desensitizers) to recognize 
+        well known patterns such as credit card numbers and SSSNs and replace the live data with
+        realistic but unusable replacements.
+
+        In particular, these 'out of the box' replacement patterns use a 'provider' called
+        LisaPropReplacer.
+
+        LisaProp replacers are very generic; the text of the replacement can contain any string
+        really, including any {{properties}} which will be treated in the usual fashion.
+
+        In most cases we take advantage of the built-in TestData string generator, which will
+        use data from our TestData database. This test data database contains valid but useless
+        credit card numbers, ssns, etc.
+
+		You don't have to use valid-but-useless credit card numbers, of course. You can simply
+        make the <replacement> pattern contain 'XXXX-XXX-XXX-XXXX' and you will save X
+        characters in your service image database...
+
+        Because we use the regular LISA property replacement engine, if you really want to you
+        can execute java code like this: {{=myDataProviderClass.getData();}} and just use a
+        LisaPropReplacer instead of writing your own simple data provider.
+
+        A second provider called, NVPairProvider is also available though not used here.  It is
+        designed to allow you to de-identify argument, attribute and mata data entries by
+        matching on their name rathar than using a regex on their value.  Here is an example of
+        its use:
+
+            <filter name="e-mail" provider="com.itko.lisa.vse.desensitize.NVPairProvider">
+                <key>e-mail-addr</key>
+                <replacement><![CDATA[{{=[:Email:]}}]]></replacement>
+            </filter>
+
+        Even more flexible would be to implement the
+        com.itko.lisa.vse.desensitize.VolatileDesensitizerStrategy interface and substitute
+        your own provider.  If you extends the PatternedVolatileDesensitizer class in that same
+        package all you need to do really is provide one method:
+
+		    import com.itko.lisa.vse.desensitize.PatternedVolatileDesensitizer;
+            public class MyFakeStockSymbolProvider extends PatternedVolatileDesensitizer {
+                /**
+                * Called by the VSE recorder during the recording phase
+                */
+                protected String newValue(String hit) {
+                    if (hit.equals("JAVA")) return "ORCL";
+                    if (hit.equals("AAPL")) return "JOBS";
+                    return fourCharRandomString();
+                }
+             }
+
+        Configure your provider class in this file, something like the following:
+
+            <filter name="Stock" provider="com.mycomp.MyFakeStockSymbolProvider">
+                <regex><![CDATA[\s[A-Z]{4}\s]]></regex>
+                <replacement><![CDATA[Not used in this basic example]]></replacement>
+            </filter>
+
+        Now, as the VSE recording is being made, if the recorder matches a 4-char stock symbol
+        "REAL", your code will return a random 4 char string (say "ABXY"). The next time the
+        recorder sees 'REAL', it will remember that the correct substitution is 'ABXY' and not
+        call your newValue() method. You are only called when a 'new' match is seen.
+
+        NOTE you absolutely MUST enclose <regex> and <replacement> child text in a CDATA
+        element.  This is to avoid painful text escaping issues (in the regex especially...).
+
+        If you want to build a filter that is not based on regexes, consider subclassing the
+        com.itko.lisa.vse.desensitize.BaseVolatileDesensitizer class instead.
+
+        Each filter supplies a default set of capabilities which in this context means what
+        sort of VSE data it will look at for de-identifying.  Types of data are body text,
+        arguments, attributes and meta data.  The default type for the NVPairProvider are
+        arguments, attributes and meta data.  For all other types shipped with LISA, the
+        defaults are body text and attributes.
+
+        This can be overridden on a per-filter basis by supplying a comma-delimited value for
+        the "caps" attribute on the <filter> element.  The strings in the comma-delimited list
+        must be, "body", "args", "attrs" and/or "md".  The following example will tell the
+        default regex based provider to try to de-identify all parts:
+
+            <filter name="major credit cards" provider="com.itko.lisa.vse.desensitize.LisaPropReplacer"
+                    caps="body, args, attrs, md">
+                <regex><![CDATA[(?:4[ -]*(?:\d[ -]*){11}(?:(?:\d[ -]*){3})?\d|5[ -]*[1-5](?:[ -]*[0-9]){14}|6[ -]*(?:0[ -]*1[ -]*1|5[ -]*\d[ -]*\d)(?:[ -]*[0-9]){12}|3[ -]*[47](?:[ -]*[0-9]){13}|3[ -]*(?:0[ -]*[0-5]|[68][ -]*[0-9])(?:[ -]*[0-9]){11}|(?:2[ -]*1[ -]*3[ -]*1|1[ -]*8[ -]*0[ -]*0|3[ -]*5(?:[ -]*[0-9]){3})(?:[ -]*[0-9]){11})]]></regex>
+                <replacement><![CDATA[{{=[:Credit Card:]}}]]></replacement>
+            </filter>
+
+        Filters are matched in the order that they are specified in this file, so put your more
+        specific matches first.
+
+        This file is parsed each time the recorder is started, by design, to allow rapid
+        prototyping of regular expression matches.  We HIGHLY RECOMMEND using a regular
+        expression toolkit such as RegexBuddy which allows you to paste in your recorded
+        payload and interactively highlights regex matches as you fine-tune the regex.
+
+        -->
+
+        <filter name="major credit cards" provider="com.itko.lisa.vse.desensitize.LisaPropReplacer">
+            <regex><![CDATA[(?:4[ -]*(?:\d[ -]*){11}(?:(?:\d[ -]*){3})?\d|5[ -]*[1-5](?:[ -]*[0-9]){14}|6[ -]*(?:0[ -]*1[ -]*1|5[ -]*\d[ -]*\d)(?:[ -]*[0-9]){12}|3[ -]*[47](?:[ -]*[0-9]){13}|3[ -]*(?:0[ -]*[0-5]|[68][ -]*[0-9])(?:[ -]*[0-9]){11}|(?:2[ -]*1[ -]*3[ -]*1|1[ -]*8[ -]*0[ -]*0|3[ -]*5(?:[ -]*[0-9]){3})(?:[ -]*[0-9]){11})]]></regex>
+            <replacement><![CDATA[{{=[:Credit Card:]}}]]></replacement>
+        </filter>
+
+        <filter name="social security number" provider="com.itko.lisa.vse.desensitize.LisaPropReplacer">
+            <regex><![CDATA[(?!000)(?!666)([0-68]\d{2}|7([0-6]\d|7[012]))([ -]?)(?!00)\d\d\3(?!0000)\d{4}]]></regex>
+            <replacement><![CDATA[{{=[:SSN:]}}]]></replacement>
+        </filter>
+
+        <filter name="email address" provider="com.itko.lisa.vse.desensitize.LisaPropReplacer">
+             <regex><![CDATA[(?i)[A-Z0-9._%+-]+@(?:[A-Z0-9-]+\.)+[A-Z]{2,4}]]></regex>
+             <replacement><![CDATA[{{=[:Email:]}}]]></replacement>
+        </filter>
+
+        <!--
+             This matches <fname>Bart</fname> in LisaBank SOAP responses.  It's more typical of
+             what you would put in for your own virtualized services (we assume certain things
+             about the data format)....
+
+             .*? in the regex means a lazy as opposed to greedy match; if you don't know what
+             this means you definitely need to!  Get a book on RegExps and head over to
+             http://www.regular-expressions.info/repeat.html
+        -->
+
+        <filter name="LisaBank first name" provider="com.itko.lisa.vse.desensitize.LisaPropReplacer">
+            <regex><![CDATA[<fname>.*?</fname>]]></regex>
+            <replacement><![CDATA[<fname>{{=[:First Name:]}}</fname>]]></replacement>
+        </filter>
+
+        <filter name="LisaBank last name" provider="com.itko.lisa.vse.desensitize.LisaPropReplacer">
+            <regex><![CDATA[<lname>.*?</lname>]]></regex>
+            <replacement><![CDATA[<lname>{{=[:Last Name:]}}</lname>]]></replacement>
+        </filter>
+
+        <filter name="LisaBank phone" provider="com.itko.lisa.vse.desensitize.LisaPropReplacer">
+            <regex><![CDATA[<phone>.*?</phone>]]></regex>
+            <replacement><![CDATA[<phone>{{=[:Telephone:]}}</phone>]]></replacement>
+        </filter>
+
+        <filter name="LisaBank city" provider="com.itko.lisa.vse.desensitize.LisaPropReplacer">
+            <regex><![CDATA[<city>.*?</city>]]></regex>
+            <replacement><![CDATA[<city>{{=[:City:]}}</city>]]></replacement>
+        </filter>
+
+        <filter name="LisaBank state" provider="com.itko.lisa.vse.desensitize.LisaPropReplacer">
+            <regex><![CDATA[<state>.*?</state>]]></regex>
+            <replacement><![CDATA[<state>{{=[:State Code:]}}</state>]]></replacement>
+        </filter>
+
+        <filter name="LisaBank zip" provider="com.itko.lisa.vse.desensitize.LisaPropReplacer">
+            <regex><![CDATA[<zip>.*?</zip>]]></regex>
+            <replacement><![CDATA[<zip>{{=[:Zip Code:]}}</zip>]]></replacement>
+        </filter>
+        <filter name="LisaBank address line1" provider="com.itko.lisa.vse.desensitize.LisaPropReplacer">
+            <regex><![CDATA[<line1>.*?</line1>]]></regex>
+            <replacement><![CDATA[<line1>{{=[:Street Address:]}}</line1>]]></replacement>
+        </filter>
+    </volatiles>
+
+    <static>
+        <!-- Not used yet -->
+    </static>
+</deidentify>

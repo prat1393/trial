@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+
+<!-- TestCase Results Document created by LISA Test Editor -->
+<!-- On: Tue Dec 15 15:58:52 EST 2009 -->
+
+
+<Results name="ejb3EJBTest">
+
+
+    <Result node="modifyUserObject">
+      <content type="java.lang.String"><![CDATA[dXNlci0yMTI4MzMwNjYgKGl0a28gdXNlcik=]]></content>
+    </Result>
+
+
+</Results>

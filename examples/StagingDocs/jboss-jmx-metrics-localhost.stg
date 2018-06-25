@@ -1,0 +1,155 @@
+<?xml version="1.0" ?>
+
+<Run name="jboss-metric-run" think="100" pathfinder="false" >
+
+<meta><create version="0.0" buildNumber="0.0.0.0" author="cam" date="03/10/2010" host="sloth"  /><lastEdited version="0.0" buildNumber="0.0.0.0" author="cam" date="03/10/2010" host="sloth"  /></meta>
+
+<id>39646531353164652D383936372D3464</id>
+<Documentation></Documentation>
+<paceTime>0</paceTime>
+<paceTrans>0</paceTrans>
+<EventConsumer type="com.itko.lisa.report.DefaultReportToDataModel" filter="0,1,2,3,10,14,15,17,19,21,26,27,28,37,51,52,53,55,56,57,58" >
+<params>
+    <watchAllEvents>true</watchAllEvents>
+    <watchProps>true</watchProps>
+    <watchMetrics>true</watchMetrics>
+    <watchReqResp>true</watchReqResp>
+</params>
+</EventConsumer>
+<LoadPattern>
+<type>com.itko.lisa.coordinator.runpatterns.RunNTimesPattern</type>
+<cycles>0</cycles>
+<runfor>440</runfor>
+<ssinstances>3</ssinstances>
+</LoadPattern>
+<Distribution>
+<type>com.itko.lisa.coordinator.runpatterns.PercentDistribution</type>
+<Simulator>
+<name>auto</name>
+<percent>100</percent>
+</Simulator>
+</Distribution>
+<Metrics >
+<SampleRate>1</SampleRate>
+<IntervalRate>10</IntervalRate>
+<Metric type="com.itko.lisa.stats.TestEventCollector">
+<scale>0.0</scale>
+<valueType>1</valueType>
+<eventid>13</eventid>
+<keyexpr>*</keyexpr>
+<counter>true</counter>
+</Metric>
+<Metric type="com.itko.lisa.stats.TestEventCollector">
+<scale>0.0</scale>
+<valueType>1</valueType>
+<eventid>20</eventid>
+<keyexpr>*</keyexpr>
+<counter>true</counter>
+</Metric>
+<Metric type="com.itko.lisa.stats.TestEventCollector">
+<scale>0.0</scale>
+<valueType>1</valueType>
+<eventid>15</eventid>
+<keyexpr>*</keyexpr>
+<counter>true</counter>
+</Metric>
+<Metric type="com.itko.lisa.stats.TRIMetricCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<metric>0</metric>
+</Metric>
+<Metric type="com.itko.lisa.stats.TRIMetricCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<metric>1</metric>
+</Metric>
+<Metric type="com.itko.lisa.stats.jmx.StatsJMXCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<jmxconn>
+    <url>jnp://localhost:1099</url>
+    <jndi>jmx/rmi/RMIAdaptor</jndi>
+    <type>com.itko.lisa.stats.jmx.JBossConnection</type>
+</jmxconn>
+<object>jboss.jca:name=itkoExamples,service=ManagedConnectionPool</object>
+<attrib>ConnectionCreatedCount</attrib>
+</Metric>
+<Metric type="com.itko.lisa.stats.jmx.StatsJMXCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<jmxconn>
+    <url>jnp://localhost:1099</url>
+    <jndi>jmx/rmi/RMIAdaptor</jndi>
+    <type>com.itko.lisa.stats.jmx.JBossConnection</type>
+</jmxconn>
+<object>jboss.jca:name=itkoExamples,service=ManagedConnectionPool</object>
+<attrib>InUseConnectionCount</attrib>
+</Metric>
+<Metric type="com.itko.lisa.stats.jmx.StatsJMXCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<jmxconn>
+    <url>jnp://localhost:1099</url>
+    <jndi>jmx/rmi/RMIAdaptor</jndi>
+    <type>com.itko.lisa.stats.jmx.JBossConnection</type>
+</jmxconn>
+<object>jboss.jca:name=itkoExamples,service=ManagedConnectionPool</object>
+<attrib>MaxConnectionsInUseCount</attrib>
+</Metric>
+<Metric type="com.itko.lisa.stats.jmx.StatsJMXCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<jmxconn>
+    <url>jnp://localhost:1099</url>
+    <jndi>jmx/rmi/RMIAdaptor</jndi>
+    <type>com.itko.lisa.stats.jmx.JBossConnection</type>
+</jmxconn>
+<object>jboss.jca:name=itkoExamples,service=ManagedConnectionPool</object>
+<attrib>ConnectionCount</attrib>
+</Metric>
+<Metric type="com.itko.lisa.stats.jmx.StatsJMXCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<jmxconn>
+    <url>jnp://localhost:1099</url>
+    <jndi>jmx/rmi/RMIAdaptor</jndi>
+    <type>com.itko.lisa.stats.jmx.JBossConnection</type>
+</jmxconn>
+<object>jboss.system:type=ServerInfo</object>
+<attrib>FreeMemory</attrib>
+</Metric>
+<Metric type="com.itko.lisa.stats.jmx.StatsJMXCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<jmxconn>
+    <url>jnp://localhost:1099</url>
+    <jndi>jmx/rmi/RMIAdaptor</jndi>
+    <type>com.itko.lisa.stats.jmx.JBossConnection</type>
+</jmxconn>
+<object>jboss.system:type=ServerInfo</object>
+<attrib>ActiveThreadCount</attrib>
+</Metric>
+<Metric type="com.itko.lisa.stats.jmx.StatsJMXCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<jmxconn>
+    <url>jnp://localhost:1099</url>
+    <jndi>jmx/rmi/RMIAdaptor</jndi>
+    <type>com.itko.lisa.stats.jmx.JBossConnection</type>
+</jmxconn>
+<object>itko-examples.com:loader=itko-example-dev-server1.0.ear</object>
+<attrib>ClassLoadersSize</attrib>
+</Metric>
+<Metric type="com.itko.lisa.stats.jmx.StatsJMXCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<jmxconn>
+    <url>jnp://localhost:1099</url>
+    <jndi>jmx/rmi/RMIAdaptor</jndi>
+    <type>com.itko.lisa.stats.jmx.JBossConnection</type>
+</jmxconn>
+<object>itko-examples.com:loader=itko-example-dev-server1.0.ear</object>
+<attrib>CacheSize</attrib>
+</Metric>
+</Metrics>
+</Run>

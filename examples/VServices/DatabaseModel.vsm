@@ -1,0 +1,151 @@
+<?xml version="1.0" ?>
+
+<VSModel name="DatabaseModel" version="5">
+
+<meta><create version="0.0" buildNumber="0.0.0.0" author="skress" date="08/26/2009" host="Macintosh-2.local"  /><lastEdited version="0.0" buildNumber="0.0.0.0" author="skress" date="08/26/2009" host="Macintosh-2.local"  /></meta>
+
+<id>37613032343032322D386565332D3439</id>
+<sig>ZWQ9MyZ0Y3Y9NSZsaXNhdj0wLjAgKDAuMC4wLjApJm5vZGVzPS0xOTI3NjA3OTU=</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+<Configurations>
+<Configuration>
+<name>default</name>
+<external>false</external>
+<props>
+    <Parameter>
+    <key>lisa.vse.execution.mode</key>
+    <value>EFFICIENT</value>
+    </Parameter>
+</props>
+</Configuration>
+</Configurations>
+    <Node name="JDBC Listen" log=""
+          type="com.itko.lisa.vse.stateful.protocol.jdbc.JDBCListenStep" 
+          version="1" 
+          think="0" 
+ useFilters="true" 
+ quiet="true" 
+          next="Virtual Service Router" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Branch for Efficiency" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Most Efficient, branching to VS Image Response Selection</log>
+<then>VS Image Response Selection</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>EFFICIENT</executionMode>
+</CheckResult>
+
+<outputAsObject>true</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+<simulationHost>localhost</simulationHost>
+<simulaitonPort>2999</simulaitonPort>
+    </Node>
+
+
+    <Node name="Virtual Service Router" log=""
+          type="com.itko.lisa.vse.stateful.VSRouterStep" 
+          version="1" 
+          think="0" 
+ useFilters="true" 
+ quiet="true" 
+          next="VS Image Response Selection" > 
+
+<onerror>abort</onerror>
+<script>// This script must return either an enum entry from ExecutionMode or&#10;// a string that is the name of an enum entry.  The DYNAMIC entry may&#10;// not be returned.  It will be executed for DYNAMIC execution mode&#10;// only.&#10;import com.itko.lisa.vse.ExecutionMode;&#10;&#10;return ExecutionMode.EFFICIENT;&#10;</script>
+    </Node>
+
+
+    <Node name="VS Image Response Selection" log=""
+          type="com.itko.lisa.vse.stateful.ConversationalStep" 
+          version="1" 
+          think="0" 
+ useFilters="true" 
+ quiet="true" 
+          next="JDBC Respond" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Branch for Tracking" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Transaction Tracking, branching to Virtual Service Tracking</log>
+<then>Virtual Service Tracking</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>TRACK</executionMode>
+</CheckResult>
+
+<vsiSource>{{LISA_PROJ_ROOT}}/VServices/Images/DatabaseModel.vsi</vsiSource>
+<requestPropertyName>lisa.vse.request</requestPropertyName>
+<outputAsObject>true</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="JDBC Respond" log=""
+          type="com.itko.lisa.vse.stateful.protocol.jdbc.JDBCRespondStep" 
+          version="1" 
+          think="0" 
+ useFilters="true" 
+ quiet="false" 
+          next="JDBC Listen" > 
+
+<responseList>lisa.vse.response</responseList>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="Virtual Service Tracking" log=""
+          type="com.itko.lisa.vse.stateful.VSTrackingStep" 
+          version="1" 
+          think="0" 
+ useFilters="true" 
+ quiet="true" 
+          next="JDBC Respond" > 
+
+<remoteServer>local</remoteServer>
+<imageResponseProperty>lisa.vse.image.response</imageResponseProperty>
+<liveResponseProperty>lisa.vse.live.response</liveResponseProperty>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="abort" log="The test was aborted"
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          think="0h" 
+ useFilters="true" 
+ quiet="false" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          think="0h" 
+ useFilters="true" 
+ quiet="false" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          think="0h" 
+ useFilters="true" 
+ quiet="false" 
+          next="fail" > 
+
+    </Node>
+
+
+</VSModel>

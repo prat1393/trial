@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<RecordingSession nonLeaf="WIDE" leaf="LOOSE" asObject="true">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.http.HttpProtocolHandler">
+<Transport allAreStateless="false" asObject="true" desensitize="false" duptxns="false">
+	<exportFile></exportFile>
+	<RequestSide>
+		<Protocol type="com.itko.lisa.vse.stateful.protocol.json.JSONDataProtocolHandler"></Protocol>
+	</RequestSide>
+	<ResponseSide>
+		<Protocol type="com.itko.lisa.vse.stateful.protocol.json.JSONDataProtocolHandler"> </Protocol>
+	</ResponseSide>
+</Transport>
+<listenPort>8001</listenPort>
+<targetHost>localhost</targetHost>
+<targetPort>8080</targetPort>
+<useGateway>true</useGateway>
+<hostHeaderPassThrough>false</hostHeaderPassThrough>
+<ssl toClient="false" toServer="false"/><basePath>/</basePath>
+</Protocol>
+</RecordingSession>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?><rules>
+   <agent guid="-2032180703" name="DEFAULT">
+      <property comment="Enabling superstacks" key="lisa.agent.superstack.enabled" value="true"/>
+      <property comment="Keep track of file descriptors" key="lisa.agent.tracking.disabled" value="false"/>
+      <property key="lisa.agent.stats.alarm.threshold.gc.num.intervals" value="3"/>
+      <property comment="A regular expression that adds more mime types to be captured (e.g. if you want to capture generated images, set it to image/.*)" key="lisa.agent.capture.mime.types" value="capture"/>
+      <property comment="Whether the agent tracks the broker document that send from webMethod process" key="lisa.agent.wm.tack.brokerdoc" value="true"/>
+      <property key="lisa.agent.stats.alarm.threshold.cpu.num.intervals" value="5"/>
+      <property comment="The initial buffer size of the buffer allocated for data transport" key="lisa.data.transport.initial.buffer.size" value="4194304"/>
+      <property comment="The number of transactions sent to the broker per interval at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.transactions.per.interval" value="50"/>
+      <property comment="The location of the ssl truststore, defaults to Lisa Home or Agent Dir." key="lisa.truststore" value=""/>
+      <property comment="Send transactions that are incomplete due to timing out" key="lisa.agent.transaction.send.timed.outs" value="true"/>
+      <property comment="The amount of data to capture for com.itko.lisa.remote.transactions.interceptors.SocketInterceptor" key="com.itko.lisa.remote.transactions.interceptors.SocketInterceptor.weight" value="4"/>
+      <property comment="Property denotes if needed to attach synthetic parent to the JDBC node with no parent." key="lisa.agent.transaction.jdbc.attach.synthetic.parent" value="false"/>
+      <property comment="Enable querying of the JMX counters via the agent" key="lisa.agent.jmx.enabled" value="true"/>
+      <property comment="The protocol to use when connecting to the broker." key="lisa.protocol" value=""/>
+      <property comment="Whether to split a large message into multiple smaller messages" key="lisa.agent.jms.split.large.message" value="true"/>
+      <property comment="Whether to start the (local) CPU profiler on JVM startup" key="lisa.agent.profiler.cpu.auto.start" value="false"/>
+      <property comment="When an object graph is too large for serialization, we log a subset of that graph once up to the depth specified by this property" key="lisa.agent.transaction.max.log.depth" value="15"/>
+      <property comment="The percentage of time spent running on CPU for the specified number of intervals at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.cpu" value="80"/>
+      <property comment="The maximum size (in bytes) for an agent log file, after which it is archived (no value or a negative value means never)" key="lisa.agent.log.max.size" value="9223372036854775807"/>
+      <property comment="VSE jit means model/image logic is partially (or entirely) cached in the agent" key="lisa.agent.virtualize.jit.enabled" value="false"/>
+      <property comment="The encrypted truststore password." key="lisa.truststore.password_enc" value=""/>
+      <property comment="Local CPU profiler sampling interval" key="lisa.agent.profiler.cpu.local.interval" value="10"/>
+      <property comment="The maximum number of data packet buffers allocated for data transport" key="lisa.data.transport.max.packet.buffer.count" value="4"/>
+      <property comment="In sequential mode, bytecodes are traversed in a sequence. In non-sequential mode, the branches and jumps are followed." key="lisa.agent.bytecode.analysis.sequential" value="true"/>
+      <property comment="Keeps track of max file descriptors on Unix - set to -1 for discovery (ulimit) or manually if ulimit is not accessible" key="lisa.agent.handles.max" value="-1"/>
+      <property comment="The preferred transactions tree buffer size to be reached prior to flushing" key="lisa.broker.transaction.buffer.size" value="100"/>
+      <property key="lisa.agent.stats.alarm.threshold.heap.num.intervals" value="10"/>
+      <property comment="The percentage of heap (memory) used for the specified number of intervals at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.heap" value="95"/>
+      <property comment="Comma separated list of SQL templates generally used to verify connectivity to database" key="lisa.agent.sql.test.queries" value="SELECT FROM DUAL,SELECT FROM SYS.SYSTABLES,SELECT FROM SYSIBM.SYSDUMMY1,SQL SELECT 1"/>
+      <property comment="The maximum depth to which we serialize objects to XML when capturing transactions" key="lisa.agent.transaction.max.object.depth" value="3"/>
+      <property comment="The interval at which agents pulse their information to the broker and consoles" key="lisa.agent.agent.update.int" value="1000"/>
+      <property comment="The location of the ssl keystore, defaults to Lisa Home or Agent Dir." key="lisa.keystore" value=""/>
+      <property comment="Broker url when run in embedded mode (i.e. in LW)" key="lisa.console.agent.broker.url" value="tcp://localhost:2009?daemon=true"/>
+      <property comment="If the encryption token property is set encryption extensions will be applied to all payloads" key="lisa.broker.encryption.token" value=""/>
+      <property comment="The minimum depth a transaction fragment must have to be captured (excluding exceptions)" key="lisa.agent.transaction.min.depth" value="2"/>
+      <property comment="The percentage under which CPU is considered idle (and maintenance operations are preferred to occur)" key="lisa.agent.stats.cpu.idle.threshold" value="0.05"/>
+      <property comment="The amount of time allowed for a remote Agent or Broker invocation over JMS" key="lisa.agent.jms.invoke.timeout" value="30000"/>
+      <property comment="Whether to automatically detect deadlocks" key="lisa.agent.deadlock.monitor.enabled" value="true"/>
+      <property comment="The maximum number of log files to be archived before the oldest one gets deleted (no value or a negative value means no limit)" key="lisa.agent.log.max.archives" value="10"/>
+      <property comment="The maximum number of buffers allocated for data transport" key="lisa.data.transport.max.buffer.count" value="4"/>
+      <property comment="Convert PUT and DELETE HTTP calls to REST icon" key="lisa.agent.rest.enabled" value="true"/>
+      <property comment="The location of the agent log files (none for the default i.e. agent dir)" key="lisa.agent.agent.log" value=""/>
+      <property comment="Use only one XStream instance to (de)serialize payloads to conserve resources" key="lisa.agent.transaction.use.global.xstream" value="false"/>
+      <property comment="The initial buffer size of the data packet buffer allocated for data transport" key="lisa.data.transport.initial.packet.buffer.size" value="262144"/>
+      <property comment="The amount of time (in ms) between statistics collection events" key="lisa.agent.stats.sampling.interval" value="1000"/>
+      <property comment="Whether to start recording transactions automatically at startup (vs. being asked by a client)" key="lisa.agent.transaction.auto.start" value="true"/>
+      <property comment="The minimum level at which logging statements will be captured (inclusive) - see java.util.logging.Level for values" key="lisa.agent.java.logging.level" value="WARNING"/>
+      <property comment="Perform callbacks only on top-level (in the stack frames) virtualized methods" key="lisa.agent.virtualize.shallow.recording" value="true"/>
+      <property comment="Virtualization mode at startup: PASSTHRU=0, RECORDING=1, PLAYBACK=2" key="lisa.agent.virtualize.startup.mode" value="0"/>
+      <property comment="If true, cache response objects key by their string representation to bypass unmarshalling" key="lisa.agent.virtualize.cache.responses" value="false"/>
+      <property comment="IP address or hostname where the QC REST API is available" key="lisa.pathfinder.qc.rest.host" value=""/>
+      <property comment="If true, do not record/replay arguments modified by reference and void methods" key="lisa.agent.virtualize.omit.by.ref" value="false"/>
+      <property comment="Maximum size in bytes of a serialized to XML object graph" key="lisa.agent.virtualize.max.graph.size" value="100000"/>
+      <property comment="The size (in bytes) of transaction fields above which they are compressed (1024 is the minimum recommended value)" key="lisa.agent.transaction.compression.threshold" value="2147483647"/>
+      <property comment="Whether always sending full agent information data or not" key="lisa.agent.full.agent.info" value="false"/>
+      <property comment="The number of exceptions that were printed to a log per second at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.exceptions.per.second" value="20"/>
+      <property comment="Port on which the QC REST API is running" key="lisa.pathfinder.qc.rest.port" value="8080"/>
+      <property comment="Capture all the supported exception frames" key="lisa.agent.enable.full.exception.capture" value="false"/>
+      <property comment="Capture http forward and include data" key="lisa.agent.transaction.capture.http.forward.include.data" value="true"/>
+      <property comment="Whether to enable the Pathfinder UI-side capture option" key="lisa.agent.enable.super.capture" value="false"/>
+      <property comment="The encrypted keystore password." key="lisa.keystore.password_enc" value=""/>
+      <property comment="The max amout of time for an async branch to wait for the root frame to complete" key="lisa.agent.transaction.async.timeout" value="30"/>
+      <property comment="The data with its size bigger than the threshold will be splited into smaller data packets" key="lisa.data.transport.split.threshold" value="1048576"/>
+      <property comment="The value (in KB/s) under which IO is considered idle (and maintenance operations are preferred to occur)" key="lisa.agent.stats.io.idle.threshold" value="1000.0"/>
+      <property comment="Maximum size in bytes of a serialized to XML object graph" key="lisa.agent.transaction.max.graph.size" value="100000"/>
+      <property comment="The max amount of time a baseline request frame will be held in memory waiting to be matched to a response frame" key="lisa.agent.transaction.baseline.match.timeout" value="5"/>
+      <property comment="If this property is true secondary stitching algorithms will always be attempted (useful for binary protocols with load balancers, native servers, aynchrnous IO)" key="lisa.broker.transaction.always.wait" value="false"/>
+      <property comment="The percentage of time spent GCing for the specified number of intervals at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.gc" value="30"/>
+      <property comment="The timeout value in milliseconds for the JMS message send operation" key="lisa.agent.jms.send.timeout" value="30000"/>
+      <property comment="Whether to enable de-identifying the transaction data" key="lisa.agent.enable.desensitize" value="false"/>
+      <property comment="Convert frame icon to REST when HTTP header content-type or accept contains JSON" key="lisa.agent.rest.enabled.httpheader" value="true"/>
+      <property comment="Whether to append or overwrite to log when using static log file names" key="lisa.agent.agent.log.append" value="false"/>
+      <property comment="The percentage of permgen (memory) used at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.permgen" value="90"/>
+      <property comment="Whether to discover exit points" key="lisa.agent.discover.exit.points" value="true"/>
+      <property comment="The maximum amount of time allowed for a VSE reply at playback" key="lisa.agent.virtualize.reply.timeout" value="5000"/>
+      <property comment="The base url for the Pathfinder web console" key="lisa.pathfinder.console" value="http://HVDIVD18MIS1496:1507/devtest/#/main"/>
+      <property comment="The maximum duration (in seconds) a transaction is allowed to take before being discarded" key="lisa.agent.transaction.max.duration" value="60"/>
+      <property comment="Captures http requests that serve static content" key="lisa.agent.transaction.capture.static.files" value="false"/>
+      <property comment="The number of messages sent to the broker per interval at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.messages.per.interval" value="200"/>
+      <property comment="Whether a console fetches its data via the broker or direct database access" key="lisa.console.direct.db.connection" value="false"/>
+      <property comment="If true, threads spawned by another thread to perform work and waited on (joined) will have their transaction stack merged with their parent's" key="lisa.agent.transaction.merge.thread.spawns" value="true"/>
+      <property comment="The timeout (in ms) allowed for any PF query in the registry or originating from a console" key="lisa.console.transaction.query.timeout" value="60000"/>
+      <property comment="Whether to enable the Pathfinder capture box" key="lisa.agent.enable.capture" value="true"/>
+      <property comment="Whether to enable the Pathfinder UI-side capture option for Flex controls" key="lisa.agent.enable.flex.capture" value="false"/>
+      <property comment="The max amount of time (in ms) before transactions recording happens (in auto start mode)" key="lisa.agent.transaction.auto.start.max.delay" value="60000"/>
+      <property comment="The maximum size (in KB) for the attachment" key="lisa.broker.transaction.attachment.max.size" value="10240"/>
+      <property comment="Global CPU profiler sampling interval" key="lisa.agent.profiler.cpu.global.interval" value="20"/>
+      <property comment="Statistics persisting is disabled by default" key="lisa.broker.stats.persisted" value="false"/>
+      <property comment="How many method invocations will cause VSE jitting to occur" key="lisa.agent.virtualize.jit.threshold" value="100"/>
+      <property comment="The interval between successive reconnect attempts from an agent or a client to the broker" key="lisa.agent.jms.poll.int" value="5000"/>
+   </agent>
+   <!--************ Console ************-->
+   <console>
+      <property comment="IP address or hostname of the MQ server" key="MQMIRROR_HOST" value="135.66.29.251"/>
+      <property comment="IP port of the MQ server" key="MQMIRROR_PORT" value="1414"/>
+      <property key="lisa.agent.stats.alarm.threshold.gc.num.intervals" value="3"/>
+      <property key="lisa.agent.stats.alarm.threshold.cpu.num.intervals" value="5"/>
+      <property comment="The number of transactions sent to the broker per interval at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.transactions.per.interval" value="50"/>
+      <property comment="queue manager name; this will almost certainly vary site-to-site. This is the queue manager that has the ITKO_PATHFINDER queue" key="MQMIRROR_QMNAME" value="QM_HVDIVD18MIS1496"/>
+      <property comment="Whether to split a large message into multiple smaller messages" key="lisa.agent.jms.split.large.message" value="true"/>
+      <property comment="A regular expression to match queue names we are interested in. By default we will inspect all queues. Be careful to quote any dot characters in the queue names!  If this property is left undefined we will include all queue names" key="MQMIRROR_INCLUDE_QUEUES" value=""/>
+      <property comment="A regular expression to match queues we are specifically not interested in. This will always have precedence over the inclusion list.  Leave undefined to not exclude any." key="MQMIRROR_EXCLUDE_QUEUES" value=""/>
+      <property comment="The preferred stats buffer size to be reached prior to flushing (i.e. if CPU and IO are idle)" key="lisa.broker.stats.buffer.size" value="100"/>
+      <property comment="The percentage of time spent running on CPU for the specified number of intervals at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.cpu" value="80"/>
+      <property comment="The maximum size (in bytes) for an agent log file, after which it is archived (no value or a negative value means never)" key="lisa.agent.log.max.size" value="9223372036854775807"/>
+      <property comment="The maximum amount of time after which consoles purge in-memory transactions" key="lisa.broker.transaction.recent.expiry" value="30000"/>
+      <property key="lisa.agent.stats.alarm.threshold.heap.num.intervals" value="10"/>
+      <property comment="The directory location where embedded derby will store all its persistent data (none for the default i.e. working dir)" key="lisa.broker.derby.store" value=""/>
+      <property comment="The percentage of heap (memory) used for the specified number of intervals at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.heap" value="95"/>
+      <property comment="The interval at which agents pulse their information to the broker and consoles" key="lisa.agent.agent.update.int" value="1000"/>
+      <property comment="Broker url when run in embedded mode (i.e. in LW)" key="lisa.console.agent.broker.url" value="tcp://localhost:2009?daemon=true"/>
+      <property comment="The percentage under which CPU is considered idle (and maintenance operations are preferred to occur)" key="lisa.agent.stats.cpu.idle.threshold" value="0.05"/>
+      <property comment="The amount of time allowed for a remote Agent or Broker invocation over JMS" key="lisa.agent.jms.invoke.timeout" value="30000"/>
+      <property comment="The maximum number of log files to be archived before the oldest one gets deleted (no value or a negative value means no limit)" key="lisa.agent.log.max.archives" value="10"/>
+      <property comment="channel name.  SYSTEM.DEF.SVRCONN should work in most circumstances" key="MQMIRROR_CHANNEL" value="SYSTEM.DEF.SVRCONN"/>
+      <property comment="The location of the agent log files (none for the default i.e. agent dir)" key="lisa.agent.agent.log" value=""/>
+      <property comment="The amount of time (in ms) between statistics collection events" key="lisa.agent.stats.sampling.interval" value="1000"/>
+      <property comment="if MQ goes down, wait this many millis before attempting to reconnect." key="MQMIRROR_CONNECT_INTERVAL" value="5005"/>
+      <property comment="if you need a user and password, sometimes you don't." key="MQMIRROR_PASSWD" value=""/>
+      <property comment="A path to another configuration file to support the MQ Native Channel Exit.  This is only necessary if the MQ Native Channel Exit is being used on a Mainframe to monitor a set of client Queue Managers." key="MQMIRROR_TOPOLOGY_FILE" value=""/>
+      <property comment="Whether always sending full agent information data or not" key="lisa.agent.full.agent.info" value="false"/>
+      <property comment="The number of exceptions that were printed to a log per second at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.exceptions.per.second" value="20"/>
+      <property comment="if you need a user and password, sometimes you don't." key="MQMIRROR_USER" value=""/>
+      <property comment="The value (in KB/s) under which IO is considered idle (and maintenance operations are preferred to occur)" key="lisa.agent.stats.io.idle.threshold" value="1000.0"/>
+      <property comment="The percentage of time spent GCing for the specified number of intervals at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.gc" value="30"/>
+      <property comment="The timeout value in milliseconds for the JMS message send operation" key="lisa.agent.jms.send.timeout" value="30000"/>
+      <property comment="Whether to append or overwrite to log when using static log file names" key="lisa.agent.agent.log.append" value="false"/>
+      <property comment="The maximum amount of transactions to show in Live Paths view" key="max.live.transactions" value="20"/>
+      <property comment="The percentage of permgen (memory) used at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.permgen" value="90"/>
+      <property comment="The number of messages sent to the broker per interval at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.messages.per.interval" value="200"/>
+      <property comment="Whether a console fetches its data via the broker or direct database access" key="lisa.console.direct.db.connection" value="false"/>
+   </console>
+   <!--************ Broker *************-->
+   <broker>
+      <property comment="Whether to compute aggregated statistics on the frames stored in the database" key="lisa.broker.transaction.compute.statistics" value="true"/>
+      <property key="lisa.agent.stats.alarm.threshold.gc.num.intervals" value="3"/>
+      <property comment="The value used as the sender for email notifications" key="lisa.pathfinder.email.from" value="ApplicationInsight@ca.com"/>
+      <property key="lisa.agent.stats.alarm.threshold.cpu.num.intervals" value="5"/>
+      <property comment="The initial buffer size of the buffer allocated for data transport" key="lisa.data.transport.initial.buffer.size" value="4194304"/>
+      <property comment="The number of transactions sent to the broker per interval at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.transactions.per.interval" value="50"/>
+      <property comment="The location of the ssl truststore, defaults to Lisa Home or Agent Dir." key="lisa.truststore" value=""/>
+      <property comment="The location of an SMTP server - used to send email notification when a case is created" key="lisa.pathfinder.smtp.server" value=""/>
+      <property comment="How often the cleaner thread should execute [# of minutes]" key="lisa.pathfinder.ticket.cleaner.frequency" value="1440"/>
+      <property comment="The protocol to use when connecting to the broker." key="lisa.protocol" value=""/>
+      <property comment="The value used as the subject of the notification email.  %1 will be replaced with the title from the case" key="lisa.pathfinder.email.subject" value="New Application Insight Case: %1"/>
+      <property comment="The preferred stats buffer size to be reached prior to flushing (i.e. if CPU and IO are idle)" key="lisa.broker.stats.buffer.size" value="100"/>
+      <property comment="True to forward communications between multiple brokers on the same network" key="lisa.broker.federated" value="false"/>
+      <property comment="Whether to automatically create or upgrade the schema" key="lisa.broker.auto.migrate.schema" value="true"/>
+      <property comment="The percentage of time spent running on CPU for the specified number of intervals at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.cpu" value="80"/>
+      <property comment="The maximum size (in bytes) for an agent log file, after which it is archived (no value or a negative value means never)" key="lisa.agent.log.max.size" value="9223372036854775807"/>
+      <property comment="The encrypted truststore password." key="lisa.truststore.password_enc" value=""/>
+      <property comment="The maximum number of data packet buffers allocated for data transport" key="lisa.data.transport.max.packet.buffer.count" value="4"/>
+      <property comment="Age of tickets that should be deleted when the clean runs [minutes old]" key="lisa.pathfinder.ticket.cleaner.age" value="10080"/>
+      <property comment="The maximum amount of time after which consoles purge in-memory transactions" key="lisa.broker.transaction.recent.expiry" value="30000"/>
+      <property comment="The preferred transactions tree buffer size to be reached prior to flushing" key="lisa.broker.transaction.buffer.size" value="100"/>
+      <property key="lisa.agent.stats.alarm.threshold.heap.num.intervals" value="10"/>
+      <property comment="Limit the batch insert size when persisting transactions." key="pathfinder.insert.batch.size" value="100"/>
+      <property comment="The directory location where embedded derby will store all its persistent data (none for the default i.e. working dir)" key="lisa.broker.derby.store" value=""/>
+      <property comment="The maximum amount of time after which partial transactions are orphaned" key="lisa.broker.transaction.assembly.expiry" value="30000"/>
+      <property comment="The percentage of heap (memory) used for the specified number of intervals at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.heap" value="95"/>
+      <property comment="The interval at which agents pulse their information to the broker and consoles" key="lisa.agent.agent.update.int" value="1000"/>
+      <property comment="The location of the ssl keystore, defaults to Lisa Home or Agent Dir." key="lisa.keystore" value=""/>
+      <property comment="If the encryption token property is set encryption extensions will be applied to all payloads" key="lisa.broker.encryption.token" value=""/>
+      <property comment="The percentage under which CPU is considered idle (and maintenance operations are preferred to occur)" key="lisa.agent.stats.cpu.idle.threshold" value="0.05"/>
+      <property comment="the value used as the body of the notification email.  %1 will be replaced with a URL to view the case &lt;CR&gt; will be replaced with carriage return" key="lisa.pathfinder.email.body" value="Your Application Insight case has been submitted and can be viewed by clicking on the following link:&lt;CR&gt;&lt;CR&gt;%1"/>
+      <property comment="The maximum number of log files to be archived before the oldest one gets deleted (no value or a negative value means no limit)" key="lisa.agent.log.max.archives" value="10"/>
+      <property comment="Whether to persist incomplete transactions after they time out" key="lisa.broker.transaction.save.orphans" value="true"/>
+      <property comment="The maximum number of buffers allocated for data transport" key="lisa.data.transport.max.buffer.count" value="4"/>
+      <property comment="Persist transactions individually if persisting a batch fails" key="lisa.broker.enable.non.batched.persistence" value="false"/>
+      <property comment="The location of the agent log files (none for the default i.e. agent dir)" key="lisa.agent.agent.log" value=""/>
+      <property comment="The initial buffer size of the data packet buffer allocated for data transport" key="lisa.data.transport.initial.packet.buffer.size" value="262144"/>
+      <property comment="The amount of time (in ms) between statistics collection events" key="lisa.agent.stats.sampling.interval" value="1000"/>
+      <property comment="IP address or hostname where the QC REST API is available" key="lisa.pathfinder.qc.rest.host" value=""/>
+      <property comment="The number of exceptions that were printed to a log per second at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.exceptions.per.second" value="20"/>
+      <property comment="Port on which the QC REST API is running" key="lisa.pathfinder.qc.rest.port" value="8080"/>
+      <property comment="Capture all the supported exception frames" key="lisa.agent.enable.full.exception.capture" value="false"/>
+      <property comment="Should the automatic transaction cleaner process be enabled? [true|false]" key="lisa.pathfinder.transaction.cleaner.enabled" value="true"/>
+      <property comment="The encrypted keystore password." key="lisa.keystore.password_enc" value=""/>
+      <property comment="Age of transactions that should be deleted when the clean runs [minutes old]  7200=5 days" key="lisa.pathfinder.transaction.cleaner.age" value="10080"/>
+      <property comment="The value (in KB/s) under which IO is considered idle (and maintenance operations are preferred to occur)" key="lisa.agent.stats.io.idle.threshold" value="1000.0"/>
+      <property comment="The DevConsole HTTP server port number" key="lisa.broker.devconsole.server.port" value="2099"/>
+      <property comment="The percentage of time spent GCing for the specified number of intervals at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.gc" value="30"/>
+      <property comment="Whether to append or overwrite to log when using static log file names" key="lisa.agent.agent.log.append" value="false"/>
+      <property comment="Should the automatic ticket cleaner process be enabled? [true|false]" key="lisa.pathfinder.ticket.cleaner.enabled" value="true"/>
+      <property comment="The percentage of permgen (memory) used at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.permgen" value="90"/>
+      <property comment="How often the cleaner thread should execute [# of minutes]" key="lisa.pathfinder.transaction.cleaner.frequency" value="10"/>
+      <property comment="The charset used by the db for string types" key="lisa.broker.db.charset" value="UTF-8"/>
+      <property comment="The number of messages sent to the broker per interval at which an alarm will be raised" key="lisa.agent.stats.alarm.threshold.messages.per.interval" value="200"/>
+      <property comment="The directory location where the broker will store its persistent data (none for the default i.e. working dir)" key="lisa.broker.broker.store" value=""/>
+      <property comment="The maximum size (in KB) for the attachment" key="lisa.broker.transaction.attachment.max.size" value="10240"/>
+      <property comment="Statistics persisting is disabled by default" key="lisa.broker.stats.persisted" value="false"/>
+      <property comment="The maximum transactions tree memory size in kilobytes to be reached before starting to discard transactions" key="lisa.broker.transaction.max.buffer.mem" value="256000"/>
+   </broker>
+</rules>

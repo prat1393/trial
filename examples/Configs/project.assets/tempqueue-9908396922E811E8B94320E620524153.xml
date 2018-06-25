@@ -1,0 +1,25 @@
+<Asset Version="2"><AssetInfo type="com.ibm.mq.MQQueue" hashcode="-1980325992"><Url>config://tempqueue-9908396922E811E8B94320E620524153</Url>
+<Name>q1</Name>
+<Description></Description>
+</AssetInfo>
+<MQTempQueue>
+<Connection>
+<AssetInfo type="com.ibm.mq.MQQueueManager" hashcode="-1400066459"><Url>config://qm-9112B7CF22E811E8B94320E620524153</Url>
+</AssetInfo>
+<Ref>
+</Ref>
+</Connection>
+<DynamicQueueName>lisatempq*</DynamicQueueName>
+<QueueModel>QM1</QueueModel>
+<OverrideQueueManager>
+<PayloadInfo type="java.lang.String"></PayloadInfo>
+<String>
+</String>
+</OverrideQueueManager>
+<Options>
+<PayloadInfo type="java.lang.Integer"></PayloadInfo>
+<Integer>
+8192</Integer>
+</Options>
+</MQTempQueue>
+</Asset>

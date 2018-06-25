@@ -1,0 +1,10122 @@
+<?xml version="1.0" ?>
+
+
+<!-- Test Case created by LISA Test Editor -->
+<!-- On: Tue Apr 28 07:55:34 CDT 2009 -->
+
+
+<TestCase name="statefullATM" version="2">
+<id>866ef081</id>
+<Documentation>Put documentation of the Test Case here.</Documentation>
+<sig>ZWQ9NSZ0Y3Y9MiZsaXNhdj00LjYuMiAoNC42LjIuMTEpJm5vZGVzPS0yMDQ0NTU1MDMz</sig>
+<rootNode>0) launch on kiosk.bat </rootNode>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+    <Parameter>
+    <key>lisa.0) launch on kiosk.bat .rsp</key>
+    <value>Set in Step 0) launch on kiosk.bat </value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.0) launch on kiosk.bat .rsp.time</key>
+    <value>Set in Step 0) launch on kiosk.bat </value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.1) asyncchange on com.itko.lisa.kiosk.KioskFrame.rsp</key>
+    <value>Set in Step 1) asyncchange on com.itko.lisa.kiosk.KioskFrame</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.1) asyncchange on com.itko.lisa.kiosk.KioskFrame.rsp.time</key>
+    <value>Set in Step 1) asyncchange on com.itko.lisa.kiosk.KioskFrame</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.2) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 2) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.2) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 2) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.3) click on javax.swing.JList (firstdemo2 lastdemo2).rsp</key>
+    <value>Set in Step 3) click on javax.swing.JList (firstdemo2 lastdemo2)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.3) click on javax.swing.JList (firstdemo2 lastdemo2).rsp.time</key>
+    <value>Set in Step 3) click on javax.swing.JList (firstdemo2 lastdemo2)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.4) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 4) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.4) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 4) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.5) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 5) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.5) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 5) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.6) change on javax.swing.JPasswordField (pass).rsp</key>
+    <value>Set in Step 6) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.6) change on javax.swing.JPasswordField (pass).rsp.time</key>
+    <value>Set in Step 6) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.7) change on javax.swing.JPasswordField (pass).rsp</key>
+    <value>Set in Step 7) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.7) change on javax.swing.JPasswordField (pass).rsp.time</key>
+    <value>Set in Step 7) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.8) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 8) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.8) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 8) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.9) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 9) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.9) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 9) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.10) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 10) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.10) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 10) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.11) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 11) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.11) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 11) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.12) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 12) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.12) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 12) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.13) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 13) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.13) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 13) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.14) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 14) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.14) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 14) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.15) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 15) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.15) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 15) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.16) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 16) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.16) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 16) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.17) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 17) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.17) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 17) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.18) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 18) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.18) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 18) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.19) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 19) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.19) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 19) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.20) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 20) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.20) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 20) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.21) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 21) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.21) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 21) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.22) click on javax.swing.JList (firstdemo2 lastdemo2).rsp</key>
+    <value>Set in Step 22) click on javax.swing.JList (firstdemo2 lastdemo2)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.22) click on javax.swing.JList (firstdemo2 lastdemo2).rsp.time</key>
+    <value>Set in Step 22) click on javax.swing.JList (firstdemo2 lastdemo2)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.23) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 23) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.23) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 23) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.24) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 24) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.24) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 24) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.25) change on javax.swing.JPasswordField (pass).rsp</key>
+    <value>Set in Step 25) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.25) change on javax.swing.JPasswordField (pass).rsp.time</key>
+    <value>Set in Step 25) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.26) change on javax.swing.JPasswordField (pass).rsp</key>
+    <value>Set in Step 26) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.26) change on javax.swing.JPasswordField (pass).rsp.time</key>
+    <value>Set in Step 26) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.27) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 27) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.27) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 27) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.28) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 28) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.28) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 28) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.29) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 29) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.29) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 29) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.30) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 30) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.30) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 30) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.31) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 31) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.31) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 31) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.32) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 32) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.32) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 32) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.33) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 33) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.33) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 33) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.34) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 34) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.34) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 34) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.35) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 35) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.35) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 35) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.36) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 36) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.36) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 36) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.37) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 37) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.37) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 37) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.38) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 38) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.38) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 38) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.39) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 39) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.39) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 39) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.40) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 40) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.40) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 40) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.41) click on javax.swing.JList (firstdemo2 lastdemo2).rsp</key>
+    <value>Set in Step 41) click on javax.swing.JList (firstdemo2 lastdemo2)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.41) click on javax.swing.JList (firstdemo2 lastdemo2).rsp.time</key>
+    <value>Set in Step 41) click on javax.swing.JList (firstdemo2 lastdemo2)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.42) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 42) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.42) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 42) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.43) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 43) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.43) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 43) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.44) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 44) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.44) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 44) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.45) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 45) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.45) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 45) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.46) change on javax.swing.JPasswordField (pass).rsp</key>
+    <value>Set in Step 46) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.46) change on javax.swing.JPasswordField (pass).rsp.time</key>
+    <value>Set in Step 46) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.47) change on javax.swing.JPasswordField (pass).rsp</key>
+    <value>Set in Step 47) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.47) change on javax.swing.JPasswordField (pass).rsp.time</key>
+    <value>Set in Step 47) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.48) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 48) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.48) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 48) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.49) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 49) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.49) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 49) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.50) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 50) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.50) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 50) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.51) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 51) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.51) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 51) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.52) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 52) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.52) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 52) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.53) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 53) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.53) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 53) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.54) click on javax.swing.JList (firstdemo2 lastdemo2).rsp</key>
+    <value>Set in Step 54) click on javax.swing.JList (firstdemo2 lastdemo2)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.54) click on javax.swing.JList (firstdemo2 lastdemo2).rsp.time</key>
+    <value>Set in Step 54) click on javax.swing.JList (firstdemo2 lastdemo2)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.55) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 55) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.55) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 55) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.56) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 56) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.56) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 56) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.57) change on javax.swing.JPasswordField (pass).rsp</key>
+    <value>Set in Step 57) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.57) change on javax.swing.JPasswordField (pass).rsp.time</key>
+    <value>Set in Step 57) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.58) change on javax.swing.JPasswordField (pass).rsp</key>
+    <value>Set in Step 58) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.58) change on javax.swing.JPasswordField (pass).rsp.time</key>
+    <value>Set in Step 58) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.59) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 59) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.59) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 59) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.60) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 60) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.60) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 60) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.61) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 61) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.61) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 61) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.62) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 62) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.62) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 62) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.63) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 63) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.63) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 63) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.64) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 64) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.64) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 64) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.65) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 65) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.65) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 65) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.66) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 66) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.66) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 66) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.67) click on javax.swing.JList (firstdemo2 lastdemo2).rsp</key>
+    <value>Set in Step 67) click on javax.swing.JList (firstdemo2 lastdemo2)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.67) click on javax.swing.JList (firstdemo2 lastdemo2).rsp.time</key>
+    <value>Set in Step 67) click on javax.swing.JList (firstdemo2 lastdemo2)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.68) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 68) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.68) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 68) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.69) click on com.itko.lisa.kiosk.components.Card.rsp</key>
+    <value>Set in Step 69) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.69) click on com.itko.lisa.kiosk.components.Card.rsp.time</key>
+    <value>Set in Step 69) click on com.itko.lisa.kiosk.components.Card</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.70) change on javax.swing.JPasswordField (pass).rsp</key>
+    <value>Set in Step 70) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.70) change on javax.swing.JPasswordField (pass).rsp.time</key>
+    <value>Set in Step 70) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.71) change on javax.swing.JPasswordField (pass).rsp</key>
+    <value>Set in Step 71) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.71) change on javax.swing.JPasswordField (pass).rsp.time</key>
+    <value>Set in Step 71) change on javax.swing.JPasswordField (pass)</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.72) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 72) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.72) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 72) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.73) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 73) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.73) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 73) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.74) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 74) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.74) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 74) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.75) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 75) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.75) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 75) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.76) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 76) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.76) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 76) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.77) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 77) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.77) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 77) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.78) click on com.itko.lisa.kiosk.components.Button.rsp</key>
+    <value>Set in Step 78) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.78) click on com.itko.lisa.kiosk.components.Button.rsp.time</key>
+    <value>Set in Step 78) click on com.itko.lisa.kiosk.components.Button</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.79) mousedown on com.itko.lisa.kiosk.components.PowerButton.rsp</key>
+    <value>Set in Step 79) mousedown on com.itko.lisa.kiosk.components.PowerButton</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.79) mousedown on com.itko.lisa.kiosk.components.PowerButton.rsp.time</key>
+    <value>Set in Step 79) mousedown on com.itko.lisa.kiosk.components.PowerButton</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.end.rsp</key>
+    <value>Set in Step end</value>
+    </Parameter>
+    <Parameter>
+    <key>lisa.end.rsp.time</key>
+    <value>Set in Step end</value>
+    </Parameter>
+</resultState>
+
+<Configurations>
+<Configuration>
+<name>default</name>
+<external>false</external>
+<props>
+</props>
+</Configuration>
+</Configurations>
+    <Node name="0) launch on kiosk.bat " log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="1) asyncchange on com.itko.lisa.kiosk.KioskFrame" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>a211d3f5-05a0-4b2d-bd03-44d0699a60e2</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>launch</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>30640</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>{{LISA_HOME}}examples_src\kiosk\kiosk.bat</Applet>
+      <ComponentPath>{{LISA_HOME}}examples_src\kiosk</ComponentPath>
+      <ComponentClass>kiosk.bat </ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>0</LogicalIndex>
+  <UniqueIndex>0</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="1) asyncchange on com.itko.lisa.kiosk.KioskFrame" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="2) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>a7e0e497-1aa1-490c-ad41-77cd650ebf58</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1672</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7ePfj00wcP9u7fvz9+tyj/H9ji6YFTAAAA</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>0</LogicalIndex>
+  <UniqueIndex>1</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="2) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="3) click on javax.swing.JList (firstdemo2 lastdemo2)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>ace613ec-f9ba-4eea-90a0-ea4340f54e36</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>51</X>
+      <Y>126</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>6235</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f3d77800-7bbb-43df-a60b-97161b43c9c1</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>51</X>
+      <Y>126</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>c41df88c-6138-4ac7-a473-49f62a965211</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>51</X>
+      <Y>126</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>3f89a40c-dac9-4579-bd05-53cfd82d7f24</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane</ComponentPath>
+      <ComponentClass>javax.swing.JRootPane</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>eeddc777-211a-4b3f-a6ce-87dacf463612</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>46</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7ee7jz8N7+/sGn43eL8v8BNIpZg1IAAAA=</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>2</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="3) click on javax.swing.JList (firstdemo2 lastdemo2)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="4) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>dbaaefee-d214-4d8a-a670-112b8933cb44</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>2079</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>8ebe6a12-411b-40cf-bc80-8e484fb6fe95</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>b42fa4b8-92fd-4575-bd68-12542e75dbc3</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>531</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>369dc91c-7374-4045-abf8-41b5975e9a62</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>b20d96a4-c670-41c8-8ea0-86fc3257e975</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7e3dvZefDw0/298btF+f8AcVogYFIAAAA=</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>abbc5e9b-97de-4dc2-9f34-c1b499482a84</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>a3c380a4-62ff-49e4-b4da-80e42a7b2514</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane</ComponentPath>
+      <ComponentClass>javax.swing.JRootPane</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>5ccbc54c-0552-4c7d-b0a8-3c571e922307</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters>
+    <EventFilter>
+      <Element>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</Element>
+      <Attribute></Attribute>
+      <Regex>(.*)</Regex>
+      <Javascript>_arg.setSelectedValue(&quot;firstdemo2 lastdemo2&quot;, true);</Javascript>
+      <Type>Javascript</Type>
+      <Key>filter.click.23209317</Key>
+      <Composite></Composite>
+      <Value></Value>
+      <Function></Function>
+    </EventFilter>
+  </Filters>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>3</UniqueIndex>
+</WebEvents>
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.web20.Web20JavascriptFilter">
+              <html.element>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</html.element>
+      <javascript>_arg.setSelectedValue(&quot;firstdemo2 lastdemo2&quot;, true);</javascript>
+      <function></function>
+      <prop>filter.click.23209317</prop>
+      </Filter>
+
+    </Node>
+
+
+    <Node name="4) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="5) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>892d6729-2e75-4fd8-9988-eecec1044916</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>130</X>
+      <Y>28</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>5ebaee92-dc26-40ad-baa7-9684c9198912</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>130</X>
+      <Y>28</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>47</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>03cb233a-fc90-4000-8c43-37643ab8efc3</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>130</X>
+      <Y>28</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>4</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="5) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="6) change on javax.swing.JPasswordField (pass)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>b70234d3-c9a6-4090-b3ff-6dfbb27cc6ee</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>130</X>
+      <Y>28</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>13e8abb8-02e5-49e8-94cf-ed5b44236718</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>130</X>
+      <Y>28</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>ba9dc92b-eab8-4591-a2c4-4a30cc3876f7</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>130</X>
+      <Y>28</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>8dc68dc4-5859-44d0-aa95-d22ee7125cd2</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>547</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7+dH//wc7D+/f2x+8W5f8DfiOnZ1IAAAA=</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>7dc2c3da-47cc-40b6-9a6f-e3c9140ea9b1</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>5</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="6) change on javax.swing.JPasswordField (pass)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="7) change on javax.swing.JPasswordField (pass)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>ec1905a2-d0b8-4e2a-bb26-f64769366c0a</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>keystrokes</Type>
+      <Key>80</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>11297115115</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>c50538c0-6776-4323-8d72-8a27358cf1b1</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>change</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>java.awt.event.TextEvent</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>1</LogicalIndex>
+  <UniqueIndex>6</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="7) change on javax.swing.JPasswordField (pass)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="8) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>523b94e5-7890-4419-b9bd-5a0411305a29</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>24</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1562</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>7edd938b-ddcd-4781-99c3-2bacc7e59032</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>2dabcd05-ad1b-4642-a5eb-653c9cd09625</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>24</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>02b8b077-5eaa-4c17-86db-1c629e89160d</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>24</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>495c7024-f481-472e-81a2-ebb211cdf8a8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>bb957179-db1c-42b0-a009-e96ad4fc8b9a</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>change</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>false</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>java.awt.event.TextEvent</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>a2c7cc3b-3137-4a47-811c-2a0014b6330c</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JToolBar/com.itko.lisa.kiosk.components.ATMButton</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.ATMButton</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>d0f06e3b-60cf-42d6-95e9-a33b5265b0b4</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7e3Xuwf7B7b+9gd/xuUf4/Wdh9ulMAAAA=</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>5</LogicalIndex>
+  <UniqueIndex>7</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="8) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="9) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>876788e8-c167-4f43-bd3d-a04dfa01f28d</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>15</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>4141</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>3bac9a05-acea-488f-a6bc-55f80b7a6cae</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>0b301ab6-c9d0-49ab-b35b-4ddf6b00f248</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>15</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>89bed790-013b-4a48-825d-768987fb6fdb</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>15</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>8</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="9) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="10) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>81177ca7-46f0-4f28-b4f8-bfe68467b09a</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>15</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>3109</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>7d72feb6-919a-4d46-9fd5-8cecd668c995</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>15</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>54faf343-3056-424c-9f76-32f9bc4c1872</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>15</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>9</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="10) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="11) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>758aa623-7888-4300-966c-5e6d01c9e54f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>32</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1563</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>787c1c97-41e5-4ab4-92e1-e04ab1239907</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>0c26ce72-e3cb-49ec-b46e-15807296100a</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>32</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>bce49f75-71dc-4bc5-8167-75effbd32ad5</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>32</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>531</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>10</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="11) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="12) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>ab997663-eab3-4878-9c34-6c3c0fbf1eb3</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>16</X>
+      <Y>1</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>c6fb5a02-5150-4269-9d44-5cd9b3216348</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>52377679-2e94-4389-a60b-27d75343a1a0</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>16</X>
+      <Y>1</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>531</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>2f18f7d3-5841-4315-9284-8e4578d9dafa</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>16</X>
+      <Y>1</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>11</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="12) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="13) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>aefbb3ec-042d-43c9-adce-9bcaa0802d8a</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>24</X>
+      <Y>6</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1046</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>cb28a6b1-5061-4898-9136-cd40ad5d1c8c</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>d2c0a999-fe18-4f6e-9962-7b66b9bd90c1</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>24</X>
+      <Y>6</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>c855fd3b-f1a9-474c-a535-725294286131</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>24</X>
+      <Y>6</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>12</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="13) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="14) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>cd38760b-0690-4f66-b60c-4ddb3abba2b0</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>35</X>
+      <Y>3</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>3110</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>dd6110dc-76ea-4ab7-9961-8b74cb81e29b</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>b0ad6663-d0a0-4d89-81e5-6e23ad62510c</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>35</X>
+      <Y>3</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>69277668-cedd-4cff-bfae-d1726e1efeaf</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>35</X>
+      <Y>3</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>13</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="14) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="15) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>5c83248b-9ecd-4c68-889d-bb8bde33e376</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>11</X>
+      <Y>5</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1562</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>8aa30f4d-43b3-440a-9d89-f146649a70fd</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>8b0f0f3f-38d1-413d-aba6-8c056edab7d9</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>11</X>
+      <Y>5</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>fc5eea69-852e-405b-bccb-b9f74d48f61e</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>11</X>
+      <Y>5</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>14</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="15) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="16) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>823ec4ac-bd30-4afb-b764-5ad4904991fd</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>34</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>d37bd426-6aa2-43c2-9b23-344aef694dcd</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>c5ea6818-3431-4ce3-bff6-8ff147ae6f50</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>34</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>917eee49-fb42-4ced-9b4f-e84ce4763fb4</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>34</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>15</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="16) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="17) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>c72e7b45-ef6c-47bc-bf9b-683a3bc4ff60</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>2593</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>1e016c56-1611-42cf-9430-8e10639903b1</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>44ebce3a-8b5e-426e-a59e-8392d69bcd04</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>49034891-f879-4b5e-83c5-3a31a682f2f1</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>16</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="17) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="18) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>ed469c27-fdd2-4219-b9f1-417d22ead8ee</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>23</X>
+      <Y>3</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>11c039e7-9de9-4da8-a7f7-217d11ef77a8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>3df3ce90-ed06-4df2-a1d4-b00dfc9743e0</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>23</X>
+      <Y>3</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>531</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>a08c6f1e-41b6-493e-a5bd-74a89af7a1e6</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>23</X>
+      <Y>3</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>17</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="18) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="19) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>f97a253a-ce55-4cae-bbcc-6df1afa09267</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>36</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>6218</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>0e17c4f5-c96a-45a8-856c-0fbe71473573</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>57bf0657-8e96-4794-89e1-e6f3fdfe33f8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>36</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>14e506a2-688c-4d78-b473-042203e33613</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>36</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>18</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="19) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="20) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>0976024e-4b21-4579-be5e-4dc1ba3f6f72</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>36</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1563</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>51ac766a-5d4a-42b8-b7d4-0bc85446241a</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>36</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>437a9a75-d204-4fd9-a63c-a43dffd25d8c</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>36</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>19</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="20) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="21) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>9d913669-f62d-4765-82e4-8a6c46c4c9ed</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>24</X>
+      <Y>11</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1563</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>b64b83cd-4778-4f79-bcab-f15080a1eca0</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>b021e925-1ee7-4b46-b5fa-76f5655423f6</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>24</X>
+      <Y>11</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>57805df3-d3d4-4025-b196-c92ad094d92c</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>24</X>
+      <Y>11</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>453cf725-7938-4e2c-afa7-aa07d9ac5038</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>32</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT5+eG93f3/34P7u+N2i/H8AkU9IX1IAAAA=</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>20</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="21) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="22) click on javax.swing.JList (firstdemo2 lastdemo2)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>85228d27-fc6e-4eb1-ad29-68d261d66e45</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>51</X>
+      <Y>130</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>6718</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>8e66b05e-c67c-42ae-af80-ff9c0e9233eb</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>51</X>
+      <Y>130</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>2c2b53da-801e-4602-9fd9-a014c12c76fe</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>51</X>
+      <Y>130</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>1d695c21-b24c-422f-8ce3-4d5d8cdc01d3</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane</ComponentPath>
+      <ComponentClass>javax.swing.JRootPane</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>a5a4d95c-da76-4715-91da-2978fc8039a7</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>32</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT5+8GBn52B35+GD8btF+f8ATI+UQ1IAAAA=</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>21</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="22) click on javax.swing.JList (firstdemo2 lastdemo2)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="23) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>35a9c1ad-7eb8-42be-b664-d4eee05fcc78</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1578</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>0da062ea-6dce-460b-b6f3-26841057abcb</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>58f52a77-e06d-4887-b485-0b7538184a5a</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>531</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>6c316e76-1097-495e-8fbf-5a08122a7ad8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>aaadd038-17f1-487d-9984-d5045593fd90</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT5+uHtv58Gn9/cPxu8W5f8DfS0ndlIAAAA=</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>1d46b16e-84a7-46c1-884c-0f92153b3786</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>b0436525-d493-4f56-bd95-bb88c169968f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane</ComponentPath>
+      <ComponentClass>javax.swing.JRootPane</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>2fabfccb-beff-446d-9432-c142e32cf756</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters>
+    <EventFilter>
+      <Element>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</Element>
+      <Attribute></Attribute>
+      <Regex>(.*)</Regex>
+      <Javascript>_arg.setSelectedValue(&quot;firstdemo2 lastdemo2&quot;, true);</Javascript>
+      <Type>Javascript</Type>
+      <Key>filter.click.23256739</Key>
+      <Composite></Composite>
+      <Value></Value>
+      <Function></Function>
+    </EventFilter>
+  </Filters>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>22</UniqueIndex>
+</WebEvents>
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.web20.Web20JavascriptFilter">
+              <html.element>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</html.element>
+      <javascript>_arg.setSelectedValue(&quot;firstdemo2 lastdemo2&quot;, true);</javascript>
+      <function></function>
+      <prop>filter.click.23256739</prop>
+      </Filter>
+
+    </Node>
+
+
+    <Node name="23) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="24) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>b7b4c174-7811-4195-af26-e65dc05f408f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>122</X>
+      <Y>42</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>e34677ca-cc63-4143-b7f5-715f316054fe</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>122</X>
+      <Y>42</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>77e6dd67-4d31-49f3-a4b0-2bd3ee5f42d8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>122</X>
+      <Y>42</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>23</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="24) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="25) change on javax.swing.JPasswordField (pass)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>83790034-e7c6-4b0d-9583-4ce5e88bba99</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>122</X>
+      <Y>42</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>323a8d9c-fb32-4027-a939-713a191fdcfd</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>122</X>
+      <Y>42</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>4f6211fa-309a-47b4-a5b9-c97d4cb690b1</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>122</X>
+      <Y>42</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>79a306ed-5b87-49a5-a2e4-a2d76ca9afe5</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7efXjv4GDvYP/g4fjdovx/ACqQ72NTAAAA</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>66441796-6bed-474d-ba9d-f2635869c424</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>24</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="25) change on javax.swing.JPasswordField (pass)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="26) change on javax.swing.JPasswordField (pass)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>d3713efd-78c7-4744-8453-e3d0d87c31ea</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>keystrokes</Type>
+      <Key>80</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1562</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>11297115115</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>36dc7248-6241-46b2-9a64-cc3278a6a349</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>change</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>java.awt.event.TextEvent</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>1</LogicalIndex>
+  <UniqueIndex>25</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="26) change on javax.swing.JPasswordField (pass)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="27) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>2713c34c-1170-41f3-a143-1f888044ce25</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>16</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1562</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>8258d24e-11b3-4d9c-b266-1da34cef4324</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>4bad8f57-37f4-4160-8299-b24110c68f9f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>16</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>706da1df-bfbf-4ca8-a90f-694504d0c2dd</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>16</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>d8dc2507-069b-4e9b-9345-ea181a4e25c9</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>b948783c-6bef-4035-beeb-1a377ee1213d</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>change</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>false</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>java.awt.event.TextEvent</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>c5df7a7d-c319-4602-8326-8c5859db316f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JToolBar/com.itko.lisa.kiosk.components.ATMButton</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.ATMButton</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>b3f74dc9-3ba8-465f-81d1-30e0b11adb3f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT5+uH//4e7OvU8Pxu8W5f8D2F9JYVIAAAA=</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>5</LogicalIndex>
+  <UniqueIndex>26</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="27) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="28) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>f20ef6e1-19f7-4940-96b7-28cb116363b1</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>18</X>
+      <Y>11</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>15a67e4b-1eb1-4004-8b37-8bc2b996686b</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>091d0479-f277-477c-aa81-ebeea025d0a6</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>18</X>
+      <Y>11</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>532</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>8aeb8985-0751-4e87-9d0f-c821efc8ca93</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>18</X>
+      <Y>11</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>27</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="28) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="29) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>ab5bf6a3-13b0-43c1-842c-e1ef09e9f680</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>18</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1563</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>383456b7-3b73-447d-a5dd-3bb6ba7c0219</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>5cf029cb-9311-4b3b-ab43-f795f9f36b64</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>18</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>532</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>c06ad733-41df-4a7f-872d-bbfd56333a7c</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>18</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>28</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="29) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="30) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>94915d6b-d7d1-492d-93d3-d0a9bc9090a1</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>34</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1625</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>35548736-6f9c-4759-8829-856260cda4f3</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f51af293-06f4-40e9-b2a3-457e64b71ca8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>34</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>e75a946e-e6f4-4b27-95ff-90bf7da11c79</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>34</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>29</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="30) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="31) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>9c8ba1c9-6118-44d6-ae15-5ef2c19dafda</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>13</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>2078</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>46ca1a78-9f83-4b43-8713-73f525aed547</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>1ad17353-1e7b-4911-aed2-44a27d9fdf21</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>13</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>6e23ae86-40ac-4973-b855-2f0572128cc8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>13</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>30</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="31) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="32) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>acde10e8-3672-40e4-8de7-a85cb8fca326</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>10</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>7cebe3f3-8d6c-4612-a828-7d5b7dc39cc2</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>ac2173a4-bcf6-45ab-bc6f-0be30738796e</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>10</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>c25b9de0-4413-4c75-9cb8-11d68d90ef9f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>10</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>31</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="32) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="33) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>f7dd50de-b9e8-4660-82da-5f6e0365c851</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>28</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>2078</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>5587da3b-0d5d-4014-ad3a-d6dae9831ab5</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>029926de-6d4f-4249-a193-eac3e3851f4e</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>28</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>62ab08c6-188e-4040-ac22-6eedf4a4fecc</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>28</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>32</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="33) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="34) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>c70c224c-dd7a-46df-aa15-4bdd45ffa3f4</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>26</X>
+      <Y>5</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>13b9effa-b9ff-4f86-a2ea-a457df83f2e2</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>81193465-635b-4bf8-8e59-5a6586bd2f6c</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>26</X>
+      <Y>5</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>19822227-d359-4994-b787-f7261d8e6b1a</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>26</X>
+      <Y>5</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>33</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="34) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="35) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>04f37aa4-0b01-483d-8e09-6e07ab1be099</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>28</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1563</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>ebd4f232-ee70-48b5-b527-2821d5b27f11</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f59743ac-3956-4376-a0ab-686f1bdfbfbb</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>28</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>85d8acc3-fd37-4f8e-8754-d02a3c52309a</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>28</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>34</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="35) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="36) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>7136e8e2-ea50-445f-925c-696e1effb781</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>5</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>2078</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>e3a4512d-fd1d-47e4-90e1-3bad59e2e7fd</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>5e39bccb-ceca-4e7b-9624-64a4d3112def</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>5</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f3c48b8a-835f-4ffa-bc12-765406f5b3e3</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>5</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>35</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="36) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="37) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>4cf6214f-4bb3-44da-8c11-3e1b97190de1</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>17</X>
+      <Y>14</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1046</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>e778dbd1-0d2b-44c6-969d-fc9793b26465</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>fbe3e327-05d4-406d-b44e-05faa17a4fec</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>17</X>
+      <Y>14</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>07513e58-0763-4b6f-af89-2c3c615cf051</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>17</X>
+      <Y>14</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>36</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="37) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="38) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>8f933d08-0d92-46ba-9028-c40ca175adf8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>39</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>5188</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>10364c4c-ce32-4fae-8ba8-b464e2a104ee</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>1f043f47-d8f8-4255-8a53-36d252b480a3</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>39</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>e15378ea-dee7-49ea-aae3-3abacd7b16c8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>39</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>37</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="38) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="39) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>2b86e729-ec2e-4798-9156-d426cc4e53b6</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>39</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>26cd1fec-f1cb-47c3-ab1a-402f24f2af9f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>39</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>00d9605f-c8c6-4776-8d3f-c298da232293</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>39</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>38</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="39) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="40) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>e645c925-f776-4e56-b064-6e586fccddb6</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>25</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>3125</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>a4d07e14-4b7b-4d29-8b1e-d16f229f0ec1</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>47</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>52416eb8-cb34-4ddb-ad21-cc91cb702493</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>25</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>42914f9a-6713-4013-8367-3f34aac27310</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>25</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>34aa89bd-6050-455d-9273-4276eeb3da35</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>546</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7e3b+/9+newwd7u+N3i/L/ASdPMVtTAAAA</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>39</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="40) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="41) click on javax.swing.JList (firstdemo2 lastdemo2)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>bf9956ae-e029-4899-8cd2-2f66e962eeac</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>96</X>
+      <Y>129</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>5688</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>2d76e746-f678-4058-ad80-218a21865702</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>96</X>
+      <Y>129</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>3041ac64-0ebd-41ac-a570-fdea7642dd9c</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>96</X>
+      <Y>129</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>86cacc91-16a6-4d11-abed-77087ec12526</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane</ComponentPath>
+      <ComponentClass>javax.swing.JRootPane</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>9704e190-1f17-4b8d-ab2c-a4c030ae3024</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7e2935dG9/997u7vjdovx/AIVJyslTAAAA</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>40</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="41) click on javax.swing.JList (firstdemo2 lastdemo2)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="42) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>65375c74-ba2e-4549-beac-fbe4ebc47554</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>7b1b9ade-b324-4e1d-8514-b8c2d63857f7</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>1a71ca06-a8f0-41f4-8b11-85cd3798824f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>d582c689-74d9-481c-aacb-963632771a27</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>c7c59d87-de58-45d6-bb80-64665d7f3869</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>47</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7evb93b/f+vb37O+N3i/L/ATr8kVZTAAAA</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>62de420d-1c5c-4920-8deb-58967118d6e7</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>bf1ac3b1-48ee-435f-aaa1-e9387d3137d1</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane</ComponentPath>
+      <ComponentClass>javax.swing.JRootPane</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>30ebb804-c555-4919-8f7d-471b4976e472</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters>
+    <EventFilter>
+      <Element>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</Element>
+      <Attribute></Attribute>
+      <Regex>(.*)</Regex>
+      <Javascript>_arg.setSelectedValue(&quot;firstdemo2 lastdemo2&quot;, true);</Javascript>
+      <Type>Javascript</Type>
+      <Key>filter.click.23274270</Key>
+      <Composite></Composite>
+      <Value></Value>
+      <Function></Function>
+    </EventFilter>
+  </Filters>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>41</UniqueIndex>
+</WebEvents>
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.web20.Web20JavascriptFilter">
+              <html.element>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</html.element>
+      <javascript>_arg.setSelectedValue(&quot;firstdemo2 lastdemo2&quot;, true);</javascript>
+      <function></function>
+      <prop>filter.click.23274270</prop>
+      </Filter>
+
+    </Node>
+
+
+    <Node name="42) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="43) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>12df0eac-39dc-484d-9590-f5521596db7f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>132</X>
+      <Y>35</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1562</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>6ccb989b-b6a6-4332-95bf-0fe1ecb7dc60</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>132</X>
+      <Y>35</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>c49cc0e5-1db5-442d-82eb-c84af778b117</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>132</X>
+      <Y>35</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>42</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="43) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="44) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>e9cb0a95-009f-4bba-990c-8e5aa8b86f68</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>132</X>
+      <Y>35</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>532</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>651df8a4-2517-4ba9-a7e2-8554a3d4ff14</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>132</X>
+      <Y>35</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f56530ef-76c8-4272-bd13-c536f8dca7ef</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>132</X>
+      <Y>35</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>43</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="44) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="45) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>f9851fd1-9ba6-4d30-9dbf-a8151981acba</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>132</X>
+      <Y>35</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>531</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>0f46b5ec-c29f-433b-85bf-0b9cbafdf0ff</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>132</X>
+      <Y>35</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>c5cd9ba8-e26d-4df9-8af4-862d90c0e74e</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>132</X>
+      <Y>35</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>44</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="45) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="46) change on javax.swing.JPasswordField (pass)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>cf6fd04f-0167-474c-af79-24203d92bec8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>132</X>
+      <Y>35</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>4ec78862-b048-4c2d-b466-50040c4f491e</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>132</X>
+      <Y>35</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>8f157810-b58a-4934-9ef7-f3f36db0eabb</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>132</X>
+      <Y>35</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>b909fc45-bf54-42b3-97b3-4e1c296a0597</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7+9OH+7qcPdu/fG79blP8PcSKwAlIAAAA=</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>52aeee0a-5351-4162-b9a6-9ae6733208a8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>45</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="46) change on javax.swing.JPasswordField (pass)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="47) change on javax.swing.JPasswordField (pass)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>5ba524cd-7054-4111-892f-29c1ce6a3e38</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>keystrokes</Type>
+      <Key>80</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1563</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>11297115115</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>e7cf40c1-7613-45c9-a927-58a8993543f1</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>change</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>java.awt.event.TextEvent</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>1</LogicalIndex>
+  <UniqueIndex>46</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="47) change on javax.swing.JPasswordField (pass)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="48) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>bfd6b941-95af-46b5-af24-ed34513388d2</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>6</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>fdaa9724-3474-45aa-9c12-a11fb4823f5b</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f6b46805-df6e-4bdd-bb99-d0a28f858f92</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>6</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>42e531b2-d2a0-49ac-b57a-232b4c3c26c2</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>6</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>74742201-3deb-4c57-9d61-880d1d88e64b</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f9796f0e-002b-4b7b-adfc-fd8a1e2848f2</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>change</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>false</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>java.awt.event.TextEvent</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>e67c47ee-7521-4755-b9d7-455eaa8dd28a</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JToolBar/com.itko.lisa.kiosk.components.ATMButton</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.ATMButton</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>da12eaf5-af1d-492f-923e-ea1170379e0b</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>32</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT6+f//eg/29hw/2xu8W5f8DxIYEu1IAAAA=</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>5</LogicalIndex>
+  <UniqueIndex>47</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="48) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="49) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>c24e5f5d-6829-44d9-b820-75fc7ca8e534</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>20</X>
+      <Y>12</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1562</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>cc2028bb-cde5-4d64-bf94-d63738a8dcf6</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>866205d5-65a5-4cf6-900a-c192511bf0bc</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>20</X>
+      <Y>12</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>0ef20d5b-9843-4a0f-a2d4-ec0234a3cdc7</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>20</X>
+      <Y>12</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>48</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="49) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="50) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>020f46d9-8468-4a9e-a39b-ad7a2bcb958c</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>23</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1562</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>0f0f2864-1759-4cd0-869f-38bd60e9f50d</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>4114a8c6-1762-46cb-bfe2-4a878ed3e326</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>23</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>07e82bee-b8c0-4566-b3cf-35b435e26c72</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>23</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>49</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="50) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="51) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>cd901199-d5d7-4f6c-aac3-cc03e755ba5e</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>26</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>2078</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>24fd62d7-f97b-4e65-bc02-8a87016a3d5a</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>43f73c03-0adb-4734-a12c-684651c91669</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>26</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>54fdbd90-dfa1-46b9-92d9-fd71c40dd801</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>26</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>50</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="51) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="52) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>a502c037-2239-4a37-81d0-4a2f45e2ad73</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>27</X>
+      <Y>15</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1563</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>2fd6e968-7ced-4ac9-b00b-f1120c499b21</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>27</X>
+      <Y>15</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>531</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f6c21ec3-5d69-4111-9cea-f534e0305585</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>27</X>
+      <Y>15</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>51</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="52) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="53) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>8577d765-efef-4ae7-a0bc-005c725c0d8e</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>531</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>263c7564-ff3e-4f30-9748-c80156908b94</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f539f55e-19de-4b74-a3f1-94fa0a866abf</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>531</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>25533670-665e-4f94-b69c-dd4c45fffaca</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>6cc168e9-40f4-45ef-88bc-110a573063d4</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>32</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7evXfv091PD3b3H4zfLcr/B3H29TBTAAAA</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>52</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="53) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="54) click on javax.swing.JList (firstdemo2 lastdemo2)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>a60f3b13-5d01-420f-9d77-ee2e596cf802</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>126</X>
+      <Y>126</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>2593</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>3d7cf6ef-624a-42b0-91da-49b8ced46082</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>126</X>
+      <Y>126</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>997510ce-a651-4025-bb63-be137400220c</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>126</X>
+      <Y>126</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>01e630b4-912a-47c1-bd9c-b65c8858dde2</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane</ComponentPath>
+      <ComponentClass>javax.swing.JRootPane</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>a398210f-b50b-409d-b251-a8d00a4aaf3b</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>32</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7e3f30/r3de/d27o3fLcr/B3YGmJVTAAAA</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>53</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="54) click on javax.swing.JList (firstdemo2 lastdemo2)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="55) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>605c048f-bc0a-4cec-88f2-2601b18b9a9f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1046</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f89112bf-a63e-48d0-be16-006b06850110</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>784f553e-a775-484e-aef8-fdabfc0acfaf</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>4edc164b-6566-4c2e-9f33-0540f1dd6147</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>8dec0d9d-aedc-4181-a409-9b59e4b70120</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>32</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT6+f7C3t3d/b39v/G5R/j9pxUD/UgAAAA==</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>ef8b6e3e-5af1-4915-a2e4-61c036ff873d</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>651872dc-1623-4ba1-85cb-71670e4dbfec</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane</ComponentPath>
+      <ComponentClass>javax.swing.JRootPane</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>e4449eb1-be37-4d8f-a340-cb3d58eafc85</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters>
+    <EventFilter>
+      <Element>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</Element>
+      <Attribute></Attribute>
+      <Regex>(.*)</Regex>
+      <Javascript>_arg.setSelectedValue(&quot;firstdemo2 lastdemo2&quot;, true);</Javascript>
+      <Type>Javascript</Type>
+      <Key>filter.click.23292426</Key>
+      <Composite></Composite>
+      <Value></Value>
+      <Function></Function>
+    </EventFilter>
+  </Filters>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>54</UniqueIndex>
+</WebEvents>
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.web20.Web20JavascriptFilter">
+              <html.element>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</html.element>
+      <javascript>_arg.setSelectedValue(&quot;firstdemo2 lastdemo2&quot;, true);</javascript>
+      <function></function>
+      <prop>filter.click.23292426</prop>
+      </Filter>
+
+    </Node>
+
+
+    <Node name="55) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="56) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>e54d26b1-1922-41a7-a690-cc64baf5b633</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>119</X>
+      <Y>30</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>2156f683-f638-4d20-be66-01eebfc290c0</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>119</X>
+      <Y>30</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>6fe08ac4-4508-4661-8c71-de08e3deb46e</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>119</X>
+      <Y>30</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>55</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="56) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="57) change on javax.swing.JPasswordField (pass)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>98b7ffb9-4968-47d9-9900-74359ed0e70e</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>119</X>
+      <Y>30</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f420baf1-fc6d-4bc4-a95e-2e9b48b01ce5</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>119</X>
+      <Y>30</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>0f2d6d86-af38-41e1-8985-cfc8b87dee6f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>119</X>
+      <Y>30</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>9840ab57-977c-4b7d-a8b2-8c00924a047c</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>32</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7e/XTnwcMHD3YP7o3fLcr/B/JoBMRTAAAA</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>672deadf-470b-483f-90d7-d80725df28cb</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>56</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="57) change on javax.swing.JPasswordField (pass)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="58) change on javax.swing.JPasswordField (pass)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>7a502ea3-2b06-47b4-adb7-a0478e3d0db2</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>keystrokes</Type>
+      <Key>80</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1563</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>11297115115</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>97051728-00f8-4d00-ba86-0a292d773de7</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>change</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>java.awt.event.TextEvent</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>1</LogicalIndex>
+  <UniqueIndex>57</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="58) change on javax.swing.JPasswordField (pass)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="59) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>7e7af604-da16-405e-ae2e-7f4bdcce6cd8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>15</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f75c1d61-85c0-4928-8b6a-92b948edbdc3</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>43349e8a-231c-4551-8d60-bfb18e84fa87</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>15</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>cb77e50e-cd28-411e-a934-64a01d950efe</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>15</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>8f98ed65-41c7-4206-a42d-c74c802b30c7</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>5f25c65f-aca5-4f39-88a7-f093dea1a1b5</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>change</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>false</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>java.awt.event.TextEvent</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>8eeee0e1-7474-4a9f-962d-80167213589a</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JToolBar/com.itko.lisa.kiosk.components.ATMButton</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.ATMButton</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>0b8e07b2-4f68-477d-8935-53283235a73f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT5+uHP/4YO9g3vjd4vy/wHI4zUzUQAAAA==</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>5</LogicalIndex>
+  <UniqueIndex>58</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="59) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="60) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>a3a9e8af-86c2-4114-a7cc-263f40b0d981</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>17</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>260d25de-c127-4311-882d-57f28422eb57</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>a20d81f2-a024-42df-92ce-655cdbd8fdce</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>17</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>d95d578c-2dcd-4e6c-8b5e-369cd1e0fbe5</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>17</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>59</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="60) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="61) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>73f86d4f-f3b9-4dba-8453-c13b3bf1477d</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>22</X>
+      <Y>5</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>2078</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>cb2d527f-79f3-4a82-a915-17d2de287d71</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>db5c38a9-effc-4e54-8a1b-fd89fe184b79</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>22</X>
+      <Y>5</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>fe7ed5ae-0b96-4007-9c7c-d7bdb517852f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>22</X>
+      <Y>5</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>60</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="61) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="62) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>046ee505-5b44-47d3-87f9-74f4ac1c6481</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>20</X>
+      <Y>1</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>3110</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>199282ce-6ab9-43e9-a60e-06f36a6045a2</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f75af8d3-072b-4a38-b843-11d615a8a90e</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>20</X>
+      <Y>1</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>d6b32d2d-132b-4e77-90f4-6571926a5b4e</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>20</X>
+      <Y>1</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>61</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="62) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="63) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>90dcfaf1-4c5d-4a17-b90c-354d33d9df76</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>28</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>84f56704-7173-4978-9fb7-e00c2a98c414</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>4ece779d-70d3-412c-a82a-b52d65d7fbf5</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>28</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>365df21c-9cb7-484e-a1a5-6fde710a9639</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>28</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>62</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="63) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="64) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>b3671b1f-7e5d-499b-b389-11403a875f82</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>20</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>2594</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>6cf34a48-a304-43ae-8f03-2202780302e0</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>c2abc1ce-bc34-4340-8199-4405d8667e18</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>20</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>d8180d31-af3e-4fb4-ba13-996fed8f31ab</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>20</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>63</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="64) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="65) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>2d8e67b3-3a6a-4142-b5d0-0dfa14960f20</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>21</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>babcdddc-1a96-48cb-88fb-1926a1e0fcbd</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>21</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>531</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>ccb8c26f-6662-49e0-8de1-0b02079f0af3</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>21</X>
+      <Y>4</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>64</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="65) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="66) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>7cc6c2c3-78bb-45d6-b70a-afeeb67c7dfd</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>15</X>
+      <Y>6</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1046</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>1e7514d1-38b3-4cad-b4c4-844ea7023476</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>baf9ca4c-f47e-4faf-8e54-2e458269f8fd</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>15</X>
+      <Y>6</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>c4f75230-de3d-4262-b451-b6ebafcbd266</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>15</X>
+      <Y>6</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>fc27e61c-cca4-4539-baff-23ba086b2ea0</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>32</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7evX/v3v37nx58ejB+tyj/H2p4q55TAAAA</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>65</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="66) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="67) click on javax.swing.JList (firstdemo2 lastdemo2)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>8febfa90-014c-44b3-885b-75ccfb5c7d93</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>82</X>
+      <Y>126</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>2593</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f3ee451b-bda4-485b-869d-6708cf87487b</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>82</X>
+      <Y>126</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>46ef6cd2-b5ee-4c62-bc91-3eba1b0562e8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>82</X>
+      <Y>126</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>45a31d6c-0c63-4282-b6aa-35a23d609c1b</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane</ComponentPath>
+      <ComponentClass>javax.swing.JRootPane</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>d511addd-2ed7-4bc2-8514-d912c7e18958</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7evffp3oOdvZ29/fG7Rfn/AJ91xcBTAAAA</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>66</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="67) click on javax.swing.JList (firstdemo2 lastdemo2)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="68) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>7586230f-c9bd-4af7-b260-3cabe971d6c1</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1063</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>837f7b17-b82c-4340-8a11-c26e3cd4c593</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>b4cdf9c5-0d6a-4e1f-9b81-a27373fa9a85</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>2205c599-dc05-490b-a152-02a49c6f8dcf</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>77</X>
+      <Y>95</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</ComponentPath>
+      <ComponentClass>javax.swing.JList</ComponentClass>
+      <Text>firstdemo2 lastdemo2</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>d40d36d4-6490-4017-8d5a-d581f424f731</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7evX9/Z3d/9+Dh7vjdovx/AA/WZwBTAAAA</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>0930d0b3-f407-40ea-87c5-22a2c13caa78</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>6aa4abca-b9d5-4395-b31e-b7a336770533</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane</ComponentPath>
+      <ComponentClass>javax.swing.JRootPane</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>693c4ad9-40bf-40d6-bf75-cfccc92b69c9</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters>
+    <EventFilter>
+      <Element>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</Element>
+      <Attribute></Attribute>
+      <Regex>(.*)</Regex>
+      <Javascript>_arg.setSelectedValue(&quot;firstdemo2 lastdemo2&quot;, true);</Javascript>
+      <Type>Javascript</Type>
+      <Key>filter.click.23305020</Key>
+      <Composite></Composite>
+      <Value></Value>
+      <Function></Function>
+    </EventFilter>
+  </Filters>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>67</UniqueIndex>
+</WebEvents>
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.web20.Web20JavascriptFilter">
+              <html.element>/com.itko.lisa.kiosk.KioskFrame/javax.swing.Popup$HeavyWeightWindow[getName()=&apos;###focusableSwingPopup###&apos;]/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPopupMenu/javax.swing.JScrollPane/javax.swing.JViewport/javax.swing.JList</html.element>
+      <javascript>_arg.setSelectedValue(&quot;firstdemo2 lastdemo2&quot;, true);</javascript>
+      <function></function>
+      <prop>filter.click.23305020</prop>
+      </Filter>
+
+    </Node>
+
+
+    <Node name="68) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="69) click on com.itko.lisa.kiosk.components.Card" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>b1557f5d-9757-4663-b95b-9deb3bfe9563</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>113</X>
+      <Y>33</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>3494438f-1c80-48bb-a3f3-bda2d151f76c</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>113</X>
+      <Y>33</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>531</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>3b4ea071-6493-4754-95c0-a0ccc0598a87</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>113</X>
+      <Y>33</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>68</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="69) click on com.itko.lisa.kiosk.components.Card" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="70) change on javax.swing.JPasswordField (pass)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>36d2d23b-9758-46cf-bda6-9f05ea3cc109</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>113</X>
+      <Y>33</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>80adc88a-2745-415e-8a24-6be7e72f4b15</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>113</X>
+      <Y>33</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>51b0922c-dee0-4001-bdbf-db4348daf9b6</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>4</Modifiers>
+      <X>113</X>
+      <Y>33</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.Card</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Card</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>98811c45-3c8f-4398-8467-4c7c5f916886</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>46</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT6+f+/eg937D/cejN8tyv8HsXFGjFIAAAA=</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>3b60f30e-a9b9-4f0e-8325-1880372d985d</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>2</LogicalIndex>
+  <UniqueIndex>69</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="70) change on javax.swing.JPasswordField (pass)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="71) change on javax.swing.JPasswordField (pass)" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>ec09c9ac-767e-42b5-82ae-7b9a41ae2583</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>keystrokes</Type>
+      <Key>80</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1563</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>11297115115</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>6585a33d-e5a1-439d-a6b7-a252de024f91</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>change</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>java.awt.event.TextEvent</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>1</LogicalIndex>
+  <UniqueIndex>70</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="71) change on javax.swing.JPasswordField (pass)" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="72) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>ba49618a-2fd5-4c91-9d73-41089625ad16</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>18</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>bde45cc8-2fc6-40d7-9c78-8cf0819fa795</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>da4a6a32-dbab-495a-ad71-dbcc05c07b2d</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>18</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>af4a748b-582b-41ad-bd28-947f5ba1817d</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>18</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>3b57e2c7-92ba-4059-b8d0-434d5bdfb42b</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>fd898a05-cf0e-4c31-a74d-e7ee8270e97d</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>change</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>false</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/javax.swing.JPasswordField</ComponentPath>
+      <ComponentClass>javax.swing.JPasswordField</ComponentClass>
+      <Text>pass</Text>
+      <Title>java.awt.event.TextEvent</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>e0bc0412-17a6-438e-a79a-6f3ac33f04e7</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JToolBar/com.itko.lisa.kiosk.components.ATMButton</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.ATMButton</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>520a5ac2-1439-4222-aa8c-a37d40941f93</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7e2/l0Z/fhw4d743eL8v8B3nio4FIAAAA=</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>5</LogicalIndex>
+  <UniqueIndex>71</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="72) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="73) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>5875734a-bb2b-45c9-88ab-68e876d87df2</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>18</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1563</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>ed8c600e-4864-482a-b14a-53ba9c44a781</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>930da962-0751-401a-acaf-8d55994f10b4</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>18</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>34d4eb42-79e3-451b-afd1-1405afdf05a3</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>18</X>
+      <Y>7</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[2]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>72</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="73) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="74) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>37f6387f-9bf1-4183-ad4c-6392c3a194ee</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>23</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1047</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>525094b1-b441-4184-8932-4af07d25e83f</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>10388043-9c5e-4f22-a605-670d30c314ca</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>23</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>02d90555-4658-41d9-805d-9fa2aaaf0ce5</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>23</X>
+      <Y>9</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>73</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="74) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="75) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>7e55a004-15a6-4290-a153-31f416c5540d</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>36</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1562</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>12b63587-a787-46ac-b9fb-eb929cf4ecb8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>d7e0d6af-1935-40bd-b89e-2223052ca621</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>36</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>c0e368f6-330f-455a-808f-30d6ea4de32c</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>36</X>
+      <Y>10</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>74</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="75) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="76) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>a454a36f-6ca7-4d13-b574-46e0f7a649a8</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>35</X>
+      <Y>2</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1562</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>4cfd89c1-0748-4462-b840-ec29143f8dbb</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>2a55a78c-e4d7-4210-a2ea-1b514f5bf711</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>35</X>
+      <Y>2</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>34cde08e-8cf0-49c9-8ca1-0c8bef0cf7fe</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>35</X>
+      <Y>2</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[1]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>75</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="76) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="77) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>cc211663-a5c4-4b9c-add6-cebf5fd907b0</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>12</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1563</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>15e8ed68-992a-4244-8a77-43ca5594adab</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>e608f9ca-e3fb-43a5-8c4c-81b0cb8caedc</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>12</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>34fefdd4-fc27-4215-a645-cd8f5fa05d34</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>14</X>
+      <Y>12</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>76</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="77) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="78) click on com.itko.lisa.kiosk.components.Button" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>89e5ffc3-9577-49dd-ac12-0852b5acf740</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>35</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>3109</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>15852b8d-7060-4235-9454-7a7df0ff3e94</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>29dc530c-4df6-4382-9e02-0c78fb191386</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>35</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>24c9918c-7ec7-4355-9b4c-6dc9f0928b59</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>35</X>
+      <Y>8</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$2/com.itko.lisa.kiosk.components.Button[3]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>77</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="78) click on com.itko.lisa.kiosk.components.Button" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="79) mousedown on com.itko.lisa.kiosk.components.PowerButton" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>cacb4c01-aeb7-4ae7-a664-f32a7781d4ea</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>17</X>
+      <Y>12</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1562</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>8db64374-ddb2-4286-b054-5f137ff662ce</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>a32976e8-f511-4f49-aa54-026554776a61</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>17</X>
+      <Y>12</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>16</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>eb13474f-2b94-4da7-a1f8-656353fa7891</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>click</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>17</X>
+      <Y>12</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JPanel/javax.swing.JPanel/com.itko.lisa.kiosk.components.ATM/com.itko.lisa.kiosk.components.ATM$3/com.itko.lisa.kiosk.components.Button[4]</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.Button</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>d8818214-a2c8-4400-8c84-e032399a84df</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>32</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7e3X24d29n9+H+/vjdovx/APJeqBZTAAAA</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>3</LogicalIndex>
+  <UniqueIndex>78</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="79) mousedown on com.itko.lisa.kiosk.components.PowerButton" log=""
+          type="com.itko.lisa.web20.Web20Node"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="false"
+          next="end" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+<WebEvents>
+  <PhysicalEvents>
+    <AppletEvent>
+      <Guid>309520c5-aa3e-40db-b1fd-d381cb4ddc53</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mousedown</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>21</X>
+      <Y>12</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>1078</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JToolBar/com.itko.lisa.kiosk.components.PowerButton</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.PowerButton</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>f7b9fb92-c420-413c-a15a-7dfde9ba4e51</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>focusin</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>15</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JToolBar/com.itko.lisa.kiosk.components.PowerButton</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.PowerButton</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>9961dfe8-a479-4a9c-8035-c3d7f2f2e9aa</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>asyncchange</Type>
+      <Key>0</Key>
+      <Modifiers>0</Modifiers>
+      <X>0</X>
+      <Y>0</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>32</Think>
+      <Request>Swing</Request>
+      <RawResponse>H4sIAAAAAAAEAO29B2AcSZYlJi9tynt/SvVK1+B0oQiAYBMk2JBAEOzBiM3mkuwdaUcjKasqgcplVmVdZhZAzO2dvPfee++999577733ujudTif33/8/XGZkAWz2zkrayZ4hgKrIHz9+fB8/Is6LMn909+7Jo9/36ZcnX31x+kt3f9+ifVv9vs+/PDl+/pr+epMvVr/vtFqM8fG4LJps/Laomrfj3wv/PquzRT7e3d/f+XTn3u69B+N3i/L/AfidAgBTAAAA</RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.KioskFrame</ComponentClass>
+      <Text></Text>
+      <Title>LISAfinancial Kiosk</Title>
+      <Binary></Binary>
+    </AppletEvent>
+    <AppletEvent>
+      <Guid>aa79409d-cabe-404e-9520-1d586fa49eef</Guid>
+      <BrowserId>0</BrowserId>
+      <FramePath></FramePath>
+      <Type>mouseup</Type>
+      <Key>0</Key>
+      <Modifiers>1</Modifiers>
+      <X>21</X>
+      <Y>12</Y>
+      <AbsoluteX>0</AbsoluteX>
+      <AbsoluteY>0</AbsoluteY>
+      <Think>31</Think>
+      <Request>Swing</Request>
+      <RawResponse></RawResponse>
+      <Visible>true</Visible>
+      <Applet>com.itko.lisa.kiosk.KioskFrame</Applet>
+      <ComponentPath>/com.itko.lisa.kiosk.KioskFrame/javax.swing.JRootPane/javax.swing.JLayeredPane[getName()=&apos;null.layeredPane&apos;]/javax.swing.JPanel[getName()=&apos;null.contentPane&apos;]/javax.swing.JToolBar/com.itko.lisa.kiosk.components.PowerButton</ComponentPath>
+      <ComponentClass>com.itko.lisa.kiosk.components.PowerButton</ComponentClass>
+      <Text></Text>
+      <Title></Title>
+      <Binary></Binary>
+    </AppletEvent>
+  </PhysicalEvents>
+  <Filters/>
+  <Assertions/>
+  <LogicalIndex>0</LogicalIndex>
+  <UniqueIndex>79</UniqueIndex>
+</WebEvents>
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="true"
+          next="fail" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend"
+          version="1"
+          think="0-0"
+ useFilters="true"
+ quiet="true"
+          next="end" >
+
+<graphx>-1</graphx>
+<graphy>-1</graphy>
+    </Node>
+
+
+</TestCase>

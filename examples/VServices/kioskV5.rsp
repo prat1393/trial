@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+
+<!-- TestCase Results Document created by LISA Test Editor -->
+<!-- On: Mon Dec 11 20:15:21 IST 2017 -->
+
+
+<Results name="kioskV5">
+
+
+    <Result node="Prepare Request">
+      <content type="java.lang.String" charset="UTF-8"><![CDATA[e3tsaXNhLnZzZS5yZXF1ZXN0fX0=]]></content>
+    </Result>
+
+
+    <Result node="Prepare Response">
+      <content type="com.itko.lisa.http.html.HtmlResponseWrapper" charset=""><![CDATA[e3tsaXNhLnZzZS5yZXNwb25zZX19]]></content>
+    </Result>
+
+
+</Results>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><rules>
+    <agent guid="1088413135" name="JBoss_LISABank">
+      <feature name="EJB" weight="8"/>
+      <feature name="HTTP Client" weight="8"/>
+      <feature name="HTTP Server" weight="8"/>
+      <feature name="JDBC" weight="8"/>
+      <feature name="JMS" weight="8"/>
+      <feature name="Logging" weight="8"/>
+      <feature name="RMI" weight="8"/>
+      <feature name="Framework" weight="8"/>
+      <feature name="POJO" weight="8"/>
+      <property comment="Whether to start recording transactions automatically at startup (vs. being asked by a client)" key="lisa.agent.transaction.auto.start" value="true"/>
+
+	  <property key="lisa.agent.virtualize.startup.mode" value="1"/>
+	<property comment="To keep Agent log size to 100MB" key="lisa.agent.log.max.size" value="102400000"/>
+        <!-- 1611 GRID Slow Response Issue  -->
+        <property key="com.itko.lisa.remote.transactions.dispatchers.SocketDispatcher.disabled" value="true"/>
+        <!--  Graph size -->
+        <property comment="The minimum depth a transaction fragment must have to be captured (excluding exceptions)" key="lisa.agent.transaction.min.depth" value="2"/>
+        <property comment="Maximum size in bytes of a serialized to XML object graph" key="lisa.agent.transaction.max.graph.size" value="999000000"/>
+        <property comment="The maximum depth to which we serialize objects to XML when capturing transactions" key="lisa.agent.transaction.max.object.depth" value="15"/>
+        <property comment="Maximum size in bytes of a serialized to XML object graph" key="lisa.agent.virtualize.max.graph.size" value="999000000"/>
+            
+             <property comment="transaction timeout" key="lisa.agent.transaction.max.duration" value="600"/>
+	  	 <virtualize class="com.itko.examples.ejb3.EJB3UserControlBeanRemote" method="*" signature="*"/>
+			<virtualize class="com.itko.examples.ejb3.EJB3AccountControlBeanRemote" method="*" signature="*"/>
+   </agent>
+   <agent guid="2011200800" name="CarEsb">
+      <feature name="EJB" weight="8"/>
+      <feature name="Exception" weight="8"/>
+      <feature name="GUI" weight="8"/>
+      <feature name="HTTP Client" weight="8"/>
+      <feature name="HTTP Server" weight="8"/>
+      <feature name="JCA" weight="8"/>
+      <feature name="JDBC" weight="8"/>
+      <feature name="JMS" weight="8"/>
+      <feature name="Logging" weight="8"/>
+      <feature name="MQ" weight="8"/>
+      <feature name="RMI" weight="8"/>
+      <feature name="SAP" weight="8"/>
+      <feature name="Tibco" weight="8"/>
+      <feature name="WebMethods" weight="8"/>
+      <feature name="Framework" weight="8"/>
+      <feature name="POJO" weight="8"/>
+   </agent>
+   <agent guid="2011204509" name="CarInv">
+      <feature name="EJB" weight="8"/>
+      <feature name="Exception" weight="8"/>
+      <feature name="GUI" weight="8"/>
+      <feature name="HTTP Client" weight="8"/>
+      <feature name="HTTP Server" weight="8"/>
+      <feature name="JCA" weight="8"/>
+      <feature name="JDBC" weight="8"/>
+      <feature name="JMS" weight="8"/>
+      <feature name="Logging" weight="8"/>
+      <feature name="MQ" weight="8"/>
+      <feature name="RMI" weight="8"/>
+      <feature name="SAP" weight="8"/>
+      <feature name="Tibco" weight="8"/>
+      <feature name="WebMethods" weight="8"/>
+      <feature name="Framework" weight="8"/>
+      <feature name="POJO" weight="8"/>
+   </agent>
+   <agent guid="-2077079868" name="CarLoan">
+      <feature name="EJB" weight="8"/>
+      <feature name="Exception" weight="8"/>
+      <feature name="GUI" weight="8"/>
+      <feature name="HTTP Client" weight="8"/>
+      <feature name="HTTP Server" weight="8"/>
+      <feature name="JCA" weight="8"/>
+      <feature name="JDBC" weight="8"/>
+      <feature name="JMS" weight="8"/>
+      <feature name="Logging" weight="8"/>
+      <feature name="MQ" weight="8"/>
+      <feature name="RMI" weight="8"/>
+      <feature name="SAP" weight="8"/>
+      <feature name="Tibco" weight="8"/>
+      <feature name="WebMethods" weight="8"/>
+      <feature name="Framework" weight="8"/>
+      <feature name="POJO" weight="8"/>
+   </agent>
+   <agent guid="2011217664" name="CarWeb">
+      <feature name="EJB" weight="8"/>
+      <feature name="Exception" weight="8"/>
+      <feature name="GUI" weight="8"/>
+      <feature name="HTTP Client" weight="8"/>
+      <feature name="HTTP Server" weight="8"/>
+      <feature name="JCA" weight="8"/>
+      <feature name="JDBC" weight="8"/>
+      <feature name="JMS" weight="8"/>
+      <feature name="Logging" weight="8"/>
+      <feature name="MQ" weight="8"/>
+      <feature name="RMI" weight="8"/>
+      <feature name="SAP" weight="8"/>
+      <feature name="Tibco" weight="8"/>
+      <feature name="WebMethods" weight="8"/>
+      <feature name="Framework" weight="8"/>
+      <feature name="POJO" weight="8"/>
+   </agent>
+   <agent guid="-2032180703" name="DEFAULT"/>
+    <!--************ Console ************-->
+    <console>
+        <property comment="if MQ goes down, wait this many millis before attempting to reconnect." key="MQMIRROR_CONNECT_INTERVAL" value="5005"/>
+        <property comment="A regular expression to match queue names we are interested in. By default we will inspect all queues. Be careful to quote any dot characters in the queue names!  If this property is left undefined we will include all queue names" key="MQMIRROR_INCLUDE_QUEUES" value=""/>
+    </console>
+</rules>

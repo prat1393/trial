@@ -1,0 +1,122 @@
+{
+    "modifyDate": "2016-01-08T08:37:11-06:00",
+    "description": "",
+    "appliedDPH": [{
+        "isRequest": true,
+        "isResponse": false,
+        "name": "REST Data Protocol",
+        "className": "com.itko.lisa.vse.stateful.protocol.rest.RestDataProtocol",
+        "id": "3F4B8348B61511E58539406C8F055978",
+        "config": {
+            "analyzerProperties": {
+                "idRegex": "[a-zA-Z]+[0-9]{5,}[a-zA-Z]*",
+                "maxChanges": 1,
+                "startPosition": 3,
+                "urlParamPrefix": "URLPARAM"
+            },
+            "matchRule": {"uri": ""},
+            "rules": [
+                {
+                    "valid": true,
+                    "uri": "GET /inventory/cars/"
+                },
+                {
+                    "valid": true,
+                    "uri": "GET /inventory/carMake/index.json/"
+                },
+                {
+                    "valid": true,
+                    "uri": "GET /inventory/carDealer/index/"
+                },
+                {
+                    "valid": true,
+                    "uri": "GET /inventory/carInventory/{URLPARAM0}/"
+                },
+                {
+                    "valid": true,
+                    "uri": "GET /inventory/carMake/{URLPARAM0}/models.json/"
+                },
+                {
+                    "valid": true,
+                    "uri": "GET /loan/lisa.simpson/"
+                },
+                {
+                    "valid": true,
+                    "uri": "POST /loan/"
+                }
+            ]
+        },
+        "userConfigured": true
+    }],
+    "artifactGeneration": {
+        "allowDupSpecificTxns": false,
+        "basePath": "/",
+        "defaultNonLeafNavigation": "WIDE",
+        "defaultLeafNavigation": "LOOSE",
+        "vsmStyle": "EFFICIENT"
+    },
+    "statusDescription": "Saved",
+    "transportProtocol": {
+        "protocolId": "HTTP_GATEWAY",
+        "statelessTxns": false,
+        "deidentifyTxn": false,
+        "protocolConfig": {
+            "allowModifyHostHeader": false,
+            "targetEndpoint": {
+                "sslConfig": {
+                    "aliasPassword": "",
+                    "password": "",
+                    "filename": "",
+                    "alias": "",
+                    "hash": 0
+                },
+                "port": 7000,
+                "host": "localhost",
+                "hash": 1000960626,
+                "useSSL": false
+            },
+            "recordingEndpoint": {
+                "sslConfig": {
+                    "aliasPassword": "",
+                    "password": "",
+                    "filename": "",
+                    "alias": "",
+                    "hash": 0
+                },
+                "port": 7001,
+                "host": "10.139.4.217",
+                "hash": 0,
+                "useSSL": false
+            }
+        },
+        "protocolVersion": "1.0"
+    },
+    "name": "cars-rest",
+    "saveVsConfig": {
+        "concurrentCapacity": 1,
+        "thinkTime": 100,
+        "groupTag": "",
+        "saveOption": "saveClose",
+        "leafNavigation": "Loose",
+        "allowDupSpecific": false,
+        "defaultNavigation": "Wide",
+        "createBaseline": true,
+        "vsmStyle": "efficient"
+    },
+    "validationMsgs": [{
+        "level": "INFO",
+        "category": "targetURLValidation",
+        "message": "target validated"
+    }],
+    "id": "AFC3E405B61411E58539406C8F055978",
+    "detectedDPH": [{
+        "isRequest": true,
+        "isResponse": false,
+        "name": "REST Data Protocol",
+        "className": "com.itko.lisa.vse.stateful.protocol.rest.RestDataProtocol",
+        "config": {},
+        "userConfigured": false
+    }],
+    "status": 9,
+    "createDate": "2016-01-08T08:32:48-06:00"
+}

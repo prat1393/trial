@@ -1,0 +1,999 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="22" name="CarsInventoryFromSwagger" created="2016-11-16.13:30:18.984" lastModified="2016-11-16.13:31:21.429" version="10.0.0" buildNumber="10.0.0.342">
+<n>cars-inventory virtual service generated from swagger doc</n>
+<st>
+<t id="1" nd="true" ads="true">
+<sp>
+<t id="25">
+<rq id="26" op="GET /cars-inventory/carInventory" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/carInventory</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="27" t="4">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1376</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}]</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="28" op="GET /cars-inventory/carInventory" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/carInventory</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="29" t="4">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1376</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}]</bd>
+</rp>
+</rs>
+</t>
+<t id="3" nd="true" ads="true">
+<sp>
+<t id="30">
+<rq id="31" op="GET /cars-inventory/carInventory/makes/1/models/1/years/1" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">makes</p>
+<p n="HTTP-Segment-Attr-3">1</p>
+<p n="HTTP-Segment-Attr-4">models</p>
+<p n="HTTP-Segment-Attr-5">1</p>
+<p n="HTTP-Segment-Attr-6">years</p>
+<p n="HTTP-Segment-Attr-7">1</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/carInventory/makes/1/models/1/years/1</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="32" t="1">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1376</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}]</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="33" op="GET /cars-inventory/carInventory/makes/1/models/1/years/1" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">makes</p>
+<p n="HTTP-Segment-Attr-3">1</p>
+<p n="HTTP-Segment-Attr-4">models</p>
+<p n="HTTP-Segment-Attr-5">1</p>
+<p n="HTTP-Segment-Attr-6">years</p>
+<p n="HTTP-Segment-Attr-7">1</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/carInventory/makes/1/models/1/years/1</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="34" t="1">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1376</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}]</bd>
+</rp>
+</rs>
+</t>
+<t id="5" nd="true" ads="true">
+<sp>
+<t id="35">
+<rq id="36" op="GET /cars-inventory/carInventory/vR7K6AkKRcs" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">vR7K6AkKRcs</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/carInventory/vR7K6AkKRcs</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="37" t="1">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1374</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="38" op="GET /cars-inventory/carInventory/vR7K6AkKRcs" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">carInventory</p>
+<p n="HTTP-Segment-Attr-2">vR7K6AkKRcs</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/carInventory/vR7K6AkKRcs</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="39" t="1">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1374</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="7" nd="true" ads="true">
+<sp>
+<t id="40">
+<rq id="41" op="GET /cars-inventory/carMake/1/models" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">carMake</p>
+<p n="HTTP-Segment-Attr-2">1</p>
+<p n="HTTP-Segment-Attr-3">models</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/carMake/1/models</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="42" t="0">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">363</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}}]</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="43" op="GET /cars-inventory/carMake/1/models" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">carMake</p>
+<p n="HTTP-Segment-Attr-2">1</p>
+<p n="HTTP-Segment-Attr-3">models</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/carMake/1/models</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="44" t="0">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">363</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}}]</bd>
+</rp>
+</rs>
+</t>
+<t id="9" nd="true" ads="true">
+<sp>
+<t id="45">
+<rq id="46" op="POST /cars-inventory/cars" tl="EXACT">
+<ag>
+<p n="carTrim" t="arg:EQUALS;false;;;;">5BjHr9h</p>
+<p n="color" t="arg:EQUALS;false;;;;">r9q1Gs</p>
+<p n="dealer_address" t="arg:EQUALS;false;;;;">bGhfWcjZ0hCoP</p>
+<p n="dealer_city" t="arg:EQUALS;false;;;;">Tn04MNAie</p>
+<p n="dealer_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="dealer_name" t="arg:EQUALS;false;;;;">3naF50NIhpu3l</p>
+<p n="dealer_state" t="arg:EQUALS;false;;;;">JbN76</p>
+<p n="dealer_telephone" t="arg:EQUALS;false;;;;">WUwIYMZhEp</p>
+<p n="dealer_website" t="arg:EQUALS;false;;;;">3cbyb5g0</p>
+<p n="dealer_zip" t="arg:EQUALS;false;;;;">5efPZD6dSVANeEt</p>
+<p n="engine" t="arg:EQUALS;false;;;;">ECRXsW9yMwG</p>
+<p n="id" t="arg:EQUALS;false;;;;">1</p>
+<p n="image1" t="arg:EQUALS;false;;;;">rmCvQWiAhDu</p>
+<p n="image2" t="arg:EQUALS;false;;;;">9wFldcQvZ8ud</p>
+<p n="makeid" t="arg:EQUALS;false;;;;">1</p>
+<p n="milage" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_fuelType" t="arg:EQUALS;false;;;;">ZdVjFqJiFwwV</p>
+<p n="model_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_make_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_make_name" t="arg:EQUALS;false;;;;">k4t89eOfHnq7L</p>
+<p n="model_modelYear" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_name" t="arg:EQUALS;false;;;;">vhPhRSWmZr44pQ6</p>
+<p n="model_subName" t="arg:EQUALS;false;;;;">8uY1kopR</p>
+<p n="model_type_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_type_name" t="arg:EQUALS;false;;;;">eDGGm</p>
+<p n="modelYear" t="arg:EQUALS;false;;;;">1</p>
+<p n="modelid" t="arg:EQUALS;false;;;;">1</p>
+<p n="options" t="arg:EQUALS;false;;;;">LUTsd</p>
+<p n="owners" t="arg:EQUALS;false;;;;">1</p>
+<p n="price" t="arg:EQUALS;false;;;;">94.7</p>
+<p n="stockNumber" t="arg:EQUALS;false;;;;">UKTEl8LCf3</p>
+<p n="transmission" t="arg:EQUALS;false;;;;">pH4MLoJ</p>
+<p n="vin" t="arg:EQUALS;false;;;;">KEWtgv</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">cars</p>
+<p n="recorded_raw_request_bytes">eyJtYWtlaWQiOiIxIiwic3RvY2tOdW1iZXIiOiJVS1RFbDhMQ2YzIiwiY29sb3IiOiJyOXExR3MiLCJtb2RlbGlkIjoiMSIsIm93bmVycyI6IjEiLCJjYXJUcmltIjoiNUJqSHI5aCIsIm1vZGVsWWVhciI6IjEiLCJpbWFnZTEiOiJybUN2UVdpQWhEdSIsImltYWdlMiI6Ijl3RmxkY1F2Wjh1ZCIsInRyYW5zbWlzc2lvbiI6InBINE1Mb0oiLCJtaWxhZ2UiOiIxIiwiZW5naW5lIjoiRUNSWHNXOXlNd0ciLCJwcmljZSI6Ijk0LjciLCJvcHRpb25zIjoiTFVUc2QiLCJkZWFsZXIiOnsiemlwIjoiNWVmUFpENmRTVkFOZUV0Iiwid2Vic2l0ZSI6IjNjYnliNWcwIiwiYWRkcmVzcyI6ImJHaGZXY2paMGhDb1AiLCJjaXR5IjoiVG4wNE1OQWllIiwibmFtZSI6IjNuYUY1ME5JaHB1M2wiLCJ0ZWxlcGhvbmUiOiJXVXdJWU1aaEVwIiwiaWQiOiIxIiwic3RhdGUiOiJKYk43NiJ9LCJ2aW4iOiJLRVd0Z3YiLCJtb2RlbCI6eyJmdWVsVHlwZSI6IlpkVmpGcUppRnd3ViIsInN1Yk5hbWUiOiI4dVkxa29wUiIsIm5hbWUiOiJ2aFBoUlNXbVpyNDRwUTYiLCJpZCI6IjEiLCJtb2RlbFllYXIiOiIxIiwidHlwZSI6eyJuYW1lIjoiZURHR20iLCJpZCI6IjEifSwibWFrZSI6eyJuYW1lIjoiazR0ODllT2ZIbnE3TCIsImlkIjoiMSJ9fSwiaWQiOiIxIn0=</p>
+<p n="recorded_raw_request">{&quot;makeid&quot;:&quot;1&quot;,&quot;stockNumber&quot;:&quot;UKTEl8LCf3&quot;,&quot;color&quot;:&quot;r9q1Gs&quot;,&quot;modelid&quot;:&quot;1&quot;,&quot;owners&quot;:&quot;1&quot;,&quot;carTrim&quot;:&quot;5BjHr9h&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;image1&quot;:&quot;rmCvQWiAhDu&quot;,&quot;image2&quot;:&quot;9wFldcQvZ8ud&quot;,&quot;transmission&quot;:&quot;pH4MLoJ&quot;,&quot;milage&quot;:&quot;1&quot;,&quot;engine&quot;:&quot;ECRXsW9yMwG&quot;,&quot;price&quot;:&quot;94.7&quot;,&quot;options&quot;:&quot;LUTsd&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;5efPZD6dSVANeEt&quot;,&quot;website&quot;:&quot;3cbyb5g0&quot;,&quot;address&quot;:&quot;bGhfWcjZ0hCoP&quot;,&quot;city&quot;:&quot;Tn04MNAie&quot;,&quot;name&quot;:&quot;3naF50NIhpu3l&quot;,&quot;telephone&quot;:&quot;WUwIYMZhEp&quot;,&quot;id&quot;:&quot;1&quot;,&quot;state&quot;:&quot;JbN76&quot;},&quot;vin&quot;:&quot;KEWtgv&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;ZdVjFqJiFwwV&quot;,&quot;subName&quot;:&quot;8uY1kopR&quot;,&quot;name&quot;:&quot;vhPhRSWmZr44pQ6&quot;,&quot;id&quot;:&quot;1&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;eDGGm&quot;,&quot;id&quot;:&quot;1&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;k4t89eOfHnq7L&quot;,&quot;id&quot;:&quot;1&quot;}},&quot;id&quot;:&quot;1&quot;}</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/cars-inventory/cars</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+<bd chs="UTF-8">{&quot;makeid&quot;:&quot;1&quot;,&quot;stockNumber&quot;:&quot;UKTEl8LCf3&quot;,&quot;color&quot;:&quot;r9q1Gs&quot;,&quot;modelid&quot;:&quot;1&quot;,&quot;owners&quot;:&quot;1&quot;,&quot;carTrim&quot;:&quot;5BjHr9h&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;image1&quot;:&quot;rmCvQWiAhDu&quot;,&quot;image2&quot;:&quot;9wFldcQvZ8ud&quot;,&quot;transmission&quot;:&quot;pH4MLoJ&quot;,&quot;milage&quot;:&quot;1&quot;,&quot;engine&quot;:&quot;ECRXsW9yMwG&quot;,&quot;price&quot;:&quot;94.7&quot;,&quot;options&quot;:&quot;LUTsd&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;5efPZD6dSVANeEt&quot;,&quot;website&quot;:&quot;3cbyb5g0&quot;,&quot;address&quot;:&quot;bGhfWcjZ0hCoP&quot;,&quot;city&quot;:&quot;Tn04MNAie&quot;,&quot;name&quot;:&quot;3naF50NIhpu3l&quot;,&quot;telephone&quot;:&quot;WUwIYMZhEp&quot;,&quot;id&quot;:&quot;1&quot;,&quot;state&quot;:&quot;JbN76&quot;},&quot;vin&quot;:&quot;KEWtgv&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;ZdVjFqJiFwwV&quot;,&quot;subName&quot;:&quot;8uY1kopR&quot;,&quot;name&quot;:&quot;vhPhRSWmZr44pQ6&quot;,&quot;id&quot;:&quot;1&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;eDGGm&quot;,&quot;id&quot;:&quot;1&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;k4t89eOfHnq7L&quot;,&quot;id&quot;:&quot;1&quot;}},&quot;id&quot;:&quot;1&quot;}</bd>
+</rq>
+<rs>
+<rp id="47" t="1">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1374</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="48" op="POST /cars-inventory/cars" tl="SIGNATURE">
+<ag>
+<p n="carTrim" t="arg:EQUALS;false;;;;">5BjHr9h</p>
+<p n="color" t="arg:EQUALS;false;;;;">r9q1Gs</p>
+<p n="dealer_address" t="arg:EQUALS;false;;;;">bGhfWcjZ0hCoP</p>
+<p n="dealer_city" t="arg:EQUALS;false;;;;">Tn04MNAie</p>
+<p n="dealer_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="dealer_name" t="arg:EQUALS;false;;;;">3naF50NIhpu3l</p>
+<p n="dealer_state" t="arg:EQUALS;false;;;;">JbN76</p>
+<p n="dealer_telephone" t="arg:EQUALS;false;;;;">WUwIYMZhEp</p>
+<p n="dealer_website" t="arg:EQUALS;false;;;;">3cbyb5g0</p>
+<p n="dealer_zip" t="arg:EQUALS;false;;;;">5efPZD6dSVANeEt</p>
+<p n="engine" t="arg:EQUALS;false;;;;">ECRXsW9yMwG</p>
+<p n="id" t="arg:EQUALS;false;;;;">1</p>
+<p n="image1" t="arg:EQUALS;false;;;;">rmCvQWiAhDu</p>
+<p n="image2" t="arg:EQUALS;false;;;;">9wFldcQvZ8ud</p>
+<p n="makeid" t="arg:EQUALS;false;;;;">1</p>
+<p n="milage" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_fuelType" t="arg:EQUALS;false;;;;">ZdVjFqJiFwwV</p>
+<p n="model_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_make_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_make_name" t="arg:EQUALS;false;;;;">k4t89eOfHnq7L</p>
+<p n="model_modelYear" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_name" t="arg:EQUALS;false;;;;">vhPhRSWmZr44pQ6</p>
+<p n="model_subName" t="arg:EQUALS;false;;;;">8uY1kopR</p>
+<p n="model_type_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_type_name" t="arg:EQUALS;false;;;;">eDGGm</p>
+<p n="modelYear" t="arg:EQUALS;false;;;;">1</p>
+<p n="modelid" t="arg:EQUALS;false;;;;">1</p>
+<p n="options" t="arg:EQUALS;false;;;;">LUTsd</p>
+<p n="owners" t="arg:EQUALS;false;;;;">1</p>
+<p n="price" t="arg:EQUALS;false;;;;">94.7</p>
+<p n="stockNumber" t="arg:EQUALS;false;;;;">UKTEl8LCf3</p>
+<p n="transmission" t="arg:EQUALS;false;;;;">pH4MLoJ</p>
+<p n="vin" t="arg:EQUALS;false;;;;">KEWtgv</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">cars</p>
+<p n="recorded_raw_request_bytes">eyJtYWtlaWQiOiIxIiwic3RvY2tOdW1iZXIiOiJVS1RFbDhMQ2YzIiwiY29sb3IiOiJyOXExR3MiLCJtb2RlbGlkIjoiMSIsIm93bmVycyI6IjEiLCJjYXJUcmltIjoiNUJqSHI5aCIsIm1vZGVsWWVhciI6IjEiLCJpbWFnZTEiOiJybUN2UVdpQWhEdSIsImltYWdlMiI6Ijl3RmxkY1F2Wjh1ZCIsInRyYW5zbWlzc2lvbiI6InBINE1Mb0oiLCJtaWxhZ2UiOiIxIiwiZW5naW5lIjoiRUNSWHNXOXlNd0ciLCJwcmljZSI6Ijk0LjciLCJvcHRpb25zIjoiTFVUc2QiLCJkZWFsZXIiOnsiemlwIjoiNWVmUFpENmRTVkFOZUV0Iiwid2Vic2l0ZSI6IjNjYnliNWcwIiwiYWRkcmVzcyI6ImJHaGZXY2paMGhDb1AiLCJjaXR5IjoiVG4wNE1OQWllIiwibmFtZSI6IjNuYUY1ME5JaHB1M2wiLCJ0ZWxlcGhvbmUiOiJXVXdJWU1aaEVwIiwiaWQiOiIxIiwic3RhdGUiOiJKYk43NiJ9LCJ2aW4iOiJLRVd0Z3YiLCJtb2RlbCI6eyJmdWVsVHlwZSI6IlpkVmpGcUppRnd3ViIsInN1Yk5hbWUiOiI4dVkxa29wUiIsIm5hbWUiOiJ2aFBoUlNXbVpyNDRwUTYiLCJpZCI6IjEiLCJtb2RlbFllYXIiOiIxIiwidHlwZSI6eyJuYW1lIjoiZURHR20iLCJpZCI6IjEifSwibWFrZSI6eyJuYW1lIjoiazR0ODllT2ZIbnE3TCIsImlkIjoiMSJ9fSwiaWQiOiIxIn0=</p>
+<p n="recorded_raw_request">{&quot;makeid&quot;:&quot;1&quot;,&quot;stockNumber&quot;:&quot;UKTEl8LCf3&quot;,&quot;color&quot;:&quot;r9q1Gs&quot;,&quot;modelid&quot;:&quot;1&quot;,&quot;owners&quot;:&quot;1&quot;,&quot;carTrim&quot;:&quot;5BjHr9h&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;image1&quot;:&quot;rmCvQWiAhDu&quot;,&quot;image2&quot;:&quot;9wFldcQvZ8ud&quot;,&quot;transmission&quot;:&quot;pH4MLoJ&quot;,&quot;milage&quot;:&quot;1&quot;,&quot;engine&quot;:&quot;ECRXsW9yMwG&quot;,&quot;price&quot;:&quot;94.7&quot;,&quot;options&quot;:&quot;LUTsd&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;5efPZD6dSVANeEt&quot;,&quot;website&quot;:&quot;3cbyb5g0&quot;,&quot;address&quot;:&quot;bGhfWcjZ0hCoP&quot;,&quot;city&quot;:&quot;Tn04MNAie&quot;,&quot;name&quot;:&quot;3naF50NIhpu3l&quot;,&quot;telephone&quot;:&quot;WUwIYMZhEp&quot;,&quot;id&quot;:&quot;1&quot;,&quot;state&quot;:&quot;JbN76&quot;},&quot;vin&quot;:&quot;KEWtgv&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;ZdVjFqJiFwwV&quot;,&quot;subName&quot;:&quot;8uY1kopR&quot;,&quot;name&quot;:&quot;vhPhRSWmZr44pQ6&quot;,&quot;id&quot;:&quot;1&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;eDGGm&quot;,&quot;id&quot;:&quot;1&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;k4t89eOfHnq7L&quot;,&quot;id&quot;:&quot;1&quot;}},&quot;id&quot;:&quot;1&quot;}</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/cars-inventory/cars</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+<bd chs="UTF-8">{&quot;makeid&quot;:&quot;1&quot;,&quot;stockNumber&quot;:&quot;UKTEl8LCf3&quot;,&quot;color&quot;:&quot;r9q1Gs&quot;,&quot;modelid&quot;:&quot;1&quot;,&quot;owners&quot;:&quot;1&quot;,&quot;carTrim&quot;:&quot;5BjHr9h&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;image1&quot;:&quot;rmCvQWiAhDu&quot;,&quot;image2&quot;:&quot;9wFldcQvZ8ud&quot;,&quot;transmission&quot;:&quot;pH4MLoJ&quot;,&quot;milage&quot;:&quot;1&quot;,&quot;engine&quot;:&quot;ECRXsW9yMwG&quot;,&quot;price&quot;:&quot;94.7&quot;,&quot;options&quot;:&quot;LUTsd&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;5efPZD6dSVANeEt&quot;,&quot;website&quot;:&quot;3cbyb5g0&quot;,&quot;address&quot;:&quot;bGhfWcjZ0hCoP&quot;,&quot;city&quot;:&quot;Tn04MNAie&quot;,&quot;name&quot;:&quot;3naF50NIhpu3l&quot;,&quot;telephone&quot;:&quot;WUwIYMZhEp&quot;,&quot;id&quot;:&quot;1&quot;,&quot;state&quot;:&quot;JbN76&quot;},&quot;vin&quot;:&quot;KEWtgv&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;ZdVjFqJiFwwV&quot;,&quot;subName&quot;:&quot;8uY1kopR&quot;,&quot;name&quot;:&quot;vhPhRSWmZr44pQ6&quot;,&quot;id&quot;:&quot;1&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;eDGGm&quot;,&quot;id&quot;:&quot;1&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;k4t89eOfHnq7L&quot;,&quot;id&quot;:&quot;1&quot;}},&quot;id&quot;:&quot;1&quot;}</bd>
+</rq>
+<rs>
+<rp id="49" t="1">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1374</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="11" nd="true" ads="true">
+<sp>
+<t id="50">
+<rq id="51" op="GET /cars-inventory/cars" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">cars</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/cars</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="52" t="0">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1376</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}]</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="53" op="GET /cars-inventory/cars" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">cars</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/cars</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="54" t="0">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1376</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}]</bd>
+</rp>
+</rs>
+</t>
+<t id="13" nd="true" ads="true">
+<sp>
+<t id="55">
+<rq id="56" op="DELETE /cars-inventory/cars/1" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">cars</p>
+<p n="HTTP-Segment-Attr-2">1</p>
+</at>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-URI">/cars-inventory/cars/1</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="57" t="1">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1376</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}]</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="58" op="DELETE /cars-inventory/cars/1" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">cars</p>
+<p n="HTTP-Segment-Attr-2">1</p>
+</at>
+<m>
+<p n="HTTP-Method">DELETE</p>
+<p n="HTTP-URI">/cars-inventory/cars/1</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="59" t="1">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1376</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}]</bd>
+</rp>
+</rs>
+</t>
+<t id="15" nd="true" ads="true">
+<sp>
+<t id="60">
+<rq id="61" op="PUT /cars-inventory/cars/1" tl="EXACT">
+<ag>
+<p n="carTrim" t="arg:EQUALS;false;;;;">Etzmjn</p>
+<p n="color" t="arg:EQUALS;false;;;;">hqeoI</p>
+<p n="dealer_address" t="arg:EQUALS;false;;;;">iNY5jVP5MamORn</p>
+<p n="dealer_city" t="arg:EQUALS;false;;;;">aYcx4I</p>
+<p n="dealer_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="dealer_name" t="arg:EQUALS;false;;;;">vQmC2kERrI</p>
+<p n="dealer_state" t="arg:EQUALS;false;;;;">v16SN4C9mYpw6</p>
+<p n="dealer_telephone" t="arg:EQUALS;false;;;;">Q93rdBqmxFst</p>
+<p n="dealer_website" t="arg:EQUALS;false;;;;">Vqqh0amWcPEFOtB</p>
+<p n="dealer_zip" t="arg:EQUALS;false;;;;">v2i9ou</p>
+<p n="engine" t="arg:EQUALS;false;;;;">mLDsEOTg0F4</p>
+<p n="id" t="arg:EQUALS;false;;;;">1</p>
+<p n="image1" t="arg:EQUALS;false;;;;">R6vLp1G1Mk3aPdH</p>
+<p n="image2" t="arg:EQUALS;false;;;;">CfzxQxiYXR</p>
+<p n="makeid" t="arg:EQUALS;false;;;;">1</p>
+<p n="milage" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_fuelType" t="arg:EQUALS;false;;;;">hQChYuIuqzUXM</p>
+<p n="model_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_make_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_make_name" t="arg:EQUALS;false;;;;">nSuWBw67nsj2</p>
+<p n="model_modelYear" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_name" t="arg:EQUALS;false;;;;">TC5dKI2gO33</p>
+<p n="model_subName" t="arg:EQUALS;false;;;;">CulB62</p>
+<p n="model_type_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_type_name" t="arg:EQUALS;false;;;;">5Iwommp1RLqPLt</p>
+<p n="modelYear" t="arg:EQUALS;false;;;;">1</p>
+<p n="modelid" t="arg:EQUALS;false;;;;">1</p>
+<p n="options" t="arg:EQUALS;false;;;;">rzjL7IN6NTg</p>
+<p n="owners" t="arg:EQUALS;false;;;;">1</p>
+<p n="price" t="arg:EQUALS;false;;;;">291.60</p>
+<p n="stockNumber" t="arg:EQUALS;false;;;;">72VBtGOMnn1A0Zl</p>
+<p n="transmission" t="arg:EQUALS;false;;;;">xdR6MOVp11tBBD</p>
+<p n="vin" t="arg:EQUALS;false;;;;">d9HZb6</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">cars</p>
+<p n="HTTP-Segment-Attr-2">1</p>
+<p n="recorded_raw_request_bytes">eyJtYWtlaWQiOiIxIiwic3RvY2tOdW1iZXIiOiI3MlZCdEdPTW5uMUEwWmwiLCJjb2xvciI6ImhxZW9JIiwibW9kZWxpZCI6IjEiLCJvd25lcnMiOiIxIiwiY2FyVHJpbSI6IkV0em1qbiIsIm1vZGVsWWVhciI6IjEiLCJpbWFnZTEiOiJSNnZMcDFHMU1rM2FQZEgiLCJpbWFnZTIiOiJDZnp4UXhpWVhSIiwidHJhbnNtaXNzaW9uIjoieGRSNk1PVnAxMXRCQkQiLCJtaWxhZ2UiOiIxIiwiZW5naW5lIjoibUxEc0VPVGcwRjQiLCJwcmljZSI6IjI5MS42MCIsIm9wdGlvbnMiOiJyempMN0lONk5UZyIsImRlYWxlciI6eyJ6aXAiOiJ2Mmk5b3UiLCJ3ZWJzaXRlIjoiVnFxaDBhbVdjUEVGT3RCIiwiYWRkcmVzcyI6ImlOWTVqVlA1TWFtT1JuIiwiY2l0eSI6ImFZY3g0SSIsIm5hbWUiOiJ2UW1DMmtFUnJJIiwidGVsZXBob25lIjoiUTkzcmRCcW14RnN0IiwiaWQiOiIxIiwic3RhdGUiOiJ2MTZTTjRDOW1ZcHc2In0sInZpbiI6ImQ5SFpiNiIsIm1vZGVsIjp7ImZ1ZWxUeXBlIjoiaFFDaFl1SXVxelVYTSIsInN1Yk5hbWUiOiJDdWxCNjIiLCJuYW1lIjoiVEM1ZEtJMmdPMzMiLCJpZCI6IjEiLCJtb2RlbFllYXIiOiIxIiwidHlwZSI6eyJuYW1lIjoiNUl3b21tcDFSTHFQTHQiLCJpZCI6IjEifSwibWFrZSI6eyJuYW1lIjoiblN1V0J3Njduc2oyIiwiaWQiOiIxIn19LCJpZCI6IjEifQ==</p>
+<p n="recorded_raw_request">{&quot;makeid&quot;:&quot;1&quot;,&quot;stockNumber&quot;:&quot;72VBtGOMnn1A0Zl&quot;,&quot;color&quot;:&quot;hqeoI&quot;,&quot;modelid&quot;:&quot;1&quot;,&quot;owners&quot;:&quot;1&quot;,&quot;carTrim&quot;:&quot;Etzmjn&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;image1&quot;:&quot;R6vLp1G1Mk3aPdH&quot;,&quot;image2&quot;:&quot;CfzxQxiYXR&quot;,&quot;transmission&quot;:&quot;xdR6MOVp11tBBD&quot;,&quot;milage&quot;:&quot;1&quot;,&quot;engine&quot;:&quot;mLDsEOTg0F4&quot;,&quot;price&quot;:&quot;291.60&quot;,&quot;options&quot;:&quot;rzjL7IN6NTg&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;v2i9ou&quot;,&quot;website&quot;:&quot;Vqqh0amWcPEFOtB&quot;,&quot;address&quot;:&quot;iNY5jVP5MamORn&quot;,&quot;city&quot;:&quot;aYcx4I&quot;,&quot;name&quot;:&quot;vQmC2kERrI&quot;,&quot;telephone&quot;:&quot;Q93rdBqmxFst&quot;,&quot;id&quot;:&quot;1&quot;,&quot;state&quot;:&quot;v16SN4C9mYpw6&quot;},&quot;vin&quot;:&quot;d9HZb6&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;hQChYuIuqzUXM&quot;,&quot;subName&quot;:&quot;CulB62&quot;,&quot;name&quot;:&quot;TC5dKI2gO33&quot;,&quot;id&quot;:&quot;1&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;5Iwommp1RLqPLt&quot;,&quot;id&quot;:&quot;1&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;nSuWBw67nsj2&quot;,&quot;id&quot;:&quot;1&quot;}},&quot;id&quot;:&quot;1&quot;}</p>
+</at>
+<m>
+<p n="HTTP-Method">PUT</p>
+<p n="HTTP-URI">/cars-inventory/cars/1</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+<bd chs="UTF-8">{&quot;makeid&quot;:&quot;1&quot;,&quot;stockNumber&quot;:&quot;72VBtGOMnn1A0Zl&quot;,&quot;color&quot;:&quot;hqeoI&quot;,&quot;modelid&quot;:&quot;1&quot;,&quot;owners&quot;:&quot;1&quot;,&quot;carTrim&quot;:&quot;Etzmjn&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;image1&quot;:&quot;R6vLp1G1Mk3aPdH&quot;,&quot;image2&quot;:&quot;CfzxQxiYXR&quot;,&quot;transmission&quot;:&quot;xdR6MOVp11tBBD&quot;,&quot;milage&quot;:&quot;1&quot;,&quot;engine&quot;:&quot;mLDsEOTg0F4&quot;,&quot;price&quot;:&quot;291.60&quot;,&quot;options&quot;:&quot;rzjL7IN6NTg&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;v2i9ou&quot;,&quot;website&quot;:&quot;Vqqh0amWcPEFOtB&quot;,&quot;address&quot;:&quot;iNY5jVP5MamORn&quot;,&quot;city&quot;:&quot;aYcx4I&quot;,&quot;name&quot;:&quot;vQmC2kERrI&quot;,&quot;telephone&quot;:&quot;Q93rdBqmxFst&quot;,&quot;id&quot;:&quot;1&quot;,&quot;state&quot;:&quot;v16SN4C9mYpw6&quot;},&quot;vin&quot;:&quot;d9HZb6&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;hQChYuIuqzUXM&quot;,&quot;subName&quot;:&quot;CulB62&quot;,&quot;name&quot;:&quot;TC5dKI2gO33&quot;,&quot;id&quot;:&quot;1&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;5Iwommp1RLqPLt&quot;,&quot;id&quot;:&quot;1&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;nSuWBw67nsj2&quot;,&quot;id&quot;:&quot;1&quot;}},&quot;id&quot;:&quot;1&quot;}</bd>
+</rq>
+<rs>
+<rp id="62" t="1">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1374</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="63" op="PUT /cars-inventory/cars/1" tl="SIGNATURE">
+<ag>
+<p n="carTrim" t="arg:EQUALS;false;;;;">Etzmjn</p>
+<p n="color" t="arg:EQUALS;false;;;;">hqeoI</p>
+<p n="dealer_address" t="arg:EQUALS;false;;;;">iNY5jVP5MamORn</p>
+<p n="dealer_city" t="arg:EQUALS;false;;;;">aYcx4I</p>
+<p n="dealer_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="dealer_name" t="arg:EQUALS;false;;;;">vQmC2kERrI</p>
+<p n="dealer_state" t="arg:EQUALS;false;;;;">v16SN4C9mYpw6</p>
+<p n="dealer_telephone" t="arg:EQUALS;false;;;;">Q93rdBqmxFst</p>
+<p n="dealer_website" t="arg:EQUALS;false;;;;">Vqqh0amWcPEFOtB</p>
+<p n="dealer_zip" t="arg:EQUALS;false;;;;">v2i9ou</p>
+<p n="engine" t="arg:EQUALS;false;;;;">mLDsEOTg0F4</p>
+<p n="id" t="arg:EQUALS;false;;;;">1</p>
+<p n="image1" t="arg:EQUALS;false;;;;">R6vLp1G1Mk3aPdH</p>
+<p n="image2" t="arg:EQUALS;false;;;;">CfzxQxiYXR</p>
+<p n="makeid" t="arg:EQUALS;false;;;;">1</p>
+<p n="milage" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_fuelType" t="arg:EQUALS;false;;;;">hQChYuIuqzUXM</p>
+<p n="model_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_make_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_make_name" t="arg:EQUALS;false;;;;">nSuWBw67nsj2</p>
+<p n="model_modelYear" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_name" t="arg:EQUALS;false;;;;">TC5dKI2gO33</p>
+<p n="model_subName" t="arg:EQUALS;false;;;;">CulB62</p>
+<p n="model_type_id" t="arg:EQUALS;false;;;;">1</p>
+<p n="model_type_name" t="arg:EQUALS;false;;;;">5Iwommp1RLqPLt</p>
+<p n="modelYear" t="arg:EQUALS;false;;;;">1</p>
+<p n="modelid" t="arg:EQUALS;false;;;;">1</p>
+<p n="options" t="arg:EQUALS;false;;;;">rzjL7IN6NTg</p>
+<p n="owners" t="arg:EQUALS;false;;;;">1</p>
+<p n="price" t="arg:EQUALS;false;;;;">291.60</p>
+<p n="stockNumber" t="arg:EQUALS;false;;;;">72VBtGOMnn1A0Zl</p>
+<p n="transmission" t="arg:EQUALS;false;;;;">xdR6MOVp11tBBD</p>
+<p n="vin" t="arg:EQUALS;false;;;;">d9HZb6</p>
+</ag>
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">cars</p>
+<p n="HTTP-Segment-Attr-2">1</p>
+<p n="recorded_raw_request_bytes">eyJtYWtlaWQiOiIxIiwic3RvY2tOdW1iZXIiOiI3MlZCdEdPTW5uMUEwWmwiLCJjb2xvciI6ImhxZW9JIiwibW9kZWxpZCI6IjEiLCJvd25lcnMiOiIxIiwiY2FyVHJpbSI6IkV0em1qbiIsIm1vZGVsWWVhciI6IjEiLCJpbWFnZTEiOiJSNnZMcDFHMU1rM2FQZEgiLCJpbWFnZTIiOiJDZnp4UXhpWVhSIiwidHJhbnNtaXNzaW9uIjoieGRSNk1PVnAxMXRCQkQiLCJtaWxhZ2UiOiIxIiwiZW5naW5lIjoibUxEc0VPVGcwRjQiLCJwcmljZSI6IjI5MS42MCIsIm9wdGlvbnMiOiJyempMN0lONk5UZyIsImRlYWxlciI6eyJ6aXAiOiJ2Mmk5b3UiLCJ3ZWJzaXRlIjoiVnFxaDBhbVdjUEVGT3RCIiwiYWRkcmVzcyI6ImlOWTVqVlA1TWFtT1JuIiwiY2l0eSI6ImFZY3g0SSIsIm5hbWUiOiJ2UW1DMmtFUnJJIiwidGVsZXBob25lIjoiUTkzcmRCcW14RnN0IiwiaWQiOiIxIiwic3RhdGUiOiJ2MTZTTjRDOW1ZcHc2In0sInZpbiI6ImQ5SFpiNiIsIm1vZGVsIjp7ImZ1ZWxUeXBlIjoiaFFDaFl1SXVxelVYTSIsInN1Yk5hbWUiOiJDdWxCNjIiLCJuYW1lIjoiVEM1ZEtJMmdPMzMiLCJpZCI6IjEiLCJtb2RlbFllYXIiOiIxIiwidHlwZSI6eyJuYW1lIjoiNUl3b21tcDFSTHFQTHQiLCJpZCI6IjEifSwibWFrZSI6eyJuYW1lIjoiblN1V0J3Njduc2oyIiwiaWQiOiIxIn19LCJpZCI6IjEifQ==</p>
+<p n="recorded_raw_request">{&quot;makeid&quot;:&quot;1&quot;,&quot;stockNumber&quot;:&quot;72VBtGOMnn1A0Zl&quot;,&quot;color&quot;:&quot;hqeoI&quot;,&quot;modelid&quot;:&quot;1&quot;,&quot;owners&quot;:&quot;1&quot;,&quot;carTrim&quot;:&quot;Etzmjn&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;image1&quot;:&quot;R6vLp1G1Mk3aPdH&quot;,&quot;image2&quot;:&quot;CfzxQxiYXR&quot;,&quot;transmission&quot;:&quot;xdR6MOVp11tBBD&quot;,&quot;milage&quot;:&quot;1&quot;,&quot;engine&quot;:&quot;mLDsEOTg0F4&quot;,&quot;price&quot;:&quot;291.60&quot;,&quot;options&quot;:&quot;rzjL7IN6NTg&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;v2i9ou&quot;,&quot;website&quot;:&quot;Vqqh0amWcPEFOtB&quot;,&quot;address&quot;:&quot;iNY5jVP5MamORn&quot;,&quot;city&quot;:&quot;aYcx4I&quot;,&quot;name&quot;:&quot;vQmC2kERrI&quot;,&quot;telephone&quot;:&quot;Q93rdBqmxFst&quot;,&quot;id&quot;:&quot;1&quot;,&quot;state&quot;:&quot;v16SN4C9mYpw6&quot;},&quot;vin&quot;:&quot;d9HZb6&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;hQChYuIuqzUXM&quot;,&quot;subName&quot;:&quot;CulB62&quot;,&quot;name&quot;:&quot;TC5dKI2gO33&quot;,&quot;id&quot;:&quot;1&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;5Iwommp1RLqPLt&quot;,&quot;id&quot;:&quot;1&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;nSuWBw67nsj2&quot;,&quot;id&quot;:&quot;1&quot;}},&quot;id&quot;:&quot;1&quot;}</p>
+</at>
+<m>
+<p n="HTTP-Method">PUT</p>
+<p n="HTTP-URI">/cars-inventory/cars/1</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+<bd chs="UTF-8">{&quot;makeid&quot;:&quot;1&quot;,&quot;stockNumber&quot;:&quot;72VBtGOMnn1A0Zl&quot;,&quot;color&quot;:&quot;hqeoI&quot;,&quot;modelid&quot;:&quot;1&quot;,&quot;owners&quot;:&quot;1&quot;,&quot;carTrim&quot;:&quot;Etzmjn&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;image1&quot;:&quot;R6vLp1G1Mk3aPdH&quot;,&quot;image2&quot;:&quot;CfzxQxiYXR&quot;,&quot;transmission&quot;:&quot;xdR6MOVp11tBBD&quot;,&quot;milage&quot;:&quot;1&quot;,&quot;engine&quot;:&quot;mLDsEOTg0F4&quot;,&quot;price&quot;:&quot;291.60&quot;,&quot;options&quot;:&quot;rzjL7IN6NTg&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;v2i9ou&quot;,&quot;website&quot;:&quot;Vqqh0amWcPEFOtB&quot;,&quot;address&quot;:&quot;iNY5jVP5MamORn&quot;,&quot;city&quot;:&quot;aYcx4I&quot;,&quot;name&quot;:&quot;vQmC2kERrI&quot;,&quot;telephone&quot;:&quot;Q93rdBqmxFst&quot;,&quot;id&quot;:&quot;1&quot;,&quot;state&quot;:&quot;v16SN4C9mYpw6&quot;},&quot;vin&quot;:&quot;d9HZb6&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;hQChYuIuqzUXM&quot;,&quot;subName&quot;:&quot;CulB62&quot;,&quot;name&quot;:&quot;TC5dKI2gO33&quot;,&quot;id&quot;:&quot;1&quot;,&quot;modelYear&quot;:&quot;1&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;5Iwommp1RLqPLt&quot;,&quot;id&quot;:&quot;1&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;nSuWBw67nsj2&quot;,&quot;id&quot;:&quot;1&quot;}},&quot;id&quot;:&quot;1&quot;}</bd>
+</rq>
+<rs>
+<rp id="64" t="1">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1374</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="17" nd="true" ads="true">
+<sp>
+<t id="65">
+<rq id="66" op="GET /cars-inventory/cars/1" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">cars</p>
+<p n="HTTP-Segment-Attr-2">1</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/cars/1</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="67" t="0">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1374</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="68" op="GET /cars-inventory/cars/1" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">cars</p>
+<p n="HTTP-Segment-Attr-2">1</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/cars/1</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="69" t="0">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">1374</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">{&quot;makeid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;stockNumber&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;color&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelid&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;owners&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;carTrim&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;image1&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;image2&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;transmission&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;milage&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;engine&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;price&quot;:&quot;{{=[:FloatProperty:D*(1-3)\.D*(1-2)]}}&quot;,&quot;options&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;dealer&quot;:{&quot;zip&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;website&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;address&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;city&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;telephone&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;state&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;},&quot;vin&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;model&quot;:{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}},&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}</bd>
+</rp>
+</rs>
+</t>
+<t id="19" nd="true" ads="true">
+<sp>
+<t id="70">
+<rq id="71" op="GET /cars-inventory/makes" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">makes</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/makes</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="72" t="0">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">74</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}]</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="73" op="GET /cars-inventory/makes" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">makes</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/makes</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="74" t="0">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">74</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}]</bd>
+</rp>
+</rs>
+</t>
+<t id="21" nd="true" ads="true">
+<sp>
+<t id="75">
+<rq id="76" op="GET /cars-inventory/models" tl="EXACT">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">models</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/models</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="77" t="1">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">363</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}}]</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="78" op="GET /cars-inventory/models" tl="SIGNATURE">
+<at>
+<p n="HTTP-Segment-Attr-0">cars-inventory</p>
+<p n="HTTP-Segment-Attr-1">models</p>
+</at>
+<m>
+<p n="HTTP-Method">GET</p>
+<p n="HTTP-URI">/cars-inventory/models</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">application/json</p>
+<p n="User-Agent">DevTest</p>
+<p n="Host">null:-1</p>
+<p n="Content-Type">application/json</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+</rq>
+<rs>
+<rp id="79" t="1">
+<m>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Cache-Control">public, max-age=36000</p>
+<p n="Server">localhost</p>
+<p n="Access-Control-Allow-Origin">*</p>
+<p n="Connection">keep-alive</p>
+<p n="Content-Length">363</p>
+<p n="Content-Type">application/json</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">[{&quot;fuelType&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;subName&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;,&quot;modelYear&quot;:&quot;{{=[:IntegerProperty:1]}}&quot;,&quot;type&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;},&quot;make&quot;:{&quot;name&quot;:&quot;{{=[:StringProperty:A*(5-15)]}}&quot;,&quot;id&quot;:&quot;{{=[:LongProperty:1]}}&quot;}}]</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="24" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+</m>
+</rp>
+</ucrr>
+<usrr>
+<rp id="23" t="0">
+<m>
+<p n="HTTP-Response-Code">404</p>
+<p n="HTTP-Response-Code-Text">Not Found</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/html</p>
+</m>
+<bd chs="UTF-8">&lt;html&gt;&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Not Found&lt;/h1&gt;The requested URL was not found on this server.&lt;p&gt;&lt;hr&gt;&lt;p&gt;&lt;i&gt;The DevTest VSE service could not match your request to a recorded request.&amp;nbsp; Consider expanding your service image.&lt;/i&gt;&lt;br&gt;&lt;font size=&quot;-2&quot;&gt;Produced by a DevTest virtualized web server.&lt;/font&gt;&lt;/body&gt;&lt;/html&gt;</bd>
+</rp>
+</usrr>
+</serviceImage>

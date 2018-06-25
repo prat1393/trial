@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+
+<!-- TestCase Results Document created by LISA Test Editor -->
+<!-- On: Thu Jul 02 12:12:35 CDT 2009 -->
+
+
+<Results name="webservices-vs">
+
+
+    <Result node="Unknown Request Handler">
+      <content type="java.lang.String"><![CDATA[SFRUUC8xLjEgMjAwIE9LClNlcnZlcjogTElTQS9WaXJ0dWFsLUVudmlyb25tZW50LVNlcnZlcgpEYXRlOiB7ez1odHRwTm93KCl9fQpYLVBvd2VyZWQtQnk6IExJU0Eve3s9bGlzYVZlcnNpb25TdHJpbmcoKX19CkNvbnRlbnQtVHlwZTogdGV4dC94bWw7Y2hhcnNldD11dGYtOAoKPGVudjpFbnZlbG9wZSB4bWxuczplbnY9Imh0dHA6Ly93d3cudzMub3JnLzIwMDMvMDUvc29hcC1lbnZlbG9wZSIKICAgICAgICAgICAgICB4bWxuczp4bWw9Imh0dHA6Ly93d3cudzMub3JnL1hNTC8xOTk4L25hbWVzcGFjZSI+CiA8ZW52OkJvZHk+CiAgPGVudjpGYXVsdD4KICAgPGVudjpDb2RlPgogICAgIDxlbnY6VmFsdWU+ZW52OlJlY2VpdmVyPC9lbnY6VmFsdWU+CiAgICAgPGVudjpTdWJjb2RlPgogICAgICA8ZW52OlZhbHVlPlVua25vd24gUmVxdWVzdDwvZW52OlZhbHVlPgogICAgIDwvZW52OlN1YmNvZGU+CiAgIDwvZW52OkNvZGU+CiAgIDxlbnY6UmVhc29uPgogICAgIDxlbnY6VGV4dCB4bWw6bGFuZz0iZW4iPlZpcnR1YWwgU2VydmljZSBSZWNlaXZlZCBVbmtub3duIFJlcXVlc3Q8L2VudjpUZXh0PgogICA8L2VudjpSZWFzb24+CiAgIDxlbnY6RGV0YWlsPgogICAgIFRoZSBMSVNBIFZpcnR1YWwgU2VydmljZSB3YXMgaW52b2tlZCB3aXRoIGFuIG9wZXJhdGlvbiB0aGF0IHdhcyBub3QgdW5kZXJzdG9vZC4KICAgPC9lbnY6RGV0YWlsPgogIDwvZW52OkZhdWx0PgogPC9lbnY6Qm9keT4KPC9lbnY6RW52ZWxvcGU+]]></content>
+    </Result>
+
+
+</Results>

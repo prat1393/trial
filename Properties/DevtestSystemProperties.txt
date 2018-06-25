@@ -1,0 +1,1121 @@
+################################################################################
+### lisa.properties                                                          ###
+###                                                                          ###
+### This file contains default values for properties used by all DevTest     ###
+### components.                                                              ###
+###                                                                          ###
+### Note: This file should not be modified as it may be overwritten.         ###
+###       Instead, to override the properties defined in this file, edit     ###
+###       either site.properties or local.properties.                        ### 
+###       Please see the DevTest documentation for more information.         ###
+################################################################################
+## ==============================================
+## DevTest Enterprise Dashboard Service Url
+##  This is the Service URL to use for sending component, metric, and audit
+##  information to the DevTest Enterprise Dashboard
+## ==============================================
+lisa.enterprisedashboard.service.url=tcp://localhost:2003/EnterpriseDashboard
+
+# Comma-separated list of paths for javadoc and source code.
+# DevTest uses these paths to show you class and parameter documentation.
+# The docPath can take directories and URLs that are base paths to the javadoc.
+lisa.java.docPath={{LISA_HOME}}/examples/javadoc
+# Here's an example that includes JDK docs from a web site, but we don't recommend web sites due to delays.
+# lisa.java.docPath={{LISA_HOME}}/examples/javadoc,http://java.sun.com/j2se/1.3/docs/api/
+
+# This sourcePath can take directories as base paths and JAR/zip files of source.
+lisa.java.sourcePath={{LISA_HOME}}/examples/src
+
+# This is lisa.axis.compiler.version = 1.4
+lisa.axis.compiler.version=1.4
+
+
+#=====================================
+# Random System Properties
+#=====================================
+# Encoding for files read and written by DevTest
+file.encoding=UTF-8
+
+
+lisa.supported.jres=1.7
+org.jfree.report.LogLevel=Error
+javax.xml.parsers.DocumentBuilderFactory=org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+javax.xml.parsers.SAXParserFactory=org.apache.xerces.jaxp.SAXParserFactoryImpl
+javax.xml.transform.TransformerFactory=org.apache.xalan.processor.TransformerFactoryImpl
+
+#=====================================
+# Server Properties
+#=====================================
+
+# This is the IP address that we will listen on. By default we will listen on all our
+# IP addresses. You can restrict this to a particular IP address or set it to 127.0.0.1
+# or localhost to prevent other machines connecting but allowing local connections.
+# lisa.net.bindToAddress=192.168.1.1
+
+
+#=====================================
+# OSX Properties
+#=====================================
+apple.awt.brushMetalLook=false
+#apple.awt.brushMetalRounded=true
+apple.laf.useScreenMenuBar=true
+#apple.awt.showGrowBox=true
+com.apple.mrj.application.growbox.intrudes=true
+com.apple.macos.smallTabs=true
+#com.apple.mrj.application.apple.menu.about.name=LISA
+#com.apple.mrj.application.live-resize=true
+
+#============================================
+# DevTest update notifications; blank to disable.
+#============================================
+# every=0 means every time, 1=daily, 2=every 2 days, etc.
+lisa.update.every=1
+lisa.update.URL=http://www.itko.com/download/ga/
+
+
+#=====================================
+# Basic Defaults
+#=====================================
+
+# Default name of the DevTest Registry to attach to, as well as the default name of the DevTest Registry
+# when you start it w/o a name
+lisa.registryName=Registry
+
+# CoordinatorServer default name when started without an explicit name AND when the TestRunner
+# needs one and you don't tell him what CoordinatorServer to use on the command line.
+lisa.coordName=Coordinator
+
+# Default name of a Simulator server if you don't provide one on the command line.
+lisa.simulatorName=Simulator
+lisa.simulatorInstances=256
+
+# Virtual environment server default name when started without an explicit name.
+lisa.vseName=VSE
+
+# CORE-94
+# Status Log intervals for TestRegistry, Coordinator, Simulator, and VSE. The default value is 30 seconds.
+lisa.defaultRegistry.pulseInterval=30
+lisa.coordinator.pulseInterval=30
+lisa.simulator.pulseInterval=30
+lisa.vse.pulseInterval=30
+
+lisa.registry.metrics.pulseInterval=60
+
+#Time interval after which the DevTest servers (coordinator & simulator) would refresh the map of project names to file paths.
+lisa.server.projectmap.refresh.pulseInterval=600
+
+# Timeout value in seconds coordinators and simulators will use when connecting to a DevTest registry.
+# A value of 0 indicates an infinite timeout; that is, we will wait forever trying to connect.
+lisa.defaultRegistryConnectionTimeoutSeconds=90
+
+# For the Regex helper window, this is the URL to show for the regular expression tutorial.
+lisa.regex.helper.tutorial.url=http://download.oracle.com/javase/tutorial/essential/regex/
+
+# To register hooks with DevTest, these are comma-separated.
+#lisa.hooks=com.itko.lisa.files.SampleHook
+
+# These are the default values for header keys in the HTTP support.
+# Remove or change them here for all tests to get the benefit of the change, or
+# use TestNode-specific header directives to change them for a test, or even
+# just the execution of one HTTP transaction.
+ice.browser.http.agent=Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
+lisa.http.header.0.key=Pragma
+lisa.http.header.0.value=no-cache
+lisa.http.header.1.key=Cache-Control
+lisa.http.header.1.value=no-cache
+#lisa.http.header.0.key=Accept
+#lisa.http.header.0.value=image/gif, image/x-xbitmap, image/jpeg, */*
+#lisa.http.header.1.key=Accept-Language
+#lisa.http.header.1.value=en
+#lisa.http.header.2.key=Accept-Charset
+#lisa.http.header.2.value=iso-8859-1,*,utf-8
+#lisa.http.header.3.key=User-Agent
+#lisa.http.header.3.value=Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)
+
+
+# These are the defaults for fields that show up in the HTTP Field editor.
+# Don't include "Authentication" because it's added by the editor automatically.
+lisa.gui.http.fieldNames=Accept&Accept-Language&User-Agent&Connection
+
+lisa.webrecorder.textMIMEs=html,text,magnus-internal,application/pdf
+lisa.webrecorder.notTextMIMEs=css,script
+lisa.webrecorder.alwaysIgnore=.gif,.jpg,.jpeg,.css,.js,.ico
+
+# Uncomment this to enable NTLM auth in the DevTest Test Runner.
+# lisa.web.ntlm=true
+
+#=====================================
+# TestCase execution tweaks
+#=====================================
+
+# This setting tells the ClassLoader built into DevTest where to look for custom classes.
+# The default is $LISA_HOME/hotdeploy.
+# lisa.hotDeploy=/C/Projects/Lisa/custom_classes
+
+# The TestNode attempts to figure out if the Simulator is thrashing by checking the actual amount of time
+# slept in think time vs. the amount of think time it was supposed to take. This setting is the amount
+# of additional "slip" in think time that is acceptable before sending a warning TestEvent that the Simulator
+# is overloaded. The default of 1000 means that if the Simulator sleeps 1 second more than it was supposed to
+# (presumably b/c the machine is CPU starved), then raise the TestEvent.
+lisa.overloadThreshold=1000
+
+# Some web service server stacks require empty xmlns strings in the SOAP request (e.g. jbossWs). Others
+# such as Amazon's will not work with empty xmlns strings. Change this property to suit the stack you
+# are calling.
+lisa.webservices.encode.empty.xmlns=true
+
+# Set the encoding version to force for client stub generation. Default 1.1
+#lisa.webservices.encode.version=1.2
+
+
+#=====================================
+# TestEvent Handling Customizations
+#=====================================
+
+# The StatKeeper has the ability to load a Perfmon integration class that will wrap or implement a
+# platform-specific monitor, like Windows Perfmon, JMX, SNMP, or etc.  DevTest comes with a Perfmon DLL
+# class and an SNMP class to support producing our stats output to either the Windows Performance
+# monitor OR (not both) as an SNMP agent. For more information, see the docs on SNMP.
+# So when we do have something that can pump native OS data into a performance monitor, implement a
+# class that can push DevTest data into that tool and put that class name here
+# lisa.perfmon.class=com.itko.lisa.stats.snmp.SnmpPerfmon
+# The typical port for SNMP is 161, but you have to be root for that.
+lisa.perfmon.snmp.port=1161
+
+# DevTest's Windows Perfmon integration to the StatKeeper (see above) has a "DLL" setting for the Windows (native) implementation. Put the full path/file here.
+# You only need this if you are using the above PerfmonStatKeeperWindows.
+# lisa.perfmon.dll=/c:/Projects/Lisa/PerfmonJNI/LISAPerfmonJNI/Debug/LISAPerfmonJNI.dll
+
+# Simulators use a separate thread and queue to send TestEvents to the Coordinator to cut down on the
+# chatty-ness of RMI. These are the thresholds that cause the daemon thread to push events.
+# The size param is the maximum size we let it get before sending.
+# The max-wait is how long we're willing to go with an Event being not forwarded.
+# We take the minimum of those (if either we take too long or have too many, we post them).
+# The Poll number is how often we check the queue size or see if we have overrun our max wait (in millis).
+lisa.eventPoolPoll=250
+lisa.eventPoolSize=64
+lisa.eventPoolMaxWait=1000
+
+
+#=====================================
+# DevTest Test Manager/Editor properties
+#=====================================
+lisa.screencap.delay.seconds=6
+lisa.screencap.dir={{LISA_HOME}}/screens
+lisa.screen.cap.prefix=lisa-screencap-
+lisa.earsubdir.endingnamepart=-contents
+
+# This property sets the "scale" (primarily, font size) for things in the model and step
+# inspectors of the main model editor. 1.0 is 12pt, so determine a value for this property by
+# dividing the size you want in points by 12. So 11pt --> 11/12 = 0.92, 10pt --> 10/12 = 0.83
+# (the default), 14pt --> 14/12 = 1.17, etc.
+lisa.model.editor.inspector.scale=0.83
+lisa.editor.font.extended.substitute=SimSun-ExtB
+
+
+# Some built-in metrics (steps per second) use a Java DecimalFormat to display floating-point values.
+# If you don't want the decimal point, then make this ###### or choose from a range of displays. See http://download.oracle.com/javase/6/docs/api/java/text/DecimalFormat.html
+lisa.stats.decimalFormat=###,###.#
+
+# This is the commma-separated list of all custom Java TestNodes that you wish to possibly include in your test case.
+#lisa.editor.custJavaNodeEditor.classes=com.itko.lisa.files.SampleCustJavaNode
+
+
+# This drives the formatting of messages to the System Messages window.
+lisa.tm.hh.on=no
+lisa.gui.log4jfmt=%-5p - %m%n
+
+# The HTTP recorder binds to this port.
+lisa.editor.http.recorderPort=8010
+lisa.editor.proxy.webProxySupport=on
+
+# Defines our built-in supported J2EE servers
+lisa.prefill.jndiNames=JBOSS=org.jnp.interfaces.NamingContextFactory&Weblogic=weblogic.jndi.WLInitialContextFactory&Websphere=com.ibm.websphere.naming.WsnInitialContextFactory&Borland Enterprise Server=com.inprise.j2ee.jndi.CtxFactory&iPlanet/Sun AS=com.sun.jndi.cosnaming.CNCtxFactory
+lisa.prefill.jndiUrlPrefix=JBOSS=jnp://&Weblogic=t3://&Websphere=iiop://&Borland Enterprise Server=iiop://&iPlanet/Sun AS=iiop://
+lisa.prefill.jndiDefPort=JBOSS=1099&Weblogic=7001&Websphere=2809&Borland Enterprise Server=1099&iPlanet/Sun AS=1099
+lisa.prefill.jndiNeedsClass=JBOSS=false&Weblogic=false&Websphere=true&Borland Enterprise Server=true&iPlanet/Sun AS=true
+
+# For "other" server stuff
+lisa.prefill.jndiFactories=org.jnp.interfaces.NamingContextFactory&weblogic.jndi.WLInitialContextFactory&com.ibm.websphere.naming.WsnInitialContextFactory&com.webmethods.jms.naming.WmJmsNamingCtxFactory&com.tibco.tibjms.naming.TibjmsInitialContextFactory&com.inprise.j2ee.jndi.CtxFactory&com.sun.jndi.cosnaming.CNCtxFactory&fiorano.jms.runtime.naming.FioranoInitialContextFactory&org.jboss.naming.remote.client.InitialContextFactory
+lisa.prefill.jndiServerURLs=jnp://{{SERVER}}:1099&t3://{{SERVER}}:7001&iiop://{{SERVER}}:{{PORT}}&tibjmsnaming://{{SERVER}}:7222&iiop://{{SERVER}}:{{PORT}}&iiop://localhost:9010&wmjmsnaming://Broker #1@{{SERVER}}:{{PORT}}/JmsAdminTest&remote://{{SERVER}}:4447
+
+lisa.editor.URLTransEditor.protos=http&https
+lisa.editor.URLTransEditor.hosts=
+lisa.editor.URLTransEditor.ports=&80&443
+lisa.editor.URLTransEditor.files=
+
+lisa.prefill.jdbc.names=Oracle&SQL Server&WLS Oracle&JDataStore&Sybase&DB2&MySQL&Derby
+lisa.prefill.jdbc.jdbcDrivers=oracle.jdbc.driver.OracleDriver&com.microsoft.sqlserver.jdbc.SQLServerDriver&com.microsoft.jdbc.sqlserver.SQLServerDriver&weblogic.jdbc.oci.Driver&com.borland.datastore.jdbc.DataStoreDriver&com.sybase.jdbc.SybDriver&com.ibm.db2.jcc.DB2Driver&org.gjt.mm.mysql.Driver&org.apache.derby.jdbc.ClientDriver
+lisa.prefill.jdbc.jdbcConnectionURLs=jdbc:oracle:thin:@{{SERVER}}:1521:{{SIDNAME}}&jdbc:sqlserver://{{SERVER}}:{{PORT}};databasename={{DBNAME}}&jdbc:microsoft:sqlserver://{{SERVER}}:{{PORT}}&jdbc:weblogic:oracle:{{TNSNAME}}&jdbc:borland:dslocal:{{DBNAME}}&jdbc:sybase:Tds:{{SERVER}}:{{PORT}}/{{DBNAME}}&jdbc:db2://{{SERVER}}:{{PORT}}/{{DBNAME}}&jdbc:mysql://{{SERVER}}:{{PORT}}/{{DBNAME}}&jdbc:derby://{{DBSERVER}}:{{DBPORT}}/{{DBNAME}}
+
+#  Native Browser info to use for internal rendering
+lisa.internal.browser.on=true
+lisa.internal.browser.win=com.itko.lisa.web.jfxbrowser.JFxBrowserUtils
+lisa.internal.browser.win.jxb.type=Default
+lisa.internal.browser.osx=com.itko.lisa.web.jfxbrowser.JFxBrowserUtils
+lisa.internal.browser.linux=com.itko.lisa.web.jfxbrowser.JFxBrowserUtils
+#lisa.internal.browser.sol-sparc=null
+#lisa.internal.browser.imgs=false
+
+## WR type: mozilla, safari, msie
+#lisa.internal.browser=msie
+
+lisa.internal.browser.swing.heavy=false
+lisa.internal.browser.usejsinviews=yes
+
+lisa.example.wsdls=http://localhost:8080/itko-examples/services/UserControlService?wsdl
+
+#========================================
+# DevTest Test Manager/Monitor properties
+#========================================
+
+# The max number of event rows kept in the Test Manager as a test is run (objects kept is actually 2X this number).
+monitor.events.maxrows=500
+
+# The system messages window max size (memory consumed is 2X this value).
+lisa.tm.sysmess.size=10240
+
+# Deprecated; use the typemap.properties or .lisaextensions.
+#stats.metrics.types=com.itko.lisa.stats.TRIIntegration,com.itko.lisa.stats.TestEventIntegration,\
+#com.itko.lisa.stats.SNMPIntegration,com.itko.lisa.stats.jmx.StatsJMXIntegration,com.itko.lisa.stats.wperfmon.PerfmonIntegration
+
+# JMX Info -- RPT-14
+lisa.jmx.types=com.itko.lisa.stats.jmx.JSE5Connection,\com.itko.lisa.stats.jmx.TomcatConnection,\
+com.itko.lisa.stats.jmx.JBossConnection,com.itko.lisa.stats.jmx.JSR160RMIConnection,\
+com.itko.lisa.stats.jmx.WeblogicConnector,com.itko.lisa.stats.jmx.Weblogic9Connector,com.itko.lisa.stats.jmx.WebsphereSOAPConnection,\
+com.itko.lisa.stats.jmx.ITKOAgentConnection,com.itko.lisa.stats.jmx.OracleASConnector
+
+# -- RPT-14
+lisa.jmx.typeprops=com.itko.lisa.stats.jmx.JSE5Connection=LISA_JMX_JSE5\
+&com.itko.lisa.stats.jmx.TomcatConnection=LISA_JMX_TOMCAT5\
+&com.itko.lisa.stats.jmx.JBossConnection=LISA_JMX_JBOSS3240\
+&com.itko.lisa.stats.jmx.JSR160RMIConnection=LISA_JMX_JSR160RMI\
+&com.itko.lisa.stats.jmx.Weblogic9Connector=LISA_JMX_WLS9\
+&com.itko.lisa.stats.jmx.WeblogicConnector=LISA_JMX_WLS6781\
+&com.itko.lisa.stats.jmx.OracleASConnector=LISA_JMX_OC4J\
+&com.itko.lisa.stats.jmx.WebsphereSOAPConnection=LISA_JMX_WASSOAP5X\
+&com.itko.lisa.stats.jmx.ITKOAgentConnection=LISA_JMX_ITKOAGENT
+
+# You do not generally need anything for these.
+LISA_JMX_JSR160RMI={{LISA_HOME}}/lib/mx4j.lib
+LISA_JMX_ITKOAGENT={{LISA_HOME}}/lib/mx4j.lib
+
+# If you are running JSE 5 you really don't need anything for this one.
+LISA_JMX_JSE5=
+
+# We ship a jboss-client-all that has what you need, assuming the version is right.
+LISA_JMX_JBOSS3240={{LISA_HOME}}/lib/mx4j.lib{{path.separator}}{{LISA_HOME}}/hotDeploy/jbossall-client.jar
+
+# This is for Tomcat -- RPT-14.
+LISA_JMX_TOMCAT5={{LISA_HOME}}/lib/mx4j.lib{{path.separator}}{{LISA_HOME}}/hotDeploy/mx4j-tools.jar
+
+# This will have to change to the location of your weblogic.jar -- no wlclient.jar won't work :(
+LISA_JMX_WLS9={{LISA_HOME}}/hotDeploy/weblogic.jar{{path.separator}}{{LISA_HOME}}/hotDeploy/wljmxclient.jar
+LISA_JMX_WLS6781={{LISA_HOME}}/hotDeploy/weblogic.jar
+
+#Oracle AS
+LISA_JMX_OC4J={{LISA_HOME}}/lib/oc4jclient.jar{{path.separator}}{{LISA_HOME}}/lib/adminclient.jar
+
+# IBM Websphere is usually easier just to use your IBM/WAS CLASSPATH before you start LISA and leave this blank.
+LISA_JMX_WASSOAP5X={{LISA_HOME}}/lib/mx4j.lib
+
+# If you use performance monitoring alerts, this is the "from" email address of those alerts.
+# lisa.alert.email.emailAddr=lisa@itko.com
+
+# And this is the email server we will attempt to route emails with (SMTP server).
+lisa.alert.email.defHosts=localhost
+
+lisa.rundoc.builtins=com.itko.lisa.files.1user1cycle.stg=Runs the test case once with one simulated user&com.itko.lisa.files.1user1cycle0think.stg=Runs the test case once with one simulated user and no think time&com.itko.lisa.files.1user1min.stg=Runs the test case with one simulated user for one minute, restarting the test as needed&com.itko.lisa.files.1user5min.stg=Stage the test for 5 minutes, restarting as needed&com.itko.lisa.files.1usernonstop.stg=Execute this test until manually stopped&com.itko.lisa.files.5user1min.stg=Execute this test with 5 virtual users for 1 minute
+#LISA-5791
+lisa.auditdoc.builtins=com.itko.lisa.files.DefaultAudit.aud
+
+# ===============================================================
+# Java style regular expression to identify third party files and
+# directories to be ignored (hidden) in the project manager tree.
+# Note: Lisa control files are hidden regardless of this regex.  
+# ===============================================================
+lisa.project.ignore=CVS|SCCS|RCS|rcs|\\.DS_Store|\\.svn|vssver\\.scc|vssver2\\.scc|\\.sbas|\\.IJI\\..*|.*\\.pyc|.*\\.pyo|\\.git|.*\\.hprof|_svn|\\.hg|.*\\.lib|.*~|__pycache__|\\.bundle|.*\\.rbc
+
+#=====================================
+# DevTest Test Manager/ITR properties
+#=====================================
+lisa.tm.itr.max.delay.seconds=5
+
+#=====================================
+# DevTest External command shells
+#=====================================
+test.cmde.win.shell=cmd /c
+test.cmde.unix.shell=sh -c
+test.cmde.Windows.XP.shell=cmd /c
+test.cmde.Windows.Vista.shell=cmd /c
+test.cmde.Windows.NT.(unknown).shell=cmd /c
+
+#=====================================
+# DevTest Testing Stuff
+#=====================================
+
+#If you want DevTest to replace {{key}} with an empty string if key is not in state.
+#lisa.props.blankOnMissing=true
+
+#Custom events, the first allowed event number is 101, so we have registered two as examples here.
+lisa.test.custevents=101="Custom Event 101"&102="Custom Event 102"
+
+# you can also assign colors to the custom events if you wish. This is optional but the color will
+# be used by the workstation test event panel if is defined.  The colors are based on hexadecimal
+# encoding, for some examples see http://en.wikipedia.org/wiki/Web_colors
+
+# you can also use this feature to override the default colors in the event table
+
+# here we are assigning 'tomato' and 'mediumPurple' to events 101 and 102
+lisa.test.custevents.colors=101=FF6347&102=9370DB
+
+
+lisa.SimpleWebFilter.responseCodeRegEx=[45]\\d\\d
+
+#=====================================
+# Properties file for use by StdSchedulerFactory
+# to create a Quartz Scheduler Instance.
+#=====================================
+# Configure Main Scheduler Properties
+org.quartz.jobStore.class = org.quartz.simpl.RAMJobStore
+org.quartz.threadPool.class = org.quartz.simpl.SimpleThreadPool
+org.quartz.threadPool.threadCount = 5
+
+lisa.meta-refresh.max.delay = 5
+
+#=====================================
+# Platform-specific things in the TM
+#=====================================
+lisa.tm.exec.unix=xterm -e {0}
+lisa.tm.exec.win=cmd /c start {0}
+lisa.tm.exec.osx=open -a /Applications/Utilities/Terminal.app {0}
+
+#=====================================
+# Properties used by Swing testing support.
+#=====================================
+# Uncomment to use a custom Log4J logging properties file in SwingTestProgramStarter.
+# lisa.swingtest.client.logging.properties.file=C:\\Lisa\\swingtestclient-logging.properties
+
+# laf settings
+laf.request=laf/license.do
+laf.default.url=https://license.itko.com
+laf.displaysettings=true
+
+#=====================================
+# Properties used by Web 2.0.
+#=====================================
+
+# The ports TM and the DevTest browser use to communicate - 0 means choose dynamically.
+lisa.browser.source.port=0
+lisa.browser.target.port=0
+lisa.browser.launch.timeout=10000
+lisa.browser.max.instances=25
+
+#####
+# Reporting JPA properties
+#####
+
+rpt.eclipselink.ddl-generation=create-tables
+rpt.eclipselink.ddl-generation.output-mode=database
+rpt.eclipselink.validateschema=false
+
+#
+# In order to check for expired reports,
+# set autoExpire = true.
+# Set the expiration period -- an integer followed by (w=week,d=day,h=hour,m=minute).
+# The default expiration period is 30d (30 days).
+perfmgr.rvwiz.whatrpt.autoExpire=true
+perfmgr.rvwiz.whatrpt.expireTimer=30d
+
+
+# Validate the report database schema.
+# By default, only the registry will validate the schema.
+rpt.hibernate.validateschema=false
+
+# The default behavior is to not automatically shut down the local registry if it was started automatically.
+# The exceptions are DevTest Workstation, VSE, and VSE Workstation:
+lisa.0.registry.local.autoshutdown=true
+lisa.8.registry.local.autoshutdown=true
+lisa.10.registry.local.autoshutdown=true
+# JUnit and TestRunner should never autoshutdown the registry:
+lisa.4.registry.local.autoshutdown=false
+lisa.5.registry.local.autoshutdown=false
+
+# ============================================
+# Property used for the Eclipse connector
+# ============================================
+lisa.eclipse.connector.port=8546
+
+# ============================================
+# Property used for example test suites
+# ============================================
+EXAMPLES_HOME={{LISA_HOME}}/examples
+
+#=================================================
+# Property used to define the minimum length of argument value in a VSE
+# transaction request that is required to consider that argument for
+# constructing a magic string out of it
+#=================================================
+lisa.magic.string.min.length=3
+
+#=================================================
+# Property used to define how searches in VSE for magic string content
+# relate to word boundaries. Valid values are:
+#
+# none:  Word boundaries don't matter.
+# start: Magic string candidates must start on a word boundary.
+# end:   Magic string candidates must end on a word boundary.
+# both:  Magic string candidates must be found as a whole word (i.e., a word
+#        boundary on both ends). This is the default value.
+#
+# None is assumed if the specified value is not one of the above.
+#=================================================
+lisa.magic.string.word.boundary.type=both
+
+# This allows you to exclude certain strings from being eligible
+# for magic stringing.
+
+lisa.magic.string.exclusion=Yes, YES, yes, No, NO, no, true, True, TRUE, false, False, FALSE, __NULL
+
+# Should text within xml tags be magic stringed? Probably not.
+lisa.magic.string.xml.tags=false
+
+# Uncomment this and set it to true if you have a situation where multiple VSE instances are
+# being run on different machines out of the same install directory.
+# lisa.vse.server.dir.full.service.name=false
+
+# If we record an XML response in VSE should we format the XML in the service image?
+lisa.vse.response.xml.prettyprint=false
+
+# Comment this out if you need the VSE to forget across shutdowns the execution modes
+# you set with the VSE dashboard for virtual services.
+lisa.vse.remember.execution.mode=true
+
+# This property controls how many VSE matching related events are buffered. The number of
+# events is per VS model so if you have 2 VS models deployed with the default event buffer size
+# of 100, then a total of 200 events will be buffered. These events are the source for the
+# "Match" tab of the VS model inspection page in the VSE dashboard.
+lisa.vse.match.event.buffer.size=100
+
+# This property controls how many inbound VSE requests for which a full set of DevTest events is
+# buffered. The number of events is per VS model so if you have 2 VS models deployed with the
+# default request buffer size of 5, then a total of 10 sets of events (grouped by inbound
+# request) will be buffered. These sets of events are the source for the "Events" tab of the
+# VS model inspection page in the VSE dashboard.
+lisa.vse.request.event.set.buffer.size=50
+
+# The default think time for new 'regular' steps, in milliseconds.
+lisa.tm.def.min.millis=500
+lisa.tm.def.max.millis=1000
+
+# The default think time for new 'system' steps, in milliseconds.
+# System steps include subprocesses, 'continue', 'continue (quiet), 'fail' and 'end'.
+lisa.tm.sys.min.millis=0
+lisa.tm.sys.max.millis=0
+
+# We have seen cases where filters and assertions are dynamically added to test steps
+# and in a load test this could mean many thousands of asserts/filters.  The following
+# two numbers are the threshold before there is a WARN level message generated in the log.
+lisa.numFilters.warning=100
+lisa.numAsserts.warning=100
+# Should we raise a TestDefException (kills the test) if the threshold is exceeded?
+lisa.exception.on.num.exceeded=true
+
+
+#================================================
+#    DevTest DATE-CHECKER PROPERTIES
+# These are the set of properties that are used by the DevTest VSE date utilities, to
+# figure out which date patterns are going to be considered valid for date sensitivity
+# conversions.
+#================================================
+# Each of the following entries represents a regular expression that will be considered
+# valid as a part of date, by VSE.
+lisa.vse.datechecker.dayregex=(([12]\\d)|(3[01])|(0?[1-9]))
+lisa.vse.datechecker.monthnumberregex=((1[012])|(0\\d)|0[1-9]|[1-9])
+lisa.vse.datechecker.monthalpharegex=(\\bJAN\\b|\\bFEB\\b|\\bMAR\\b|\\bAPR\\b|\\bMAY\\b|\\bJUN\\b|\\bJUL\\b|\\bAUG\\b|\\bSEP\\b|\\bOCT\\b|\\bNOV\\b|\\bDEC\\b)
+lisa.vse.datechecker.yearlongregex=\\d\\d\\d\\d
+lisa.vse.datechecker.yearshortregex=\\d\\d
+lisa.vse.datechecker.timeregex=(\\s?(([012]?\\d)|(2[0123])):(([012345]\\d)|(60)):(([012345]\\d)|(60)))
+lisa.vse.datechecker.time.hhmmssregex=(([012]?\\d)|(2[0123])):(([012345]\\d)|(60)):(([012345]\\d)|(60))
+lisa.vse.datechecker.time.millisregex=(([012]?\\d)|(2[0123])):(([012345]\\d)|(60)):(([012345]\\d)|(60))\\.((\\d\\d\\d)|0)
+lisa.vse.datechecker.time.millis.zoneregex=(([012]?\\d)|(2[0123])):(([012345]\\d)|(60)):(([012345]\\d)|(60))\\.((\\d\\d\\d)|0)\\s([A-Za-z][A-Za-z][A-Za-z])
+lisa.vse.datechecker.wstimestampregex=\\d\\d\\d\\d-((1[012])|(0\\d)|0[1-9]|[1-9])-(([12]\\d)|(3[01])|(0?[1-9]))T(([012]?\\d)|(2[0123])):(([012345]\\d)|(60)):(([012345]\\d)|(60))\\.\\d\\d\\d[-+]\\d\\d\\d\\d
+lisa.vse.datechecker.ddmmmyyyyregex=(([12]\\d)|(3[01])|(0?[1-9]))(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)\\d\\d\\d\\d
+lisa.vse.datechecker.mmmddyyyyregex=(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)(([12]\\d)|(3[01])|(0?[1-9]))\\d\\d\\d\\d
+lisa.vse.datechecker.yyyyddmmmregex=\\d\\d\\d\\d(([12]\\d)|(3[01])|(0?[1-9]))(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)
+lisa.vse.datechecker.yyyymmmddregex=\\d\\d\\d\\d(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)(([12]\\d)|(3[01])|(0?[1-9]))
+lisa.vse.datechecker.ddmmmregex=(([12]\\d)|(3[01])|(0?[1-9]))(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)
+lisa.vse.datechecker.mmmddregex=(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)(([12]\\d)|(3[01])|(0?[1-9]))
+lisa.vse.datechecker.ddmmmyyregex=(([12]\\d)|(3[01])|(0?[1-9]))(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)\\d\\d
+# Each of the following entries represents a valid pattern of a part of date, in the vse
+lisa.vse.datechecker.dayformat=dd
+lisa.vse.datechecker.monthnumberformat=MM
+lisa.vse.datechecker.monthalphaformat=MMM
+lisa.vse.datechecker.yearlongformat=yyyy
+lisa.vse.datechecker.yearshortformat=yy
+lisa.vse.datechecker.timeformat=HH:mm:ss
+lisa.vse.datechecker.time.hhmmssformat=HH:mm:ss
+lisa.vse.datechecker.time.millisformat=HH:mm:ss.SSS
+lisa.vse.datechecker.time.millis.zoneformat=HH:mm:ss.SSS z
+lisa.vse.datechecker.wstimestampformat=yyyy-MM-dd'T'HH:mm:ss.SSSZ
+# The following are some of the date patterns that can't be constructed by using a combination
+# for the above patterns that involve at least day, month & year part.
+lisa.vse.datechecker.mmmddyyyy.separatorformat=MMM*dd*yyyy
+lisa.vse.datechecker.mmddyyyy.separatorformat=MM*dd*yyyy
+lisa.vse.datechecker.ddmmmyyyy.separatorformat=dd*MMM*yyyy
+lisa.vse.datechecker.ddmmyyyy.separatorformat=dd*MM*yyyy
+lisa.vse.datechecker.yyyymmmdd.separatorformat=yyyy*MMM*dd
+lisa.vse.datechecker.yyyymmdd.separatorformat=yyyy*MM*dd
+lisa.vse.datechecker.ddmmmyyyyformat=ddMMMyyyy
+lisa.vse.datechecker.mmmddyyyyformat=MMMddyyyy
+lisa.vse.datechecker.yyyyddmmmformat=yyyyddMMM
+lisa.vse.datechecker.yyyymmmddformat=yyyyMMMdd
+lisa.vse.datechecker.ddmmmyyformat=ddMMMyy
+lisa.vse.datechecker.ddmmmformat=ddMMM
+lisa.vse.datechecker.mmmddformat=MMMdd
+# This represent the valid separator characters that can be used within the date formats.
+# For example, 10/15/2001 uses '/' as a separator.
+lisa.vse.datechecker.seperators=- /.
+# Priority order decides what order we should use to match the date pattern. The asterisk will
+# be replaced by the separator characters defined by the "separators" property. For example,
+# MM*dd*yy will generate four date patterns: "MM-dd-yyyy", "MM dd yyyy", "MM/dd/yyyy", "MM.dd.yyyy".
+lisa.vse.datechecker.top.priorityorder=lisa.vse.datechecker.wstimestampformat
+lisa.vse.datechecker.date.priorityorder=lisa.vse.datechecker.mmmddyyyy.separatorformat&\
+lisa.vse.datechecker.mmddyyyy.separatorformat&\
+lisa.vse.datechecker.ddmmmyyyy.separatorformat&\
+lisa.vse.datechecker.ddmmyyyy.separatorformat&\
+lisa.vse.datechecker.yyyymmmdd.separatorformat&\
+lisa.vse.datechecker.yyyymmdd.separatorformat&\
+lisa.vse.datechecker.mmmddyyyyformat&\
+lisa.vse.datechecker.ddmmmyyyyformat&\
+lisa.vse.datechecker.yyyyddmmmformat&\
+lisa.vse.datechecker.yyyymmmddformat&\
+lisa.vse.datechecker.ddmmmyyformat
+lisa.vse.datechecker.time.priorityorder=lisa.vse.datechecker.time.millis.zoneformat&\
+lisa.vse.datechecker.time.millisformat&\
+lisa.vse.datechecker.time.tenthsformat&\
+lisa.vse.datechecker.time.hhmmssformat
+lisa.vse.datechecker.bottom.priorityorder=lisa.vse.datechecker.mmmddformat&\
+lisa.vse.datechecker.ddmmmformat
+#HH:mm:ss.SSS Z 'GMT'&\
+#HH:mm:ss.SSS Z&\
+#HH:mm:ss.SSS z&\
+#HH:mm:ss Z 'GMT'&\
+#HH:mm:ss Z&\
+#HH:mm:ss z&\
+#HH:mm:ss.SSS&\
+#HH:mm:ss
+
+lisa.vse.datechecker.months=JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC
+# The purpose of this pattern is to be a coarse level check to see if the payload contains anything that looks like a year. In order to
+# avoid matching too much, it looks for other identifying information like month info nearby and common date separators (- or / or ., etc)
+# In circumstances where the year is not easy to distinguish from any other 4 digit number, this pattern may not match. In that case, your
+# magic dates won't be found. If you run into that problem, tweaking this RegEx may just resolve it for you. Alternatively, try the
+# alternate form below that is a more permissive version of this one.
+lisa.vse.datechecker.coarse.year.regex=(?ism).*((\\d[ ./-](19|20)[0-9]{2})|((JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[. /-](19|20)[0-9]{2})|((19|20)[0-9]{2}[. /-][0-9]{2})).*
+
+# This pattern is more permissive than the previous one. If dates aren't being recognized, trying this regex may allow them to be found.
+# However, it may also come with some performance impact. If this matches too much, the patterns above will be run in situations where they
+# aren't applicable, and running large numbers of RegExes against large payloads can be time consuming.
+#lisa.vse.datechecker.coarse.year.regex=(?ism).*((\\d[ ./-]?(19|20)[0-9]{2})|((JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[. /-]?(19|20)[0-9]{2})|((19|20)[0-9]{2}[. /-]?[0-9]{2})).*
+#================================================
+# End of VSE DATE PROPERTIES
+#================================================
+
+#================================================
+# VSE JMS Messaging custom JMS properties to ignore
+# Some JMS platforms include extra custom properties in the JMS messages they deliver. This can interfere with VSE
+# creation. vse.jms.ignore.proplist contains a list of properties that should be ignored when recording a JMS service
+# with the VSE messaging recorder. The format is a comma-delimited list of regular expressions.
+# By default it is excluding standard JMS extension properties (JMSX.*) and JBoss custom bookkeeping properties (JMS_.*).
+#vse.jms.ignore.proplist=JMSX.*,JMS_.*
+
+#===============================================
+# VSE Recorder conversation batch size
+# This defines how many conversations we will process before committing them to the database.
+# If you have a few, very large conversations, make this number small.
+# If you have many, smaller conversations, make this number large.
+# A batch size of <= 0 is the same as a batch size of 1.
+lisa.vse.recorder.conversation.batch.size=10
+
+# VSE service image database settings. DevTest VSE uses the open source EclipseLink JPA provider
+#
+# By default we will use our reports database as the repository for service images.
+#
+eclipselink.ddl-generation=create-tables
+eclipselink.ddl-generation.output-mode=database
+
+
+# If EclipseLink has been configured to do query timings (and it will be by default) then this is the maximum
+# time in milliseconds that a query to the database can take before a WARN level message is raised by the
+# com.itko.lisa.vse.stateful.model.SqlTimer logger. If you set that logger's threshold to DEBUG you will
+# see timings for all SELECT statements issued by EclipseLink.
+# Basically this is the first port of call in debugging any VSE performance issues - if the database is local and
+# all the indexes have been created then you shouldn't see anything over about 20 ms. But a database on the
+# network that is not under your control and possibly missing indexes could easily take 100ms or more to return a
+# result and that might make VSE seem slow when in fact it is lightning fast if correctly deployed. In reality,
+# most service images are small enough or have a working set sufficiently small enough to fit into the VSE entity
+# cache, so after 'a while' the number of SELECTs issued by VSE should dwindle to zero - provided the VSE has a large
+# enough heap (the cache maintains soft references by default)
+lisa.eclipselink.query.warn.threshold=100
+
+#####
+#  Network ports
+#
+#  They take the form of lisa.net.{{APPID}}.port where APPID is a constant defined below
+#  Registry is 3
+#  Coordinator is 2
+#  VSE is 7
+#  Simulator is 1
+#
+#  If you need to change these defaults, make sure you override them in site.properties because clients make assumptions
+#  about what port to connect to their server based on these values.
+#
+#####
+
+# Enterprise Dashboard
+lisa.net.15.port=2003
+
+# Workstation
+lisa.net.0.port=2008
+
+# 2009 is Pathfinder Broker
+
+# Coordinator
+lisa.net.2.port=2011
+
+# Registry
+lisa.net.3.port=2010
+
+# JUnit exec
+lisa.net.4.port=2012
+
+# Test Runner (cmdline)
+lisa.net.5.port=2005
+
+# Others
+lisa.net.6.port=2007
+
+# WS Simulator (deprecated)
+lisa.net.7.port=2012
+
+# VSE
+lisa.net.8.port=2013
+
+# VSEManager
+lisa.net.9.port=2004
+
+# ServiceManager
+lisa.net.11.port=2006
+
+# Simulator (we start here so it's easier to have many on same box)
+lisa.net.1.port=2014
+
+#####
+#  Pathfinder properties
+#####
+lisa.pathfinder.on=true
+
+# 0.0.0.0 means listen on all interfaces. Specify an IP to listen on only one.
+lisa.pathfinder.broker.host=0.0.0.0
+lisa.pathfinder.broker.port=2009
+
+# Broker embedded web server
+broker.webserver.port=1508
+
+# Broker embedded web server's host. '0.0.0.0' will bind to all local addresses.
+broker.webserver.host=0.0.0.0
+
+broker.webapps.directory=broker
+
+
+
+# Our embedded web server
+lisa.webserver.port=1505
+
+# Devtest UI
+devtest.port=1507
+
+#Launch DevTest UI from workstation
+# true: Launch DevTest UI from calibrate/explore in workstation
+# false: Open workstation embedded calibrate/explore window instead
+lisa.enable.workstation.pathfinder.browser.ui=true
+#Launch DevTest UI from Lisa Console
+
+# true: Launch DevTest UI from Web Console when you click the Pathfinder icon.
+# false: Open the old Pathfinder web console tab on port 1505 instead.
+lisa.portal.enable.pathfinder.browser.ui=true
+
+# Our embedded web server's host. '0.0.0.0' will bind to all local addresses.
+lisa.webserver.host=0.0.0.0
+
+lisa.webserver.acl.authmodule.baseurl=/acl/
+
+################
+# These set the values for all of the portal app launchers from DevTest Workstation. Currently the TR host name is used
+# for the Host value so we get that dynamically.
+#
+# DevTest launches the URL externally in your system's browser.
+################
+lisa.portal.url.prefix=http://
+lisa.portal.root.base.url=/index.html
+lisa.portal.cvsdashboard.base.url=/index.html?lisaPortal=cvsdashboard
+#base url for the Lisa Console old Pathfinder UI
+lisa.portal.pathfinder.console.base.url=/index.html?lisaPortal=pathfinder
+lisa.portal.server.console.base.url=/index.html?lisaPortal=serverconsole
+lisa.portal.model.execution.url=/serverconsole/portal.html?op=viewModelExecution&locator=
+lisa.portal.reporting.context=reporting
+lisa.portal.reporting.console.base.url=/index.html?lisaPortal={{lisa.portal.reporting.context}}
+lisa.portal.defect.capture.url=/pathfinder/lisa_pathfinder_agent/defectcapture
+lisa.portal.save.defect.data.url=/pathfinder/lisa_pathfinder_agent/saveDefectData
+lisa.portal.invoke.base.url=/lisa-invoke
+lisa.portal.invoke.report.url=/reports
+lisa.portal.invoke.server.report.directory={{lisa.tmpdir}}{{lisa.portal.invoke.report.url}}
+#base url for the new DevTest UI
+devtest.portal.base.url.path=/devtest/#/main
+devtest.portal.homepage.url.path={{devtest.portal.base.url.path}}/dashboard
+lisa.portal.pathfinder.explorer.base.url={{devtest.portal.base.url.path}}/createartifacts
+lisa.portal.pathfinder.management.base.url={{devtest.portal.base.url.path}}/pathManageAgents
+#lisa.portal.invoke.test.root={{LISA_HOME}}
+
+
+rpt.lisa.graph.view.threshhold=100
+rpt.lisa.graph.view.infomessage=Results more than maximum threshold. Modify filter to fetch the details.
+
+rpt.lisa.graph.scatter.view.threshhold=10000
+rpt.lisa.graph.scatter.view.infomessage=Results more than maximum threshold. Modify filter to fetch the details.
+
+
+##
+# Async reporting support. If you run load tests and find that the bottleneck in the test cases is writing
+# the events to the reporting database then you should first consider removing everything except metrics from the
+# report generator. If you still see the reporting engine as the bottleneck then consider enabling the
+# property below. It will use JMS to send the reporting event and background threads in the simulators and
+# coordinator will write the events to the database asynchronously. This means that your load test will finish
+# before all the events have been written to the db, so the report won't "show up" for some time (just how
+# long will depend on your test cases and how many events they generate).  The simulator queue will typically
+# take the longest to flush; you will get a message at INFO level in the simulator log showing the percentage
+# complete.
+#
+# This feature is considered as 'advanced usage' for now and is disabled by default. Feedback to support@itko.com
+# is welcome and encouraged.
+#
+lisa.reporting.useAsync=false
+
+################
+# Reporting miscellaneous properties.
+################
+lisa.reporting.step.max.propsused.buffersize=100
+lisa.reporting.step.max.propsset.buffersize=100
+
+# Enable periodic thread dumps. It's a good idea to leave this enabled. It will very efficiently check to
+# see if the threadDumpLogger is at INFO or below and not bother actually doing anything if it is set to WARN
+# or above. DevTest properties are only read once at startup; the logging.properties file is checked every 10 seconds
+# for changes, so all you need to do is leave this alone and set the log level of the threadDumpLogger to INFO and
+# wait for at most 30 seconds to get periodic thread dumps of a running DevTest server. These logs are invaluable when
+# debugging performance issues.
+#
+# See the comments in logging.properties for more info.
+lisa.threadDump.generate=true
+lisa.threadDump.interval=30
+lisa.threadDump.loggerName=threadDumpLogger
+
+# These properties are used to control metrics collection in VSE servers.  The metrics
+# collected can be viewed in the web-based VSE dashboard. The values here are the defaults.
+
+# Main property to turn overall metrics collection on (true) or off (false).
+lisa.vse.metrics.collect=true
+
+# This property controls the level at which transaction counts are recorded. Options are none
+# (or false), service (the default) or request.
+lisa.vse.metrics.txn.counts.level=service
+
+# This property controls how often transaction rate and response times are sampled.
+lisa.vse.metrics.sample.interval=5m
+
+# These properties control how often old metric data is scanned for and deleted, along with what
+# counts as old.
+lisa.vse.metrics.delete.cycle=1h
+lisa.vse.metrics.delete.age=30d
+
+# Should we start the internal Derby DB instance in the registry?
+lisadb.internal.enabled=true
+
+# Internal Derby DB network interface to use (0.0.0.0 == all network interfaces)
+lisadb.internal.host=0.0.0.0
+
+# Internal Derby DB port number to use
+lisadb.internal.port=1528
+
+# These properties control how often old ACL audit log data is scanned for and deleted, along with what
+# counts as old.
+lisa.acl.audit.logs.delete.frequency=1d
+lisa.acl.audit.logs.delete.age=30d
+
+# There are four components that interact with a database: reporting, the agent broker,
+# VSE, and ACL. Normally you would point them all to the same
+# connection pool but you can define a separate pool for each or mix and match.
+# If you want to define a new pool just set up properties like 'lisadb.pool.myPool.url'
+# The underlying pool implementation is the open source c3p0 pool, and DevTest will
+# pass the various properties down. There are many settings to choose from;
+# see http://www.mchange.com/projects/c3p0/index.html#configuration_properties
+
+lisadb.reporting.poolName=common
+lisadb.acl.poolName=common
+lisadb.broker.poolName=common
+lisadb.dradiscache.poolName=common
+
+lisadb.pool.common.driverClass=org.apache.derby.jdbc.ClientDriver
+lisadb.pool.common.url=jdbc:derby://localhost:1528/database/lisa.db;create=true
+lisadb.pool.common.user=rpt
+lisadb.pool.common.password_enc=76f271db3661fd50082e68d4b953fbee
+# Set the password by removing the trailing _enc from the property name and adding =MyPlaintextPassword.
+# DevTest automatically encodes the password for you at startup.
+
+# Extra properties to keep the number of connections to a minimum if we are idle.
+lisadb.pool.common.minPoolSize=0
+lisadb.pool.common.initialPoolSize=0
+lisadb.pool.common.maxPoolSize=10
+lisadb.pool.common.acquireIncrement=1
+lisadb.pool.common.maxIdleTime=45
+lisadb.pool.common.idleConnectionTestPeriod=5
+
+
+## Other common database settings. Copy & paste the relevant user, password, and pool size params from the common template.
+#lisadb.pool.POOLNAME.driverClass=oracle.jdbc.OracleDriver
+#lisadb.pool.POOLNAME.url=jdbc:oracle:thin:@HOST:1521:SID
+
+#lisadb.pool.POOLNAME.driverClass=com.ibm.db2.jcc.DB2Driver
+#lisadb.pool.POOLNAME.url=jdbc:db2://HOST:50000/DBNAME
+
+
+#lisadb.pool.POOLNAME.driverClass=com.microsoft.sqlserver.jdbc.SQLServerDriver
+#lisadb.pool.POOLNAME.url=jdbc:sqlserver://durry;databaseName=LISA
+
+#lisadb.pool.POOLNAME.driverClass=com.mysql.jdbc.Driver
+#lisadb.pool.POOLNAME.url=jdbc:mysql://HOST:3306/DBNAME
+
+#Set this to true to allow leading and trailing whitespace in request arguments when matching to service image.
+lisa.vse.argument.match.allow.whitespace=false
+
+#================================================
+# Start VSE Delimited Content Detection properties
+#================================================
+#Maximum characters to look at.
+#lisa.vse.delimited.delimiter.check.maxchars=1000
+#Maximum percentage will be used if it is higher than max characters.
+#lisa.vse.delimited.delimiter.check.maxpercent=2
+#The DelimitedContentDetector will look for these characters as delimiters.
+lisa.vse.delimited.delimiter.list=:,\\,,;,|,\u00A6,\t,\n
+
+#Minimum number of delimiter count for DelimitedContentDetector. The payload must have at least this many delimiters.
+lisa.vse.delimited.delimiter.minimum.threshold=3
+
+#Name-Value separators used to detect delimited name-value payload.
+#These must not be in the lisa.vse.delimiter.list.
+lisa.vse.delimited.namevalue.separator.list==
+
+#================================================
+# End VSE Delimited Content Detection properties
+#================================================
+
+#-----------------------------------------------
+# Mainframe Properties
+#-----------------------------------------------
+# Should the mainframe bridge be enabled? Valid values are: "true" or "false".
+lisa.mainframe.bridge.enabled=false
+
+# Is the bridge to be run in client mode (bridge connects to the LPAR agent)
+# or server mode (LPAR agent connects to the bridge)? Valid values are: "client" or "server"
+#lisa.mainframe.bridge.mode=server
+# For server mode only, the well-known port to listen for connections from the LPAR agent.
+#lisa.mainframe.bridge.port=61617
+
+lisa.mainframe.bridge.mode=client
+# For client mode only, the IP address where the LPAR agent is running.
+lisa.mainframe.bridge.server.host=127.0.0.1
+# For client mode only, the well-known port where the LPAR agent is listening for client connections.
+lisa.mainframe.bridge.server.port=3997
+# For client mode only, a two character unique id for the bridge connection.
+# Only needed for if multiple bridges will connect to one LPAR agent.
+#lisa.mainframe.bridge.connid=AA
+
+# Pathfinder stitching delay
+lisa.mainframe.pathfinder.stitching.delay=15
+
+#=====================================
+# IBM MQSeries Properties
+#=====================================
+# Use this property to override the default Coded Character Set ID (CCSID) used for all IBM MQSeries messages sent from
+# DevTest. This can be also be overridden on a per-case basis in the Publisher Info's Message Properties of the IBM MQ
+# step.
+# See here for the complete list of CCSIDs:
+# http://www-01.ibm.com/software/globalization/ccsid/ccsid_registered.html
+# The default for US locales is 819 (ASCII).
+#lisa.mq.ccsid.default=819
+
+#=====================================
+# Localization Options
+#=====================================
+lisa.locale.languages=en, ja
+lisa.supported.html.request.encodings=ISO-8859-1,UTF-8,Shift_JIS,EUC-JP,Windows-31J
+
+#=====================================
+# Localization Options for Portal UI
+#=====================================
+portal.locale.languages=en, ja, fr
+
+# These properties control how often old Persistent map data is scanned for and deleted, along with what
+# counts as old.
+lisa.persistent.map.delete=true
+lisa.persistent.map.delete.cycle=10m
+lisa.persistent.map.delete.age=30d
+
+# configure Jetty to use the ecj compiler for JSPs, instead of the one from the JDK
+org.apache.jasper.compiler.disablejsr199=true
+
+#=====================================
+# VSEasy Properties
+#=====================================
+# These properties control the dynamic assignment of ports when using auto configuration with the HTTP protocol in VSEasy
+# The rules for these properties are as follows:
+#  - If max <= min, then both get reverted to the defaults (65535 and 8000 respectively)
+#  - If max > 65535, max is set to 65535
+#  - If min < 1024, min is set to 1024
+lisa.vseasy.http.min.dynamic.port=8000
+lisa.vseasy.http.max.dynamic.port=65535
+
+beanshell.script.default.imports=com.ca.sv.devtest.util.GenerateString
+# Default group tag used when adding virtual services via VSEasy 
+lisa.vseasy.default.group.tag=VSEasy
+
+# ------------------------------------------------------------
+# This property limits the size of responses written to the vse.log.
+# This property is only applied when trace-level logging is enabled,
+# specifically, when com.itko.lisa.vse.http.Transaction=TRACE
+# or when com.itko.lisa.vse.stateful.protocol.http.Coordinator=TRACE
+# When this property is 0, the entire response is logged.
+# Invalid values are treated as 0, which likewise means the
+# whole response is logged.
+# ------------------------------------------------------------
+vse.log.trace.truncate.response.at=2048
+
+#=====================================
+# Enterprise Dashboard Options
+#=====================================
+# Our embedded web server
+dradis.webserver.port=1506
+
+# Our embedded web server's host. '0.0.0.0' will bind to all local addresses.
+dradis.webserver.host=0.0.0.0
+
+dradis.webapps.directory=dradis
+
+dradis.webserver.acl.authmodule.baseurl=/acl/
+
+# Should we start the internal Derby DB instance in the Enterprise Dashboard?
+dradisdb.internal.enabled=true
+
+# Internal Derby DB network interface to use (0.0.0.0 == all network interfaces)
+dradisdb.internal.host=0.0.0.0
+
+# Internal Derby DB port number to use
+dradisdb.internal.port=1530
+
+lisadb.dradis.poolName=dradis
+
+lisadb.pool.dradis.driverClass=org.apache.derby.jdbc.ClientDriver
+lisadb.pool.dradis.url=jdbc:derby://localhost:1530/database/dradis.db;create=true
+lisadb.pool.dradis.user=app
+lisadb.pool.dradis.password_enc=76f271db3661fd50082e68d4b953fbee
+# Set the password by removing the trailing _enc from the property name and adding =MyPlaintextPassword.
+# DevTest automatically encodes the password for you at startup.
+
+# Extra properties to keep the number of connections to a minimum if we are idle.
+lisadb.pool.dradis.minPoolSize=0
+lisadb.pool.dradis.initialPoolSize=0
+lisadb.pool.dradis.maxPoolSize=10
+lisadb.pool.dradis.acquireIncrement=1
+lisadb.pool.dradis.maxIdleTime=45
+lisadb.pool.dradis.idleConnectionTestPeriod=5
+
+## ==============================================
+## Enable a client cert and password for SSL.
+## (Used by HTTP Live Invocation Step and Raw SOAP Step Execution -
+##  also used by Web Service Step Execution if not overridden below)
+## ssl.client.cert.path = a full path to the keystore
+## ssl.client.cert.pass = password for the keystore (this password will be automatically encrypted when DevTest runs)
+## ssl.client.key.pass = optional password for the key entry if using JKS keystore and key has a different password
+##                       from keystore (this password is automatically encrypted when DevTest runs)
+## ssl.client.alias = optional alias to use if the keystore has more than one certificate
+## ==============================================
+ssl.client.cert.path={{lisa.default.keystore}}
+ssl.client.cert.pass.encrypted=c6d2b81435d311bc1fe1e8188fac05df7012374a855bc70346ccdde3f27c4b11
+
+## ==============================================
+## SSL server keystore information to use during VSE recording and playback (Listen Step)
+##
+## We provide a default internal self-signed certificate (in LISA_HOME/webreckeys.ks).  If you want a stronger
+## certificate, you can use a custom SSL server keystore by specifying the following properties:
+##
+## ssl.server.cert.path A full path to the SSL server keystore file
+## ssl.server.cert.pass The password for the SSL server keystore (this password will be automatically encrypted as a
+##                      new property called "ssl.server.cert.pass.encrypted" when DevTest runs)
+## ==============================================
+ssl.server.cert.path={{lisa.default.keystore}}
+ssl.server.cert.pass.encrypted=c6d2b81435d311bc1fe1e8188fac05df7012374a855bc70346ccdde3f27c4b11
+
+#################################
+## DevTest to DevTest communication encryption. Normally the network traffic is not encrypted. If you
+## want to use encryption, we support SSL out of the box. Instead of naming your server endpoints with
+## 'tcp' you name them with 'ssl' - for example, ssl://hostname:2010/Registry.  You do not have to set any of the
+## properties below; simply naming the endpoints (and the server name) with SSL is enough. For example,
+## you can start a new simulator 'Simulator -name ssl://thishost:2014/Simulator -labName ssl://regHost:2010/Registry'
+##
+## We provide a default internal self-signed certificate (in LISA_HOME/webreckeys.ks). If you want a stronger 
+## certificate you specify the lisa.default.keystore property below and the plaintext password in lisa.default.keystore.pass
+## The next time DevTest starts the plaintext password will be replaced by an encrypted string lisa.default.keystore.pass.encrypted
+#################################
+lisa.default.keystore={{LISA_HOME}}webreckeys.ks
+lisa.default.keystore.pass=passphrase
+
+## ==============================================
+## HTTP Proxy Server
+## ==============================================
+#lisa.http.webProxy.host=<machine name or ip>
+##list of excluded machine names or ip addresses delimited by pipes, * wildcard accepted <machine name or ip>[|<machine name or ip>]*
+lisa.http.webProxy.nonProxyHosts=127.0.0.1
+#lisa.http.webProxy.port=
+
+## ==============================================
+## HTTPS Proxy Server
+## ==============================================
+#lisa.http.webProxy.ssl.host=<machine name or ip>
+##list of excluded machine names or ip addresses delimited by pipes, * wildcard accepted <machine name or ip>[|<machine name or ip>]*
+lisa.http.webProxy.ssl.nonProxyHosts=127.0.0.1
+#lisa.http.webProxy.ssl.port=
+
+## ==============================================
+## Pathfinder Solr 
+## ==============================================
+lisa.pathfinder.solr.syncUpHour=2
+lisa.pathfinder.solr.batchSize=
+
+## ==============================================
+## Specify the max wait time (in seconds) for Jetty server to scan annotations, by default, 
+## Jetty will wait a maximum of 60 seconds for all of the scanning threads to complete.
+## ==============================================
+org.eclipse.jetty.annotations.maxWait=120
+
+## ==============================================
+## Property used to define the minimum length of key/value in a Pathfinder transaction
+## request/response that is required to consider that key/value for constructing 
+## a parameter or filter out of it
+## ==============================================
+lisa.pathfinder.stateful.baseline.parameter.string.min.length=3
+
+## =================================================
+## This allows you to exclude certain strings from being eligible
+## for generate parameter or filter.
+## =================================================
+lisa.pathfinder.stateful.baseline.parameter.string.exclusion=Yes, YES, yes, No, NO, no, true, True, TRUE, false, False, FALSE, __NULL

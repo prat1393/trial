@@ -1,0 +1,411 @@
+<?xml version="1.0" ?>
+
+
+<!-- TestCase Results Document created by LISA Test Editor -->
+<!-- On: Tue Apr 28 07:55:35 CDT 2009 -->
+
+
+<Results name="statefullATM">
+
+
+    <Result node="0) launch on kiosk.cmd ">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="1) asyncchange on com.itko.lisa.kiosk.KioskFrame">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="2) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="3) click on javax.swing.JList (firstdemo2 lastdemo2)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="4) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="5) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="6) change on javax.swing.JPasswordField (pass)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="7) change on javax.swing.JPasswordField (pass)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="8) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="9) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="10) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="11) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="12) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="13) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="14) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="15) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="16) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="17) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="18) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="19) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="20) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="21) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="22) click on javax.swing.JList (firstdemo2 lastdemo2)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="23) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="24) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="25) change on javax.swing.JPasswordField (pass)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="26) change on javax.swing.JPasswordField (pass)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="27) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="28) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="29) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="30) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="31) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="32) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="33) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="34) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="35) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="36) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="37) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="38) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="39) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="40) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="41) click on javax.swing.JList (firstdemo2 lastdemo2)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="42) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="43) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="44) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="45) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="46) change on javax.swing.JPasswordField (pass)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="47) change on javax.swing.JPasswordField (pass)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="48) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="49) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="50) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="51) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="52) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="53) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="54) click on javax.swing.JList (firstdemo2 lastdemo2)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="55) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="56) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="57) change on javax.swing.JPasswordField (pass)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="58) change on javax.swing.JPasswordField (pass)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="59) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="60) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="61) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="62) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="63) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="64) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="65) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="66) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="67) click on javax.swing.JList (firstdemo2 lastdemo2)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="68) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="69) click on com.itko.lisa.kiosk.components.Card">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="70) change on javax.swing.JPasswordField (pass)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="71) change on javax.swing.JPasswordField (pass)">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="72) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="73) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="74) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="75) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="76) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="77) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="78) click on com.itko.lisa.kiosk.components.Button">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+    <Result node="79) mousedown on com.itko.lisa.kiosk.components.PowerButton">
+      <content type="java.lang.String"><![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiA/Pg==]]></content>
+    </Result>
+
+
+</Results>

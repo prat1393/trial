@@ -1,0 +1,1594 @@
+<?xml version="1.0" ?>
+
+<!-- Title: Make the LISA Test Case Editor wizards dynamic.
+
+There are a number of wizards in LISA that prompt the user for the type of test element they wish to add to a test.
+For example, the filter wizard will show you both a list of node-type-specific filters you may wish plus the default set.
+Currently, these filters are hard-coded into the app.  We need them to be dynamic.  There are 2 ways that these lists
+of options are created currently.  Filters, asserts, and maybe others use FullTypeExplain objects.  Other options, Nodes and
+maybe Data Sets use a 2D array of strings but have basically the same purpose.  They need a Name, a Help String, and a class
+name that LISA can use to connect the desired element name to the right element class to add to the test.
+
+What we want is to use an XML document like the one I've attached.  This XML doc will have the element type and node type (if
+ applicable) so that the wizard entries can be defined outside of code.
+
+Practically speaking this means the following:
+- convert the existing FullTypeExplain objects into wizard entries in XML
+- add methods to FullTypeExplain that will read into a collection the right wizard entries for a given bucket (element/nodetype)
+- for nodes, convert the 2D array of strings into a collection of FullTypeExplain objects (the nodetype is irrelevant)
+
+If you go the above route, you are modifying the data objects that populate the wizards.
+
+I'm pretty sure that as you remove the hard-coded strings from LISA you can remove the strings from the lisagui.properties file.
+While this will make translation of these strings harder, it'll provide easier customization...
+
+In fact, the wizard.xml file can just be the default, and we load a locale-specific one to see if it's there... hmm...
+
+ -->
+<Wizards>
+    <!-- Assert Wizard Settings. - Start -->
+    <Wizard element="assert" type="html">
+        <Entry>
+            <Type>com.itko.lisa.web.WebHTMLComparisonAssert</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.web.PagePropAssertion</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.CheckResultHTTPHeaderField</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.CheckResultHTTPResponseCode</Type>
+        </Entry>
+
+		<Entry>
+            <Type>com.itko.lisa.test.SimpleWebAssertion</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.web.AssertionLinkChecker</Type>
+        </Entry>
+    </Wizard>
+
+    <Wizard element="assert" type="jdbc">
+    	<Entry>
+            <Type>com.itko.lisa.jdbc.CheckResultJDBCResultSet</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.jdbc.CheckResultJDBCValue</Type>
+        </Entry>
+    </Wizard>
+
+    <Wizard element="assert" type="web20">
+	    <Entry>
+	        <Type>com.itko.lisa.web20.Web20BasicAssertion</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.web20.Web20ValidationAssertion</Type>
+        </Entry>
+    </Wizard>
+
+    <Wizard element="assert" type="xml">
+        <Entry>
+            <Type>com.itko.lisa.test.AssertDiffEngine</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.CheckResultContains</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.AssertLastNodeResponseTime</Type>
+        </Entry>
+
+		<Entry>
+            <Type>com.itko.lisa.xml.xmldiff.assertion.GraphicalXMLDiffAssertion</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.xml.AssertXMLXPath</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.xml.AssertXMLValidator</Type>
+        </Entry>
+    </Wizard>
+
+    <Wizard element="assert" type="json">
+        <Entry>
+            <Type>com.ca.lisa.apptest.json.AssertJSONEquals2</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.ca.lisa.apptest.json.AssertJSONContains</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.ca.lisa.apptest.json.AssertJSONSchema</Type>
+        </Entry>
+    </Wizard>
+
+    <Wizard element="assert" type="vse">
+        <Entry>
+            <Type>com.itko.lisa.vse.stateful.AssertOnExecutionMode</Type>
+        </Entry>
+    </Wizard>
+    
+    <Wizard element="assert" type="mobile">
+        <Entry>
+            <Type>com.itko.lisa.mobile.test.AssertMobileTargetPredicate</Type>
+        </Entry>
+    </Wizard>
+
+    <Wizard element="assert" type="other">
+        <Entry>
+            <Type>com.itko.lisa.test.AssertDiffEngine</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.CheckResultAny</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.test.CheckResultContains</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.CheckResultRegEx</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.test.CheckResultPropRegEx</Type>
+        </Entry>
+
+       <Entry>
+            <Type>com.itko.lisa.test.AssertLastNodeResponseTime</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.AssertByScript</Type>
+        </Entry>
+         <Entry>
+            <Type>com.itko.lisa.test.AssertPropsEqual</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.dynexec.CheckInvocationEx</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.utils.FileWatcherAssertion</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.utils.TailFileAssertion</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.dynexec.CollectionContentsAssert</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.ws.wsi.AssertWSDLWSI</Type>
+        </Entry>
+
+		<Entry>
+			<Type>com.itko.lisa.vse.stateful.protocol.messaging.MessagingVSERespWorkflowControlAssert</Type>
+		</Entry>
+        <Entry>
+            <Type>com.itko.lisa.swift.assertion.SwiftAssert</Type>
+        </Entry>
+    </Wizard>
+
+
+
+    <!-- Assert Wizard Settings. - End -->
+
+    <!-- Companion Wizard Settings. - Start -->
+    <Wizard element="companion" type="knowncomps">
+        <Entry>
+            <Type>com.itko.lisa.test.BrowserSelection</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.BandwidthConfig</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.test.HttpConnectionPoolCompanion</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.WebProxyCompanion</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.SyncPointCompanion</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.stats.AggregateTransactionCompanion</Type>
+        </Entry>
+
+		<Entry>
+            <Type>com.itko.lisa.test.EventSubprocessCompanion</Type>
+        </Entry>
+    </Wizard>
+
+    <Wizard element="companion" type="vsecomps">
+        <Entry>
+            <Type>com.itko.lisa.vse.stateful.protocol.java.companion.JavaProtocolCompanion</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.vse.observed.ObservedSystemCompanion</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.vse.ThinkScaleCompanion</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.vse.companion.BatchResponseThinkTimeCompanion</Type>
+        </Entry>
+		<Entry>
+            <Type>com.itko.lisa.vse.companion.RecurringPeriodThinkTimeCompanion</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.pathfinder.PFDataFromVSCompanion</Type>
+        </Entry>
+    </Wizard>
+
+    <Wizard element="companion" type="othercomps">
+        <Entry>
+            <Type>com.itko.lisa.test.ClassLoaderSandbox</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.test.StartStopNodeCompanion</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.test.NegativeTestingCompanion</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.test.FailTestCaseCompanion</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.xml.xmldiff.companion.IgnoredNodesCompanion</Type>
+        </Entry>
+        <Entry>
+            <Type>com.ca.lisa.apptest.json.IgnoredJsonNodesCompanion</Type>
+        </Entry>
+    </Wizard>
+    <!-- Companion Wizard Settings. - End -->
+
+    <!-- DataSet Wizard Settings. - Start -->
+    <Wizard element="dataset" type="knowndatasets">
+        <Entry>
+            <Type>com.itko.lisa.test.DataFile</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.DataSheet</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.LargeDataDataSet</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.JDBCDataSet</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.CounterDataSet</Type>
+        </Entry>
+<!-- Added to support the Excel Data Sets -->
+        <Entry>
+            <Type>com.itko.lisa.test.ExcelDataFile</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.dynexec.dtodatasets.XLSDTODataSet</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.test.DataSetIDGenerator</Type>
+        </Entry>
+		<Entry>
+            <Type>com.itko.lisa.test.DataSetRandIDGenerator</Type>
+        </Entry>
+		<Entry>
+            <Type>com.itko.lisa.jms.DataSetCorrelationIDGenerator</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.test.DirectoryFilesDataSet</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.xml.dataset.XMLDataSet</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.test.ScriptedDataSet</Type>
+        </Entry>
+<!-- Added till here to support the Excel Data Sets -->
+    </Wizard>
+    <!-- DataSet Wizard Settings. - End -->
+    <!-- Filter Wizard Categories Settings. - End -->
+    <Wizard element="filter" type="util">
+	<Entry>
+            <Type>com.itko.lisa.test.FilterParseOutByExpression</Type>
+        </Entry>
+	    <Entry>
+            <Type>com.itko.lisa.test.FilterSaveResponse</Type>
+        </Entry>
+	    <Entry>
+            <Type>com.itko.lisa.dynexec.FilterConvertObjToLastResponse</Type>
+        </Entry>
+	    <Entry>
+            <Type>com.itko.lisa.test.FilterSavePropToFile</Type>
+        </Entry>
+	    <Entry>
+            <Type>com.itko.lisa.test.FilterArgParser</Type>
+        </Entry>
+	    <Entry>
+            <Type>com.itko.lisa.test.FilterProperty2Property</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.TimeStampFilter</Type>
+        </Entry>
+    </Wizard>
+
+    <Wizard element="filter" type="jdbc">
+	    <Entry>
+            <Type>com.itko.lisa.jdbc.JDBCValueFilter</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.resultset.SimpleResultSetFilter</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.jdbc.SimpleJDBCFilter</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.resultset.ResultSetRowCountFilter</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.resultset.ResultSetFindValueGetValueFilter</Type>
+        </Entry>
+    </Wizard>
+
+    <Wizard element="filter" type="esb">
+	<Entry>
+            <Type>com.itko.lisa.esb.common.AutoMessagePropertyExtractor</Type>
+        </Entry>
+        <!-- VSE oriented stuff.... -->
+        <Entry>
+            <Type>com.itko.lisa.vse.stateful.protocol.messaging.mq.MQBuildVSERequestFilter</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.vse.stateful.protocol.messaging.jms.JmsBuildVSERequestFilter</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.vse.stateful.protocol.messaging.jms.JmsVSEUtilityRequestDestFillerFilter</Type>
+        </Entry>
+    </Wizard>
+
+    <Wizard element="filter" type="html">
+	<Entry>
+            <Type>com.itko.lisa.resultset.html.FilterTRResultSetCacheGenerator</Type>
+        </Entry>
+	    <Entry>
+            <Type>com.itko.lisa.web.FilterParseWebProps</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.FilterGetAttribute</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.FilterGetAttributeAndParseArg</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.FilterGetChildText</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.FilterGetHTTPHeader</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.FilterGetRawAttribute</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.FilterLisaProps</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.FilterRandListSelector</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.FilterVectorOfTags</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.FilterGetHTTPCookieHeader</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.DynamicFormFilter</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.FilterTagByAttributeGetAttribute</Type>
+        </Entry>
+        <Entry>
+            <Type>com.itko.lisa.ws.HTTPInjectHeaderFilter</Type>
+        </Entry>
+    </Wizard>
+
+
+    <Wizard element="filter" type="xml">
+	<Entry>
+            <Type>com.itko.lisa.test.FilterXMLGetChildText</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.FilterXMLGetTagAttribute</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.FilterXMLLisaProps</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.test.FilterRandListSelector</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.xml.FilterXMLXPath</Type>
+        </Entry>
+    </Wizard>
+
+    <Wizard element="filter" type="json">
+        <Entry>
+            <Type>com.ca.lisa.apptest.json.FilterJSONGet</Type>
+        </Entry>
+    </Wizard>
+
+    <Wizard element="filter" type="web20">
+	<Entry>
+            <Type>com.itko.lisa.web20.Web20ElementFilter</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.web20.Web20TextFilter</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.web20.Web20AttributeFilter</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.web20.Web20JavascriptFilter</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.web20.Web20FunctionFilter</Type>
+        </Entry>
+	<Entry>
+            <Type>com.itko.lisa.web20.Web20CompositeFilter</Type>
+        </Entry>
+    </Wizard>
+
+
+    <Wizard element="filter" type="pathfinder">
+	<Entry>
+            <Type>com.itko.lisaint.FilterLisaInt</Type>
+        </Entry>
+
+	<Entry>
+            <Type>com.itko.lisaint.webmethods.IntegrationServerFilter</Type>
+        </Entry>
+    </Wizard>
+    <!-- Filter Wizard Categories Settings. - End -->
+    <!-- Filter Wizard Settings. - Start -->
+    <Wizard element="filter" type="tclevel">
+        <Entry>
+            <Type>com.itko.lisa.jdbc.SimpleJDBCFilter</Type>
+        </Entry>
+
+        <!-- this has a different value than the previous entry for this filter in core.properties"-->
+        <Entry>
+            <!--<Name>Install the LISA Properties Filter (Web)</Name>-->
+            <!--<Help>Filter to use for simple LISA property settings for web sites.</Help>-->
+            <Type>com.itko.lisa.test.FilterLisaProps</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisaint.FilterLisaInt</Type>
+        </Entry>
+
+    </Wizard>
+
+    <Wizard element="filter" type="xml_favorites">
+        <Entry>
+            <Type>com.itko.lisa.test.FilterXMLGetChildText</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.FilterXMLGetTagAttribute</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.FilterXMLLisaProps</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.FilterRandListSelector</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.FilterSavePropToFile</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.xml.FilterXMLXPath</Type>
+        </Entry>
+
+    </Wizard>
+    <Wizard element="filter" type="html_favorites">
+        <Entry>
+            <Type>com.itko.lisa.web.FilterParseWebProps</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.FilterGetAttribute</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.FilterGetAttributeAndParseArg</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.test.FilterGetChildText</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Read HTTP Header</Name>-->
+            <!--<Help>For testing web applications, any data provided in the HTTP headers can be stored into a LISA property.  This data is not shown to a user or displayed in a web browser, but there may be interesting attributes that you may want to record in your test case.</Help>-->
+            <Type>com.itko.lisa.test.FilterGetHTTPHeader</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Search HTML for Attribute</Name>-->
+            <!--<Help>This filter allows the user to search through an entire HTML response for a specific attribute.  For example, in the middle of a page, there is a tag like "&lt;tag att1='val1' att2='val2'/&gt;" where att1 and att2 are attribute names.  A user can use this filter to search the entire page for "att2" and retrieve the value "val2" in their property.</Help>-->
+            <Type>com.itko.lisa.test.FilterGetRawAttribute</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Choose Random Drop-Down Value</Name>-->
+            <!--<Help>During web page testing, a user filling out forms may want to select a random value during each test run.  This filter allows the user to select a random value from the drop-down to imitate real user behavior.  For example, if the web site sells T-Shirts, the drop-down for size could be S, M, L, XL, and this filter would pick a random value each run.</Help>-->
+            <Type>com.itko.lisa.test.FilterRandListSelector</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Search HTML Segment for Attributes</Name>-->
+            <!--<Help>This filter allows the user to grab the same set of attributes from an entire section of HTML.  An example would be if there was an HTML form on a page, you could use this filter to get the name of every text field on the form.  This would allow a user to automate the data entry so that a test case could loop through the list filling in data.</Help>-->
+            <Type>com.itko.lisa.test.FilterVectorOfTags</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Store All HTML Forms</Name>-->
+            <!--<Help>This filter reads all &lt;form/&gt; tags in an HTML page, and creates properties for all the form elements.  If there are several forms on the page, this filter will work for all of them, so you can access that data inside your test case.</Help>-->
+            <Type>com.itko.lisa.test.DynamicFormFilter</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Save Property Value to File</Name>-->
+            <!--<Help>This filter should be used as a way to quickly store a file on the file system.  This is commonly used to create baseline values for later comparison (i.e. an example of a good message or good HTTP response).</Help>-->
+            <Type>com.itko.lisa.test.FilterSavePropToFile</Type>
+        </Entry>
+    </Wizard>
+    <Wizard element="filter" type="jdbc_favorites">
+	<Entry>
+            <Type>com.itko.lisa.jdbc.JDBCValueFilter</Type>
+        </Entry>
+        <Entry>
+            <!--<Name>Extract Value From Same Row in Result Set</Name>-->
+            <!--<Help>Looks for a value in a specified column of a Result Set (also known as a table).  When it finds that value, it returns a value in the same row from a column you specify.  For example this can be used if we have the last name of a user, but we want to lookup their email address that is in the same row.  We put their last name in the "Search Text", the last name column in "Search Column", and the email column in "Value Column".</Help>-->
+            <Type>com.itko.lisa.resultset.ResultSetFindValueGetValueFilter</Type> <!-- FB10327 -->
+        </Entry>
+        <Entry>
+            <!--<Name>Set size of a Result Set to a Property</Name>-->
+            <!--<Help>This filter will get the row count of a result set and store it in a property you provide.</Help>-->
+            <Type>com.itko.lisa.resultset.ResultSetRowCountFilter</Type>
+        </Entry>
+    </Wizard>
+
+    <Wizard element="filter" type="other">
+	<Entry>
+	    <!--<Name>Create property based on surrounding values</Name>-->
+            <!--<Help>This filter allows for creating of a property based on surrounding text.  LISA starts from the beginning of the document and looks for the starting text, then the ending text, and the value between them is assigned to the property.  This filter does not work if the starting value is not unique in the document, the beginning value should only be in the document once.  Best used on log files and command lines.  This filter words well with XML if the document is going to change a lot.</Help>-->
+            <Type>com.itko.lisa.test.FilterParseOutByExpression</Type>
+        </Entry>
+	<Entry>
+	    <!--<Name>Override "Last Response" Property</Name>-->
+            <!--<Help>There is a special property known as "Last Response" which contains the response from the previous step.  For example, if the previous step was an HTTP step, the "Last Response" will be the web page that was returned.  This filter should be used if they prefer the "Last Response" to be something other than the default value.</Help>-->
+            <Type>com.itko.lisa.dynexec.FilterConvertObjToLastResponse</Type>
+        </Entry>
+	<Entry>
+	    <!--<Name>Save Property Value to File</Name>-->
+            <!--<Help>This filter should be used as a way to quickly store a file on the file system.  This is commonly used to create baseline values for later comparison (i.e. an example of a good message or good HTTP response).</Help>-->
+            <Type>com.itko.lisa.test.FilterSavePropToFile</Type>
+        </Entry>
+        <Entry>
+	    <!--<Name>Save the Value of a Property To another Property</Name>-->
+            <!--<Help>If you need to save the contents of a property into another property without beanshell over-head you can use this Filter.  It copies values by normal Java by reference rules and does not clone.</Help>-->
+            <Type>com.itko.lisa.test.FilterProperty2Property</Type>
+        </Entry>
+    </Wizard>
+    <Wizard element="filter" type="java">
+	<Entry>
+	    <!--<Name>Override "Last Response" Property</Name>-->
+            <!--<Help>There is a special property known as "Last Response" which contains the response from the previous step.  For example, if the previous step was an HTTP step, the "Last Response" will be the web page that was returned.  This filter should be used if they prefer the "Last Response" to be something other than the default value.</Help>-->
+            <Type>com.itko.lisa.dynexec.FilterConvertObjToLastResponse</Type>
+        </Entry>
+	<Entry>
+	    <!--<Name>Store Step Response</Name>-->
+            <!--<Help>This filter allows the user to take the value returned from a step and store into a LISA property so it can be used elsewhere in the test case.  This filter works regardless of what is returned from the step (an HTML web page, a JMS message object, etc.).  An example is to take a message which is posted to a topic, and re-submit this message later in the test case.</Help>-->
+            <Type>com.itko.lisa.test.FilterSaveResponse</Type>
+        </Entry>
+	<Entry>
+	    <!--<Name>Save Property Value to File</Name>-->
+            <!--<Help>This filter should be used as a way to quickly store a file on the file system.  This is commonly used to create baseline values for later comparison (i.e. an example of a good message or good HTTP response).</Help>-->
+            <Type>com.itko.lisa.test.FilterSavePropToFile</Type>
+        </Entry>
+    </Wizard>
+    <!-- Filter Wizard Settings. - End -->
+
+    <Wizard element="filter" type="vse">
+        <Entry>
+            <!--<Name>Data Protocol Filter</Name>-->
+            <!--<Help>This filter is used on protocol-specific listen steps for virtual models.  It provides the necessary wrapper for a data protocol to act as a filter, the appropriate way for things to work in the runtime side of VSE.</Help>-->
+            <Type>com.itko.lisa.vse.stateful.common.DataProtocolFilter</Type>
+        </Entry>
+    </Wizard>
+
+	<Wizard element="filter" type="copybook">
+        <Entry>
+            <Name>Copybook Filter</Name>
+            <Help>This filter is used for copybook format message, it extract copybook data to xml format data</Help>
+            <Type>com.itko.lisa.test.FilterCopybook</Type>
+        </Entry>
+    </Wizard>
+	
+    <!-- node Wizard Settings. - Start -->
+    <Wizard element="node" type="ws-testing">
+
+        <Entry>
+            <!--<Name>Web Service Execution (XML)</Name>-->
+            <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.</Help>-->
+            <Type>com.itko.lisa.ws.nx.NxWSStep</Type>
+        </Entry>
+
+
+        <Entry>
+            <!--<Name>WSDL Validation</Name>-->
+            <!--<Help>This step is used to perform various validations against a WSDL.  Common types of validation include WS-I Basic Profile compliance, XML schema validation and others.</Help>-->
+            <Type>com.itko.lisa.ws.WSDLNode</Type>
+        </Entry>
+
+    </Wizard>
+
+    <Wizard element="node" type="nodetype">
+        <Entry>
+            <!--<Name>Web Service Execution (XML)</Name>-->
+            <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.</Help>-->
+            <Type>com.itko.lisa.ws.nx.NxWSStep</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Execute a Web Service via SOAP</Name>-->
+            <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.  LISA automatically generates a properly formatted SOAP payload for the request.  Web Service Steps can also be automatically generated by using the Generate Web Service Wizard.</Help>-->
+            <Type>com.itko.lisa.dynexec.axis.WebServiceNode</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Execute an Enterprise Java Bean (EJB)</Name>-->
+            <!--<Help>This step is used to lookup an EJB from a remote server, and call methods on the EJB.  It uses JNDI to lookup the EJB and RMI to make the calls.</Help>-->
+            <Type>com.itko.lisa.ejb.EJBNode</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Invoke calls on a local Java object</Name>-->
+                <!--<Help>This step is used to run Java code that is provided by the tester.  Any classes that have been loaded by LISA (such as those in the hotDeploy and lib directories) can be run in this step.  This step is commonly used if the user desires to make use of existing Java libraries as part of a test case.</Help>-->
+            <Type>com.itko.lisa.dynexec.DynExecNode</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>RMI Server execution</Name>-->
+            <!--<Help>This step is used to send an RMI call to a system under test.  Once the RMI registry is defined in the step, LISA will provide a list of the methods that can be called.</Help>-->
+            <Type>com.itko.lisa.dynexec.rmi.RMITestNode</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Execute a SQL call on a database</Name>-->
+            <!--<Help>This step is used to perform database functions using a JDBC database driver.  The step can issue typical SQL-syntax such as SELECT, UPDATE, INSERT, as well as stored procedures.  The user must ensure the driver is in the LISA classpath (for instance by placing in the hotdeploy directory).</Help>-->
+            <Type>com.itko.lisa.jdbc.JDBCNode</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Execute a SQL call on a database, by using a connection asset</Name>-->
+            <!--<Help>This step is used to perform database functions using a JDBC database driver specified in a connection asset. The step can issue typical SQL-syntax such as SELECT, UPDATE, INSERT, as well as stored procedures. The user must ensure the driver is in the LISA classpath (for instance by placing in the hotdeploy directory).</Help>-->
+            <Type>com.itko.lisa.jdbc.JDBCConnAssetNode</Type>
+        </Entry>
+
+        <Entry>
+            <Type>com.itko.lisa.utils.CommandLineExecNode</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Record Swing Tests</Name>-->
+            <!--<Help>This step is used to perform various tests against a Java Swing application.  It is recommended to start by using the Record Swing Wizard which will generate a test case with numerous steps of this type</Help>-->
+            <Type>com.itko.lisa.swing.SwingTestNode</Type>
+        </Entry>
+
+    </Wizard>
+
+    <Wizard element="node" type="VSnodetype">
+        <Entry>
+            <!--<Name>Execute a Web Service via SOAP</Name>-->
+            <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.  LISA automatically generates a properly formatted SOAP payload for the request.  Web Service Steps can also be automatically generated by using the Generate Web Service Wizard.</Help>-->
+            <Type>com.itko.lisa.dynexec.axis.WebServiceNode</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Invoke calls on a local Java object</Name>-->
+            <!--<Help>This step is used to run Java code that is provided by the tester.  Any classes that have been loaded by LISA (such as those in the hotDeploy and lib directories) can be run in this step.  This step is commonly used if the user desires to make use of existing Java libraries as part of a test case.</Help>-->
+            <Type>com.itko.lisa.dynexec.DynExecNode</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Execute a SQL call on a database</Name>-->
+            <!--<Help>This step is used to perform database functions using a JDBC database driver.  The step can issue typical SQL-syntax such as SELECT, UPDATE, INSERT, as well as stored procedures.  The user must ensure the driver is in the LISA classpath (for instance by placing in the hotdeploy directory).</Help>-->
+            <Type>com.itko.lisa.jdbc.JDBCNode</Type>
+        </Entry>
+
+        <Entry>
+            <!--<Name>Execute a Command Line Application</Name>-->
+            <!--<Help>This step is used to run a process from the command line and optionally retrieve the results.  This is commonly used to run some type of utility that cannot be performed directly inside LISA.</Help>-->
+            <Type>com.itko.lisa.utils.CommandLineExecNode</Type>
+        </Entry>
+
+    </Wizard>
+
+<Wizard element="node" type="javaNodes">
+<Entry>
+	<!--<Name>Dynamic Java Execution</Name>-->
+      <!--<Help>This step is used to run Java code that is provided by the tester.  Any classes that have been loaded by LISA (such as those in the hotDeploy and lib directories) can be run in this step.  This step is commonly used if the user desires to make use of existing Java libraries as part of a test case.</Help>-->
+      <Type>com.itko.lisa.dynexec.DynExecNode</Type>
+</Entry>
+
+<Entry>
+	<!--<Name>RMI Server Execution</Name>-->
+      <!--<Help>This step is used to send an RMI call to a system under test.  Once the RMI registry is defined in the step, LISA will provide a list of the methods that can be called.</Help>-->
+      <Type>com.itko.lisa.dynexec.rmi.RMITestNode</Type>
+</Entry>
+
+<Entry>
+	<!--<Name>Enterprise JavaBean Execution</Name>-->
+      <!--<Help>This step is used to lookup an EJB from a remote server, and call methods on the EJB.  It uses JNDI to lookup the EJB and RMI to make the calls.</Help>-->
+      <Type>com.itko.lisa.ejb.EJBNode</Type>
+</Entry>
+</Wizard>
+
+<Wizard element="node" type="otherTransNodes">
+<Entry>
+	<!--<Name>SQL Database Execution (JDBC)</Name>-->
+      <!--<Help>This step is used to perform database functions using a JDBC database driver.  The step can issue typical SQL-syntax such as SELECT, UPDATE, INSERT, as well as stored procedures.  The user must ensure the driver is in the LISA classpath (for instance by placing in the hotdeploy directory).</Help>-->
+      <Type>com.itko.lisa.jdbc.JDBCNode</Type>
+</Entry>
+
+<Entry>
+    <!--<Name>Execute a SQL call on a database, by using a connection asset</Name>-->
+      <!--<Help>This step is used to perform database functions using a JDBC database driver specified in a connection asset. The step can issue typical SQL-syntax such as SELECT, UPDATE, INSERT, as well as stored procedures. The user must ensure the driver is in the LISA classpath (for instance by placing in the hotdeploy directory).</Help>-->
+      <Type>com.itko.lisa.jdbc.JDBCConnAssetNode</Type>
+</Entry>
+
+<Entry>
+	<!--<Name>Corba Execution</Name>-->
+      <!--<Help>This step is used to make CORBA calls using the Java RMI-IIOP library.  The user must provide the appropriate skeleton classes.</Help>-->
+      <Type>com.itko.lisa.dynexec.corba.CorbaNode</Type>
+</Entry>
+</Wizard>
+
+<Wizard element="node" type="webNodes">
+<Entry>
+      <Type>com.itko.lisa.test.URLTrans</Type>
+</Entry>
+<Entry>
+	<!--<Name>REST Step</Name>-->
+      <!--<Help>This step is used to send and receive HTTP(S) requests, including GET and POST parameters.  This step should be used when testing REST applications.</Help>-->
+      <Type>com.itko.lisa.ws.rest.RESTNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>Web Service Execution (XML)</Name>-->
+    <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.</Help>-->
+    <Type>com.itko.lisa.ws.nx.NxWSStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>WSDL Validation</Name>-->
+    <!--<Help>This step is used to perform various validations against a WSDL.  Common types of validation include WS-I Basic Profile compliance, XML schema validation and others.</Help>-->
+    <Type>com.itko.lisa.ws.WSDLNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>Raw SOAP Request</Name>-->
+    <!--<Help>This step is used to send a SOAP message to a given system under test.  The user must provide a properly formatted SOAP message when using this step.</Help>-->
+    <Type>com.itko.lisa.ws.RawSOAPNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>Base64 Encoder Step</Name>-->
+    <!--<Help>This step is used to encode a file using the Base-64 encoding algorithm.  The result can be stored into a LISA property for use elsewhere in the test case.</Help>-->
+    <Type>com.itko.lisa.utils.Base64Node</Type>
+</Entry>
+<Entry>
+    <!--<Name>Multipart MIME Step</Name>-->
+    <!--<Help>The Multipart MIME step allows data to be loaded from a file, encoded, and stored in property to be used as a post parameter on an HTTP request. The encoded document will be stored in the LISA property that has been defined previously in an HTTP/HTML Request step.</Help>-->
+    <Type>com.itko.lisa.utils.MultipartMimeNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>SAML Assertion Query</Name>-->
+    <!--<Help>This step is used to perform a SAML assertion against an Authentication Authority.  Once the assertion is created, it can be used as a token in a Web Service step which is required for certain types of security-enabled web services.</Help>-->
+    <Type>com.itko.lisa.ws.SAMLNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>Web Service Execution (Legacy)</Name>-->
+    <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.  LISA automatically generates a properly formatted SOAP payload for the request.  Web Service Steps can also be automatically generated by using the Generate Web Service Wizard.</Help>-->
+    <Type>com.itko.lisa.dynexec.axis.WebServiceNode</Type>
+</Entry>
+</Wizard>
+<Wizard element="node" type="vseWebNodes">
+<Entry>
+	<!--<Name>HTTP/HTML Request</Name>-->
+      <!--<Help>This step is used to send and receive HTTP(S) requests, including GET and POST parameters.  This step should be used when testing a traditional web application.  HTTP Steps can also be recorded using the Web Site Proxy Recorder.</Help>-->
+      <Type>com.itko.lisa.test.URLTrans</Type>
+</Entry>
+<Entry>
+	<!--<Name>REST Step</Name>-->
+      <!--<Help>This step is used to send and receive HTTP(S) requests, including GET and POST parameters.  This step should be used when testing REST applications.</Help>-->
+      <Type>com.itko.lisa.ws.rest.RESTNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>Web Service Execution (XML)</Name>-->
+    <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.</Help>-->
+    <Type>com.itko.lisa.ws.nx.NxWSStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>WSDL Validation</Name>-->
+    <!--<Help>This step is used to perform various validations against a WSDL.  Common types of validation include WS-I Basic Profile compliance, XML schema validation and others.</Help>-->
+    <Type>com.itko.lisa.ws.WSDLNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>Raw SOAP Request</Name>-->
+    <!--<Help>This step is used to send a SOAP message to a given system under test.  The user must provide a properly formatted SOAP message when using this step.</Help>-->
+    <Type>com.itko.lisa.ws.RawSOAPNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>Base64 Encoder Step</Name>-->
+    <!--<Help>This step is used to encode a file using the Base-64 encoding algorithm.  The result can be stored into a LISA property for use elsewhere in the test case.</Help>-->
+    <Type>com.itko.lisa.utils.Base64Node</Type>
+</Entry>
+<Entry>
+    <!--<Name>Multipart MIME Step</Name>-->
+    <!--<Help>The Multipart MIME step allows data to be loaded from a file, encoded, and stored in property to be used as a post parameter on an HTTP request. The encoded document will be stored in the LISA property that has been defined previously in an HTTP/HTML Request step.</Help>-->
+    <Type>com.itko.lisa.utils.MultipartMimeNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>SAML Assertion Query</Name>-->
+    <!--<Help>This step is used to perform a SAML assertion against an Authentication Authority.  Once the assertion is created, it can be used as a token in a Web Service step which is required for certain types of security-enabled web services.</Help>-->
+    <Type>com.itko.lisa.ws.SAMLNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>Web Service Execution (Legacy)</Name>-->
+    <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.  LISA automatically generates a properly formatted SOAP payload for the request.  Web Service Steps can also be automatically generated by using the Generate Web Service Wizard.</Help>-->
+    <Type>com.itko.lisa.dynexec.axis.WebServiceNode</Type>
+</Entry>
+</Wizard>
+
+<Wizard element="node" type="utilNodes">
+<Entry>
+	<!--<Name>Save Property as Last Response</Name>-->
+      <!--<Help>This step is used to override the LASTRESPONSE internal property with a new value chosen by the user.  This may be used when LASTRESPONSE does not return the desired value, so the user can ensure that the test case will function properly.</Help>-->
+<Type>com.itko.lisa.dynexec.NodeConvertPropToLastResponse</Type>
+</Entry>
+<Entry>
+	<!--<Name>Output Log Message</Name>-->
+      <!--<Help>This step is used to write a log message to the screen.  It is commonly used by a tester to see the current state of current LISA properties when running through a test case.</Help>-->
+      <Type>com.itko.lisa.test.TestNodeLogger</Type>
+</Entry>
+<Entry>
+	<!--<Name>Write Properties To File</Name>-->
+      <!--<Help>This step is used to store the current value of certain LISA properties into a CSV file on the file system.  This is commonly used when properties need to be shared among multiple test cases, or for debugging purposes when a test case has failed.</Help>-->
+      <Type>com.itko.lisa.utils.WritePropsNode</Type>
+</Entry>
+
+<Entry>
+    <!--<Name>Read Properties from a File</Name>-->
+    <!--<Help>This step is used to load a file full of properties to start each test.  The file can be an XML document or an INI/Java style properties file of name=value pairs on each line.  This is a handy way to share a set of properties across a series of tests.</Help>-->
+    <Type>com.itko.lisa.test.PropReaderNode</Type>
+</Entry>
+
+<Entry>
+	<!--<Name>Do-Nothing Step</Name>-->
+      <!--<Help>This step is simply a placeholder and will not perform any action.  However, filters and assertions can still be run on a Do-Nothing step.</Help>-->
+      <Type>com.itko.lisa.test.NoTransNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>Parse Text as Response</Name>-->
+      <!--<Help>This step allows the user to parse an arbitrary set of data and store at the LASTRESPONSE.  For example, an XML message can be read in from a file, and hard-coded values can be replaced with LISA properties.  Then at runtime the property values will be replaced with data read from a data set (Excel, CSV, etc.).</Help>-->
+      <Type>com.itko.lisa.utils.ParseTextContentNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>Audit Step</Name>-->
+    <!--<Help>This step is used to apply an audit document against the current test, a remote test, or a virtual service.  This allows a LISA model to be verified in terms of the events it produces during execution.</Help>-->
+    <Type>com.itko.lisa.testing.AuditStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>Base64 Encoder Step</Name>-->
+      <!--<Help>This step is used to encode a file using the Base-64 encoding algorithm.  The result can be stored into a LISA property for use elsewhere in the test case.</Help>-->
+      <Type>com.itko.lisa.utils.Base64Node</Type>
+</Entry>
+<Entry>
+	<!--<Name>Checksum Step</Name>-->
+      <!--<Help>This step is used to create a checksum value from a file.  The resulting value can be compared against an expected value to see if two checksums match.  If they match, then the files are the same.</Help>-->
+      <Type>com.itko.lisa.utils.ChecksumNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>Convert XML to Element Object</Name>-->
+      <!--<Help>The Convert XML to Element Object step converts raw XML into an object of one of the following types: Message Element Array, Message Element, DOM Element. This is useful when you have a web service API that takes an any type using strict processing.</Help>-->
+      <Type>com.itko.lisa.xml.XML2ObjectNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>Compare Strings for Response Lookup</Name>-->
+    <!--<Help>This step is used to look at an incoming request to a virtual service, and determine the appropriate response.  The user has the ability to match incoming requests via partial text match, regular expression, etc.  This step is automatically filled out and added to a virtual service when using the "Virtual Web Service HTTP Recorder".</Help>-->
+    <Type>com.itko.lisa.vse.CaseResponseSelectorStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Compare Strings for Next Step Lookup</Name>-->
+    <!--<Help>This step is used to look at an incoming request data and determine the appropriate next step.  The user has the ability to match incoming requests via partial text match, regular expression, etc.  Each matching criterion specifies the name of the step to transfer to if the match succeeds.  This step is automatically filled out and added to a virtual service when using the "JDBC Database Traffic Recorder".</Help>-->
+    <Type>com.itko.lisa.vse.StepSelectorStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Send E-Mail</Name>-->
+    <!--<Help>This step can be used to send e-mail</Help>-->
+    <Type>com.itko.lisa.glass.SendEmailStep</Type>
+</Entry>
+</Wizard>
+
+<Wizard element="node" type="externalNodes">
+<Entry>
+	<!--<Name>Execute External Command</Name>-->
+      <!--<Help>This step is used to run a process from the command line and optionally retrieve the results.  This is commonly used to run some type of utility that cannot be performed directly inside LISA.</Help>-->
+      <Type>com.itko.lisa.utils.CommandLineExecNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>File System Snapshot</Name>-->
+      <!--<Help>This step is used to retrieve the list of files and directories present in a given location on the file system.  This data can then be parsed for use in subsequent steps.</Help>-->
+      <Type>com.itko.lisa.utils.FileSystemSnapshot</Type>
+</Entry>
+<Entry>
+	<!--<Name>Execute Sub Process</Name>-->
+      <!--<Help>This step is used to execute a LISA sub process (a test case with defined inputs) and receive the outputs.  This is commonly used when a certain function is performed in numerous test cases.  For example, a particular validation may always work the same way, so a sub process is created to perform the validation, and is added to numerous test cases with a single copy of this step.</Help>-->
+      <Type>com.itko.lisa.utils.ExecSubProcessNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>Execute JUnit TestCase/Suite</Name>-->
+      <!--<Help>This step is used to run a compiled JUnit test case.  The JUnit classes must be present in the LISA classpath (such as the hotdeploy directory).  Once the JUnit has been selected, LISA will show which tests will be run in the step.</Help>-->
+      <Type>com.itko.lisa.junit.ExecJUnitTestCase</Type>
+</Entry>
+<Entry>
+	<!--<Name>Read a File (Disk, URL, or Classpath)</Name>-->
+      <!--<Help>This step is used to read a file from a file system.  Files are commonly used as source data for testing, and this step may be paired with the "Load a set of File names" DataSet to provide source data for testing.</Help>-->
+      <Type>com.itko.lisa.test.FileNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>FTP Step</Name>-->
+      <!--<Help>This step is used to either get or put files from an FTP server.  FTP is commonly used in UNIX/Linux environments to pass files between machines.</Help>-->
+      <Type>com.itko.lisa.ftp.FTPStep</Type>
+</Entry>
+</Wizard>
+
+<Wizard element="node" type="msgingNodes">
+<Entry>
+	<!--<Name>JMS Messaging (JNDI)</Name>-->
+      <!--<Help>This step is used to either publish or subscribe to JMS-based queues or topics.  The list of possible queues and topics can be browsed via JNDI (if the JMS provider supports this).  The user must provide the client libraries where they can be read by LISA.</Help>-->
+      <Type>com.itko.lisa.esb.jndi.GeneralJndiJmsStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>Message Consumer</Name>-->
+      <!--<Help>This step is used in conjunction with various messaging steps (JMS, MQ, etc.).  If the user selects to perform asynchronous messaging, this step is used to read messages out of the asynchronous queue.  There must be a JMS subscribe step run in the test case before this step is reached.</Help>-->
+      <Type>com.itko.lisa.jms.AsyncConsumerNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>Message Consumer</Name>-->
+      <!--<Help>This step is used in conjunction with various messaging steps (JMS, MQ, etc.).  If the user selects to perform asynchronous messaging, this step is used to read messages out of the asynchronous queue.  There must be a JMS subscribe step run in the test case before this step is reached.</Help>-->
+      <Type>com.itko.lisa.messaging.jms.JmsSendReceiveStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>Message Consumer</Name>-->
+      <!--<Help>This step is used in conjunction with various messaging steps (JMS, MQ, etc.).  If the user selects to perform asynchronous messaging, this step is used to read messages out of the asynchronous queue.  There must be a JMS subscribe step run in the test case before this step is reached.</Help>-->
+      <Type>com.itko.lisa.messaging.jms.JmsMultiReceiveStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>Message Consumer</Name>-->
+      <!--<Help>This step is used in conjunction with various messaging steps (JMS, MQ, etc.).  If the user selects to perform asynchronous messaging, this step is used to read messages out of the asynchronous queue.  There must be a JMS subscribe step run in the test case before this step is reached.</Help>-->
+      <Type>com.itko.lisa.messaging.jms.JmsMultiSendStep</Type>
+</Entry>
+</Wizard>
+
+<Wizard element="node" type="custNodes">
+<Entry>
+	<!--<Name>Custom Test Step Execution</Name>-->
+      <!--<Help>This step can be used for running a test step that was developed using the LISA Extension Kit.  Certain types of LEK extensions can be run by using this step type.  This is used if the developer did not choose to create a custom UI for the step, then the default UI of this step can be used.</Help>-->
+      <Type>com.itko.lisa.test.CustJavaNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>Java Script Step</Name>-->
+      <!--<Help>This step is used for a tester to create a custom function using Java BeanShell code.  Via this step the user has access to internal test case functions and can make any type of call that is supported by Java.  If special libraries are to be used in this step, the user must ensure these libraries are made available to LISA.</Help>-->
+      <Type>com.itko.lisa.test.ScriptNode</Type>
+</Entry>
+<Entry>
+      <!--<Name>Execute Sub Test Case (deprecated, use ExecSubProcess)</Name>-->
+      <!--<Help>This step allows you to execute a single step or an entire test case as a single step in this test case.</Help>-->
+      <Type>com.itko.lisa.utils.ExecTestCaseNode</Type>
+      <!--<Deprecated>true</Deprecated>-->
+</Entry>
+<Entry>
+      <!--<Name>Start or Stop Web Server (Legacy, Deprecated)</Name>-->
+      <!--<Help>This step is used to start or stop the embedded web server which is used for certain types of virtual services.  When creating a virtual service from a WSDL, the user must first ensure that the embedded web server is started.  Note that this step has been deprecated in favor of WSDL simulation in LISA VSE.</Help>-->
+      <Type>com.itko.lisa.ws.WebServerNode</Type>
+      <!--<Deprecated>true</Deprecated>-->
+</Entry>
+<Entry>
+      <!--<Name>Create a Virtual Web Service (Legacy, Deprecated)</Name>-->
+      <!--<Help>The pre-VSE way to create a virtual web service from a WSDL.  This has been deprecated in favor of WSDL generated VSE.</Help>-->
+      <Type>com.itko.lisa.ws.WebServiceSimulatorNode</Type>
+      <!--<Deprecated>true</Deprecated>-->
+</Entry>
+</Wizard>
+
+<Wizard element="node" type="bea">
+<Entry>
+	<!--<Name>Weblogic JMS (JNDI)</Name>-->
+      <!--<Help>This step is used to either publish or subscribe to WebLogic JMS queues or topics.  The list of possible queues and topics can be browsed via JNDI.  The user must provide the weblogic.jar library where it can be read by LISA.</Help>-->
+
+
+<Type>com.itko.lisa.esb.wls.WlsJndiMessagingStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>Message Consumer</Name>-->
+      <!--<Help>This step is used in conjunction with various messaging steps (JMS, MQ, etc.).  If the user selects to perform asynchronous messaging, this step is used to read messages out of the asynchronous queue.  There must be a JMS subscribe step run in the test case before this step is reached.</Help>-->
+      <Type>com.itko.lisa.jms.AsyncConsumerNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>Read a File (Disk, URL, or Classpath)</Name>-->
+      <!--<Help>This step is used to read a file from a file system.  Files are commonly used as source data for testing, and this step may be paired with the "Load a set of File names" DataSet to provide source data for testing.</Help>-->
+      <Type>com.itko.lisa.test.FileNode</Type>
+</Entry>
+    <Entry>
+        <!--<Name>Web Service Execution (XML)</Name>-->
+        <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.</Help>-->
+        <Type>com.itko.lisa.ws.nx.NxWSStep</Type>
+    </Entry>
+
+<Entry>
+    <!--<Name>Raw SOAP Request</Name>-->
+    <!--<Help>This step is used to send a SOAP message to a given system under test.  The user must provide a properly formatted SOAP message when using this step.</Help>-->
+    <Type>com.itko.lisa.ws.RawSOAPNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>FTP Step</Name>-->
+    <!--<Help>This step is used to either get or put files from an FTP server.  FTP is commonly used in UNIX/Linux environments to pass files between machines.</Help>-->
+    <Type>com.itko.lisa.ftp.FTPStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Web Service Execution (Legacy)</Name>-->
+    <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.  LISA automatically generates a properly formatted SOAP payload for the request.  Web Service Steps can also be automatically generated by using the Generate Web Service Wizard.</Help>-->
+    <Type>com.itko.lisa.dynexec.axis.WebServiceNode</Type>
+</Entry>
+</Wizard>
+
+<Wizard element="node" type="JCAPS">
+<Entry>
+	<!--<Name>JCAPS Messaging (Native)</Name>-->
+      <!--<Help>This step uses the native JCAPS libraries to publish or subscribe to a JCAPS queue or topic.  The user must provide the appropriate JCAPS client libraries where they can be read by LISA.</Help>-->
+<Type>com.itko.lisa.esb.jcaps.JCapsNativeMessagingStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>JCAPS Messaging (JNDI)</Name>-->
+      <!--<Help>This step is used to either publish or subscribe to JCAPS JMS queues or topics.  The list of possible queues and topics can be browsed via JNDI.  The user must provide the appropriate JCAPS JMS libraries where they can be read by LISA.</Help>-->
+<Type>com.itko.lisa.esb.jcaps.JCapsJndiMessagingStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>Message Consumer</Name>-->
+      <!--<Help>This step is used in conjunction with various messaging steps (JMS, MQ, etc.).  If the user selects to perform asynchronous messaging, this step is used to read messages out of the asynchronous queue.  There must be a JMS subscribe step run in the test case before this step is reached.</Help>-->
+      <Type>com.itko.lisa.jms.AsyncConsumerNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>Read a File (Disk, URL, or Classpath)</Name>-->
+      <!--<Help>This step is used to read a file from a file system.  Files are commonly used as source data for testing, and this step may be paired with the "Load a set of File names" DataSet to provide source data for testing.</Help>-->
+      <Type>com.itko.lisa.test.FileNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>Web Service Execution (XML)</Name>-->
+    <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.</Help>-->
+    <Type>com.itko.lisa.ws.nx.NxWSStep</Type>
+</Entry>
+
+<Entry>
+    <!--<Name>Raw SOAP Request</Name>-->
+    <!--<Help>This step is used to send a SOAP message to a given system under test.  The user must provide a properly formatted SOAP message when using this step.</Help>-->
+    <Type>com.itko.lisa.ws.RawSOAPNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>SQL Database Execution (JDBC)</Name>-->
+    <!--<Help>This step is used to perform database functions using a JDBC database driver.  The step can issue typical SQL-syntax such as SELECT, UPDATE, INSERT, as well as stored procedures.  The user must ensure the driver is in the LISA classpath (for instance by placing in the hotdeploy directory).</Help>-->
+    <Type>com.itko.lisa.jdbc.JDBCNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>FTP Step</Name>-->
+    <!--<Help>This step is used to either get or put files from an FTP server.  FTP is commonly used in UNIX/Linux environments to pass files between machines.</Help>-->
+    <Type>com.itko.lisa.ftp.FTPStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Web Service Execution (Legacy)</Name>-->
+    <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.  LISA automatically generates a properly formatted SOAP payload for the request.  Web Service Steps can also be automatically generated by using the Generate Web Service Wizard.</Help>-->
+    <Type>com.itko.lisa.dynexec.axis.WebServiceNode</Type>
+</Entry>
+</Wizard>
+
+<Wizard element="node" type="Oracle">
+<Entry>
+	<!--<Name>Oracle OC4J (JNDI)</Name>-->
+      <!--<Help>This step is used to either publish or subscribe to Oracle OC4J queues or topics.  The list of possible queues and topics can be browsed via JNDI.  The user must provide the appropriate Oracle OC4J libraries where they can be read by LISA.</Help>-->
+      <Type>com.itko.lisa.esb.oracle.OracleJndiMessagingStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>Oracle AQ (JMS)</Name>-->
+      <!--<Help>This step is used to either publish or subscribe to Oracle Active Queuing using JMS.  The user must provide the appropriate Oracle JDBC and AQ libraries where they can be read by LISA.</Help>-->
+      <Type>com.itko.lisa.esb.oracle.OracleAqJmsStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>Oracle AQ (JPub)</Name>-->
+      <!--<Help>This step is used to either publish or subscribe to Oracle Active Queuing using data objects generated by JPub.  The user must provide the appropriate Oracle JDBC and AQ libraries where they can be read by LISA.</Help>-->
+      <Type>com.itko.lisa.esb.oracle.OracleAqJPubStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>Message Consumer</Name>-->
+      <!--<Help>This step is used in conjunction with various messaging steps (JMS, MQ, etc.).  If the user selects to perform asynchronous messaging, this step is used to read messages out of the asynchronous queue.  There must be a JMS subscribe step run in the test case before this step is reached.</Help>-->
+      <Type>com.itko.lisa.jms.AsyncConsumerNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>Read a File (Disk, URL, or Classpath)</Name>-->
+      <!--<Help>This step is used to read a file from a file system.  Files are commonly used as source data for testing, and this step may be paired with the "Load a set of File names" DataSet to provide source data for testing.</Help>-->
+      <Type>com.itko.lisa.test.FileNode</Type>
+</Entry>
+    <Entry>
+        <!--<Name>Web Service Execution (XML)</Name>-->
+        <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.</Help>-->
+        <Type>com.itko.lisa.ws.nx.NxWSStep</Type>
+    </Entry>
+
+<Entry>
+	<!--<Name>Raw SOAP Request</Name>-->
+      <!--<Help>This step is used to send a SOAP message to a given system under test.  The user must provide a properly formatted SOAP message when using this step.</Help>-->
+      <Type>com.itko.lisa.ws.RawSOAPNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>SQL Database Execution (JDBC)</Name>-->
+      <!--<Help>This step is used to perform database functions using a JDBC database driver.  The step can issue typical SQL-syntax such as SELECT, UPDATE, INSERT, as well as stored procedures.  The user must ensure the driver is in the LISA classpath (for instance by placing in the hotdeploy directory).</Help>-->
+      <Type>com.itko.lisa.jdbc.JDBCNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>FTP Step</Name>-->
+      <!--<Help>This step is used to either get or put files from an FTP server.  FTP is commonly used in UNIX/Linux environments to pass files between machines.</Help>-->
+      <Type>com.itko.lisa.ftp.FTPStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Web Service Execution (Legacy)</Name>-->
+      <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.  LISA automatically generates a properly formatted SOAP payload for the request.  Web Service Steps can also be automatically generated by using the Generate Web Service Wizard.</Help>-->
+      <Type>com.itko.lisa.dynexec.axis.WebServiceNode</Type>
+</Entry>
+</Wizard>
+
+<Wizard element="node" type="TIBCO">
+<Entry>
+	<!--<Name>TIBCO Rendezvous Messaging</Name>-->
+      <!--<Help>This step is used to either publish or subscribe to TIBCO Rendezvous subjects.  This step uses native TIBCO libraries to interact with Rendezvous.  The user must provide the appropriate TIBCO libraries where they can be read by LISA.</Help>-->
+      <Type>com.itko.lisa.esb.tibco.TibcoRVStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>TIBCO EMS Messaging</Name>-->
+      <!--<Help>This step is used to either publish or subscribe to TIBCO EMS queues or topics.  This step uses the native TIBCO libraries to interact with EMS.  The user must provide the appropriate TIBCO libraries where they can be read by LISA.</Help>-->
+      <Type>com.itko.lisa.esb.tibco.TibcoEMSStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>TIBCO Direct JMS</Name>-->
+      <!--<Help>This step is used to perform JMS publish or subscribe to TIBCO EMS without using the JNDI libraries.  This step uses the native TIBCO libraries to interact with EMS.  The user must provide the appropriate TIBCO libraries where they can be read by LISA.</Help>-->
+<Type>com.itko.lisa.esb.tibco.TibcoDirectJMSStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>Message Consumer</Name>-->
+      <!--<Help>This step is used in conjunction with various messaging steps (JMS, MQ, etc.).  If the user selects to perform asynchronous messaging, this step is used to read messages out of the asynchronous queue.  There must be a JMS subscribe step run in the test case before this step is reached.</Help>-->
+      <Type>com.itko.lisa.jms.AsyncConsumerNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>Read a File (Disk, URL, or Classpath)</Name>-->
+      <!--<Help>This step is used to read a file from a file system.  Files are commonly used as source data for testing, and this step may be paired with the "Load a set of File names" DataSet to provide source data for testing.</Help>-->
+      <Type>com.itko.lisa.test.FileNode</Type>
+</Entry>
+    <Entry>
+        <!--<Name>Web Service Execution (XML)</Name>-->
+        <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.</Help>-->
+        <Type>com.itko.lisa.ws.nx.NxWSStep</Type>
+    </Entry>
+
+<Entry>
+    <!--<Name>Raw SOAP Request</Name>-->
+    <!--<Help>This step is used to send a SOAP message to a given system under test.  The user must provide a properly formatted SOAP message when using this step.</Help>-->
+    <Type>com.itko.lisa.ws.RawSOAPNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>SQL Database Execution (JDBC)</Name>-->
+    <!--<Help>This step is used to perform database functions using a JDBC database driver.  The step can issue typical SQL-syntax such as SELECT, UPDATE, INSERT, as well as stored procedures.  The user must ensure the driver is in the LISA classpath (for instance by placing in the hotdeploy directory).</Help>-->
+    <Type>com.itko.lisa.jdbc.JDBCNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>FTP Step</Name>-->
+    <!--<Help>This step is used to either get or put files from an FTP server.  FTP is commonly used in UNIX/Linux environments to pass files between machines.</Help>-->
+    <Type>com.itko.lisa.ftp.FTPStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Web Service Execution (Legacy)</Name>-->
+    <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.  LISA automatically generates a properly formatted SOAP payload for the request.  Web Service Steps can also be automatically generated by using the Generate Web Service Wizard.</Help>-->
+    <Type>com.itko.lisa.dynexec.axis.WebServiceNode</Type>
+</Entry>
+</Wizard>
+
+<Wizard element="node" type="Sonic">
+<Entry>
+	<!--<Name>SonicMQ Messaging (Native)</Name>-->
+      <!--<Help>This step uses the native SonicMQ libraries for publishing and subscribing to the queues and topics on the broker.  This native interface does not support the ability to browse the broker for resources.  The user must provide the appropriate SonicMQ libraries where they can be read by LISA.</Help>-->
+      <Type>com.itko.lisa.esb.sonic.SonicMQStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>SonicMQ Messaging (JNDI)</Name>-->
+      <!--<Help>This step uses the SonicMQ JMS libraries for publishing and subscribing to the queues and topics on the broker.  This JMS interface supports the ability to browse the broker for resources.  The user must provide the appropriate SonicMQ JMS libraries where they can be read by LISA.</Help>-->
+      <Type>com.itko.lisa.esb.sonic.SonicJndiStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>Message Consumer</Name>-->
+      <!--<Help>This step is used in conjunction with various messaging steps (JMS, MQ, etc.).  If the user selects to perform asynchronous messaging, this step is used to read messages out of the asynchronous queue.  There must be a JMS subscribe step run in the test case before this step is reached.</Help>-->
+      <Type>com.itko.lisa.jms.AsyncConsumerNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>Read a File (Disk, URL, or Classpath)</Name>-->
+      <!--<Help>This step is used to read a file from a file system.  Files are commonly used as source data for testing, and this step may be paired with the "Load a set of File names" DataSet to provide source data for testing.</Help>-->
+      <Type>com.itko.lisa.test.FileNode</Type>
+</Entry>
+    <Entry>
+        <!--<Name>Web Service Execution (XML)</Name>-->
+        <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.</Help>-->
+        <Type>com.itko.lisa.ws.nx.NxWSStep</Type>
+    </Entry>
+
+<Entry>
+    <!--<Name>Raw SOAP Request</Name>-->
+    <!--<Help>This step is used to send a SOAP message to a given system under test.  The user must provide a properly formatted SOAP message when using this step.</Help>-->
+    <Type>com.itko.lisa.ws.RawSOAPNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>SQL Database Execution (JDBC)</Name>-->
+    <!--<Help>This step is used to perform database functions using a JDBC database driver.  The step can issue typical SQL-syntax such as SELECT, UPDATE, INSERT, as well as stored procedures.  The user must ensure the driver is in the LISA classpath (for instance by placing in the hotdeploy directory).</Help>-->
+    <Type>com.itko.lisa.jdbc.JDBCNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>FTP Step</Name>-->
+    <!--<Help>This step is used to either get or put files from an FTP server.  FTP is commonly used in UNIX/Linux environments to pass files between machines.</Help>-->
+    <Type>com.itko.lisa.ftp.FTPStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Web Service Execution (Legacy)</Name>-->
+    <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.  LISA automatically generates a properly formatted SOAP payload for the request.  Web Service Steps can also be automatically generated by using the Generate Web Service Wizard.</Help>-->
+    <Type>com.itko.lisa.dynexec.axis.WebServiceNode</Type>
+</Entry>
+</Wizard>
+
+<Wizard element="node" type="webMethods">
+<Entry>
+	<!--<Name>webMethods Broker</Name>-->
+      <!--<Help>This step uses the native webMethods Broker libraries for publishing and subscribing to docTypes on the Broker.  This interface supports the ability to browse the Broker for the list of docTypes as well as the format of the data.  The user must provide the appropriate webMethods libraries where they can be read by LISA.</Help>-->
+<Type>com.itko.lisa.esb.webmethods.WebmethodsBrokerStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>webMethods Integration Server Services</Name>-->
+      <!--<Help>This step uses the native webMethods Integration Server libraries for invoking flow services directly.  Note this is different than invoking flow services via a web service call.  This interface uses webMethods IData objects as pipeline inputs and outputs, allowing fine-grained control over exactly what data is sent to the service.</Help>-->
+<Type>com.itko.lisa.esb.webmethods.ISServiceInvokerStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>Message Consumer</Name>-->
+      <!--<Help>This step is used in conjunction with various messaging steps (JMS, MQ, etc.).  If the user selects to perform asynchronous messaging, this step is used to read messages out of the asynchronous queue.  There must be a JMS subscribe step run in the test case before this step is reached.</Help>-->
+      <Type>com.itko.lisa.jms.AsyncConsumerNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>Read a File (Disk, URL, or Classpath)</Name>-->
+      <!--<Help>This step is used to read a file from a file system.  Files are commonly used as source data for testing, and this step may be paired with the "Load a set of File names" DataSet to provide source data for testing.</Help>-->
+      <Type>com.itko.lisa.test.FileNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>Web Service Execution (XML)</Name>-->
+    <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.</Help>-->
+    <Type>com.itko.lisa.ws.nx.NxWSStep</Type>
+</Entry>
+
+<Entry>
+    <!--<Name>Raw SOAP Request</Name>-->
+    <!--<Help>This step is used to send a SOAP message to a given system under test.  The user must provide a properly formatted SOAP message when using this step.</Help>-->
+    <Type>com.itko.lisa.ws.RawSOAPNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>SQL Database Execution (JDBC)</Name>-->
+    <!--<Help>This step is used to perform database functions using a JDBC database driver.  The step can issue typical SQL-syntax such as SELECT, UPDATE, INSERT, as well as stored procedures.  The user must ensure the driver is in the LISA classpath (for instance by placing in the hotdeploy directory).</Help>-->
+    <Type>com.itko.lisa.jdbc.JDBCNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>HTTP/HTML Request</Name>-->
+    <!--<Help>This step is used to send and receive HTTP(S) requests, including GET and POST parameters.  This step should be used when testing a traditional web application.  HTTP Steps can also be recorded using the Web Site Proxy Recorder.</Help>-->
+    <Type>com.itko.lisa.test.URLTrans</Type>
+</Entry>
+<Entry>
+    <!--<Name>REST Step</Name>-->
+    <!--<Help>This step is used to send and receive HTTP(S) requests, including GET and POST parameters.  This step should be used when testing REST applications.</Help>-->
+    <Type>com.itko.lisa.ws.rest.RESTNode</Type>
+</Entry>
+<Entry>
+    <!--<Name>FTP Step</Name>-->
+    <!--<Help>This step is used to either get or put files from an FTP server.  FTP is commonly used in UNIX/Linux environments to pass files between machines.</Help>-->
+    <Type>com.itko.lisa.ftp.FTPStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Web Service Execution (Legacy)</Name>-->
+    <!--<Help>This step is used to perform tests on a WSDL-based web service.  This step allows the user to select an operation and provide the input parameters for a given web service.  LISA automatically generates a properly formatted SOAP payload for the request.  Web Service Steps can also be automatically generated by using the Generate Web Service Wizard.</Help>-->
+    <Type>com.itko.lisa.dynexec.axis.WebServiceNode</Type>
+</Entry>
+</Wizard>
+
+<Wizard element="node" type="IBM">
+    <Entry>
+        <!--<Name>IBM Websphere MQ</Name>-->
+        <!--<Help>This step uses the native WebSphere MQ libraries for publishing and subscribing to queues.</Help>-->
+        <Type>com.itko.lisa.esb.ibm.IBMMQStep</Type>
+    </Entry>
+<Entry>
+	<!--<Name>Message Consumer</Name>-->
+      <!--<Help>This step is used in conjunction with various messaging steps (JMS, MQ, etc.).  If the user selects to perform asynchronous messaging, this step is used to read messages out of the asynchronous queue.  There must be a JMS subscribe step run in the test case before this step is reached.</Help>-->
+      <Type>com.itko.lisa.jms.AsyncConsumerNode</Type>
+</Entry>
+<Entry>
+  <!--<Name>IBM MQ Send Receive</Name>-->
+      <!--<Help>This step is used in conjunction with various messaging steps (JMS, MQ, etc.).  If the user selects to perform asynchronous messaging, this step is used to read messages out of the asynchronous queue.  There must be a JMS subscribe step run in the test case before this step is reached.</Help>-->
+      <Type>com.itko.lisa.messaging.providers.ibmmq.IbmMqSendReceiveStep</Type>
+</Entry>
+<Entry>
+      <Type>com.itko.lisa.messaging.providers.ibmmq.vse.IbmMqMultiReceiveStep</Type>
+</Entry>
+<Entry>
+      <Type>com.itko.lisa.messaging.providers.ibmmq.vse.IbmMqMultiSendStep</Type>
+</Entry>
+</Wizard>
+
+    <Wizard element="node" type="RabbitMQ">
+        <Entry>
+            <Type>com.itko.lisa.messaging.providers.rabbitmq.step.RabbitMqSendReceiveStep</Type>
+        </Entry>
+    </Wizard>
+
+<Wizard element="node" type="SAP">
+<Entry>
+        <!--<Name>SAP Remote Function Call Execution</Name>-->
+        <!--<Help>This step uses SAP JCo library to execute Remote Function Call (RFC) on an SAP server.</Help>-->
+        <Type>com.itko.lisa.esb.sap.JCoRfcStep</Type>
+</Entry>
+<Entry>
+        <!--<Name>SAP IDoc Sender</Name>-->
+        <!--<Help>This step uses JCo and IDoc libraries to send an IDoc document to an SAP server.</Help>-->
+        <Type>com.itko.lisa.esb.sap.JCoIDocSenderStep</Type>
+</Entry>
+<Entry>
+        <!--<Name>SAP IDoc Status Retriever</Name>-->
+        <!--<Help>This step uses JCo and IDoc libraries to retrieve the status of an IDoc document by polling an SAP server.</Help>-->
+        <Type>com.itko.lisa.esb.sap.JCoIDocStatusRetrieverStep</Type>
+</Entry>
+</Wizard>
+
+<Wizard element="node" type="Selenium">
+<Entry>
+        <!--<Name>Selenium JSON Script Execution</Name>-->
+        <!--<Help>This step can be used for running a JSON test script that was developed using Selenium Builder.</Help>-->
+        <Type>com.itko.lisa.glass.SeleniumScriptTestNode</Type>
+</Entry>
+<Entry>
+        <!--<Name>Selenium JSON Step Execution</Name>-->
+        <!--<Help>This step can be used for running a JSON object of JSON test script that was developed using Selenium Builder.</Help>-->
+        <Type>com.itko.lisa.glass.SeleniumStep</Type>
+</Entry>
+</Wizard>
+
+
+    <Wizard element="node" type="Mobile">
+        <Entry>
+            <!--<Name>Mobile testing step</Name>-->
+            <!--<Help>This step can be used to execute test steps on a mobile device</Help>-->
+            <Type>com.itko.lisa.mobile.appium.WebElementNode</Type>
+        </Entry>
+    </Wizard>
+
+
+<Wizard element="node" type="virtServEnvNodes">
+<Entry>
+    <!--<Name>Virtual Service Router</Name>-->
+    <!--<Help>This step is used to route a request from a VS listen step to the response selector step and/or the protocol-specific live invocation step.  The decision is made based on the current execution mode for the running model.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.VSRouterStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual Service Tracker</Name>-->
+    <!--<Help>This step is used to track respnses in a running virtual service and, optionally, validate them against a live system.  This allows for easier service model debugging and service model "healing".</Help>-->
+    <Type>com.itko.lisa.vse.stateful.VSTrackingStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual Conversational/Stateless Response Selector</Name>-->
+    <!--<Help>This step is used to take a virtual request and decide on an appropriate virtual response.  Since there may be more than one response for a request, the responses are always emitted as a list.  It is typically created by recording and virtualizing some form of service traffic.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.ConversationalStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual HTTP/S Listener</Name>-->
+    <!--<Help>This step is used to simulate an HTTP server, including SSL support.  It is typically created by recording and virtualizing some form of HTTP traffic.  It will listen for incoming HTTP requests and converting them to a standard virtual request format.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.http.HttpListenStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual HTTP/S Live Invocation</Name>-->
+    <!--<Help>This step is used to make a real HTTP call to a real server within the context of a virtualized HTTP service.  It is typically created by recording and virtualizing some form of HTTP traffic.  It will perform the real request based on the current VSE request in play.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.http.HttpLiveInvocationStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual HTTP/S Responder</Name>-->
+    <!--<Help>This step is used in conjunction with the Virtual HTTP/S Listener step to transmit responses to HTTP requests produced by the listener.  It is typically created by recording and virtualizing some form of HTTP traffic.  It will take a virtual response and reply to the corresponding request using the HTTP/S protocol.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.http.HttpRespondStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual JDBC Listener</Name>-->
+    <!--<Help>This step is used to control the simulation of JDBC database traffic.  This step type manages the communication with the simulation driver which is embedded in the SUT.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.jdbc.JDBCListenStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual JDBC Responder</Name>-->
+    <!--<Help>This step type sends the result of a JDBC data call as selected by a conversational response selection step to the simulation driver which is embedded in the SUT.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.jdbc.JDBCRespondStep</Type>
+</Entry>
+<Entry>
+	<!--<Name>Socket Server Emulator</Name>-->
+    <!--<Help>This step is used to simulate any text-based (typically HTTP) server socket.  It supports listening and/or responding in addition to binding.</Help>-->
+    <Type>com.itko.lisa.utils.emu.SocketEmuNode</Type>
+</Entry>
+<Entry>
+	<!--<Name>Messaging Virtualization Marker</Name>-->
+    <!--<Help>This step is used to designate that a message-based test case is designed for use in the Virtual Service Environment.  If the test case is listening or responding via JMS, this step should be added to the test case to ensure it can be run properly in the VSE.</Help>-->
+    <Type>com.itko.lisa.vse.messaging.MessagingVirtualServiceMarker</Type>
+</Entry>
+<Entry>
+	<!--<Name>Compare Strings for Response Lookup</Name>-->
+    <!--<Help>This step is used to look at an incoming request to a virtual service, and determine the appropriate response.  The user has the ability to match incoming requests via partial text match, regular expression, etc.  This step is automatically filled out and added to a virtual service when using the "Virtual Web Service HTTP Recorder".</Help>-->
+    <Type>com.itko.lisa.vse.CaseResponseSelectorStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Compare Strings for Next Step Lookup</Name>-->
+    <!--<Help>This step is used to look at an incoming request data and determine the appropriate next step.  The user has the ability to match incoming requests via partial text match, regular expression, etc.  Each matching criterion specifies the name of the step to transfer to if the match succeeds.  This step is automatically filled out and added to a virtual service when using the "JDBC Database Traffic Recorder".</Help>-->
+    <Type>com.itko.lisa.vse.StepSelectorStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual Java Listener</Name>-->
+    <!--<Help>This step is used to virtualize calls made within the JVM.  It will intercept calls to Java classes and convert them to a standard virtual request format.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.java.listen.JavaListenStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual Java Live Invocation</Name>-->
+    <!--<Help>This step is used to allow the JVM to process the intercepted call.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.java.liveinvocation.JavaLiveInvocationStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual Java Responder</Name>-->
+    <!--<Help>This step is used in conjunction with the Virtual Java Listener step to transmit responses to calls intercepted within the JVM.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.java.respond.JavaRespondStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual TCP/IP Listener</Name>-->
+    <!--<Help>This step is used to virtualize TCP/IP traffic.  It will intercept incoming TCP/IP data and convert it to a standard virtual request format.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.tcp.listen.TCPListenStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual TCP Live Invocation</Name>-->
+    <!--<Help>This step is used to make a real TCP/IP call to a real server within the context of a virtualized TCP/IP service.  It is typically created by recording and virtualizing TCP/IP traffic.  It will perform the real request based on the current VSE request in play.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.tcp.liveinvocation.TCPLiveInvocationStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual TCP/IP Responder</Name>-->
+    <!--<Help>This step is used in conjunction with the Virtual TCP/IP Listener step to transmit responses over TCP/IP.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.tcp.respond.TCPRespondStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual CICS Listener</Name>-->
+    <!--<Help>This step is used to virtualize CICS traffic.  It will intercept incoming CICS data and convert it to a standard virtual request format.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.cics.CICSListenStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual CICS Responder</Name>-->
+    <!--<Help>This step is used in conjunction with the Virtual CICS Listener step to transmit responses over CICS.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.cics.CICSRespondStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual CTG Listener</Name>-->
+    <!--<Help>This step is used to virtualize CICS Transaction Gateway traffic.  It will intercept incoming CTG data and convert it to a standard virtual request format.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.ctg.CTGListenStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual CTG Live Invocation</Name>-->
+    <!--<Help>This step is used to make a real CTG call to a real server within the context of a virtualized CTG service.  It is typically created by recording and virtualizing some form of CTG traffic.  It will perform the real request based on the current VSE request in play.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.ctg.CTGLiveInvocationStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual CTG Responder</Name>-->
+    <!--<Help>This step is used in conjunction with the Virtual CTG Listener step to transmit responses over CTG.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.ctg.CTGRespondStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual DRDA Listener</Name>-->
+    <!--<Help>This step is used to virtualize DRDA traffic over TCP/IP.  It will intercept incoming DRDA data and convert it to a standard virtual request format.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.drda.DrdaListenStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual DRDA Response Builder</Name>-->
+    <!--<Help>This step decomposes DRDA requests into individual DRDA commands to mitigate the complexity of VSE receiving DRDA commands in different groupings.  For example, DRDA will send the same set of commands in sets of one, two, three of four per request.  By matching each individual command and building a composite response, we make our models as flexible as possible for playback.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.drda.DrdaResponseBuilderStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual DRDA Live Invocation </Name>-->
+    <!--<Help>This step is used to make a real DRDA call to a real server within the context of a virtualized DRDA service.  It is typically created by recording and virtualizing DRDA traffic.  It will perform the real request based on the current VSE request in play.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.drda.DrdaLiveInvocationStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual IMS Connect Listener</Name>-->
+    <!--<Help>This step is used to virtualize IMS Connect  traffic over TCP/IP.  It will intercept incoming IMS Connect data and convert it to a standard virtual request format.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.ims.connect.listen.IMSConnectListenStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual IMS Connect Live Invocation</Name>-->
+    <!--<Help>This step is used to make live IMS Connect requests within the context of virtualized IMS Connect service.  It is typically created by recording and virtualizing IMS Connect traffic. It will perform the real request based on the current VSE request in play .</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.ims.connect.liveinvocation.IMSConnectLiveInvocationStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>Virtual IMS Connect Responder</Name>-->
+    <!--<Help>This step is used in conjunction with the Virtual IMS Connect Listener step to transmit IMS Connect responses.</Help>-->
+    <Type>com.itko.lisa.vse.stateful.protocol.ims.connect.respond.IMSConnectRespondStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>JMS VSE Listen</Name>-->
+    <!--<Help>This test step enables a VSE service to listen for requests from JMS-compatible clients.</Help>-->
+    <Type>com.itko.lisa.messaging.vse.JmsVseListenStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>JMS VSE Live Invocation</Name>-->
+    <!--<Help>This test step enables a VSE service to forward a request to a live JMS-compatible service and receive one or more responses.</Help>-->
+    <Type>com.itko.lisa.messaging.vse.JmsVseLiveInvocationStep</Type>
+</Entry>
+<Entry>
+    <!--<Name>JMS VSE Respond</Name>-->
+    <!--<Help>This test step enables a VSE service to send responses to JMS-compatible clients.</Help>-->
+    <Type>com.itko.lisa.messaging.vse.JmsVseRespondStep</Type>
+</Entry>
+<Entry><Type>com.itko.lisa.messaging.providers.ibmmq.vse.IbmMqVseListenStep</Type></Entry>
+<Entry><Type>com.itko.lisa.messaging.providers.ibmmq.vse.IbmMqVseLiveInvocationStep</Type></Entry>
+<Entry><Type>com.itko.lisa.messaging.providers.ibmmq.vse.IbmMqVseRespondStep</Type></Entry>
+<Entry><Type>com.ca.sv.protocol.jcoidoc.listen.JcoIdocListenStep</Type></Entry>
+<Entry><Type>com.ca.sv.protocol.jcoidoc.liveinvocation.JcoIdocLiveInvocationStep</Type></Entry>
+<Entry><Type>com.ca.sv.protocol.jcoidoc.respond.JcoIdocRespondStep</Type></Entry>
+<Entry><Type>com.ca.sv.protocol.jcorfc.listen.JcoRfcListenStep</Type></Entry>
+<Entry><Type>com.ca.sv.protocol.jcorfc.liveinvocation.JcoRfcLiveInvocationStep</Type></Entry>
+<Entry><Type>com.ca.sv.protocol.jcorfc.respond.JcoRfcRespondStep</Type></Entry>
+<Entry><Type>com.ca.sv.opaque.OpaquePayloadStep</Type></Entry>
+</Wizard>
+
+    <Wizard element="node" type="pfSteps">
+        <Entry>
+            <!--<Name>Execute Transaction Frame</Name>-->
+            <!--<Help>This step is used to execute a transaction frame recorded by the LISA Pathfinder agent.</Help>-->
+            <Type>com.itko.lisa.agent.steps.ExecTFStep</Type>
+        </Entry>
+    </Wizard>
+
+    <!-- node Wizard Settings. - End -->
+
+</Wizards>

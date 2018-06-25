@@ -1,0 +1,100 @@
+
+#-------------------------------------------------------------------------------------
+# The IMS™ request message (IRM) header contains a 28-byte fixed-format
+# section that is common to all messages from all IMS Connect client applications
+# that communicate with IMS TM.
+#-------------------------------------------------------------------------------------
+RequestHeaderCommon {
+    LLLL                        int;                    #total message length IRM + user data
+    IRMFixedHeader {
+        LL                      short;                  #IRM_LEN, total length of the header segment including user header portion
+        ZZ                      byte;                   #IRM_ARCH
+        Flag0                   byte;                   #IRM_F0
+        UserExitId              string(8);              #IRM_ID
+        NakReasonCode           byte(2);                #IRM_NAK_RSNCDE
+        Reserved1               byte(2);                #IRM_RES1
+        MessageType             byte;                   #IRM_MessageType
+        WaitTime                byte;                   #IRM_TIMER
+        SocketConnectionType    byte;                   #IRM_SOCT
+        EncodingSchema          byte;                   #IRM_ES
+        ClientId                byte(8);                #IRM_CLIENTID
+    }
+}
+
+#-------------------------------------------------------------------------------------
+# Format of user portion of IRM for HWSSMPL0, HWSSMPL1, and user-written message
+# exit routines.
+# Following the 4-byte length field and the 28-byte fixed portion of the
+# IMS™ request message (IRM) header in IMS Connect client input messages,
+# user-written client applications supported by HWSSMPL0, HWSSMPL1, or user-written
+# message exits can include a user-defined section in the IRM.
+#
+# The following header is the user portion defined for IBM sample application.
+# Combined with the common header above, it make a total of 160 bytes (X'A0') of
+# header length.
+#-------------------------------------------------------------------------------------
+RequestUserHeaderSample {                   # Length 132
+    Flag1                       byte;                   #IRM_F1
+    Flag2                       byte;                   #IRM_F2
+    Flag3                       byte;                   #IRM_F3
+    Flag4                       byte;                   #IRM_F4
+    TransactionCode             string(8);              #IRM_TRNCOD
+    DestinationId               string(8);              #IRM_IMSDESTID
+    LogicalTerminal             string(8);              #IRM_LTERM
+    RacfUserId                  string(8);              #IRM_RACF_USERID
+    RacfGroupName               string(8);              #IRM_RACF_GRNAME
+    RacfPassword                string(8);              #IRM_RACF_PW
+    RacfApplicationName         string(8);              #IRM_APPL_NM
+    RerouteNameOrAltCid         byte(8);                #IRM_REROUT_NM or #IRM_RT_ALTCID
+    TagAdapt                    byte(8);                #IRM_TAG_ADAPT
+    TagMap                      byte(8);                #IRM_TAG_MAP
+    MFSModName                  byte(8);                #IRM_MODNAME
+    CorrelationToken            byte(40);               #IRM_CORTKN
+}
+
+#-------------------------------------------------------------------------------------
+# Format of user portion of IRM seen for IMS messages at some end-users.
+#
+# The following header is the user portion defined for one of CA's first
+# IMS virtualization user.
+# Combined with the common header above, it make a total of 80 bytes (X'50') of header
+# length.
+#-------------------------------------------------------------------------------------
+RequestUserHeaderOther {                      # Length 52
+    MFSModName                  byte;                   #IRM_TRNCOD
+    CommitMode                  byte;                   #IRM_IMSDESTID
+    SynchLevel                  byte;                   #IRM_LTERM
+    AckCode                     byte;                   #IRM_RACF_USERID
+    TransactionCode             string(8);              #TRANCODE
+    DestinationId               string(8);              #IRM-DATASTORE
+    LogicalTerminal             string(8);              #IRM_LTERM
+    RacfUserId                  string(8);              #IRM_RACF_USERID
+    RacfGroupName               string(8);              #IRM_RACF_GRNAME
+    RacfPassword                string(8);              #IRM_RACF_GRNAME
+}
+
+#-------------------------------------------------------------------------------------
+# Format of data segments of request message
+#-------------------------------------------------------------------------------------
+RequestPayloadSegment  {
+        LL                      short;
+        ZZ                      byte(2);
+        Data                    byte(LL:inclusive);
+}
+
+#-------------------------------------------------------------------------------------
+# Format of header for response message. Some responses will have it, some won't
+#-------------------------------------------------------------------------------------
+ResponseMessageHeader {
+        LLLL                    int;                   # followed by multiple ResponsePayloadSegment
+}
+
+#-------------------------------------------------------------------------------------
+# Format of data segments of request message
+#-------------------------------------------------------------------------------------
+ResponsePayloadSegment {
+        LL                      short;
+        ZZ                      byte(2);
+        Data                    byte(LL:inclusive);
+}
+

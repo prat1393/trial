@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+
+<RecordingSession nonLeaf="WIDE" leaf="LOOSE" asObject="true">
+<Protocol type="com.itko.lisa.vse.stateful.protocol.rrpairs.VSFromRRPairsTransportProtocol">
+<Transport allAreStateless="true" asObject="true" desensitize="false" duptxns="false">
+<exportFile></exportFile>
+<RequestSide>
+<Protocol type="com.itko.lisa.vse.stateful.protocol.rest.RestDataProtocol">
+<requestSideUnparsed>true</requestSideUnparsed>
+<rules>
+<rule>
+<operation>POST /apis/deviceunlock/OCEUnlockOrder/orderFlow/{URLPARAM0}/</operation>
+</rule>
+</rules>
+</Protocol>
+<Protocol type="com.itko.lisa.vse.stateful.protocol.json.JSONDataProtocolHandler">
+</Protocol>
+<Protocol type="com.itko.lisa.vse.stateful.common.datahandler.RequestDataManagerProtocolHandler">
+</Protocol>
+</RequestSide>
+</Transport>
+<rrDir>C:/req</rrDir>
+<transportProtocol>
+<Protocol type="com.itko.lisa.vse.stateful.protocol.http.HttpProtocolHandler">
+<Transport allAreStateless="true" asObject="true" desensitize="false" duptxns="false">
+</Transport>
+<listenPort>8011</listenPort>
+<targetHost>localhost</targetHost>
+<targetPort>80</targetPort>
+<useGateway>true</useGateway>
+<hostHeaderPassThrough>false</hostHeaderPassThrough>
+<ssl toClient="false" sslClientAuthType="none" toServer="false"/></Protocol>
+</transportProtocol>
+</Protocol>
+</RecordingSession>

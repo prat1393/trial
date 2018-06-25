@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+
+<VSModel name="selenium" version="5">
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="06/06/2018" host="HVDIVD18MIS1939" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="06/06/2018" host="HVDIVD18MIS1939" />
+</meta>
+
+<id>304C20FF68CD11E8A7B804C020524153</id>
+<Documentation>Put documentation of the VS Model here.</Documentation>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9LTEmbGlzYXY9OC40LjAgKDguNC4wLjIyNykmbm9kZXM9LTk3MjgyMDU0Mw==</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+    <Node name="Selenium Script" log=""
+          type="com.itko.lisa.glass.SeleniumScriptTestNode" 
+          version="1" 
+          uid="9AE6FD33698B11E8A7B804C020524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="end" > 
+
+<onStepFail>fail</onStepFail>
+<alertAction>0</alertAction>
+<alertInput></alertInput>
+<json>{&#10;  &quot;type&quot;: &quot;script&quot;,&#10;  &quot;seleniumVersion&quot;: &quot;2&quot;,&#10;  &quot;formatVersion&quot;: 2,&#10;  &quot;steps&quot;: [&#10;    {&#10;      &quot;type&quot;: &quot;get&quot;,&#10;      &quot;url&quot;: &quot;https://www.google.com/&quot;&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;id&quot;,&#10;        &quot;value&quot;: &quot;gb&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;id&quot;,&#10;        &quot;value&quot;: &quot;viewport&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;id&quot;,&#10;        &quot;value&quot;: &quot;hplogo&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;id&quot;,&#10;        &quot;value&quot;: &quot;lga&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;css selector&quot;,&#10;        &quot;value&quot;: &quot;div.tsf-p&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;id&quot;,&#10;        &quot;value&quot;: &quot;lst-ib&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;setElementText&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;id&quot;,&#10;        &quot;value&quot;: &quot;lst-ib&quot;&#10;      },&#10;      &quot;text&quot;: &quot;selenium&quot;&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;css selector&quot;,&#10;        &quot;value&quot;: &quot;html&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;css selector&quot;,&#10;        &quot;value&quot;: &quot;h2.MA9Une&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;xpath&quot;,&#10;        &quot;value&quot;: &quot;//div[@id=&apos;rso&apos;]/div[1]/div/div/div/div/div&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;css selector&quot;,&#10;        &quot;value&quot;: &quot;span.st&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;xpath&quot;,&#10;        &quot;value&quot;: &quot;//div[@id=&apos;rso&apos;]/div[1]/div/div/div/div/div&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;css selector&quot;,&#10;        &quot;value&quot;: &quot;span.st&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;xpath&quot;,&#10;        &quot;value&quot;: &quot;//div[@id=&apos;rso&apos;]/div[1]/div/div/div/div/div&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;link text&quot;,&#10;        &quot;value&quot;: &quot;Selenium - Web Browser Automation&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;clickElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;link text&quot;,&#10;        &quot;value&quot;: &quot;Selenium - Web Browser Automation&quot;&#10;      }&#10;    },&#10;    {&#10;      &quot;type&quot;: &quot;mouseOverElement&quot;,&#10;      &quot;locator&quot;: {&#10;        &quot;type&quot;: &quot;xpath&quot;,&#10;        &quot;value&quot;: &quot;//div[@id=&apos;mainContent&apos;]/p[1]&quot;&#10;      }&#10;    }&#10;  ],&#10;  &quot;data&quot;: {&#10;    &quot;configs&quot;: {&#10;      &quot;json&quot;: {&#10;        &quot;path&quot;: &quot;C://abc&quot;&#10;      }&#10;    },&#10;    &quot;source&quot;: &quot;json&quot;&#10;  },&#10;  &quot;inputs&quot;: [],&#10;  &quot;timeoutSeconds&quot;: 60&#10;}</json>
+<script>H:/abc.json</script>
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="304C210568CD11E8A7B804C020524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="304C210368CD11E8A7B804C020524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="abort" > 
+
+    </Node>
+
+
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="304C210168CD11E8A7B804C020524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="" > 
+
+    </Node>
+
+
+</VSModel>

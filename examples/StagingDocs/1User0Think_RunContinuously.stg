@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+
+<Run name="1User0Think_RunContinuously" think="0" pathfinder="false" >
+
+<meta><create version="0.0" buildNumber="0.0.0.0" author="cam" date="12/15/2009" host="sloth"  /><lastEdited version="0.0" buildNumber="0.0.0.0" author="cam" date="12/15/2009" host="sloth"  /></meta>
+
+<id>35326264303362372D343631392D3466</id>
+<Documentation>This staging doc runs a single virtual user with zero think time. It also&#10;runs the test(s) &apos;continuously&apos;, which does not necessarily mean &apos;forever&apos;.&#10;&#10;If a test being run by this staging doc has ALL of the following conditions:&#10;&#10;1./ There is data set on the first step of the test&#10;2./ The data set &apos;End of data&apos; step is &apos;End the test&apos; &#10;3./ The data set is &apos;global&apos; not &apos;local&apos;&#10;&#10;If ALL the above conditions are met then the run will finish when the data set&#10;runs out of data. If there is more than one data set matching the above &#10;conditions then the first data set to expire will finish the run.&#10;&#10;For a good example of this, look at the multi-tier-combo.tst test case. &#10;&#10;</Documentation>
+<IsInProject>true</IsInProject>
+<paceTime>0</paceTime>
+<paceTrans>0</paceTrans>
+<EventConsumer type="com.itko.lisa.report.DefaultReportToDataModel" filter="0,1,2,3,6,7,8,9,10,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,30,31,32,33,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,55,0" >
+</EventConsumer>
+<LoadPattern>
+<type>com.itko.lisa.coordinator.runpatterns.RunNTimesPattern</type>
+<cycles>0</cycles>
+<runfor>0</runfor>
+<ssinstances>1</ssinstances>
+</LoadPattern>
+<Distribution>
+<type>com.itko.lisa.coordinator.runpatterns.PercentDistribution</type>
+<Simulator>
+<name>auto</name>
+<percent>100</percent>
+</Simulator>
+</Distribution>
+<Metrics >
+<SampleRate>1</SampleRate>
+<IntervalRate>10</IntervalRate>
+<Metric type="com.itko.lisa.stats.TestEventCollector">
+<scale>0.0</scale>
+<valueType>1</valueType>
+<eventid>13</eventid>
+<keyexpr>*</keyexpr>
+<counter>true</counter>
+</Metric>
+<Metric type="com.itko.lisa.stats.TestEventCollector">
+<scale>0.0</scale>
+<valueType>1</valueType>
+<eventid>20</eventid>
+<keyexpr>*</keyexpr>
+<counter>true</counter>
+</Metric>
+<Metric type="com.itko.lisa.stats.TestEventCollector">
+<scale>0.0</scale>
+<valueType>1</valueType>
+<eventid>15</eventid>
+<keyexpr>*</keyexpr>
+<counter>true</counter>
+</Metric>
+<Metric type="com.itko.lisa.stats.TestEventCollector">
+<scale>0.0</scale>
+<valueType>1</valueType>
+<eventid>50</eventid>
+<keyexpr>*</keyexpr>
+<counter>true</counter>
+</Metric>
+<Metric type="com.itko.lisa.stats.TRIMetricCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<metric>0</metric>
+</Metric>
+<Metric type="com.itko.lisa.stats.TRIMetricCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<metric>1</metric>
+</Metric>
+<Metric type="com.itko.lisa.stats.TRIMetricCollector">
+<scale>0.0</scale>
+<valueType>2</valueType>
+<metric>5</metric>
+</Metric>
+</Metrics>
+</Run>

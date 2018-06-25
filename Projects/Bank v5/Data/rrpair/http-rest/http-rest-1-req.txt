@@ -1,0 +1,4 @@
+GET /3/certification/movie/list?api_key=some-new-key HTTP/1.1
+User-Agent: curl/7.23.1 (i386-pc-win32) libcurl/7.23.1 OpenSSL/0.9.8r zlib/1.2.5
+Host: api.themoviedb.org
+Accept: application/json

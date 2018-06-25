@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+
+<!-- TestCase Results Document created by LISA Test Editor -->
+<!-- On: Wed Dec 17 15:19:38 EST 2014 -->
+
+
+<Results name="DevTest_config_info">
+
+
+    <Result node="WriteFile">
+      <content type="com.itko.lisa.http.html.HtmlResponseWrapper" charset=""><![CDATA[PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQpNYWNoaW5lOiBzbG90aApEYXRlOiBUdWUgRGVjIDE1IDE2OjI4OjA0IEVTVCAyMDA5CgpMSVNBIEluZm86Cnt7bGlzYS5MSVNBSW5mby5yc3B9fQoKRW52aXJvbm1lbnQgVmFyaWFibGVzOgp7e2xpc2EuRW52aXJvbm1lbnRWYXJpYWJsZXMucnNwfX0KCkphdmEgQ29uZmlndXJhdGlvbiBJbmZvOgp7e2xpc2EuSmF2YUNvbmZpZ3VyYXRpb24ucnNwfX0KCkphdmEgU3lzdGVtIFByb3BlcnRpZXM6Cnt7bGlzYS5KYXZhU3lzdGVtUHJvcGVydGllcy5yc3B9fQoKTElTQS9iaW46Cnt7bGlzYS5CaW5Gb2xkZXIucnNwfX0KCkxJU0EvTGliOgp7e2xpc2EuTGliRm9sZGVyLnJzcH19CgpMSVNBL2hvdERlcGxveToKe3tsaXNhLkhvdERlcGxveUZvbGRlci5yc3B9fQoKPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ==]]></content>
+    </Result>
+
+
+</Results>

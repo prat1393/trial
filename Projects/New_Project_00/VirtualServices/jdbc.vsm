@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+
+<VSModel name="jdbc" version="5">
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="07/29/2017" host="HVDIVD18MIS1496" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="08/09/2017" host="HVDIVD18MIS1496" />
+</meta>
+
+<id>A70984FC73D011E78AE5005056A730A7</id>
+<Documentation>Put documentation of the VS Model here.</Documentation>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj04LjQuMCAoOC40LjAuMjI3KSZub2Rlcz0tNTU5Mzc0MjMx</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+<deletedProps>
+</deletedProps>
+
+    <Node name="Virtual HTTPS Listener 6002" log=""
+          type="com.itko.lisa.vse.stateful.protocol.http.HttpListenStep" 
+          version="1" 
+          uid="5DEEFB1C7C6A11E780E6005056A730A7" 
+          think="0" 
+          useFilters="true" 
+          quiet="false" 
+          next="JDBC  select emp" > 
+
+<outputAsObject>false</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+<listenPort>6002</listenPort>
+<bindAddress></bindAddress>
+<basePath>/</basePath>
+<bindOnly>false</bindOnly>
+<useSSL>false</useSSL>
+<sslClientAuthType>none</sslClientAuthType>
+    </Node>
+
+
+    <Node name="JDBC  select emp" log=""
+          type="com.itko.lisa.jdbc.JDBCNode" 
+          version="1" 
+          uid="B9D1696573D011E78AE5005056A730A7" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="Virtual HTTPS Responder" > 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.test.FilterSaveResponse">
+        <valueToFilterKey>lisa.JDBC  select emp.rsp</valueToFilterKey>
+      <prop>abc</prop>
+      </Filter>
+
+<driver>oracle.jdbc.driver.OracleDriver</driver>
+<dataSourceConnect>false</dataSourceConnect>
+<jndiFactory></jndiFactory>
+<jndiServerURL></jndiServerURL>
+<jndiDataSourceName></jndiDataSourceName>
+<connect>jdbc:oracle:thin:@localhost:1521:xe</connect>
+<user>prat</user>
+<password_enc>16f30553c7f7d79bdfab4ddc37e31785</password_enc>
+<onSQLError>abort</onSQLError>
+<resultSet>true</resultSet>
+<maxRows>-1</maxRows>
+<keepOpen>false</keepOpen>
+<usePool>true</usePool>
+<sql>select * from emp</sql>
+<IsStoredProc>false</IsStoredProc>
+    </Node>
+
+
+    <Node name="Virtual HTTPS Responder" log=""
+          type="com.itko.lisa.vse.stateful.protocol.http.HttpRespondStep" 
+          version="1" 
+          uid="8C54BAE57C6A11E780E6005056A730A7" 
+          think="0" 
+          useFilters="true" 
+          quiet="false" 
+          next="Virtual HTTPS Listener 6002" > 
+
+<responseList>lisa.vse.response</responseList>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="A70984FE73D011E78AE5005056A730A7" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="A709850073D011E78AE5005056A730A7" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="abort" > 
+
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="A709AC1273D011E78AE5005056A730A7" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+</VSModel>

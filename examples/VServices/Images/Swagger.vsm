@@ -1,0 +1,248 @@
+<?xml version="1.0" ?>
+
+<VSModel name="Swagger" version="5">
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="06/21/2018" host="HVDIVD18MIS1939" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="06/21/2018" host="HVDIVD18MIS1939" />
+</meta>
+
+<id>499A6A6E757511E88CDC5A3820524153</id>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj04LjQuMCAoOC40LjAuMjI3KSZub2Rlcz0xMDM5MTQ4MTA=</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+<deletedProps>
+</deletedProps>
+
+<associatedResources>
+<file type="traffic">{{LISA_RELATIVE_PROJ_ROOT}}/..</file>
+<file type="session">{{LISA_RELATIVE_PROJ_ROOT}}/VServices/VRScenarios/Swagger.vr2</file>
+</associatedResources>
+    <Node name="HTTP/S Listen" log=""
+          type="com.itko.lisa.vse.stateful.protocol.http.HttpListenStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Virtual Service Router" > 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.vse.stateful.common.DataProtocolFilter">
+        <valueToFilterKey>lisa.vse.request</valueToFilterKey>
+<dataProtocol>com.itko.lisa.vse.stateful.protocol.rest.RestDataProtocol</dataProtocol>
+<processRequests>true</processRequests>
+<processResponses>false</processResponses>
+<CustomFilterData>
+<requestSideUnparsed>true</requestSideUnparsed>
+<rules>
+<rule>
+<operation>GET /v2/pet/findByStatus/</operation>
+</rule>
+<rule>
+<operation>GET /v2/pet/findByTags/</operation>
+</rule>
+<rule>
+<operation>GET /v2/pet/{petId}/</operation>
+</rule>
+<rule>
+<operation>GET /v2/store/inventory/</operation>
+</rule>
+<rule>
+<operation>GET /v2/store/order/{orderId}/</operation>
+</rule>
+<rule>
+<operation>GET /v2/user/login/</operation>
+</rule>
+<rule>
+<operation>GET /v2/user/logout/</operation>
+</rule>
+<rule>
+<operation>GET /v2/user/{username}/</operation>
+</rule>
+<rule>
+<operation>POST /v2/pet/</operation>
+</rule>
+<rule>
+<operation>POST /v2/pet/{petId}/</operation>
+</rule>
+<rule>
+<operation>POST /v2/pet/{petId}/uploadImage/</operation>
+</rule>
+<rule>
+<operation>POST /v2/store/order/</operation>
+</rule>
+<rule>
+<operation>POST /v2/user/</operation>
+</rule>
+<rule>
+<operation>POST /v2/user/createWithArray/</operation>
+</rule>
+<rule>
+<operation>POST /v2/user/createWithList/</operation>
+</rule>
+<rule>
+<operation>PUT /v2/pet/</operation>
+</rule>
+<rule>
+<operation>PUT /v2/user/{username}/</operation>
+</rule>
+<rule>
+<operation>DELETE /v2/pet/{petId}/</operation>
+</rule>
+<rule>
+<operation>DELETE /v2/store/order/{orderId}/</operation>
+</rule>
+<rule>
+<operation>DELETE /v2/user/{username}/</operation>
+</rule>
+</rules>
+</CustomFilterData>
+      </Filter>
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If being efficient" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Most Efficient, branching to VS Image Response Selection</log>
+<then>VS Image Response Selection</then>
+        <executionMode>EFFICIENT</executionMode>
+</CheckResult>
+
+<outputAsObject>true</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+<listenPort>8002</listenPort>
+<basePath>/</basePath>
+<bindOnly>false</bindOnly>
+<useSSL>false</useSSL>
+<sslClientAuthType>none</sslClientAuthType>
+    </Node>
+
+
+    <Node name="Virtual Service Router" log=""
+          type="com.itko.lisa.vse.stateful.VSRouterStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="VS Image Response Selection" > 
+
+<onerror>abort</onerror>
+<script>// This script must return either an enum entry from ExecutionMode or&#10;// a string that is the name of an enum entry.  The DYNAMIC entry may&#10;// not be returned.  It will be executed for DYNAMIC execution mode&#10;// only.&#10;import com.itko.lisa.vse.ExecutionMode;&#10;&#10;return ExecutionMode.EFFICIENT;&#10;&#10;&#10;/* other values: &#10;&#9;ExecutionMode.TRACK;&#10;&#9;ExecutionMode.STAND_IN;&#10;&#9;ExecutionMode.LIVE;&#10;&#9;ExecutionMode.FAILOVER;&#10;&#9;ExecutionMode.VALIDATION;&#10;&#9;ExecutionMode.LEARNING;&#10;*/&#10;</script>
+<supportedModes>
+<mode>DYNAMIC</mode>
+<mode>EFFICIENT</mode>
+<mode>TRACK</mode>
+</supportedModes>
+    </Node>
+
+
+    <Node name="VS Image Response Selection" log=""
+          type="com.itko.lisa.vse.stateful.ConversationalStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="HTTP/S Respond" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If tracking" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Transaction Tracking, branching to Virtual Service Tracking</log>
+<then>Virtual Service Tracking</then>
+        <executionMode>TRACK</executionMode>
+</CheckResult>
+
+<vsiSource>{{LISA_RELATIVE_PROJ_ROOT}}/VServices/Images/Swagger.vsi</vsiSource>
+<requestPropertyName>lisa.vse.request</requestPropertyName>
+<outputAsObject>true</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="HTTP/S Respond" log=""
+          type="com.itko.lisa.vse.stateful.protocol.http.HttpRespondStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="false" 
+          next="HTTP/S Listen" > 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.vse.stateful.common.DataProtocolFilter">
+        <valueToFilterKey>lisa.vse.response</valueToFilterKey>
+<dataProtocol>com.itko.lisa.vse.stateful.protocol.json.JSONDataProtocolHandler</dataProtocol>
+<processRequests>false</processRequests>
+<processResponses>true</processResponses>
+<CustomFilterData>
+</CustomFilterData>
+      </Filter>
+
+<responseList>lisa.vse.response</responseList>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="Virtual Service Tracking" log=""
+          type="com.itko.lisa.vse.stateful.VSTrackingStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="HTTP/S Respond" > 
+
+<imageResponseProperty>lisa.vse.image.response</imageResponseProperty>
+<liveResponseProperty>lisa.vse.live.response</liveResponseProperty>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="499B7BE0757511E88CDC5A3820524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="499B7BE2757511E88CDC5A3820524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="abort" log="The test was aborted"
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="499B7BE4757511E88CDC5A3820524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+</VSModel>

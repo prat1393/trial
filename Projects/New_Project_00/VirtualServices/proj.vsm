@@ -1,0 +1,550 @@
+<?xml version="1.0" ?>
+
+<VSModel name="proj" version="5">
+
+<meta>
+   <create version="8.4.0" buildNumber="8.4.0.227" author="admin" date="11/28/2017" host="HVDIVD18MIS1939" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="12/02/2017" host="HVDIVD18MIS1939" />
+</meta>
+
+<id>DF1C6CC6D45511E7A80BD67720524153</id>
+<Documentation>Put documentation of the VS Model here.</Documentation>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj04LjQuMCAoOC40LjAuMjI3KSZub2Rlcz0xMzI3MDc2NDQ2</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+<deletedProps>
+</deletedProps>
+
+    <Node name="read request" log=""
+          type="com.itko.lisa.test.UserScriptNode" 
+          version="1" 
+          uid="F473FCBCD45511E7A80BD67720524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="IUCLP" > 
+
+
+      <!-- Data Sets -->
+<readrec>Read Rows from Excel File</readrec>
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assertion name: Any Exception Then Fail checks for: true is of type: Assert on Invocation Exception.</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<onerror>abort</onerror>
+<language>Groovy</language>
+<copyProps>TestExecPropsAndSystemProps</copyProps>
+<script>import java.io.BufferedReader;&#13;&#10;import java.io.FileReader;&#13;&#10;String a= testExec.getStateValue(&quot;Datatype&quot;).toString();&#13;&#10;String b=&quot;&quot;;&#13;&#10;testExec.setStateValue(&quot;caount&quot;,0);&#13;&#10;testExec.setStateValue(&quot;count&quot;,0);&#13;&#10;if(a.equalsIgnoreCase(&quot;wireline&quot;))&#13;&#10;{&#13;&#10;FileReader file = new FileReader(&quot;H://project/wireline.txt&quot;);&#13;&#10;BufferedReader br = new BufferedReader(file);&#13;&#10;String l=br.readLine();&#13;&#10;while(l!=null)&#13;&#10;{&#13;&#10;b=b+l;&#13;&#10;l=br.readLine();&#13;&#10;}&#13;&#10;&#13;&#10;file.close();&#13;&#10;br.close();&#13;&#10;testExec.setStateValue(&quot;req&quot;,b);&#13;&#10;}&#13;&#10;if(a.equalsIgnoreCase(&quot;uverse&quot;))&#13;&#10;{&#13;&#10;FileReader file = new FileReader(&quot;H://project/uverse.txt&quot;);&#13;&#10;BufferedReader br = new BufferedReader(file);&#13;&#10;String l=br.readLine();&#13;&#10;while(l!=null)&#13;&#10;{&#13;&#10;b=b+l;&#13;&#10;l=br.readLine();&#13;&#10;}&#13;&#10;&#13;&#10;file.close();&#13;&#10;br.close();&#13;&#10;testExec.setStateValue(&quot;req&quot;,b);&#13;&#10;}&#13;&#10;if(a.equalsIgnoreCase(&quot;wireless&quot;))&#13;&#10;{&#13;&#10;FileReader file = new FileReader(&quot;H://project/wireless.txt&quot;);&#13;&#10;BufferedReader br = new BufferedReader(file);&#13;&#10;String l=br.readLine();&#13;&#10;while(l!=null)&#13;&#10;{&#13;&#10;b=b+l;&#13;&#10;l=br.readLine();&#13;&#10;}&#13;&#10;&#13;&#10;file.close();&#13;&#10;br.close();&#13;&#10;testExec.setStateValue(&quot;req&quot;,b);&#13;&#10;}&#13;&#10;&#13;&#10;</script>
+    </Node>
+
+
+    <Node name="IUCLP" log=""
+          type="com.itko.lisa.ws.RawSOAPNode" 
+          version="1" 
+          uid="5CD29F7FD46211E7A80BD67720524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="create slid" > 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.IUCLP.rsp</valueToFilterKey>
+      <tag>parentMemberIdentifier</tag>
+      <tagn>1</tagn>
+      <prop>slid</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.IUCLP.rsp</valueToFilterKey>
+      <tag>affiliateAccountNumber</tag>
+      <tagn>1</tagn>
+      <prop>BTN</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.IUCLP.rsp</valueToFilterKey>
+      <tag>accountIdentifier</tag>
+      <tagn>1</tagn>
+      <prop>billingid</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.IUCLP.rsp</valueToFilterKey>
+      <tag>lastFourSSN</tag>
+      <tagn>1</tagn>
+      <prop>ssn</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.IUCLP.rsp</valueToFilterKey>
+      <tag>ns2:zipCode</tag>
+      <tagn>1</tagn>
+      <prop>zip</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.IUCLP.rsp</valueToFilterKey>
+      <tag>billingAccountNumber</tag>
+      <tagn>1</tagn>
+      <prop>wban</prop>
+      </Filter>
+
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.IUCLP.rsp</valueToFilterKey>
+      <tag>subscriberNumber</tag>
+      <tagn>1</tagn>
+      <prop>ctn</prop>
+      </Filter>
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Scripted Assertion" type="com.itko.lisa.test.AssertByScript">
+<log>Assertion name: Scripted Assertion checks for: true is of type: Assert by Script Execution.</log>
+<then>write slid to file</then>
+<valueToAssertKey></valueToAssertKey>
+        <script>// This script should return a boolean result indicating the assertion is true or false&#13;&#10;String d=testExec.getStateValue(&quot;slid&quot;).toString();&#13;&#10;String e=&quot;true&quot;;&#13;&#10;if(d.equals(null) || d.equals(&quot;&quot;))&#13;&#10;{&#13;&#10;e=&quot;false&quot;;&#13;&#10;}&#13;&#10;retval=e;</script>
+        <language>Groovy</language>
+        <copyprops>TestExecPropsAndSystemProps</copyprops>
+</CheckResult>
+
+<url>{{ENDPOINT6}}</url>
+<action></action>
+<soapRequest itko_enc="base64">e3tyZXF9fQ==</soapRequest>
+<contentType>text/xml; charset=UTF-8</contentType>
+<onError>abort</onError>
+<discardResponse>false</discardResponse>
+<customHTTPHeaderInfo>
+    <Parameter>
+    <key>FieldName</key>
+    <value>HeaderValue</value>
+    </Parameter>
+</customHTTPHeaderInfo>
+    </Node>
+
+
+    <Node name="create slid" log=""
+          type="com.itko.lisa.ws.RawSOAPNode" 
+          version="1" 
+          uid="B3E15B8DD46711E7A80BD67720524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="MPS check" > 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.create slid.rsp</valueToFilterKey>
+      <tag>guid</tag>
+      <tagn>1</tagn>
+      <prop>memberno</prop>
+      </Filter>
+
+
+      <!-- Data Sets -->
+<readrec>random</readrec>
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Scripted Assertion~1" type="com.itko.lisa.test.AssertByScript">
+<log>Assertion name: Scripted Assertion~1 checks for: true is of type: Assert by Script Execution.</log>
+<then>create slid</then>
+<valueToAssertKey></valueToAssertKey>
+        <script>// This script should return a boolean result indicating the assertion is true or false&#13;&#10;// This script should return a boolean result indicating the assertion is true or false&#13;&#10;String res=testExec.getStateValue(&quot;LASTRESPONSE&quot;).toString();&#13;&#10;String f=&quot;false&quot;;&#13;&#10;if(res.contains(&quot;ERR_INVALID_HANDLE&quot;))&#13;&#10;{&#13;&#10;&#13;&#10;f=&quot;true&quot;;&#13;&#10;}&#13;&#10;retval=f;</script>
+        <language>BeanShell</language>
+        <copyprops>TestExecPropsAndSystemProps</copyprops>
+</CheckResult>
+
+<CheckResult assertTrue="true" name="Scripted Assertion~1-1" type="com.itko.lisa.test.AssertByScript">
+<log>Assertion name: Scripted Assertion~1 checks for: true is of type: Assert by Script Execution.</log>
+<then>ERROR check mps</then>
+<valueToAssertKey></valueToAssertKey>
+        <script>// This script should return a boolean result indicating the assertion is true or false&#13;&#10;// This script should return a boolean result indicating the assertion is true or false&#13;&#10;String res=testExec.getStateValue(&quot;LASTRESPONSE&quot;).toString();&#13;&#10;String f=&quot;false&quot;;&#13;&#10;if(res.contains(&quot;ERR_SYS_APPL&quot;))&#13;&#10;{&#13;&#10;&#13;&#10;f=&quot;true&quot;;&#13;&#10;}&#13;&#10;retval=f;</script>
+        <language>BeanShell</language>
+        <copyprops>TestExecPropsAndSystemProps</copyprops>
+</CheckResult>
+
+<url>{{ENDPOINT7}}</url>
+<action></action>
+<soapRequest itko_enc="base64">CTxzb2FwZW52OkVudmVsb3BlIHhtbG5zOnNvYXBlbnY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIiB4bWxuczp2MT0iaHR0cDovL21wc3lzLnJpbC5hdHQuY29tL2FkZG1lbWJlcnJlcXVlc3QvdjEiPg0KICAgPHNvYXBlbnY6SGVhZGVyLz4NCiAgIDxzb2FwZW52OkJvZHk+DQogICAgICA8djE6QWRkTWVtYmVyUmVxdWVzdD4NCiAgICAgICAgIDx2MTpjYWxsaW5nU3lzdGVtSWQ+TVlXT1JMRDwvdjE6Y2FsbGluZ1N5c3RlbUlkPg0KICAgICAgICAgPHYxOnRyYW5zYWN0aW9uSWQ+cGI3MjRkX3Rlc3QxPC92MTp0cmFuc2FjdGlvbklkPg0KICAgICAgICAgPHYxOnRyYW5zYWN0aW9uTmFtZT5BZGRNZW1iZXI8L3YxOnRyYW5zYWN0aW9uTmFtZT4NCiAgICAgICAgIDx2MTpzbGlkPnFheV9zbGlkX3t7cmFuZG9tfX08L3YxOnNsaWQ+DQogICAgICAgICA8djE6cGFzc3dvcmRDbGVhcj50ZXN0MW5nPC92MTpwYXNzd29yZENsZWFyPg0KICAgICAgICAgPHYxOnByb29mWmlwPjMxNzA1PC92MTpwcm9vZlppcD4NCiAgICAgICAgIDwhLS1PcHRpb25hbDotLT4NCiAgICAgICAgIDx2MTpkYXRlT2ZCaXJ0aD4wMTE2MTk5MDwvdjE6ZGF0ZU9mQmlydGg+DQogICAgICAgICA8IS0tT3B0aW9uYWw6LS0+DQogICAgICAgICA8djE6bGFzdEZvdXJTU04+NjAzMjwvdjE6bGFzdEZvdXJTU04+DQogICAgICAgICA8IS0tT3B0aW9uYWw6LS0+DQogICAgICAgICA8djE6cGFzc2NvZGU+MTIzNDwvdjE6cGFzc2NvZGU+DQogICAgICAgICA8IS0tT3B0aW9uYWw6LS0+DQogICAgIDx2MTpzZWN1cml0eVF1ZXN0aW9uPldoYXQgaXMgdGhlIG5hbWUgb2YgeW91ciBmYXZvcml0ZSByZXN0YXVyYW50PzwvdjE6c2VjdXJpdHlRdWVzdGlvbj4NCiAgICAgICAgIDwhLS1PcHRpb25hbDotLT4NCiAgICAgICAgIDx2MTpzZWN1cml0eUFuc3dlcj50ZXN0PC92MTpzZWN1cml0eUFuc3dlcj4NCiAgICAgICAgIDwhLS1PcHRpb25hbDotLT4NCiAgICAgICAgIDx2MTpvbmxpbmUxU2VjdXJpdHlRdWVzdGlvbj5XaGF0IGlzIHlvdXIgZHJlYW0gam9iPzwvdjE6b25saW5lMVNlY3VyaXR5UXVlc3Rpb24+DQogICAgICAgICA8IS0tT3B0aW9uYWw6LS0+DQogICAgICAgICA8djE6b25saW5lMVNlY3VyaXR5QW5zd2VyPnRlc3Q8L3YxOm9ubGluZTFTZWN1cml0eUFuc3dlcj4NCiAgICAgICAgIDwhLS1PcHRpb25hbDotLT4NCiAgICAgICAgIDx2MTpvbmxpbmUyU2VjdXJpdHlRdWVzdGlvbj5XaGF0IHdhcyB5b3VyIGZpcnN0IGpvYj88L3YxOm9ubGluZTJTZWN1cml0eVF1ZXN0aW9uPg0KICAgICAgICAgPCEtLU9wdGlvbmFsOi0tPg0KICAgICAgICAgPHYxOm9ubGluZTJTZWN1cml0eUFuc3dlcj50ZXN0PC92MTpvbmxpbmUyU2VjdXJpdHlBbnN3ZXI+DQogICAgICAgICA8IS0tT3B0aW9uYWw6LS0+DQogICAgICAgICA8djE6Y29udGFjdEVtYWlsPm15YXR0LnRlc3RpbmdAYXR0LmNvbTwvdjE6Y29udGFjdEVtYWlsPg0KICAgICAgICAgPCEtLU9wdGlvbmFsOi0tPg0KICAgICAgICAgPHYxOmVtYWlsT3B0T3V0SW5kPk48L3YxOmVtYWlsT3B0T3V0SW5kPg0KICAgICAgICAgPCEtLU9wdGlvbmFsOi0tPg0KICAgICAgICAgPHYxOmZpcnN0TmFtZT5GbmFtZTwvdjE6Zmlyc3ROYW1lPg0KICAgICAgICAgPCEtLU9wdGlvbmFsOi0tPg0KICAgICAgICAgPHYxOmxhc3ROYW1lPkxuYW1lPC92MTpsYXN0TmFtZT4NCiAgICAgICAgIDwhLS1PcHRpb25hbDotLT4NCiAgICAgICAgIDx2MTpuaWNrbmFtZT5OaWNrbmFtZTwvdjE6bmlja25hbWU+DQogICAgICAgICA8IS0tT3B0aW9uYWw6LS0+DQogICAgICAgICA8djE6Z2VuZGVyPk08L3YxOmdlbmRlcj4NCiAgICAgICAgIDwhLS1PcHRpb25hbDotLT4NCiAgICAgICAgIDx2MTpicm93c2VyTGFuZ3VhZ2U+ZW48L3YxOmJyb3dzZXJMYW5ndWFnZT4NCiAgICAgICAgIDwhLS1PcHRpb25hbDotLT4NCiAgICAgICAgIDx2MTpzdXBlck4+TjwvdjE6c3VwZXJOPg0KICAgICAgIDwvdjE6QWRkTWVtYmVyUmVxdWVzdD4NCiAgIDwvc29hcGVudjpCb2R5Pg0KPC9zb2FwZW52OkVudmVsb3BlPg==</soapRequest>
+<contentType>text/xml; charset=UTF-8</contentType>
+<onError>abort</onError>
+<discardResponse>false</discardResponse>
+<customHTTPHeaderInfo>
+    <Parameter>
+    <key>Authorization</key>
+    <value>Basic TVlXT1JMRDpZJG03IVc0</value>
+    </Parameter>
+</customHTTPHeaderInfo>
+    </Node>
+
+
+    <Node name="MPS check" log=""
+          type="com.itko.lisa.jdbc.JDBCNode" 
+          version="1" 
+          uid="379D2742D5CC11E79D613E7C20524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="CCR Check" > 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.resultset.ResultSetValueFilter">
+        <valueToFilterKey>lisa.MPS check.rsp</valueToFilterKey>
+      <col>2</col>
+      <row>0</row>
+      <prop>slid</prop>
+      </Filter>
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Scripted Assertion~2" type="com.itko.lisa.test.AssertByScript">
+<log>Assertion name: Scripted Assertion~2 checks for: true is of type: Assert by Script Execution.</log>
+<then>MPS check</then>
+<valueToAssertKey></valueToAssertKey>
+        <script>// This script should return a boolean result indicating the assertion is true or false&#13;&#10;String d=testExec.getStateValue(&quot;slid&quot;).toString();&#13;&#10;String e=&quot;false&quot;;&#13;&#10;int c=testExec.getStateValue(&quot;caount&quot;).toInteger();&#13;&#10;if(d.equals(null) || d.equals(&quot;&quot;))&#13;&#10;{&#13;&#10;if(c&lt;=10)&#13;&#10;{&#13;&#10;e=&quot;true&quot;;&#13;&#10;c=c+1;&#13;&#10;testExec.setStateValue(&quot;caount&quot;,c);&#13;&#10;}&#13;&#10;}&#13;&#10;&#13;&#10;retval=e;</script>
+        <language>Groovy</language>
+        <copyprops>TestExecPropsAndSystemProps</copyprops>
+</CheckResult>
+
+<CheckResult assertTrue="true" name="Scripted Assertion~4" type="com.itko.lisa.test.AssertByScript">
+<log></log>
+<then>write slid to file</then>
+        <script>// This script should return a boolean result indicating the assertion is true or false&#13;&#10;int c=testExec.getStateValue(&quot;caount&quot;).toInteger();&#13;&#10;String g=&quot;false&quot;;&#13;&#10;if(c&gt;=11)&#13;&#10;{&#13;&#10;g=&quot;true&quot;;&#13;&#10;testExec.setStateValue(&quot;caount&quot;,0);&#13;&#10;testExec.setStateValue(&quot;slid&quot;,&quot;slid not flown in mps&quot;);&#13;&#10;}&#13;&#10;&#13;&#10;retval=g;</script>
+        <language>Groovy</language>
+        <copyprops>TestExecPropsAndSystemProps</copyprops>
+</CheckResult>
+
+<driver>oracle.jdbc.driver.OracleDriver</driver>
+<dataSourceConnect>false</dataSourceConnect>
+<jndiFactory></jndiFactory>
+<jndiServerURL></jndiServerURL>
+<jndiDataSourceName></jndiDataSourceName>
+<connect>jdbc:oracle:thin:@zlt09211.vci.att.com:1524:t1c4d284</connect>
+<user>rr998s</user>
+<password_enc>8e8bc5823c08a93cdd7ea5148dc25820</password_enc>
+<onSQLError>abort</onSQLError>
+<resultSet>true</resultSet>
+<maxRows>-1</maxRows>
+<keepOpen>false</keepOpen>
+<usePool>true</usePool>
+<sql>SELECT *&#13;&#10;FROM member where member_num={{memberno}}</sql>
+<IsStoredProc>false</IsStoredProc>
+    </Node>
+
+
+    <Node name="CCR Check" log=""
+          type="com.itko.lisa.jdbc.JDBCNode" 
+          version="1" 
+          uid="79ED1779D5D911E79D613E7C20524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="security code" > 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.resultset.ResultSetValueFilter">
+        <valueToFilterKey>lisa.CCR Check.rsp</valueToFilterKey>
+      <col>1</col>
+      <row>0</row>
+      <prop>ccrslid</prop>
+      </Filter>
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Scripted Assertion~3" type="com.itko.lisa.test.AssertByScript">
+<log>Assertion name: Scripted Assertion~3 checks for: true is of type: Assert by Script Execution.</log>
+<then>CCR Check</then>
+<valueToAssertKey></valueToAssertKey>
+        <script>String d=testExec.getStateValue(&quot;ccrslid&quot;).toString();&#13;&#10;String e=&quot;false&quot;;&#13;&#10;int c=testExec.getStateValue(&quot;caount&quot;).toInteger();&#13;&#10;if(d.equals(null) || d.equals(&quot;&quot;))&#13;&#10;{&#13;&#10;if(c&lt;=10)&#13;&#10;{&#13;&#10;e=&quot;true&quot;;&#13;&#10;c=c+1;&#13;&#10;testExec.setStateValue(&quot;count&quot;,c);&#13;&#10;}&#13;&#10;else&#13;&#10;{&#13;&#10;e=&quot;false&quot;;&#13;&#10;&#13;&#10;}&#13;&#10;}&#13;&#10;&#13;&#10;&#13;&#10;retval=e;</script>
+        <language>Groovy</language>
+        <copyprops>TestExecPropsAndSystemProps</copyprops>
+</CheckResult>
+
+<driver>oracle.jdbc.driver.OracleDriver</driver>
+<dataSourceConnect>false</dataSourceConnect>
+<jndiFactory></jndiFactory>
+<jndiServerURL></jndiServerURL>
+<jndiDataSourceName></jndiDataSourceName>
+<connect>jdbc:oracle:thin:@q2ccr2d4.vci.att.com:1521/BOTHELL_CCRR_QA2_ODS_HIGH_SPEED_SERVICE</connect>
+<user>readuser</user>
+<password_enc>abb927aabfef64ae35efe6c566ddc9a6caadbf4509dd40eea55e88ed70e5688b</password_enc>
+<onSQLError>abort</onSQLError>
+<resultSet>true</resultSet>
+<maxRows>-1</maxRows>
+<keepOpen>false</keepOpen>
+<usePool>true</usePool>
+<sql>select * from MPS.CUSTOMER_IDENTITY where identityid like &apos;{{slid}}%&apos;</sql>
+<IsStoredProc>false</IsStoredProc>
+    </Node>
+
+
+    <Node name="security code" log=""
+          type="com.itko.lisa.test.UserScriptNode" 
+          version="1" 
+          uid="879BB827D69511E79D613E7C20524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="security code generate Request" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assertion name: Any Exception Then Fail checks for: true is of type: Assert on Invocation Exception.</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<onerror>abort</onerror>
+<language>BeanShell</language>
+<copyProps>TestExecProps</copyProps>
+<script>import java.io.BufferedReader;&#13;&#10;import java.io.FileReader;&#13;&#10;String a= testExec.getStateValue(&quot;Datatype&quot;).toString();&#13;&#10;String b=&quot;&quot;;&#13;&#10;if(a.equalsIgnoreCase(&quot;wireline&quot;))&#13;&#10;{&#13;&#10;FileReader file = new FileReader(&quot;H://project/wirelinessn.txt&quot;);&#13;&#10;BufferedReader br = new BufferedReader(file);&#13;&#10;String l=br.readLine();&#13;&#10;while(l!=null)&#13;&#10;{&#13;&#10;b=b+l;&#13;&#10;l=br.readLine();&#13;&#10;}&#13;&#10;&#13;&#10;file.close();&#13;&#10;br.close(); &#13;&#10;testExec.setStateValue(&quot;req&quot;,b);&#13;&#10;}&#13;&#10;if(a.equalsIgnoreCase(&quot;uverse&quot;))&#13;&#10;{&#13;&#10;FileReader file = new FileReader(&quot;H://project/uversessn.txt&quot;);&#13;&#10;BufferedReader br = new BufferedReader(file);&#13;&#10;String l=br.readLine();&#13;&#10;while(l!=null)&#13;&#10;{&#13;&#10;b=b+l;&#13;&#10;l=br.readLine();&#13;&#10;}&#13;&#10;&#13;&#10;file.close();&#13;&#10;br.close();&#13;&#10;testExec.setStateValue(&quot;req&quot;,b);&#13;&#10;}&#13;&#10;if(a.equalsIgnoreCase(&quot;wireless&quot;))&#13;&#10;{&#13;&#10;FileReader file = new FileReader(&quot;H://project/wirelessssn.txt&quot;);&#13;&#10;BufferedReader br = new BufferedReader(file);&#13;&#10;String l=br.readLine();&#13;&#10;while(l!=null)&#13;&#10;{&#13;&#10;b=b+l;&#13;&#10;l=br.readLine();&#13;&#10;}&#13;&#10;&#13;&#10;file.close();&#13;&#10;br.close();&#13;&#10;testExec.setStateValue(&quot;req&quot;,b);&#13;&#10;}&#13;&#10;&#13;&#10;</script>
+    </Node>
+
+
+    <Node name="security code generate Request" log=""
+          type="com.itko.lisa.ws.RawSOAPNode" 
+          version="1" 
+          uid="BA648422D69511E79D613E7C20524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="slid linking" > 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.test.FilterXMLGetChildText">
+        <valueToFilterKey>lisa.security code generate Request.rsp</valueToFilterKey>
+      <tag>ns7:securityCode</tag>
+      <tagn>1</tagn>
+      <prop>scode</prop>
+      </Filter>
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Scripted Assertion~1" type="com.itko.lisa.test.AssertByScript">
+<log>Assertion name: Scripted Assertion~1 checks for: true is of type: Assert by Script Execution.</log>
+<then>ERROR check mps</then>
+<valueToAssertKey></valueToAssertKey>
+        <script>// This script should return a boolean result indicating the assertion is true or false&#13;&#10;// This script should return a boolean result indicating the assertion is true or false&#13;&#10;String res=testExec.getStateValue(&quot;LASTRESPONSE&quot;).toString();&#13;&#10;String f=&quot;false&quot;;&#13;&#10;if(res.contains(&quot;ERR_SYS_APPL&quot;))&#13;&#10;{&#13;&#10;&#13;&#10;f=&quot;true&quot;;&#13;&#10;}&#13;&#10;retval=f;</script>
+        <language>BeanShell</language>
+        <copyprops>TestExecPropsAndSystemProps</copyprops>
+</CheckResult>
+
+<url>{{ENDPOINT9}}</url>
+<action></action>
+<soapRequest itko_enc="base64">e3tyZXF9fQ==</soapRequest>
+<contentType>text/xml; charset=UTF-8</contentType>
+<onError>abort</onError>
+<discardResponse>false</discardResponse>
+<customHTTPHeaderInfo>
+    <Parameter>
+    <key>Authorization</key>
+    <value>Basic TVlXT1JMRDpZJG03IVc0</value>
+    </Parameter>
+</customHTTPHeaderInfo>
+    </Node>
+
+
+    <Node name="slid linking" log=""
+          type="com.itko.lisa.test.UserScriptNode" 
+          version="1" 
+          uid="4B927B44D5E411E79D613E7C20524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="Raw SOAP Request" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assertion name: Any Exception Then Fail checks for: true is of type: Assert on Invocation Exception.</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<onerror>abort</onerror>
+<language>BeanShell</language>
+<copyProps>TestExecPropsAndSystemProps</copyProps>
+<script>import java.io.BufferedReader;&#13;&#10;import java.io.FileReader;&#13;&#10;String a= testExec.getStateValue(&quot;Datatype&quot;).toString();&#13;&#10;String b=&quot;&quot;;&#13;&#10;if(a.equalsIgnoreCase(&quot;wireline&quot;))&#13;&#10;{&#13;&#10;FileReader file = new FileReader(&quot;H://project/wirelineslid.txt&quot;);&#13;&#10;BufferedReader br = new BufferedReader(file);&#13;&#10;String l=br.readLine();&#13;&#10;while(l!=null)&#13;&#10;{&#13;&#10;b=b+l;&#13;&#10;l=br.readLine();&#13;&#10;}&#13;&#10;&#13;&#10;file.close();&#13;&#10;br.close(); &#13;&#10;testExec.setStateValue(&quot;req&quot;,b);&#13;&#10;}&#13;&#10;if(a.equalsIgnoreCase(&quot;uverse&quot;))&#13;&#10;{&#13;&#10;FileReader file = new FileReader(&quot;H://project/uverseslid.txt&quot;);&#13;&#10;BufferedReader br = new BufferedReader(file);&#13;&#10;String l=br.readLine();&#13;&#10;while(l!=null)&#13;&#10;{&#13;&#10;b=b+l;&#13;&#10;l=br.readLine();&#13;&#10;}&#13;&#10;&#13;&#10;file.close();&#13;&#10;br.close();&#13;&#10;testExec.setStateValue(&quot;req&quot;,b);&#13;&#10;}&#13;&#10;if(a.equalsIgnoreCase(&quot;wireless&quot;))&#13;&#10;{&#13;&#10;FileReader file = new FileReader(&quot;H://project/wirelessslid.txt&quot;);&#13;&#10;BufferedReader br = new BufferedReader(file);&#13;&#10;String l=br.readLine();&#13;&#10;while(l!=null)&#13;&#10;{&#13;&#10;b=b+l;&#13;&#10;l=br.readLine();&#13;&#10;}&#13;&#10;&#13;&#10;file.close();&#13;&#10;br.close();&#13;&#10;testExec.setStateValue(&quot;req&quot;,b);&#13;&#10;}&#13;&#10;&#13;&#10;</script>
+    </Node>
+
+
+    <Node name="Raw SOAP Request" log=""
+          type="com.itko.lisa.ws.RawSOAPNode" 
+          version="1" 
+          uid="1CAFD7CED69011E79D613E7C20524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="Execute script (JSR-223)" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Scripted Assertion~1" type="com.itko.lisa.test.AssertByScript">
+<log>Assertion name: Scripted Assertion~1 checks for: true is of type: Assert by Script Execution.</log>
+<then>ERROR check mps</then>
+<valueToAssertKey></valueToAssertKey>
+        <script>// This script should return a boolean result indicating the assertion is true or false&#13;&#10;// This script should return a boolean result indicating the assertion is true or false&#13;&#10;String res=testExec.getStateValue(&quot;LASTRESPONSE&quot;).toString();&#13;&#10;String f=&quot;false&quot;;&#13;&#10;if(res.contains(&quot;ERR_SYS_APPL&quot;))&#13;&#10;{&#13;&#10;&#13;&#10;f=&quot;true&quot;;&#13;&#10;}&#13;&#10;retval=f;</script>
+        <language>BeanShell</language>
+        <copyprops>TestExecPropsAndSystemProps</copyprops>
+</CheckResult>
+
+<url>{{ENDPOINT8}}</url>
+<action></action>
+<soapRequest itko_enc="base64">e3tyZXF9fQ==</soapRequest>
+<contentType>text/xml; charset=UTF-8</contentType>
+<onError>abort</onError>
+<discardResponse>false</discardResponse>
+<customHTTPHeaderInfo>
+    <Parameter>
+    <key>Authorization</key>
+    <value>Basic TVlXT1JMRDpZJG03IVc0</value>
+    </Parameter>
+</customHTTPHeaderInfo>
+    </Node>
+
+
+    <Node name="Execute script (JSR-223)" log=""
+          type="com.itko.lisa.test.UserScriptNode" 
+          version="1" 
+          uid="2828DA7D6BE11E79D613E7C20524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="write slid to file" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assertion name: Any Exception Then Fail checks for: true is of type: Assert on Invocation Exception.</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<onerror>abort</onerror>
+<language>Groovy</language>
+<copyProps>TestExecProps</copyProps>
+<script>String j=testExec.getStateValue(&quot;ccrslid&quot;).toString();&#13;&#10;&#13;&#10;if(j.equals(null) || j.equals(&quot;&quot;)){&#13;&#10;      testExec.setStateValue(&quot;slid&quot;,&quot;slid not flown in ccr&quot;);&#13;&#10;&#13;&#10;}else{&#13;&#10;   testExec.setStateValue(&quot;slid&quot;,j);&#13;&#10;}</script>
+    </Node>
+
+
+    <Node name="write slid to file" log=""
+          type="com.itko.lisa.test.UserScriptNode" 
+          version="1" 
+          uid="9D7096C4D50A11E7879E3E7C20524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="read request" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assertion name: Any Exception Then Fail checks for: true is of type: Assert on Invocation Exception.</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<onerror>abort</onerror>
+<language>Groovy</language>
+<copyProps>TestExecProps</copyProps>
+<script>import java.io.*;&#13;&#10;import org.apache.poi.xssf.usermodel.XSSFWorkbook;&#13;&#10;import org.apache.poi.xssf.usermodel.XSSFSheet;&#13;&#10;import org.apache.poi.ss.usermodel.*;&#13;&#10;import java.util.Iterator;&#13;&#10;String m=testExec.getStateValue(&quot;slid&quot;).toString();&#13;&#10;FileInputStream fs = new FileInputStream (&quot;H://project/projdata.xlsx&quot;);&#13;&#10; XSSFWorkbook wb =new XSSFWorkbook(fs); &#13;&#10; XSSFSheet ws = wb.getSheet(&quot;Sheet1&quot;);&#13;&#10;&#13;&#10;int i=testExec.getStateValue(&quot;Read Rows from Excel File_RowNum&quot;).toInteger();&#13;&#10;&#13;&#10;Row row = ws.getRow(i);&#13;&#10;Cell cell = row.createCell(2);  &#13;&#10;&#13;&#10;cell.setCellValue(m);&#13;&#10; FileOutputStream os = new FileOutputStream(&quot;H://project/projdata.xlsx&quot;);&#13;&#10;            wb.write(os);&#13;&#10;        &#13;&#10;fs.close();&#13;&#10;os.close();&#13;&#10;&#13;&#10;</script>
+    </Node>
+
+
+    <Node name="ERROR check mps" log=""
+          type="com.itko.lisa.test.UserScriptNode" 
+          version="1" 
+          uid="6BA6919DD6C111E79D613E7C20524153" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="write slid to file" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Any Exception Then Fail" type="com.itko.lisa.dynexec.CheckInvocationEx">
+<log>Assertion name: Any Exception Then Fail checks for: true is of type: Assert on Invocation Exception.</log>
+<then>fail</then>
+<valueToAssertKey></valueToAssertKey>
+        <param>.*</param>
+</CheckResult>
+
+<onerror>abort</onerror>
+<language>Groovy</language>
+<copyProps>TestExecProps</copyProps>
+<script>testExec.setStateValue(&quot;slid&quot;,&quot;MPS system down or slid not flowing to mps&quot;);</script>
+    </Node>
+
+
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="DF1C6CC8D45511E7A80BD67720524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="DF1C6CCAD45511E7A80BD67720524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="abort" > 
+
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="DF1C6CCCD45511E7A80BD67720524153" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <DataSet type="com.itko.lisa.test.ExcelDataFile" name="Read Rows from Excel File" atend="end" local="false" random="false" maxItemsToFetch="100" >
+<sample>rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAZ3CAAAAAgAAAAEdAAERGF0YXQACjIxMDIyMjAwMTh0ACBSZWFkIFJvd3MgZnJvbSBFeGNlbCBGaWxlX1Jvd051bXQAATF0AAhEYXRhdHlwZXQACFdpcmVsaW5ldAAEU2xpZHQAGXFheV9zbGlkXzEyODI5M2FAc2xpZC5kdW14</sample>
+    <location>H:/project/projdata.xlsx</location>
+    <sheetname>Sheet1</sheetname>
+    </DataSet>
+
+    <DataSet type="com.itko.lisa.test.DataSetRandIDGenerator" name="random" atend="" local="false" random="false" maxItemsToFetch="0" >
+<sample>rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAB3CAAAAAEAAAABdAAVUmFuZG9tIENvZGUgR2VuZXJhdG9ydAAOdGVzdEJGNzQ2QUEzN0R4</sample>
+<type>Alphanumeric</type>
+<length>10</length>
+<prefix>test</prefix>
+    </DataSet>
+
+</VSModel>
