@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/lisa 8.4/DevTest/lib/core/lisa-util-8.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/lisa 8.4/DevTest/lib/core/lisa-virtualize-8.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/lisa 8.4/DevTest/lib/core/lisa-agent.jar"/>
+	<classpathentry kind="lib" path="C:/lisa 8.4/DevTest/lib/core/lisa-core-8.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/lisa 8.4/DevTest/lib/shared/ojdbc7-12.1.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/lisa 8.4/DevTest/lib/shared/derby-10.8.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/lisa 8.4/DevTest/lib/shared/derbyclient-10.10.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/lisa 8.4/DevTest/lib/shared/derbynet-10.8.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ps439r/Downloads/apache-activemq-5.14.0-bin/apache-activemq-5.14.0/activemq-all-5.14.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

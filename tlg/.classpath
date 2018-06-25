@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/ps439r/eclipse-workspace/sl_core_main_1710/lib/telegence/ClientBeans.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ps439r/eclipse-workspace/sl_core_main_1710/lib/telegence/ClientData.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ps439r/eclipse-workspace/sl_core_main_1710/lib/telegence/sbmsIrdSec17100.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ps439r/eclipse-workspace/sl_core_main_1710/lib/telegence/uams.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

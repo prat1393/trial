@@ -1,0 +1,3 @@
+vseProtocols=com.itko.lisa.newfilter.CustomFilter
+
+com.itko.lisa.newfilter.CustomFilter=data:req,Servo Protocol Handler,I did it!
