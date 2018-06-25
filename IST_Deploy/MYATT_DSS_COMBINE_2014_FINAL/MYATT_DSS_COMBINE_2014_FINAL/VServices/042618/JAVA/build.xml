@@ -1,0 +1,8 @@
+<project name="Others" basedir="." default="help">
+	<property file="../../../vse-ant-ejb.properties" />
+	<property file="../../../build.properties" />
+	<property name="lisa.proj.root" value="../../../" />
+	<property name="vs.dir" value="." />
+	<property file="../../../../vse-ant.properties" />
+	<import file="../../../../vse-ant.xml"/>
+</project>

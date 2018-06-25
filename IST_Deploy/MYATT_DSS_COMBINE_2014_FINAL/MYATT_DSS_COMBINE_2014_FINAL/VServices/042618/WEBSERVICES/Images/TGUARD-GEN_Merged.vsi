@@ -1,0 +1,230 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="4" name="TokenGen" created="2016-05-23.12:12:54.685" lastModified="2018-03-21.13:14:04.150" version="10.1.0" buildNumber="10.1.0.283">
+<n>This service image created using selected transactions from the CSIRestAndDLC_Merged:104721 , based on the vse matches excel report&#10;&#10;This service image created using selected transactions from the CSIRestAndDLC_052516:11361 , based on the vse matches excel report&#10;&#10;This service image created using selected transactions from the CSIRestAndDLC_071116:1 , based on the vse matches excel report&#10;&#10;This service image created using selected transactions from the CSIRestAndDLC_062316:104721 , based on the vse matches excel report&#10;&#10;This service image created using selected transactions from the CSIRestAndDLC_062416:104721 , based on the vse matches excel report&#10;&#10;This service image created using selected transactions from the CSIRestAndDLC_062316:104721 , based on the vse matches excel report&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_120216:648&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_121416:251&#10;&#10;This service image generated using Extracted transactions from the CSI_REST_121416:287&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_121716:1086&#10;&#10;This service image created using selected transactions from the DLCRandom:104721 , based on the vse matches excel report&#10;&#10;This service image created using selected transactions from the CSIRestAndDLC_080416:1 , based on the vse matches excel report&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_122416:6&#10;&#10;This service image created using selected transactions from the CSIRestAndDLC_011117:1 , based on the vse matches excel report&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_012117:842&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_012217:512&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_010817:470&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_012917:2&#10;&#10;This service image created using selected transactions from the CSIRestAndDLC_020217:4 , based on the vse matches excel report&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_020417:194&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_020517:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_021117:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_021817:3&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_021917:264&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_022517:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_021017:12314&#10;&#10;This service image created using selected transactions from the CSIRestAndDLC_031617:10439 , based on the vse matches excel report&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_031117:13&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_042117:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_041517:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_041417:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_040117:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_041517:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_041417:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_042217:326&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_043017:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_042917:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_050617:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_060617:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_051317:1003&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_051417:2&#10;&#10;This service image created using selected transactions from the CSIRestAndDLC_042217:669 , based on the vse matches excel report&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_042617:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_061717:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_061817:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_052017:15&#10;&#10;This service image generated using Extracted transactions from the CSI_REST_052017:170&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_041017:12094&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_072217:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_081517:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_070117:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_090917:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_071517:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_070817:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_070917:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_051317:293&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_090317:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_091017:3&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_091617:177&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_091717:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_051417:332&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_090217:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_070817:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_093017:3&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_120917:1&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_121717:141&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_121017:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_121617:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_052617:31&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_053117:438&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_120217:2&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_060617:545&#10;&#10;This service image generated using Extracted transactions from the CSIRestAndDLC_060517:270</n>
+<st>
+<t id="5" nd="true">
+<sp>
+<t id="20">
+<rq id="21" op="POST /commonLogin/nxsATS/TokenGen" tl="EXACT">
+<ag>
+<p n="password" t="arg:ANY;false;;;;">test1ng</p>
+<p n="userid" t="arg:ANY;false;;;;">on</p>
+<p n="appID" t="arg:ANY;false;;;;">I9KgqdgGblRlO2HNj4n/JyX/r2k=</p>
+<p n="TG_OP" t="arg:ANY;false;;;;">TokenGen</p>
+<p n="StarTest" t="arg:ANY;false;;;;">&lt;value&gt;</p>
+<p n="userid" t="arg:EQUALS;false;;;;">{{request_userid}}</p>
+</ag>
+<bd chs="UTF-8">userid=qay_slid_380442&amp;rememberID=on&amp;password=test1ng&amp;appID=I9KgqdgGblRlO2HNj4n%2FJyX%2Fr2k%3D&amp;TG_OP=TokenGen</bd>
+</rq>
+<rs>
+<rp id="22" t="802">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="content-language">en-US</p>
+<p n="content-length">54</p>
+<p n="content-type">application/x-www-form-urlencoded;charset=UTF-8</p>
+<p n="p3p">CP=&quot;NON CUR OTPi OUR NOR UNI&quot;</p>
+<p n="x-tgid">{{request_userid}}@slid.dum</p>
+<p n="Set-Cookie">PD_STATEFUL_c2f083d7-c1b1-4fae-b077-235827fe85e6=%2FcommonLogin; Path=/</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="Set-Cookie">tAuthNState=true; Path=/</p>
+</m>
+<bd chs="UTF-8">atsToken={{request_userid}}</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="6" op="POST /commonLogin/nxsATS/TokenGen" tl="SIGNATURE">
+<ag>
+<p n="StarTest" t="arg:EQUALS;false;;;;">On</p>
+<p n="userid" t="arg:EQUALS;false;;;;">{{request_userid}}</p>
+<p n="rememberID" t="arg:ANY;false;;;;">rememberID</p>
+<p n="password" t="arg:EQUALS;false;;;;">test1ng</p>
+<p n="appID" t="arg:ANY;false;;;;">TG_OP</p>
+<p n="TG_OP" t="arg:ANY;false;;;;">TokenGen</p>
+</ag>
+</rq>
+<rs>
+<rp id="7" t="802">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="content-language">en-US</p>
+<p n="content-length">54</p>
+<p n="content-type">application/x-www-form-urlencoded;charset=UTF-8</p>
+<p n="p3p">CP=&quot;NON CUR OTPi OUR NOR UNI&quot;</p>
+<p n="x-tgid">{{request_userid}}@slid.dum</p>
+<p n="Set-Cookie">PD_STATEFUL_c2f083d7-c1b1-4fae-b077-235827fe85e6=%2FcommonLogin; Path=/</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="Set-Cookie">tAuthNState=true; Path=/</p>
+</m>
+<bd chs="UTF-8">atsToken={{request_userid}}</bd>
+</rp>
+</rs>
+</t>
+<t id="8" nd="true">
+<rq id="9" op="POST /commonLogin/nxsATS/TokenGen" tl="SIGNATURE">
+<ag>
+<p n="StarTest" t="arg:EQUALS;false;;;;">On</p>
+<p n="userid" t="arg:EQUALS;false;;;;">{{request_userid}}</p>
+<p n="rememberID" t="arg:ANY;false;;;;">rememberID</p>
+<p n="password" t="arg:EQUALS;false;;;;">test1ng</p>
+<p n="appID" t="arg:ANY;false;;;;">TG_OP</p>
+<p n="TG_OP" t="arg:ANY;false;;;;">TokenGen</p>
+<p n="2FA" t="arg:EQUALS;false;;;;">&lt;value&gt;</p>
+</ag>
+</rq>
+<rs>
+<rp id="10" t="905">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">ok</p>
+</m>
+<bd chs="UTF-8">atsToken={{request_userid}}</bd>
+</rp>
+</rs>
+</t>
+<t id="11" nd="true">
+<rq id="12" op="POST /commonLogin/nxsATS/WebTokenGen" tl="SIGNATURE">
+<ag>
+<p n="atsToken" t="arg:EQUALS;false;;;;">qaysli_attnext6</p>
+<p n="appID" t="arg:ANY;false;;;;">TG_OP</p>
+<p n="TG_OP" t="arg:ANY;false;;;;">TokenGen</p>
+</ag>
+</rq>
+<rs>
+<rp id="13" t="905">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">ok</p>
+</m>
+<bd chs="UTF-8">atsWebToken={{request_atsToken}}</bd>
+</rp>
+</rs>
+</t>
+<t id="14" nd="true">
+<rq id="15" op="POST /commonLogin/nxsATS/TokenGen" tl="SIGNATURE">
+<ag>
+<p n="StarTest" t="arg:EQUALS;false;;;;">On</p>
+<p n="userid" t="arg:EQUALS;false;;;;">{{request_userid}}</p>
+<p n="CIAM_DATA" t="arg:EQUALS;false;;;;">&lt;value&gt;</p>
+<p n="rememberID" t="arg:ANY;false;;;;">rememberID</p>
+<p n="password" t="arg:EQUALS;false;;;;">test1ng</p>
+<p n="appID" t="arg:ANY;false;;;;">TG_OP</p>
+<p n="TG_OP" t="arg:ANY;false;;;;">TokenGen</p>
+<p n="2FA" t="arg:EQUALS;false;;;;">&lt;value&gt;</p>
+</ag>
+</rq>
+<rs>
+<rp id="16" t="905">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">ok</p>
+</m>
+<bd chs="UTF-8">atsToken={{request_userid}}</bd>
+</rp>
+</rs>
+</t>
+<t id="17" nd="true">
+<rq id="18" op="POST /commonLogin/nxsATS/TokenGen" tl="SIGNATURE">
+<ag>
+<p n="StarTest" t="arg:EQUALS;false;;;;">On</p>
+<p n="userid" t="arg:EQUALS;false;;;;">{{request_userid}}</p>
+<p n="rememberID" t="arg:ANY;false;;;;">rememberID</p>
+<p n="password" t="arg:EQUALS;false;;;;">test1ng</p>
+<p n="TG_OP" t="arg:ANY;false;;;;">TokenGen</p>
+<p n="2FA" t="arg:EQUALS;false;;;;">&lt;value&gt;</p>
+</ag>
+</rq>
+<rs>
+<rp id="19" t="905">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">ok</p>
+</m>
+<bd chs="UTF-8">atsToken={{request_userid}}</bd>
+</rp>
+</rs>
+</t>
+<t id="23" nd="true">
+<sp>
+<t id="24">
+<rq id="25" op="POST /commonLogin/nxsATS/TokenGen/" tl="EXACT">
+<ag>
+<p n="password" t="arg:ANY;false;;;;">test1ng</p>
+<p n="rememberID" t="arg:ANY;false;;;;">on</p>
+<p n="appID" t="arg:ANY;false;;;;">I9KgqdgGblRlO2HNj4n/JyX/r2k=</p>
+<p n="TG_OP" t="arg:ANY;false;;;;">TokenGen</p>
+<p n="StarTest" t="arg:ANY;false;;;;">&lt;value&gt;</p>
+<p n="userid" t="arg:EQUALS;false;;;;">{{request_userid}}</p>
+</ag>
+<bd chs="UTF-8">userid=qay_slid_380442&amp;rememberID=on&amp;password=test1ng&amp;appID=I9KgqdgGblRlO2HNj4n%2FJyX%2Fr2k%3D&amp;TG_OP=TokenGen</bd>
+</rq>
+<rs>
+<rp id="26" t="802">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="content-language">en-US</p>
+<p n="content-length">54</p>
+<p n="content-type">application/x-www-form-urlencoded;charset=UTF-8</p>
+<p n="p3p">CP=&quot;NON CUR OTPi OUR NOR UNI&quot;</p>
+<p n="x-tgid">qay_slid_380442@slid.dum</p>
+<p n="Set-Cookie">PD_STATEFUL_c2f083d7-c1b1-4fae-b077-235827fe85e6=%2FcommonLogin; Path=/</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">atsToken={{request_userid}}</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="27" op="POST /commonLogin/nxsATS/TokenGen/" tl="SIGNATURE">
+<ag>
+<p n="password" t="arg:ANY;false;;;;">test1ng</p>
+<p n="rememberID" t="arg:ANY;false;;;;">on</p>
+<p n="appID" t="arg:ANY;false;;;;">I9KgqdgGblRlO2HNj4n/JyX/r2k=</p>
+<p n="TG_OP" t="arg:ANY;false;;;;">TokenGen</p>
+<p n="StarTest" t="arg:ANY;false;;;;">&lt;value&gt;</p>
+<p n="userid" t="arg:EQUALS;false;;;;">{{request_userid}}</p>
+</ag>
+<bd chs="UTF-8">userid=qay_slid_380442&amp;rememberID=on&amp;password=test1ng&amp;appID=I9KgqdgGblRlO2HNj4n%2FJyX%2Fr2k%3D&amp;TG_OP=TokenGen</bd>
+</rq>
+<rs>
+<rp id="28" t="802">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="content-language">en-US</p>
+<p n="content-length">54</p>
+<p n="content-type">application/x-www-form-urlencoded;charset=UTF-8</p>
+<p n="p3p">CP=&quot;NON CUR OTPi OUR NOR UNI&quot;</p>
+<p n="x-tgid">qay_slid_380442@slid.dum</p>
+<p n="Set-Cookie">PD_STATEFUL_c2f083d7-c1b1-4fae-b077-235827fe85e6=%2FcommonLogin; Path=/</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">atsToken={{request_userid}}</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="2" t="0">
+<m>
+<p n="HTTP-Response-Code-Text">ok</p>
+<p n="HTTP-Response-Code">200</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;S:Body&gt;&lt;S:Fault xmlns:ns3=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&lt;faultcode&gt;S:Server&lt;/faultcode&gt;&lt;faultstring&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/faultstring&gt;&lt;detail&gt;&lt;ns2:exception xmlns:ns2=&quot;http://jax-ws.dev.java.net/&quot; class=&quot;java.lang.Exception&quot;&gt;&lt;message&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/message&gt;&lt;ns2:stackTrace/&gt;&lt;/ns2:exception&gt;&lt;/detail&gt;&lt;/S:Fault&gt;&lt;/S:Body&gt;&lt;/S:Envelope&gt;</bd>
+</rp>
+</ucrr>
+<usrr>
+<rp id="3" t="0">
+<m>
+<p n="HTTP-Response-Code-Text">ok</p>
+<p n="HTTP-Response-Code">200</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;S:Body&gt;&lt;S:Fault xmlns:ns3=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&lt;faultcode&gt;S:Server&lt;/faultcode&gt;&lt;faultstring&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/faultstring&gt;&lt;detail&gt;&lt;ns2:exception xmlns:ns2=&quot;http://jax-ws.dev.java.net/&quot; class=&quot;java.lang.Exception&quot;&gt;&lt;message&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/message&gt;&lt;ns2:stackTrace/&gt;&lt;/ns2:exception&gt;&lt;/detail&gt;&lt;/S:Fault&gt;&lt;/S:Body&gt;&lt;/S:Envelope&gt;</bd>
+</rp>
+</usrr>
+</serviceImage>

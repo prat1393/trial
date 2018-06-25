@@ -1,0 +1,233 @@
+<?xml version="1.0" ?>
+
+<VSModel name="TLG_Merged" version="5">
+
+<meta>
+   <create version="7.5" buildNumber="7.5.0.812" author="lisauser" date="06/21/2014" host="cacdtd18ma8561" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="04/07/2017" host="HVDIVD18MIS0902" />
+</meta>
+
+<id>FC639BC4F94611E3AEF3180373B8C892</id>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj04LjQuMCAoOC40LjAuMjI3KSZub2Rlcz0xOTQxNzk3OA==</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+<deletedProps>
+</deletedProps>
+
+      <Companion type="com.itko.lisa.vse.stateful.protocol.java.companion.JavaProtocolCompanion" >
+      </Companion>
+
+    <Node name="Virtual Java Listener" log=""
+          type="com.itko.lisa.vse.stateful.protocol.java.listen.JavaListenStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Virtual Service Router" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If being efficient" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Most Efficient, branching to VS Image Response Selection</log>
+<then>VS Image Response Selection</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>EFFICIENT</executionMode>
+</CheckResult>
+
+<outputAsObject>true</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+
+
+
+<TargetAgents>slsdomain3Agent</TargetAgents>
+
+
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductRolloverMinConvBean_ud3l9j_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.UpdateBanConvBean_oxlwkt_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.IvrBean_ko2n9p_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanFinancialActivitiesConvBeanTracer_1bwdkt_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductAgreementBean_sd4w3n_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductActivitiesConvBean_yaed4d_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BulkMoveProductBean_l5s2ul_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.AppQueryBean_tktr17_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BulkMoveProductBean_l5s2ul_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.GroupLevelServicesBean_46g1w3_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanFinancialActivitiesBean_ukdb17_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ChangeProductConvBean_25s5p_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductEquipmentBean_25vy4r_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductRolloverMinConvBean_ud3l9j_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanActivitiesConvBean_ua4dn7_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ChangeProductConvBean_25s5p_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.TitanServicesBean_iz1fpv_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanServicesBean_3sdvt9_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanLevelAgreementConvBean_jhgc1f_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.SubscriberUsageConvBean_gwkhbn_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.SubscriberUsageConvBean_gwkhbn_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.UpdateBanConvBean_oxlwkt_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanServicesBean_3sdvt9_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductEquipmentBean_25vy4r_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.RefQueryBean_3xgipj_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.MoveProductFromBanToBanBeanTracer_1zrz8z_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductAgreementConvBean_psemcr_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.RefQueryBean_3xgipj_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.GroupLevelServicesBean_46g1w3_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanFinancialActivitiesConvBeanTracer_1bwdkt_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductAgreementBean_sd4w3n_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanFinancialActivitiesBean_ukdb17_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductServicesBean_aw5ost_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.TitanServicesBean_iz1fpv_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductAgreementConvBean_psemcr_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.BanActivitiesConvBean_ua4dn7_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.IvrBean_ko2n9p_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.AppQueryBean_tktr17_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductServicesBean_aw5ost_EOImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.MoveProductFromBanToBanBeanTracer_1zrz8z_HomeImpl_1211_WLStub</TargetClasses>
+<TargetClasses>amdocs.TlgServer.sessions.implementation.ProductActivitiesConvBean_yaed4d_HomeImpl_1211_WLStub</TargetClasses>
+    </Node>
+
+
+    <Node name="Virtual Service Router" log=""
+          type="com.itko.lisa.vse.stateful.VSRouterStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="VS Image Response Selection" > 
+
+<onerror>abort</onerror>
+<script>// This script must return either an enum entry from ExecutionMode or&#10;// a string that is the name of an enum entry.  The DYNAMIC entry may&#10;// not be returned.  It will be executed for DYNAMIC execution mode&#10;// only.&#10;import com.itko.lisa.vse.ExecutionMode;&#10;&#10;return ExecutionMode.EFFICIENT;&#10;</script>
+<liveInvocationStep>Virtual Java Live Invocation</liveInvocationStep>
+    </Node>
+
+
+    <Node name="VS Image Response Selection" log=""
+          type="com.itko.lisa.vse.stateful.ConversationalStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Virtual Java Responder" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If validating" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Image Validation, branching to Virtual Java Live Invocation</log>
+<then>Virtual Java Live Invocation</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>VALIDATION</executionMode>
+</CheckResult>
+
+<CheckResult assertTrue="true" name="If tracking" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Transaction Tracking, branching to Virtual Service Tracking</log>
+<then>Virtual Service Tracking</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>TRACK</executionMode>
+</CheckResult>
+
+<vsiSource>{{LISA_PROJ_ROOT}}/VServices/042618/JAVA/Images/TLG_Merged.vsi</vsiSource>
+<requestPropertyName>lisa.vse.request</requestPropertyName>
+<outputAsObject>true</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="Virtual Java Responder" log=""
+          type="com.itko.lisa.vse.stateful.protocol.java.respond.JavaRespondStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="false" 
+          next="Virtual Java Listener" > 
+
+<responseList>lisa.vse.response</responseList>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="Virtual Java Live Invocation" log=""
+          type="com.itko.lisa.vse.stateful.protocol.java.liveinvocation.JavaLiveInvocationStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Virtual Java Responder" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If validating" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Image Validation, branching to Virtual Service Tracking</log>
+<then>Virtual Service Tracking</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>VALIDATION</executionMode>
+</CheckResult>
+
+<outputAsObject>true</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+<requestPropertyName>lisa.vse.request</requestPropertyName>
+    </Node>
+
+
+    <Node name="Virtual Service Tracking" log=""
+          type="com.itko.lisa.vse.stateful.VSTrackingStep" 
+          version="1" 
+          uid="null" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Virtual Java Responder" > 
+
+<imageResponseProperty>lisa.vse.image.response</imageResponseProperty>
+<liveResponseProperty>lisa.vse.live.response</liveResponseProperty>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="FC648626F94611E3AEF3180373B8C892" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="FC648628F94611E3AEF3180373B8C892" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="abort" log="The test was aborted"
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="FC64AD3AF94611E3AEF3180373B8C892" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+</VSModel>

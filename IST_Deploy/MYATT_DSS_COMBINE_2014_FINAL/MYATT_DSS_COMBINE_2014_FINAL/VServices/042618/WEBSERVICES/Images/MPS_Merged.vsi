@@ -1,0 +1,128 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="1" name="MPS_042618" created="2018-04-30.07:02:01.848" lastModified="2018-04-30.07:02:02.491" version="8.4.0" buildNumber="8.4.0.227">
+<st>
+<t id="4" nd="true">
+<sp>
+<t id="5">
+<rq id="6" op="updateMemberRequest" tl="EXACT">
+<ag>
+<p n="transactionName" t="arg:EQUALS;false;;;;">UpdateMember</p>
+<p n="callingSystemId" t="arg:ANY;false;;;;">MYWORLD</p>
+<p n="transactionId" t="arg:ANY;true;;;;">MYW_1dir10cnuuvis000</p>
+<p n="slid" t="arg:EQUALS;false;;;;">qay_slid_174916</p>
+<p n="mainCTNOptOut" t="arg:EQUALS;false;;;;">Y</p>
+</ag>
+<at>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0ndXRmLTgnPz48c29hcGVudjpFbnZlbG9wZSB4bWxuczpzb2FwZW52PSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VudmVsb3BlLyI+PHNvYXBlbnY6Qm9keT48dXBkYXRlTWVtYmVyUmVxdWVzdCB4bWxucz0iaHR0cDovL21wc3lzLnJpbC5hdHQuY29tL3VwZGF0ZW1lbWJlcnJlcXVlc3QvdjEiPjx0cmFuc2FjdGlvbk5hbWU+VXBkYXRlTWVtYmVyPC90cmFuc2FjdGlvbk5hbWU+PGNhbGxpbmdTeXN0ZW1JZD5NWVdPUkxEPC9jYWxsaW5nU3lzdGVtSWQ+PHRyYW5zYWN0aW9uSWQ+TVlXXzFkaXIxMGNudXV2aXMwMDA8L3RyYW5zYWN0aW9uSWQ+PHNsaWQ+cWF5X3NsaWRfMTc0OTE2PC9zbGlkPjxtYWluQ1ROT3B0T3V0Plk8L21haW5DVE5PcHRPdXQ+PC91cGRhdGVNZW1iZXJSZXF1ZXN0Pjwvc29hcGVudjpCb2R5Pjwvc29hcGVudjpFbnZlbG9wZT4=</p>
+<p n="xmlns">http://mpsys.ril.att.com/updatememberrequest/v1</p>
+<p n="recorded_raw_request">&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos;?&gt;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Body&gt;&lt;updateMemberRequest xmlns=&quot;http://mpsys.ril.att.com/updatememberrequest/v1&quot;&gt;&lt;transactionName&gt;UpdateMember&lt;/transactionName&gt;&lt;callingSystemId&gt;MYWORLD&lt;/callingSystemId&gt;&lt;transactionId&gt;MYW_1dir10cnuuvis000&lt;/transactionId&gt;&lt;slid&gt;qay_slid_174916&lt;/slid&gt;&lt;mainCTNOptOut&gt;Y&lt;/mainCTNOptOut&gt;&lt;/updateMemberRequest&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/UpdateMemberRILMPSWeb/UpdateMemberRILService</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">text/xml, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+<p n="Content-Type">text/xml; charset=utf-8</p>
+<p n="CSI_RR_PAIR_FILE">/opt/app/t1eam4c11/stubbing/branches/b1708/1708_p1_Grid_On/1708_myATT_Recording_GridOn/1708_myATT_Recording_GridOn/VFRAME_Process/mps_01_180426_0507.log</p>
+<p n="InitializeRRPairs">true</p>
+<p n="CloseRRPairs">true</p>
+<p n="CSI_PAIR_INDEX">0</p>
+<p n="STUB_VALIDATION_KEY_TXID">OLAM_LGN_521414577_152421510612400000_t1eam4c11_5_2018/04/27 16:04:01#####SESSIONIDf3II6xyhpkNJaQ9ZQ34TQ0DLrsaRM4ZTO3Nqj9gobyCjJ0dljaXk!-607446635!1524863016097#####LOGINIDqay_slid_174916@slid.dum</p>
+<p n="CSI_STATUS_CODE">200</p>
+<p n="Pragma">no-cache</p>
+<p n="User-Agent">Java/1.7.0_72</p>
+<p n="Host">t1eam4c3.vci.att.com:7001</p>
+<p n="Content-Length">461</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos;?&gt;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Body&gt;&lt;updateMemberRequest xmlns=&quot;http://mpsys.ril.att.com/updatememberrequest/v1&quot;&gt;&lt;transactionName&gt;UpdateMember&lt;/transactionName&gt;&lt;callingSystemId&gt;MYWORLD&lt;/callingSystemId&gt;&lt;transactionId&gt;MYW_1dir10cnuuvis000&lt;/transactionId&gt;&lt;slid&gt;qay_slid_174916&lt;/slid&gt;&lt;mainCTNOptOut&gt;Y&lt;/mainCTNOptOut&gt;&lt;/updateMemberRequest&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;</bd>
+</rq>
+<rs>
+<rp id="7" t="79">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Length">919</p>
+<p n="X-Powered-By">Servlet/3.0 JSP/2.2</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos;?&gt;&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soap:Body&gt;&lt;ns5:updateMemberResponse xmlns:ns5=&quot;http://mpsys.ril.att.com/updatememberresponse/v1&quot; xmlns=&quot;http://mpsys.ril.att.com/moveproductbybanrequest/v1&quot; xmlns:ns6=&quot;http://mpsys.ril.att.com/pendingdeletebanrequest/v1&quot; xmlns:ns8=&quot;http://mpsys.ril.att.com/updatebybanrequest/v1&quot; xmlns:ns7=&quot;http://mpsys.ril.att.com/pendingdeletebanresponse/v1&quot; xmlns:ns9=&quot;http://mpsys.ril.att.com/updatebybanresponse/v1&quot; xmlns:ns11=&quot;http://mpsys.ril.att.com/nullifybanresponse/v1&quot; xmlns:ns10=&quot;http://mpsys.ril.att.com/nullifybanrequest/v1&quot; xmlns:ns2=&quot;http://mpsys.ril.att.com/moveproductbybanresponse/v1&quot; xmlns:ns4=&quot;http://mpsys.ril.att.com/updatememberrequest/v1&quot; xmlns:ns3=&quot;http://cio.att.com/commonheader/v3&quot;&gt;&lt;ns5:transactionId&gt;{{=request_transactionId;/*MYW_1dir10cnuuvis000*/}}&lt;/ns5:transactionId&gt;&lt;/ns5:updateMemberResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="8" op="updateMemberRequest" tl="SIGNATURE">
+<ag>
+<p n="transactionName" t="arg:EQUALS;false;;;;">UpdateMember</p>
+<p n="callingSystemId" t="arg:EQUALS;false;;;;">MYWORLD</p>
+<p n="transactionId" t="arg:EQUALS;true;;;;">MYW_1dir10cnuuvis000</p>
+<p n="slid" t="arg:EQUALS;false;;;;">qay_slid_174916</p>
+<p n="mainCTNOptOut" t="arg:EQUALS;false;;;;">Y</p>
+</ag>
+<at>
+<p n="recorded_raw_request_bytes">PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0ndXRmLTgnPz48c29hcGVudjpFbnZlbG9wZSB4bWxuczpzb2FwZW52PSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VudmVsb3BlLyI+PHNvYXBlbnY6Qm9keT48dXBkYXRlTWVtYmVyUmVxdWVzdCB4bWxucz0iaHR0cDovL21wc3lzLnJpbC5hdHQuY29tL3VwZGF0ZW1lbWJlcnJlcXVlc3QvdjEiPjx0cmFuc2FjdGlvbk5hbWU+VXBkYXRlTWVtYmVyPC90cmFuc2FjdGlvbk5hbWU+PGNhbGxpbmdTeXN0ZW1JZD5NWVdPUkxEPC9jYWxsaW5nU3lzdGVtSWQ+PHRyYW5zYWN0aW9uSWQ+TVlXXzFkaXIxMGNudXV2aXMwMDA8L3RyYW5zYWN0aW9uSWQ+PHNsaWQ+cWF5X3NsaWRfMTc0OTE2PC9zbGlkPjxtYWluQ1ROT3B0T3V0Plk8L21haW5DVE5PcHRPdXQ+PC91cGRhdGVNZW1iZXJSZXF1ZXN0Pjwvc29hcGVudjpCb2R5Pjwvc29hcGVudjpFbnZlbG9wZT4=</p>
+<p n="xmlns">http://mpsys.ril.att.com/updatememberrequest/v1</p>
+<p n="recorded_raw_request">&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos;?&gt;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Body&gt;&lt;updateMemberRequest xmlns=&quot;http://mpsys.ril.att.com/updatememberrequest/v1&quot;&gt;&lt;transactionName&gt;UpdateMember&lt;/transactionName&gt;&lt;callingSystemId&gt;MYWORLD&lt;/callingSystemId&gt;&lt;transactionId&gt;MYW_1dir10cnuuvis000&lt;/transactionId&gt;&lt;slid&gt;qay_slid_174916&lt;/slid&gt;&lt;mainCTNOptOut&gt;Y&lt;/mainCTNOptOut&gt;&lt;/updateMemberRequest&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;</p>
+</at>
+<m>
+<p n="HTTP-Method">POST</p>
+<p n="HTTP-URI">/UpdateMemberRILMPSWeb/UpdateMemberRILService</p>
+<p n="HTTP-Version">HTTP/1.1</p>
+<p n="Accept">text/xml, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2</p>
+<p n="Content-Type">text/xml; charset=utf-8</p>
+<p n="CSI_RR_PAIR_FILE">/opt/app/t1eam4c11/stubbing/branches/b1708/1708_p1_Grid_On/1708_myATT_Recording_GridOn/1708_myATT_Recording_GridOn/VFRAME_Process/mps_01_180426_0507.log</p>
+<p n="InitializeRRPairs">true</p>
+<p n="CloseRRPairs">true</p>
+<p n="CSI_PAIR_INDEX">0</p>
+<p n="STUB_VALIDATION_KEY_TXID">OLAM_LGN_521414577_152421510612400000_t1eam4c11_5_2018/04/27 16:04:01#####SESSIONIDf3II6xyhpkNJaQ9ZQ34TQ0DLrsaRM4ZTO3Nqj9gobyCjJ0dljaXk!-607446635!1524863016097#####LOGINIDqay_slid_174916@slid.dum</p>
+<p n="CSI_STATUS_CODE">200</p>
+<p n="Pragma">no-cache</p>
+<p n="User-Agent">Java/1.7.0_72</p>
+<p n="Host">t1eam4c3.vci.att.com:7001</p>
+<p n="Content-Length">461</p>
+<p n="lisa.vse.private.allow.dups">true</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos;?&gt;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Body&gt;&lt;updateMemberRequest xmlns=&quot;http://mpsys.ril.att.com/updatememberrequest/v1&quot;&gt;&lt;transactionName&gt;UpdateMember&lt;/transactionName&gt;&lt;callingSystemId&gt;MYWORLD&lt;/callingSystemId&gt;&lt;transactionId&gt;MYW_1dir10cnuuvis000&lt;/transactionId&gt;&lt;slid&gt;qay_slid_174916&lt;/slid&gt;&lt;mainCTNOptOut&gt;Y&lt;/mainCTNOptOut&gt;&lt;/updateMemberRequest&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;</bd>
+</rq>
+<rs>
+<rp id="9" t="79">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Content-Length">919</p>
+<p n="X-Powered-By">Servlet/3.0 JSP/2.2</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos;?&gt;&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soap:Body&gt;&lt;ns5:updateMemberResponse xmlns:ns5=&quot;http://mpsys.ril.att.com/updatememberresponse/v1&quot; xmlns=&quot;http://mpsys.ril.att.com/moveproductbybanrequest/v1&quot; xmlns:ns6=&quot;http://mpsys.ril.att.com/pendingdeletebanrequest/v1&quot; xmlns:ns8=&quot;http://mpsys.ril.att.com/updatebybanrequest/v1&quot; xmlns:ns7=&quot;http://mpsys.ril.att.com/pendingdeletebanresponse/v1&quot; xmlns:ns9=&quot;http://mpsys.ril.att.com/updatebybanresponse/v1&quot; xmlns:ns11=&quot;http://mpsys.ril.att.com/nullifybanresponse/v1&quot; xmlns:ns10=&quot;http://mpsys.ril.att.com/nullifybanrequest/v1&quot; xmlns:ns2=&quot;http://mpsys.ril.att.com/moveproductbybanresponse/v1&quot; xmlns:ns4=&quot;http://mpsys.ril.att.com/updatememberrequest/v1&quot; xmlns:ns3=&quot;http://cio.att.com/commonheader/v3&quot;&gt;&lt;ns5:transactionId&gt;{{=request_transactionId;/*MYW_1dir10cnuuvis000*/}}&lt;/ns5:transactionId&gt;&lt;/ns5:updateMemberResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="3" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/xml</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#10;  &lt;S:Body&gt;&#10;    &lt;S:Fault xmlns:ns3=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&#10;      &lt;faultcode&gt;S:Server&lt;/faultcode&gt;&#10;      &lt;faultstring&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/faultstring&gt;&#10;      &lt;detail&gt;&#10;        &lt;ns2:exception xmlns:ns2=&quot;http://jax-ws.dev.java.net/&quot; class=&quot;java.lang.Exception&quot;&gt;&#10;          &lt;message&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/message&gt;&#10;          &lt;ns2:stackTrace&gt;&#10;          &lt;/ns2:stackTrace&gt;&#10;        &lt;/ns2:exception&gt;&#10;      &lt;/detail&gt;&#10;    &lt;/S:Fault&gt;&#10;  &lt;/S:Body&gt;&#10;&lt;/S:Envelope&gt;&#10;&#10;</bd>
+</rp>
+</ucrr>
+<usrr>
+<rp id="2" t="0">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="Server">LISA/Virtual-Environment-Server</p>
+<p n="Date">{{=httpNow()}}</p>
+<p n="X-Powered-By">LISA/{{=lisaVersionString()}}</p>
+<p n="Content-Type">text/xml</p>
+</m>
+<bd chs="UTF-8">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#10;  &lt;S:Body&gt;&#10;    &lt;S:Fault xmlns:ns3=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&#10;      &lt;faultcode&gt;S:Server&lt;/faultcode&gt;&#10;      &lt;faultstring&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/faultstring&gt;&#10;      &lt;detail&gt;&#10;        &lt;ns2:exception xmlns:ns2=&quot;http://jax-ws.dev.java.net/&quot; class=&quot;java.lang.Exception&quot;&gt;&#10;          &lt;message&gt;The LISA VSE service could not match your request to a recorded request. Consider expanding your service image.&lt;/message&gt;&#10;          &lt;ns2:stackTrace&gt;&#10;          &lt;/ns2:stackTrace&gt;&#10;        &lt;/ns2:exception&gt;&#10;      &lt;/detail&gt;&#10;    &lt;/S:Fault&gt;&#10;  &lt;/S:Body&gt;&#10;&lt;/S:Envelope&gt;&#10;&#10;</bd>
+</rp>
+</usrr>
+</serviceImage>

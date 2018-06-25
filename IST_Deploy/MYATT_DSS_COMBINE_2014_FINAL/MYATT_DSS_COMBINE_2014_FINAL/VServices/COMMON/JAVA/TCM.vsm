@@ -1,0 +1,191 @@
+<?xml version="1.0" ?>
+
+<VSModel name="TCM" version="5">
+
+<meta>
+   <create version="6.0.9" buildNumber="6.0.9.26" author="dk8891" date="08/22/2012" host="CACDTL01DK8891" />
+   <lastEdited version="8.4.0" buildNumber="8.4.0.227" author="admin" date="01/05/2018" host="HVDIVD00MIS1018" />
+</meta>
+
+<id>63333862356138352D616264322D3437</id>
+<IsInProject>true</IsInProject>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj04LjQuMCAoOC40LjAuMjI3KSZub2Rlcz0tODQyNjc0Nzcz</sig>
+<subprocess>false</subprocess>
+
+<initState>
+</initState>
+
+<resultState>
+</resultState>
+
+<deletedProps>
+</deletedProps>
+
+      <Companion type="com.itko.lisa.vse.stateful.protocol.java.companion.JavaProtocolCompanion" >
+      </Companion>
+
+    <Node name="Java Listen" log=""
+          type="com.itko.lisa.vse.stateful.protocol.java.listen.JavaListenStep" 
+          version="1" 
+          uid="63333862356138352D616264322D3437-Java+Listen" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Virtual Service Router" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If being efficient" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Most Efficient, branching to VS Image Response Selection</log>
+<then>VS Image Response Selection</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>EFFICIENT</executionMode>
+</CheckResult>
+
+<outputAsObject>true</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+<TargetAgents>qcef04Agent</TargetAgents>
+<TargetAgents>qcef02Agent</TargetAgents>
+<TargetClasses>com.att.myworld.sl.server.impl.mobEnabler.connection.MobilityEnablerConnectionManager</TargetClasses>
+<TargetClasses>com.cingular.cef.automation.businesslayer.telegence.properties.TelegenceConnectionManager</TargetClasses>
+<TargetClasses>com.att.myworld.sl.server.impl.telegence.connection.TelegenceConnectionManager</TargetClasses>
+    </Node>
+
+
+    <Node name="Virtual Service Router" log=""
+          type="com.itko.lisa.vse.stateful.VSRouterStep" 
+          version="1" 
+          uid="63333862356138352D616264322D3437-Virtual+Service+Router" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="VS Image Response Selection" > 
+
+<onerror>abort</onerror>
+<script>// This script must return either an enum entry from ExecutionMode or&#10;// a string that is the name of an enum entry.  The DYNAMIC entry may&#10;// not be returned.  It will be executed for DYNAMIC execution mode&#10;// only.&#10;import com.itko.lisa.vse.ExecutionMode;&#10;&#10;return ExecutionMode.EFFICIENT;&#10;</script>
+<liveInvocationStep>Java Live Invocation</liveInvocationStep>
+    </Node>
+
+
+    <Node name="VS Image Response Selection" log=""
+          type="com.itko.lisa.vse.stateful.ConversationalStep" 
+          version="1" 
+          uid="63333862356138352D616264322D3437-VS+Image+Response+Selection" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Java Respond" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If validating" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Image Validation, branching to Java Live Invocation</log>
+<then>Java Live Invocation</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>VALIDATION</executionMode>
+</CheckResult>
+
+<CheckResult assertTrue="true" name="If tracking" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Transaction Tracking, branching to Virtual Service Tracking</log>
+<then>Virtual Service Tracking</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>TRACK</executionMode>
+</CheckResult>
+
+<vsiSource>{{LISA_PROJ_ROOT}}/VServices/COMMON/JAVA/Images/TCM.vsi</vsiSource>
+<requestPropertyName>lisa.vse.request</requestPropertyName>
+<outputAsObject>true</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="Java Respond" log=""
+          type="com.itko.lisa.vse.stateful.protocol.java.respond.JavaRespondStep" 
+          version="1" 
+          uid="63333862356138352D616264322D3437-Java+Respond" 
+          think="0" 
+          useFilters="true" 
+          quiet="false" 
+          next="Java Listen" > 
+
+<responseList>lisa.vse.response</responseList>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="Java Live Invocation" log=""
+          type="com.itko.lisa.vse.stateful.protocol.java.liveinvocation.JavaLiveInvocationStep" 
+          version="1" 
+          uid="63333862356138352D616264322D3437-Java+Live+Invocation" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Java Respond" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="If validating" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
+<log>Current execution mode is Image Validation, branching to Virtual Service Tracking</log>
+<then>Virtual Service Tracking</then>
+<valueToAssertKey></valueToAssertKey>
+        <executionMode>VALIDATION</executionMode>
+</CheckResult>
+
+<outputAsObject>true</outputAsObject>
+<onExceptionStep>abort</onExceptionStep>
+<requestPropertyName>lisa.vse.request</requestPropertyName>
+    </Node>
+
+
+    <Node name="Virtual Service Tracking" log=""
+          type="com.itko.lisa.vse.stateful.VSTrackingStep" 
+          version="1" 
+          uid="63333862356138352D616264322D3437-Virtual+Service+Tracking" 
+          think="0" 
+          useFilters="true" 
+          quiet="true" 
+          next="Java Respond" > 
+
+<imageResponseProperty>lisa.vse.image.response</imageResponseProperty>
+<liveResponseProperty>lisa.vse.live.response</liveResponseProperty>
+<onExceptionStep>abort</onExceptionStep>
+    </Node>
+
+
+    <Node name="abort" log="The test was aborted"
+          type="com.itko.lisa.test.AbortStep" 
+          version="1" 
+          uid="63333862356138352D616264322D3437-abort" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="fail" log=""
+          type="com.itko.lisa.test.Abend" 
+          version="1" 
+          uid="63333862356138352D616264322D3437-fail" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
+          version="1" 
+          uid="63333862356138352D616264322D3437-end" 
+          think="0h" 
+          useFilters="true" 
+          quiet="true" 
+          next="fail" > 
+
+    </Node>
+
+
+</VSModel>

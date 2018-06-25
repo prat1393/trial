@@ -1,0 +1,116 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="1" name="ITKO_LOGIN" created="2012-09-07.20:29:35.536" lastModified="2012-10-11.19:04:39.091" version="6.0.9">
+<st>
+<t id="23" nd="true">
+<sp>
+<t id="26">
+<rq id="27" op="LoginModule.login" tl="EXACT">
+</rq>
+<rs>
+<rp id="28" t="662">
+<bd>&lt;lisa.vse.java.response&gt;&#13;&#10;&lt;lisa.vse.java.response.result&gt;&#13;&#10;&lt;boolean&gt;true&lt;/boolean&gt;&#10;&lt;/lisa.vse.java.response.result&gt;&#13;&#10;&lt;/lisa.vse.java.response&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="24" op="LoginModule.login" tl="OPERATION">
+</rq>
+<rs>
+<rp id="25" t="662">
+<bd>&lt;lisa.vse.java.response&gt;&#10;&lt;lisa.vse.java.response.result&gt;&#10;&lt;boolean&gt;true&lt;/boolean&gt;&#10;&lt;/lisa.vse.java.response.result&gt;&#10;&lt;/lisa.vse.java.response&gt;</bd>
+</rp>
+</rs>
+</t>
+<t id="29" nd="true">
+<sp>
+<t id="32">
+<rq id="33" op="LoginModule.commit" tl="EXACT">
+</rq>
+<rs>
+<rp id="34" t="18">
+<bd>&lt;lisa.vse.java.response&gt;&#13;&#10;&lt;lisa.vse.java.response.result&gt;&#13;&#10;&lt;boolean&gt;true&lt;/boolean&gt;&#10;&lt;/lisa.vse.java.response.result&gt;&#13;&#10;&lt;/lisa.vse.java.response&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="30" op="LoginModule.commit" tl="OPERATION">
+</rq>
+<rs>
+<rp id="31" t="18">
+<bd>&lt;lisa.vse.java.response&gt;&#10;&lt;lisa.vse.java.response.result&gt;&#10;&lt;boolean&gt;true&lt;/boolean&gt;&#10;&lt;/lisa.vse.java.response.result&gt;&#10;&lt;/lisa.vse.java.response&gt;</bd>
+</rp>
+</rs>
+</t>
+<t id="94" nd="true">
+<sp>
+<t id="26">
+<rq id="27" op="LoginModule.logout" tl="EXACT">
+</rq>
+<rs>
+<rp id="28" t="662">
+<bd>&lt;lisa.vse.java.response&gt;&#13;&#10;&lt;lisa.vse.java.response.result&gt;&#13;&#10;&lt;boolean&gt;true&lt;/boolean&gt;&#10;&lt;/lisa.vse.java.response.result&gt;&#13;&#10;&lt;/lisa.vse.java.response&gt;&#13;&#10;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="24" op="LoginModule.logout" tl="OPERATION">
+</rq>
+<rs>
+<rp id="25" t="662">
+<bd>&lt;lisa.vse.java.response&gt;&#10;&lt;lisa.vse.java.response.result&gt;&#10;&lt;boolean&gt;true&lt;/boolean&gt;&#10;&lt;/lisa.vse.java.response.result&gt;&#10;&lt;/lisa.vse.java.response&gt;</bd>
+</rp>
+</rs>
+</t>
+<t id="95" nd="true">
+<sp>
+<t id="26">
+<rq id="27" op="LoginModule.abort" tl="EXACT">
+</rq>
+<rs>
+<rp id="28" t="662">
+<bd>&lt;lisa.vse.java.response&gt;&#10;&lt;lisa.vse.java.response.result&gt;&#10;&lt;boolean&gt;false&lt;/boolean&gt;&#10;&lt;/lisa.vse.java.response.result&gt;&#10;&lt;/lisa.vse.java.response&gt;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="24" op="LoginModule.abort" tl="OPERATION">
+</rq>
+<rs>
+<rp id="25" t="662">
+<bd>&lt;lisa.vse.java.response&gt;&#10;&lt;lisa.vse.java.response.result&gt;&#10;&lt;boolean&gt;false&lt;/boolean&gt;&#10;&lt;/lisa.vse.java.response.result&gt;&#10;&lt;/lisa.vse.java.response&gt;</bd>
+</rp>
+</rs>
+</t>
+<t id="96" nd="true">
+<sp>
+<t id="41">
+<rq id="42" op="LoginModule.initialize" tl="EXACT">
+</rq>
+<rs>
+<rp id="43" t="1817">
+<bd>&lt;lisa.vse.java.response&gt;&#13;&#10;&lt;/lisa.vse.java.response&gt;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="39" op="LoginModule.initialize" tl="OPERATION">
+</rq>
+<rs>
+<rp id="40" t="1817">
+<bd>&lt;lisa.vse.java.response&gt;&#10;&lt;/lisa.vse.java.response&gt;</bd>
+</rp>
+</rs>
+</t>
+</st>
+<ucrr>
+<rp id="92" t="0">
+<bd>return com.itko.lisa.remote.instrument.Rules.NO_HIJACK;</bd>
+</rp>
+</ucrr>
+<usrr>
+<rp id="93" t="0">
+<bd>return com.itko.lisa.remote.instrument.Rules.NO_HIJACK;</bd>
+</rp>
+</usrr>
+</serviceImage>
