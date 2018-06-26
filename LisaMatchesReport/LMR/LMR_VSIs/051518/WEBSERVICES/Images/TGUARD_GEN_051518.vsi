@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="1" name="TGUARD_GEN_051518" created="2017-10-30.23:16:41.481" lastModified="2018-03-01.12:47:10.771" version="8.4.0" buildNumber="8.4.0.227">
+<st>
+<t id="2" nd="true">
+<sp>
+<t id="3">
+<rq id="4" op="POST /commonLogin/nxsATS/TokenGen/" tl="EXACT">
+<ag>
+<p n="password" t="arg:ANY;false;;;;">test1ng</p>
+<p n="rememberID" t="arg:ANY;false;;;;">on</p>
+<p n="appID" t="arg:ANY;false;;;;">I9KgqdgGblRlO2HNj4n/JyX/r2k=</p>
+<p n="TG_OP" t="arg:ANY;false;;;CASE_INSENSITIVE;">TokenGen</p>
+<p n="StarTest" t="arg:ANY;false;;;;">&lt;value&gt;</p>
+<p n="userid" t="arg:EQUALS;false;;;;">{{request_userid}}</p>
+</ag>
+<bd chs="UTF-8">userid=qay_slid_380442&amp;rememberID=on&amp;password=test1ng&amp;appID=I9KgqdgGblRlO2HNj4n%2FJyX%2Fr2k%3D&amp;TG_OP=TokenGen</bd>
+</rq>
+<rs>
+<rp id="5" t="802">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="content-language">en-US</p>
+<p n="content-length">54</p>
+<p n="content-type">application/x-www-form-urlencoded;charset=UTF-8</p>
+<p n="p3p">CP=&quot;NON CUR OTPi OUR NOR UNI&quot;</p>
+<p n="x-tgid">qay_slid_380442@slid.dum</p>
+<p n="Set-Cookie">PD_STATEFUL_c2f083d7-c1b1-4fae-b077-235827fe85e6=%2FcommonLogin; Path=/</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">atsToken={{request_userid}}</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="6" op="POST /commonLogin/nxsATS/TokenGen/" tl="SIGNATURE">
+<ag>
+<p n="password" t="arg:ANY;false;;;;">test1ng</p>
+<p n="rememberID" t="arg:ANY;false;;;;">on</p>
+<p n="appID" t="arg:ANY;false;;;;">I9KgqdgGblRlO2HNj4n/JyX/r2k=</p>
+<p n="TG_OP" t="arg:ANY;false;;;CASE_INSENSITIVE;">TokenGen</p>
+<p n="StarTest" t="arg:ANY;false;;;;">&lt;value&gt;</p>
+<p n="userid" t="arg:EQUALS;false;;;;">{{request_userid}}</p>
+</ag>
+<bd chs="UTF-8">userid=qay_slid_380442&amp;rememberID=on&amp;password=test1ng&amp;appID=I9KgqdgGblRlO2HNj4n%2FJyX%2Fr2k%3D&amp;TG_OP=TokenGen</bd>
+</rq>
+<rs>
+<rp id="7" t="802">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="content-language">en-US</p>
+<p n="content-length">54</p>
+<p n="content-type">application/x-www-form-urlencoded;charset=UTF-8</p>
+<p n="p3p">CP=&quot;NON CUR OTPi OUR NOR UNI&quot;</p>
+<p n="x-tgid">qay_slid_380442@slid.dum</p>
+<p n="Set-Cookie">PD_STATEFUL_c2f083d7-c1b1-4fae-b077-235827fe85e6=%2FcommonLogin; Path=/</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">atsToken={{request_userid}}</bd>
+</rp>
+</rs>
+</t>
+<t id="8" nd="true">
+<sp>
+<t id="9">
+<rq id="10" op="POST /commonLogin/nxsATS/TokenGen" tl="EXACT">
+<ag>
+<p n="password" t="arg:ANY;false;;;;">test1ng</p>
+<p n="rememberID" t="arg:ANY;false;;;;">on</p>
+<p n="appID" t="arg:ANY;false;;;;">I9KgqdgGblRlO2HNj4n/JyX/r2k=</p>
+<p n="TG_OP" t="arg:ANY;false;;;CASE_INSENSITIVE;">TokenGen</p>
+<p n="StarTest" t="arg:ANY;false;;;;">&lt;value&gt;</p>
+<p n="userid" t="arg:EQUALS;false;;;;">{{request_userid}}</p>
+</ag>
+<bd chs="UTF-8">userid=qay_slid_380442&amp;rememberID=on&amp;password=test1ng&amp;appID=I9KgqdgGblRlO2HNj4n%2FJyX%2Fr2k%3D&amp;TG_OP=TokenGen</bd>
+</rq>
+<rs>
+<rp id="11" t="802">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="content-language">en-US</p>
+<p n="content-length">54</p>
+<p n="content-type">application/x-www-form-urlencoded;charset=UTF-8</p>
+<p n="p3p">CP=&quot;NON CUR OTPi OUR NOR UNI&quot;</p>
+<p n="x-tgid">qay_slid_380442@slid.dum</p>
+<p n="Set-Cookie">PD_STATEFUL_c2f083d7-c1b1-4fae-b077-235827fe85e6=%2FcommonLogin; Path=/</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">atsToken={{request_userid}}</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="12" op="POST /commonLogin/nxsATS/TokenGen" tl="SIGNATURE">
+<ag>
+<p n="password" t="arg:ANY;false;;;;">test1ng</p>
+<p n="rememberID" t="arg:ANY;false;;;;">on</p>
+<p n="appID" t="arg:ANY;false;;;;">I9KgqdgGblRlO2HNj4n/JyX/r2k=</p>
+<p n="TG_OP" t="arg:ANY;false;;;CASE_INSENSITIVE;">TokenGen</p>
+<p n="StarTest" t="arg:ANY;false;;;;">&lt;value&gt;</p>
+<p n="userid" t="arg:EQUALS;false;;;;">{{request_userid}}</p>
+</ag>
+<bd chs="UTF-8">userid=qay_slid_380442&amp;rememberID=on&amp;password=test1ng&amp;appID=I9KgqdgGblRlO2HNj4n%2FJyX%2Fr2k%3D&amp;TG_OP=TokenGen</bd>
+</rq>
+<rs>
+<rp id="13" t="802">
+<m>
+<p n="HTTP-Response-Code">200</p>
+<p n="HTTP-Response-Code-Text">OK</p>
+<p n="content-language">en-US</p>
+<p n="content-length">54</p>
+<p n="content-type">application/x-www-form-urlencoded;charset=UTF-8</p>
+<p n="p3p">CP=&quot;NON CUR OTPi OUR NOR UNI&quot;</p>
+<p n="x-tgid">qay_slid_380442@slid.dum</p>
+<p n="Set-Cookie">PD_STATEFUL_c2f083d7-c1b1-4fae-b077-235827fe85e6=%2FcommonLogin; Path=/</p>
+<p n="Date">{{=httpNow()}}</p>
+</m>
+<bd chs="UTF-8">atsToken={{request_userid}}</bd>
+</rp>
+</rs>
+</t>
+</st>
+</serviceImage>

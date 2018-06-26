@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+
+<serviceImage id="1" name="ENABLER_051518" created="2018-06-25.10:30:29.852" lastModified="2018-06-25.10:30:29.852" version="6.0.9">
+<st>
+<t id="2" nd="true" n="WIDE">
+<sp>
+<t id="5">
+<rq id="6" op="CM9PerformanceIndicatorServicesBean_4qfjec_EOImpl_1036_WLStub.getRatedPerformanceIndicators" tl="EXACT">
+<ag>
+<p n="arg0_STRING" t="arg:EQUALS;false;;;;">MTTDLS</p>
+<p n="arg1_AMDOCS_CSM3G_DATATYPES_CUSTOMERIDSINFO_EXTERNALID_EXTERNALID" t="arg:EQUALS;false;;;;">177068304730</p>
+<p n="arg1_AMDOCS_CSM3G_DATATYPES_CUSTOMERIDSINFO_CUSTOMERID_CUSTOMERNO" t="arg:EQUALS;false;;;;">-1061109568</p>
+<p n="arg2_AMDOCS_CSM3G_DATATYPES_SUBSCRIBERIDSINFO_EXTERNALID_EXTERNALID" t="arg:EQUALS;false;;;;">9366452060</p>
+<p n="arg2_AMDOCS_CSM3G_DATATYPES_SUBSCRIBERIDSINFO_SUBSCRIBERID_SUBSCRNUMBER" t="arg:EQUALS;false;;;;">-1061109568</p>
+<p n="arg3" t="arg:EQUALS;false;;;;">null</p>
+<p n="arg4" t="arg:EQUALS;false;;;;">null</p>
+<p n="arg5_AMDOCS_RPR_DATATYPES_EXTERNALSTRUCTURESINFO_EXTERNALSTRUCTURE_STRING_0" t="arg:EQUALS;false;;;;">DATA</p>
+<p n="arg5_AMDOCS_RPR_DATATYPES_EXTERNALSTRUCTURESINFO_EXTERNALSTRUCTURE_STRING_1" t="arg:EQUALS;false;;;;">N</p>
+<p n="arg6_AMDOCS_RPR_DATATYPES_ADDITIONALQUERYPARAMETERS_PARAMETER2" t="arg:EQUALS;false;;;;">__NULL</p>
+<p n="arg6_AMDOCS_RPR_DATATYPES_ADDITIONALQUERYPARAMETERS_PARAMETER3" t="arg:EQUALS;false;;;;">__NULL</p>
+<p n="arg6_AMDOCS_RPR_DATATYPES_ADDITIONALQUERYPARAMETERS_PARAMETER4" t="arg:EQUALS;false;;;;">__NULL</p>
+<p n="arg6_AMDOCS_RPR_DATATYPES_ADDITIONALQUERYPARAMETERS_PARAMETER1" t="arg:EQUALS;false;;;;">DLS  G24389156</p>
+<p n="arg7" t="arg:EQUALS;false;;;;">null</p>
+<p n="arg8_STRING" t="arg:ANY;false;;;;">PLACE_HOLDER</p>
+</ag>
+</rq>
+<rs>
+<rp id="7" t="357">
+<bd>&lt;lisa.vse.java.response&gt;&#10;&lt;lisa.vse.java.response.result&gt;&#10;&lt;amdocs.rpr.datatypes.PerformanceIndicatorsInfo&gt;  &lt;performanceIndicatorsData&gt;__NULL&lt;/performanceIndicatorsData&gt;  &lt;l9GroupIndInfo&gt;__NULL&lt;/l9GroupIndInfo&gt;  &lt;paginationInfo&gt;    &lt;pageSize&gt;500&lt;/pageSize&gt;    &lt;pageNumber&gt;1&lt;/pageNumber&gt;    &lt;hasMore&gt;78&lt;/hasMore&gt;    &lt;numberOfRows&gt;0&lt;/numberOfRows&gt;  &lt;/paginationInfo&gt;  &lt;l9GroupMembersInfo/&gt;  &lt;l9CycleStartDateInfo&gt;    &lt;l9CycleStartDateInfo&gt;__NULL&lt;/l9CycleStartDateInfo&gt;  &lt;/l9CycleStartDateInfo&gt;&lt;/amdocs.rpr.datatypes.PerformanceIndicatorsInfo&gt;&#10;&lt;/lisa.vse.java.response.result&gt;&#10;&lt;/lisa.vse.java.response&gt;&#10;</bd>
+</rp>
+</rs>
+</t>
+</sp>
+<rq id="3" op="CM9PerformanceIndicatorServicesBean_4qfjec_EOImpl_1036_WLStub.getRatedPerformanceIndicators" tl="SIGNATURE">
+<ag>
+<p n="arg0_STRING" t="arg:EQUALS;false;;;;">MTTDLS</p>
+<p n="arg1_AMDOCS_CSM3G_DATATYPES_CUSTOMERIDSINFO_EXTERNALID_EXTERNALID" t="arg:EQUALS;false;;;;">177068283594</p>
+<p n="arg1_AMDOCS_CSM3G_DATATYPES_CUSTOMERIDSINFO_CUSTOMERID_CUSTOMERNO" t="arg:EQUALS;false;;;;">-1061109568</p>
+<p n="arg2_AMDOCS_CSM3G_DATATYPES_SUBSCRIBERIDSINFO_EXTERNALID_EXTERNALID" t="arg:EQUALS;false;;;;">9039008594</p>
+<p n="arg2_AMDOCS_CSM3G_DATATYPES_SUBSCRIBERIDSINFO_SUBSCRIBERID_SUBSCRNUMBER" t="arg:EQUALS;false;;;;">-1061109568</p>
+<p n="arg3" t="arg:EQUALS;false;;;;">null</p>
+<p n="arg4" t="arg:EQUALS;false;;;;">null</p>
+<p n="arg5_AMDOCS_RPR_DATATYPES_EXTERNALSTRUCTURESINFO_EXTERNALSTRUCTURE_STRING_0" t="arg:EQUALS;false;;;;">DATA</p>
+<p n="arg5_AMDOCS_RPR_DATATYPES_EXTERNALSTRUCTURESINFO_EXTERNALSTRUCTURE_STRING_1" t="arg:EQUALS;false;;;;">N</p>
+<p n="arg6_AMDOCS_RPR_DATATYPES_ADDITIONALQUERYPARAMETERS_PARAMETER3" t="arg:EQUALS;false;;;;">__NULL</p>
+<p n="arg6_AMDOCS_RPR_DATATYPES_ADDITIONALQUERYPARAMETERS_PARAMETER4" t="arg:EQUALS;false;;;;">__NULL</p>
+<p n="arg6_AMDOCS_RPR_DATATYPES_ADDITIONALQUERYPARAMETERS_PARAMETER1" t="arg:EQUALS;false;;;;">DLS  G24389463</p>
+<p n="arg6_AMDOCS_RPR_DATATYPES_ADDITIONALQUERYPARAMETERS_PARAMETER2" t="arg:EQUALS;false;;;;">2142055701</p>
+<p n="arg7" t="arg:EQUALS;false;;;;">null</p>
+<p n="arg8_STRING" t="arg:ANY;false;;;;">PLACE_HOLDER</p>
+</ag>
+</rq>
+<rs>
+<rp id="4" t="1486">
+<bd>&lt;lisa.vse.java.response&gt;&#10;&lt;lisa.vse.java.response.result&gt;&#10;&lt;amdocs.rpr.datatypes.PerformanceIndicatorsInfo&gt;  &lt;performanceIndicatorsData&gt;&amp;lt;?xml version=&amp;apos;1.0&amp;apos;  encoding=&amp;quot;ISO-8859-1&amp;quot;?&amp;gt;&amp;lt;EntityData&amp;gt;&amp;lt;ExternalRecord type=&amp;quot;{{=caseSensitiveReplace(request_arg5_AMDOCS_RPR_DATATYPES_EXTERNALSTRUCTURESINFO_EXTERNALSTRUCTURE_STRING_0, &quot;Data&quot;, &quot;DATA&quot;);}} FE allowance PI query&amp;quot; version=&amp;quot;001000000&amp;quot;&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;External record name&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;{{=caseSensitiveReplace(request_arg5_AMDOCS_RPR_DATATYPES_EXTERNALSTRUCTURESINFO_EXTERNALSTRUCTURE_STRING_0, &quot;Data&quot;, &quot;DATA&quot;);}} FE allowance PI query&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Offer ID&amp;quot; basicType=&amp;quot;Numeric&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;911142449&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Offer effective date&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;20180510&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Item ID&amp;quot; basicType=&amp;quot;Numeric&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;64433&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Chargeable attribute&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;Occurrence&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Chargeable attribute UOM&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;O&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Quota&amp;quot; basicType=&amp;quot;Numeric&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;-9999999.0000&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Prorated quota&amp;quot; basicType=&amp;quot;Numeric&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;-9999999.0000&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Remaining quota&amp;quot; basicType=&amp;quot;Numeric&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;-9999999.0000&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Utilized quota&amp;quot; basicType=&amp;quot;Numeric&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;0.0000&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Period name&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;Anytime&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Offer name&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;IMB UNLTD DOM - UNMSGSO&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Usage type&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;I&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Last Update Date&amp;quot; basicType=&amp;quot;DateTime&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;{{=doDateDeltaFromCurrent(&amp;quot;yyyy-MM-dd&amp;quot;,&amp;quot;-1D&amp;quot;);/*2018-05-17*/}} 06:52:21&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Charge code&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;External subscriber ID&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;G35901039&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Offer level&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;G&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Usage type description&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;Messaging&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Offer expiration date&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot; &amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Offer instance&amp;quot; basicType=&amp;quot;Numeric&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;29989000&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Roaming indicator&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;H&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Cycle month&amp;quot; basicType=&amp;quot;Numeric&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;5&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Cycle year&amp;quot; basicType=&amp;quot;Numeric&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;2018&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;SDG overage volume&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;0.0000&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;SDG group ID&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;SDG primary CTN&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;0&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;SOC Order Number&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;TLG Turbo Session ID&amp;quot; basicType=&amp;quot;Numeric&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;0&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;Offer property type&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;N&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&#9;&amp;lt;Attribute name=&amp;quot;TLG SOC&amp;quot; basicType=&amp;quot;String&amp;quot;&amp;gt;&amp;lt;Value value=&amp;quot;UNMSGSO&amp;quot;/&amp;gt;&amp;lt;/Attribute&amp;gt;&amp;lt;/ExternalRecord&amp;gt;&amp;lt;/EntityData&amp;gt;&lt;/performanceIndicatorsData&gt;  &lt;paginationInfo&gt;    &lt;pageSize&gt;500&lt;/pageSize&gt;    &lt;pageNumber&gt;1&lt;/pageNumber&gt;    &lt;hasMore&gt;78&lt;/hasMore&gt;    &lt;numberOfRows&gt;1&lt;/numberOfRows&gt;  &lt;/paginationInfo&gt;  &lt;l9GroupIndInfo&gt;Y&lt;/l9GroupIndInfo&gt;  &lt;l9GroupMembersInfo&gt;    &lt;amdocs.rpr.datatypes.RPR9GroupMembersInfo&gt;      &lt;l9ExternalIdInfo&gt;        &lt;l9ExternalIdInfo&gt;{{=request_arg6_AMDOCS_RPR_DATATYPES_ADDITIONALQUERYPARAMETERS_PARAMETER2;/*7604011611*/}}&lt;/l9ExternalIdInfo&gt;      &lt;/l9ExternalIdInfo&gt;    &lt;/amdocs.rpr.datatypes.RPR9GroupMembersInfo&gt;    &lt;amdocs.rpr.datatypes.RPR9GroupMembersInfo&gt;      &lt;l9ExternalIdInfo&gt;        &lt;l9ExternalIdInfo&gt;{{=request_arg2_AMDOCS_CSM3G_DATATYPES_SUBSCRIBERIDSINFO_EXTERNALID_EXTERNALID;/*7142703888*/}}&lt;/l9ExternalIdInfo&gt;      &lt;/l9ExternalIdInfo&gt;    &lt;/amdocs.rpr.datatypes.RPR9GroupMembersInfo&gt;  &lt;/l9GroupMembersInfo&gt;  &lt;l9CycleStartDateInfo&gt;    &lt;l9CycleStartDateInfo&gt;{{=doDateDeltaFromCurrent(&amp;quot;yyyy-MM-dd HH:mm:ss.SSS z&amp;quot;,&amp;quot;-20D -4H -23M -25S -735Ms&amp;quot;);/*2018-04-28 03:00:00.0 EDT*/}}&lt;/l9CycleStartDateInfo&gt;  &lt;/l9CycleStartDateInfo&gt;&lt;/amdocs.rpr.datatypes.PerformanceIndicatorsInfo&gt;&#10;&lt;/lisa.vse.java.response.result&gt;&#10;&lt;/lisa.vse.java.response&gt;&#10;</bd>
+</rp>
+</rs>
+</t>
+</st>
+</serviceImage>
