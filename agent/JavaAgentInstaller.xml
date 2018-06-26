@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+    <Platforms>
+    	<Platform name="WildFly, JBoss">
+    	    <!-- The candidate value are windows, linux, solaris, mac -->
+	        <OS name="windows">
+	        	<!-- If AutoCheckVersion is set to true, get the version automatically, if false, ask for user input. -->
+	            <AutoCheckVersion>true</AutoCheckVersion>
+				<!-- The versions are separated by ";", the list of versions have the same config. For example, 5.8;6.0;6.2 -->
+	        	<Version id="Wildfly or JBoss 6.2"> 
+	        	    <!-- Use ${} for the environment variable, backend will substitute it with the actual value -->
+	        	    <DefaultInstallDir>${JBOSS_HOME}</DefaultInstallDir>
+	        	    <!-- If the service is set, agent installer checks the service status and lets user stop the service before configuring the Java agent -->
+	        	    <DefaultServiceServiceName></DefaultServiceServiceName>
+	        	    <!-- Actions to verify the platform version. When AutoCheckVersion is set to true, use this action to verify the version -->
+			    	<VersionVerifications>
+	        	    	<VersionVerification type="FileCheck">
+	        	        	<!-- There can be multiple actions, the type can be FileCheck, XMLParsing etc -->
+	        	        	<VersionFileName>${JBOSS_HOME}\version.txt</VersionFileName>
+	        	        	<!-- The check type can be FileContain, FileExist, etc -->
+							<!-- The key word is separated by ";", the number of keywords is the same as the number of the version id, for example version 5.8;version 6.0;version 6.2 -->
+	        	        	<VersionFileCheckKeyword type="contain">version 6.2</VersionFileCheckKeyword>
+	        	    	</VersionVerification>
+			    	</VersionVerifications>
+	       			<!-- List of actions to configure the Java Agent.-->
+	             	<AgentInstallActions agentType="java">
+	                   	<AgentInstallAction type="FileUpdate">
+	                    	<!-- There can be multiple actions -->
+	                    	<!-- ActionType can be FileUpdate, SetEnvVariable, SetRegistry -->
+	                       	<ConfigFileName>${JBOSS_HOME}\bin\standalone.bat</ConfigFileName>
+	                       	<FileFormat>Text</FileFormat>
+	                        <!-- {{JavaAgentOption}} will be replaced with the actual JVM option value. For example, -javaagent:C:\Project\LISA\main\lisa-remote\dist\agent\LisaAgent2.jar=url=tcp://localhost:2009,name=LisaTestAgent -->
+	                        <InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<!-- Above insertString will be inserted before the keyword -->
+							<KeyWord>:Restart</KeyWord>
+			    		</AgentInstallAction>
+					</AgentInstallActions>
+	        	</Version>
+	        	<Version id="JBoss 4.2"> 
+	        	    <DefaultInstallDir>${JBOSS_HOME}</DefaultInstallDir>
+	        	    <DefaultServiceServiceName>JBossService</DefaultServiceServiceName>
+			    	<VersionVerifications>
+	        	    	<VersionVerification type="XMLParsing">
+	        	        	<VersionFileName>${JBOSS_HOME}\jar-versions.xml</VersionFileName> 	 
+	        	        	<!-- The version is retrieved from tag <jar implVendor=JBoss Inc.  implTitle=JBoss [Trinity] implVersion=4.2> -->       	       	        	
+							<VersionCheckAttributeKeyword name="implVersion" type="contain">4.2
+								<VersionXMLLocation>
+									<VersionCheckMatchTagName>jar</VersionCheckMatchTagName>
+									<VersionCheckMatchAttributes>
+										<VersionCheckMatchAttribute name="implVendor">JBoss Inc.</VersionCheckMatchAttribute >
+										<VersionCheckMatchAttribute name="implTitle">JBoss [Trinity]</VersionCheckMatchAttribute >
+									</VersionCheckMatchAttributes>
+								</VersionXMLLocation>
+							</VersionCheckAttributeKeyword>
+	        			</VersionVerification>
+			    	</VersionVerifications>			    	
+	       			<!-- List of actions to configure the Java Agent. For example, the action may not apply for JBoss -->
+	             	<AgentInstallActions agentType="java">
+	                   	<AgentInstallAction type="FileUpdate">
+	                       	<ConfigFileName>${JBOSS_HOME}\bin\run.bat</ConfigFileName>
+	                        <InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<KeyWord>:Restart</KeyWord>
+			    		</AgentInstallAction>
+					</AgentInstallActions>
+	        	</Version>	        	
+	        </OS>
+	        <OS name="Linux">
+	            <AutoCheckVersion>true</AutoCheckVersion>
+	        	<Version id="Wildfly or JBoss 6.2"> 
+	        	    <DefaultInstallDir>${JBOSS_HOME}</DefaultInstallDir>
+	        	    <DefaultServiceServiceName>JBossService</DefaultServiceServiceName>
+			    	<VersionVerifications>
+	        	    	<VersionVerification type="FileCheck">
+	        	        	<VersionFileName>${JBOSS_HOME}/version.txt</VersionFileName>
+	        	        	<VersionFileCheckKeyword type="contain">version 6.2</VersionFileCheckKeyword>
+	        	    	</VersionVerification>
+			    	</VersionVerifications>
+	             	<AgentInstallActions agentType="java">
+	                   	<AgentInstallAction type="FileUpdate">
+	                       	<ConfigFileName>${JBOSS_HOME}/bin/standalone.sh</ConfigFileName>
+	                       	<FileFormat>Text</FileFormat>
+	                        <InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<KeyWord># Setup JBOSS_HOME</KeyWord>
+			    		</AgentInstallAction>
+					</AgentInstallActions>
+	        	</Version>
+				<Version id="4.2"> 
+	        	    <DefaultInstallDir>${JBOSS_HOME}</DefaultInstallDir>
+	        	    <DefaultServiceServiceName>JBossService</DefaultServiceServiceName>
+			    	<VersionVerifications>
+	        	    	<VersionVerification type="XMLParsing">
+	        	        	<VersionFileName>${JBOSS_HOME}/jar-versions.xml</VersionFileName> 	 
+	        	        	<!-- The version is retrieved from tag <jar implVendor=JBoss Inc.  implTitle=JBoss [Trinity] implVersion=4.2> -->       	       	        	
+							<VersionCheckAttributeKeyword name="implVersion" type="contain">4.2
+								<VersionXMLLocation>
+									<VersionCheckMatchTagName>jar</VersionCheckMatchTagName>
+									<VersionCheckMatchAttributes>
+										<VersionCheckMatchAttribute name="implVendor">JBoss Inc.</VersionCheckMatchAttribute >
+										<VersionCheckMatchAttribute name="implTitle">JBoss [Trinity]</VersionCheckMatchAttribute >
+									</VersionCheckMatchAttributes>
+								</VersionXMLLocation>
+							</VersionCheckAttributeKeyword>
+	        			</VersionVerification>
+			    	</VersionVerifications>			    	
+	       			<!-- List of actions to configure the Java Agent. For example, the action may not apply for JBoss -->
+	             	<AgentInstallActions agentType="java">
+	                   	<AgentInstallAction type="FileUpdate">
+	                       	<ConfigFileName>${JBOSS_HOME}/bin/run.sh</ConfigFileName>
+	                        <InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<KeyWord># Setup JBOSS_HOME</KeyWord>
+			    		</AgentInstallAction>
+					</AgentInstallActions>
+	        	</Version>	   
+	        </OS>
+			<OS name="mac">
+				<!-- If AutoCheckVersion is set to true, get the version automatically, if false, ask for user input. -->
+	            <AutoCheckVersion>true</AutoCheckVersion>
+				<!-- The versions are separated by ";", the list of versions have the same config. For example, 5.8;6.0;6.2 -->
+	        	<Version id="Wildfly or JBoss 6.2"> 
+	        	    <!-- Use ${} for the environment variable, backend will substitute it with the actual value -->
+	        	    <DefaultInstallDir>${JBOSS_HOME}</DefaultInstallDir>
+	        	    <!-- If the service is set, agent installer checks the service status and lets user stop the service before configuring the Java agent -->
+	        	    <DefaultServiceServiceName></DefaultServiceServiceName>
+	        	    <!-- Actions to verify the platform version. When AutoCheckVersion is set to true, use this action to verify the version -->
+			    	<VersionVerifications>
+	        	    	<VersionVerification type="FileCheck">
+	        	        	<!-- There can be multiple actions, the type can be FileCheck, XMLParsing etc -->
+	        	        	<VersionFileName>${JBOSS_HOME}/version.txt</VersionFileName>
+	        	        	<!-- The check type can be FileContain, FileExist, etc -->
+							<!-- The key word is separated by ";", the number of keywords is the same as the number of the version id, for example version 5.8;version 6.0;version 6.2 -->
+	        	        	<VersionFileCheckKeyword type="contain">version 6.2</VersionFileCheckKeyword>
+	        	    	</VersionVerification>
+			    	</VersionVerifications>
+	       			<!-- List of actions to configure the Java Agent.-->
+	             	<AgentInstallActions agentType="java">
+	                   	<AgentInstallAction type="FileUpdate">
+	                    	<!-- There can be multiple actions -->
+	                    	<!-- ActionType can be FileUpdate, SetEnvVariable, SetRegistry -->
+	                       	<ConfigFileName>${JBOSS_HOME}/bin/standalone.sh</ConfigFileName>
+	                       	<FileFormat>Text</FileFormat>
+	                        <!-- {{JavaAgentOption}} will be replaced with the actual JVM option value. For example, -javaagent:C:\Project\LISA\main\lisa-remote\dist\agent\LisaAgent2.jar=url=tcp://localhost:2009,name=LisaTestAgent -->
+	                        <InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<!-- Above insertString will be inserted before the keyword -->
+							<KeyWord># Setup JBOSS_HOME</KeyWord>
+			    		</AgentInstallAction>
+					</AgentInstallActions>
+	        	</Version>
+	        	<Version id="JBoss 4.2"> 
+	        	    <DefaultInstallDir>${JBOSS_HOME}</DefaultInstallDir>
+	        	    <DefaultServiceServiceName>JBossService</DefaultServiceServiceName>
+			    	<VersionVerifications>
+	        	    	<VersionVerification type="XMLParsing">
+	        	        	<VersionFileName>${JBOSS_HOME}/jar-versions.xml</VersionFileName> 	 
+	        	        	<!-- The version is retrieved from tag <jar implVendor=JBoss Inc.  implTitle=JBoss [Trinity] implVersion=4.2> -->       	       	        	
+							<VersionCheckAttributeKeyword name="implVersion" type="contain">4.2
+								<VersionXMLLocation>
+									<VersionCheckMatchTagName>jar</VersionCheckMatchTagName>
+									<VersionCheckMatchAttributes>
+										<VersionCheckMatchAttribute name="implVendor">JBoss Inc.</VersionCheckMatchAttribute >
+										<VersionCheckMatchAttribute name="implTitle">JBoss [Trinity]</VersionCheckMatchAttribute >
+									</VersionCheckMatchAttributes>
+								</VersionXMLLocation>
+							</VersionCheckAttributeKeyword>
+	        			</VersionVerification>
+			    	</VersionVerifications>			    	
+	       			<!-- List of actions to configure the Java Agent. For example, the action may not apply for JBoss -->
+	             	<AgentInstallActions agentType="java">
+	                   	<AgentInstallAction type="FileUpdate">
+	                       	<ConfigFileName>${JBOSS_HOME}/bin/run.sh</ConfigFileName>
+	                        <InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<KeyWord># Setup JBOSS_HOME</KeyWord>
+			    		</AgentInstallAction>
+					</AgentInstallActions>
+	        	</Version>	       
+			</OS>
+	    </Platform>
+    	<Platform name="IBM WebSphere App Server">
+			<OS name="windows">
+	        	<AutoCheckVersion>true</AutoCheckVersion>
+	        	<Version id="7.0"> 
+	            	<DefaultInstallDir>${WAS_INSTALL_ROOT}</DefaultInstallDir>
+	            	<DefaultServiceServiceName></DefaultServiceServiceName>
+					<VersionVerifications>
+	        	    	<VersionVerification type="XMLParsing">
+	        	    	    <!-- For example, ${WAS_INSTALL_ROOT}\..\ws_profile\properties\version\profile.version -->
+	        	        	<VersionFileName>${WAS_INSTALL_ROOT}\{profile.version path}</VersionFileName>
+							<VersionCheckTagKeyword name="version" type="contain">7.0</VersionCheckTagKeyword>
+	        			</VersionVerification>
+			    	</VersionVerifications>
+	            	<AgentInstallActions agentType="java">
+	               		<AgentInstallAction type="FileUpdate">
+	               		    <!-- For example, ${WAS_INSTALL_ROOT}\profiles\AppSvr01\config\cells\zhach09-testNode01Cell\nodes\zhach09-testNode01\servers\server1\server.xml -->
+	               			<ConfigFileName>${WAS_INSTALL_ROOT}\{server.xml path}</ConfigFileName>	
+	               			<FileFormat>XML</FileFormat>                	         
+	                   		<XMLAction type="attribute_update">
+	                   		    <XMLContent tag="jvmEntries">
+	                   		        <!-- matched attribute 
+	                   		        <XMLAttribute name="abc">xyz</XMLAttribute> 
+	                   		         -->
+	                   		    </XMLContent>
+	                   		    <TargetXMLAttribute>genericJvmArguments</TargetXMLAttribute>
+	                   		    <TargetXMLAttributeValue>{{JavaAgentOption}}</TargetXMLAttributeValue>
+	                   		</XMLAction>
+			    		</AgentInstallAction>
+					</AgentInstallActions>
+	        	</Version>
+				<Version id="8.5">
+					<DefaultInstallDir>$(WAS_INSTALL_ROOT)</DefaultInstallDir>
+					<DefaultServiceServiceName></DefaultServiceServiceName>
+					<VersionVerifications>
+						<VersionVerification type="XMLParsing">
+							 <!-- For example, ${WAS_INSTALL_ROOT}\properties\version\profile.version -->
+							 <VersionFileName>${WAS_INSTALL_ROOT}\{profile.version path}</VersionFileName>
+							 <VersionCheckTagKeyword name="version" type="contain">8.5</VersionCheckTagKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<AgentInstallActions agentType="java">
+						<AgentInstallAction type="FileUpdate">
+							 <!-- For example, ${WAS_INSTALL_ROOT}/profiles/appsvr01/config/cells/zhach092809Node01Cell/nodes/zhach092809Node01/servers/server1/server.xml -->
+							 <ConfigFileName>${WAS_INSTALL_ROOT}\{server.xml path}</ConfigFileName>
+							 <FileFormat>XML</FileFormat>
+							 <XMLAction type="attribute_update">
+								<XMLContent tag="jvmEntries">
+									<!--
+									<XMLAttribute name="abc">xyz</XMLAttribute> 
+									-->
+								</XMLContent>
+								<TargetXMLAttribute>genericJvmArguments</TargetXMLAttribute>
+	                   		    <TargetXMLAttributeValue>{{JavaAgentOption}}</TargetXMLAttributeValue>
+							 </XMLAction>
+						</AgentInstallAction>
+					</AgentInstallActions>
+				</Version>
+	        </OS>
+            <OS name="Linux">
+	        	<AutoCheckVersion>true</AutoCheckVersion>
+	        	<Version id="7.0"> 
+	            	<DefaultInstallDir>${WAS_INSTALL_ROOT}</DefaultInstallDir>
+	            	<DefaultServiceServiceName></DefaultServiceServiceName>
+					<VersionVerifications>
+	        	    	<VersionVerification type="XMLParsing">
+	        	    	    <!-- For example, ${WAS_INSTALL_ROOT}\properties\version\profile.version -->
+	        	        	<VersionFileName>${WAS_INSTALL_ROOT}/{profile.version path}</VersionFileName>
+							<VersionCheckTagKeyword name="version" type="contain">7.0</VersionCheckTagKeyword>
+	        			</VersionVerification>
+			    	</VersionVerifications>
+	            	<AgentInstallActions agentType="java">
+	               		<AgentInstallAction type="FileUpdate">
+	               		    <!-- For example, ${WAS_INSTALL_ROOT}/profiles/appsvr01/config/cells/zhach092809Node01Cell/nodes/zhach092809Node01/servers/server1/server.xml -->
+							<ConfigFileName>${WAS_INSTALL_ROOT}/{server.xml path}</ConfigFileName>		
+	               			<FileFormat>XML</FileFormat>                	         
+	                   		<XMLAction type="attribute_update">
+	                   		    <XMLContent tag="jvmEntries">
+	                   		        <!--
+	                   		        <XMLAttribute name="abc">xyz</XMLAttribute> 
+	                   		         -->
+	                   		    </XMLContent>
+	                   		    <TargetXMLAttribute>genericJvmArguments</TargetXMLAttribute>
+	                   		    <TargetXMLAttributeValue>{{JavaAgentOption}}</TargetXMLAttributeValue>
+	                   		</XMLAction>
+			    		</AgentInstallAction>
+					</AgentInstallActions>
+	        	</Version>
+				<Version id="8.5">
+					<DefaultInstallDir>$(WAS_INSTALL_ROOT)</DefaultInstallDir>
+					<DefaultServiceServiceName></DefaultServiceServiceName>
+					<VersionVerifications>
+						<VersionVerification type="XMLParsing">
+							 <!-- For example, ${WAS_INSTALL_ROOT}\properties\version\profile.version -->
+							 <VersionFileName>${WAS_INSTALL_ROOT}/{profile.version path}</VersionFileName>
+							 <VersionCheckTagKeyword name="version" type="contain">8.5</VersionCheckTagKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<AgentInstallActions agentType="java">
+						<AgentInstallAction type="FileUpdate">
+							 <!-- For example, ${WAS_INSTALL_ROOT}/profiles/appsvr01/config/cells/zhach092809Node01Cell/nodes/zhach092809Node01/servers/server1/server.xml -->
+							 <ConfigFileName>${WAS_INSTALL_ROOT}/{server.xml path}</ConfigFileName>
+							 <FileFormat>XML</FileFormat>
+							 <XMLAction type="attribute_update">
+								<XMLContent tag="jvmEntries">
+									<!--
+									<XMLAttribute name="abc">xyz</XMLAttribute> 
+									-->
+								</XMLContent>
+								<TargetXMLAttribute>genericJvmArguments</TargetXMLAttribute>
+	                   		    <TargetXMLAttributeValue>{{JavaAgentOption}}</TargetXMLAttributeValue>
+							 </XMLAction>
+						</AgentInstallAction>
+					</AgentInstallActions>
+				</Version>
+			</OS>
+			<OS name="aix">
+				<AutoCheckVersion>true</AutoCheckVersion>
+	        	<Version id="7.0"> 
+	            	<DefaultInstallDir>${WAS_INSTALL_ROOT}</DefaultInstallDir>
+	            	<DefaultServiceServiceName></DefaultServiceServiceName>
+					<VersionVerifications>
+	        	    	<VersionVerification type="XMLParsing">
+	        	    	    <!-- For example, ${WAS_INSTALL_ROOT}\properties\version\profile.version -->
+	        	        	<VersionFileName>${WAS_INSTALL_ROOT}/{profile.version path}</VersionFileName>
+							<VersionCheckTagKeyword name="version" type="contain">7.0</VersionCheckTagKeyword>
+	        			</VersionVerification>
+			    	</VersionVerifications>
+	            	<AgentInstallActions agentType="java">
+	               		<AgentInstallAction type="FileUpdate">
+	               		    <!-- For example, ${WAS_INSTALL_ROOT}/profiles/appsvr01/config/cells/zhach092809Node01Cell/nodes/zhach092809Node01/servers/server1/server.xml -->
+							<ConfigFileName>${WAS_INSTALL_ROOT}/{server.xml path}</ConfigFileName>		
+	               			<FileFormat>XML</FileFormat>                	         
+	                   		<XMLAction type="attribute_update">
+	                   		    <XMLContent tag="jvmEntries">
+	                   		        <!--
+	                   		        <XMLAttribute name="abc">xyz</XMLAttribute> 
+	                   		         -->
+	                   		    </XMLContent>
+	                   		    <TargetXMLAttribute>genericJvmArguments</TargetXMLAttribute>
+	                   		    <TargetXMLAttributeValue>{{JavaAgentOption}}</TargetXMLAttributeValue>
+	                   		</XMLAction>
+			    		</AgentInstallAction>
+					</AgentInstallActions>
+	        	</Version>
+				<Version id="8.5">
+					<DefaultInstallDir>$(WAS_INSTALL_ROOT)</DefaultInstallDir>
+					<DefaultServiceServiceName></DefaultServiceServiceName>
+					<VersionVerifications>
+						<VersionVerification type="XMLParsing">
+							 <!-- For example, ${WAS_INSTALL_ROOT}\properties\version\profile.version -->
+							 <VersionFileName>${WAS_INSTALL_ROOT}/{profile.version path}</VersionFileName>
+							 <VersionCheckTagKeyword name="version" type="contain">8.5</VersionCheckTagKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<AgentInstallActions agentType="java">
+						<AgentInstallAction type="FileUpdate">
+							 <!-- For example, ${WAS_INSTALL_ROOT}/profiles/appsvr01/config/cells/zhach092809Node01Cell/nodes/zhach092809Node01/servers/server1/server.xml -->
+							 <ConfigFileName>${WAS_INSTALL_ROOT}/{server.xml path}</ConfigFileName>
+							 <FileFormat>XML</FileFormat>
+							 <XMLAction type="attribute_update">
+								<XMLContent tag="jvmEntries">
+									<!--
+									<XMLAttribute name="abc">xyz</XMLAttribute> 
+									-->
+								</XMLContent>
+								<TargetXMLAttribute>genericJvmArguments</TargetXMLAttribute>
+	                   		    <TargetXMLAttributeValue>{{JavaAgentOption}}</TargetXMLAttributeValue>
+							 </XMLAction>
+						</AgentInstallAction>
+					</AgentInstallActions>
+				</Version>
+			</OS>
+		</Platform>
+		<Platform name="Oracle WebLogic Server">
+			<OS name="windows">
+				<AutoCheckVersion>true</AutoCheckVersion>
+				<Version id="10.3"> 
+					<!-- Use ${} for environment variable, backend will substitute it with the actual value -->
+					<DefaultInstallDir>${ORACLE_HOME}</DefaultInstallDir>
+					<!-- If the default service is set, make sure it is stopped before you configure Java agent -->
+					<DefaultServiceServiceName>Weblogic</DefaultServiceServiceName>
+					<!-- Actions to verify the platform version. When AutoCheckVersion is set to true, use this action to verify the version -->
+					<VersionVerifications>
+						<!-- There can be multiple actions, the type can be FileCheck, XMLParsing, etc -->
+						<!-- Check version by parsing XML file -->
+						<VersionVerification type="XMLParsing">
+							<VersionFileName>${ORACLE_HOME}\Registry.xml</VersionFileName>
+							<!-- The following specifies where to find the version and which version(keyword) is in wls 10.3 xml file -->
+							<!-- The tag we looking at is as following -->
+							<!-- <component name="WebLogic Server" version="7.1.0.0" InstallDir=""> -->
+							<VersionCheckAttributeKeyword name="version" type="contain">10.3
+								<VersionXMLLocation>
+									<VersionCheckMatchTagName>component</VersionCheckMatchTagName>
+									<VersionCheckMatchAttributes>
+										<VersionCheckMatchAttribute name="name">WebLogic Server</VersionCheckMatchAttribute >
+									</VersionCheckMatchAttributes>
+								</VersionXMLLocation>
+							</VersionCheckAttributeKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<!-- List of actions used to insert the Java Agent configuration string-->
+					<!-- "agentType" - "java" as "pure agent", "native" as "native agent" -->
+					<AgentInstallActions agentType="java">
+						<!-- There can be multiple actions -->
+						<!-- ActionType can be FileUpdate, SetEnvVariable, SetRegistry -->	                
+						<AgentInstallAction type="FileUpdate">
+							<!-- For example, ${ORACLE_HOME}\user_projects\domains\test_domain\bin\startWebLogic.cmd -->
+							<ConfigFileName>${ORACLE_HOME}\{startWebLogic.cmd path}</ConfigFileName>
+							<FileFormat>Text</FileFormat>
+							<!-- {{JavaAgentOption}} will be replaced with the actual JVM option value. For example, -javaagent:C:\Project\LISA\main\lisa-remote\dist\agent\LisaAgent2.jar=url=tcp://localhost:2009,name=LisaAgent -->
+							<InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<!-- The above insertString will be inserted before the keyword -->
+							<KeyWord>@REM START WEBLOGIC</KeyWord>
+						</AgentInstallAction>
+						<!-- The following is an example for configuring agent by RegistryUpdate, it is not suitable for wls -->
+						<!-- There is a limitation for registry update. The update only applies when you save the Java agent as brand new registry value (single string) and not when you update the registry value.-->
+						<!--
+						<AgentInstallAction type ="RegistryUpdate">
+							<RegistryKey>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Apache Software Foundation\Procrun 2.0\NolioServer20\Parameters\Java</RegistryKey>
+							<ValueName>TestValue</ValueName>
+						</AgentInstallAction>
+						-->
+
+						<!-- The following is an example for configuring agent by set envrionment variable, this is not supported.
+						<AgentInstallAction type ="EnvironmentUpdate">
+							<VariableName>{{x}}</VariableName>
+							<VariableValue>{{x}}</VariableValue>
+						</AgentInstallAction>
+						-->
+					</AgentInstallActions>
+				</Version>
+				<Version id="12.1.1">
+					<!-- Use ${} for environment variable, backend will substitute it with the actual value -->
+					<DefaultInstallDir>${ORACLE_HOME}</DefaultInstallDir>
+					<!-- If the default service is set, make sure it is stopped before you configure Java agent -->
+					<DefaultServiceServiceName>Weblogic</DefaultServiceServiceName>
+					<!-- Actions to verify the platform version. When AutoCheckVersion is set to true, use this action to verify the version -->
+					<VersionVerifications>
+						<!-- There can be multiple actions, the type can be FileCheck, XMLParsing, etc -->
+						<!-- Check version by parsing XML file -->
+						<VersionVerification type="XMLParsing">
+							<VersionFileName>${ORACLE_HOME}\Registry.xml</VersionFileName>
+							<!-- The following specifies where to find the version and which version(keyword) is in wls 10.3 xml file -->
+							<!-- The tag we looking at is as following -->
+							<!-- <component name="WebLogic Server" version="7.1.0.0" InstallDir=""> -->
+							<VersionCheckAttributeKeyword name="version" type="contain">12.1.1
+								<VersionXMLLocation>
+									<VersionCheckMatchTagName>component</VersionCheckMatchTagName>
+									<VersionCheckMatchAttributes>
+										<VersionCheckMatchAttribute name="name">WebLogic Server</VersionCheckMatchAttribute >
+									</VersionCheckMatchAttributes>
+								</VersionXMLLocation>
+							</VersionCheckAttributeKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<!-- List of actions used to insert the Java Agent configuration string-->
+					<!-- "agentType" - "java" as "pure agent", "native" as "native agent" -->
+					<AgentInstallActions agentType="java">
+						<!-- There can be multiple actions -->
+						<!-- ActionType can be FileUpdate, SetEnvVariable, SetRegistry -->	                
+						<AgentInstallAction type="FileUpdate">
+							<!-- For example, ${ORACLE_HOME}\user_projects\domains\test_domain\bin\startWebLogic.cmd -->
+							<ConfigFileName>${ORACLE_HOME}\{startWebLogic.cmd path}</ConfigFileName>
+							<FileFormat>Text</FileFormat>
+							<!-- {{JavaAgentOption}} will be replaced with the actual JVM option value. For example, -javaagent:C:\Project\LISA\main\lisa-remote\dist\agent\LisaAgent2.jar=url=tcp://localhost:2009,name=LisaAgent -->
+							<InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<!-- The above insertString will be inserted before the keyword -->
+							<KeyWord>@REM START WEBLOGIC</KeyWord>
+						</AgentInstallAction>
+						<!-- The following is an example for configuring agent by RegistryUpdate, it is not suitable for wls -->
+						<!-- There is a limitation for registry update. The update only applies when you save the Java agent as brand new registry value (single string) and not when you update the registry value.-->
+						<!--
+						<AgentInstallAction type ="RegistryUpdate">
+							<RegistryKey>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Apache Software Foundation\Procrun 2.0\NolioServer20\Parameters\Java</RegistryKey>
+							<ValueName>TestValue</ValueName>
+						</AgentInstallAction>
+						-->
+
+						<!-- The following is an example for configuring agent by set envrionment variable, this is not supported.
+						<AgentInstallAction type ="EnvironmentUpdate">
+							<VariableName>{{x}}</VariableName>
+							<VariableValue>{{x}}</VariableValue>
+						</AgentInstallAction>
+						-->
+					</AgentInstallActions>
+				</Version>
+			</OS>
+			<OS name="linux">
+	        	<AutoCheckVersion>true</AutoCheckVersion>
+	        	<Version id="10.3"> 
+	            	<DefaultInstallDir>${ORACLE_HOME}</DefaultInstallDir>
+	            	<DefaultServiceServiceName>Weblogic</DefaultServiceServiceName>
+			    	<VersionVerifications>
+	        	    	<VersionVerification type="XMLParsing">
+	        	        	<VersionFileName>${ORACLE_HOME}/Registry.xml</VersionFileName>
+							<VersionCheckAttributeKeyword name="version" type="contain">10.3
+								<VersionXMLLocation>
+									<VersionCheckMatchTagName>component</VersionCheckMatchTagName>
+									<VersionCheckMatchAttributes>
+										<VersionCheckMatchAttribute name="name">WebLogic Server</VersionCheckMatchAttribute >
+									</VersionCheckMatchAttributes>
+								</VersionXMLLocation>
+							</VersionCheckAttributeKeyword>
+	        			</VersionVerification>
+			    	</VersionVerifications>
+	            	<AgentInstallActions agentType="java">                
+	            		<AgentInstallAction type="FileUpdate">
+	            		    <!-- For example, ${ORACLE_HOME}/user_projects/domains/base_domain/bin/startWebLogic.sh -->
+	                		<ConfigFileName>${ORACLE_HOME}/{startWebLogic.sh path}</ConfigFileName>
+	                		<FileFormat>Text</FileFormat>
+	                    	<InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<KeyWord># START WEBLOGIC</KeyWord>
+			    		</AgentInstallAction>					
+			    	</AgentInstallActions>
+	        	</Version>
+				<Version id="12.1.1">
+					<!-- Use ${} for environment variable, backend will substitute it with the actual value -->
+					<DefaultInstallDir>${ORACLE_HOME}</DefaultInstallDir>
+					<!-- If the default service is set, make sure it is stopped before you configure Java agent -->
+					<DefaultServiceServiceName>Weblogic</DefaultServiceServiceName>
+					<!-- Actions to verify the platform version. When AutoCheckVersion is set to true, use this action to verify the version -->
+					<VersionVerifications>
+						<!-- There can be multiple actions, the type can be FileCheck, XMLParsing, etc -->
+						<!-- Check version by parsing XML file -->
+						<VersionVerification type="XMLParsing">
+							<VersionFileName>${ORACLE_HOME}/Registry.xml</VersionFileName>
+							<!-- The following specifies where to find the version and which version(keyword) is in wls 10.3 xml file -->
+							<!-- The tag we looking at is as following -->
+							<!-- <component name="WebLogic Server" version="7.1.0.0" InstallDir=""> -->
+							<VersionCheckAttributeKeyword name="version" type="contain">12.1.1
+								<VersionXMLLocation>
+									<VersionCheckMatchTagName>component</VersionCheckMatchTagName>
+									<VersionCheckMatchAttributes>
+										<VersionCheckMatchAttribute name="name">WebLogic Server</VersionCheckMatchAttribute >
+									</VersionCheckMatchAttributes>
+								</VersionXMLLocation>
+							</VersionCheckAttributeKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<!-- List of actions used to insert the Java Agent configuration string-->
+					<!-- "agentType" - "java" as "pure agent", "native" as "native agent" -->
+					<AgentInstallActions agentType="java">
+						<!-- There can be multiple actions -->
+						<!-- ActionType can be FileUpdate, SetEnvVariable, SetRegistry -->	                
+						<AgentInstallAction type="FileUpdate">
+							<!-- For example, ${ORACLE_HOME}\user_projects\domains\test_domain\bin\startWebLogic.cmd -->
+							<ConfigFileName>${ORACLE_HOME}/{startWebLogic.sh path}</ConfigFileName>
+							<FileFormat>Text</FileFormat>
+							<!-- {{JavaAgentOption}} will be replaced with the actual JVM option value. For example, -javaagent:C:\Project\LISA\main\lisa-remote\dist\agent\LisaAgent2.jar=url=tcp://localhost:2009,name=LisaAgent -->
+							<InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<!-- The above insertString will be inserted before the keyword -->
+							<KeyWord># START WEBLOGIC</KeyWord>
+						</AgentInstallAction>
+						<!-- The following is an example for configuring agent by RegistryUpdate, it is not suitable for wls -->
+						<!-- There is a limitation for registry update. The update only applies when you save the Java agent as brand new registry value (single string) and not when you update the registry value.-->
+						<!--
+						<AgentInstallAction type ="RegistryUpdate">
+							<RegistryKey>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Apache Software Foundation\Procrun 2.0\NolioServer20\Parameters\Java</RegistryKey>
+							<ValueName>TestValue</ValueName>
+						</AgentInstallAction>
+						-->
+
+						<!-- The following is an example for configuring agent by set envrionment variable, this is not supported.
+						<AgentInstallAction type ="EnvironmentUpdate">
+							<VariableName>{{x}}</VariableName>
+							<VariableValue>{{x}}</VariableValue>
+						</AgentInstallAction>
+						-->
+					</AgentInstallActions>
+				</Version>
+	        </OS>
+			<OS name="solaris">
+				<AutoCheckVersion>true</AutoCheckVersion>
+	        	<Version id="10.3"> 
+	            	<DefaultInstallDir>${ORACLE_HOME}</DefaultInstallDir>
+	            	<DefaultServiceServiceName>Weblogic</DefaultServiceServiceName>
+			    	<VersionVerifications>
+	        	    	<VersionVerification type="XMLParsing">
+	        	        	<VersionFileName>${ORACLE_HOME}/Registry.xml</VersionFileName>
+							<VersionCheckAttributeKeyword name="version" type="contain">10.3
+								<VersionXMLLocation>
+									<VersionCheckMatchTagName>component</VersionCheckMatchTagName>
+									<VersionCheckMatchAttributes>
+										<VersionCheckMatchAttribute name="name">WebLogic Server</VersionCheckMatchAttribute >
+									</VersionCheckMatchAttributes>
+								</VersionXMLLocation>
+							</VersionCheckAttributeKeyword>
+	        			</VersionVerification>
+			    	</VersionVerifications>
+	            	<AgentInstallActions agentType="java">                
+	            		<AgentInstallAction type="FileUpdate">
+	            		    <!-- For example, ${ORACLE_HOME}/user_projects/domains/base_domain/bin/startWebLogic.sh -->
+	                		<ConfigFileName>${ORACLE_HOME}/{startWebLogic.sh path}</ConfigFileName>
+	                		<FileFormat>Text</FileFormat>
+	                    	<InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<KeyWord># START WEBLOGIC</KeyWord>
+			    		</AgentInstallAction>					
+			    	</AgentInstallActions>
+	        	</Version>
+				<Version id="12.1.1">
+					<!-- Use ${} for environment variable, backend will substitute it with the actual value -->
+					<DefaultInstallDir>${ORACLE_HOME}</DefaultInstallDir>
+					<!-- If the default service is set, make sure it is stopped before you configure Java agent -->
+					<DefaultServiceServiceName>Weblogic</DefaultServiceServiceName>
+					<!-- Actions to verify the platform version. When AutoCheckVersion is set to true, use this action to verify the version -->
+					<VersionVerifications>
+						<!-- There can be multiple actions, the type can be FileCheck, XMLParsing, etc -->
+						<!-- Check version by parsing XML file -->
+						<VersionVerification type="XMLParsing">
+							<VersionFileName>${ORACLE_HOME}/Registry.xml</VersionFileName>
+							<!-- The following specifies where to find the version and which version(keyword) is in wls 10.3 xml file -->
+							<!-- The tag we looking at is as following -->
+							<!-- <component name="WebLogic Server" version="7.1.0.0" InstallDir=""> -->
+							<VersionCheckAttributeKeyword name="version" type="contain">12.1.1
+								<VersionXMLLocation>
+									<VersionCheckMatchTagName>component</VersionCheckMatchTagName>
+									<VersionCheckMatchAttributes>
+										<VersionCheckMatchAttribute name="name">WebLogic Server</VersionCheckMatchAttribute >
+									</VersionCheckMatchAttributes>
+								</VersionXMLLocation>
+							</VersionCheckAttributeKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<!-- List of actions used to insert the Java Agent configuration string-->
+					<!-- "agentType" - "java" as "pure agent", "native" as "native agent" -->
+					<AgentInstallActions agentType="java">
+						<!-- There can be multiple actions -->
+						<!-- ActionType can be FileUpdate, SetEnvVariable, SetRegistry -->	                
+						<AgentInstallAction type="FileUpdate">
+							<!-- For example, ${ORACLE_HOME}\user_projects\domains\test_domain\bin\startWebLogic.cmd -->
+							<ConfigFileName>${ORACLE_HOME}/{startWebLogic.cmd path}</ConfigFileName>
+							<FileFormat>Text</FileFormat>
+							<!-- {{JavaAgentOption}} will be replaced with the actual JVM option value. For example, -javaagent:C:\Project\LISA\main\lisa-remote\dist\agent\LisaAgent2.jar=url=tcp://localhost:2009,name=LisaAgent -->
+							<InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<!-- The above insertString will be inserted before the keyword -->
+							<KeyWord># START WEBLOGIC</KeyWord>
+						</AgentInstallAction>
+						<!-- The following is an example for configuring agent by RegistryUpdate, it is not suitable for wls -->
+						<!-- There is a limitation for registry update. The update only applies when you save the Java agent as brand new registry value (single string) and not when you update the registry value.-->
+						<!--
+						<AgentInstallAction type ="RegistryUpdate">
+							<RegistryKey>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Apache Software Foundation\Procrun 2.0\NolioServer20\Parameters\Java</RegistryKey>
+							<ValueName>TestValue</ValueName>
+						</AgentInstallAction>
+						-->
+
+						<!-- The following is an example for configuring agent by set envrionment variable, this is not supported.
+						<AgentInstallAction type ="EnvironmentUpdate">
+							<VariableName>{{x}}</VariableName>
+							<VariableValue>{{x}}</VariableValue>
+						</AgentInstallAction>
+						-->
+					</AgentInstallActions>
+				</Version>
+			</OS>
+		</Platform>
+		<Platform name="TIBCO BusinessWorks">
+			<OS name="windows">
+	        	<AutoCheckVersion>true</AutoCheckVersion>
+	        	<Version id="5.10"> 
+	        	    <DefaultInstallDir>${TIBCO_BW_HOME}</DefaultInstallDir>
+	        	    <!-- For example, TIBCOAdmin-domain_haijian -->
+	        	    <DefaultServiceServiceName>{Tibco Service Name}</DefaultServiceServiceName>
+			    	<VersionVerifications>
+	        	    	<VersionVerification type="FileCheck">
+	        	        	<VersionFileName>${TIBCO_BW_HOME}\release_notes\TIB_BW_5.10.0_readme.txt</VersionFileName>
+	        	        	<VersionFileCheckKeyword type="contain">Release Version: 5.10</VersionFileCheckKeyword>
+	        	    	</VersionVerification>
+			    	</VersionVerifications>
+	             	<AgentInstallActions agentType="java">
+	                   	<AgentInstallAction type="FileUpdate">
+	                   	    <!-- For example ${TIBCO_BW_HOME}\tra\domain\domain_haijian\application\project2\project2-Process_Archive.tra -->
+	                       	<ConfigFileName>${TIBCO_BW_HOME}\{Process_Archive.tra path}</ConfigFileName>	
+	                       	<FileFormat>Text</FileFormat>                        		
+	                        <InsertString>java.extended.properties={{JavaAgentOption}}</InsertString>
+							<KeyWord># Installation details</KeyWord>
+			    		</AgentInstallAction>
+					</AgentInstallActions>
+	        	</Version>
+	        </OS>
+			<OS name="linux">
+	        	<AutoCheckVersion>true</AutoCheckVersion>
+	        	<Version id="5.10">
+	        	    <DefaultInstallDir>${TIBCO_BW_HOME}</DefaultInstallDir>
+	        	    <!-- For example, TIBHawkAgent-domain_haijian-renha04-2k82012 -->
+					<DefaultServiceServiceName>{Tibco Service Name}</DefaultServiceServiceName>
+			    	<VersionVerifications>
+	        	    	<VersionVerification type="FileCheck">
+	        	        	<VersionFileName>${TIBCO_BW_HOME}/release_notes/TIB_BW_5.10.0_readme.txt</VersionFileName>
+	        	        	<VersionFileCheckKeyword type="contain">Release Version: 5.10</VersionFileCheckKeyword>
+	        	    	</VersionVerification>
+			    	</VersionVerifications>
+	             	<AgentInstallActions agentType="java">
+	                   	<AgentInstallAction type="FileUpdate">
+	                   	    <!-- For example, ${TIBCO_BW_HOME}/tra/domain/haijian/application/tibcoproject2/tibcoproject2-Process_Archive.tra -->
+	                       	<ConfigFileName>${TIBCO_BW_HOME}/{Process_Archive.tra path}</ConfigFileName>	
+	                       	<FileFormat>Text</FileFormat>                        		
+	                        <InsertString>java.extended.properties={{JavaAgentOption}}</InsertString>
+							<KeyWord># Installation details</KeyWord>
+			    		</AgentInstallAction>
+					</AgentInstallActions>
+	        	</Version>
+	        </OS>
+		</Platform>
+	    <Platform name="TIBCO Enterprise Message Serivce"></Platform>
+	    <Platform name="WebMethods Integration Server Windows Service">
+			<OS name="Windows">
+		   		<AutoCheckVersion>true</AutoCheckVersion>				  
+				<Version id="9.5"> 
+			    	<DefaultInstallDir>${WM_HOME}</DefaultInstallDir>
+			    	<VersionVerifications>
+						<VersionVerification type="FileCheck">
+					    	<VersionFileName>${WM_HOME}\WS-Stack\VERSION.txt</VersionFileName>
+	        	        	<VersionFileCheckKeyword type="contain">9.5.1.0</VersionFileCheckKeyword>
+	        	    	</VersionVerification>
+			    	</VersionVerifications>
+			    	<AgentInstallActions agentType="java">
+			        	<AgentInstallAction type="FileUpdate">
+			            	<ConfigFileName>${WM_HOME}\IntegrationServer\bin\server.bat</ConfigFileName>
+			            	<FileFormat>Text</FileFormat>
+			            	<InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<KeyWord>:start</KeyWord>
+			    		</AgentInstallAction>
+					</AgentInstallActions>
+	        	</Version>
+				<Version id="9.0">
+					<DefaultInstallDir>${WM_HOME}</DefaultInstallDir>
+			    	<VersionVerifications>
+						<VersionVerification type="FileCheck">
+							<VersionFileName>${WM_HOME}\WS-Stack\VERSION.txt</VersionFileName>
+	        	        	<VersionFileCheckKeyword type="contain">9.0</VersionFileCheckKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<AgentInstallActions agentType="java">
+						<AgentInstallAction type="FileUpdate">
+							<ConfigFileName>${WM_HOME}\IntegrationServer\bin\server.bat</ConfigFileName>
+			            	<FileFormat>Text</FileFormat>
+			            	<InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<KeyWord>:start</KeyWord>
+						</AgentInstallAction>
+					</AgentInstallActions>
+				</Version>
+		    </OS>
+			<OS name="Linux">
+		    	<AutoCheckVersion>true</AutoCheckVersion>				  
+				<Version id="9.5"> 
+	       			<DefaultInstallDir>${WM_HOME}</DefaultInstallDir>  	    	
+	       			<VersionVerifications>
+	        			<VersionVerification type="FileCheck">
+							<VersionFileName>${WM_HOME}/WS-Stack/VERSION.txt</VersionFileName>
+							<VersionFileCheckKeyword type="contain">9.5.1.0</VersionFileCheckKeyword>
+						</VersionVerification>
+			    	</VersionVerifications>
+	            	<AgentInstallActions agentType="java">
+						<AgentInstallAction type="FileUpdate">
+							<ConfigFileName>${WM_HOME}/IntegrationServer/bin/server.sh</ConfigFileName>	  
+							<FileFormat>Text</FileFormat>            
+							<InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<KeyWord>unset NOHUP</KeyWord>
+			    		</AgentInstallAction>
+					</AgentInstallActions>
+	        	</Version>
+				<Version id="9.0">
+					<DefaultInstallDir>${WM_HOME}</DefaultInstallDir>
+			    	<VersionVerifications>
+						<VersionVerification type="FileCheck">
+							<VersionFileName>${WM_HOME}/WS-Stack/VERSION.txt</VersionFileName>
+	        	        	<VersionFileCheckKeyword type="contain">9.0</VersionFileCheckKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<AgentInstallActions agentType="java">
+						<AgentInstallAction type="FileUpdate">
+							<ConfigFileName>${WM_HOME}/IntegrationServer/bin/server.sh</ConfigFileName>
+			            	<FileFormat>Text</FileFormat>
+			            	<InsertString>JAVA_TOOL_OPTIONS={{JavaAgentOption}}</InsertString>
+							<KeyWord>unset NOHUP</KeyWord>
+						</AgentInstallAction>
+					</AgentInstallActions>
+				</Version>
+		    </OS>
+	    </Platform>
+		<Platform name="Jetty">
+			<OS name="Windows">
+				<AutoCheckVersion>true</AutoCheckVersion>
+				<Version id="8">
+					<DefaultInstallDir>${JETTY_HOME}</DefaultInstallDir>
+					<DefaultServiceServiceName></DefaultServiceServiceName>
+					<VersionVerifications>
+						<VersionVerification type="FileCheck">
+							<VersionFileName>${JETTY_HOME}\VERSION.txt</VersionFileName>
+							<VersionFileCheckKeyword type="contain">jetty-8</VersionFileCheckKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<AgentInstallActions agentType="java">
+						<AgentInstallAction type="FileUpdate">
+							<ConfigFileName>${JETTY_HOME}\start.ini</ConfigFileName>
+							<InsertString>{{JavaAgentOption}}</InsertString>
+							<KeyWord>Jetty start</KeyWord>
+						</AgentInstallAction>
+					</AgentInstallActions>
+				</Version>
+				<Version id="9.1">
+					<DefaultInstallDir>${JETTY_HOME}</DefaultInstallDir>
+					<DefaultServiceServiceName></DefaultServiceServiceName>
+					<VersionVerifications>
+						<VersionVerification type="FileCheck">
+							<VersionFileName>${JETTY_HOME}\VERSION.txt</VersionFileName>
+							<VersionFileCheckKeyword type="contain">jetty-9.1</VersionFileCheckKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<AgentInstallActions agentType="java">
+						<AgentInstallAction type="FileUpdate">
+							<ConfigFileName>${JETTY_HOME}\start.ini</ConfigFileName>
+							<InsertString>{{JavaAgentOption}}</InsertString>
+							<KeyWord>Jetty start</KeyWord>
+						</AgentInstallAction>
+					</AgentInstallActions>
+				</Version>
+			</OS>
+			<OS name="linux">
+				<AutoCheckVersion>true</AutoCheckVersion>
+				<Version id="8">
+					<DefaultInstallDir>${JETTY_HOME}</DefaultInstallDir>
+					<DefaultServiceServiceName></DefaultServiceServiceName>
+					<VersionVerifications>
+						<VersionVerification type="FileCheck">
+							<VersionFileName>${JETTY_HOME}/VERSION.txt</VersionFileName>
+							<VersionFileCheckKeyword type="contain">jetty-8</VersionFileCheckKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<AgentInstallActions agentType="java">
+						<AgentInstallAction type="FileUpdate">
+							<ConfigFileName>${JETTY_HOME}/bin/jetty.sh</ConfigFileName>
+							<InsertString>JAVA_OPTIONS={{JavaAgentOption}}</InsertString>
+							<KeyWord># JAVA_OPTIONS</KeyWord>
+						</AgentInstallAction>
+					</AgentInstallActions>
+				</Version>
+				<Version id="9.1">
+					<DefaultInstallDir>${JETTY_HOME}</DefaultInstallDir>
+					<DefaultServiceServiceName></DefaultServiceServiceName>
+					<VersionVerifications>
+						<VersionVerification type="FileCheck">
+							<VersionFileName>${JETTY_HOME}/VERSION.txt</VersionFileName>
+							<VersionFileCheckKeyword type="contain">jetty-9.1</VersionFileCheckKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<AgentInstallActions agentType="java">
+						<AgentInstallAction type="FileUpdate">
+							<ConfigFileName>${JETTY_HOME}/bin/jetty.sh</ConfigFileName>
+							<InsertString>JAVA_OPTIONS={{JavaAgentOption}}</InsertString>
+							<KeyWord># JAVA_OPTIONS</KeyWord>
+						</AgentInstallAction>
+					</AgentInstallActions>
+				</Version>
+			</OS>
+			<OS name="mac">
+				<AutoCheckVersion>true</AutoCheckVersion>
+				<Version id="8">
+					<DefaultInstallDir>${JETTY_HOME}</DefaultInstallDir>
+					<DefaultServiceServiceName></DefaultServiceServiceName>
+					<VersionVerifications>
+						<VersionVerification type="FileCheck">
+							<VersionFileName>${JETTY_HOME}/VERSION.txt</VersionFileName>
+							<VersionFileCheckKeyword type="contain">jetty-8</VersionFileCheckKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<AgentInstallActions agentType="java">
+						<AgentInstallAction type="FileUpdate">
+							<ConfigFileName>${JETTY_HOME}/bin/jetty.sh</ConfigFileName>
+							<InsertString>JAVA_OPTIONS={{JavaAgentOption}}</InsertString>
+							<KeyWord># JAVA_OPTIONS</KeyWord>
+						</AgentInstallAction>
+					</AgentInstallActions>
+				</Version>
+				<Version id="9.1">
+					<DefaultInstallDir>${JETTY_HOME}</DefaultInstallDir>
+					<DefaultServiceServiceName></DefaultServiceServiceName>
+					<VersionVerifications>
+						<VersionVerification type="FileCheck">
+							<VersionFileName>${JETTY_HOME}/VERSION.txt</VersionFileName>
+							<VersionFileCheckKeyword type="contain">jetty-9.1</VersionFileCheckKeyword>
+						</VersionVerification>
+					</VersionVerifications>
+					<AgentInstallActions agentType="java">
+						<AgentInstallAction type="FileUpdate">
+							<ConfigFileName>${JETTY_HOME}/bin/jetty.sh</ConfigFileName>
+							<InsertString>JAVA_OPTIONS={{JavaAgentOption}}</InsertString>
+							<KeyWord># JAVA_OPTIONS</KeyWord>
+						</AgentInstallAction>
+					</AgentInstallActions>
+				</Version>
+			</OS>
+		</Platform>
+    </Platforms>
+</Root>
