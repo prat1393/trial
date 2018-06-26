@@ -1,3 +1,0 @@
-<project name="lisa-merge-utils" default="dist" basedir=".">
-	<import file="itkoext-build/ant-common.xml" />
-</project>

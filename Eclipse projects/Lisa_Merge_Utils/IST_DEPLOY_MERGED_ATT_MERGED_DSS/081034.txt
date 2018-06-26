@@ -1,2 +1,0 @@
-Source folder = %SOURCE_FOLDER%
-Destination folder = %DESTINATION_FOLDER%

@@ -1,2 +1,0 @@
-vseProtocols=com.itko.lisa.ext.vse.StubValidationDPH
-com.itko.lisa.ext.vse.StubValidationDPH=Data:req,ATT Request Data Protocol Handler, Parse ATT Request to get MessageID & TXID add into Meta arguments

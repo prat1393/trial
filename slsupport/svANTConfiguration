@@ -1,4 +1,0 @@
-#!/bin/sh
-JAVA_HOME=/opt/app/t1eam4c11/CA/DevTest/jre/bin
-export JAVA_HOME
-ant ANTConfiguration
