@@ -1,0 +1,71 @@
+Anywhere you use {{expressions}} you can specify a scripting language
+{{=%velocity%    
+Hello from Velocity. The host name is $LISA_HOST
+}}
+
+Beanshell (result should be 'UPPERCASE'): {{=%beanshell%  
+    return new String("uppercase").toUpperCase();
+}}
+
+Groovy (result should be 'blue'): {{=%groovy% 
+  class AGroovyBean {
+    String color
+  }
+ 
+  def myGroovyBean = new AGroovyBean()
+  myGroovyBean.setColor('blue')
+  myGroovyBean.getColor()
+}} 
+
+JavaScript (result should be 'HELLO HELLO'): {{=%javascript%
+    var doubleUpper = function(s) {
+    var upper = s.toUpperCase()
+    return upper + " " + upper
+}
+doubleUpper("hello")
+}}
+
+The default language is now {{=com.itko.lisa.test.ScriptExecHandler.getDefaultLanguage()}}
+
+You can change the default language by setting lisa.scripting.default.language in local.properties
+or in the testExec or config, for example lisa.scripting.default.language=groovy
+
+LISA ships with JavaScript, Groovy, Beanshell and Velocity engines on all platforms. 
+
+To install a new engine simply drop the jar(s) into LISA_HOME/lib or LISA_HOME/bin
+
+Script engines exist for the following languages:
+    · ABCL
+    · AppleScript
+    · AWK
+    · BeanShell
+    · Bex
+    · CajuScript
+    · ejs
+    · FreeMarker
+    · Groovy
+    · Jaskell
+    · Java
+    · JavaFX
+    · JavaScript
+    · Jelly
+    · JEP
+    · Jexl
+    · jst
+    · JudoScript
+    · JUEL
+    · MathEclipse
+    · OCaml
+    · OGNL
+    · PHP
+    · Pnuts
+    · Python
+    · Ruby
+    · Scheme
+    · Sleep 
+    · Smalltalk
+    · Tcl
+    · Velocity
+    · XPath
+    · XSLT
+

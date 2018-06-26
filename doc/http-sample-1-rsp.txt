@@ -1,0 +1,44 @@
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+    <env:Header/>
+    <env:Body>
+        <ns2:addUserObjectResponse xmlns:ns2="http://ejb3.examples.itko.com/">
+            <return>
+                <accounts>
+                    <balance>103.22</balance>
+                    <id>3216792361558</id>
+                    <name>Orange Savings</name>
+                    <type>SAVINGS</type>
+                </accounts>
+                <accounts>
+                    <balance>101.01</balance>
+                    <id>3216792360994</id>
+                    <name>Basic Checking</name>
+                    <type>CHECKING</type>
+                </accounts>
+                <addresses>
+                    <city>Dallas</city>
+                    <id>id-3216792362255</id>
+                    <line1>Deep Space Nine</line1>
+                    <state>Texas</state>
+                    <zip>75234</zip>
+                </addresses>
+                <addresses>
+                    <city>Santa Clara</city>
+                    <id>id-3216792361868</id>
+                    <line1>USS Enterprise, NCC</line1>
+                    <state>California</state>
+                    <zip>95343</zip>
+                </addresses>
+                <email>James.Kirk@StarTrek.com</email>
+                <fname>James</fname>
+                <lname>Kirk</lname>
+                <login>1</login>
+                <newFlag>true</newFlag>
+                <phone>234-4353</phone>
+                <pwd>N6DKWIK5p02HLSnbdnh1IYiV/Mg=</pwd>
+                <roleKey>REGULAR</roleKey>
+                <ssn/>
+            </return>
+        </ns2:addUserObjectResponse>
+    </env:Body>
+</env:Envelope>
